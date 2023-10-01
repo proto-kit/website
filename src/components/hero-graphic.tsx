@@ -15,11 +15,11 @@ export const HeroGraphic = () => {
     toast({ title: 'The command has been copied to clipboard.' })
   }
   return (
-    <div className="py-16 lg:py-0">
-      <header className="grid grid-cols-1 lg:grid-cols-2 items-center">
-        <div className="flex flex-col items-start gap-4 max-w-[44rem] px-4 ml-auto">
+    <div className="py-8">
+      <header className="container grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="flex flex-col items-start gap-4">
           <Button variant="secondary" size="sm" className="rounded-full" asChild>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/proto_kit" target="_blank" rel="noopener noreferrer">
               Follow on 𝕏
             </a>
           </Button>
@@ -46,10 +46,8 @@ export const HeroGraphic = () => {
             </Button>
           </div>
         </div>
-        <div className="hidden lg:flex justify-center items-center p-12 rounded-bl-lg" style={{ backgroundImage: 'url(/mesh.jpg)', backgroundSize: 'cover', backgroundPosition: 'center center' }}>
-          <div className="shadow-2xl shadow-black rounded-xl">
-            <NextImage src="/balances.png" alt="hero" width={600} height={500} className="rounded-xl shadow-2xl" />
-          </div>
+        <div className="hidden lg:flex justify-center items-center p-12 rounded-bl-lg">
+          <NextImage src="/balances.png" alt="hero" width={600} height={500} className="rounded-lg shadow-2xl" />
         </div>
       </header>
     </div>

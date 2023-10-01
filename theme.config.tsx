@@ -22,16 +22,31 @@ const config: DocsThemeConfig = {
   themeSwitch: {
     component: null
   },
-  head: (
-    <>
-      <link rel="shortcut icon" href="/logo-symbol.svg" />
-      <title>Protocol development framework for privacy enabled application chains - Protokit</title>
-      <meta name="description" content="Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve." />
-      <meta property="og:title" content="Protocol development framework for privacy enabled application chains - Protokit" />
-      <meta property="og:description" content="Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve." />
-      <meta property="og:image" content="https://protokit.dev/og.jpg" />
-    </>
-  ),
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Protokit',
+      canonical: 'https://protokit.dev',
+      title: 'Protocol development framework for privacy enabled application chains',
+      description: 'Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.',
+      openGraph: {
+        type: 'website',
+        images: [
+          {
+            url: 'https://protokit.dev/og.jpg',
+            width: 1200,
+            height: 630,
+            alt: 'Protokit OG Image',
+          },
+        ]
+      },
+      additionalLinkTags: [
+        {
+          rel: 'shortcul icon',
+          href: '/logo-symbol.svg'
+        }
+      ],
+    }
+  },
   primaryHue: { light: 28, dark: 28 },
 }
 

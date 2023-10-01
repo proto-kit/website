@@ -5,7 +5,7 @@ const DiscordSvg = () => <svg viewBox="0 -28.5 256 256" width={24} height={24} v
 
 export const Socials = () => {
   return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-8 pb-24">
+    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-16 pb-24">
       <a href="https://x.com/proto_kit" target="_blank" rel="noopener noreferrer">
         <Card className="bg-gradient-to-r from-sky-100 to-indigo-100 dark:from-sky-950 dark:to-indigo-950 border-none">
           <CardHeader className="gap-4">

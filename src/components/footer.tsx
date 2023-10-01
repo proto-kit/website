@@ -12,8 +12,8 @@ export const Footer = () => {
   return (
     <footer className="bg-background border-t py-16">
       <div className="container grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <div className="flex flex-col gap-4">
-          <NextImage src="/logo-symbol.svg" width={32} height={32} alt="Logo symbol" />
+        <div className="flex flex-col gap-4 text-accent-foreground">
+          <NextImage src="/logo-symbol-white.svg" width={40} height={40} alt="Logo symbol" />
         </div>
         <div className="flex flex-col gap-4">
           <p>Community</p>
