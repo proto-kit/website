@@ -1,0 +1,30 @@
+{
+  "index": {
+    "title": "Home",
+    "display": "hidden",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "documentation": {
+    "title": "Documentation",
+    "type": "page",
+    "theme": {
+      "layout": "default"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "contact": {
+    "title": "Discord ↗",
+    "type": "page",
+    "href": "https://discord.com/",
+    "newWindow": true
+  }
+}

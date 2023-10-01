@@ -2,15 +2,16 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}'
+    './theme.config.js',
+    './components/**/*.{js,jsx,ts,tsx,md,mdx}',
+    './src/**/*.{js,jsx,ts,tsx,md,mdx}'
   ],
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "90rem",
       },
     },
     extend: {
