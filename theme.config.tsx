@@ -22,6 +22,16 @@ const config: DocsThemeConfig = {
   themeSwitch: {
     component: null
   },
+  head: (
+    <>
+      <link rel="shortcut icon" href="/logo-symbol.svg" />
+      <title>Protocol development framework for privacy enabled application chains - Protokit</title>
+      <meta name="description" content="Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve." />
+      <meta property="og:title" content="Protocol development framework for privacy enabled application chains - Protokit" />
+      <meta property="og:description" content="Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve." />
+      <meta property="og:image" content="https://protokit.dev/og.jpg" />
+    </>
+  ),
   primaryHue: { light: 28, dark: 28 },
 }
 
