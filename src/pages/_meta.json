@@ -7,24 +7,10 @@
       "layout": "raw"
     }
   },
-  "documentation": {
-    "title": "Documentation",
-    "type": "page",
-    "theme": {
-      "layout": "default"
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "type": "page",
-    "theme": {
-      "layout": "raw"
-    }
-  },
   "contact": {
     "title": "Discord ↗",
     "type": "page",
-    "href": "https://discord.com/",
+    "href": "https://discord.gg/AMGnGAxsKp",
     "newWindow": true
   }
 }

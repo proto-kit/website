@@ -5,6 +5,8 @@ import { CopyIcon } from "lucide-react"
 import NextImage from 'next/image'
 
 const SETUP_COMMAND = 'npx degit proto-kit/starter-kit#develop my-chain'
+const STACKBLITZ_URL = 'https://stackblitz.com/github/proto-kit/starter-kit?file=src%2FBalances.ts&startScript=test'
+const STARTER_KIT_URL = 'https://github.com/proto-kit/starter-kit'
 
 export const HeroGraphic = () => {
   const { toast } = useToast()
@@ -13,9 +15,9 @@ export const HeroGraphic = () => {
     toast({ title: 'The command has been copied to clipboard.' })
   }
   return (
-    <div>
-      <header className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div className="flex flex-col items-start gap-4">
+    <div className="py-16 lg:py-0">
+      <header className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="flex flex-col items-start gap-4 max-w-[44rem] px-4 ml-auto">
           <Button variant="secondary" size="sm" className="rounded-full" asChild>
             <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
               Follow on 𝕏
@@ -30,12 +32,20 @@ export const HeroGraphic = () => {
             </Button>
           </Card>
           <div className="flex gap-4">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg" asChild>
+              <a href={STARTER_KIT_URL} target="_blank" rel="noopener noreferrer">
+                Starter Kit
+              </a>
+            </Button>
+            <a href={STACKBLITZ_URL} target="_blank" rel="noopener noreferrer">
+              <NextImage src="/stackblitz.svg" width={220} height={40} alt="Stackblitz" />
+            </a>
           </div>
         </div>
-        <div className="hidden lg:flex justify-center items-center animate-in fade-in duration-500 slide-in-from-right-4">
-          <NextImage src="/balances-dark.png" alt="hero" width={500} height={400} className="flex dark:hidden rounded-lg" />
-          <NextImage src="/balances-light.png" alt="hero" width={500} height={400} className="hidden dark:flex rounded-lg" />
+        <div className="hidden lg:flex justify-center items-center p-12 rounded-bl-lg" style={{ backgroundImage: 'url(/mesh.jpg)', backgroundSize: 'cover', backgroundPosition: 'center center' }}>
+          <div className="shadow-2xl shadow-black rounded-xl">
+            <NextImage src="/balances.png" alt="hero" width={600} height={500} className="rounded-xl shadow-2xl" />
+          </div>
         </div>
       </header>
     </div>

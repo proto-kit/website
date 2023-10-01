@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TODO: Enable when we add docs and blog */
+.nextra-hamburger {
+    display: none;
+}
 
 @layer base {
     :root {

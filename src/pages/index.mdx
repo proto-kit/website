@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import { Button } from '@/components/ui/button'
 
 import { HeroGraphic } from '@/components/hero-graphic'
@@ -5,7 +7,14 @@ import { Features } from '@/components/features'
 import { MerkleTree } from '@/components/merkle-tree'
 import { Socials } from '@/components/socials'
 
-<div className="flex flex-col gap-24 py-24 bg-background">
+<div className="flex flex-col gap-24 bg-background">
+    <Head>
+        <title>Protocol development framework for privacy enabled application chains - Protokit</title>
+        <meta name="description" content="Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve." />
+        <meta property="og:title" content="Protocol development framework for privacy enabled application chains - Protokit" />
+        <meta property="og:description" content="Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve." />
+        <meta property="og:image" content="https://protokit.dev/og.jpg" />
+    </Head>
     <HeroGraphic />
     <Features />
     <MerkleTree />

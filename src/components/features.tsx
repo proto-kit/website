@@ -24,7 +24,7 @@ export const Features = () => {
       <div className="container grid lg:grid-cols-3 grid-cols-1 gap-8">
         {FEATURES.map((feature, i) => (
           <Card key={i}>
-            <CardHeader>
+            <CardHeader className="gap-2">
               <CardTitle className="text-orange-500 dark:text-orange-400"><feature.icon size={36} /></CardTitle>
               <CardTitle className="flex gap-2 items-center">{feature.title}</CardTitle>
               <CardDescription>{feature.content}</CardDescription>

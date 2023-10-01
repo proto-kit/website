@@ -1,28 +1,26 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { Logo } from './src/components/logo'
-import { ThemeToggle } from './src/components/theme-toggle'
+import { Footer } from './src/components/footer'
 
 const config: DocsThemeConfig = {
   logo: <Logo />,
+  search: {
+    component: null
+  },
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/proto-kit',
   },
   chat: {
-    link: 'https://x.com',
+    link: 'https://x.com/proto_kit',
     icon: <div className="text-2xl">𝕏</div>
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: <div className="flex flex-col gap-2">
-      <div className="text-lg font-semibold">© Protokit {new Date().getFullYear()}</div>
-      <div className="text-sm">
-        <a href="https://palladians.xyz" target="_blank" rel="noreferrer noopener">Website by Palladians</a>
-      </div>
-    </div>
+    component: <Footer />
   },
   themeSwitch: {
-    component: <ThemeToggle />
+    component: null
   },
   primaryHue: { light: 28, dark: 28 },
 }
