@@ -32,6 +32,9 @@ const config: DocsThemeConfig = {
         "Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.",
       openGraph: {
         type: "website",
+        title: "Protokit",
+        description:
+          "Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.",
         images: [
           {
             url: "https://protokit.dev/og.png",
