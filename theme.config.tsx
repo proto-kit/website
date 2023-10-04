@@ -22,6 +22,7 @@ const config: DocsThemeConfig = {
   themeSwitch: {
     component: null,
   },
+  head: null,
   useNextSeoProps() {
     return {
       titleTemplate: "%s – Protokit",
