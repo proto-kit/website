@@ -1,0 +1,24 @@
+# Building provable code with o1js
+
+You hear us talking about "provable" and "circuits", but what do they actually mean?
+How does o1js relate to Protokit and why should you care?
+
+### What is o1js
+
+o1js is a library created by the team behind [Mina](https://minaprotocol.com) that powers all of Protokit.
+It is the backbone of everything we do and provides a simple abstraction over all zk-related things.
+
+Since protokit and mina are both zk-native, we have to be able to "prove" all of the code that we write for our application.
+Proving means turning a computation into a zk-proof. That happens over multiple steps.
+
+1. We write our business and protocol logic using Protokit. In that process we will work with the primitives that o1js exposes to developers.
+That means types for Integers, PublicKeys, hashing functions, Conditionals, etc.
+
+2. We execute your code and translate it behind the scenes in something that is called a "circuit". A circuit is arithmetic representation of your application's code.
+This representation has to be the same for every possible execution of your code. This is why we can't have dynamically bounded loops and typescript if statements in our code (though there are some tricks to mitigate that).
+
+3. The circuit is then used to prove our execution and create a zk-proof (a.k.a. zk-SNARK).
+This proof can then be verified by any other party using a small "verification key", which is also generated using the circuit.
+
+So to summarize, Protokit uses o1js to lift all the snark-related stuff for us, so we can focus on writing good applications.
+

@@ -1,0 +1,27 @@
+{
+  "index": "Home",
+  "what-is-protokit": "What is Protokit?",
+  "-- Developer Documentation": {
+    "type": "separator",
+    "title": "Developer Documentation"
+  },
+  "getting-started": "Getting started",
+  "build-provable-code": "Build provable code",
+  "basics": "Basics",
+  "testing": "Testing",
+  "running": "Running",
+  "ui": "Writing UIs",
+  "advanced": "Advanced",
+  "tutorials": "Tutorials",
+  "-- Concepts": {
+    "type": "separator",
+    "title": "Concepts"
+  },
+  "foundational": "Foundational Concepts",
+  "advanced-concepts": "Advanced Concepts",
+  "-- Other": {
+    "type": "separator",
+    "title": "Other"
+  },
+  "version": "What's new in Protokit"
+}

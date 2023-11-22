@@ -6,7 +6,7 @@ import { Footer } from "./src/components/footer";
 const config: DocsThemeConfig = {
   logo: <Logo />,
   search: {
-    component: null,
+    placeholder: "Search docs..."
   },
   project: {
     link: "https://github.com/proto-kit",
@@ -15,12 +15,21 @@ const config: DocsThemeConfig = {
     link: "https://x.com/proto_kit",
     icon: <div className="text-2xl">𝕏</div>,
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: "https://github.com/proto-kit/website/tree/main/",
   footer: {
     component: <Footer />,
   },
   themeSwitch: {
     component: null,
+  },
+  toc: {
+    extraContent: undefined,
+    backToTop: true
+  },
+  editLink: {
+  },
+  feedback: {
+    content: null
   },
   head: null,
   useNextSeoProps() {
