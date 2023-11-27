@@ -1,0 +1,51 @@
+import { Callout } from 'nextra/components'
+
+# Usable and helpful data types
+
+Generally, all types that are usable in o1js are also usable out-of-the-box in protokit.
+
+But there are some caveats to dealing with bounded integers (`UInt64`, `UInt32`).
+
+### Integers
+
+By default, o1js exposes two classes `UInt64` and `UInt32` to protect you from overflows that can happen
+if you use `Field` directly.
+Unfortunately, these don't work well with Protokit since they use the hard-failing o1js assertions instead of the protokit-specific `assert`.
+This leads to your application being non-complete and being unable to include failed transactions in settlements.
+
+To overcome this, we created a number of classes in `@proto-kit/common` that handle all of that for you while providing the same interface as the vanilla variants.
+
+- `UInt32`
+- `UInt64`
+- `UInt112`
+- `UInt224`
+
+In addition to the o1js methods, we implement the `sqrtMod()` and `sqrtFloor()` functions to help facilitate square-root calculations.
+
+<Callout type="default">
+    Make sure to import from `@proto-kit/common` when using `UInt32` and `UInt64`
+</Callout>
+
+### Precision
+
+Since we don't have access to real numbers, only integers, doing things like division might get tricky sometimes.
+That's why most other ecosystems have adapted precision based integers.
+
+In our case, we use `UInt112` as the primary precision type, holding 112 bits of integer.
+112 bits is reasonably efficient for Kimchi range-checks and has more than enough room for 18-decimal precision.
+
+We have created helpers to facilitate working with precisions in your runtime code: `PrecisionUInt112` and `PrecisionUInt224`.
+
+An example of how you can divide a `UInt112` number `x` by a another number `y` of the same type:
+
+```typescript copy {4-6}
+const precision = UInt112.from(10n ** 18n);
+
+function divide(x: UInt112, y: UInt112): UInt112 {
+  return PrecisionUInt112.fromUInt112(x)
+    .mulPrecision(precision)
+    .divPrecision(y)
+}
+```
+
+Since `PrecisionUInt112` is a subclass of `UInt112`, we can use polymorphism when returning it.

@@ -1,0 +1,77 @@
+import { Tabs } from 'nextra/components'
+
+# Using State Proofs
+
+For some application, it is importants to be able to create a off-chain proof of some state in the protokit state-tree.
+For example, for privacy-enabled application you want to prove that some data is in the tree,
+but don't want to reveal under which key this data is stored.
+
+You could then attach a nullifier to that proof to prevent double-use.
+
+### Background
+
+In case you want to learn more about the state related behind-the-scenes, check out [Foundational Concepts/State Model](/docs/concepts/state-model)
+
+### Fetching the data
+
+In order to create a state-proof, you need two things:
+1. The data
+2. A witness to that data
+
+#### Fetching the Data
+
+The data is very simple, you either already have it in your UI or you can fetch it via the query API
+
+<Tabs items={['TS', 'GraphQL']}>
+<Tabs.Tab>
+```ts filename="Client SDK" copy
+const state = await appchain.query.runtime.testModule.userState.get(address);
+```
+</Tabs.Tab>
+
+<Tabs.Tab>
+
+```graphql filename="GraphQL" copy
+query UseState {
+  runtime {
+    testModule {
+      userState(key: "address") {
+        property1
+        property2
+      }
+    }
+  }
+}
+```
+</Tabs.Tab>
+</Tabs>
+
+#### Fetching the witness
+
+After we have the data, we need to prove the relationship between that data and the state-root of the last protokit proof.
+We do this by fetch the merkle witness and recalculating the state root inside a client-side proof.
+
+<Tabs items={['TS', 'GraphQL']}>
+    <Tabs.Tab>
+        ```ts filename="Client SDK" copy
+        const witness = await appchain.query.runtime.testModule.userState.witness(address); ?
+        ```
+    </Tabs.Tab>
+
+    <Tabs.Tab>
+        ```graphql filename="GraphQL" copy
+        TODO
+        ```
+    </Tabs.Tab>
+</Tabs>
+
+### Creating the state proof
+
+For the state-proof we can then use the data and the witness to recalculate the root hash, which we attach to the publicOutput of our proof.
+Inside the protokit runtime, we can then assert that the state-proofs root hash equals to the last state root of the protokit runtime.
+
+```ts
+const rootHash = witness.computeRoot(
+    Posiedon.hash(state.toFields())
+);
+```

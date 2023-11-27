@@ -31,6 +31,9 @@ const config: DocsThemeConfig = {
   feedback: {
     content: null
   },
+  sidebar: {
+    toggleButton: true
+  },
   head: null,
   useNextSeoProps() {
     return {

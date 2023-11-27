@@ -1,0 +1,73 @@
+import { Callout } from 'nextra/components'
+
+# State
+
+Your module can define an unlimited amount of state by declaring class-scoped properties on your `RuntimeModule`.
+These properties have to be annotated by the `@state()` decorator in order for protokit to pick it up.
+
+```ts
+@runtimeModule()
+export class TokenModule extends RuntimeModule<...> {
+  // Define some provable state for your module
+  @state() totalSupply = ...
+}
+```
+
+There are two types of state usable within protokit, `State` and `StateMap`.
+
+Every state property is unique to your module. In order for other modules to access the same state, you have to compose them ([Composing](/docs/basics/composing)).
+That means, that two states with the same name, but in different modules, will point to different values.
+
+### Compatible data types
+
+State is compatible with almost all o1js datatypes.
+This includes all standard types (like for example `Field`, `UInt64`, `PublicKey`, `Signature`, ...) and Structs.
+
+Types that are *not* compatible are:
+- Proofs
+
+In order for protokit to know which type your state wants to have, you need to pass it in two times, once as a generic argument and once as a class-reference.
+But more on that later.
+
+
+### State
+
+You can define single-element state by using the class `State`.
+
+```ts
+@runtimeModule()
+export class ExampleModule extends RuntimeModule<...> {
+  // Define totalSupply for you module
+  @state() totalSupply = State.from<UInt64>(UInt64);
+}
+```
+
+After you defined the `totalSupply` state in your module, you can access it using
+
+`const totalSupply = this.totalSupply.get();`
+
+> Note: Even though `State` is a single object, it will still be stored in the global merkle tree, so you can use it with some advanced concepts like state proofs.
+
+
+### Mappings
+
+, either from normal, single global state (`State`) or through mappings, called `StateMaps`.
+
+
+### Options
+
+All state inside runtime modules have some user-defined type, but everytime we access them, they will return an `Option<Type>`.
+
+A option is, like in other programming languages, a object that *can* hold a value, but can also hold none.
+A Protokit option is of the format
+```
+{
+  isSome: Bool,
+  value: ValueType,
+}
+```
+In our case, if a particular state hasn't been set yet, it will return `isSome: false`.
+If the state has a value, it will return `isSome: true` and fill the `value` field with whatever value is in there at the time of execution.
+
+#### orElse
+

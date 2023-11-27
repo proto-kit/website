@@ -1,6 +1,6 @@
 {
   "index": "Home",
-  "what-is-protokit": "What is Protokit?",
+  "protokit": "What is Protokit?",
   "-- Developer Documentation": {
     "type": "separator",
     "title": "Developer Documentation"
@@ -17,8 +17,8 @@
     "type": "separator",
     "title": "Concepts"
   },
-  "foundational": "Foundational Concepts",
-  "advanced-concepts": "Advanced Concepts",
+  "concepts": "Foundational Concepts",
+  "concepts.advanced": "Advanced Concepts",
   "-- Other": {
     "type": "separator",
     "title": "Other"
