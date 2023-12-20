@@ -1,0 +1,32 @@
+# Runtime
+
+Runtime is the first modular component of the app-chain, containing all the bussiness logic of the application itself. 
+Business logic is implemented as _runtime modules_, defining the _runtime state_ and _runtime methods_ of each module. 
+Runtime modules can be composed together to create a runtime that suits the needs of the application. 
+
+Runtime methods are functions callable by user's transactions, responsible for reading and writing to the state - with accordance to their inner business logic implementation.
+Each runtime module can define it's own state (storage), which can be of two types: _state_ and _state map_.
+
+## Runtime module
+
+> At the time of writing Protokit does not provide any runtime modules out of the box. If your chain needs to work with balances, yo'll have to implement your own runtime module. Alternatively you can
+wait for our upcoming @proto-kit/library package, which will provide a set of runtime modules out of the box.
+
+Example runtime module "Balances" might define its own storage to be a _ledger_ of type _state map_, storing a key value pairing between public keys and balances.
+Accompanied by methods callable by users via transactions, such as _transfer_, _mint_ and _burn_. Transfer method would read the ledger,
+check if the sender has enough balance and if so, update the ledger accordingly. 
+
+Behind the scenes every interaction with the state produces a _state transition_. Runtime does not apply any state transitions to the merkle tree itself, this allows us to keep the runtime circuits as simple as possible.
+As a result we can achieve adequate proof paralelisation between business logic and state transition circuits.
+
+### Soft-failing runtime methods
+
+In order to ensure provability of both successful and failing transactions, we can't fail the proof generation forcefully using built in O1JS assertions (e.g. assertEquals).
+As an alternative way to soft-fail runtime method execution, we provide a custom `assert` function that keeps track of the assertion failures and returns them as a part of the runtime method result - as a boolean status.
+
+### Runtime module interoperability
+
+Runtime modules within the same runtime are aware of each other, allowing them to call each other's methods and reach each other's state. 
+
+Calling a method of runtime module B, from within a runtime module A would result in the appropriate state transitions
+within each respective module. This allows for a modular approach to building your runtime, where each module can be developed and tested in isolation.

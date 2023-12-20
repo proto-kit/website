@@ -1,0 +1,35 @@
+# Sequencer
+
+Sequencer is the gateway between user's transactions and the block production. In a nutshell, the sequencer is responsible for
+accepting user's transactions into a mempool, validating them, sequencing them as part of the block production process, orchestrating the block production prover worker pipeline,
+and finally submitting the rollup block to the settlement layer.
+
+Following the modularity principles, all working components of the sequencer are _sequencer modules_, and may be added, removed or replaced at developer's convinience.
+
+## Transaction sequencing
+
+One of the main roles of the sequencer node is to execute transactions in a certain predetermined order. Before the sequencer is able to do so, users have to
+submit their transactions to the sequencer's compatible mempool - this may be a private mempool, or eventually a public mempool such as the sequence state on the Mina L1.
+
+Once the mempool module determines the order of transactions, sequencing can begin. The sequencer will execute all the transactions from the 'block' (bundle) in a simulated fashion, providing updated
+state from one transaction to another. This allows us to circumvent any potential race conditions steming from client side paralelism, as it may be the case for the Mina L1 smart contracts.
+
+Data writes from the sequencing process are persisted in the sequencer's storage, and available as the _latest state_ for the upcoming block, or to be read via external APIs.
+
+As part of this process, the sequencer collects all the necessary information for proving, which happens independently from the sequencing. Most importantly the proving itself happens
+in parallel in order to achieve the maximum possible efficiency of the available hardware. 
+
+## Proving pipeline
+
+Sequencing results in a creation of _unproven blocks_, which contain all the necessary information extracted during sequencing. 
+This may include transaction execution results, state diffs, the produced state transitions and more.
+
+In order for the sequencer to create proofs of all the sequenced computation that happened previously, it has transform the unproven blocks into _traces_.
+Traces work as an input for our proving pipeline - where all the app-chain can be executed in parallel, since all their inputs/outputs are precomputed as traces.
+
+The aforementioned architecture allows us to paralelize the most resource intensive part of the block production process, which is the proving itself.
+
+## User facing APIs
+
+Among all other responsibilities, the sequencer may also provide modules for inspecting its internal state via APIs. Out of the box we provide a GraphQL API
+to e.g. read runtime / protocol state, submit transactions to the private mempool or retrieve merkle witnesses for historical state proofs.

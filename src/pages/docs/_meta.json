@@ -1,5 +1,8 @@
 {
-  "index": "Home",
+  "-- Introduction": {
+    "type": "separator",
+    "title": "Introduction"
+  },
   "protokit": "What is Protokit?",
   "-- Developer Documentation": {
     "type": "separator",

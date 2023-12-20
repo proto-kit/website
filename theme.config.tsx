@@ -6,7 +6,7 @@ import { Footer } from "./src/components/footer";
 const config: DocsThemeConfig = {
   logo: <Logo />,
   search: {
-    placeholder: "Search docs..."
+    placeholder: "Search docs...",
   },
   project: {
     link: "https://github.com/proto-kit",
@@ -24,15 +24,14 @@ const config: DocsThemeConfig = {
   },
   toc: {
     extraContent: undefined,
-    backToTop: true
+    backToTop: true,
   },
-  editLink: {
-  },
+  editLink: {},
   feedback: {
-    content: null
+    content: null,
   },
   sidebar: {
-    toggleButton: true
+    toggleButton: true,
   },
   head: null,
   useNextSeoProps() {
@@ -68,4 +67,8 @@ const config: DocsThemeConfig = {
   primaryHue: { light: 28, dark: 28 },
 };
 
-export default config;
+export default {
+  ...config,
+  stackblitzUrl:
+    "https://stackblitz.com/github/proto-kit/starter-kit?file=packages%2Fchain%2Ftest%2Fbalances.test.ts&startScript=test",
+};

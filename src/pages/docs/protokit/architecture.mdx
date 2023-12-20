@@ -1,0 +1,59 @@
+import { Callout, Cards, Card } from 'nextra/components'
+import { ExternalLink } from 'lucide-react'
+
+# Architecture
+
+Protokit is designed to be modular from the ground up, but where does the modularity come from? 
+Rollups in general have a 3 different layers of modularity: _Settlement, Execution and Data Availability_.
+
+The Protokit framework provides built-in tools for addressing each of these layers, either directly or indirectly (by outsourcing the responsibilities).
+
+Protokit's __Application chain__ is composed of the following modularity layers: __Runtime, Protocol and Sequencer__.
+Every modularity layer accepts a set of purpose-specific modules implemented in Typescript.
+
+> Existing modules from 3rd party open-source projects can be easily reused too!
+
+| Layer     | Responsibilities | Example modules |
+|:----------|:-----|:--------|
+| **Runtime**     | Business logic of the application chain  | Balances, Vesting, Escrow, ...   |
+| **Protocol**     | Underlying state machine & block production circuits  | StateTransitionProver, BlockProver, ... |
+| **Sequencer**  | Orchestrates runtime & protocol, handles the block production pipeline, mempool and more  | PrivateMempool, BlockProducer, GraphQLModule, ...|
+
+
+### Settlement, execution and data availability
+
+How does _settlement_, _execution_ and _data availability_ fit into the architecture of Protokit? The framework primarily takes care of the execution layer of your rollup, 
+outsourcing the settlement layer to the Mina L1 blockchain.
+
+#### Data availability
+
+In the current version of the SDK the data availability layer is handled by the sequencer,
+making all Protokit application chains [validiums](https://ethereum.org/en/developers/docs/scaling/validium/).
+Once the action/sequence state mempool module becomes available, the data availability will be (optionally) outsourced to the Mina L1 as well. 
+Alternatively if you'd like to use a different data availability layer, you could implement your own sequencer module.
+
+## Rollup as a state machine
+
+Blockchains and especially rollups are simply state machines that describe how a state of a system can transition from state A to state B. 
+Protokit is built with this concept in mind, providing a set of tools to make it easy to implement your own rollup as a set of provable state transitions.
+
+State in a rollup is represented by a [merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) of potentially variable height, where each leaf represents a piece of the state itself. 
+Merkle trees are then represented by their root hash. Thanks to a combination of merkle trees and zero-knowledge proofs, an app chain can transition from state A to state B in a provable way.
+
+Producing a block is equivalent to applying a set of state transitions from state A to state B, where the state transitions are a result of executing user's transactions on the rollup itself.
+
+## Application chain
+
+Application chain is a top level modularity container that contains all the components required to run a rollup. 
+
+To ensure compatibility and ease of development between clients and sequencer(s), an app-chain definition can be reused for both the client(s) and the sequencer.
+Light clients are responsible for forging transactions on the client side, while the sequencer is responsible for e.g. producing blocks after receiving said transactions.
+Both of these share a portion of the app-chain definition, such as the runtime.
+
+As mentioned previously, the app-chain is composed of 3 additional layers 👇
+
+<Cards>
+  <Card icon={<ExternalLink/>} title="Runtime" href="/docs/protokit/architecture/runtime"/>
+  <Card icon={<ExternalLink/>} title="Protocol" href="/docs/protokit/architecture/protocol"/>
+  <Card icon={<ExternalLink/>} title="Sequencer" href="/docs/protokit/architecture/sequencer"/>
+</Cards>
