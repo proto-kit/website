@@ -3,12 +3,13 @@
     "type": "separator",
     "title": "Introduction"
   },
-  "protokit": "What is Protokit?",
+  "what-is-protokit": "What is Protokit?",
+  "architecture": "Architecture",
   "-- Developer Documentation": {
     "type": "separator",
     "title": "Developer Documentation"
   },
-  "getting-started": "Getting started",
+  "quickstart": "Quickstart",
   "build-provable-code": "Build provable code",
   "basics": "Basics",
   "testing": "Testing",

@@ -25,7 +25,7 @@ Sequencing results in a creation of _unproven blocks_, which contain all the nec
 This may include transaction execution results, state diffs, the produced state transitions and more.
 
 In order for the sequencer to create proofs of all the sequenced computation that happened previously, it has transform the unproven blocks into _traces_.
-Traces work as an input for our proving pipeline - where all the app-chain can be executed in parallel, since all their inputs/outputs are precomputed as traces.
+Traces work as an input for our proving pipeline - where all the app-chain circuits can be executed in parallel, since all their inputs/outputs are precomputed as traces.
 
 The aforementioned architecture allows us to paralelize the most resource intensive part of the block production process, which is the proving itself.
 
