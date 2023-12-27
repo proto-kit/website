@@ -1,0 +1,131 @@
+# Client interaction
+
+Once you are ready to interact with your app-chain, the first step is to start the sequencer.
+You may do so by using the Protokit CLI, which is available as part of the starter-kit under the 
+following command:
+
+```bash
+pnpm dev -- --filter chain
+```
+
+The command above will start a local sequencer, which will be available at `http://localhost:8080/graphql`.
+
+## Transaction API
+
+Every app-chain exposes a transaction API, which is aware of the underlying runtime configuration.
+This allows us to forge, sign and send transactions to the sequencer without having to worry about
+the internal workings of the sequencer and its mempool.
+
+> Keep in mind that our "client app-chain" is a localhost only app-chain, which means it is
+configured to interact with the sequencer running on your local machine.
+
+### Sending a transaction
+
+Previously we've implemented a simple _CheckIn_ runtime module. Let's implement a simple client as
+a test suite, that'll interact with our app-chain.
+
+The code below does the following:
+1. Generate a random signer keypair
+2. Start the client _appChain_ and register a custom in-memory signer, which will be used to sign transactions
+3. Resolve the _GuestBook_ runtime module, so we can interact with it
+4. Create a transaction, which will call the _checkIn_ method of the _GuestBook_ runtime module
+5. Sign and send the transaction, and wait for a couple seconds for a block to be produced.
+
+
+```typescript showLineNumbers {30-35} filename="packages/chain/test/interaction.test.ts"
+import { InMemorySigner } from "@proto-kit/sdk";
+import { client as appChain } from "./../src/client.config";
+import { PrivateKey, Provable, UInt64 } from "o1js";
+import { GuestBook } from "../src/guest-book";
+import { sleep } from "@proto-kit/common";
+
+const signer = PrivateKey.random();
+const sender = signer.toPublicKey();
+
+describe("interaction", () => {
+  let guestBook: GuestBook;
+
+  beforeAll(async () => {
+    await appChain.start();
+
+    const inMemorySigner = new InMemorySigner();
+
+    appChain.registerValue({
+      Signer: inMemorySigner,
+    });
+
+    const resolvedInMemorySigner = appChain.resolve("Signer") as InMemorySigner;
+    resolvedInMemorySigner.config = { signer };
+
+    guestBook = appChain.runtime.resolve("GuestBook");
+  });
+
+  it("should interact with the app-chain", async () => {
+    const rating = UInt64.from(3);
+    const tx = await appChain.transaction(sender, () => {
+      guestBook.checkIn(rating);
+    });
+
+    await tx.sign();
+    await tx.send();
+  });
+});
+```
+
+## Query API
+
+The query API allows you to fetch the latest state of the app-chain, using the underlying app-chain module configuration (e.g. available runtime modules).
+Let's query for the latest check-in for a guest, from our GuestBook runtime module.
+
+> The sequencer only stores the latest known app-chain state, it does not store any historical state.
+
+Here's a breakdown of what happens in the test suite below:
+1. Setup the client app-chain and configure a signer
+2. Forge, sign and send a transaction using the transaction API
+3. Wait for a couple seconds for a block to be produced
+4. Query the latest check-in for the sender address
+
+```typescript showLineNumbers {37-40} filename="packages/chain/test/interaction.test.ts"
+import { InMemorySigner } from "@proto-kit/sdk";
+import { client as appChain } from "./../src/client.config";
+import { PrivateKey, Provable, UInt64 } from "o1js";
+import { GuestBook } from "../src/guest-book";
+import { sleep } from "@proto-kit/common";
+
+const signer = PrivateKey.random();
+const sender = signer.toPublicKey();
+
+describe("interaction", () => {
+  let guestBook: GuestBook;
+
+  beforeAll(async () => {
+    await appChain.start();
+
+    const inMemorySigner = new InMemorySigner();
+
+    appChain.registerValue({
+      Signer: inMemorySigner,
+    });
+
+    const resolvedInMemorySigner = appChain.resolve("Signer") as InMemorySigner;
+    resolvedInMemorySigner.config = { signer };
+
+    guestBook = appChain.runtime.resolve("GuestBook");
+  });
+
+  it("should interact with the app-chain", async () => {
+    const rating = UInt64.from(3);
+    const tx = await appChain.transaction(sender, () => {
+      guestBook.checkIn(rating);
+    });
+
+    await tx.sign();
+    await tx.send();
+
+    await sleep(8000);
+
+    const checkIn = await appChain.query.runtime.GuestBook.checkIns.get(sender);
+    Provable.log("checkIn", sender, checkIn);
+  });
+});
+```

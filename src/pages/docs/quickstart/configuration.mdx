@@ -1,0 +1,43 @@
+# Configuration
+
+Your app-chain can be configured at three different levels: _runtime_, _chain_ and _client_. Firstly we start with the
+overall runtime configuration, specifying the definition/configuration of your runtime module layout:
+
+```typescript {5-7} showLineNumbers filename="packages/chain/src/runtime.ts"
+import { UInt64 } from "o1js";
+import { Balances } from "./balances";
+
+export default {
+  modules: {
+    Balances,
+  },
+  config: {
+    Balances: {
+      totalSupply: UInt64.from(10000),
+    },
+  },
+};
+```
+
+## Server & client configuration
+
+The runtime configuration above is then used to define app-chain configurations for both client and server side app-chains.
+Keep in mind that configuration for the rest of the app-chain, namely the protocol and the sequencer is provided implicitly behind the scenes.
+
+
+> _chain.config.ts_ is used by Protokit's CLI to start a server-side app-chain, while _client.config.ts_ is used by the Protokit SDK to connect 
+to the server-side app-chain via e.g. GraphQL.
+
+```typescript {6} showLineNumbers filename="packages/chain/src/chain.config.ts"
+import { LocalhostAppChain } from "@proto-kit/cli";
+import runtime from "./runtime";
+
+export default LocalhostAppChain.fromRuntime(runtime) as any; 
+```
+
+```typescript {6} showLineNumbers filename="packages/chain/src/client.config.ts"
+import { ClientAppChain } from "@proto-kit/sdk";
+import runtime from "./runtime";
+
+export const client = ClientAppChain.fromRuntime(runtime);
+```
