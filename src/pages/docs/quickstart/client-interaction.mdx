@@ -5,7 +5,7 @@ You may do so by using the Protokit CLI, which is available as part of the start
 following command:
 
 ```bash
-pnpm dev -- --filter chain
+pnpm dev --filter chain
 ```
 
 The command above will start a local sequencer, which will be available at `http://localhost:8080/graphql`.
@@ -72,6 +72,12 @@ describe("interaction", () => {
 });
 ```
 
+You can run the test above with the following command:
+
+```bash
+pnpm test --filter=chain ./test/interaction.test.ts
+```
+
 ## Query API
 
 The query API allows you to fetch the latest state of the app-chain, using the underlying app-chain module configuration (e.g. available runtime modules).
@@ -129,3 +135,5 @@ describe("interaction", () => {
   });
 });
 ```
+
+Don't forget to run your test suite again to see the results 👆
