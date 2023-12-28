@@ -59,8 +59,17 @@ All of the features above are implemented with a clear separation of concerns, b
 - Compositional layer (React containers, connecting the data layer to the presentational layer)
 - Presentational layer (React components, responsible for how the data is displayed)
 
+### App-chain client
+
+Interacting with the locally hosted app-chain from the UI is done through the _ClientAppChain_, same as in the [client interaction](/docs/quickstart/client-interaction) documentation. Both the transaction API and the query API is available and preconfigured to work with your app-chain's 
+runtime definition. 
+
+> Keep in mind that the _ClientAppChain_ uses the GraphQL API of the locally hosted sequencer, so you'll have to
+run both at the same time.
+
 ## Using a different UI framework
 
 If you would like to use a different UI framework/stack than the one provided in the starter-kit, you totally can!
 However there's quite a few things you have to keep in mind as far as configuration goes. The current UI setup
-should give you enough information to switch to a different framework.
+should give you enough information to switch to a different framework. 
+
