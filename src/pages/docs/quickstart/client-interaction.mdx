@@ -29,7 +29,7 @@ The code below does the following:
 2. Start the client _appChain_ and register a custom in-memory signer, which will be used to sign transactions
 3. Resolve the _GuestBook_ runtime module, so we can interact with it
 4. Create a transaction, which will call the _checkIn_ method of the _GuestBook_ runtime module
-5. Sign and send the transaction, and wait for a couple seconds for a block to be produced.
+5. Sign and send the transaction to the locally hosted sequencer.
 
 
 ```typescript showLineNumbers {30-35} filename="packages/chain/test/interaction.test.ts"
@@ -89,7 +89,7 @@ Here's a breakdown of what happens in the test suite below:
 1. Setup the client app-chain and configure a signer
 2. Forge, sign and send a transaction using the transaction API
 3. Wait for a couple seconds for a block to be produced
-4. Query the latest check-in for the sender address
+4. Query the latest check-in for the sender address, from the GraphQL API of the locally hosted sequencer.
 
 ```typescript showLineNumbers {37-40} filename="packages/chain/test/interaction.test.ts"
 import { InMemorySigner } from "@proto-kit/sdk";
