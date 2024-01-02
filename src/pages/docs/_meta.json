@@ -10,6 +10,11 @@
     "title": "Developer Documentation"
   },
   "quickstart": "Quickstart",
+  "runtime": "Runtime",
+  "-- WIP": {
+    "type": "separator",
+    "title": "WIP"
+  },
   "build-provable-code": "Build provable code",
   "basics": "Basics",
   "testing": "Testing",

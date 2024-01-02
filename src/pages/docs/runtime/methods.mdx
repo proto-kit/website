@@ -1,0 +1,155 @@
+import { Callout } from 'nextra/components'
+
+# Methods
+
+Besides state, runtime modules can also contain methods. In general there are two kinds
+of methods available: _runtime methods_ and _non-runtime methods_. Non-runtime methods
+are just regular typescript methods, however the _runtime methods_ are in addition decorated by the
+`@runtimeMethod()` decorator, making them callable by users via transactions.
+
+## Non-runtime methods
+
+Non-runtime methods are especially useful for internal logic that should not be exposed to the user.
+In order to maintain good testability of the runtime module, it is recommended to keep the general
+method implementation without side-effects as well. Methods may freely interact with the state API or other methods,
+and can include a return value too.
+
+```typescript {20-22} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  public getBalance(address: PublicKey, amount: UIn64): Option<UInt64> {
+    return this.balances.get(address);
+  }
+}
+```
+
+### Method visibility
+
+You can make use of `public`, `private`, `protected` keywords to control the visibility of your methods (or state properties). This becomes
+useful when you want to control access to methods in the runtime module inheritance chain.
+
+## Runtime methods
+
+To elevate a method into a runtime method, we must decorate it with the `@runtimeMethod()` decorator. Runtime methods
+are callable by users via transactions. Where as non-runtime methods are only callable by other methods in the runtime.
+
+Keep in mind that runtime methods will be only as secure, as you implement them. The only guarantees that exist within 
+runtime methods are the ones you implement yourself. Method visibility has no effect on the `@runtimeMethod()` decorator,
+these methods will be callable via transactions regardless of visibility.
+
+> The example below allows *anyone* to set a balance for *anyone*. This is obviously not a good idea, do not do this.
+
+```typescript {21-24} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @runtimeMethod()
+  public mint(address: PublicKey, amount: UInt64) {
+    this.balances.set(address, amount);
+  }
+}
+```
+
+### Valid argument types
+
+Runtime methods can only accept arguments of a valid type. 
+
+**✅ You can use the following data types as runtime method arguments:**
+- UInt64, UInt32
+- Field
+- Signature
+- Merkle witness
+- PublicKey and other o1js primitives
+- Structs
+- **🤯 Proofs _(0-2 proof arguments allowed)_**
+
+**❌ The following types are _not_ supported as runtime method arguments:**
+- number
+- string
+- object
+- array
+- and other non-o1js/native primitives
+
+## Assertions
+
+Both regular and runtime methods within the runtime cannot forcefully fail. This means that to handle various
+logical cases in our runtime logic, we must use soft-failing assertions. The framework exposes an `assert(...)` method
+to address this issue.
+
+We can easily check for various conditions which result in `Bool` values. And then assert these conditions to be truthy,
+and record an error for the transaction if they're not.
+
+You can use as many assertions within your runtime method as you'd like, the overall _execution status_ of the runtime is
+a subject to all the assert calls within the method. If one assertion fails, the entire transaction will fail.
+
+<Callout type="error" emoji="️🚫">
+  You cannot use the o1js built in assertion methods, such as `assertEquals` within your runtime methods. This unfortunately
+  rules out usage of primitives that include range checks, or call the built in assertions in any way - such as UInt64 or UInt32.
+
+  You can use our built in math primitives instead - they are shipped <br/> as `@proto-kit/library`.
+</Callout>
+
+```typescript {21-27} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option, assert } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @runtimeMethod()
+  public transfer(from: PublicKey, to: PublicKey, amount: UInt64) {
+    const fromBalance = this.balances.get(from);
+    const isFromBalanceSufficient = fromBalance.moreThanOrEqual(amount);
+    assert(isFromBalanceSufficient, "From balance insufficient");
+    // ... additional transfer logic
+  }
+}
+```

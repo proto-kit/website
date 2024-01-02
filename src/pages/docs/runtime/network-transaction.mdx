@@ -1,0 +1,86 @@
+# Network & Transaction APIs
+
+Each runtime method has access to the current execution context, which provides access to the following APIs: _network_ and _transaction_.
+Both of these allow you to tap into information about the current transaction execution, such as the current block height or the transaction sender.
+
+## Network API
+
+The network API provides in-runtime method access to the observed network state. Following APIs are available under `this.network` within
+a runtime method:
+- Current block height
+- Previous block's state root hash
+
+```typescript {24, 30} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { MintProof } from './mint-proof'
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @runtimeMethod()
+  public mint(address: PublicKey, amount: UInt64) {
+    assert(this.network.height.lessThanEqual(UInt64.from(1000)), "Minting ended at block height #1000");
+    this.balances.set(address, amount);
+  }
+
+  @runtimeMethod()
+  public mintPrivate(proof: MintProof, amount: UInt64) {
+    assert(this.network.previous.rootHash.equals(proof.publicOutput.rootHash), "Proof is not valid");
+  }
+}
+```
+
+## Transaction API
+
+The transasction API offers access to the information about the transaction which invoked the current runtime method.
+You can access the following information about the transaction:
+- sender
+- nonce
+- methodId
+- argsHash
+
+> The _methodId_ and _argsHash_ are used by the _runtimeMethod_ decorator to prove that the runtime method execution was authorized by the transaction sender.
+
+```typescript {23, 24} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @runtimeMethod()
+  public mint(amount: UInt64) {
+    assert(this.transaction.nonce.equals(0), "Only new users can mint");
+    this.balances.set(this.transaction.sender, amount);
+  }
+}
+```
