@@ -34,7 +34,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
  
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {
-    assert(this.network.height.lessThanEqual(UInt64.from(1000)), "Minting ended at block height #1000");
+    assert(this.network.block.height.lessThanEqual(UInt64.from(1000)), "Minting ended at block height #1000");
     this.balances.set(address, amount);
   }
 
@@ -63,24 +63,24 @@ import {
   state,
   runtimeMethod,
 } from "@proto-kit/module";
-import { State, StateMap, Option } from "@proto-kit/protocol";
+import { assert, StateMap } from "@proto-kit/protocol";
 import { PublicKey, UInt64 } from "o1js";
- 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
+
 @runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
+export class Balances extends RuntimeModule<Record<string, never>> {
   @state() public balances = StateMap.from<PublicKey, UInt64>(
     PublicKey,
     UInt64
   );
- 
+
   @runtimeMethod()
-  public mint(amount: UInt64) {
-    assert(this.transaction.nonce.equals(0), "Only new users can mint");
-    this.balances.set(this.transaction.sender, amount);
+  public mint(address: PublicKey, amount: UInt64) {
+    assert(
+      this.network.block.height.equals(UInt64.from(1)),
+      "Minting allowed only at genesis block"
+    );
+    this.balances.set(address, amount);
   }
 }
+
 ```

@@ -35,7 +35,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
  
   @runtimeMethod()
   public mint(amount: UInt64) {
-    assert(this.transaction.nonce.equals(0), "Only new users can mint");
+    assert(this.transaction.nonce.equals(UInt64.from(0)), "Only new users can mint");
     this.balances.set(this.transaction.sender, amount);
   }
 }

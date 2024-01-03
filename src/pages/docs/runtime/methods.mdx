@@ -40,6 +40,11 @@ export class Balances extends RuntimeModule<BalancesConfig> {
 }
 ```
 
+<Callout type="warning">
+  Non-runtime methods that read the state are only executable by the sequencer. You won't be able to call these methods
+  on the client side (e.g. in the browser or tests), since they would not have access to the required state behind the scenes.
+</Callout>
+
 ### Method visibility
 
 You can make use of `public`, `private`, `protected` keywords to control the visibility of your methods (or state properties). This becomes
