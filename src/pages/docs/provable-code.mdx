@@ -1,0 +1,62 @@
+import { Callout } from "nextra/components";
+
+# Provable code
+
+In order for a zk-rollup to verify the correctness of its operation, it has to be able to prove that e.g. the transaction was executed correctly.
+This is possible thanks to the fact that all the underlying Protokit rollup code is written as zk-circuits using o1js. Therefore creating provable code, resulting in zk-proofs.
+
+## What is o1js?
+
+[o1js](https://docs.minaprotocol.com/zkapps/o1js) is a library created by the team behind Mina that powers all of Protokit.
+It is the backbone of everything we do and provides a simple abstraction over all zk-related things.
+
+<Callout type="info">
+You can learn more about o1js in the [official docs](https://docs.minaprotocol.com/zkapps/o1js).
+</Callout>
+
+Since protokit and mina are both zk-native, we have to be able to "prove" all of the code that we write for our application.
+Proving means turning a computation into a zk-proof. That happens over multiple steps.
+
+1. We write our business and protocol logic using Protokit. In that process we will work with the primitives that o1js exposes to developers.
+That means types for Integers, PublicKeys, hashing functions, Conditionals, etc.
+
+2. We execute your code and translate it behind the scenes in something that is called a "circuit". A circuit is arithmetic representation of your application's code.
+This representation has to be the same for every possible execution of your code. This is why we can't have dynamically bounded loops and typescript if statements in our code (though there are some tricks to mitigate that).
+
+3. The circuit is then used to prove our execution and create a zk-proof (a.k.a. zk-SNARK).
+This proof can then be verified by any other party using a small "verification key", which is also generated using the circuit.
+
+So to summarize, Protokit uses o1js to lift all the snark-related stuff for us, so we can focus on writing good applications.
+
+## Programming patterns in circuits
+
+Writing provable code is relatively straightforward, but there are some things to keep in mind. 
+Nature of proof systems / o1js dictates that all code we execute must be static and have the exact same execution steps with every possible input.
+This creates some caveats we have to watch out for during development, such as avoiding dynamic sized computation like dynamic loops, or "native" if statements.
+
+### Loops
+**Dynamic sized loops are not possible**. However, there are some exceptions and patterns we can still use.
+Specifically, fixed bounded loops. That means that we can create loops as long as the loop always runs the exact same amount of iterations.
+
+The first pattern can be used pretty safely:
+```ts
+for(const i = 0 ; i < 5 ; i++){
+    // Provable code
+}
+```
+
+One has to be a bit more careful with the second pattern though:
+
+```ts
+// Precondition: inputs.length is constant
+function foo(inputs: Field[]){
+    for(const input of inputs){
+        // Provable code
+    }
+}
+```
+The developer has to make sure that the length of _inputs_ stays the same for every invocation.
+A failure to do so will result in something we call "compiler/prover discrepancies", where the circuit we are trying to prove is a different one from the originally compiled one.
+This will throw obscure errors way down the stack, so it's better to avoid these issues alltogether.
+
+Logically, correct usage of this pattern also enables usage of methods like `forEach`, `map`, `reduce`, etc.

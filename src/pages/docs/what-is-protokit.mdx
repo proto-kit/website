@@ -1,0 +1,59 @@
+import { Callout } from 'nextra/components'
+
+# What is Protokit?
+
+Protokit is a framework for building privacy enabled application chains (a.k.a. zk-roll-apps / zk-rollups). Enabling developers to build
+zero-knowledge privacy preserving applications with a minimal learning curve.
+
+The framework itself is powered by [O1JS](https://www.npmjs.com/package/o1js), an SDK for building zkApps. Thanks to O1JS all applications
+built with Protokit are compatible with the Mina blockchain by design - and can use the Mina L1 for settlement. Therefore tapping into the shared security of the Layer-1 consensus.
+
+Furthermore all the code written with Protokit is provable, meaning that transaction execution and block production results in zk-proofs verifiable by the L1 (or anyone).
+
+## What is a rollup?
+
+Rollups are a form of an [L2 scaling solution](https://www.theblock.co/learn/251458/what-are-the-advantages-and-disadvantages-of-layer-2-scaling-solutions), originating from popular networks such as Ethereum. L2 solutions
+aim to address the scalability issues of L1 networks by moving transactions off-chain, while still maintaining the security guarantees of the L1 network.
+
+
+
+### Optimistic vs zk-rollups
+
+There are two main types of rollups, optimistic and zk rollups. Optimistic rollups are the most popular form of rollups, and are used by networks such as [Optimism](https://optimism.io/). 
+Optimistic rollups rely on fraud proofs to ensure the validity of transactions. Fraud proofs are a mechanism that allows users to challenge invalid transactions.
+
+Zk-rollups on the other hand, rely on zero-knowledge proofs to ensure the validity of transactions. Zero-knowledge proofs are a cryptographic mechanism that allows users to prove the validity of a transaction without revealing any information about the transaction itself.
+
+> Applications built with Protokit are zk-rollups, thanks to the underlying O1JS SDK.
+
+## What is an application chain?
+
+Application chain is an application specific form of a rollup, unlike a general-purpose rollup like [zkSync](https://zksync.io/) or [Scroll](https://scroll.io/). Application specific rollups allow developers to optimize their rollup implementation 
+to suit their application's needs, providing a better user experience (e.g. faster block times) and potentially lower fees than general purpose rollups.
+
+## Applications on MINA
+
+#### Smart contracts
+
+[Mina blockchain's](https://docs.minaprotocol.com/) L1 is designed with scalability in mind by moving the smart contract transaction execution off-chain.
+[Smart contracts](https://docs.minaprotocol.com/zkapps) are built as zero-knowledge circuits using O1JS, and are executed on the client side (e.g. in the browser). When a block is produced on the Mina blockchain, the block producer
+does not have to execute the smart-contract code, but only has to verify the validity of the zero-knowledge proof of the smart contract execution. 
+
+This approach allows for lower hardware requirements for node operators, and theoretically a higher transaction throughput / scalability. This approach does introduce some
+novel challenges for developers, where clients transacting in parallel are not aware of each other - thus running into potential race condition scenarios.
+
+#### Rollups
+
+Rollups alleviate the potential race condition scenarios by moving the execution from the client side to the server/sequencer side. Protokit offers a hybrid execution model,
+where code can run both on and off chain, thanks to recursive zero-knowledge proofs. This approach allows us to retain the capabilities of smart contracts, while extending them
+with the capabilities of sequential execution.
+
+Mina's smart contracts offer certain built-in primitives for implementing rollups and addressing the inherent race conditions, such as [Actions & Reducers](https://docs.minaprotocol.com/zkapps/o1js/actions-and-reducer). 
+However the effort to implement and operate a zk-rollup using plain O1JS reducers grows exponentially with the complexity of the application. Protokit aims to abstract away the complexity of building a zk-rollup,
+and allow developers to focus on building their application.
+
+> Thanks to Protokit's modular architecture, you'll be soon™ able to use actions and the underlying sequence state as a mempool for applications built with Protokit.
+
+Question is, where do we draw the line between a smart contract and a rollup?
+Protokit is to rollups, the same as O1JS is to smart contracts - an SDK.
+

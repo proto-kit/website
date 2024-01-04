@@ -1,0 +1,96 @@
+import { Steps } from 'nextra/components'
+import { FileTree } from 'nextra/components'
+
+# Quickstart
+
+The fastest way to start building with Protokit is to use the [starter kit](https://github.com/proto-kit/starter-kit).
+The starter kit provides a [monorepo](https://en.wikipedia.org/wiki/Monorepo1) aimed at kickstarting application chain development using the Protokit framework.
+
+<Steps>
+### Install dependencies
+
+Before you can start building with Protokit, you need to install the following dependencies:
+
+- [Node.js v18](https://nodejs.org/en)
+- [pnpm](https://pnpm.io)
+- [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+### Clone the starter kit
+
+```bash
+# Clone the starter kit
+git clone https://github.com/proto-kit/starter-kit my-chain
+cd my-chain
+
+# Ensure you're on the right nodejs version and install dependnecies
+nvm use
+pnpm install
+```
+
+### Run the tests
+
+```bash
+# run and watch tests for the `chain` package
+pnpm run test --filter=chain -- --watchAll
+```
+
+### Run the sequencer & the UI
+
+```bash
+# starts UI only
+pnpm dev -- --filter web
+# starts sequencer only
+pnpm dev -- --filter chain
+```
+
+### Open the demo UI in the browser
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the results. Assuming your setup went well,
+you'll see an example UI that allows you to interact with your app-chain.
+
+Alternatively you can try [http://localhost:8080/graphql](http://localhost:8080/graphql) to interact with the GraphQL API explorer directly.
+
+### Interact with the demo UI
+
+Setup the [Auro wallet](https://www.aurowallet.com/) if you haven't already. Then connect your wallet in the UI, and claim some tokens from the faucet.
+
+__Congratulations, you've just ran your first app-chain built using Protokit! 🎉__
+</Steps>
+
+## Folder structure
+
+After completing the quickstart setup, you'll end up with a basic Protokit project.
+The project itself is a monorepo containing a Next.js/React based web app at `apps/web`, that connects to an example application chain from `packages/chain`.
+
+The folder structure looks something like this:
+
+<FileTree>
+
+  <FileTree.Folder name="apps/web" open={true}>
+    <FileTree.Folder name="containers" open={true}>
+      <FileTree.File name="async-layout.tsx"/>
+      <FileTree.File name="async-page.tsx"/>
+    </FileTree.Folder>
+
+     <FileTree.Folder name="lib/stores" open={true}>
+      <FileTree.File name="balances.tsx"/>
+      <FileTree.File name="chain.tsx"/>
+      <FileTree.File name="client.tsx"/>
+      <FileTree.File name="wallet.tsx"/>
+    </FileTree.Folder>
+  </FileTree.Folder>
+
+  <FileTree.Folder name="packages/chain" open={true}>
+    <FileTree.Folder name="src" open={true}>
+      <FileTree.File name="balances.ts"/>
+      <FileTree.File name="runtime.ts"/>
+      <FileTree.File name="chain.config.ts"/>
+      <FileTree.File name="client.config.ts"/>
+    </FileTree.Folder>
+        <FileTree.Folder name="test" open={true}>
+      <FileTree.File name="balances.test.ts"/>
+    </FileTree.Folder>
+  </FileTree.Folder>
+
+</FileTree>
+

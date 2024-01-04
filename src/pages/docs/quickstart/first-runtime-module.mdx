@@ -1,0 +1,113 @@
+# Implementing runtime modules
+
+Its safe to assume that you'll want to implement your own runtime module, and add it to the application chain.
+Doing so is very easy, and can be done in a few simple steps. We'll walk through the process of creating a simple
+runtime module called _GuestBook_.
+
+## Designing a runtime module
+
+To design a runtime module, you'll need to consider the following:
+1. What will be configurable in the module?
+2. What data will the module store?
+3. What methods will the module expose?
+
+### Storage
+
+For our _GuestBook_ module, we'll want to allow users to check-in in the guest book.
+We'll start by defining the data model, namely the _CheckIn_ struct, which will determine what constitutes a check-in.
+
+```typescript showLineNumbers filename="packages/chain/src/guest-book/check-in.ts"
+import { Field, PublicKey, Struct, UInt64 } from "o1js";
+
+export class CheckInId extends Field {}
+export class CheckIn extends Struct({
+  guest: PublicKey,
+  createdAt: UInt64,
+  rating: UInt64,
+}) {}
+```
+
+#### Define the runtime module
+
+Second step is to create our runtime module and define the checkIns storage property, which will map a guest to the check-in they made.
+
+```typescript showLineNumbers {11-14} filename="packages/chain/src/guest-book/index.ts"
+import {
+  RuntimeModule,
+  runtimeMethod,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { StateMap, assert } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+import { CheckIn } from "./check-in";
+
+@runtimeModule()
+export class GuestBook extends RuntimeModule<Record<string, never>> {
+  @state() public checkIns = StateMap.from(PublicKey, CheckIn);
+}
+```
+
+### Methods
+
+Now that we have our storage defined, we can start implementing the methods that will allow users to interact with the module.
+We'll define the _checkIn__ method, which will allow users to check-in in the guest book.
+
+> We're using the _transaction sender_ to identify and authorize check-ins.
+
+```typescript showLineNumbers {15-27} filename="packages/chain/src/guest-book/index.ts"
+import {
+  RuntimeModule,
+  runtimeMethod,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { StateMap, assert } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+import { CheckIn } from "./check-in";
+
+@runtimeModule()
+export class GuestBook extends RuntimeModule<Record<string, never>> {
+  @state() public checkIns = StateMap.from(PublicKey, CheckIn);
+
+  @runtimeMethod()
+  public checkIn(rating: UInt64) {
+    assert(rating.lessThanOrEqual(UInt64.from(5)), "Maximum rating can be 5");
+    const guest = this.transaction.sender;
+    const createdAt = this.network.block.height;
+    const checkIn = new CheckIn({
+      guest,
+      createdAt,
+      rating,
+    });
+
+    this.checkIns.set(checkIn.guest, checkIn);
+  }
+}
+```
+
+## Extending the app-chain configuration
+
+In order to make use of the _GuestBook_ runtime module, we have to add it to the app-chain's runtime configuration.
+
+```typescript showLineNumbers {8, 14} filename="packages/chain/src/runtime.ts"
+import { UInt64 } from "o1js";
+import { Balances } from "./balances";
+import { GuestBook } from "./guest-book";
+
+export default {
+  modules: {
+    Balances,
+    GuestBook,
+  },
+  config: {
+    Balances: {
+      totalSupply: UInt64.from(10000),
+    },
+    GuestBook: {},
+  },
+};
+```
+
+**Congratulations! You've just implemented a custom runtime module 🎉.** At this point, you would be
+able to read its storage or send transactions to it from the client side app-chain (e.g. on the UI, or in tests).

@@ -1,0 +1,96 @@
+import { Callout } from "nextra/components"
+
+# Composability
+
+Runtime modules can be composed together in two primary ways: _inheritance_ and _interoperability_.
+Through inheritance, you can extend the functionality of existing runtime modules with new features.
+On the other hand, interoperability provides a way to create dependencies between separate runtime modules.
+
+## Inheritance
+
+Inheritance provides a simple mechanism for extending the functionality of existing runtime modules.
+If you'd like to alter the behavior of a runtime module, you can extend it and override its methods.
+You can even _soft disable_ certain methods if you'd like to prevent them from being called.
+
+```typescript {30-33, 38-41} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option, assert } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @runtimeMethod()
+  public mint(amount: UInt64) {
+    assert(this.transaction.nonce.equals(UInt64.from(0)), "Only new users can mint");
+    this.balances.set(this.transaction.sender, amount);
+  }
+}
+
+@runtimeModule()
+export class CustomBalances extends Balances {
+  @runtimeMethod()
+  public override mint() {
+    this.balances.set(this.transaction.sender, UInt64.from(1));
+  }
+}
+
+@runtimeModule()
+export class NoMintBalances extends Balances {
+  @runtimeMethod()
+  public override mint() {
+    assert(Bool(false), "Minting is disabled");
+  }
+}
+```
+
+## Interoperability
+
+Interoperability provides a way to create dependencies between separate runtime modules. Thanks to
+constructor based _dependency injection_, you can inject one runtime module into another as a dependency. 
+For this to work, both runtimes have to be a part of the same runtime.
+
+In the example below we inject the _Balances_ runtime module into the _Vesting_ runtime module.
+this allows us to mint tokens freely, since both modules are part of the same runtime.
+
+<Callout type="warning">
+This is a significant paradigm shift when compared to traditional smart contract development. Its up
+to the developer to determine if multiple modules can safely co-exist within the same runtime. State and method
+access is permissionless within the same runtime, so you should be careful when injecting dependencies.
+</Callout>
+
+```typescript {30-33, 38-41} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option, assert } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+import { inject } from "tsyringe"
+import { Balances } from "./balances";
+ 
+@runtimeModule()
+export class Vesting extends RuntimeModule<Record<string, never>> {
+  public constructor(@inject("Balances") private balances: Balances) {}
+
+  @runtimeMethod()
+  public claim() {
+    this.balances.mint(this.transaction.sender, UInt64.from(1000))
+  }
+}
+```
