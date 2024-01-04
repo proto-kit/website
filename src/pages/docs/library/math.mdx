@@ -5,7 +5,7 @@ import { Callout } from 'nextra/components'
 Generally, all types that are usable in o1js are also usable out-of-the-box in protokit.
 But there are some caveats to dealing with bounded integers (`UInt64`, `UInt32`).
 
-### Integers
+## Integers
 
 By default, o1js exposes two classes `UInt64` and `UInt32` to protect you from overflows that can happen
 if you use `Field` directly.
@@ -25,7 +25,7 @@ In addition to the o1js methods, we implement the `sqrtMod()` and `sqrtFloor()` 
     Make sure to import from `@proto-kit/library` when using `UInt32` and `UInt64`
 </Callout>
 
-### Precision
+## Precision
 
 Since we don't have access to real numbers, only integers, doing things like division might get tricky sometimes.
 That's why most other ecosystems have adapted precision based integers.

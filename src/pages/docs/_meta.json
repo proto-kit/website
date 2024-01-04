@@ -5,6 +5,7 @@
   },
   "what-is-protokit": "What is Protokit?",
   "architecture": "Architecture",
+  "faq": "FAQ",
   "-- Developer Documentation": {
     "type": "separator",
     "title": "Developer Documentation"
