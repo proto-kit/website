@@ -9,28 +9,9 @@
     "type": "separator",
     "title": "Developer Documentation"
   },
+  "provable-code": "Provable code",
   "quickstart": "Quickstart",
   "runtime": "Runtime",
-  "-- WIP": {
-    "type": "separator",
-    "title": "WIP"
-  },
-  "build-provable-code": "Build provable code",
-  "basics": "Basics",
-  "testing": "Testing",
-  "running": "Running",
-  "ui": "Writing UIs",
-  "advanced": "Advanced",
-  "tutorials": "Tutorials",
-  "-- Concepts": {
-    "type": "separator",
-    "title": "Concepts"
-  },
-  "concepts": "Foundational Concepts",
-  "concepts.advanced": "Advanced Concepts",
-  "-- Other": {
-    "type": "separator",
-    "title": "Other"
-  },
-  "version": "What's new in Protokit"
+  "library": "Library",
+  "advanced": "Advanced"
 }

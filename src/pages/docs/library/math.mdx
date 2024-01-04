@@ -1,9 +1,8 @@
 import { Callout } from 'nextra/components'
 
-# Usable and helpful data types
+# Math
 
 Generally, all types that are usable in o1js are also usable out-of-the-box in protokit.
-
 But there are some caveats to dealing with bounded integers (`UInt64`, `UInt32`).
 
 ### Integers
@@ -13,7 +12,7 @@ if you use `Field` directly.
 Unfortunately, these don't work well with Protokit since they use the hard-failing o1js assertions instead of the protokit-specific `assert`.
 This leads to your application being non-complete and being unable to include failed transactions in settlements.
 
-To overcome this, we created a number of classes in `@proto-kit/common` that handle all of that for you while providing the same interface as the vanilla variants.
+To overcome this, we created a number of classes in `@proto-kit/library` that handle all of that for you while providing the same interface as the vanilla variants.
 
 - `UInt32`
 - `UInt64`
@@ -22,8 +21,8 @@ To overcome this, we created a number of classes in `@proto-kit/common` that han
 
 In addition to the o1js methods, we implement the `sqrtMod()` and `sqrtFloor()` functions to help facilitate square-root calculations.
 
-<Callout type="default">
-    Make sure to import from `@proto-kit/common` when using `UInt32` and `UInt64`
+<Callout type="warning">
+    Make sure to import from `@proto-kit/library` when using `UInt32` and `UInt64`
 </Callout>
 
 ### Precision
