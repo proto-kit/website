@@ -11,6 +11,14 @@ With Protokit, the developer is responsible for building their own application c
 blockchain. This means that the features of your application are de-facto the features of your own blockchain. Therefore instead of 
 implementing and deploing smart contracts, the developer implements runtime modules and deploys them as a whole as their _application chain_.
 
+## How does Protokit enable privacy?
+
+Protokit is built on top of MINA's o1js library, which is a zk-dsl. You can use it to write circuits which produce zero knowledge proofs.
+Runtime modules can accept proofs as arguments, which under the hood turns the transaction execution into a recursive zero-knowledge proof.
+
+This means you can generate a zero knowledge proof on the client side - e.g. in the browser, and send that proof as part of a transaction to
+your application chain's runtime. The sequencer will execute your transaction 'on server side', by passing the client side proof to the respective runtime method.
+
 ## How is my application chain connected to MINA?
 
 Application chains built with Protokit can be settled to MINA, this means that the state of your application chain is anchored to MINA's blockchain.
@@ -18,7 +26,6 @@ All of this is possible thanks to the _L1 settlement contract(s)_, which need to
 for verifying the transaction processing and block production of your application chain.
 
 > Please keep in mind that the L1 contracts are still a work in progress.
-
 
 ## Do i have to run my own infrastructure?
 
