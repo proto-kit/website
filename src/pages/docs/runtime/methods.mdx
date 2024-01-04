@@ -109,6 +109,78 @@ Runtime methods can only accept arguments of a valid type.
 - array
 - and other non-o1js/native primitives
 
+### Proofs as arguments
+
+Using proofs as arguments is a powerful feature of the runtime, which results in the provided proof being
+recursively included in the proof of the runtime method execution. You can generate client-side proofs using o1js's zk-program,
+and pass them as arguments to your runtime methods.
+
+<Callout type="warning">
+The zk program below is a dummy program, it always returns true, effectively proving nothing. 
+For a real use case, make sure to implement a secure and sound zk program that correctly verifies eligibility of the user to mint.
+</Callout>
+
+Here's how an example proof as argument would look like:
+
+```typescript showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64, Bool, Experimental } from "o1js";
+import { dummyBase64Proof } from "o1js/dist/node/lib/proof_system";
+import { Pickles } from "o1js/dist/node/snarky";
+
+// your zk-circuit proving the user is eligible to mint
+const canMint = () => {
+  return Bool(true);
+};
+
+// your zk program goes here
+const canMintProgram = Experimental.ZkProgram({
+  publicOutput: Field,
+  publicInput: Bool,
+
+  methods: {
+    canMint: {
+      privateInputs: [],
+      // eslint-disable-next-line putout/putout
+      method: canMint,
+    },
+  },
+});
+
+// define the type of the proof
+class CanMintProof extends Experimental.ZkProgram.Proof(canMintProgram) {}
+
+// generate a dummy proof, to be used when testing the runtime method
+const [, dummy] = Pickles.proofOfBase64(await dummyBase64Proof(), 2);
+const publicInput = Field(0);
+const proof = new ProgramProof({
+  proof: dummy,
+  publicOutput: canMint(publicInput),
+  publicInput,
+  maxProofsVerified: 2,
+});
+
+@runtimeModule()
+export class Balances extends RuntimeModule<Record<string, never>> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @runtimeMethod()
+  public mint(canMintProof: CanMintProof) {
+    canMintProof.verify();
+    this.balances.set(address, amount);
+  }
+}
+```
+
 ## Assertions
 
 Both regular and runtime methods within the runtime cannot forcefully fail. This means that to handle various
