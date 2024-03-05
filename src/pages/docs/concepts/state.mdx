@@ -1,0 +1,39 @@
+# State & Storage
+
+Preliminary: [Sparse Merkle Trees](./sparse-trees)
+
+## State
+
+In protokit, every state you define inside your runtime or protocol modules follows the same pattern
+and is tightly coupled with the concept of state transitions.
+
+Protokit state is built as a Key-Value-Storage,
+where every key is a single `Field` element and the values can be an arbitrary-length `Field[]`.
+
+We abstract over this concept by offering the `@state()` APIs, which do all necessary conversions in the background.
+
+### Paths
+
+In protokit, we call our keys "paths", as they are derived from the business logic.
+
+For `State`, the path is calculated using the runtime module name, and the state's property name.
+$hash(modulename || propertyname)$
+
+For `StateMap`, the process is similar with addition of the key used in the map access,
+$hash(modulename || propertyname || hash(key.toFields()))$
+
+As an example, assume you call:
+```ts showLineNumbers {2,5}
+class Balances extends RuntimeModule {
+  @state() ledger = StateMap.from(PublicKey, UInt64);
+
+  public mint(sender, amount) {
+    this.ledger.set(sender, amount)
+  }
+}
+
+```
+
+For the call on line 5, the path would (roughly) be
+
+`Poseidon.hash(["Balances", "ledger", Poseidon.hash([sender])]){:ts}`
