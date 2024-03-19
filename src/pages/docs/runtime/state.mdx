@@ -1,0 +1,207 @@
+# State
+
+Runtime modules are responsible for managing their own state. Runtime state is stored by the sequencer,
+and accessible in a provable way within runtime modules.
+
+## State path
+From an app-chain perspective, there is only a single _state tree_ shared between all runtime modules.
+This means we need a way to determine which state property belongs to which runtime module to avoid name collisions between modules.
+
+We do this by using a _state path_, which consists of the _runtime module name_ and the _state property name_. In the case of a state map,
+the state path is extended with the _state key_ used to access the value.
+
+The single state tree model also means that runtime modules can access state from other modules (both read and write). As long as
+they can reconstruct the module's state paths for each state property.
+
+The state API, namely the decorators take care of generating the state paths for you, so you don't have to worry about it.
+
+## Types of state
+
+There are two types of state/storage available for runtime modules: _state_ and _state map_. State is a single value, while
+state map is a mapping between two values (key-value). You can have an idefinite number of state properties on a module,
+and the state map can have a near indefinite number of key-value pairs. 
+
+> Amount of available entries in the state map is a subject to size of the underlying state tree. By default 
+> the state tree height is 256, allowing for 2^256 entries combined for the entire app-chain.
+
+```typescript {15-18, 20} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { State, StateMap } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @state() public circulatingSupply = State.from<UInt64>(UInt64);
+}
+```
+
+### Allowed state types
+
+When it comes to determining which data types can be used as state, we have to consider
+both _state values_ and in the case of a map, also _state keys_. In fact both of these
+fall under the same constraints.
+
+**✅ You can use the following data types as state values and keys:**
+- UInt64, UInt32
+- Field
+- Signature
+- PublicKey and other o1js primitives
+- Structs
+
+**❌ The following types are _not_ supported as storage values or keys:**
+- Proof(s)
+
+## Reading state
+
+Accessing runtime state within a runtime module is done via the state API. State
+is represented as an _optional_ value, since it may or may not exists at the time when its read.
+This scenario can easily occur, if you're reading a state value before it has been set.
+
+```typescript {22-24, 26-28} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  @state() public circulatingSupply = State.from<UInt64>(UInt64);
+
+  public getBalance(address: PublicKey): Option<UInt64> {
+    return this.balances.get(address);
+  }
+
+  public getCirculatingSupply(): Option<UInt64> {
+    return this.circulatingSupply.get();
+  }
+}
+```
+
+### Options and dummy values
+
+State values are represented as options, which means there may or may not be a _real_ value underneath. We need options
+in order to execute the runtime method in a provable way, even if there are no state values available. In such case the option
+will carry a value substitute, known as a _dummy value_. 
+
+> Imagine if we tried to execute the runtime method, but we wouldn't be able to provide a value for the retrieved state. Our circuit would
+> behave in an unpredictable way or not work at all.
+
+#### Some vs None
+
+You can determine if the obtained state value exists, or if its a dummy by accessing the `.isSome` property on the option.
+
+```typescript {20-22} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  public hasBalance(address: PublicKey): Bool {
+    return this.balances.get(address).isSome;
+  }
+}
+```
+
+#### Unwrapping options
+
+Relying on the dummy value is not the best practice, therefore we offer a `.orElse(...)` method on the option, which
+allows you to provide a fallback value in case the option is _none_.
+
+```typescript {20-22} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+
+  public getBalance(address: PublicKey): UInt64 {
+    return this.balances.get(address).orElse(UInt64.from(0));
+  }
+}
+```
+
+## Writing state
+
+Writing to the state is equally as easy as reading the state. Instead of `.get(...)` you can use
+`.set(...)`. Setting a value of an already existing state key will overwrite the previous value.
+
+> The set state API does not work with options, you can pass the actual values you want directly.
+
+
+```typescript {20-22} showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+} from "@proto-kit/module";
+import { State, StateMap, Option } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+ 
+  public setBalance(address: PublicKey, amount: UIn64) {
+    this.balances.set(address, amount);
+  }
+}
+```

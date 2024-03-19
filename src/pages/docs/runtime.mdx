@@ -1,0 +1,56 @@
+# Runtime
+
+In this section of the documentation we will cover the fundamental concepts behind runtime and runtime modules.
+You can learn more about the runtime architecture in the [architecture docs](/docs/architecture/runtime)
+
+### Designing runtime modules
+
+Runtime modules are fundamentally different than smart-contracts, as in they are not _deployed_ individually, 
+but rather composed into a single _Runtime_. This means that they don't have individual addresses as contracts do.
+
+Therefore when designing e.g. the storage of a runtime module, you must consider the lifetime of the module and the data it stores.
+With smart-contracts you could deploy a new contract for 'each user' - but you can't do that with a runtime module. Which means you
+have to mitigate this by storing the data in a way that is shared between all users. The same applies to runtime methods as well.
+
+## Defining a runtime module
+
+First step towards building a runtime is to define a runtime module. Typical runtime module will consist of the following:
+_configuration_, _storage_ and _methods_. Every runtime module must extend the `RuntimeModule` class, and be decorated
+with the `@runtimeModule()` decorator.
+
+```typescript showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+} from "@proto-kit/module";
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<Record<string, never>> {}
+```
+
+> `Record<string, never>` signifies an empty configuration object.
+
+### Configuration
+
+Configuration of the runtime module is immutable during execution. This means that any value you define as configuration,
+will be made part of the underlying zero knowledge circuits as constants. Config is accessible as part of the
+runtime module instance under `this.config.totalSupply`.
+
+```typescript {7-9, 13-15} showLineNumbers  filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+} from "@proto-kit/module";
+import { UInt64 } from "o1js";
+ 
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+ 
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  public getTotalSupply() {
+    return this.config.totalSupply
+  }
+}
+```

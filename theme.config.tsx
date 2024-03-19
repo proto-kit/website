@@ -6,7 +6,7 @@ import { Footer } from "./src/components/footer";
 const config: DocsThemeConfig = {
   logo: <Logo />,
   search: {
-    component: null,
+    placeholder: "Search docs...",
   },
   project: {
     link: "https://github.com/proto-kit",
@@ -15,12 +15,23 @@ const config: DocsThemeConfig = {
     link: "https://x.com/proto_kit",
     icon: <div className="text-2xl">𝕏</div>,
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: "https://github.com/proto-kit/website/tree/main/",
   footer: {
     component: <Footer />,
   },
   themeSwitch: {
     component: null,
+  },
+  toc: {
+    extraContent: undefined,
+    backToTop: true,
+  },
+  editLink: {},
+  feedback: {
+    content: null,
+  },
+  sidebar: {
+    toggleButton: true,
   },
   head: null,
   useNextSeoProps() {
@@ -56,4 +67,8 @@ const config: DocsThemeConfig = {
   primaryHue: { light: 28, dark: 28 },
 };
 
-export default config;
+export default {
+  ...config,
+  stackblitzUrl:
+    "https://stackblitz.com/github/proto-kit/starter-kit?file=packages%2Fchain%2Ftest%2Fbalances.test.ts&startScript=test",
+};

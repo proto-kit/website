@@ -1,0 +1,160 @@
+# Testing
+
+Testing runtime modules allows you to ensure your module works properly, before
+you plug it into the rest of your app-chain. This section of the documentation
+builds on top of the [starter kit](/docs/quickstart). (using the jest test runner)
+
+### Runtime module
+
+The example module we will be testing is a simple balances module, which allows
+tokens to be minted at the genesis block. Minting after the genesis block should
+result in an error.
+
+```typescript showLineNumbers filename="balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { assert, StateMap } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+
+export const errors = {
+  mintOnlyAtGenesis: "Minting is only allowed at the genesis block",
+};
+
+@runtimeModule()
+export class Balances extends RuntimeModule<Record<string, never>> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+
+  @runtimeMethod()
+  public mint(address: PublicKey, amount: UInt64) {
+    assert(
+      this.network.block.height.equals(UInt64.from(1)),
+      errors.mintOnlyAtGenesis
+    );
+    this.balances.set(address, amount);
+  }
+}
+```
+
+### Acceptance criteria
+
+The two easiest layers at which the runtime module can be tested are: _state_ and _transaction_.
+That means we should use a user signed tranasction, to create a change in the state - or not, depending
+on the test scenario.
+
+In our case, we can implement two sequential tests:
+- ✅ mint at the genesis block
+- ❌ mint again in the second block and expect it to fail
+
+Acceptance criteria for both of these tests will be based on the transaction status, 
+and the state of the balances module. Meaning if the user's balance has changed or not.
+
+## Testing environment
+
+The most straightforward way to test your runtime is by wrapping it in an app-chain. 
+This will make your runtime callable by test transactions, and also the underlying runtime data
+fetchable by the query API.
+
+You can setup a _TestingAppChain_ by passing your runtime module, setting up the
+transaction API signer and starting the app-chain like this:
+
+```typescript showLineNumbers filename="balances.test.ts"
+import { TestingAppChain } from "@proto-kit/sdk";
+import { PrivateKey, UInt64 } from "o1js";
+import { Balances, errors } from "../src/balances";
+
+describe("balances", () => {
+   let appChain: TestingAppChain<{
+    Balances: typeof Balances;
+  }>;
+
+  let balances: Balances;
+
+  const alicePrivateKey = PrivateKey.random();
+  const alice = alicePrivateKey.toPublicKey();
+
+  beforeAll(async () => {
+    appChain = TestingAppChain.fromRuntime({
+      modules: {
+        Balances,
+      },
+      config: {
+        Balances: {},
+      },
+    });
+
+    await appChain.start();
+
+    appChain.setSigner(alicePrivateKey);
+
+    balances = appChain.runtime.resolve("Balances");
+  });
+});
+```
+
+Once your testing app-chain is started, you can start writing your actual tests.
+
+## Test cases
+
+### ✅ Mint at the genesis block
+
+First test case is to mint at the genesis block, expect the transaction to succeed
+and modify the state of the balances module. 
+
+Here's what needs to happen for our test case to pass:
+1. Forge and send a transaction to the _balances.mint_ method
+2. Produce a block on the testing app-chain
+3. Retrieve the balance of the transaction sender (alice).
+4. Assert the transaction status to be truthy, and the balance to be the minted amount.
+
+```typescript showLineNumbers filename="balances.test.ts"
+it("should mint at the genesis block", async () => {
+  const tx = await appChain.transaction(alice, () => {
+    balances.mint(alice, UInt64.from(1000));
+  });
+
+  await tx.sign();
+  await tx.send();
+
+  const block = await appChain.produceBlock();
+  const balance = await appChain.query.runtime.Balances.balances.get(alice);
+
+  expect(block?.txs[0].status).toBe(true);
+  expect(balance?.toBigInt()).toBe(1000n);
+}, 1_000_000);
+```
+
+### ❌ Mint again in the second block and expect it to fail
+
+Second test case is to mint at the second block, expect the transaction to fail
+and **not** modify the state of the balances module. 
+
+Here's what needs to happen for our test case to pass:
+1. Forge and send a transaction to the _balances.mint_ method
+2. Produce the second block on the testing app-chain
+3. Retrieve the balance of the transaction sender (alice).
+4. Assert the transaction status to be false, and the balance to be the originally minted amount.
+
+```typescript showLineNumbers filename="balances.test.ts"
+it("should not mint at the second block", async () => {
+  const tx = await appChain.transaction(alice, () => {
+    balances.mint(alice, UInt64.from(1000));
+  });
+
+  await tx.sign();
+  await tx.send();
+
+  const block = await appChain.produceBlock();
+  const balance = await appChain.query.runtime.Balances.balances.get(alice);
+
+  expect(block?.txs[0].status).toBe(false);
+  expect(block?.txs[0].statusMessage).toBe(errors.mintOnlyAtGenesis);
+  expect(balance?.toBigInt()).toBe(1000n);
+}, 1_000_000);
+```

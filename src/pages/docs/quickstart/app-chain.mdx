@@ -1,0 +1,118 @@
+import { FileTree } from 'nextra/components'
+
+# App-chain's runtime
+
+The starter-kit project contains an example application chain, that consists of a runtime created from a single runtime module called _Balances_.
+This runtime module stores a ledger of balances for public keys, and the current circulating supply. 
+
+It also defines a single runtime method called _addBalance_, which allows tokens to be minted for a certain address. It looks like this:
+
+```typescript showLineNumbers filename="packages/chain/src/balances.ts"
+import {
+  RuntimeModule,
+  runtimeModule,
+  state,
+  runtimeMethod,
+} from "@proto-kit/module";
+import { State, StateMap, assert } from "@proto-kit/protocol";
+import { PublicKey, UInt64 } from "o1js";
+
+interface BalancesConfig {
+  totalSupply: UInt64;
+}
+
+@runtimeModule()
+export class Balances extends RuntimeModule<BalancesConfig> {
+  @state() public balances = StateMap.from<PublicKey, UInt64>(
+    PublicKey,
+    UInt64
+  );
+
+  @state() public circulatingSupply = State.from<UInt64>(UInt64);
+
+  @runtimeMethod()
+  public addBalance(address: PublicKey, amount: UInt64): void {
+    const circulatingSupply = this.circulatingSupply.get();
+    const newCirculatingSupply = circulatingSupply.value.add(amount);
+    assert(
+      newCirculatingSupply.lessThanOrEqual(this.config.totalSupply),
+      "Circulating supply would be higher than total supply"
+    );
+    this.circulatingSupply.set(newCirculatingSupply);
+    const currentBalance = this.balances.get(address);
+    const newBalance = currentBalance.value.add(amount);
+    this.balances.set(address, newBalance);
+  }
+}
+```
+
+## Testing the runtime
+
+In general it is considered a good practice to test your runtime modules in isolation. The starter kit
+comes with a simple test suite that demonstrates how to do this. The test suite below does the following:
+
+1. Setup a `TestingAppChain.fromRuntime`, providing only the _Balances_ module.
+2. Provides non-mutable configuration for the _Balances_ module, including the _totalSupply_.
+2. Starts the application chain, generates keypairs for testing and sets the transaction signer.
+3. Forges a transaction to the `Balances` module, calling the `addBalance` method.
+4. Signs and sends the transaction and produces a block for the application chain.
+5. Queries the _Balances_ module for the balance of the test account (keypair generated earlier).
+6. Asserts that the transaction was included in the block, while the execution of the transaction was successful.
+7. Asserts that the balance of the test account has updated accordingly.
+
+> The _TestingAppChain_ is a special type of application chain that is designed to be used in tests. It runs an in-memory version of the sequencer as well!
+
+```typescript showLineNumbers filename="packages/chain/test/balances.test.ts"
+import { TestingAppChain } from "@proto-kit/sdk";
+import { PrivateKey, UInt64 } from "o1js";
+import { Balances } from "../src/balances";
+
+describe("balances", () => {
+  it("should demonstrate how balances work", async () => {
+    const appChain = TestingAppChain.fromRuntime({
+      modules: {
+        Balances,
+      },
+      config: {
+        Balances: {
+          totalSupply: UInt64.from(10000),
+        },
+      },
+    });
+
+    await appChain.start();
+
+    const alicePrivateKey = PrivateKey.random();
+    const alice = alicePrivateKey.toPublicKey();
+
+    appChain.setSigner(alicePrivateKey);
+
+    const balances = appChain.runtime.resolve("Balances");
+
+    const tx1 = await appChain.transaction(alice, () => {
+      balances.addBalance(alice, UInt64.from(1000));
+    });
+
+    await tx1.sign();
+    await tx1.send();
+
+    const block = await appChain.produceBlock();
+
+    const balance = await appChain.query.runtime.Balances.balances.get(alice);
+
+    expect(block?.txs[0].status).toBe(true);
+    expect(balance?.toBigInt()).toBe(1000n);
+  }, 1_000_000);
+});
+```
+
+### Running the test(s)
+
+The test above can be executed with the following command:
+
+> Note: the `--watchAll` flag is optional, and will re-run the test suite when files change.
+
+```bash
+pnpm run test --filter=chain -- --watchAll
+```
+

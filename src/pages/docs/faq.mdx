@@ -1,0 +1,60 @@
+# FAQ
+
+This section gathers the most commonly asked questions about Protokit, and aims to provide a bite-sized answer to each of them.
+
+## How do smart contracts compare to runtime modules?
+
+In general purpose blockchains, smart contracts are used to implement business logic. Usually the developer is responsible for
+_deploying_ a smart contract to the blockchain - normally associated with an on-chain address for the smart-contract itself (like in EVM).
+
+With Protokit, the developer is responsible for building their own application chain, which is not a _general purpose blockchain_, but an application specific
+blockchain. This means that the features of your application are de-facto the features of your own blockchain. Therefore instead of 
+implementing and deploing smart contracts, the developer implements runtime modules and deploys them as a whole as their _application chain_.
+
+## How does Protokit enable privacy?
+
+Protokit is built on top of MINA's o1js library, which is a zk-dsl. You can use it to write circuits which produce zero knowledge proofs.
+Runtime modules can accept proofs as arguments, which under the hood turns the transaction execution into a recursive zero-knowledge proof.
+
+This means you can generate a zero knowledge proof on the client side - e.g. in the browser, and send that proof as part of a transaction to
+your application chain's runtime. The sequencer will execute your transaction 'on server side', by passing the client side proof to the respective runtime method.
+
+## How is my application chain connected to MINA?
+
+Application chains built with Protokit can be settled to MINA, this means that the state of your application chain is anchored to MINA's blockchain.
+All of this is possible thanks to the _L1 settlement contract(s)_, which need to be deployed to MINA's blockchain. These contracts are responsible
+for verifying the transaction processing and block production of your application chain.
+
+> Please keep in mind that the L1 contracts are still a work in progress.
+
+## Do i have to run my own infrastructure?
+
+As of now, yes. Once your Protokit based application-chain is ready for "testing" you will need to run your own infrastructure. This means that you will need to run your own
+sequencer. We are working on making sure hosting your own sequencer is as easy as possible (devops wise). 
+
+## Do i have to generate proofs during development?
+
+No, you do not. It is advised to stick to "mock proofs" during development and testing of your application chain. This approach results into quicker iteration
+times and faster test suites. If your runtime design is correct and your circuit implementation is sound, then "enabling proofs" should be just a matter of sequencer configuration.
+
+## What stage of development is Protokit in?
+
+Protokit development began in Q2 2023, and is currently in the early stages of development. We encourage developers to start building with Protokit today, since the 'gist' of the
+SDK is already there. We are working on making the developer experience as smooth as possible, and we are looking forward to your feedback!
+
+## How is Protokit funded?
+
+Protokit is funded publicly thanks to the support of community grant programs from the Mina foundation.
+
+## Is Protokit free to use / opensource?
+
+Yes, and it allways will be.
+
+## How can i contribute?
+
+The best way to contribute right now is to start building open source runtime modules, and sharing them with the Protokit community. 
+We're working on the Protokit library, if you'd like to see more plug-and-play runtime modules, please consider contributing to the library.
+
+## I am stuck, where can i get help?
+
+You can reach out to #tech-support in our [Discord server](https://discord.gg/AMGnGAxsKp).
