@@ -34,10 +34,10 @@ The code below does the following:
 
 ```typescript showLineNumbers {30-35} filename="packages/chain/test/interaction.test.ts"
 import { InMemorySigner } from "@proto-kit/sdk";
+import { UInt64 } from "@proto-kit/library";
 import { client as appChain } from "./../src/client.config";
-import { PrivateKey, Provable, UInt64 } from "o1js";
+import { PrivateKey } from "o1js";
 import { GuestBook } from "../src/guest-book";
-import { sleep } from "@proto-kit/common";
 
 const signer = PrivateKey.random();
 const sender = signer.toPublicKey();
@@ -91,10 +91,11 @@ Here's a breakdown of what happens in the test suite below:
 3. Wait for a couple seconds for a block to be produced
 4. Query the latest check-in for the sender address, from the GraphQL API of the locally hosted sequencer.
 
-```typescript showLineNumbers {37-40} filename="packages/chain/test/interaction.test.ts"
+```typescript showLineNumbers {38-40} filename="packages/chain/test/interaction.test.ts"
 import { InMemorySigner } from "@proto-kit/sdk";
+import { UInt64 } from "@proto-kit/library";
 import { client as appChain } from "./../src/client.config";
-import { PrivateKey, Provable, UInt64 } from "o1js";
+import { PrivateKey, Provable } from "o1js";
 import { GuestBook } from "../src/guest-book";
 import { sleep } from "@proto-kit/common";
 

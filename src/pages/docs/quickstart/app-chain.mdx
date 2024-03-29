@@ -8,42 +8,37 @@ This runtime module stores a ledger of balances for public keys, and the current
 It also defines a single runtime method called _addBalance_, which allows tokens to be minted for a certain address. It looks like this:
 
 ```typescript showLineNumbers filename="packages/chain/src/balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-  runtimeMethod,
-} from "@proto-kit/module";
-import { State, StateMap, assert } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { runtimeModule, state, runtimeMethod } from "@proto-kit/module";
+import { State, assert } from "@proto-kit/protocol";
+import { Balance, Balances as BaseBalances, TokenId } from "@proto-kit/library";
+import { PublicKey } from "o1js";
 
 interface BalancesConfig {
-  totalSupply: UInt64;
+  totalSupply: Balance;
 }
 
 @runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+export class Balances extends BaseBalances<BalancesConfig> {
+  @state() public circulatingSupply = State.from<Balance>(Balance);
 
-  @state() public circulatingSupply = State.from<UInt64>(UInt64);
+  // implicitly inherited from `BaseBalances`
+  // @state() public balances = StateMap.from<BalancesKey, Balance>(..);
 
   @runtimeMethod()
-  public addBalance(address: PublicKey, amount: UInt64): void {
+  public addBalance(tokenId: TokenId, address: PublicKey, amount: Balance) {
     const circulatingSupply = this.circulatingSupply.get();
-    const newCirculatingSupply = circulatingSupply.value.add(amount);
+    const newCirculatingSupply = Balance.from(circulatingSupply.value).add(
+      amount
+    );
     assert(
       newCirculatingSupply.lessThanOrEqual(this.config.totalSupply),
       "Circulating supply would be higher than total supply"
     );
     this.circulatingSupply.set(newCirculatingSupply);
-    const currentBalance = this.balances.get(address);
-    const newBalance = currentBalance.value.add(amount);
-    this.balances.set(address, newBalance);
+    this.mint(tokenId, address, amount);
   }
 }
+
 ```
 
 ## Testing the runtime
@@ -64,16 +59,21 @@ comes with a simple test suite that demonstrates how to do this. The test suite 
 
 ```typescript showLineNumbers filename="packages/chain/test/balances.test.ts"
 import { TestingAppChain } from "@proto-kit/sdk";
-import { PrivateKey, UInt64 } from "o1js";
+import { PrivateKey } from "o1js";
 import { Balances } from "../src/balances";
+import { log } from "@proto-kit/common";
+import { BalancesKey, TokenId, UInt64 } from "@proto-kit/library";
+
+log.setLevel("ERROR");
 
 describe("balances", () => {
   it("should demonstrate how balances work", async () => {
     const appChain = TestingAppChain.fromRuntime({
-      modules: {
-        Balances,
-      },
-      config: {
+      Balances,
+    });
+
+    appChain.configurePartial({
+      Runtime: {
         Balances: {
           totalSupply: UInt64.from(10000),
         },
@@ -84,13 +84,14 @@ describe("balances", () => {
 
     const alicePrivateKey = PrivateKey.random();
     const alice = alicePrivateKey.toPublicKey();
+    const tokenId = TokenId.from(0);
 
     appChain.setSigner(alicePrivateKey);
 
     const balances = appChain.runtime.resolve("Balances");
 
     const tx1 = await appChain.transaction(alice, () => {
-      balances.addBalance(alice, UInt64.from(1000));
+      balances.addBalance(tokenId, alice, UInt64.from(1000));
     });
 
     await tx1.sign();
@@ -98,9 +99,10 @@ describe("balances", () => {
 
     const block = await appChain.produceBlock();
 
-    const balance = await appChain.query.runtime.Balances.balances.get(alice);
+    const key = new BalancesKey({ tokenId, address: alice });
+    const balance = await appChain.query.runtime.Balances.balances.get(key);
 
-    expect(block?.txs[0].status).toBe(true);
+    expect(block?.transactions[0].status.toBoolean()).toBe(true);
     expect(balance?.toBigInt()).toBe(1000n);
   }, 1_000_000);
 });

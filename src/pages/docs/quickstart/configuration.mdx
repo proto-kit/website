@@ -4,19 +4,25 @@ Your app-chain can be configured at three different levels: _runtime_, _chain_ a
 overall runtime configuration, specifying the definition/configuration of your runtime module layout:
 
 ```typescript {5-7} showLineNumbers filename="packages/chain/src/runtime.ts"
-import { UInt64 } from "o1js";
+import { Balance } from "@proto-kit/library";
 import { Balances } from "./balances";
+import { ModulesConfig } from "@proto-kit/common";
 
-export default {
-  modules: {
-    Balances,
-  },
-  config: {
-    Balances: {
-      totalSupply: UInt64.from(10000),
-    },
+export const modules = {
+  Balances,
+};
+
+export const config: ModulesConfig<typeof modules> = {
+  Balances: {
+    totalSupply: Balance.from(10_000),
   },
 };
+
+export default {
+  modules,
+  config,
+};
+
 ```
 
 ## Server & client configuration
@@ -28,16 +34,31 @@ Keep in mind that configuration for the rest of the app-chain, namely the protoc
 > _chain.config.ts_ is used by Protokit's CLI to start a server-side app-chain, while _client.config.ts_ is used by the Protokit SDK to connect 
 to the server-side app-chain via e.g. GraphQL.
 
-```typescript {6} showLineNumbers filename="packages/chain/src/chain.config.ts"
+```typescript {4} showLineNumbers filename="packages/chain/src/chain.config.ts"
 import { LocalhostAppChain } from "@proto-kit/cli";
 import runtime from "./runtime";
 
-export default LocalhostAppChain.fromRuntime(runtime) as any; 
+const appChain = LocalhostAppChain.fromRuntime(runtime.modules);
+
+appChain.configure({
+  ...appChain.config,
+  Runtime: runtime.config,
+});
+
+// TODO: remove temporary `as any` once `error TS2742` is resolved
+export default appChain as any;
 ```
 
-```typescript {6} showLineNumbers filename="packages/chain/src/client.config.ts"
+```typescript {4} showLineNumbers filename="packages/chain/src/client.config.ts"
 import { ClientAppChain } from "@proto-kit/sdk";
 import runtime from "./runtime";
 
-export const client = ClientAppChain.fromRuntime(runtime);
+const appChain = ClientAppChain.fromRuntime(runtime.modules);
+
+appChain.configurePartial({
+  Runtime: runtime.config,
+});
+
+export const client = appChain;
+
 ```
