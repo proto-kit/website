@@ -64,7 +64,6 @@ export const HeroGraphic = () => {
             <Button size="lg" asChild>
               <a
                 href={DOCS_URL}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="gap-2"
               >
