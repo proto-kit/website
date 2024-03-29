@@ -17,7 +17,8 @@ For our _GuestBook_ module, we'll want to allow users to check-in in the guest b
 We'll start by defining the data model, namely the _CheckIn_ struct, which will determine what constitutes a check-in.
 
 ```typescript showLineNumbers filename="packages/chain/src/guest-book/check-in.ts"
-import { Field, PublicKey, Struct, UInt64 } from "o1js";
+import { Field, PublicKey, Struct } from "o1js";
+import { UInt64 } from "@proto-kit/library";
 
 export class CheckInId extends Field {}
 export class CheckIn extends Struct({
@@ -39,7 +40,7 @@ import {
   state,
 } from "@proto-kit/module";
 import { StateMap, assert } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
 import { CheckIn } from "./check-in";
 
 @runtimeModule()
@@ -55,7 +56,7 @@ We'll define the _checkIn__ method, which will allow users to check-in in the gu
 
 > We're using the _transaction sender_ to identify and authorize check-ins.
 
-```typescript showLineNumbers {15-27} filename="packages/chain/src/guest-book/index.ts"
+```typescript showLineNumbers {16-27} filename="packages/chain/src/guest-book/index.ts"
 import {
   RuntimeModule,
   runtimeMethod,
@@ -63,8 +64,9 @@ import {
   state,
 } from "@proto-kit/module";
 import { StateMap, assert } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
 import { CheckIn } from "./check-in";
+import { UInt64 } from "@proto-kit/library";
 
 @runtimeModule()
 export class GuestBook extends RuntimeModule<Record<string, never>> {
@@ -73,8 +75,8 @@ export class GuestBook extends RuntimeModule<Record<string, never>> {
   @runtimeMethod()
   public checkIn(rating: UInt64) {
     assert(rating.lessThanOrEqual(UInt64.from(5)), "Maximum rating can be 5");
-    const guest = this.transaction.sender;
-    const createdAt = this.network.block.height;
+    const guest = this.transaction.sender.value;
+    const createdAt = UInt64.from(this.network.block.height);
     const checkIn = new CheckIn({
       guest,
       createdAt,
@@ -90,23 +92,29 @@ export class GuestBook extends RuntimeModule<Record<string, never>> {
 
 In order to make use of the _GuestBook_ runtime module, we have to add it to the app-chain's runtime configuration.
 
-```typescript showLineNumbers {8, 14} filename="packages/chain/src/runtime.ts"
-import { UInt64 } from "o1js";
+```typescript showLineNumbers {8, 15} filename="packages/chain/src/runtime.ts"
+import { Balance } from "@proto-kit/library";
 import { Balances } from "./balances";
+import { ModulesConfig } from "@proto-kit/common";
 import { GuestBook } from "./guest-book";
 
-export default {
-  modules: {
-    Balances,
-    GuestBook,
-  },
-  config: {
-    Balances: {
-      totalSupply: UInt64.from(10000),
-    },
-    GuestBook: {},
-  },
+export const modules = {
+  Balances,
+  GuestBook,
 };
+
+export const config: ModulesConfig<typeof modules> = {
+  Balances: {
+    totalSupply: Balance.from(10_000),
+  },
+  GuestBook: {},
+};
+
+export default {
+  modules,
+  config,
+};
+
 ```
 
 **Congratulations! You've just implemented a custom runtime module 🎉.** At this point, you would be

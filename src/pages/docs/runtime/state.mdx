@@ -24,14 +24,15 @@ and the state map can have a near indefinite number of key-value pairs.
 > Amount of available entries in the state map is a subject to size of the underlying state tree. By default 
 > the state tree height is 256, allowing for 2^256 entries combined for the entire app-chain.
 
-```typescript {15-18, 20} showLineNumbers filename="balances.ts"
+```typescript {16-19, 21} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
   state,
 } from "@proto-kit/module";
 import { State, StateMap } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -55,11 +56,11 @@ both _state values_ and in the case of a map, also _state keys_. In fact both of
 fall under the same constraints.
 
 **✅ You can use the following data types as state values and keys:**
-- UInt64, UInt32
+- UInt64, UInt32 (from `@proto-kit/library`)
 - Field
 - Signature
 - PublicKey and other o1js primitives
-- Structs
+- Structs _(⚠️ Need to be instantiated manually once retrieved from the state API)_
 
 **❌ The following types are _not_ supported as storage values or keys:**
 - Proof(s)
@@ -70,34 +71,34 @@ Accessing runtime state within a runtime module is done via the state API. State
 is represented as an _optional_ value, since it may or may not exists at the time when its read.
 This scenario can easily occur, if you're reading a state value before it has been set.
 
-```typescript {22-24, 26-28} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
- 
+```typescript {19-23, 25-29} showLineNumbers filename="balances.ts"
+import { RuntimeModule, runtimeModule, state } from "@proto-kit/module";
+import { Option, State, StateMap } from "@proto-kit/protocol";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
+
 interface BalancesConfig {
   totalSupply: UInt64;
 }
- 
+
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from<PublicKey, UInt64>(
     PublicKey,
     UInt64
   );
- 
+
   @state() public circulatingSupply = State.from<UInt64>(UInt64);
 
-  public getBalance(address: PublicKey): Option<UInt64> {
-    return this.balances.get(address);
+  public getBalance(address: PublicKey): UInt64 {
+    const balance = this.balances.get(address); // Option<UInt64>
+    // Instantiate the UInt64 struct, only required if you're storing structs in the state
+    return UInt64.from(balance.value);
   }
 
-  public getCirculatingSupply(): Option<UInt64> {
-    return this.circulatingSupply.get();
+  public getCirculatingSupply(): UInt64 {
+    const circulatingSupply = this.circulatingSupply.get();
+    return UInt64.from(circulatingSupply.value);
   }
 }
 ```
@@ -115,14 +116,15 @@ will carry a value substitute, known as a _dummy value_.
 
 You can determine if the obtained state value exists, or if its a dummy by accessing the `.isSome` property on the option.
 
-```typescript {20-22} showLineNumbers filename="balances.ts"
+```typescript {21-23} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
   state,
 } from "@proto-kit/module";
 import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -146,14 +148,15 @@ export class Balances extends RuntimeModule<BalancesConfig> {
 Relying on the dummy value is not the best practice, therefore we offer a `.orElse(...)` method on the option, which
 allows you to provide a fallback value in case the option is _none_.
 
-```typescript {20-22} showLineNumbers filename="balances.ts"
+```typescript {21-24} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
   state,
 } from "@proto-kit/module";
 import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -167,7 +170,37 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   );
 
   public getBalance(address: PublicKey): UInt64 {
-    return this.balances.get(address).orElse(UInt64.from(0));
+    const balance = this.balances.get(address).orElse(UInt64.from(0));
+    return UInt64.from(balance.value);
+  }
+}
+```
+
+#### Structs
+
+Structs have to be instantiated manually, since they are not automatically deserialized from the state API. This is due to
+how o1js's `fromFields` API behaves - creating a "non-methods" version of the struct that just appears to match the struct structure,
+but does not contain any of its instance methods.
+
+> In certain cases consuming structs without re-instantiating them will work, but once you override the constructor of the struct you'll
+> need to instantiate the struct by hand yourself.
+
+Here's an example of how to use structs with the state API:
+
+```typescript
+class MyStruct extends Struct({}) {
+  public hash() {
+    return Poseidon.hash(MyStruct.toFields(this));
+  }
+}
+
+class MyModule extends RuntimeModule<Record<never, never>> {
+  @state() public myStruct = State.from<MyStruct>(MyStruct);
+
+  @runtimeMethod()
+  public hashStruct() {
+    const myStruct = new MyStruct(this.myStruct.get().value);
+    Provable.log(myStruct.hash())
   }
 }
 ```
@@ -180,14 +213,16 @@ Writing to the state is equally as easy as reading the state. Instead of `.get(.
 > The set state API does not work with options, you can pass the actual values you want directly.
 
 
-```typescript {20-22} showLineNumbers filename="balances.ts"
+```typescript {22-24} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
   state,
 } from "@proto-kit/module";
 import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
+
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -200,8 +235,9 @@ export class Balances extends RuntimeModule<BalancesConfig> {
     UInt64
   );
  
-  public setBalance(address: PublicKey, amount: UIn64) {
+  public setBalance(address: PublicKey, amount: UInt64) {
     this.balances.set(address, amount);
   }
 }
 ```
+import { fr } from "date-fns/locale"

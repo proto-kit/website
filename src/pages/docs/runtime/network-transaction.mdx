@@ -10,16 +10,17 @@ a runtime method:
 - Current block height
 - Previous block's state root hash
 
-```typescript {24, 30} showLineNumbers filename="balances.ts"
+```typescript {25-28, 34} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
   state,
   runtimeMethod,
 } from "@proto-kit/module";
-import { State, StateMap, Option } from "@proto-kit/protocol";
+import { StateMap, assert } from "@proto-kit/protocol";
 import { MintProof } from './mint-proof'
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library"
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -34,7 +35,10 @@ export class Balances extends RuntimeModule<BalancesConfig> {
  
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {
-    assert(this.network.block.height.lessThanEqual(UInt64.from(1000)), "Minting ended at block height #1000");
+    assert(
+      UInt64.from(this.network.block.height).lessThanOrEqual(UInt64.from(1000)),
+      "Minting ended at block height #1000"
+    );
     this.balances.set(address, amount);
   }
 
@@ -56,7 +60,7 @@ You can access the following information about the transaction:
 
 > The _methodId_ and _argsHash_ are used by the _runtimeMethod_ decorator to prove that the runtime method execution was authorized by the transaction sender.
 
-```typescript {23, 24} showLineNumbers filename="balances.ts"
+```typescript {21} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -64,7 +68,8 @@ import {
   runtimeMethod,
 } from "@proto-kit/module";
 import { assert, StateMap } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library"
 
 @runtimeModule()
 export class Balances extends RuntimeModule<Record<string, never>> {
@@ -76,8 +81,8 @@ export class Balances extends RuntimeModule<Record<string, never>> {
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {
     assert(
-      this.network.block.height.equals(UInt64.from(1)),
-      "Minting allowed only at genesis block"
+      this.transaction.sender.value.equals(address),
+      "Minting can only be done by the owner of the address"
     );
     this.balances.set(address, amount);
   }
