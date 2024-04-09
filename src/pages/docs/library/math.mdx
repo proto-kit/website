@@ -19,32 +19,74 @@ To overcome this, we created a number of classes in `@proto-kit/library` that ha
 - `UInt112`
 - `UInt224`
 
-In addition to the o1js methods, we implement the `sqrtMod()` and `sqrtFloor()` functions to help facilitate square-root calculations.
+In addition to the methods known from o1js, we implement the `sqrtMod(){:ts}` and `sqrtFloor(){:ts}` functions to help facilitate square-root calculations.
 
 <Callout type="warning">
     Make sure to import from `@proto-kit/library` when using `UInt32` and `UInt64`
 </Callout>
 
-## Precision
+### Creating protokit UInts
 
-Since we don't have access to real numbers, only integers, doing things like division might get tricky sometimes.
-That's why most other ecosystems have adapted precision based integers.
+There are multiple ways of creating UInts, each of them with their own properties.
+This example uses `UInt64`, but can be used with any other UInt the same way.
 
-In our case, we use `UInt112` as the primary precision type, holding 112 bits of integer.
-112 bits is reasonably efficient for Kimchi range-checks and has more than enough room for 18-decimal precision.
 
-We have created helpers to facilitate working with precisions in your runtime code: `PrecisionUInt112` and `PrecisionUInt224`.
+The most straight forward one is using `UInt64.from(){:ts}`. This accepts `UInt64 | string | bigint | number{:ts}`.
+It should be used for creation of a constant or for copying a existing UInt.
 
-An example of how you can divide a `UInt112` number `x` by a another number `y` of the same type:
-
-```typescript copy {4-6}
-const precision = UInt112.from(10n ** 18n);
-
-function divide(x: UInt112, y: UInt112): UInt112 {
-  return PrecisionUInt112.fromUInt112(x)
-    .mulPrecision(precision)
-    .divPrecision(y)
-}
+```typescript copy
+// Using string
+const uint1 = UInt64.from("5");
+// Using number
+const uint2 = UInt64.from(5);
+// Using another UInt64
+const uint3 = UInt64.from(uint1);
 ```
 
-Since `PrecisionUInt112` is a subclass of `UInt112`, we can use polymorphism when returning it.
+To convert a Field into a UInt, you can use both the `Safe` and `Unsafe` `fromField(){:ts}` function.
+
+```typescript copy
+// Creates a UInt64 and performs necessary range checks on the given `field`
+UInt64.Safe.fromField(field);
+
+// Creates a UInt64 without performing range checks.
+// This safes constraints, but relies on the given field to be ensured to be in range
+UInt64.Unsafe.fromField(Field(1));
+```
+
+Because range checks (which are used under the hood to enable the safety of UInts) are very expensive,
+these different methods of creating and transforming UInts are a way for developers to optimize and decrease proving effort.
+
+### Transforming UInts
+
+Sometimes we need to go from a specific UInt bit-range to a different one. Let's say we want to go from UInt32 to UInt64 and back.
+
+The upward direction is trivial and will not generate additional constraints
+
+```typescript
+const uint64 = UInt64.Unsafe.fromField(uint32.value);
+```
+
+Going down to UInt32 again, we need to range-check the 64-bit number to ensure it is within 32-bits.
+Therefore, we need to use the `Safe.fromField` method.
+
+```typescript
+const uint32 = UInt32.Safe.fromField(uint64.value);
+```
+
+For some UInts, simpler conversion functions exist.
+
+- `UInt32.toUInt64(){:ts}`
+- `UInt112.toUInt224(){:ts}`
+
+### Converting to o1js UInt64
+
+Every UInt from the `@proto-kit/library` package also has a conversion function to turn it into a `o1js` UInt64
+
+```typescript
+// Will fail the transaction if the value of uint exceeds 64 bits
+const o1jsUint = uint.toO1UInt64()
+
+// If the value of `uint` exceeds 64 bits, it will take the maximum value fitting into 64 bits
+const o1jsUint2 = uint.toO1UInt64Clamped()
+```
