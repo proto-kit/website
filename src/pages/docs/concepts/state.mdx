@@ -17,10 +17,10 @@ We abstract over this concept by offering the `@state()` APIs, which do all nece
 In protokit, we call our keys "paths", as they are derived from the business logic.
 
 For `State`, the path is calculated using the runtime module name, and the state's property name.
-$hash(modulename || propertyname)$
+$hash(modulename \space || \space propertyname)$
 
 For `StateMap`, the process is similar with addition of the key used in the map access,
-$hash(modulename || propertyname || hash(key.toFields()))$
+$hash(modulename \space || \space propertyname \space || \space hash(key.toFields()))$
 
 As an example, assume you call:
 ```ts showLineNumbers {2,5}
@@ -34,6 +34,14 @@ class Balances extends RuntimeModule {
 
 ```
 
-For the call on line 5, the path would (roughly) be
+For the call on line 5, the computed path would (roughly) be
 
-`Poseidon.hash(["Balances", "ledger", Poseidon.hash([sender])]){:ts}`
+$Poseidon.hash(["Balances", "ledger", Poseidon.hash([sender])]){:ts}$
+
+### State Tree
+
+Protokit operates on a single global sparse merkle tree that holds all the state of the runtime and protocol.
+We call this the "state tree" and through having height 256, the domain size equals $2^{256}$.
+
+This domain size allows us to have a 1:1 mapping of any Field to a unique leaf in the state tree.
+We leverage this to the fact that every protokit state path is at the same time the index of the leaf in the state tree where it's value is stored.
