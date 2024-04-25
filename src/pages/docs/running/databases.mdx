@@ -1,0 +1,98 @@
+import { Callout } from "nextra/components";
+
+# Persisting data using Databases
+
+Protokit has a built-in way to persist data while keeping the architecture lightweight to enable in-memory testing
+using the full protokit stack.
+
+Persistence in protokit is built in a modular fashion, giving you the ability to seamlessly switch out databases as you like.
+You can even save different parts of your appchain in different databases entirely!
+
+## Database Modules
+
+When a Sequencer for a AppChain is configured, it requires a Database module that tells the Sequencer everything it needs to know about where to persist the data.
+
+The Database module itself injects a variety of adapters into the Sequencer's modules that handle mapping, reading and updating data in a particular DBMS.
+
+The database services can be divided into three major categories:
+
+- **State Storage**: Modules for storing the current on-chain state of the appchain
+- **Merkle Tree Storage**: Modules for storing the merkle-tree that encodes the onchain-state with efficient methods of permutating said tree
+- **Operational objects**: This includes data that is a result of block production or other object that are saved for the purpose of operating the appchain. Examples of this are blocks, proof and mempool transactions.
+
+## In-Memory Operation
+
+By default, the InMemoryDatabase is configured as the *Database* module.
+
+This implementation enables you to skip setting up any database and store all data in-memory.
+You can use this for testing or for demo purposes.
+Keep in mind, that once your appchain stops or is restarted, all progress will be lost.
+
+```typescript {4} showLineNumbers filename="inmemory.ts"
+import { DefaultSequencer, InMemoryDatabase } from "@proto-kit/sequencer";
+
+const sequencer = DefaultSequencer.from({
+  Database: InMemoryDatabase
+});
+```
+
+## PostgreSQL & Redis
+
+For production use, we offer a implementation that uses both PostgreSQL (via Prisma) and Redis.
+
+The PostgreSQL connection is implemented via [Prisma ORM](https://www.prisma.io/orm), and is used for persisting the state and all operational objects.
+
+Because of the nature of merkle trees and the load that changes to the tree carry with them, the merkle tree persistance is handled by [Redis](https://redis.io/).
+This choice allows us to efficiently set and query large sets of
+
+### AppChain Configuration
+
+To use this connection, we use the *PrismaRedisDatabase* module, that contains and configures both the Prisma and Redis connectors.
+
+You'll have to inject the *PrismaRedisDatabase* under the module name "Database"
+
+```typescript {10,17-34} showLineNumbers filename="postgres-redis-db.ts"
+import {
+  DefaultSequencer,
+} from "@proto-kit/sequencer";
+import { PrismaRedisDatabase } from "@proto-kit/persistance";
+import { AppChain } from "@proto-kit/sdk";
+
+const app = AppChain.from({
+  sequencer:
+    DefaultSequencer.from({
+      Database: PrismaRedisDatabase
+    }),
+  ...
+})
+
+app.configure({
+  Sequencer: {
+    Database: {
+      redis: {
+        host: "localhost",
+        port: 6379,
+        password: "password",
+      },
+      prisma: {
+        connection: {
+          host: "localhost",
+          password: "password",
+          username: "user",
+          port: 5432,
+          db: {
+            name: "protokit",
+          }
+        }
+      },
+    }
+  },
+  ...
+});
+
+await app.start()
+```
+
+<Callout type="info">
+    Make sure to think carefully about your database choice, as we currently don't offer support for migrating to other databases
+</Callout>

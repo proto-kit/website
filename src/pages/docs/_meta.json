@@ -13,7 +13,9 @@
   "provable-code": "Provable code",
   "quickstart": "Quickstart",
   "runtime": "Runtime",
+  "running": "Running",
   "library": "Library",
+  "concepts": "Concepts",
   "advanced": "Advanced",
   "tutorials": "Tutorials"
 }
