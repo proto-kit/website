@@ -62,7 +62,7 @@ export class NoMintBalances extends Balances {
 
 Interoperability provides a way to create dependencies between separate runtime modules. Thanks to
 constructor based _dependency injection_, you can inject one runtime module into another as a dependency. 
-For this to work, both runtimes have to be a part of the same runtime.
+For this to work, both modules have to be a part of the same runtime.
 
 In the example below we inject the _Balances_ runtime module into the _Vesting_ runtime module.
 this allows us to mint tokens freely, since both modules are part of the same runtime.
