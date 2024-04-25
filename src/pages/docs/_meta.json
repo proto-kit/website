@@ -14,8 +14,8 @@
   "quickstart": "Quickstart",
   "runtime": "Runtime",
   "running": "Running",
-  "concepts": "Concepts",
   "library": "Library",
+  "concepts": "Concepts",
   "advanced": "Advanced",
   "tutorials": "Tutorials"
 }
