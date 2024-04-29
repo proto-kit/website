@@ -163,7 +163,7 @@ class CanMintProof extends Experimental.ZkProgram.Proof(canMintProgram) {}
 // generate a dummy proof, to be used when testing the runtime method
 const [, dummy] = Pickles.proofOfBase64(await dummyBase64Proof(), 2);
 const publicInput = Field(0);
-const proof = new ProgramProof({
+const proof = new CanMintProof({
   proof: dummy,
   publicOutput: canMint(publicInput),
   publicInput,
