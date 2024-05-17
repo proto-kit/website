@@ -31,17 +31,20 @@ pnpm install
 
 ```bash
 # run and watch tests for the `chain` package
-pnpm run test --filter=chain -- --watchAll
+pnpm run test --filter=chain
 ```
+
+> Note: There's an optional `--watchAll` flag, which will re-run the test suite when files change.
+
 
 ### Run the sequencer & the UI
 
 ```bash
 # starts sequencer only
-pnpm dev -- --filter chain
+pnpm dev --filter chain
 
 # starts UI only
-pnpm dev -- --filter web
+pnpm dev --filter web
 ```
 
 ### Open the demo UI in the browser
