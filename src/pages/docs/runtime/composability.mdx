@@ -12,7 +12,7 @@ Inheritance provides a simple mechanism for extending the functionality of exist
 If you'd like to alter the behavior of a runtime module, you can extend it and override its methods.
 You can even _soft disable_ certain methods if you'd like to prevent them from being called.
 
-```typescript {31-34, 39-42} showLineNumbers filename="balances.ts"
+```typescript {28-31,36-39} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -29,10 +29,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public mint(amount: UInt64) {

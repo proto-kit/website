@@ -24,7 +24,7 @@ and the state map can have a near indefinite number of key-value pairs.
 > Amount of available entries in the state map is a subject to size of the underlying state tree. By default 
 > the state tree height is 256, allowing for 2^256 entries combined for the entire app-chain.
 
-```typescript {16-19, 21} showLineNumbers filename="balances.ts"
+```typescript {16, 18} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -40,12 +40,9 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
-  @state() public circulatingSupply = State.from<UInt64>(UInt64);
+  @state() public circulatingSupply = State.from(UInt64);
 }
 ```
 
@@ -71,7 +68,7 @@ Accessing runtime state within a runtime module is done via the state API. State
 is represented as an _optional_ value, since it may or may not exists at the time when its read.
 This scenario can easily occur, if you're reading a state value before it has been set.
 
-```typescript {19-23, 25-29} showLineNumbers filename="balances.ts"
+```typescript {16-20, 22-25} showLineNumbers filename="balances.ts"
 import { RuntimeModule, runtimeModule, state } from "@proto-kit/module";
 import { Option, State, StateMap } from "@proto-kit/protocol";
 import { PublicKey } from "o1js";
@@ -83,12 +80,9 @@ interface BalancesConfig {
 
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
 
-  @state() public circulatingSupply = State.from<UInt64>(UInt64);
+  @state() public circulatingSupply = State.from(UInt64);
 
   public getBalance(address: PublicKey): UInt64 {
     const balance = this.balances.get(address); // Option<UInt64>
@@ -116,7 +110,7 @@ will carry a value substitute, known as a _dummy value_.
 
 You can determine if the obtained state value exists, or if its a dummy by accessing the `.isSome` property on the option.
 
-```typescript {21-23} showLineNumbers filename="balances.ts"
+```typescript {18-20} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -132,10 +126,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   public hasBalance(address: PublicKey): Bool {
     return this.balances.get(address).isSome;
@@ -148,7 +139,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
 Relying on the dummy value is not the best practice, therefore we offer a `.orElse(...)` method on the option, which
 allows you to provide a fallback value in case the option is _none_.
 
-```typescript {21-24} showLineNumbers filename="balances.ts"
+```typescript {18-21} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -164,10 +155,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
 
   public getBalance(address: PublicKey): UInt64 {
     const balance = this.balances.get(address).orElse(UInt64.from(0));
@@ -195,7 +183,7 @@ class MyStruct extends Struct({}) {
 }
 
 class MyModule extends RuntimeModule<Record<never, never>> {
-  @state() public myStruct = State.from<MyStruct>(MyStruct);
+  @state() public myStruct = State.from(MyStruct);
 
   @runtimeMethod()
   public hashStruct() {
@@ -213,7 +201,7 @@ Writing to the state is equally as easy as reading the state. Instead of `.get(.
 > The set state API does not work with options, you can pass the actual values you want directly.
 
 
-```typescript {22-24} showLineNumbers filename="balances.ts"
+```typescript {19-21} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -230,10 +218,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   public setBalance(address: PublicKey, amount: UInt64) {
     this.balances.set(address, amount);

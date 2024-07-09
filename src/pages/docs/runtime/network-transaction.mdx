@@ -10,7 +10,7 @@ a runtime method:
 - Current block height
 - Previous block's state root hash
 
-```typescript {25-28, 34} showLineNumbers filename="balances.ts"
+```typescript {22-25,31} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -28,10 +28,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {
@@ -60,7 +57,7 @@ You can access the following information about the transaction:
 
 > The _methodId_ and _argsHash_ are used by the _runtimeMethod_ decorator to prove that the runtime method execution was authorized by the transaction sender.
 
-```typescript {21} showLineNumbers filename="balances.ts"
+```typescript {18} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -73,10 +70,7 @@ import { UInt64 } from "@proto-kit/library"
 
 @runtimeModule()
 export class Balances extends RuntimeModule<Record<string, never>> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
 
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {

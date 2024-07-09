@@ -46,16 +46,12 @@ They work similar to the runtime `@state(){:ts}` state and emit StateTransitions
 To define state in ProtocolModules, you will have to use the `@protocolState(){:ts}` decorator instead of `@state(){:ts}`.
 The rest, like the `State` and `StateMap` classes, stays the same.
 
-```ts {2-5,8-9,11} showLineNumbers filename="ProtocolStateModule" copy
+```ts {2,5,7} showLineNumbers filename="ProtocolStateModule" copy
 export class ProtocolStateModule extends ProvableTransactionHook {
-  @protocolState() public accountState = StateMap.from<PublicKey, AccountState>(
-    PublicKey,
-    AccountState
-  );
+  @protocolState() public accountState = StateMap.from(PublicKey, AccountState);
 
   public onTransaction({ transaction }: BlockProverExecutionData): void {
-    const accountState = this.accountState
-      .get(transaction.sender)
+    const accountState = this.accountState.get(transaction.sender)
 
     this.accountState.set(transaction.sender, someAccountState);
     ...
