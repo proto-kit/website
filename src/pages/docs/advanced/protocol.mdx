@@ -50,10 +50,10 @@ The rest, like the `State` and `StateMap` classes, stays the same.
 export class ProtocolStateModule extends ProvableTransactionHook {
   @protocolState() public accountState = StateMap.from(PublicKey, AccountState);
 
-  public onTransaction({ transaction }: BlockProverExecutionData): void {
-    const accountState = this.accountState.get(transaction.sender)
+  public onTransaction(): void {
+    const accountState = this.accountState.get(this.transaction.sender.value)
 
-    this.accountState.set(transaction.sender, someAccountState);
+    this.accountState.set(this.transaction.sender, someAccountState);
     ...
   }
 }
