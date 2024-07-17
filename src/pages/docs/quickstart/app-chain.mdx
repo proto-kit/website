@@ -19,10 +19,10 @@ interface BalancesConfig {
 
 @runtimeModule()
 export class Balances extends BaseBalances<BalancesConfig> {
-  @state() public circulatingSupply = State.from<Balance>(Balance);
+  @state() public circulatingSupply = State.from(Balance);
 
   // implicitly inherited from `BaseBalances`
-  // @state() public balances = StateMap.from<BalancesKey, Balance>(..);
+  // @state() public balances = StateMap.from(..);
 
   @runtimeMethod()
   public addBalance(tokenId: TokenId, address: PublicKey, amount: Balance) {

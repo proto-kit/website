@@ -14,7 +14,7 @@ In order to maintain good testability of the runtime module, it is recommended t
 method implementation without side-effects as well. Methods may freely interact with the state API or other methods,
 and can include a return value too.
 
-```typescript {21-24} showLineNumbers filename="balances.ts"
+```typescript {18-21} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -30,10 +30,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   public getBalance(address: PublicKey): UInt64 {
     const balance = this.balances.get(address);
@@ -63,7 +60,7 @@ these methods will be callable via transactions regardless of visibility.
 
 > The example below allows *anyone* to set a balance for *anyone*. This is obviously not a good idea, do not do this.
 
-```typescript {22-25} showLineNumbers filename="balances.ts"
+```typescript {19-22} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -80,10 +77,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {
@@ -172,10 +166,7 @@ const proof = new CanMintProof({
 
 @runtimeModule()
 export class Balances extends RuntimeModule<Record<string, never>> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public mint(canMintProof: CanMintProof, amount: UInt64) {
@@ -204,7 +195,7 @@ a subject to all the assert calls within the method. If one assertion fails, the
   You can use our built in math primitives instead - they are shipped <br/> as `@proto-kit/library`.
 </Callout>
 
-```typescript {22-28} showLineNumbers filename="balances.ts"
+```typescript {19-25} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -221,10 +212,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public transfer(from: PublicKey, to: PublicKey, amount: UInt64) {
