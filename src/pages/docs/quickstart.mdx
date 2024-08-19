@@ -48,6 +48,9 @@ pnpm run test --filter=chain
 ### Run the sequencer & the UI
 
 ```bash
+# build dependency chain package
+pnpm run build --filter chain
+
 # starts sequencer only
 pnpm env:inmemory dev --filter chain
 
