@@ -15,5 +15,10 @@
   "runtime": "Runtime",
   "library": "Library",
   "advanced": "Advanced",
-  "tutorials": "Tutorials"
+  "tutorials": "Tutorials",
+  "-- Contributor Documentation": {
+    "type": "separator",
+    "title": "Developer Documentation"
+  },
+  "workers": "Worker Architecture"
 }
