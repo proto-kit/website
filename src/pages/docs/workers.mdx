@@ -35,7 +35,7 @@ This tells the `LocalTaskWorkerModule` it is ready, and the `LocalTaskWorkerModu
 This is another sequencer module that waits until key events have been emitted by the `LocalTaskWorkerModule` to signal that the worker
 is ready and that the AppChain can continue. The `WorkerReadyModule` is called by the `AppChain.ts` at the end of the `start()` method.
 If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then the AppChain will never finish its start-up. Note that the
-`waitForReady()` is will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
+`waitForReady()` will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
 
 ## SequencerStartUpModule
 This is module is designed to ensure that all zk-circuits are compiled and their verification keys are accessible to the workers that
