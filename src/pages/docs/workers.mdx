@@ -33,10 +33,10 @@ it is ready, and the `LocalTaskWorkerModule` emits a `ready` event of its own th
 
 ## WorkerReadyModule
 
-This is another sequencer module that waits until key events have been emitted by the LocalTaskWorkerModule to signal that the worker
+This is another sequencer module that waits until key events have been emitted by the `LocalTaskWorkerModule` to signal that the worker
 is ready and that the app chain can continue. The `WorkerReadyModule` is called by the `AppChain.ts` at the end of the `start()` method.
-If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then the AppChain will never finish it's start-up. Note that the
-`waitForReady()` is will always complete if the AppChain is not a worker, in particular if LocalTaskWorkerModule is not defined.
+If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then the AppChain will never finish its start-up. Note that the
+`waitForReady()` is will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
 
 ## SequencerStartUpModule
 
