@@ -38,7 +38,6 @@ If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then
 `waitForReady()` is will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
 
 ## SequencerStartUpModule
-
 This is module is designed to ensure that all zk-circuits are compiled and their verification keys are accessible to the workers that
 will need them. This spares workers from having to waste resources compiling the circuits themselves. This is achieved by having the AppChain
 use the verification keys, and compilation artifacts, which are static parameters, as input to the `WorkerRegistrationFlow`. This in turns leaves
@@ -48,8 +47,19 @@ sequencer uses the `WorkerRegistrationFlow` to push the same task again in a bou
 awaits until a worker has registered. We ensure it's the new worker that picks up this task from the queue and not an older worker that is already configured,
 by having the old worker be configured to delete the task-handler for the registration from its local queue so that it can't handle that particular kind of task, anymore.
 
-## TaskQueue
+## Worker Start-up Flow
+A summary of the worker registration flow:
+1. The `LocalTaskWorkerModule` creates a worker.
+2. The worker is started, which registers the callbacks for `Unprepared` tasks with the queue.
+3. The worker calls the `prepare()` method for the `Regular` tasks.
+4. The worker registers `Regular` tasks with the queue.
+5. The AppChain, specifically `SequencerStartupModule`, compiles the zk-circuits of the various zk-Programs.
+6. The `SequencerStartupModule` submits a `WorkerRegistration` task to the queue.
+7. The worker listens to the queue and processes the `WorkerRegistration` task.
+8. The AppChain continues and starts submitting tasks to the queue, which the worker processes.
 
+
+## TaskQueue
 The TaskQueue has two different implementations:
 
 ### BullQueue
