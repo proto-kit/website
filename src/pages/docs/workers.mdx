@@ -54,7 +54,7 @@ A summary of the worker registration flow:
 3. The worker calls the `prepare()` method for the `Regular` tasks.
 4. The worker registers `Regular` tasks with the queue.
 5. The AppChain, specifically `SequencerStartupModule`, compiles the zk-circuits of the various zk-Programs.
-6. The `SequencerStartupModule` submits a `WorkerRegistration` task to the queue.
+6. The `SequencerStartupModule` invokes  the `WorkerRegistrationFlow` and submits a `WorkerRegistration` task to the queue.
 7. The worker listens to the queue and processes the `WorkerRegistration` task.
 8. The AppChain continues and starts submitting tasks to the queue, which the worker processes.
 
