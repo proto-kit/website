@@ -26,15 +26,14 @@ There are two types of tasks: `Unprepared`, i.e. tasks that don’t have a prepa
  `Regular`, i.e. all other tasks that require registration.
 
 When the worker is started it first registers the required callback functions for the `Unprepared` tasks, i.e. `CircuitCompilerTask` and `WorkerRegistrationTask`,
-with the queue, so that when the queue receives these tasks the worker can process them. Then, the LocalWorkerTaskModule
-calls the `prepare` method for non-startup/normal tasks, before registering them with the queue. This registration ensures the worker is ready to handle any request
-when one later comes in. Once these are completed a promise is resolved, called `prepareResolve`. This tells the LocalWorkerTaskModule
-it is ready, and the `LocalTaskWorkerModule` emits a `ready` event of its own that other modules like the `WorkerReadyModule` are waiting for to proceed.
+with its local instance of the queue. Then, the `LocalTaskWorkerModule` calls the `prepare` method for non-startup/normal tasks, before registering their callbacks with the queue.
+This registration ensures the worker is ready to handle any request when one later arrives via the queue. Once all the tasks are registered a promise is resolved, called `prepareResolve`.
+This tells the `LocalTaskWorkerModule` it is ready, and the `LocalTaskWorkerModule` emits a `ready` event of its own that other modules like the `WorkerReadyModule` are waiting for to proceed.
 
 ## WorkerReadyModule
 
 This is another sequencer module that waits until key events have been emitted by the `LocalTaskWorkerModule` to signal that the worker
-is ready and that the app chain can continue. The `WorkerReadyModule` is called by the `AppChain.ts` at the end of the `start()` method.
+is ready and that the AppChain can continue. The `WorkerReadyModule` is called by the `AppChain.ts` at the end of the `start()` method.
 If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then the AppChain will never finish its start-up. Note that the
 `waitForReady()` is will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
 
