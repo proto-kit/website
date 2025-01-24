@@ -1,0 +1,27 @@
+# Provable Events
+The ability for a runtime method to emit provable events gives the user a way to produce events that are verifiable.
+The events appear in the output of the runtime method and are stored in the database. Note that due to variable like nature
+of the number of events emitted, we commit to a hash of the events.
+
+Consider the below example for how to define a runtime module and method which outputs provable events.
+```typescript {28-31,36-39} showLineNumbers filename="balances.ts"
+export class TestEvent extends Struct({
+  message: Bool,
+}) {}
+
+@runtimeModule()
+class EventMaker extends RuntimeModule {
+  public constructor() {
+    super();
+  }
+
+  public events = new RuntimeEvents({
+    primary: TestEvent,
+  });
+
+  @runtimeMethod()
+  public async makeEvent() {
+    this.events.emit("primary", new TestEvent({ message: Bool(false) }));
+  }
+}
+```

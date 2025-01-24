@@ -20,5 +20,6 @@
     "type": "separator",
     "title": "Contributor Documentation"
   },
-  "workers": "Worker Architecture"
+  "workers": "Worker Architecture",
+  "provable-events": "Provable Events"
 }
