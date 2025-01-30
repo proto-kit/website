@@ -1,0 +1,17 @@
+# Modularity
+
+The Protokit framework is built with modularity in mind. Under the hood, we use [`tsyringe`](https://github.com/microsoft/tsyringe) to facilitate
+constructor based dependency injection.
+
+## Configurability
+
+Basic building block of our modular architecture is module configurability, implemented as `ConfigurableModule`. This ensures
+that any module that requires upfront configuration to work properly, will be configured accordingly and in a type-safe manner.
+
+## Module containers
+
+Module containers are a way to group individual related modules into a single tsyringe DI container. At the same time these containers provide
+an additional layer of functionality, such as additionaly decorating said modules with configs.
+
+### Container lifecycle
+
