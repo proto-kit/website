@@ -18,6 +18,10 @@ First, run `pnpm i` to install the dependencies.
 
 Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
+## Typedoc generation
+
+Typedoc / reference docs must be generated in the `framework` repo first, and then it can be copied over by running `pnpm run typedoc:replace`. This will also generate all the necessary `_meta.tsx` files for Nextra.js.
+
 ## License
 
 This project is licensed under the MIT License.

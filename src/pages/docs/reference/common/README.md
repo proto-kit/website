@@ -1,0 +1,136 @@
+---
+title: "@proto-kit/common"
+---
+
+**@proto-kit/common**
+
+***
+
+[Documentation](../../README.md) / @proto-kit/common
+
+# @proto-kit/common
+
+## Classes
+
+- [AtomicCompileHelper](classes/AtomicCompileHelper.md)
+- [ChildVerificationKeyService](classes/ChildVerificationKeyService.md)
+- [CompileRegistry](classes/CompileRegistry.md)
+- [ConfigurableModule](classes/ConfigurableModule.md)
+- [EventEmitter](classes/EventEmitter.md)
+- [EventEmitterProxy](classes/EventEmitterProxy.md)
+- [InMemoryMerkleTreeStorage](classes/InMemoryMerkleTreeStorage.md)
+- [MockAsyncMerkleTreeStore](classes/MockAsyncMerkleTreeStore.md)
+- [ModuleContainer](classes/ModuleContainer.md)
+- [ProvableMethodExecutionContext](classes/ProvableMethodExecutionContext.md)
+- [ProvableMethodExecutionResult](classes/ProvableMethodExecutionResult.md)
+- [ReplayingSingleUseEventEmitter](classes/ReplayingSingleUseEventEmitter.md)
+- [RollupMerkleTree](classes/RollupMerkleTree.md)
+- [RollupMerkleTreeWitness](classes/RollupMerkleTreeWitness.md)
+- [ZkProgrammable](classes/ZkProgrammable.md)
+
+## Interfaces
+
+- [AbstractMerkleTree](interfaces/AbstractMerkleTree.md)
+- [AbstractMerkleTreeClass](interfaces/AbstractMerkleTreeClass.md)
+- [AbstractMerkleWitness](interfaces/AbstractMerkleWitness.md)
+- [AreProofsEnabled](interfaces/AreProofsEnabled.md)
+- [BaseModuleInstanceType](interfaces/BaseModuleInstanceType.md)
+- [ChildContainerCreatable](interfaces/ChildContainerCreatable.md)
+- [ChildContainerProvider](interfaces/ChildContainerProvider.md)
+- [CompilableModule](interfaces/CompilableModule.md)
+- [Compile](interfaces/Compile.md)
+- [CompileArtifact](interfaces/CompileArtifact.md)
+- [Configurable](interfaces/Configurable.md)
+- [DependencyFactory](interfaces/DependencyFactory.md)
+- [EventEmittingComponent](interfaces/EventEmittingComponent.md)
+- [EventEmittingContainer](interfaces/EventEmittingContainer.md)
+- [MerkleTreeStore](interfaces/MerkleTreeStore.md)
+- [ModuleContainerDefinition](interfaces/ModuleContainerDefinition.md)
+- [ModulesRecord](interfaces/ModulesRecord.md)
+- [PlainZkProgram](interfaces/PlainZkProgram.md)
+- [StaticConfigurableModule](interfaces/StaticConfigurableModule.md)
+- [ToFieldable](interfaces/ToFieldable.md)
+- [ToFieldableStatic](interfaces/ToFieldableStatic.md)
+- [ToJSONableStatic](interfaces/ToJSONableStatic.md)
+- [Verify](interfaces/Verify.md)
+- [WithZkProgrammable](interfaces/WithZkProgrammable.md)
+
+## Type Aliases
+
+- [ArgumentTypes](type-aliases/ArgumentTypes.md)
+- [ArrayElement](type-aliases/ArrayElement.md)
+- [ArtifactRecord](type-aliases/ArtifactRecord.md)
+- [BaseModuleType](type-aliases/BaseModuleType.md)
+- [CapitalizeAny](type-aliases/CapitalizeAny.md)
+- [CastToEventsRecord](type-aliases/CastToEventsRecord.md)
+- [CompileTarget](type-aliases/CompileTarget.md)
+- [ContainerEvents](type-aliases/ContainerEvents.md)
+- [DecoratedMethod](type-aliases/DecoratedMethod.md)
+- [DependenciesFromModules](type-aliases/DependenciesFromModules.md)
+- [DependencyDeclaration](type-aliases/DependencyDeclaration.md)
+- [DependencyRecord](type-aliases/DependencyRecord.md)
+- [EventListenable](type-aliases/EventListenable.md)
+- [EventsRecord](type-aliases/EventsRecord.md)
+- [FilterNeverValues](type-aliases/FilterNeverValues.md)
+- [FlattenedContainerEvents](type-aliases/FlattenedContainerEvents.md)
+- [FlattenObject](type-aliases/FlattenObject.md)
+- [InferDependencies](type-aliases/InferDependencies.md)
+- [InferProofBase](type-aliases/InferProofBase.md)
+- [MapDependencyRecordToTypes](type-aliases/MapDependencyRecordToTypes.md)
+- [MergeObjects](type-aliases/MergeObjects.md)
+- [ModuleEvents](type-aliases/ModuleEvents.md)
+- [ModulesConfig](type-aliases/ModulesConfig.md)
+- [NoConfig](type-aliases/NoConfig.md)
+- [NonMethods](type-aliases/NonMethods.md)
+- [O1JSPrimitive](type-aliases/O1JSPrimitive.md)
+- [OmitKeys](type-aliases/OmitKeys.md)
+- [OverwriteObjectType](type-aliases/OverwriteObjectType.md)
+- [Preset](type-aliases/Preset.md)
+- [Presets](type-aliases/Presets.md)
+- [ProofTypes](type-aliases/ProofTypes.md)
+- [RecursivePartial](type-aliases/RecursivePartial.md)
+- [ResolvableModules](type-aliases/ResolvableModules.md)
+- [StringKeyOf](type-aliases/StringKeyOf.md)
+- [TypedClass](type-aliases/TypedClass.md)
+- [TypeFromDependencyDeclaration](type-aliases/TypeFromDependencyDeclaration.md)
+- [UnionToIntersection](type-aliases/UnionToIntersection.md)
+- [UnTypedClass](type-aliases/UnTypedClass.md)
+
+## Variables
+
+- [EMPTY\_PUBLICKEY](variables/EMPTY_PUBLICKEY.md)
+- [EMPTY\_PUBLICKEY\_X](variables/EMPTY_PUBLICKEY_X.md)
+- [injectAliasMetadataKey](variables/injectAliasMetadataKey.md)
+- [log](variables/log.md)
+- [MAX\_FIELD](variables/MAX_FIELD.md)
+- [MOCK\_PROOF](variables/MOCK_PROOF.md)
+- [MOCK\_VERIFICATION\_KEY](variables/MOCK_VERIFICATION_KEY.md)
+- [ModuleContainerErrors](variables/ModuleContainerErrors.md)
+
+## Functions
+
+- [assertValidTextLogLevel](functions/assertValidTextLogLevel.md)
+- [compileToMockable](functions/compileToMockable.md)
+- [createMerkleTree](functions/createMerkleTree.md)
+- [dummyValue](functions/dummyValue.md)
+- [expectDefined](functions/expectDefined.md)
+- [filterNonNull](functions/filterNonNull.md)
+- [filterNonUndefined](functions/filterNonUndefined.md)
+- [getInjectAliases](functions/getInjectAliases.md)
+- [hashWithPrefix](functions/hashWithPrefix.md)
+- [implement](functions/implement.md)
+- [injectAlias](functions/injectAlias.md)
+- [injectOptional](functions/injectOptional.md)
+- [isSubtypeOfName](functions/isSubtypeOfName.md)
+- [mapSequential](functions/mapSequential.md)
+- [noop](functions/noop.md)
+- [prefixToField](functions/prefixToField.md)
+- [provableMethod](functions/provableMethod.md)
+- [range](functions/range.md)
+- [reduceSequential](functions/reduceSequential.md)
+- [requireTrue](functions/requireTrue.md)
+- [safeParseJson](functions/safeParseJson.md)
+- [sleep](functions/sleep.md)
+- [splitArray](functions/splitArray.md)
+- [toProver](functions/toProver.md)
+- [verifyToMockable](functions/verifyToMockable.md)
