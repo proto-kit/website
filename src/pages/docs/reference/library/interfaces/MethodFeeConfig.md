@@ -10,7 +10,7 @@ title: MethodFeeConfig
 
 # Interface: MethodFeeConfig
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L17)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L17)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:17](https:/
 
 > **baseFee**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L19)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L19)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:19](https:/
 
 > **methodId**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L18)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L18)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:18](https:/
 
 > **perWeightUnitFee**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L20)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L20)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:20](https:/
 
 > **weight**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L21)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L21)

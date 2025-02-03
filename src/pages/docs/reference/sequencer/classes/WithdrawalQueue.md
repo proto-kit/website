@@ -10,7 +10,7 @@ title: WithdrawalQueue
 
 # Class: WithdrawalQueue
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:44](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L44)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L44)
 
 This interface allows the SettlementModule to retrieve information about
 pending L2-dispatched (outgoing) messages that it can then use to roll
@@ -33,7 +33,7 @@ outgoing message type is not limited to Withdrawals
 
 > **new WithdrawalQueue**(`sequencer`): [`WithdrawalQueue`](WithdrawalQueue.md)
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:54](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L54)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L54)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -138,7 +138,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **length**(): `number`
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:74](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L74)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L74)
 
 #### Returns
 
@@ -154,7 +154,7 @@ Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:74](h
 
 > **peek**(`num`): [`OutgoingMessage`](../interfaces/OutgoingMessage.md)\<[`Withdrawal`](../../protocol/classes/Withdrawal.md)\>[]
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:64](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L64)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L64)
 
 #### Parameters
 
@@ -176,7 +176,7 @@ Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:64](h
 
 > **pop**(`num`): [`OutgoingMessage`](../interfaces/OutgoingMessage.md)\<[`Withdrawal`](../../protocol/classes/Withdrawal.md)\>[]
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:68](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L68)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L68)
 
 #### Parameters
 
@@ -198,7 +198,7 @@ Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:68](h
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L78)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L78)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

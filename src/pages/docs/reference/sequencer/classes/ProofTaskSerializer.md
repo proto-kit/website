@@ -10,7 +10,7 @@ title: ProofTaskSerializer
 
 # Class: ProofTaskSerializer\<PublicInputType, PublicOutputType\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:100](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L100)
+Defined in: [packages/sequencer/src/helpers/utils.ts:100](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L100)
 
 ## Extends
 
@@ -32,7 +32,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:100](https://github.com/pro
 
 > **new ProofTaskSerializer**\<`PublicInputType`, `PublicOutputType`\>(`proofClass`): [`ProofTaskSerializer`](ProofTaskSerializer.md)\<`PublicInputType`, `PublicOutputType`\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:104](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L104)
+Defined in: [packages/sequencer/src/helpers/utils.ts:104](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L104)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:104](https://github.com/pro
 
 > **fromJSON**(`json`): `Promise`\<`Proof`\<`PublicInputType`, `PublicOutputType`\>\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:112](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L112)
+Defined in: [packages/sequencer/src/helpers/utils.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L112)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:112](https://github.com/pro
 
 > **fromJSONProof**(`jsonProof`): `Promise`\<`Proof`\<`PublicInputType`, `PublicOutputType`\>\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:119](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L119)
+Defined in: [packages/sequencer/src/helpers/utils.ts:119](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L119)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:119](https://github.com/pro
 
 > `protected` **getDummy**\<`T`\>(`c`, `jsonProof`): `T`
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:41](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L41)
+Defined in: [packages/sequencer/src/helpers/utils.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L41)
 
 #### Type Parameters
 
@@ -124,7 +124,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:41](https://github.com/prot
 
 > **toJSON**(`proof`): `string`
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:65](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L65)
+Defined in: [packages/sequencer/src/helpers/utils.ts:65](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L65)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:65](https://github.com/prot
 
 > **toJSONProof**(`proof`): `JsonProof`
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:73](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L73)
+Defined in: [packages/sequencer/src/helpers/utils.ts:73](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L73)
 
 #### Parameters
 

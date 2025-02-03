@@ -10,7 +10,7 @@ title: NodeStatusObject
 
 # Class: NodeStatusObject
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L53)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L53)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:53](https://g
 
 > **new NodeStatusObject**(`node`, `process`): [`NodeStatusObject`](NodeStatusObject.md)
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:67](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L67)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:67](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L67)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:67](https://g
 
 > **node**: [`NodeInformationObject`](NodeInformationObject.md)
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:65](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L65)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:65](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L65)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:65](https://g
 
 > **process**: [`ProcessInformationObject`](ProcessInformationObject.md)
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L62)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L62)
 
 ## Methods
 
@@ -56,7 +56,7 @@ Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:62](https://g
 
 > `static` **fromServiceLayerModel**(`node`, `process`): [`NodeStatusObject`](NodeStatusObject.md)
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:54](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L54)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L54)
 
 #### Parameters
 

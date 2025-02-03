@@ -10,7 +10,7 @@ title: BullQueue
 
 # Class: BullQueue
 
-Defined in: [deployment/src/queue/BullQueue.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L29)
+Defined in: [deployment/src/queue/BullQueue.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L29)
 
 TaskQueue implementation for BullMQ
 
@@ -116,7 +116,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [deployment/src/queue/BullQueue.ts:107](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L107)
+Defined in: [deployment/src/queue/BullQueue.ts:107](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L107)
 
 #### Returns
 
@@ -196,7 +196,7 @@ Defined in: sequencer/dist/worker/queue/AbstractTaskQueue.d.ts:5
 
 > **createWorker**(`name`, `executor`, `options`?): [`Closeable`](../../sequencer/interfaces/Closeable.md)
 
-Defined in: [deployment/src/queue/BullQueue.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L35)
+Defined in: [deployment/src/queue/BullQueue.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L35)
 
 #### Parameters
 
@@ -228,7 +228,7 @@ Defined in: [deployment/src/queue/BullQueue.ts:35](https://github.com/proto-kit/
 
 > **getQueue**(`queueName`): `Promise`\<[`InstantiatedQueue`](../../sequencer/interfaces/InstantiatedQueue.md)\>
 
-Defined in: [deployment/src/queue/BullQueue.ts:88](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L88)
+Defined in: [deployment/src/queue/BullQueue.ts:88](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L88)
 
 #### Parameters
 
@@ -250,7 +250,7 @@ Defined in: [deployment/src/queue/BullQueue.ts:88](https://github.com/proto-kit/
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [deployment/src/queue/BullQueue.ts:103](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L103)
+Defined in: [deployment/src/queue/BullQueue.ts:103](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L103)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

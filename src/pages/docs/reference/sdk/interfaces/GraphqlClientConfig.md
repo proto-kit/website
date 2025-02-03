@@ -10,7 +10,7 @@ title: GraphqlClientConfig
 
 # Interface: GraphqlClientConfig
 
-Defined in: [sdk/src/graphql/GraphqlClient.ts:5](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/graphql/GraphqlClient.ts#L5)
+Defined in: [sdk/src/graphql/GraphqlClient.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/graphql/GraphqlClient.ts#L5)
 
 ## Properties
 
@@ -18,4 +18,4 @@ Defined in: [sdk/src/graphql/GraphqlClient.ts:5](https://github.com/proto-kit/fr
 
 > **url**: `string`
 
-Defined in: [sdk/src/graphql/GraphqlClient.ts:6](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/graphql/GraphqlClient.ts#L6)
+Defined in: [sdk/src/graphql/GraphqlClient.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/graphql/GraphqlClient.ts#L6)

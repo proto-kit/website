@@ -12,7 +12,7 @@ title: createMerkleTree
 
 > **createMerkleTree**(`height`): [`AbstractMerkleTreeClass`](../interfaces/AbstractMerkleTreeClass.md)
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:116](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/RollupMerkleTree.ts#L116)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:116](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L116)
 
 A [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) is a binary tree in
 which every leaf is the cryptography hash of a piece of data,

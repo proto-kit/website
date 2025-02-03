@@ -10,7 +10,7 @@ title: DynamicBlockProof
 
 # Class: DynamicBlockProof
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L49)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L49)
 
 ## Extends
 
@@ -155,7 +155,7 @@ Alternatively, you can use {@FeatureFlags.fromZkProgram} to compute the set of f
 
 > `static` **maxProofsVerified**: `2`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:57](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L57)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L57)
 
 #### Overrides
 
@@ -167,7 +167,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > `static` **publicInputType**: *typeof* [`BlockProverPublicInput`](BlockProverPublicInput.md) = `BlockProverPublicInput`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L53)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L53)
 
 #### Overrides
 
@@ -179,7 +179,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > `static` **publicOutputType**: *typeof* [`BlockProverPublicOutput`](BlockProverPublicOutput.md) = `BlockProverPublicOutput`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:55](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L55)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L55)
 
 #### Overrides
 

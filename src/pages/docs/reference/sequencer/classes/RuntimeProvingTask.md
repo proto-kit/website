@@ -10,7 +10,7 @@ title: RuntimeProvingTask
 
 # Class: RuntimeProvingTask
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L36)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L36)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new RuntimeProvingTask**(`runtime`, `executionContext`, `compileRegistry`): [`RuntimeProvingTask`](RuntimeProvingTask.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L45)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L45)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ checks when retrieving it via the getter
 
 > **name**: `string` = `"runtimeProof"`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:43](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L43)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L43)
 
 #### Implementation of
 
@@ -85,7 +85,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask
 
 > `protected` `readonly` **runtime**: [`Runtime`](../../module/classes/Runtime.md)\<`never`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L46)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L46)
 
 ***
 
@@ -93,7 +93,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask
 
 > `protected` `readonly` **runtimeZkProgrammable**: [`PlainZkProgram`](../../common/interfaces/PlainZkProgram.md)\<[`MethodPublicOutput`](../../protocol/classes/MethodPublicOutput.md)\>[]
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:40](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L40)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L40)
 
 ## Accessors
 
@@ -135,7 +135,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compute**(`input`): `Promise`\<`RuntimeProof`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:61](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L61)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L61)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **inputSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`RuntimeProofParameters`](../interfaces/RuntimeProofParameters.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L53)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L53)
 
 #### Returns
 
@@ -195,7 +195,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask
 
 > **prepare**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:107](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L107)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:107](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L107)
 
 #### Returns
 
@@ -211,7 +211,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask
 
 > **resultSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<`RuntimeProof`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:57](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L57)
+Defined in: [packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/RuntimeProvingTask.ts#L57)
 
 #### Returns
 

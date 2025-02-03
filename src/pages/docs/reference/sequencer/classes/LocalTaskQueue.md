@@ -10,7 +10,7 @@ title: LocalTaskQueue
 
 # Class: LocalTaskQueue
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:74](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L74)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L74)
 
 Definition of a connection-object that can generate queues and workers
 for a specific connection type (e.g. BullMQ, In-memory)
@@ -58,7 +58,7 @@ checks when retrieving it via the getter
 
 > `readonly` **listeners**: `object` = `{}`
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:92](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L92)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:92](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L92)
 
 #### Index Signature
 
@@ -70,7 +70,7 @@ Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:92](https://g
 
 > **queuedTasks**: `object` = `{}`
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L78)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L78)
 
 #### Index Signature
 
@@ -82,7 +82,7 @@ Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:78](https://g
 
 > `protected` **queues**: `Record`\<`string`, [`InstantiatedQueue`](../interfaces/InstantiatedQueue.md)\> = `{}`
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:8](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L8)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L8)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:8](https:/
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -140,7 +140,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > `protected` **closeQueues**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L20)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L20)
 
 #### Returns
 
@@ -178,7 +178,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > `protected` **createOrGetQueue**(`name`, `creator`): [`InstantiatedQueue`](../interfaces/InstantiatedQueue.md)
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L10)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L10)
 
 #### Parameters
 
@@ -204,7 +204,7 @@ Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:10](https:
 
 > **createWorker**(`queueName`, `executor`, `options`?): [`Closeable`](../interfaces/Closeable.md)
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:146](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L146)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:146](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L146)
 
 #### Parameters
 
@@ -240,7 +240,7 @@ Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:146](https://
 
 > **getQueue**(`queueName`): `Promise`\<[`InstantiatedQueue`](../interfaces/InstantiatedQueue.md)\>
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:186](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L186)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:186](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L186)
 
 #### Parameters
 
@@ -262,7 +262,7 @@ Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:186](https://
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:193](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L193)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:193](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L193)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,
@@ -283,7 +283,7 @@ That means that you mustn't await server.start() for example.
 
 > **workNextTasks**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:98](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L98)
+Defined in: [packages/sequencer/src/worker/queue/LocalTaskQueue.ts:98](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/LocalTaskQueue.ts#L98)
 
 #### Returns
 

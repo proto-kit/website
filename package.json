@@ -2,8 +2,7 @@
   "name": "@protokit/website",
   "version": "0.0.1",
   "scripts": {
-    "generate-reference-meta": "node generate-reference-meta.mjs",
-    "typedoc:replace": "rm -rf *./src/pages/docs/reference && cp -r ../framework/docs/@proto-kit/ ./src/pages/docs/reference && npm run generate-reference-meta",
+    "typedoc:generate": "./generate-typedoc.sh",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

@@ -10,7 +10,7 @@ title: MerkleTreeStore
 
 # Interface: MerkleTreeStore
 
-Defined in: [packages/common/src/trees/MerkleTreeStore.ts:1](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/MerkleTreeStore.ts#L1)
+Defined in: [packages/common/src/trees/MerkleTreeStore.ts:1](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MerkleTreeStore.ts#L1)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/common/src/trees/MerkleTreeStore.ts:1](https://github.com/
 
 > **getNode**: (`key`, `level`) => `undefined` \| `bigint`
 
-Defined in: [packages/common/src/trees/MerkleTreeStore.ts:4](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/MerkleTreeStore.ts#L4)
+Defined in: [packages/common/src/trees/MerkleTreeStore.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MerkleTreeStore.ts#L4)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/common/src/trees/MerkleTreeStore.ts:4](https://github.com/
 
 > **setNode**: (`key`, `level`, `value`) => `void`
 
-Defined in: [packages/common/src/trees/MerkleTreeStore.ts:2](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/MerkleTreeStore.ts#L2)
+Defined in: [packages/common/src/trees/MerkleTreeStore.ts:2](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MerkleTreeStore.ts#L2)
 
 #### Parameters
 

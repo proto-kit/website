@@ -10,7 +10,7 @@ title: BatchStorageResolver
 
 # Class: BatchStorageResolver
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:41](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/BatchStorageResolver.ts#L41)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L41)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new BatchStorageResolver**(`batchStorage`, `blockResolver`): [`BatchStorageResolver`](BatchStorageResolver.md)
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:43](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/BatchStorageResolver.ts#L43)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L43)
 
 #### Parameters
 
@@ -99,7 +99,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **batches**(`height`): `Promise`\<`undefined` \| [`ComputedBlockModel`](ComputedBlockModel.md)\>
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/BatchStorageResolver.ts#L56)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L56)
 
 #### Parameters
 

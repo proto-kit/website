@@ -10,7 +10,7 @@ title: HandlersExecutor
 
 # Class: HandlersExecutor\<PrismaClient, Handlers\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L28)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L28)
 
 Used by various module sub-types that may need to be configured
 
@@ -59,7 +59,7 @@ checks when retrieving it via the getter
 
 > **database**: `undefined` \| `PrismaDatabaseConnection`\<`PrismaClient`\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L36)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L36)
 
 ***
 
@@ -67,7 +67,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:36](https://git
 
 > **handlers**: `undefined` \| `Handlers`
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L34)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L34)
 
 ***
 
@@ -75,7 +75,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:34](https://git
 
 > **isExecuting**: `boolean` = `false`
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L32)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L32)
 
 ## Accessors
 
@@ -117,7 +117,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:38](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L38)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L38)
 
 #### Parameters
 
@@ -139,7 +139,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:38](https://git
 
 > **execute**(`block`): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:83](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L83)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L83)
 
 #### Parameters
 
@@ -157,7 +157,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:83](https://git
 
 > **onAfterHandlers**(`client`, `block`): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:72](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L72)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L72)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:72](https://git
 
 > **onBlock**(`client`, `block`): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:60](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L60)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L60)
 
 #### Parameters
 
@@ -201,7 +201,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:60](https://git
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L46)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L46)
 
 #### Returns
 
@@ -217,7 +217,7 @@ Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:46](https://git
 
 > `static` **from**\<`PrismaClient`, `Handlers`\>(`handlers`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`HandlersExecutor`](HandlersExecutor.md)\<`PrismaClient`, `Handlers`\>\>
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:48](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/handlers/HandlersExecutor.ts#L48)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L48)
 
 #### Type Parameters
 

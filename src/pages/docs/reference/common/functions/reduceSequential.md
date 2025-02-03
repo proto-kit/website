@@ -12,7 +12,7 @@ title: reduceSequential
 
 > **reduceSequential**\<`T`, `U`\>(`array`, `callbackfn`, `initialValue`): `Promise`\<`U`\>
 
-Defined in: [packages/common/src/utils.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/utils.ts#L56)
+Defined in: [packages/common/src/utils.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L56)
 
 ## Type Parameters
 

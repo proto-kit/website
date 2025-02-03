@@ -12,7 +12,7 @@ title: PickStateMapProperties
 
 > **PickStateMapProperties**\<`Type`\>: [`PickByType`](PickByType.md)\<`Type`, [`StateMap`](../../protocol/classes/StateMap.md)\<`any`, `any`\>\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:38](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L38)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L38)
 
 ## Type Parameters
 

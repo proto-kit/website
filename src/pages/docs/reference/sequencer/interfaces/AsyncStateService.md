@@ -10,7 +10,7 @@ title: AsyncStateService
 
 # Interface: AsyncStateService
 
-Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/async/AsyncStateService.ts#L13)
+Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncStateService.ts#L13)
 
 This Interface should be implemented for services that store the state
 in an external storage (like a DB). This can be used in conjunction with
@@ -22,7 +22,7 @@ CachedStateService to preload keys for In-Circuit usage.
 
 > **commit**: () => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/async/AsyncStateService.ts#L16)
+Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncStateService.ts#L16)
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:16](https:/
 
 > **get**: (`key`) => `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/async/AsyncStateService.ts#L22)
+Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncStateService.ts#L22)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:22](https:/
 
 > **getMany**: (`keys`) => `Promise`\<[`StateEntry`](StateEntry.md)[]\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/async/AsyncStateService.ts#L20)
+Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncStateService.ts#L20)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:20](https:/
 
 > **openTransaction**: () => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/async/AsyncStateService.ts#L14)
+Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncStateService.ts#L14)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:14](https:/
 
 > **writeStates**: (`entries`) => `void`
 
-Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/async/AsyncStateService.ts#L18)
+Defined in: [packages/sequencer/src/state/async/AsyncStateService.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncStateService.ts#L18)
 
 #### Parameters
 

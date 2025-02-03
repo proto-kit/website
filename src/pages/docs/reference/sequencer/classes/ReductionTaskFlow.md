@@ -10,7 +10,7 @@ title: ReductionTaskFlow
 
 # Class: ReductionTaskFlow\<Input, Output\>
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L30)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L30)
 
 This class builds and executes a flow that follows the map-reduce pattern.
 This works in 2 steps:
@@ -31,7 +31,7 @@ We use this pattern extensively in our pipeline,
 
 > **new ReductionTaskFlow**\<`Input`, `Output`\>(`options`, `flowCreator`): [`ReductionTaskFlow`](ReductionTaskFlow.md)\<`Input`, `Output`\>
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L37)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L37)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.t
 
 > **deferErrorsTo**(`flow`): `void`
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:184](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L184)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:184](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L184)
 
 To be used in conjunction with onCompletion
 It allows errors from this flow to be "defered" to another parent
@@ -94,7 +94,7 @@ error up to the user
 
 > **execute**(`inputs`): `Promise`\<`Output`\>
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:193](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L193)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:193](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L193)
 
 Execute the flow using the returned Promise that resolved when
 the flow is finished
@@ -117,7 +117,7 @@ initial inputs - doesnt have to be the complete set of inputs
 
 > **onCompletion**(`callback`): `void`
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:173](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L173)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:173](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L173)
 
 Execute the flow using a callback method that is invoked upon
 completion of the flow.
@@ -139,7 +139,7 @@ Push inputs using pushInput()
 
 > **pushInput**(`input`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:205](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L205)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:205](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L205)
 
 #### Parameters
 

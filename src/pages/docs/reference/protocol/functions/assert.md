@@ -12,7 +12,7 @@ title: assert
 
 > **assert**(`condition`, `message`?): `void`
 
-Defined in: [packages/protocol/src/state/assert/assert.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/assert/assert.ts#L16)
+Defined in: [packages/protocol/src/state/assert/assert.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/assert/assert.ts#L16)
 
 Maintains an execution status of the current runtime module method,
 while prioritizing one-time failures. The assertion won't change the

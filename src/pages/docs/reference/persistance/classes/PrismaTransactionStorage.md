@@ -10,7 +10,7 @@ title: PrismaTransactionStorage
 
 # Class: PrismaTransactionStorage
 
-Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:9](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L9)
+Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L9)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.t
 
 > **new PrismaTransactionStorage**(`connection`, `transactionMapper`): [`PrismaTransactionStorage`](PrismaTransactionStorage.md)
 
-Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L10)
+Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L10)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.t
 
 > **findTransaction**(`hash`): `Promise`\<`undefined` \| \{ `batch`: `number`; `block`: `string`; `transaction`: [`PendingTransaction`](../../sequencer/classes/PendingTransaction.md); \}\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:42](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L42)
+Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L42)
 
 Finds a transaction by its hash.
 It returns both pending transaction and already included transactions
@@ -71,7 +71,7 @@ and batch number where applicable.
 
 > **getPendingUserTransactions**(): `Promise`\<[`PendingTransaction`](../../sequencer/classes/PendingTransaction.md)[]\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L15)
+Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L15)
 
 #### Returns
 
@@ -87,7 +87,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.t
 
 > **pushUserTransaction**(`tx`): `Promise`\<`boolean`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L31)
+Defined in: [packages/persistance/src/services/prisma/PrismaTransactionStorage.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaTransactionStorage.ts#L31)
 
 #### Parameters
 

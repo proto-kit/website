@@ -10,7 +10,7 @@ title: StateServiceProvider
 
 # Class: StateServiceProvider
 
-Defined in: [packages/protocol/src/state/StateServiceProvider.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/StateServiceProvider.ts#L14)
+Defined in: [packages/protocol/src/state/StateServiceProvider.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateServiceProvider.ts#L14)
 
 ## Constructors
 
@@ -30,7 +30,7 @@ Defined in: [packages/protocol/src/state/StateServiceProvider.ts:14](https://git
 
 > **get** **stateService**(): [`SimpleAsyncStateService`](../interfaces/SimpleAsyncStateService.md)
 
-Defined in: [packages/protocol/src/state/StateServiceProvider.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/StateServiceProvider.ts#L17)
+Defined in: [packages/protocol/src/state/StateServiceProvider.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateServiceProvider.ts#L17)
 
 ##### Returns
 
@@ -42,7 +42,7 @@ Defined in: [packages/protocol/src/state/StateServiceProvider.ts:17](https://git
 
 > **popCurrentStateService**(): `void`
 
-Defined in: [packages/protocol/src/state/StateServiceProvider.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/StateServiceProvider.ts#L30)
+Defined in: [packages/protocol/src/state/StateServiceProvider.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateServiceProvider.ts#L30)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [packages/protocol/src/state/StateServiceProvider.ts:30](https://git
 
 > **setCurrentStateService**(`service`): `void`
 
-Defined in: [packages/protocol/src/state/StateServiceProvider.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/StateServiceProvider.ts#L26)
+Defined in: [packages/protocol/src/state/StateServiceProvider.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateServiceProvider.ts#L26)
 
 #### Parameters
 

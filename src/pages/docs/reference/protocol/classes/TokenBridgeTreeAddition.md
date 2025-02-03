@@ -10,7 +10,7 @@ title: TokenBridgeTreeAddition
 
 # Class: TokenBridgeTreeAddition
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:70](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L70)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L70)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **index**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:71](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L71)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:71](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L71)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:71](h
 
 > **value**: [`TokenBridgeEntry`](TokenBridgeEntry.md) = `TokenBridgeEntry`
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:72](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L72)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L72)
 
 #### Inherited from
 

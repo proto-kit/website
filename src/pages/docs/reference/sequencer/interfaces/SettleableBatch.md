@@ -10,7 +10,7 @@ title: SettleableBatch
 
 # Interface: SettleableBatch
 
-Defined in: [packages/sequencer/src/storage/model/Batch.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Batch.ts#L18)
+Defined in: [packages/sequencer/src/storage/model/Batch.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Batch.ts#L18)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/sequencer/src/storage/model/Batch.ts:18](https://github.co
 
 > **blockHashes**: `string`[]
 
-Defined in: [packages/sequencer/src/storage/model/Batch.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Batch.ts#L14)
+Defined in: [packages/sequencer/src/storage/model/Batch.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Batch.ts#L14)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/storage/model/Batch.ts:14](https://github.co
 
 > **fromNetworkState**: [`NetworkState`](../../protocol/classes/NetworkState.md)
 
-Defined in: [packages/sequencer/src/storage/model/Batch.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Batch.ts#L19)
+Defined in: [packages/sequencer/src/storage/model/Batch.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Batch.ts#L19)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/storage/model/Batch.ts:19](https://github.co
 
 > **height**: `number`
 
-Defined in: [packages/sequencer/src/storage/model/Batch.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Batch.ts#L15)
+Defined in: [packages/sequencer/src/storage/model/Batch.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Batch.ts#L15)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [packages/sequencer/src/storage/model/Batch.ts:15](https://github.co
 
 > **proof**: `JsonProof`
 
-Defined in: [packages/sequencer/src/storage/model/Batch.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Batch.ts#L13)
+Defined in: [packages/sequencer/src/storage/model/Batch.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Batch.ts#L13)
 
 #### Inherited from
 
@@ -66,4 +66,4 @@ Defined in: [packages/sequencer/src/storage/model/Batch.ts:13](https://github.co
 
 > **toNetworkState**: [`NetworkState`](../../protocol/classes/NetworkState.md)
 
-Defined in: [packages/sequencer/src/storage/model/Batch.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Batch.ts#L20)
+Defined in: [packages/sequencer/src/storage/model/Batch.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Batch.ts#L20)

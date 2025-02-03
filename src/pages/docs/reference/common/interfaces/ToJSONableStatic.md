@@ -10,7 +10,7 @@ title: ToJSONableStatic
 
 # Interface: ToJSONableStatic
 
-Defined in: [packages/common/src/utils.ts:113](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/utils.ts#L113)
+Defined in: [packages/common/src/utils.ts:113](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L113)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/common/src/utils.ts:113](https://github.com/proto-kit/fram
 
 > **toJSON**: (`value`) => `any`
 
-Defined in: [packages/common/src/utils.ts:114](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/utils.ts#L114)
+Defined in: [packages/common/src/utils.ts:114](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L114)
 
 #### Parameters
 

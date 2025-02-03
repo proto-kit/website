@@ -10,7 +10,7 @@ title: Settlement
 
 # Interface: Settlement
 
-Defined in: [packages/sequencer/src/storage/model/Settlement.ts:1](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Settlement.ts#L1)
+Defined in: [packages/sequencer/src/storage/model/Settlement.ts:1](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Settlement.ts#L1)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/storage/model/Settlement.ts:1](https://githu
 
 > **batches**: `number`[]
 
-Defined in: [packages/sequencer/src/storage/model/Settlement.ts:6](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Settlement.ts#L6)
+Defined in: [packages/sequencer/src/storage/model/Settlement.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Settlement.ts#L6)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [packages/sequencer/src/storage/model/Settlement.ts:6](https://githu
 
 > **promisedMessagesHash**: `string`
 
-Defined in: [packages/sequencer/src/storage/model/Settlement.ts:5](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Settlement.ts#L5)
+Defined in: [packages/sequencer/src/storage/model/Settlement.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Settlement.ts#L5)

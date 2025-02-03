@@ -10,7 +10,7 @@ title: Protocol
 
 # Class: Protocol\<Modules\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:60](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L60)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L60)
 
 Reusable module container facilitating registration, resolution
 configuration, decoration and validation of modules
@@ -33,7 +33,7 @@ configuration, decoration and validation of modules
 
 > **new Protocol**\<`Modules`\>(`definition`): [`Protocol`](Protocol.md)\<`Modules`\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L78)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L78)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ checks when retrieving it via the getter
 
 > **definition**: [`ProtocolDefinition`](../interfaces/ProtocolDefinition.md)\<`Modules`\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:76](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L76)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:76](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L76)
 
 #### Overrides
 
@@ -84,7 +84,7 @@ Defined in: [packages/protocol/src/protocol/Protocol.ts:76](https://github.com/p
 
 > **get** **blockProver**(): [`BlockProvable`](../interfaces/BlockProvable.md)
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:115](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L115)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:115](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L115)
 
 ##### Returns
 
@@ -150,7 +150,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:81
 
 > **get** **dependencyContainer**(): `DependencyContainer`
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:105](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L105)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L105)
 
 ##### Returns
 
@@ -202,7 +202,7 @@ list of module names
 
 > **get** **stateService**(): [`SimpleAsyncStateService`](../interfaces/SimpleAsyncStateService.md)
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:83](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L83)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L83)
 
 ##### Returns
 
@@ -220,7 +220,7 @@ Defined in: [packages/protocol/src/protocol/Protocol.ts:83](https://github.com/p
 
 > **get** **stateServiceProvider**(): [`StateServiceProvider`](StateServiceProvider.md)
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:87](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L87)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:87](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L87)
 
 ##### Returns
 
@@ -238,7 +238,7 @@ Defined in: [packages/protocol/src/protocol/Protocol.ts:87](https://github.com/p
 
 > **get** **stateTransitionProver**(): [`StateTransitionProvable`](../interfaces/StateTransitionProvable.md)
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:123](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L123)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:123](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L123)
 
 ##### Returns
 
@@ -348,7 +348,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:115
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:133](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L133)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:133](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L133)
 
 This is a placeholder for individual modules to override.
 This method will be called whenever the underlying container fully
@@ -374,7 +374,7 @@ initialized
 
 > **decorateModule**(`moduleName`, `containedModule`): `void`
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:91](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L91)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:91](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L91)
 
 Override this in the child class to provide custom
 features or module checks
@@ -403,7 +403,7 @@ features or module checks
 
 > **getAreProofsEnabled**(): [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:129](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L129)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:129](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L129)
 
 #### Returns
 
@@ -658,7 +658,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:186](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L186)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:186](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L186)
 
 #### Returns
 
@@ -699,7 +699,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`Modules`\>(`modules`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`Protocol`](Protocol.md)\<`Modules`\>\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:66](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L66)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L66)
 
 #### Type Parameters
 

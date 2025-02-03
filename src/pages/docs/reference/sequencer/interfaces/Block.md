@@ -10,7 +10,7 @@ title: Block
 
 # Interface: Block
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L22)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L22)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:22](https://github.co
 
 > **fromBlockHashRoot**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L33)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L33)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:33](https://github.co
 
 > **fromEternalTransactionsHash**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L32)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L32)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:32](https://github.co
 
 > **fromMessagesHash**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L34)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L34)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:34](https://github.co
 
 > **hash**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L23)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L23)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:23](https://github.co
 
 > **height**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L24)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L24)
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:24](https://github.co
 
 > **networkState**: `object`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L25)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L25)
 
 #### before
 
@@ -74,7 +74,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:25](https://github.co
 
 > **previousBlockHash**: `undefined` \| `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L36)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L36)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:36](https://github.co
 
 > **toEternalTransactionsHash**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L31)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L31)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:31](https://github.co
 
 > **toMessagesHash**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L35)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L35)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:35](https://github.co
 
 > **transactions**: [`TransactionExecutionResult`](TransactionExecutionResult.md)[]
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L29)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L29)
 
 ***
 
@@ -106,4 +106,4 @@ Defined in: [packages/sequencer/src/storage/model/Block.ts:29](https://github.co
 
 > **transactionsHash**: `Field`
 
-Defined in: [packages/sequencer/src/storage/model/Block.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/model/Block.ts#L30)
+Defined in: [packages/sequencer/src/storage/model/Block.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/model/Block.ts#L30)

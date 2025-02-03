@@ -10,7 +10,7 @@ title: BlockHashTreeEntry
 
 # Class: BlockHashTreeEntry
 
-Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:7](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L7)
+Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L7)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **blockHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:8](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L8)
+Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L8)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTre
 
 > **closed**: `Bool` = `Bool`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:9](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L9)
+Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L9)
 
 #### Inherited from
 
@@ -406,7 +406,7 @@ Convert provable type to a normal JS type.
 
 > **hash**(): `Field`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L13)
+Defined in: [packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/BlockHashMerkleTree.ts#L13)
 
 #### Returns
 

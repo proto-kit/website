@@ -10,7 +10,7 @@ title: RuntimeTransaction
 
 # Class: RuntimeTransaction
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L11)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L11)
 
 This struct is used to expose transaction information to the runtime method
 execution. This class has not all data included in transactions on purpose.
@@ -62,7 +62,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **argsHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L13)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L13)
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:13](h
 
 > **methodId**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:12](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L12)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L12)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:12](h
 
 > **nonce**: [`UInt64Option`](UInt64Option.md) = `UInt64Option`
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L14)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L14)
 
 #### Inherited from
 
@@ -98,7 +98,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:14](h
 
 > **sender**: [`PublicKeyOption`](PublicKeyOption.md) = `PublicKeyOption`
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L15)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L15)
 
 #### Inherited from
 
@@ -600,7 +600,7 @@ Convert provable type to a normal JS type.
 
 > **assertTransactionType**(`isMessage`): `void`
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:61](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L61)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L61)
 
 #### Parameters
 
@@ -618,7 +618,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:61](h
 
 > **hash**(): `Field`
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:102](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L102)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:102](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L102)
 
 #### Returns
 
@@ -630,7 +630,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:102](
 
 > **hashData**(): `Field`[]
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:76](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L76)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:76](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L76)
 
 #### Returns
 
@@ -642,7 +642,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:76](h
 
 > `static` **dummyTransaction**(): [`RuntimeTransaction`](RuntimeTransaction.md)
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L46)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L46)
 
 #### Returns
 
@@ -654,7 +654,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:46](h
 
 > `static` **fromHashData**(`fields`): [`RuntimeTransaction`](RuntimeTransaction.md)
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:85](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L85)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:85](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L85)
 
 #### Parameters
 
@@ -672,7 +672,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:85](h
 
 > `static` **fromMessage**(`__namedParameters`): [`RuntimeTransaction`](RuntimeTransaction.md)
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L31)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L31)
 
 #### Parameters
 
@@ -696,7 +696,7 @@ Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:31](h
 
 > `static` **fromTransaction**(`input`): [`RuntimeTransaction`](RuntimeTransaction.md)
 
-Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L17)
+Defined in: [packages/protocol/src/model/transaction/RuntimeTransaction.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/RuntimeTransaction.ts#L17)
 
 #### Parameters
 

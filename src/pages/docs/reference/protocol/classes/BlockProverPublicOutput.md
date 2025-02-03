@@ -10,7 +10,7 @@ title: BlockProverPublicOutput
 
 # Class: BlockProverPublicOutput
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L30)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L30)
 
 ## Extends
 
@@ -74,7 +74,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **blockHashRoot**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L34)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L34)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:34](https://git
 
 > **blockNumber**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:38](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L38)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L38)
 
 #### Inherited from
 
@@ -98,7 +98,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:38](https://git
 
 > **closed**: `Bool` = `Bool`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L37)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L37)
 
 #### Inherited from
 
@@ -110,7 +110,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:37](https://git
 
 > **eternalTransactionsHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L35)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L35)
 
 #### Inherited from
 
@@ -122,7 +122,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:35](https://git
 
 > **incomingMessagesHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L36)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L36)
 
 #### Inherited from
 
@@ -134,7 +134,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:36](https://git
 
 > **networkStateHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L33)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L33)
 
 #### Inherited from
 
@@ -146,7 +146,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:33](https://git
 
 > **stateRoot**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L32)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L32)
 
 #### Inherited from
 
@@ -158,7 +158,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:32](https://git
 
 > **transactionsHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L31)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L31)
 
 #### Inherited from
 
@@ -790,7 +790,7 @@ Convert provable type to a normal JS type.
 
 > **equals**(`input`, `closed`): `Bool`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:40](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L40)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L40)
 
 #### Parameters
 

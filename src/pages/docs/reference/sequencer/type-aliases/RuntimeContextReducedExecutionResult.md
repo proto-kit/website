@@ -12,4 +12,4 @@ title: RuntimeContextReducedExecutionResult
 
 > **RuntimeContextReducedExecutionResult**: `Pick`\<[`RuntimeProvableMethodExecutionResult`](../../protocol/classes/RuntimeProvableMethodExecutionResult.md), `"stateTransitions"` \| `"status"` \| `"statusMessage"` \| `"stackTrace"` \| `"events"`\>
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/TransactionExecutionService.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/sequencing/TransactionExecutionService.ts#L37)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/TransactionExecutionService.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/TransactionExecutionService.ts#L37)

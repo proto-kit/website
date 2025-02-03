@@ -10,7 +10,7 @@ title: ModuleContainerDefinition
 
 # Interface: ModuleContainerDefinition\<Modules\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:115](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ModuleContainer.ts#L115)
+Defined in: [packages/common/src/config/ModuleContainer.ts:115](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L115)
 
 Parameters required when creating a module container instance
 
@@ -24,7 +24,7 @@ Parameters required when creating a module container instance
 
 > `optional` **config**: [`ModulesConfig`](../type-aliases/ModulesConfig.md)\<`Modules`\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:121](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ModuleContainer.ts#L121)
+Defined in: [packages/common/src/config/ModuleContainer.ts:121](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L121)
 
 #### Deprecated
 
@@ -34,4 +34,4 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:121](https://github.c
 
 > **modules**: `Modules`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:116](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ModuleContainer.ts#L116)
+Defined in: [packages/common/src/config/ModuleContainer.ts:116](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L116)

@@ -10,7 +10,7 @@ title: BlockResolver
 
 # Class: BlockResolver
 
-Defined in: [api/src/graphql/modules/BlockResolver.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/BlockResolver.ts#L62)
+Defined in: [api/src/graphql/modules/BlockResolver.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BlockResolver.ts#L62)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new BlockResolver**(`blockStorage`): [`BlockResolver`](BlockResolver.md)
 
-Defined in: [api/src/graphql/modules/BlockResolver.ts:63](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/BlockResolver.ts#L63)
+Defined in: [api/src/graphql/modules/BlockResolver.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BlockResolver.ts#L63)
 
 #### Parameters
 
@@ -95,7 +95,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **block**(`height`, `hash`): `Promise`\<`undefined` \| [`BlockModel`](BlockModel.md)\>
 
-Defined in: [api/src/graphql/modules/BlockResolver.ts:75](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/BlockResolver.ts#L75)
+Defined in: [api/src/graphql/modules/BlockResolver.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BlockResolver.ts#L75)
 
 #### Parameters
 

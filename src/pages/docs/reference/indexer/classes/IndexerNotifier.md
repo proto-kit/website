@@ -10,7 +10,7 @@ title: IndexerNotifier
 
 # Class: IndexerNotifier
 
-Defined in: [indexer/src/IndexerNotifier.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L19)
+Defined in: [indexer/src/IndexerNotifier.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L19)
 
 Lifecycle of a SequencerModule
 
@@ -26,7 +26,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new IndexerNotifier**(`sequencer`, `taskQueue`, `indexBlockTask`): [`IndexerNotifier`](IndexerNotifier.md)
 
-Defined in: [indexer/src/IndexerNotifier.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L20)
+Defined in: [indexer/src/IndexerNotifier.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L20)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ checks when retrieving it via the getter
 
 > **indexBlockTask**: [`IndexBlockTask`](IndexBlockTask.md)
 
-Defined in: [indexer/src/IndexerNotifier.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L25)
+Defined in: [indexer/src/IndexerNotifier.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L25)
 
 ***
 
@@ -79,7 +79,7 @@ Defined in: [indexer/src/IndexerNotifier.ts:25](https://github.com/proto-kit/fra
 
 > **sequencer**: [`Sequencer`](../../sequencer/classes/Sequencer.md)\<[`NotifierMandatorySequencerModules`](../type-aliases/NotifierMandatorySequencerModules.md)\>
 
-Defined in: [indexer/src/IndexerNotifier.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L22)
+Defined in: [indexer/src/IndexerNotifier.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L22)
 
 ***
 
@@ -87,7 +87,7 @@ Defined in: [indexer/src/IndexerNotifier.ts:22](https://github.com/proto-kit/fra
 
 > **taskQueue**: [`TaskQueue`](../../sequencer/interfaces/TaskQueue.md)
 
-Defined in: [indexer/src/IndexerNotifier.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L24)
+Defined in: [indexer/src/IndexerNotifier.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L24)
 
 ***
 
@@ -163,7 +163,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **propagateEventsAsTasks**(): `Promise`\<`void`\>
 
-Defined in: [indexer/src/IndexerNotifier.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L30)
+Defined in: [indexer/src/IndexerNotifier.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L30)
 
 #### Returns
 
@@ -175,7 +175,7 @@ Defined in: [indexer/src/IndexerNotifier.ts:30](https://github.com/proto-kit/fra
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [indexer/src/IndexerNotifier.ts:51](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerNotifier.ts#L51)
+Defined in: [indexer/src/IndexerNotifier.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerNotifier.ts#L51)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

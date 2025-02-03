@@ -10,7 +10,7 @@ title: NetworkStateSettlementModule
 
 # Class: NetworkStateSettlementModule
 
-Defined in: [packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts#L14)
+Defined in: [packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts#L14)
 
 Used by various module sub-types that may need to be configured
 
@@ -53,7 +53,7 @@ checks when retrieving it via the getter
 
 > `optional` **protocol**: [`ProtocolEnvironment`](../interfaces/ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L14)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L14)
 
 #### Inherited from
 
@@ -67,7 +67,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L16)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L16)
 
 ##### Returns
 
@@ -117,7 +117,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **beforeSettlement**(`smartContract`, `__namedParameters`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts#L15)
+Defined in: [packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/modules/NetworkStateSettlementModule.ts#L15)
 
 #### Parameters
 
@@ -143,7 +143,7 @@ Defined in: [packages/protocol/src/settlement/modules/NetworkStateSettlementModu
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L20)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L20)
 
 #### Parameters
 
@@ -165,7 +165,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L24)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L24)
 
 #### Returns
 

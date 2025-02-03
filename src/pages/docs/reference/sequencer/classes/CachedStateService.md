@@ -10,7 +10,7 @@ title: CachedStateService
 
 # Class: CachedStateService
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:12](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L12)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L12)
 
 This Interface should be implemented for services that store the state
 in an external storage (like a DB). This can be used in conjunction with
@@ -31,7 +31,7 @@ CachedStateService to preload keys for In-Circuit usage.
 
 > **new CachedStateService**(`parent`): [`CachedStateService`](CachedStateService.md)
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L18)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L18)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ This is used by the CachedState service to keep track of deletions
 
 > **applyStateTransitions**(`stateTransitions`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:99](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L99)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:99](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L99)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:99](https:
 
 > **commit**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:42](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L42)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L42)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:42](https:
 
 > **get**(`key`): `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:94](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L94)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L94)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:94](https:
 
 > **getMany**(`keys`): `Promise`\<[`StateEntry`](../interfaces/StateEntry.md)[]\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:75](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L75)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L75)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:75](https:
 
 > **mergeIntoParent**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:118](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L118)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:118](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L118)
 
 Merges all caches set() operation into the parent and
 resets this instance to the parent's state (by clearing the cache and
@@ -166,7 +166,7 @@ defaulting to the parent)
 
 > **openTransaction**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:48](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L48)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L48)
 
 #### Returns
 
@@ -182,7 +182,7 @@ Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:48](https:
 
 > **preloadKey**(`key`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:52](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L52)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:52](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L52)
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:52](https:
 
 > **preloadKeys**(`keys`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L56)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L56)
 
 #### Parameters
 
@@ -248,7 +248,7 @@ Defined in: packages/module/dist/state/InMemoryStateService.d.ts:13
 
 > **writeStates**(`entries`): `void`
 
-Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:38](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/state/CachedStateService.ts#L38)
+Defined in: [packages/sequencer/src/state/state/CachedStateService.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/CachedStateService.ts#L38)
 
 #### Parameters
 

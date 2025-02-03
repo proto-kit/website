@@ -10,7 +10,7 @@ title: ArtifactRecordSerializer
 
 # Class: ArtifactRecordSerializer
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts#L10)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts#L10)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Artifa
 
 > **fromJSON**(`json`): [`ArtifactRecord`](../../common/type-aliases/ArtifactRecord.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts:27](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts#L27)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts#L27)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Artifa
 
 > **toJSON**(`input`): [`SerializedArtifactRecord`](../type-aliases/SerializedArtifactRecord.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts#L11)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/ArtifactionRecordSerializer.ts#L11)
 
 #### Parameters
 

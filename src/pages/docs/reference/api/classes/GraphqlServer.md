@@ -10,7 +10,7 @@ title: GraphqlServer
 
 # Class: GraphqlServer
 
-Defined in: [api/src/graphql/GraphqlServer.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L30)
+Defined in: [api/src/graphql/GraphqlServer.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L30)
 
 Lifecycle of a SequencerModule
 
@@ -101,7 +101,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [api/src/graphql/GraphqlServer.ts:148](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L148)
+Defined in: [api/src/graphql/GraphqlServer.ts:148](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L148)
 
 #### Returns
 
@@ -135,7 +135,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **registerModule**(`module`): `void`
 
-Defined in: [api/src/graphql/GraphqlServer.ts:55](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L55)
+Defined in: [api/src/graphql/GraphqlServer.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L55)
 
 #### Parameters
 
@@ -153,7 +153,7 @@ Defined in: [api/src/graphql/GraphqlServer.ts:55](https://github.com/proto-kit/f
 
 > **registerResolvers**(`resolvers`): `void`
 
-Defined in: [api/src/graphql/GraphqlServer.ts:63](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L63)
+Defined in: [api/src/graphql/GraphqlServer.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L63)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [api/src/graphql/GraphqlServer.ts:63](https://github.com/proto-kit/f
 
 > **registerSchema**(`schema`): `void`
 
-Defined in: [api/src/graphql/GraphqlServer.ts:59](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L59)
+Defined in: [api/src/graphql/GraphqlServer.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L59)
 
 #### Parameters
 
@@ -189,7 +189,7 @@ Defined in: [api/src/graphql/GraphqlServer.ts:59](https://github.com/proto-kit/f
 
 > **setContainer**(`container`): `void`
 
-Defined in: [api/src/graphql/GraphqlServer.ts:43](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L43)
+Defined in: [api/src/graphql/GraphqlServer.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L43)
 
 #### Parameters
 
@@ -207,7 +207,7 @@ Defined in: [api/src/graphql/GraphqlServer.ts:43](https://github.com/proto-kit/f
 
 > **setContext**(`context`): `void`
 
-Defined in: [api/src/graphql/GraphqlServer.ts:71](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L71)
+Defined in: [api/src/graphql/GraphqlServer.ts:71](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L71)
 
 #### Parameters
 
@@ -223,7 +223,7 @@ Defined in: [api/src/graphql/GraphqlServer.ts:71](https://github.com/proto-kit/f
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [api/src/graphql/GraphqlServer.ts:75](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L75)
+Defined in: [api/src/graphql/GraphqlServer.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L75)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,
@@ -244,7 +244,7 @@ That means that you mustn't await server.start() for example.
 
 > **startServer**(): `Promise`\<`void`\>
 
-Defined in: [api/src/graphql/GraphqlServer.ts:79](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlServer.ts#L79)
+Defined in: [api/src/graphql/GraphqlServer.ts:79](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlServer.ts#L79)
 
 #### Returns
 

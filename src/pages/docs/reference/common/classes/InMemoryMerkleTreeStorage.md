@@ -10,7 +10,7 @@ title: InMemoryMerkleTreeStorage
 
 # Class: InMemoryMerkleTreeStorage
 
-Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:3](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L3)
+Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:3](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L3)
 
 ## Extended by
 
@@ -37,7 +37,7 @@ Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:3](https://g
 
 > `protected` **nodes**: `object` = `{}`
 
-Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:4](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L4)
+Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L4)
 
 #### Index Signature
 
@@ -49,7 +49,7 @@ Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:4](https://g
 
 > **getNode**(`key`, `level`): `undefined` \| `bigint`
 
-Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L10)
+Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L10)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:10](https://
 
 > **setNode**(`key`, `level`, `value`): `void`
 
-Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L14)
+Defined in: [packages/common/src/trees/InMemoryMerkleTreeStorage.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/InMemoryMerkleTreeStorage.ts#L14)
 
 #### Parameters
 

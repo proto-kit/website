@@ -10,7 +10,7 @@ title: ProtocolDefinition
 
 # Interface: ProtocolDefinition\<Modules\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:55](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L55)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L55)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [packages/protocol/src/protocol/Protocol.ts:55](https://github.com/p
 
 > `optional` **config**: [`ModulesConfig`](../../common/type-aliases/ModulesConfig.md)\<`Modules`\>
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:57](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L57)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L57)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [packages/protocol/src/protocol/Protocol.ts:57](https://github.com/p
 
 > **modules**: `Modules`
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/Protocol.ts#L56)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L56)

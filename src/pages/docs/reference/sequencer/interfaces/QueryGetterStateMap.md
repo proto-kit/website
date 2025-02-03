@@ -10,7 +10,7 @@ title: QueryGetterStateMap
 
 # Interface: QueryGetterStateMap\<Key, Value\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L30)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L30)
 
 ## Type Parameters
 
@@ -24,7 +24,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:30](htt
 
 > **get**: (`key`) => `Promise`\<`undefined` \| `Value`\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L31)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L31)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:31](htt
 
 > **merkleWitness**: (`key`) => `Promise`\<`undefined` \| [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md)\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L33)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L33)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:33](htt
 
 > **path**: (`key`) => `string`
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L32)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L32)
 
 #### Parameters
 

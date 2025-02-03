@@ -10,7 +10,7 @@ title: NodeStatusService
 
 # Class: NodeStatusService
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:27](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L27)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L27)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/services/NodeStatusService.ts:27](https://github.co
 
 > **new NodeStatusService**(`blockStorage`, `batchStorage`, `settlementStorage`): [`NodeStatusService`](NodeStatusService.md)
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L28)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L28)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [api/src/graphql/services/NodeStatusService.ts:28](https://github.co
 
 > **getNodeInformation**(): `Promise`\<[`NodeInformation`](../interfaces/NodeInformation.md)\>
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L56)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L56)
 
 #### Returns
 
@@ -56,7 +56,7 @@ Defined in: [api/src/graphql/services/NodeStatusService.ts:56](https://github.co
 
 > **getProcessInfo**(): [`ProcessInformation`](../interfaces/ProcessInformation.md)
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L36)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L36)
 
 #### Returns
 

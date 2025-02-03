@@ -10,7 +10,7 @@ title: NodeInformation
 
 # Interface: NodeInformation
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L21)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L21)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/services/NodeStatusService.ts:21](https://github.co
 
 > **batchHeight**: `number`
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L23)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L23)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [api/src/graphql/services/NodeStatusService.ts:23](https://github.co
 
 > **blockHeight**: `number`
 
-Defined in: [api/src/graphql/services/NodeStatusService.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/services/NodeStatusService.ts#L22)
+Defined in: [api/src/graphql/services/NodeStatusService.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/services/NodeStatusService.ts#L22)

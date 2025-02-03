@@ -10,7 +10,7 @@ title: EventEmitter
 
 # Class: EventEmitter\<Events\>
 
-Defined in: [packages/common/src/events/EventEmitter.ts:7](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L7)
+Defined in: [packages/common/src/events/EventEmitter.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L7)
 
 ## Extended by
 
@@ -37,7 +37,7 @@ Defined in: [packages/common/src/events/EventEmitter.ts:7](https://github.com/pr
 
 > `protected` `readonly` **listeners**: `ListenersHolder`\<`Events`\> = `{}`
 
-Defined in: [packages/common/src/events/EventEmitter.ts:8](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L8)
+Defined in: [packages/common/src/events/EventEmitter.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L8)
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: [packages/common/src/events/EventEmitter.ts:8](https://github.com/pr
 
 > `protected` `readonly` **wildcardListeners**: (`event`, `args`) => `void`[] = `[]`
 
-Defined in: [packages/common/src/events/EventEmitter.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L10)
+Defined in: [packages/common/src/events/EventEmitter.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L10)
 
 #### Parameters
 
@@ -67,7 +67,7 @@ keyof `Events`
 
 > **emit**\<`Key`\>(`event`, ...`parameters`): `void`
 
-Defined in: [packages/common/src/events/EventEmitter.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L15)
+Defined in: [packages/common/src/events/EventEmitter.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L15)
 
 #### Type Parameters
 
@@ -93,7 +93,7 @@ Defined in: [packages/common/src/events/EventEmitter.ts:15](https://github.com/p
 
 > **off**\<`Key`\>(`event`, `listener`): `void`
 
-Defined in: [packages/common/src/events/EventEmitter.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L45)
+Defined in: [packages/common/src/events/EventEmitter.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L45)
 
 Primitive .off() with identity comparison for now.
 Could be replaced by returning an id in .on() and using that.
@@ -122,7 +122,7 @@ Could be replaced by returning an id in .on() and using that.
 
 > **on**\<`Key`\>(`event`, `listener`): `void`
 
-Defined in: [packages/common/src/events/EventEmitter.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L34)
+Defined in: [packages/common/src/events/EventEmitter.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L34)
 
 #### Type Parameters
 
@@ -148,7 +148,7 @@ Defined in: [packages/common/src/events/EventEmitter.ts:34](https://github.com/p
 
 > **onAll**(`listener`): `void`
 
-Defined in: [packages/common/src/events/EventEmitter.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmitter.ts#L30)
+Defined in: [packages/common/src/events/EventEmitter.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmitter.ts#L30)
 
 #### Parameters
 

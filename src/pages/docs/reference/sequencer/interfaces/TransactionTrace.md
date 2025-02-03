@@ -10,7 +10,7 @@ title: TransactionTrace
 
 # Interface: TransactionTrace
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L37)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L37)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:3
 
 > **blockProver**: [`BlockProverParameters`](BlockProverParameters.md)
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:40](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L40)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L40)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:4
 
 > **runtimeProver**: [`RuntimeProofParameters`](RuntimeProofParameters.md)
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:38](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L38)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L38)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:3
 
 > **stateTransitionProver**: [`StateTransitionProofParameters`](StateTransitionProofParameters.md)[]
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:39](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L39)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L39)

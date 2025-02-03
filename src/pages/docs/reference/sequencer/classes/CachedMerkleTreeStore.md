@@ -10,7 +10,7 @@ title: CachedMerkleTreeStore
 
 # Class: CachedMerkleTreeStore
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L14)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L14)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:14](ht
 
 > **new CachedMerkleTreeStore**(`parent`): [`CachedMerkleTreeStore`](CachedMerkleTreeStore.md)
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L32)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L32)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: packages/common/dist/trees/InMemoryMerkleTreeStorage.d.ts:3
 
 > **commit**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L28)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L28)
 
 #### Returns
 
@@ -80,7 +80,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:28](ht
 
 > **getNode**(`key`, `level`): `undefined` \| `bigint`
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L36)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L36)
 
 #### Parameters
 
@@ -106,7 +106,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:36](ht
 
 > **getNodesAsync**(`nodes`): `Promise`\<(`undefined` \| `bigint`)[]\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:148](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L148)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:148](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L148)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:148](h
 
 > **getWrittenNodes**(): `object`
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L45)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L45)
 
 #### Returns
 
@@ -140,7 +140,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:45](ht
 
 > **mergeIntoParent**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:112](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L112)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L112)
 
 #### Returns
 
@@ -152,7 +152,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:112](h
 
 > **openTransaction**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L24)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L24)
 
 #### Returns
 
@@ -168,7 +168,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:24](ht
 
 > **preloadKey**(`index`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:108](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L108)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:108](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L108)
 
 #### Parameters
 
@@ -186,7 +186,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:108](h
 
 > **preloadKeys**(`keys`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:94](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L94)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L94)
 
 #### Parameters
 
@@ -204,7 +204,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:94](ht
 
 > **resetWrittenNodes**(): `void`
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L53)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L53)
 
 #### Returns
 
@@ -216,7 +216,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:53](ht
 
 > **setNode**(`key`, `level`, `value`): `void`
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:40](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L40)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L40)
 
 #### Parameters
 
@@ -246,7 +246,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:40](ht
 
 > **setNodeAsync**(`key`, `level`, `value`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:140](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L140)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:140](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L140)
 
 #### Parameters
 
@@ -272,7 +272,7 @@ Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:140](h
 
 > **writeNodes**(`nodes`): `void`
 
-Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:176](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L176)
+Defined in: [packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts:176](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/CachedMerkleTreeStore.ts#L176)
 
 #### Parameters
 

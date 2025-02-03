@@ -10,7 +10,7 @@ title: RuntimeProofParametersSerializer
 
 # Class: RuntimeProofParametersSerializer
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts#L11)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts#L11)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Runtim
 
 > **fromJSON**(`json`): [`RuntimeProofParameters`](../interfaces/RuntimeProofParameters.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts#L29)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts#L29)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Runtim
 
 > **toJSON**(`parameters`): `string`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts#L14)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeProofParametersSerializer.ts#L14)
 
 #### Parameters
 

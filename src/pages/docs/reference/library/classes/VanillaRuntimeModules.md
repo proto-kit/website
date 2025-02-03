@@ -10,7 +10,7 @@ title: VanillaRuntimeModules
 
 # Class: VanillaRuntimeModules
 
-Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/runtime/VanillaRuntimeModules.ts#L10)
+Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/VanillaRuntimeModules.ts#L10)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:10](https://g
 
 > `static` **defaultConfig**(): `object`
 
-Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/runtime/VanillaRuntimeModules.ts#L20)
+Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/VanillaRuntimeModules.ts#L20)
 
 #### Returns
 
@@ -44,7 +44,7 @@ Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:20](https://g
 
 > `static` **with**\<`RuntimeModules`\>(`additionalModules`): `object` & `RuntimeModules`
 
-Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/runtime/VanillaRuntimeModules.ts#L11)
+Defined in: [packages/library/src/runtime/VanillaRuntimeModules.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/VanillaRuntimeModules.ts#L11)
 
 #### Type Parameters
 

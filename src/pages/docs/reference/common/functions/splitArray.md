@@ -12,7 +12,7 @@ title: splitArray
 
 > **splitArray**\<`T`, `K`\>(`arr`, `split`): `Record`\<`K`, `T`[] \| `undefined`\>
 
-Defined in: [packages/common/src/utils.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/utils.ts#L26)
+Defined in: [packages/common/src/utils.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L26)
 
 Utility function to split an array of type T into a record <K, T[]> based on a
 function T => K that determines the key of each record

@@ -10,7 +10,7 @@ title: TimedBlockTrigger
 
 # Class: TimedBlockTrigger
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L36)
+Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L36)
 
 A BlockTrigger is the primary method to start the production of a block and
 all associated processes.
@@ -30,7 +30,7 @@ all associated processes.
 
 > **new TimedBlockTrigger**(`batchProducerModule`, `blockProducerModule`, `settlementModule`, `blockQueue`, `batchStorage`, `settlementStorage`, `mempool`): [`TimedBlockTrigger`](TimedBlockTrigger.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:44](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L44)
+Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L44)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigge
 
 > `protected` `readonly` **batchProducerModule**: `undefined` \| [`BatchProducerModule`](BatchProducerModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L46)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L46)
 
 #### Inherited from
 
@@ -88,7 +88,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **batchQueue**: [`BatchStorage`](../interfaces/BatchStorage.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L49)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L49)
 
 #### Inherited from
 
@@ -100,7 +100,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **blockProducerModule**: [`BlockProducerModule`](BlockProducerModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L45)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L45)
 
 #### Inherited from
 
@@ -112,7 +112,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **blockQueue**: [`BlockQueue`](../interfaces/BlockQueue.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:48](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L48)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L48)
 
 #### Inherited from
 
@@ -139,7 +139,7 @@ checks when retrieving it via the getter
 
 > `readonly` **events**: [`EventEmitter`](../../common/classes/EventEmitter.md)\<[`TimedBlockTriggerEvent`](../interfaces/TimedBlockTriggerEvent.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:42](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L42)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L42)
 
 #### Inherited from
 
@@ -151,7 +151,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **settlementModule**: `undefined` \| [`SettlementModule`](SettlementModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:47](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L47)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L47)
 
 #### Inherited from
 
@@ -163,7 +163,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **settlementStorage**: `undefined` \| [`SettlementStorage`](../interfaces/SettlementStorage.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:50](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L50)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L50)
 
 #### Inherited from
 
@@ -175,7 +175,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -221,7 +221,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:137](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L137)
+Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:137](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L137)
 
 #### Returns
 
@@ -259,7 +259,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > `protected` **produceBatch**(): `Promise`\<`undefined` \| [`SettleableBatch`](../interfaces/SettleableBatch.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:55](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L55)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L55)
 
 #### Returns
 
@@ -275,7 +275,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` **produceBlock**(): `Promise`\<`undefined` \| [`Block`](../interfaces/Block.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:89](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L89)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:89](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L89)
 
 #### Returns
 
@@ -291,7 +291,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` **produceBlockWithResult**(): `Promise`\<`undefined` \| [`BlockWithResult`](../interfaces/BlockWithResult.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:68](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L68)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L68)
 
 #### Returns
 
@@ -307,7 +307,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` **settle**(`batch`): `Promise`\<`undefined` \| [`Settlement`](../interfaces/Settlement.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:95](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L95)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:95](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L95)
 
 #### Parameters
 
@@ -329,7 +329,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:90](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L90)
+Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:90](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L90)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

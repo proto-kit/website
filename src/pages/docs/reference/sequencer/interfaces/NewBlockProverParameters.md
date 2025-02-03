@@ -10,7 +10,7 @@ title: NewBlockProverParameters
 
 # Interface: NewBlockProverParameters
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:30](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L30)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L30)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:30
 
 > **blockWitness**: [`BlockHashMerkleTreeWitness`](../../protocol/classes/BlockHashMerkleTreeWitness.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L33)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L33)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:33
 
 > **networkState**: [`NetworkState`](../../protocol/classes/NetworkState.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L32)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L32)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:32
 
 > **publicInput**: [`BlockProverPublicInput`](../../protocol/classes/BlockProverPublicInput.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L31)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L31)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:31
 
 > **startingState**: [`TaskStateRecord`](../type-aliases/TaskStateRecord.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L34)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L34)

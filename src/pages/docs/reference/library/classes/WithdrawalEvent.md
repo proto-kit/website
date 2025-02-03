@@ -10,7 +10,7 @@ title: WithdrawalEvent
 
 # Class: WithdrawalEvent
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/runtime/Withdrawals.ts#L20)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L20)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **key**: [`WithdrawalKey`](WithdrawalKey.md) = `WithdrawalKey`
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/runtime/Withdrawals.ts#L21)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L21)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/library/src/runtime/Withdrawals.ts:21](https://github.com/
 
 > **value**: [`Withdrawal`](../../protocol/classes/Withdrawal.md) = `Withdrawal`
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/runtime/Withdrawals.ts#L22)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L22)
 
 #### Inherited from
 

@@ -10,7 +10,7 @@ title: RuntimeEnvironment
 
 # Interface: RuntimeEnvironment
 
-Defined in: [module/src/runtime/RuntimeEnvironment.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeEnvironment.ts#L10)
+Defined in: [module/src/runtime/RuntimeEnvironment.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeEnvironment.ts#L10)
 
 ## Extends
 
@@ -36,7 +36,7 @@ Defined in: common/dist/zkProgrammable/ZkProgrammable.d.ts:38
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [module/src/runtime/RuntimeEnvironment.ts:12](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeEnvironment.ts#L12)
+Defined in: [module/src/runtime/RuntimeEnvironment.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeEnvironment.ts#L12)
 
 ##### Returns
 
@@ -50,7 +50,7 @@ Defined in: [module/src/runtime/RuntimeEnvironment.ts:12](https://github.com/pro
 
 > **get** **methodIdResolver**(): [`MethodIdResolver`](../classes/MethodIdResolver.md)
 
-Defined in: [module/src/runtime/RuntimeEnvironment.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeEnvironment.ts#L15)
+Defined in: [module/src/runtime/RuntimeEnvironment.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeEnvironment.ts#L15)
 
 ##### Returns
 
@@ -64,7 +64,7 @@ Defined in: [module/src/runtime/RuntimeEnvironment.ts:15](https://github.com/pro
 
 > **get** **stateService**(): [`SimpleAsyncStateService`](../../protocol/interfaces/SimpleAsyncStateService.md)
 
-Defined in: [module/src/runtime/RuntimeEnvironment.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeEnvironment.ts#L13)
+Defined in: [module/src/runtime/RuntimeEnvironment.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeEnvironment.ts#L13)
 
 ##### Returns
 
@@ -78,7 +78,7 @@ Defined in: [module/src/runtime/RuntimeEnvironment.ts:13](https://github.com/pro
 
 > **get** **stateServiceProvider**(): [`StateServiceProvider`](../../protocol/classes/StateServiceProvider.md)
 
-Defined in: [module/src/runtime/RuntimeEnvironment.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeEnvironment.ts#L14)
+Defined in: [module/src/runtime/RuntimeEnvironment.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeEnvironment.ts#L14)
 
 ##### Returns
 

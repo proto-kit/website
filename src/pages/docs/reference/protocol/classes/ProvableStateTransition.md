@@ -10,7 +10,7 @@ title: ProvableStateTransition
 
 # Class: ProvableStateTransition
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransition.ts#L10)
+Defined in: [packages/protocol/src/model/StateTransition.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L10)
 
 Provable representation of a State Transition, used to
 normalize state transitions of various value types for
@@ -58,7 +58,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **from**: [`ProvableOption`](ProvableOption.md) = `ProvableOption`
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransition.ts#L14)
+Defined in: [packages/protocol/src/model/StateTransition.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L14)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:14](https://github.c
 
 > **path**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransition.ts#L11)
+Defined in: [packages/protocol/src/model/StateTransition.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L11)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:11](https://github.c
 
 > **to**: [`ProvableOption`](ProvableOption.md) = `ProvableOption`
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransition.ts#L17)
+Defined in: [packages/protocol/src/model/StateTransition.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L17)
 
 #### Inherited from
 
@@ -522,7 +522,7 @@ Convert provable type to a normal JS type.
 
 > `static` **dummy**(): [`ProvableStateTransition`](ProvableStateTransition.md)
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransition.ts#L19)
+Defined in: [packages/protocol/src/model/StateTransition.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L19)
 
 #### Returns
 

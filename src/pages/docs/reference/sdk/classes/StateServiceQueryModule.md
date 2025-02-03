@@ -10,7 +10,7 @@ title: StateServiceQueryModule
 
 # Class: StateServiceQueryModule
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L16)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L16)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new StateServiceQueryModule**(`sequencer`): [`StateServiceQueryModule`](StateServiceQueryModule.md)
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L20)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L20)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [sdk/src/query/StateServiceQueryModule.ts:20](https://github.com/pro
 
 > `optional` **appChain**: [`AppChain`](AppChain.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md), [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & [`ProtocolModulesRecord`](../../protocol/type-aliases/ProtocolModulesRecord.md), [`SequencerModulesRecord`](../../sequencer/type-aliases/SequencerModulesRecord.md), [`AppChainModulesRecord`](../type-aliases/AppChainModulesRecord.md)\>
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/AppChainModule.ts#L18)
+Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L18)
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ checks when retrieving it via the getter
 
 > **sequencer**: [`Sequencer`](../../sequencer/classes/Sequencer.md)\<[`SequencerModulesRecord`](../../sequencer/type-aliases/SequencerModulesRecord.md)\>
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L21)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L21)
 
 ***
 
@@ -85,7 +85,7 @@ Defined in: [sdk/src/query/StateServiceQueryModule.ts:21](https://github.com/pro
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/AppChainModule.ts#L16)
+Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L16)
 
 #### Inherited from
 
@@ -99,7 +99,7 @@ Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit
 
 > **get** **asyncStateService**(): [`AsyncStateService`](../../sequencer/interfaces/AsyncStateService.md)
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L26)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L26)
 
 ##### Returns
 
@@ -147,7 +147,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **get** **treeStore**(): [`AsyncMerkleTreeStore`](../../sequencer/interfaces/AsyncMerkleTreeStore.md)
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L32)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L32)
 
 ##### Returns
 
@@ -181,7 +181,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **get**(`key`): `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L36)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L36)
 
 #### Parameters
 
@@ -203,7 +203,7 @@ Defined in: [sdk/src/query/StateServiceQueryModule.ts:36](https://github.com/pro
 
 > **merkleWitness**(`path`): `Promise`\<`undefined` \| [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md)\>
 
-Defined in: [sdk/src/query/StateServiceQueryModule.ts:40](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/StateServiceQueryModule.ts#L40)
+Defined in: [sdk/src/query/StateServiceQueryModule.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/StateServiceQueryModule.ts#L40)
 
 #### Parameters
 

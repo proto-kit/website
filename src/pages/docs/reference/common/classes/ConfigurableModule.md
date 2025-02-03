@@ -10,7 +10,7 @@ title: ConfigurableModule
 
 # Class: ConfigurableModule\<Config\>
 
-Defined in: [packages/common/src/config/ConfigurableModule.ts:27](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ConfigurableModule.ts#L27)
+Defined in: [packages/common/src/config/ConfigurableModule.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ConfigurableModule.ts#L27)
 
 Used by various module sub-types that may need to be configured
 
@@ -52,7 +52,7 @@ Used by various module sub-types that may need to be configured
 
 > `protected` **currentConfig**: `undefined` \| `Config`
 
-Defined in: [packages/common/src/config/ConfigurableModule.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ConfigurableModule.ts#L34)
+Defined in: [packages/common/src/config/ConfigurableModule.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ConfigurableModule.ts#L34)
 
 Store the config separately, so that we can apply additional
 checks when retrieving it via the getter
@@ -65,7 +65,7 @@ checks when retrieving it via the getter
 
 > **get** **config**(): `Config`
 
-Defined in: [packages/common/src/config/ConfigurableModule.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ConfigurableModule.ts#L37)
+Defined in: [packages/common/src/config/ConfigurableModule.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ConfigurableModule.ts#L37)
 
 ##### Returns
 
@@ -75,7 +75,7 @@ Defined in: [packages/common/src/config/ConfigurableModule.ts:37](https://github
 
 > **set** **config**(`config`): `void`
 
-Defined in: [packages/common/src/config/ConfigurableModule.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ConfigurableModule.ts#L45)
+Defined in: [packages/common/src/config/ConfigurableModule.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ConfigurableModule.ts#L45)
 
 ##### Parameters
 
@@ -97,7 +97,7 @@ Defined in: [packages/common/src/config/ConfigurableModule.ts:45](https://github
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/common/src/config/ConfigurableModule.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ConfigurableModule.ts#L49)
+Defined in: [packages/common/src/config/ConfigurableModule.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ConfigurableModule.ts#L49)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: TransitionMethodExecutionContext
 
 # Interface: TransitionMethodExecutionContext
 
-Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:7](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L7)
+Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L7)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContex
 
 > **addStateTransition**: \<`Value`\>(`stateTransition`) => `void`
 
-Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:12](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L12)
+Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L12)
 
 Adds an in-method generated state transition to the current context
 
@@ -44,7 +44,7 @@ State transition to add to the context
 
 > **clear**: () => `void`
 
-Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L17)
+Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L17)
 
 Manually clears/resets the execution context
 
@@ -58,7 +58,7 @@ Manually clears/resets the execution context
 
 > **current**: () => `object`
 
-Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L23)
+Defined in: [packages/protocol/src/state/context/TransitionMethodExecutionContext.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/TransitionMethodExecutionContext.ts#L23)
 
 Had to override current() otherwise it would not infer
 the type of result correctly (parent type would be reused)

@@ -10,7 +10,7 @@ title: AtomicCompileHelper
 
 # Class: AtomicCompileHelper
 
-Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/AtomicCompileHelper.ts#L17)
+Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/AtomicCompileHelper.ts#L17)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:17](https://gi
 
 > **new AtomicCompileHelper**(`areProofsEnabled`): [`AtomicCompileHelper`](AtomicCompileHelper.md)
 
-Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/AtomicCompileHelper.ts#L18)
+Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/AtomicCompileHelper.ts#L18)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:18](https://gi
 
 > **compileContract**(`contract`, `overrideProofsEnabled`?): `Promise`\<[`CompileArtifact`](../interfaces/CompileArtifact.md)\>
 
-Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/AtomicCompileHelper.ts#L24)
+Defined in: [packages/common/src/compiling/AtomicCompileHelper.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/AtomicCompileHelper.ts#L24)
 
 #### Parameters
 

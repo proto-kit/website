@@ -10,7 +10,7 @@ title: FlowTaskWorker
 
 # Class: FlowTaskWorker\<Tasks\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L15)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L15)
 
 ## Type Parameters
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:15](https://
 
 > **new FlowTaskWorker**\<`Tasks`\>(`mq`, `tasks`): [`FlowTaskWorker`](FlowTaskWorker.md)\<`Tasks`\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L22)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L22)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:22](https://
 
 > `optional` **preparePromise**: `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L78)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L78)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:78](https://
 
 > `optional` **prepareResolve**: () => `void`
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:80](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L80)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L80)
 
 #### Returns
 
@@ -68,7 +68,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:80](https://
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:165](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L165)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:165](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L165)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:165](https:/
 
 > **prepareTasks**(`tasks`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:86](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L86)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:86](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L86)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:86](https://
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:112](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L112)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L112)
 
 #### Returns
 
@@ -114,7 +114,7 @@ Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:112](https:/
 
 > **waitForPrepared**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:82](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L82)
+Defined in: [packages/sequencer/src/worker/worker/FlowTaskWorker.ts:82](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/FlowTaskWorker.ts#L82)
 
 #### Returns
 

@@ -10,7 +10,7 @@ title: BlockProvable
 
 # Interface: BlockProvable
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:75](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L75)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L75)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:75](https://git
 
 > **merge**: (`publicInput`, `proof1`, `proof2`) => `Promise`\<[`BlockProverPublicOutput`](../classes/BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:94](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L94)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L94)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:94](https://git
 
 > **proveBlock**: (`publicInput`, `networkState`, `blockWitness`, `transactionProof`) => `Promise`\<[`BlockProverPublicOutput`](../classes/BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:86](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L86)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:86](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L86)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:86](https://git
 
 > **proveTransaction**: (`publicInput`, `stateProof`, `appProof`, `executionData`, `verificationKeyAttestation`) => `Promise`\<[`BlockProverPublicOutput`](../classes/BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/BlockProvable.ts#L78)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L78)
 
 #### Parameters
 

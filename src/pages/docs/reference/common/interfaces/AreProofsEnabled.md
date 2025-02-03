@@ -10,7 +10,7 @@ title: AreProofsEnabled
 
 # Interface: AreProofsEnabled
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L23)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L23)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:23](https://gi
 
 > **areProofsEnabled**: `boolean`
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L24)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L24)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:24](https://gi
 
 > **setProofsEnabled**: (`areProofsEnabled`) => `void`
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L25)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L25)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: Runtime
 
 # Class: Runtime\<Modules\>
 
-Defined in: [module/src/runtime/Runtime.ts:270](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L270)
+Defined in: [module/src/runtime/Runtime.ts:270](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L270)
 
 Wrapper for an application specific runtime, which helps orchestrate
 runtime modules into an interoperable runtime.
@@ -34,7 +34,7 @@ runtime modules into an interoperable runtime.
 
 > **new Runtime**\<`Modules`\>(`definition`): [`Runtime`](Runtime.md)\<`Modules`\>
 
-Defined in: [module/src/runtime/Runtime.ts:296](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L296)
+Defined in: [module/src/runtime/Runtime.ts:296](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L296)
 
 Creates a new Runtime from the provided config
 
@@ -73,7 +73,7 @@ checks when retrieving it via the getter
 
 > **definition**: [`RuntimeDefinition`](../interfaces/RuntimeDefinition.md)\<`Modules`\>
 
-Defined in: [module/src/runtime/Runtime.ts:287](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L287)
+Defined in: [module/src/runtime/Runtime.ts:287](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L287)
 
 #### Overrides
 
@@ -85,7 +85,7 @@ Defined in: [module/src/runtime/Runtime.ts:287](https://github.com/proto-kit/fra
 
 > `optional` **program**: `any`
 
-Defined in: [module/src/runtime/Runtime.ts:285](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L285)
+Defined in: [module/src/runtime/Runtime.ts:285](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L285)
 
 ***
 
@@ -93,7 +93,7 @@ Defined in: [module/src/runtime/Runtime.ts:285](https://github.com/proto-kit/fra
 
 > **zkProgrammable**: [`ZkProgrammable`](../../common/classes/ZkProgrammable.md)\<[`MethodPublicOutput`](../../protocol/classes/MethodPublicOutput.md)\>
 
-Defined in: [module/src/runtime/Runtime.ts:289](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L289)
+Defined in: [module/src/runtime/Runtime.ts:289](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L289)
 
 #### Implementation of
 
@@ -107,7 +107,7 @@ Defined in: [module/src/runtime/Runtime.ts:289](https://github.com/proto-kit/fra
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [module/src/runtime/Runtime.ts:309](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L309)
+Defined in: [module/src/runtime/Runtime.ts:309](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L309)
 
 ##### Returns
 
@@ -177,7 +177,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:81
 
 > **get** **dependencyContainer**(): `DependencyContainer`
 
-Defined in: [module/src/runtime/Runtime.ts:330](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L330)
+Defined in: [module/src/runtime/Runtime.ts:330](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L330)
 
 ##### Returns
 
@@ -211,7 +211,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:99
 
 > **get** **methodIdResolver**(): [`MethodIdResolver`](MethodIdResolver.md)
 
-Defined in: [module/src/runtime/Runtime.ts:323](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L323)
+Defined in: [module/src/runtime/Runtime.ts:323](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L323)
 
 ##### Returns
 
@@ -249,7 +249,7 @@ list of module names
 
 > **get** **runtimeModuleNames**(): `string`[]
 
-Defined in: [module/src/runtime/Runtime.ts:382](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L382)
+Defined in: [module/src/runtime/Runtime.ts:382](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L382)
 
 ##### Returns
 
@@ -265,7 +265,7 @@ A list of names of all the registered module names
 
 > **get** **stateService**(): [`SimpleAsyncStateService`](../../protocol/interfaces/SimpleAsyncStateService.md)
 
-Defined in: [module/src/runtime/Runtime.ts:319](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L319)
+Defined in: [module/src/runtime/Runtime.ts:319](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L319)
 
 ##### Returns
 
@@ -283,7 +283,7 @@ Defined in: [module/src/runtime/Runtime.ts:319](https://github.com/proto-kit/fra
 
 > **get** **stateServiceProvider**(): [`StateServiceProvider`](../../protocol/classes/StateServiceProvider.md)
 
-Defined in: [module/src/runtime/Runtime.ts:313](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L313)
+Defined in: [module/src/runtime/Runtime.ts:313](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L313)
 
 ##### Returns
 
@@ -347,7 +347,7 @@ using e.g. a for loop.
 
 > **compile**(`registry`): `Promise`\<`Record`\<`string`, [`CompileArtifact`](../../common/interfaces/CompileArtifact.md)\>\>
 
-Defined in: [module/src/runtime/Runtime.ts:386](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L386)
+Defined in: [module/src/runtime/Runtime.ts:386](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L386)
 
 #### Parameters
 
@@ -419,7 +419,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:115
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [module/src/runtime/Runtime.ts:303](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L303)
+Defined in: [module/src/runtime/Runtime.ts:303](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L303)
 
 This is a placeholder for individual modules to override.
 This method will be called whenever the underlying container fully
@@ -445,7 +445,7 @@ initialized
 
 > **decorateModule**(`moduleName`, `containedModule`): `void`
 
-Defined in: [module/src/runtime/Runtime.ts:369](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L369)
+Defined in: [module/src/runtime/Runtime.ts:369](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L369)
 
 Add a name and other respective properties required by RuntimeModules,
 that come from the current Runtime
@@ -476,7 +476,7 @@ Name of the runtime module to decorate
 
 > **getMethodById**(`methodId`): `undefined` \| (...`args`) => `Promise`\<`unknown`\>
 
-Defined in: [module/src/runtime/Runtime.ts:338](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L338)
+Defined in: [module/src/runtime/Runtime.ts:338](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L338)
 
 #### Parameters
 
@@ -765,7 +765,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`Modules`\>(`definition`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`Runtime`](Runtime.md)\<`Modules`\>\>
 
-Defined in: [module/src/runtime/Runtime.ts:274](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/Runtime.ts#L274)
+Defined in: [module/src/runtime/Runtime.ts:274](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L274)
 
 #### Type Parameters
 

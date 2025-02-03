@@ -1,14 +1,3 @@
 export default {
-  api: "API",
-  common: "Common",
-  deployment: "Deployment",
-  indexer: "Indexer",
-  library: "Library",
-  module: "Module",
-  persistance: "Persistance",
-  processor: "Processor",
-  protocol: "Protocol",
-  sdk: "SDK",
-  sequencer: "Sequencer",
-  stack: "Stack",
+  "api": "@proto-kit/api","common": "@proto-kit/common","deployment": "@proto-kit/deployment","indexer": "@proto-kit/indexer","library": "@proto-kit/library","module": "@proto-kit/module","persistance": "@proto-kit/persistance","processor": "@proto-kit/processor","protocol": "@proto-kit/protocol","sdk": "@proto-kit/sdk","sequencer": "@proto-kit/sequencer","stack": "@proto-kit/stack"
 };

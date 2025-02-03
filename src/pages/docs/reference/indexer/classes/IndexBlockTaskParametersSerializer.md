@@ -10,7 +10,7 @@ title: IndexBlockTaskParametersSerializer
 
 # Class: IndexBlockTaskParametersSerializer
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:12](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L12)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L12)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:12](https://github.co
 
 > **new IndexBlockTaskParametersSerializer**(`blockMapper`, `blockResultMapper`, `transactionResultMapper`): [`IndexBlockTaskParametersSerializer`](IndexBlockTaskParametersSerializer.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L13)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L13)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:13](https://github.co
 
 > **blockMapper**: [`BlockMapper`](../../persistance/classes/BlockMapper.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L14)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L14)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:14](https://github.co
 
 > **blockResultMapper**: [`BlockResultMapper`](../../persistance/classes/BlockResultMapper.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L15)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L15)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:15](https://github.co
 
 > **transactionResultMapper**: [`TransactionExecutionResultMapper`](../../persistance/classes/TransactionExecutionResultMapper.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L16)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L16)
 
 ## Methods
 
@@ -68,7 +68,7 @@ Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:16](https://github.co
 
 > **fromJSON**(`json`): [`IndexBlockTaskParameters`](../interfaces/IndexBlockTaskParameters.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L29)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L29)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:29](https://github.co
 
 > **toJSON**(`parameters`): `string`
 
-Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L19)
+Defined in: [indexer/src/tasks/IndexBlockTaskParameters.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTaskParameters.ts#L19)
 
 #### Parameters
 

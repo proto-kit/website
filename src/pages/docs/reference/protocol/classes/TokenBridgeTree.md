@@ -10,7 +10,7 @@ title: TokenBridgeTree
 
 # Class: TokenBridgeTree
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L15)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L15)
 
 Merkle tree that contains all the deployed token bridges as a mapping of
 tokenId => PublicKey
@@ -50,7 +50,7 @@ Defined in: packages/common/dist/trees/RollupMerkleTree.d.ts:113
 
 > **indizes**: `Record`\<`string`, `bigint`\> = `{}`
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L16)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L16)
 
 ***
 
@@ -194,7 +194,7 @@ Values to fill the leaves with.
 
 > **getIndex**(`tokenId`): `bigint`
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L49)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L49)
 
 #### Parameters
 
@@ -328,7 +328,7 @@ New value.
 
 > `static` **buildTreeFromEvents**(`contract`): `Promise`\<[`TokenBridgeTree`](TokenBridgeTree.md)\>
 
-Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L22)
+Defined in: [packages/protocol/src/settlement/contracts/TokenBridgeTree.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/TokenBridgeTree.ts#L22)
 
 Initializes and fills the tree based on all on-chain events that have been
 emitted by every emit

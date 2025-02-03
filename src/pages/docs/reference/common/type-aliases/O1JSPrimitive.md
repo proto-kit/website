@@ -12,4 +12,4 @@ title: O1JSPrimitive
 
 > **O1JSPrimitive**: `object` \| `string` \| `boolean` \| `number`
 
-Defined in: [packages/common/src/zkProgrammable/provableMethod.ts:8](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/provableMethod.ts#L8)
+Defined in: [packages/common/src/zkProgrammable/provableMethod.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/provableMethod.ts#L8)

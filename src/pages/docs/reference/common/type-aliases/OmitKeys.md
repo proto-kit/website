@@ -12,7 +12,7 @@ title: OmitKeys
 
 > **OmitKeys**\<`Record`, `Keys`\>: `{ [Key in keyof Record as Key extends Keys ? never : Key]: Record[Key] }`
 
-Defined in: [packages/common/src/types.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/types.ts#L33)
+Defined in: [packages/common/src/types.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/types.ts#L33)
 
 ## Type Parameters
 

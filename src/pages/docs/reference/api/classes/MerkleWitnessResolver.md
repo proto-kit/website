@@ -10,7 +10,7 @@ title: MerkleWitnessResolver
 
 # Class: MerkleWitnessResolver
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L35)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L35)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new MerkleWitnessResolver**(`treeStore`): [`MerkleWitnessResolver`](MerkleWitnessResolver.md)
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L36)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L36)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **witness**(`path`): `Promise`\<[`MerkleWitnessDTO`](MerkleWitnessDTO.md)\>
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L46)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L46)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: CompileRegistry
 
 # Class: CompileRegistry
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L21)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L21)
 
 The CompileRegistry compiles "compilable modules"
 (i.e. zkprograms, contracts or contractmodules)
@@ -22,7 +22,7 @@ while making sure they don't get compiled twice in the same process in parallel.
 
 > **new CompileRegistry**(`areProofsEnabled`): [`CompileRegistry`](CompileRegistry.md)
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L22)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L22)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/common/src/compiling/CompileRegistry.ts:22](https://github
 
 > **addArtifactsRaw**(`artifacts`): `void`
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:68](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L68)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L68)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [packages/common/src/compiling/CompileRegistry.ts:68](https://github
 
 > **compile**(`target`): `Promise`\<[`CompileArtifact`](../interfaces/CompileArtifact.md)\>
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L49)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L49)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [packages/common/src/compiling/CompileRegistry.ts:49](https://github
 
 > **forceProverExists**(`f`): `Promise`\<`void`\>
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:41](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L41)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L41)
 
 This function forces compilation even if the artifact itself is in the registry.
 Basically the statement is: The artifact along is not enough, we need to
@@ -99,7 +99,7 @@ This is true for non-sideloaded circuit dependencies.
 
 > **getAllArtifacts**(): [`ArtifactRecord`](../type-aliases/ArtifactRecord.md)
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:75](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L75)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L75)
 
 #### Returns
 
@@ -111,7 +111,7 @@ Defined in: [packages/common/src/compiling/CompileRegistry.ts:75](https://github
 
 > **getArtifact**(`name`): `undefined` \| [`CompileArtifact`](../interfaces/CompileArtifact.md)
 
-Defined in: [packages/common/src/compiling/CompileRegistry.ts:58](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/CompileRegistry.ts#L58)
+Defined in: [packages/common/src/compiling/CompileRegistry.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/CompileRegistry.ts#L58)
 
 #### Parameters
 

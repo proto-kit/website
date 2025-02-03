@@ -10,7 +10,7 @@ title: PairProofTaskSerializer
 
 # Class: PairProofTaskSerializer\<PublicInputType, PublicOutputType\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:164](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L164)
+Defined in: [packages/sequencer/src/helpers/utils.ts:164](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L164)
 
 ## Type Parameters
 
@@ -28,7 +28,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:164](https://github.com/pro
 
 > **new PairProofTaskSerializer**\<`PublicInputType`, `PublicOutputType`\>(`proofClass`): [`PairProofTaskSerializer`](PairProofTaskSerializer.md)\<`PublicInputType`, `PublicOutputType`\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:170](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L170)
+Defined in: [packages/sequencer/src/helpers/utils.ts:170](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L170)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:170](https://github.com/pro
 
 > **fromJSON**(`json`): `Promise`\<[`PairTuple`](../type-aliases/PairTuple.md)\<`Proof`\<`PublicInputType`, `PublicOutputType`\>\>\>
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:176](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L176)
+Defined in: [packages/sequencer/src/helpers/utils.ts:176](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L176)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [packages/sequencer/src/helpers/utils.ts:176](https://github.com/pro
 
 > **toJSON**(`input`): `string`
 
-Defined in: [packages/sequencer/src/helpers/utils.ts:187](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/utils.ts#L187)
+Defined in: [packages/sequencer/src/helpers/utils.ts:187](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/utils.ts#L187)
 
 #### Parameters
 

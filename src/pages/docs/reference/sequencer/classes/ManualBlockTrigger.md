@@ -10,7 +10,7 @@ title: ManualBlockTrigger
 
 # Class: ManualBlockTrigger
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L17)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L17)
 
 A BlockTrigger is the primary method to start the production of a block and
 all associated processes.
@@ -29,7 +29,7 @@ all associated processes.
 
 > **new ManualBlockTrigger**(`batchProducerModule`, `blockProducerModule`, `settlementModule`, `blockQueue`, `batchStorage`, `settlementStorage`): [`ManualBlockTrigger`](ManualBlockTrigger.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L21)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L21)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigg
 
 > `protected` `readonly` **batchProducerModule**: `undefined` \| [`BatchProducerModule`](BatchProducerModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L46)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L46)
 
 #### Inherited from
 
@@ -83,7 +83,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **batchQueue**: [`BatchStorage`](../interfaces/BatchStorage.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L49)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L49)
 
 #### Inherited from
 
@@ -95,7 +95,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **blockProducerModule**: [`BlockProducerModule`](BlockProducerModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L45)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L45)
 
 #### Inherited from
 
@@ -107,7 +107,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **blockQueue**: [`BlockQueue`](../interfaces/BlockQueue.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:48](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L48)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L48)
 
 #### Inherited from
 
@@ -134,7 +134,7 @@ checks when retrieving it via the getter
 
 > `readonly` **events**: [`EventEmitter`](../../common/classes/EventEmitter.md)\<[`BlockEvents`](../type-aliases/BlockEvents.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:42](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L42)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L42)
 
 #### Inherited from
 
@@ -146,7 +146,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **settlementModule**: `undefined` \| [`SettlementModule`](SettlementModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:47](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L47)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L47)
 
 #### Inherited from
 
@@ -158,7 +158,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `protected` `readonly` **settlementStorage**: `undefined` \| [`SettlementStorage`](../interfaces/SettlementStorage.md)
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:50](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L50)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L50)
 
 #### Inherited from
 
@@ -170,7 +170,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -238,7 +238,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **produceBatch**(): `Promise`\<`undefined` \| [`SettleableBatch`](../interfaces/SettleableBatch.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:57](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L57)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L57)
 
 #### Returns
 
@@ -254,7 +254,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigg
 
 > **produceBlock**(): `Promise`\<`undefined` \| [`Block`](../interfaces/Block.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:65](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L65)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:65](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L65)
 
 #### Returns
 
@@ -270,7 +270,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigg
 
 > **produceBlockAndBatch**(): `Promise`\<\[`undefined` \| [`Block`](../interfaces/Block.md), `undefined` \| [`SettleableBatch`](../interfaces/SettleableBatch.md)\]\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:50](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L50)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L50)
 
 Produces both an unproven block and immediately produce a
 settlement block proof
@@ -285,7 +285,7 @@ settlement block proof
 
 > **produceBlockWithResult**(): `Promise`\<`undefined` \| [`BlockWithResult`](../interfaces/BlockWithResult.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:69](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L69)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:69](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L69)
 
 #### Returns
 
@@ -301,7 +301,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigg
 
 > **settle**(`batch`): `Promise`\<`undefined` \| [`Settlement`](../interfaces/Settlement.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:61](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L61)
+Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/ManualBlockTrigger.ts#L61)
 
 #### Parameters
 
@@ -323,7 +323,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/ManualBlockTrigg
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:112](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L112)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L112)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

@@ -10,7 +10,7 @@ title: LocalTaskWorkerModule
 
 # Class: LocalTaskWorkerModule\<Tasks\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L56)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L56)
 
 This module spins up a worker in the current local node instance.
 This should only be used for local testing/development and not in a
@@ -36,7 +36,7 @@ cloud workers.
 
 > **new LocalTaskWorkerModule**\<`Tasks`\>(`modules`): [`LocalTaskWorkerModule`](LocalTaskWorkerModule.md)\<`Tasks`\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:80](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L80)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L80)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:80](h
 
 > **containerEvents**: [`EventEmitter`](../../common/classes/EventEmitter.md)\<`LocalTaskWorkerModuleEvents`\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:64](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L64)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L64)
 
 #### Implementation of
 
@@ -101,7 +101,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:60
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L62)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L62)
 
 #### Implementation of
 
@@ -255,7 +255,7 @@ using e.g. a for loop.
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:124](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L124)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:124](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L124)
 
 #### Returns
 
@@ -615,7 +615,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:100](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L100)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:100](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L100)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,
@@ -665,7 +665,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`Tasks`\>(`modules`): [`TypedClass`](../type-aliases/TypedClass.md)\<[`LocalTaskWorkerModule`](LocalTaskWorkerModule.md)\<`Tasks`\>\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:70](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L70)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L70)
 
 #### Type Parameters
 

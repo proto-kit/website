@@ -12,7 +12,7 @@ title: ModulesConfig
 
 > **ModulesConfig**\<`Modules`\>: \{ \[ConfigKey in StringKeyOf\<Modules\>\]: InstanceType\<Modules\[ConfigKey\]\> extends Configurable\<infer Config\> ? Config extends NoConfig ? Config \| undefined : Config : never \}
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:89](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/config/ModuleContainer.ts#L89)
+Defined in: [packages/common/src/config/ModuleContainer.ts:89](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L89)
 
 ## Type Parameters
 

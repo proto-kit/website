@@ -10,7 +10,7 @@ title: RuntimeFeeAnalyzerServiceConfig
 
 # Interface: RuntimeFeeAnalyzerServiceConfig
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:46](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L46)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L46)
 
 ## Extended by
 
@@ -22,7 +22,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:46](https:/
 
 > **baseFee**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L49)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L49)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:49](https:/
 
 > **feeRecipient**: `string`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:48](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L48)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L48)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:48](https:/
 
 > **methods**: `object`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:51](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L51)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L51)
 
 #### Index Signature
 
@@ -50,7 +50,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:51](https:/
 
 > **perWeightUnitFee**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:50](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L50)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L50)
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:50](https:/
 
 > **tokenId**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:47](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L47)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L47)

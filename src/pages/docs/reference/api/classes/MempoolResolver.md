@@ -10,7 +10,7 @@ title: MempoolResolver
 
 # Class: MempoolResolver
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:121](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L121)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:121](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L121)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new MempoolResolver**(`mempool`, `transactionStorage`): [`MempoolResolver`](MempoolResolver.md)
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:122](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L122)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:122](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L122)
 
 #### Parameters
 
@@ -121,7 +121,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **submitTx**(`tx`): `Promise`\<`string`\>
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:133](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L133)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:133](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L133)
 
 #### Parameters
 
@@ -139,7 +139,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:133](https://github.com/
 
 > **transactions**(): `Promise`\<`string`[]\>
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:169](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L169)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:169](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L169)
 
 #### Returns
 
@@ -151,7 +151,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:169](https://github.com/
 
 > **transactionState**(`hash`): `Promise`\<`InclusionStatus`\>
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:144](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L144)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:144](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L144)
 
 #### Parameters
 

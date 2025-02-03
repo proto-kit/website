@@ -10,7 +10,7 @@ title: ChildVerificationKeyService
 
 # Class: ChildVerificationKeyService
 
-Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.ts:7](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/services/ChildVerificationKeyService.ts#L7)
+Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/services/ChildVerificationKeyService.ts#L7)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.
 
 > **getVerificationKey**(`name`): `object`
 
-Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/services/ChildVerificationKeyService.ts#L14)
+Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/services/ChildVerificationKeyService.ts#L14)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.
 
 > **setCompileRegistry**(`registry`): `void`
 
-Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/compiling/services/ChildVerificationKeyService.ts#L10)
+Defined in: [packages/common/src/compiling/services/ChildVerificationKeyService.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/compiling/services/ChildVerificationKeyService.ts#L10)
 
 #### Parameters
 

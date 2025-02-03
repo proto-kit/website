@@ -10,7 +10,7 @@ title: IndexerModule
 
 # Class: `abstract` IndexerModule\<Config\>
 
-Defined in: [indexer/src/IndexerModule.ts:3](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerModule.ts#L3)
+Defined in: [indexer/src/IndexerModule.ts:3](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerModule.ts#L3)
 
 Used by various module sub-types that may need to be configured
 
@@ -113,7 +113,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > `abstract` **start**(): `Promise`\<`void`\>
 
-Defined in: [indexer/src/IndexerModule.ts:4](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/IndexerModule.ts#L4)
+Defined in: [indexer/src/IndexerModule.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/IndexerModule.ts#L4)
 
 #### Returns
 

@@ -10,7 +10,7 @@ title: StateTransitionArrayMapper
 
 # Class: StateTransitionArrayMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L22)
+Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L22)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMap
 
 > **new StateTransitionArrayMapper**(`stMapper`): [`StateTransitionArrayMapper`](StateTransitionArrayMapper.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L26)
+Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L26)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMap
 
 > **mapIn**(`input`): [`UntypedStateTransition`](../../sequencer/classes/UntypedStateTransition.md)[]
 
-Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L28)
+Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L28)
 
 #### Parameters
 
@@ -62,7 +62,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMap
 
 > **mapOut**(`input`): `JsonValue`
 
-Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:39](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L39)
+Defined in: [packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/StateTransitionMapper.ts#L39)
 
 #### Parameters
 

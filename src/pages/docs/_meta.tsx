@@ -20,8 +20,5 @@ export default {
     type: "separator",
     title: "Contributor Documentation",
   },
-  common: "Common",
-  workers: "Worker Architecture",
-  "provable-events": "Provable Events",
   reference: "Reference",
 };

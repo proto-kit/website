@@ -10,7 +10,7 @@ title: PrismaMessageStorage
 
 # Class: PrismaMessageStorage
 
-Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:9](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L9)
+Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L9)
 
 Interface to store Messages previously fetched by a IncomingMessageadapter
 
@@ -24,7 +24,7 @@ Interface to store Messages previously fetched by a IncomingMessageadapter
 
 > **new PrismaMessageStorage**(`connection`, `transactionMapper`): [`PrismaMessageStorage`](PrismaMessageStorage.md)
 
-Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L10)
+Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L10)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:10
 
 > **getMessages**(`fromMessageHash`): `Promise`\<[`PendingTransaction`](../../sequencer/classes/PendingTransaction.md)[]\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L15)
+Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L15)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:15
 
 > **pushMessages**(`fromMessageHash`, `toMessageHash`, `messages`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:44](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L44)
+Defined in: [packages/persistance/src/services/prisma/PrismaMessageStorage.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaMessageStorage.ts#L44)
 
 #### Parameters
 

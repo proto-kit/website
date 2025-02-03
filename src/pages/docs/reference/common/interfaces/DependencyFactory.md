@@ -10,7 +10,7 @@ title: DependencyFactory
 
 # Interface: DependencyFactory
 
-Defined in: [packages/common/src/dependencyFactory/DependencyFactory.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/dependencyFactory/DependencyFactory.ts#L34)
+Defined in: [packages/common/src/dependencyFactory/DependencyFactory.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/dependencyFactory/DependencyFactory.ts#L34)
 
 This is an abstract class for creating DependencyFactories, a pattern
 to bundle multiple smaller services into one and register them into the
@@ -34,7 +34,7 @@ deps that are necessary for the sequencer to work.
 
 > **dependencies**: () => [`DependencyRecord`](../type-aliases/DependencyRecord.md)
 
-Defined in: [packages/common/src/dependencyFactory/DependencyFactory.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/dependencyFactory/DependencyFactory.ts#L35)
+Defined in: [packages/common/src/dependencyFactory/DependencyFactory.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/dependencyFactory/DependencyFactory.ts#L35)
 
 #### Returns
 

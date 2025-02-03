@@ -10,7 +10,7 @@ title: EventEmittingContainer
 
 # Interface: EventEmittingContainer\<Events\>
 
-Defined in: [packages/common/src/events/EventEmittingComponent.ts:9](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmittingComponent.ts#L9)
+Defined in: [packages/common/src/events/EventEmittingComponent.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmittingComponent.ts#L9)
 
 ## Type Parameters
 
@@ -22,4 +22,4 @@ Defined in: [packages/common/src/events/EventEmittingComponent.ts:9](https://git
 
 > **containerEvents**: [`EventEmitter`](../classes/EventEmitter.md)\<`Events`\>
 
-Defined in: [packages/common/src/events/EventEmittingComponent.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/events/EventEmittingComponent.ts#L10)
+Defined in: [packages/common/src/events/EventEmittingComponent.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/events/EventEmittingComponent.ts#L10)

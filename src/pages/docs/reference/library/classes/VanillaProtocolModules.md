@@ -10,7 +10,7 @@ title: VanillaProtocolModules
 
 # Class: VanillaProtocolModules
 
-Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/protocol/VanillaProtocolModules.ts#L18)
+Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/protocol/VanillaProtocolModules.ts#L18)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:18](https:/
 
 > `static` **defaultConfig**(): `object`
 
-Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:51](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/protocol/VanillaProtocolModules.ts#L51)
+Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/protocol/VanillaProtocolModules.ts#L51)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:51](https:/
 
 > `static` **mandatoryConfig**(): `object`
 
-Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:41](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/protocol/VanillaProtocolModules.ts#L41)
+Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/protocol/VanillaProtocolModules.ts#L41)
 
 #### Returns
 
@@ -116,7 +116,7 @@ Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:41](https:/
 
 > `static` **mandatoryModules**\<`ProtocolModules`\>(`additionalModules`): [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & `ProtocolModules`
 
-Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/protocol/VanillaProtocolModules.ts#L19)
+Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/protocol/VanillaProtocolModules.ts#L19)
 
 #### Type Parameters
 
@@ -138,7 +138,7 @@ Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:19](https:/
 
 > `static` **with**\<`ProtocolModules`\>(`additionalModules`): [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & `object` & `ProtocolModules`
 
-Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/library/src/protocol/VanillaProtocolModules.ts#L32)
+Defined in: [packages/library/src/protocol/VanillaProtocolModules.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/protocol/VanillaProtocolModules.ts#L32)
 
 #### Type Parameters
 

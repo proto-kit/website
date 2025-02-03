@@ -10,7 +10,7 @@ title: PrismaSettlementStorage
 
 # Class: PrismaSettlementStorage
 
-Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts:9](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaSettlementStorage.ts#L9)
+Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaSettlementStorage.ts#L9)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts
 
 > **new PrismaSettlementStorage**(`connection`, `settlementMapper`): [`PrismaSettlementStorage`](PrismaSettlementStorage.md)
 
-Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaSettlementStorage.ts#L10)
+Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaSettlementStorage.ts#L10)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts
 
 > **pushSettlement**(`settlement`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaSettlementStorage.ts#L15)
+Defined in: [packages/persistance/src/services/prisma/PrismaSettlementStorage.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaSettlementStorage.ts#L15)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: TransactionMapper
 
 # Class: TransactionMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L19)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L19)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.
 
 > **mapIn**(`input`): [`PendingTransaction`](../../sequencer/classes/PendingTransaction.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L22)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L22)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.
 
 > **mapOut**(`input`): `object`
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L32)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L32)
 
 #### Parameters
 

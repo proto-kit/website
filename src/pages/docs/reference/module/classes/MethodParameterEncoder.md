@@ -10,7 +10,7 @@ title: MethodParameterEncoder
 
 # Class: MethodParameterEncoder
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:76](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L76)
+Defined in: [module/src/method/MethodParameterEncoder.ts:76](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L76)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [module/src/method/MethodParameterEncoder.ts:76](https://github.com/
 
 > **new MethodParameterEncoder**(`types`): [`MethodParameterEncoder`](MethodParameterEncoder.md)
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:120](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L120)
+Defined in: [module/src/method/MethodParameterEncoder.ts:120](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L120)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [module/src/method/MethodParameterEncoder.ts:120](https://github.com
 
 > **decode**(`fields`, `auxiliary`): `Promise`\<`ArgArray`\>
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:122](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L122)
+Defined in: [module/src/method/MethodParameterEncoder.ts:122](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L122)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [module/src/method/MethodParameterEncoder.ts:122](https://github.com
 
 > **encode**(`args`): `object`
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:184](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L184)
+Defined in: [module/src/method/MethodParameterEncoder.ts:184](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L184)
 
 Variant of encode() for provable code that skips the unprovable
 json encoding
@@ -87,7 +87,7 @@ json encoding
 
 > **fieldSize**(): `number`
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:246](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L246)
+Defined in: [module/src/method/MethodParameterEncoder.ts:246](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L246)
 
 #### Returns
 
@@ -99,7 +99,7 @@ Defined in: [module/src/method/MethodParameterEncoder.ts:246](https://github.com
 
 > `static` **fieldSize**(`type`): `undefined` \| `number`
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:109](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L109)
+Defined in: [module/src/method/MethodParameterEncoder.ts:109](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L109)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: [module/src/method/MethodParameterEncoder.ts:109](https://github.com
 
 > `static` **fromMethod**(`target`, `methodName`): [`MethodParameterEncoder`](MethodParameterEncoder.md)
 
-Defined in: [module/src/method/MethodParameterEncoder.ts:77](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/method/MethodParameterEncoder.ts#L77)
+Defined in: [module/src/method/MethodParameterEncoder.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/MethodParameterEncoder.ts#L77)
 
 #### Parameters
 

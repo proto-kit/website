@@ -10,7 +10,7 @@ title: SharedDependencyRecord
 
 # Interface: SharedDependencyRecord
 
-Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:9](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/SharedDependencyFactory.ts#L9)
+Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/SharedDependencyFactory.ts#L9)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:9](https://github.com/p
 
 > **methodIdResolver**: [`DependencyDeclaration`](../../common/type-aliases/DependencyDeclaration.md)\<[`MethodIdResolver`](../../module/classes/MethodIdResolver.md)\>
 
-Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/SharedDependencyFactory.ts#L11)
+Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/SharedDependencyFactory.ts#L11)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:11](https://github.com/
 
 > **stateServiceProvider**: [`DependencyDeclaration`](../../common/type-aliases/DependencyDeclaration.md)\<[`StateServiceProvider`](../../protocol/classes/StateServiceProvider.md)\>
 
-Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/SharedDependencyFactory.ts#L10)
+Defined in: [sdk/src/appChain/SharedDependencyFactory.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/SharedDependencyFactory.ts#L10)

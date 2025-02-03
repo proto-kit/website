@@ -10,7 +10,7 @@ title: PrivateMempool
 
 # Class: PrivateMempool
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L36)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L36)
 
 Lifecycle of a SequencerModule
 
@@ -30,7 +30,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new PrivateMempool**(`transactionValidator`, `transactionStorage`, `protocol`, `sequencer`, `stateService`): [`PrivateMempool`](PrivateMempool.md)
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:41](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L41)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L41)
 
 #### Parameters
 
@@ -83,7 +83,7 @@ checks when retrieving it via the getter
 
 > `readonly` **events**: [`EventEmitter`](../../common/classes/EventEmitter.md)\<[`MempoolEvents`](../type-aliases/MempoolEvents.md)\>
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L37)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L37)
 
 #### Implementation of
 
@@ -95,7 +95,7 @@ Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:37](https:
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -141,7 +141,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **add**(`tx`): `Promise`\<`boolean`\>
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:57](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L57)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L57)
 
 Add a transaction to the mempool
 
@@ -189,7 +189,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **getStagedNetworkState**(): `Promise`\<`undefined` \| [`NetworkState`](../../protocol/classes/NetworkState.md)\>
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:91](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L91)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:91](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L91)
 
 #### Returns
 
@@ -201,7 +201,7 @@ Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:91](https:
 
 > **getTxs**(`limit`?): `Promise`\<[`PendingTransaction`](PendingTransaction.md)[]\>
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:96](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L96)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:96](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L96)
 
 Retrieve all transactions that are currently in the mempool
 
@@ -225,7 +225,7 @@ Retrieve all transactions that are currently in the mempool
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:200](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/mempool/private/PrivateMempool.ts#L200)
+Defined in: [packages/sequencer/src/mempool/private/PrivateMempool.ts:200](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/private/PrivateMempool.ts#L200)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

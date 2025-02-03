@@ -12,7 +12,7 @@ title: verifyToMockable
 
 > **verifyToMockable**\<`PublicInput`, `PublicOutput`\>(`verify`, `__namedParameters`): (`proof`) => `Promise`\<`boolean`\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:59](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L59)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L59)
 
 ## Type Parameters
 

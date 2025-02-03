@@ -10,7 +10,7 @@ title: VanillaTaskWorkerModules
 
 # Class: VanillaTaskWorkerModules
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:131](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L131)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:131](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L131)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:131](
 
 > `static` **allTasks**(): `object`
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:145](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L145)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:145](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L145)
 
 #### Returns
 
@@ -76,7 +76,7 @@ Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:145](
 
 > `static` **defaultConfig**(): `object`
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:152](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L152)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:152](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L152)
 
 #### Returns
 
@@ -128,7 +128,7 @@ Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:152](
 
 > `static` **withoutSettlement**(): `object`
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:132](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L132)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:132](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L132)
 
 #### Returns
 

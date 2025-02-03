@@ -10,7 +10,7 @@ title: IndexBlockTask
 
 # Class: IndexBlockTask
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L16)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L16)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new IndexBlockTask**(`taskSerializer`, `blockStorage`): [`IndexBlockTask`](IndexBlockTask.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L22)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L22)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [indexer/src/tasks/IndexBlockTask.ts:22](https://github.com/proto-ki
 
 > **blockStorage**: [`BlockQueue`](../../sequencer/interfaces/BlockQueue.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L25)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L25)
 
 ***
 
@@ -77,7 +77,7 @@ checks when retrieving it via the getter
 
 > **name**: `string` = `"index-block"`
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L20)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L20)
 
 #### Implementation of
 
@@ -89,7 +89,7 @@ Defined in: [indexer/src/tasks/IndexBlockTask.ts:20](https://github.com/proto-ki
 
 > **taskSerializer**: [`IndexBlockTaskParametersSerializer`](IndexBlockTaskParametersSerializer.md)
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L23)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L23)
 
 ## Accessors
 
@@ -131,7 +131,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **compute**(`input`): `Promise`\<`void`\>
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L33)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L33)
 
 #### Parameters
 
@@ -175,7 +175,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **inputSerializer**(): [`TaskSerializer`](../../sequencer/interfaces/TaskSerializer.md)\<[`IndexBlockTaskParameters`](../interfaces/IndexBlockTaskParameters.md)\>
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L45)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L45)
 
 #### Returns
 
@@ -191,7 +191,7 @@ Defined in: [indexer/src/tasks/IndexBlockTask.ts:45](https://github.com/proto-ki
 
 > **prepare**(): `Promise`\<`void`\>
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L31)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L31)
 
 #### Returns
 
@@ -207,7 +207,7 @@ Defined in: [indexer/src/tasks/IndexBlockTask.ts:31](https://github.com/proto-ki
 
 > **resultSerializer**(): [`TaskSerializer`](../../sequencer/interfaces/TaskSerializer.md)\<`void`\>
 
-Defined in: [indexer/src/tasks/IndexBlockTask.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/tasks/IndexBlockTask.ts#L49)
+Defined in: [indexer/src/tasks/IndexBlockTask.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/tasks/IndexBlockTask.ts#L49)
 
 #### Returns
 

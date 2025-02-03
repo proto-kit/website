@@ -10,7 +10,7 @@ title: NetworkState
 
 # Class: NetworkState
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:12](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/network/NetworkState.ts#L12)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L12)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **block**: [`CurrentBlock`](CurrentBlock.md) = `CurrentBlock`
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/network/NetworkState.ts#L13)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L13)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/model/network/NetworkState.ts:13](https://git
 
 > **previous**: [`PreviousBlock`](PreviousBlock.md) = `PreviousBlock`
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/network/NetworkState.ts#L14)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L14)
 
 #### Inherited from
 
@@ -406,7 +406,7 @@ Convert provable type to a normal JS type.
 
 > **hash**(): `Field`
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/network/NetworkState.ts#L16)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L16)
 
 #### Returns
 
@@ -418,7 +418,7 @@ Defined in: [packages/protocol/src/model/network/NetworkState.ts:16](https://git
 
 > `static` **empty**(): [`NetworkState`](NetworkState.md)
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/network/NetworkState.ts#L23)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L23)
 
 #### Returns
 

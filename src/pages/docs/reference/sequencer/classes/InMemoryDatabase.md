@@ -10,7 +10,7 @@ title: InMemoryDatabase
 
 # Class: InMemoryDatabase
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L21)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L21)
 
 Lifecycle of a SequencerModule
 
@@ -59,7 +59,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -105,7 +105,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:64](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L64)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L64)
 
 #### Returns
 
@@ -143,7 +143,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **dependencies**(): [`StorageDependencyMinimumDependencies`](../interfaces/StorageDependencyMinimumDependencies.md)
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L22)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L22)
 
 #### Returns
 
@@ -159,7 +159,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:22](htt
 
 > **executeInTransaction**(`f`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:75](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L75)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L75)
 
 #### Parameters
 
@@ -181,7 +181,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:75](htt
 
 > **pruneDatabase**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:68](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L68)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L68)
 
 Prunes all data from the database connection.
 Note: This function should only be called immediately at startup,
@@ -201,7 +201,7 @@ everything else will lead to unexpected behaviour and errors
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:60](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L60)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryDatabase.ts#L60)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

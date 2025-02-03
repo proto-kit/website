@@ -10,7 +10,7 @@ title: State
 
 # Class: State\<Value\>
 
-Defined in: [packages/protocol/src/state/State.ts:42](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L42)
+Defined in: [packages/protocol/src/state/State.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L42)
 
 Utilities for runtime module state, such as get/set
 
@@ -28,7 +28,7 @@ Utilities for runtime module state, such as get/set
 
 > **new State**\<`Value`\>(`valueType`): [`State`](State.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/state/State.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L53)
+Defined in: [packages/protocol/src/state/State.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L53)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [packages/protocol/src/state/State.ts:53](https://github.com/proto-k
 
 > `optional` **path**: `Field`
 
-Defined in: [packages/protocol/src/state/State.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L14)
+Defined in: [packages/protocol/src/state/State.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L14)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/state/State.ts:14](https://github.com/proto-k
 
 > `optional` **stateServiceProvider**: [`StateServiceProvider`](StateServiceProvider.md)
 
-Defined in: [packages/protocol/src/state/State.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L26)
+Defined in: [packages/protocol/src/state/State.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L26)
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ Defined in: [packages/protocol/src/state/State.ts:26](https://github.com/proto-k
 
 > **valueType**: `FlexibleProvablePure`\<`Value`\>
 
-Defined in: [packages/protocol/src/state/State.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L53)
+Defined in: [packages/protocol/src/state/State.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L53)
 
 ## Methods
 
@@ -82,7 +82,7 @@ Defined in: [packages/protocol/src/state/State.ts:53](https://github.com/proto-k
 
 > **get**(): `Promise`\<[`Option`](Option.md)\<`Value`\>\>
 
-Defined in: [packages/protocol/src/state/State.ts:133](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L133)
+Defined in: [packages/protocol/src/state/State.ts:133](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L133)
 
 Retrieves the current state and creates a state transition
 anchoring the use of the current state value in the circuit.
@@ -99,7 +99,7 @@ Option representation of the current state.
 
 > **hasPathOrFail**(): `asserts this is { path: Path }`
 
-Defined in: [packages/protocol/src/state/State.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L16)
+Defined in: [packages/protocol/src/state/State.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L16)
 
 #### Returns
 
@@ -115,7 +115,7 @@ Defined in: [packages/protocol/src/state/State.ts:16](https://github.com/proto-k
 
 > **hasStateServiceOrFail**(): `asserts this is { stateServiceProvider: StateServiceProvider }`
 
-Defined in: [packages/protocol/src/state/State.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L28)
+Defined in: [packages/protocol/src/state/State.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L28)
 
 #### Returns
 
@@ -131,7 +131,7 @@ Defined in: [packages/protocol/src/state/State.ts:28](https://github.com/proto-k
 
 > **set**(`value`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/state/State.ts:158](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L158)
+Defined in: [packages/protocol/src/state/State.ts:158](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L158)
 
 Sets a new state value by creating a state transition from
 the current value to the newly set value.
@@ -159,7 +159,7 @@ Value to be set as the current state
 
 > `static` **from**\<`Value`\>(`valueType`): [`State`](State.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/state/State.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/state/State.ts#L49)
+Defined in: [packages/protocol/src/state/State.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L49)
 
 Creates a new state wrapper for the provided value type.
 

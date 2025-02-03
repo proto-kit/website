@@ -10,7 +10,7 @@ title: PrismaBatchStore
 
 # Class: PrismaBatchStore
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L14)
+Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L14)
 
 ## Implements
 
@@ -23,7 +23,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:14](ht
 
 > **new PrismaBatchStore**(`connection`, `batchMapper`): [`PrismaBatchStore`](PrismaBatchStore.md)
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L15)
+Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L15)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:15](ht
 
 > **getBatchAt**(`height`): `Promise`\<`undefined` \| [`Batch`](../../sequencer/interfaces/Batch.md)\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L20)
+Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L20)
 
 #### Parameters
 
@@ -67,7 +67,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:20](ht
 
 > **getCurrentBatchHeight**(): `Promise`\<`number`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:42](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L42)
+Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L42)
 
 #### Returns
 
@@ -83,7 +83,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:42](ht
 
 > **getLatestBatch**(): `Promise`\<`undefined` \| [`Batch`](../../sequencer/interfaces/Batch.md)\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:71](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L71)
+Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:71](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L71)
 
 #### Returns
 
@@ -99,7 +99,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:71](ht
 
 > **pushBatch**(`batch`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:51](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L51)
+Defined in: [packages/persistance/src/services/prisma/PrismaBatchStore.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBatchStore.ts#L51)
 
 #### Parameters
 

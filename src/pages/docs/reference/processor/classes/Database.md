@@ -10,7 +10,7 @@ title: Database
 
 # Class: Database\<PrismaClient\>
 
-Defined in: [packages/processor/src/storage/Database.ts:11](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L11)
+Defined in: [packages/processor/src/storage/Database.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L11)
 
 This is an abstract class for creating DependencyFactories, a pattern
 to bundle multiple smaller services into one and register them into the
@@ -42,7 +42,7 @@ deps that are necessary for the sequencer to work.
 
 > **new Database**\<`PrismaClient`\>(`prismaClient`): [`Database`](Database.md)\<`PrismaClient`\>
 
-Defined in: [packages/processor/src/storage/Database.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L15)
+Defined in: [packages/processor/src/storage/Database.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L15)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ checks when retrieving it via the getter
 
 > **prismaClient**: `PrismaClient`
 
-Defined in: [packages/processor/src/storage/Database.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L15)
+Defined in: [packages/processor/src/storage/Database.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L15)
 
 #### Implementation of
 
@@ -147,7 +147,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **dependencies**(): `object`
 
-Defined in: [packages/processor/src/storage/Database.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L29)
+Defined in: [packages/processor/src/storage/Database.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L29)
 
 #### Returns
 
@@ -171,7 +171,7 @@ Defined in: [packages/processor/src/storage/Database.ts:29](https://github.com/p
 
 > **pruneDatabase**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/storage/Database.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L37)
+Defined in: [packages/processor/src/storage/Database.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L37)
 
 #### Returns
 
@@ -183,7 +183,7 @@ Defined in: [packages/processor/src/storage/Database.ts:37](https://github.com/p
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/storage/Database.ts:50](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L50)
+Defined in: [packages/processor/src/storage/Database.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L50)
 
 #### Returns
 
@@ -199,7 +199,7 @@ Defined in: [packages/processor/src/storage/Database.ts:50](https://github.com/p
 
 > `static` **from**\<`PrismaClient`\>(`prismaClient`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`Database`](Database.md)\<`PrismaClient`\>\>
 
-Defined in: [packages/processor/src/storage/Database.ts:19](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/processor/src/storage/Database.ts#L19)
+Defined in: [packages/processor/src/storage/Database.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/Database.ts#L19)
 
 #### Type Parameters
 

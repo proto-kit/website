@@ -10,7 +10,7 @@ title: Signature
 
 # Class: Signature
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L22)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L22)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:22](https://github.com/p
 
 > **new Signature**(`r`, `s`): [`Signature`](Signature.md)
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L31)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L31)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:31](https://github.com/p
 
 > **r**: `string`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L25)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L25)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:25](https://github.com/p
 
 > **s**: `string`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/modules/MempoolResolver.ts#L29)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L29)

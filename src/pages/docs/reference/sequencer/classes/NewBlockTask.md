@@ -10,7 +10,7 @@ title: NewBlockTask
 
 # Class: NewBlockTask
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L45)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L45)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new NewBlockTask**(`protocol`, `executionContext`, `compileRegistry`): [`NewBlockTask`](NewBlockTask.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:55](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L55)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L55)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ checks when retrieving it via the getter
 
 > `readonly` **name**: `"newBlock"` = `"newBlock"`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L53)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L53)
 
 #### Implementation of
 
@@ -119,7 +119,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compute**(`input`): `Promise`\<`BlockProof`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:105](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L105)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L105)
 
 #### Parameters
 
@@ -163,7 +163,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **inputSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`NewBlockProvingParameters`](../type-aliases/NewBlockProvingParameters.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:66](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L66)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L66)
 
 #### Returns
 
@@ -179,7 +179,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:66
 
 > **prepare**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:129](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L129)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:129](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L129)
 
 #### Returns
 
@@ -195,7 +195,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:12
 
 > **resultSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<`BlockProof`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:81](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L81)
+Defined in: [packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts:81](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/NewBlockTask.ts#L81)
 
 #### Returns
 

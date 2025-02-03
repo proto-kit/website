@@ -10,7 +10,7 @@ title: StateTransitionProvableBatch
 
 # Class: StateTransitionProvableBatch
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:58](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransitionProvableBatch.ts#L58)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L58)
 
 A Batch of StateTransitions to be consumed by the StateTransitionProver
 to prove multiple STs at once
@@ -28,7 +28,7 @@ true == normal ST, false == protocol ST
 
 > **batch**: [`ProvableStateTransition`](ProvableStateTransition.md)[]
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:59](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransitionProvableBatch.ts#L59)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L59)
 
 #### Inherited from
 
@@ -40,7 +40,7 @@ Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:59](htt
 
 > **merkleWitnesses**: [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md)[]
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:69](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransitionProvableBatch.ts#L69)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:69](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L69)
 
 #### Inherited from
 
@@ -52,7 +52,7 @@ Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:69](htt
 
 > **transitionTypes**: [`ProvableStateTransitionType`](ProvableStateTransitionType.md)[]
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:64](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransitionProvableBatch.ts#L64)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L64)
 
 #### Inherited from
 
@@ -444,7 +444,7 @@ Convert provable type to a normal JS type.
 
 > `static` **fromMappings**(`transitions`, `merkleWitnesses`): [`StateTransitionProvableBatch`](StateTransitionProvableBatch.md)
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:74](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransitionProvableBatch.ts#L74)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L74)
 
 #### Parameters
 
@@ -466,7 +466,7 @@ Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:74](htt
 
 > `static` **fromTransitions**(`transitions`, `protocolTransitions`, `merkleWitnesses`): [`StateTransitionProvableBatch`](StateTransitionProvableBatch.md)
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:111](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/model/StateTransitionProvableBatch.ts#L111)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:111](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L111)
 
 #### Parameters
 

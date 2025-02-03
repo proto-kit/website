@@ -10,7 +10,7 @@ title: BlockTrigger
 
 # Interface: BlockTrigger
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L24)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L24)
 
 A BlockTrigger is the primary method to start the production of a block and
 all associated processes.

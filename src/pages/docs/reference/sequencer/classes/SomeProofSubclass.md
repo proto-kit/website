@@ -10,7 +10,7 @@ title: SomeProofSubclass
 
 # Class: SomeProofSubclass
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:58](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L58)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L58)
 
 ## Extends
 
@@ -118,7 +118,7 @@ Defined in: node\_modules/o1js/dist/node/lib/proof-system/zkprogram.d.ts:92
 
 > `static` **publicInputType**: *typeof* `Field` & (`x`) => `Field` = `Field`
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:59](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L59)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L59)
 
 #### Overrides
 
@@ -130,7 +130,7 @@ Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:59
 
 > `static` **publicOutputType**: `ProvablePureExtended`\<`void`, `void`, `null`\> = `Void`
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:61](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L61)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L61)
 
 #### Overrides
 

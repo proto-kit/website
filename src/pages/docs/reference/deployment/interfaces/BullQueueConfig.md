@@ -10,7 +10,7 @@ title: BullQueueConfig
 
 # Interface: BullQueueConfig
 
-Defined in: [deployment/src/queue/BullQueue.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L14)
+Defined in: [deployment/src/queue/BullQueue.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L14)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [deployment/src/queue/BullQueue.ts:14](https://github.com/proto-kit/
 
 > **redis**: `object`
 
-Defined in: [deployment/src/queue/BullQueue.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L15)
+Defined in: [deployment/src/queue/BullQueue.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L15)
 
 #### db?
 
@@ -46,4 +46,4 @@ Defined in: [deployment/src/queue/BullQueue.ts:15](https://github.com/proto-kit/
 
 > `optional` **retryAttempts**: `number`
 
-Defined in: [deployment/src/queue/BullQueue.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/deployment/src/queue/BullQueue.ts#L22)
+Defined in: [deployment/src/queue/BullQueue.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/deployment/src/queue/BullQueue.ts#L22)

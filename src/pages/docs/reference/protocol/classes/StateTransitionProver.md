@@ -10,7 +10,7 @@ title: StateTransitionProver
 
 # Class: StateTransitionProver
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:343](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L343)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:343](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L343)
 
 Used by various module sub-types that may need to be configured
 
@@ -30,7 +30,7 @@ Used by various module sub-types that may need to be configured
 
 > **new StateTransitionProver**(): [`StateTransitionProver`](StateTransitionProver.md)
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:352](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L352)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:352](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L352)
 
 #### Returns
 
@@ -65,7 +65,7 @@ checks when retrieving it via the getter
 
 > `optional` **protocol**: [`ProtocolEnvironment`](../interfaces/ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L14)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L14)
 
 #### Implementation of
 
@@ -81,7 +81,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github
 
 > **zkProgrammable**: [`StateTransitionProverProgrammable`](StateTransitionProverProgrammable.md)
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:350](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L350)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:350](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L350)
 
 #### Implementation of
 
@@ -95,7 +95,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L16)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L16)
 
 ##### Returns
 
@@ -153,7 +153,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compile**(`registry`): `Promise`\<`void` \| [`ArtifactRecord`](../../common/type-aliases/ArtifactRecord.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:357](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L357)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:357](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L357)
 
 #### Parameters
 
@@ -175,7 +175,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L20)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L20)
 
 #### Parameters
 
@@ -201,7 +201,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github
 
 > **merge**(`publicInput`, `proof1`, `proof2`): `Promise`\<[`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:370](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L370)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:370](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L370)
 
 #### Parameters
 
@@ -231,7 +231,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.
 
 > **runBatch**(`publicInput`, `batch`): `Promise`\<[`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:363](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L363)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:363](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L363)
 
 #### Parameters
 
@@ -257,7 +257,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/protocol/ProtocolModule.ts#L24)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L24)
 
 #### Returns
 

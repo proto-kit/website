@@ -10,7 +10,7 @@ title: MinaIncomingMessageAdapter
 
 # Class: MinaIncomingMessageAdapter
 
-Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts:34](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts#L34)
+Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts#L34)
 
 IncomingMessageAdapter implementation for a Mina Baselayer
 based on decoding L1-dispatched actions
@@ -25,7 +25,7 @@ based on decoding L1-dispatched actions
 
 > **new MinaIncomingMessageAdapter**(`baseLayer`, `runtime`, `protocol`): [`MinaIncomingMessageAdapter`](MinaIncomingMessageAdapter.md)
 
-Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts#L35)
+Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts#L35)
 
 #### Parameters
 
@@ -51,7 +51,7 @@ Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapt
 
 > **getPendingMessages**(`address`, `params`): `Promise`\<\{ `from`: `string`; `messages`: [`PendingTransaction`](PendingTransaction.md)[]; `to`: `string`; \}\>
 
-Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts:99](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts#L99)
+Defined in: [packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts:99](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/MinaIncomingMessageAdapter.ts#L99)
 
 #### Parameters
 

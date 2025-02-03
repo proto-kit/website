@@ -10,7 +10,7 @@ title: SettlementModule
 
 # Class: SettlementModule
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L62)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L62)
 
 Lifecycle of a SequencerModule
 
@@ -31,7 +31,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new SettlementModule**(`baseLayer`, `protocol`, `incomingMessagesAdapter`, `messageStorage`, `blockProofSerializer`, `transactionSender`, `areProofsEnabled`, `feeStrategy`, `settlementStartupModule`): [`SettlementModule`](SettlementModule.md)
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:86](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L86)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:86](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L86)
 
 #### Parameters
 
@@ -85,7 +85,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:86](https://g
 
 > `optional` **addresses**: `object`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:71](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L71)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:71](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L71)
 
 #### dispatch
 
@@ -101,7 +101,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:71](https://g
 
 > `protected` `optional` **contracts**: `object`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:66](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L66)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L66)
 
 #### dispatch
 
@@ -132,7 +132,7 @@ checks when retrieving it via the getter
 
 > **events**: [`EventEmitter`](../../common/classes/EventEmitter.md)\<[`SettlementModuleEvents`](../type-aliases/SettlementModuleEvents.md)\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:84](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L84)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L84)
 
 #### Implementation of
 
@@ -144,7 +144,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:84](https://g
 
 > `optional` **keys**: `object`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:76](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L76)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:76](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L76)
 
 #### dispatch
 
@@ -164,7 +164,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:76](https://g
 
 > **utils**: `SettlementUtils`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:82](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L82)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:82](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L82)
 
 ***
 
@@ -172,7 +172,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:82](https://g
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -240,7 +240,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **dependencies**(): `object`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:106](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L106)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:106](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L106)
 
 #### Returns
 
@@ -264,7 +264,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:106](https://
 
 > **deploy**(`settlementKey`, `dispatchKey`, `minaBridgeKey`, `options`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:243](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L243)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:243](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L243)
 
 #### Parameters
 
@@ -296,7 +296,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:243](https://
 
 > **deployTokenBridge**(`owner`, `ownerKey`, `contractKey`, `options`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:343](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L343)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:343](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L343)
 
 #### Parameters
 
@@ -328,7 +328,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:343](https://
 
 > **getContracts**(): `object`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:127](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L127)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:127](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L127)
 
 #### Returns
 
@@ -348,7 +348,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:127](https://
 
 > **settleBatch**(`batch`, `options`): `Promise`\<[`Settlement`](../interfaces/Settlement.md)\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:164](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L164)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:164](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L164)
 
 #### Parameters
 
@@ -372,7 +372,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:164](https://
 
 > `protected` **settlementContractModule**(): [`SettlementContractModule`](../../protocol/classes/SettlementContractModule.md)\<[`MandatorySettlementModulesRecord`](../../protocol/type-aliases/MandatorySettlementModulesRecord.md)\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:114](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L114)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:114](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L114)
 
 #### Returns
 
@@ -384,7 +384,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:114](https://
 
 > **signTransaction**(`tx`, `pks`): `Transaction`\<`false`, `true`\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:149](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L149)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:149](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L149)
 
 #### Parameters
 
@@ -406,7 +406,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:149](https://
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:387](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/SettlementModule.ts#L387)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:387](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L387)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

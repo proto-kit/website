@@ -10,7 +10,7 @@ title: RuntimeEvents
 
 # Class: RuntimeEvents\<Events\>
 
-Defined in: [module/src/runtime/RuntimeModule.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L25)
+Defined in: [module/src/runtime/RuntimeModule.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L25)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:25](https://github.com/proto-ki
 
 > **new RuntimeEvents**\<`Events`\>(`events`): [`RuntimeEvents`](RuntimeEvents.md)\<`Events`\>
 
-Defined in: [module/src/runtime/RuntimeModule.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L26)
+Defined in: [module/src/runtime/RuntimeModule.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L26)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:26](https://github.com/proto-ki
 
 > **emit**\<`Key`\>(`eventName`, `event`): `void`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:47](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L47)
+Defined in: [module/src/runtime/RuntimeModule.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L47)
 
 #### Type Parameters
 
@@ -66,7 +66,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:47](https://github.com/proto-ki
 
 > **emitIf**\<`Key`\>(`condition`, `eventName`, `event`): `void`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L28)
+Defined in: [module/src/runtime/RuntimeModule.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L28)
 
 #### Type Parameters
 

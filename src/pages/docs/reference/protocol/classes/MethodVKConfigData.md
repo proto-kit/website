@@ -10,7 +10,7 @@ title: MethodVKConfigData
 
 # Class: MethodVKConfigData
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L13)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L13)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **methodId**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:14](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L14)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L14)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificatio
 
 > **vkHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L15)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L15)
 
 #### Inherited from
 
@@ -406,7 +406,7 @@ Convert provable type to a normal JS type.
 
 > **hash**(): `Field`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L17)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L17)
 
 #### Returns
 

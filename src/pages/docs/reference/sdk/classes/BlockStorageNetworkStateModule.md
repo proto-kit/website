@@ -10,7 +10,7 @@ title: BlockStorageNetworkStateModule
 
 # Class: BlockStorageNetworkStateModule
 
-Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:17](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L17)
+Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L17)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new BlockStorageNetworkStateModule**(`sequencer`): [`BlockStorageNetworkStateModule`](BlockStorageNetworkStateModule.md)
 
-Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:21](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L21)
+Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L21)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:21](https://github.
 
 > `optional` **appChain**: [`AppChain`](AppChain.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md), [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & [`ProtocolModulesRecord`](../../protocol/type-aliases/ProtocolModulesRecord.md), [`SequencerModulesRecord`](../../sequencer/type-aliases/SequencerModulesRecord.md), [`AppChainModulesRecord`](../type-aliases/AppChainModulesRecord.md)\>
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/AppChainModule.ts#L18)
+Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L18)
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/AppChainModule.ts#L16)
+Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L16)
 
 #### Inherited from
 
@@ -145,7 +145,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **getProvenNetworkState**(): `Promise`\<`undefined` \| [`NetworkState`](../../protocol/classes/NetworkState.md)\>
 
-Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:58](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L58)
+Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L58)
 
 #### Returns
 
@@ -161,7 +161,7 @@ Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:58](https://github.
 
 > **getStagedNetworkState**(): `Promise`\<`undefined` \| [`NetworkState`](../../protocol/classes/NetworkState.md)\>
 
-Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L53)
+Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L53)
 
 Staged network state is the networkstate after the latest unproven block
 with afterBundle() hooks executed
@@ -180,7 +180,7 @@ with afterBundle() hooks executed
 
 > **getUnprovenNetworkState**(): `Promise`\<`undefined` \| [`NetworkState`](../../protocol/classes/NetworkState.md)\>
 
-Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:44](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L44)
+Defined in: [sdk/src/query/BlockStorageNetworkStateModule.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/query/BlockStorageNetworkStateModule.ts#L44)
 
 #### Returns
 

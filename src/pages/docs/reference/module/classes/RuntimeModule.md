@@ -10,7 +10,7 @@ title: RuntimeModule
 
 # Class: RuntimeModule\<Config\>
 
-Defined in: [module/src/runtime/RuntimeModule.ts:59](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L59)
+Defined in: [module/src/runtime/RuntimeModule.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L59)
 
 Base class for runtime modules providing the necessary utilities.
 
@@ -33,7 +33,7 @@ Base class for runtime modules providing the necessary utilities.
 
 > **new RuntimeModule**\<`Config`\>(): [`RuntimeModule`](RuntimeModule.md)\<`Config`\>
 
-Defined in: [module/src/runtime/RuntimeModule.ts:82](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L82)
+Defined in: [module/src/runtime/RuntimeModule.ts:82](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L82)
 
 #### Returns
 
@@ -64,7 +64,7 @@ checks when retrieving it via the getter
 
 > `optional` **events**: [`RuntimeEvents`](RuntimeEvents.md)\<`any`\> = `undefined`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:80](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L80)
+Defined in: [module/src/runtime/RuntimeModule.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L80)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:80](https://github.com/proto-ki
 
 > **isRuntimeModule**: `boolean` = `true`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:74](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L74)
+Defined in: [module/src/runtime/RuntimeModule.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L74)
 
 This property exists only to typecheck that the RuntimeModule
 was extended correctly in e.g. a decorator. We need at least
@@ -84,7 +84,7 @@ one non-optional property in this class to make the typechecking work.
 
 > `optional` **name**: `string`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:76](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L76)
+Defined in: [module/src/runtime/RuntimeModule.ts:76](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L76)
 
 ***
 
@@ -92,7 +92,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:76](https://github.com/proto-ki
 
 > `optional` **runtime**: [`RuntimeEnvironment`](../interfaces/RuntimeEnvironment.md)
 
-Defined in: [module/src/runtime/RuntimeModule.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L78)
+Defined in: [module/src/runtime/RuntimeModule.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L78)
 
 ***
 
@@ -100,7 +100,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:78](https://github.com/proto-ki
 
 > `readonly` **runtimeMethodNames**: `string`[] = `[]`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:67](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L67)
+Defined in: [module/src/runtime/RuntimeModule.ts:67](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L67)
 
 Holds all method names that are callable throw transactions
 
@@ -110,7 +110,7 @@ Holds all method names that are callable throw transactions
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [module/src/runtime/RuntimeModule.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L62)
+Defined in: [module/src/runtime/RuntimeModule.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L62)
 
 ## Accessors
 
@@ -154,7 +154,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:19
 
 > **get** **network**(): [`NetworkState`](../../protocol/classes/NetworkState.md)
 
-Defined in: [module/src/runtime/RuntimeModule.ts:109](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L109)
+Defined in: [module/src/runtime/RuntimeModule.ts:109](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L109)
 
 ##### Returns
 
@@ -168,7 +168,7 @@ Defined in: [module/src/runtime/RuntimeModule.ts:109](https://github.com/proto-k
 
 > **get** **transaction**(): [`RuntimeTransaction`](../../protocol/classes/RuntimeTransaction.md)
 
-Defined in: [module/src/runtime/RuntimeModule.ts:105](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L105)
+Defined in: [module/src/runtime/RuntimeModule.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L105)
 
 ##### Returns
 
@@ -202,7 +202,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **getInputs**(): [`RuntimeMethodExecutionData`](../../protocol/interfaces/RuntimeMethodExecutionData.md)
 
-Defined in: [module/src/runtime/RuntimeModule.ts:92](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/RuntimeModule.ts#L92)
+Defined in: [module/src/runtime/RuntimeModule.ts:92](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/RuntimeModule.ts#L92)
 
 #### Returns
 

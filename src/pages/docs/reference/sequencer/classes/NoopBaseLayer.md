@@ -10,7 +10,7 @@ title: NoopBaseLayer
 
 # Class: NoopBaseLayer
 
-Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L53)
+Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L53)
 
 Lifecycle of a SequencerModule
 
@@ -59,7 +59,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -105,7 +105,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **blockProduced**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:54](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L54)
+Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L54)
 
 #### Returns
 
@@ -139,7 +139,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **dependencies**(): [`BaseLayerDependencyRecord`](../interfaces/BaseLayerDependencyRecord.md)
 
-Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L62)
+Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L62)
 
 #### Returns
 
@@ -155,7 +155,7 @@ Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:62](http
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:58](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L58)
+Defined in: [packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/NoopBaseLayer.ts#L58)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

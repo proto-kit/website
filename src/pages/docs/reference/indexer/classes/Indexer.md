@@ -10,7 +10,7 @@ title: Indexer
 
 # Class: Indexer\<Modules\>
 
-Defined in: [indexer/src/Indexer.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/Indexer.ts#L15)
+Defined in: [indexer/src/Indexer.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/Indexer.ts#L15)
 
 Reusable module container facilitating registration, resolution
 configuration, decoration and validation of modules
@@ -170,7 +170,7 @@ list of module names
 
 > **get** **taskQueue**(): `InstanceType`\<`Modules`\[`"TaskQueue"`\]\>
 
-Defined in: [indexer/src/Indexer.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/Indexer.ts#L24)
+Defined in: [indexer/src/Indexer.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/Indexer.ts#L24)
 
 ##### Returns
 
@@ -574,7 +574,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [indexer/src/Indexer.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/Indexer.ts#L28)
+Defined in: [indexer/src/Indexer.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/Indexer.ts#L28)
 
 #### Returns
 
@@ -615,7 +615,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`Modules`\>(`definition`): [`Indexer`](Indexer.md)\<`Modules`\>
 
-Defined in: [indexer/src/Indexer.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/indexer/src/Indexer.ts#L18)
+Defined in: [indexer/src/Indexer.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/Indexer.ts#L18)
 
 #### Type Parameters
 

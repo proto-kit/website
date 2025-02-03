@@ -10,7 +10,7 @@ title: NewBlockProvingParametersSerializer
 
 # Class: NewBlockProvingParametersSerializer
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:38](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L38)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L38)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlo
 
 > **new NewBlockProvingParametersSerializer**(`stProofSerializer`, `blockProofSerializer`): [`NewBlockProvingParametersSerializer`](NewBlockProvingParametersSerializer.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:41](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L41)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L41)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlo
 
 > **fromJSON**(`json`): `Promise`\<`NewBlockPayload`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:73](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L73)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:73](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L73)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlo
 
 > **toJSON**(`input`): `string`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:52](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L52)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts:52](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/NewBlockProvingParametersSerializer.ts#L52)
 
 #### Parameters
 

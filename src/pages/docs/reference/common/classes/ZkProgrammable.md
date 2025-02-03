@@ -10,7 +10,7 @@ title: ZkProgrammable
 
 # Class: `abstract` ZkProgrammable\<PublicInput, PublicOutput\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:99](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L99)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:99](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L99)
 
 ## Extended by
 
@@ -42,7 +42,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:99](https://gi
 
 > **get** `abstract` **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:103](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L103)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:103](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L103)
 
 ##### Returns
 
@@ -56,7 +56,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:103](https://g
 
 > **get** **zkProgram**(): [`PlainZkProgram`](../interfaces/PlainZkProgram.md)\<`PublicInput`, `PublicOutput`\>[]
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:113](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L113)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:113](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L113)
 
 ##### Returns
 
@@ -68,7 +68,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:113](https://g
 
 > **compile**(`registry`): `Promise`\<`Record`\<`string`, [`CompileArtifact`](../interfaces/CompileArtifact.md)\>\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:130](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L130)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:130](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L130)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:130](https://g
 
 > `abstract` **zkProgramFactory**(): [`PlainZkProgram`](../interfaces/PlainZkProgram.md)\<`PublicInput`, `PublicOutput`\>[]
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:105](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/common/src/zkProgrammable/ZkProgrammable.ts#L105)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L105)
 
 #### Returns
 

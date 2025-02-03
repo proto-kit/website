@@ -10,7 +10,7 @@ title: GraphqlModulesDefintion
 
 # Interface: GraphqlModulesDefintion\<GraphQLModules\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlSequencerModule.ts#L25)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L25)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [api/src/graphql/GraphqlSequencerModule.ts:25](https://github.com/pr
 
 > `optional` **config**: [`ModulesConfig`](../../common/type-aliases/ModulesConfig.md)\<`GraphQLModules`\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlSequencerModule.ts#L29)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L29)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [api/src/graphql/GraphqlSequencerModule.ts:29](https://github.com/pr
 
 > **modules**: `GraphQLModules`
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:28](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlSequencerModule.ts#L28)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L28)

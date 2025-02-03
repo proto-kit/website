@@ -10,7 +10,7 @@ title: PrismaConnection
 
 # Interface: PrismaConnection
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:32](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L32)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L32)
 
 ## Accessors
 
@@ -20,7 +20,7 @@ Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:32](https://gi
 
 > **get** **prismaClient**(): `PrismaClient`\<`never`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:33](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L33)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L33)
 
 ##### Returns
 

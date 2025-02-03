@@ -10,7 +10,7 @@ title: QueryGetterState
 
 # Interface: QueryGetterState\<Value\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:24](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L24)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L24)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:24](htt
 
 > **get**: () => `Promise`\<`undefined` \| `Value`\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:25](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L25)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L25)
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:25](htt
 
 > **merkleWitness**: () => `Promise`\<`undefined` \| [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md)\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:27](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L27)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L27)
 
 #### Returns
 
@@ -46,7 +46,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:27](htt
 
 > **path**: () => `string`
 
-Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L26)
+Defined in: [packages/sequencer/src/helpers/query/QueryBuilderFactory.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryBuilderFactory.ts#L26)
 
 #### Returns
 

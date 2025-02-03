@@ -10,7 +10,7 @@ title: PrismaDatabaseConnection
 
 # Class: PrismaDatabaseConnection
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L37)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L37)
 
 This is an abstract class for creating DependencyFactories, a pattern
 to bundle multiple smaller services into one and register them into the
@@ -115,7 +115,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **get** **prismaClient**(): `PrismaClient`\<`never`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:43](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L43)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L43)
 
 ##### Returns
 
@@ -131,7 +131,7 @@ Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:43](https://gi
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:137](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L137)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:137](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L137)
 
 #### Returns
 
@@ -165,7 +165,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **dependencies**(): [`OmitKeys`](../../common/type-aliases/OmitKeys.md)\<[`StorageDependencyMinimumDependencies`](../../sequencer/interfaces/StorageDependencyMinimumDependencies.md), `"asyncMerkleStore"` \| `"blockTreeStore"` \| `"unprovenMerkleStore"`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:50](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L50)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L50)
 
 #### Returns
 
@@ -181,7 +181,7 @@ Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:50](https://gi
 
 > **executeInTransaction**(`f`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:141](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L141)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:141](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L141)
 
 #### Parameters
 
@@ -199,7 +199,7 @@ Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:141](https://g
 
 > **pruneDatabase**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:82](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L82)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:82](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L82)
 
 #### Returns
 
@@ -211,7 +211,7 @@ Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:82](https://gi
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:117](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaDatabaseConnection.ts#L117)
+Defined in: [packages/persistance/src/PrismaDatabaseConnection.ts:117](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaDatabaseConnection.ts#L117)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

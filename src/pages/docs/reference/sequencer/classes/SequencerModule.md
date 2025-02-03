@@ -10,7 +10,7 @@ title: SequencerModule
 
 # Class: `abstract` SequencerModule\<Config\>
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:15](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L15)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L15)
 
 Lifecycle of a SequencerModule
 
@@ -79,7 +79,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 ## Accessors
 
@@ -143,7 +143,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > `abstract` **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L26)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L26)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

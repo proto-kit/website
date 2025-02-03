@@ -10,7 +10,7 @@ title: MinaTransactionSender
 
 # Class: MinaTransactionSender
 
-Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts:29](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts#L29)
+Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts#L29)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSende
 
 > **new MinaTransactionSender**(`creator`, `provingTask`, `simulator`, `baseLayer`): [`MinaTransactionSender`](MinaTransactionSender.md)
 
-Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts:39](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts#L39)
+Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts#L39)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSende
 
 > **proveAndSendTransaction**(`transaction`, `waitOnStatus`): `Promise`\<[`EventListenable`](../../common/type-aliases/EventListenable.md)\<[`TxEvents`](../interfaces/TxEvents.md)\>\>
 
-Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts:116](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts#L116)
+Defined in: [packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts:116](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/transactions/MinaTransactionSender.ts#L116)
 
 #### Parameters
 

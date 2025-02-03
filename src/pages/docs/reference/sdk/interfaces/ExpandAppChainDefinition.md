@@ -10,7 +10,7 @@ title: ExpandAppChainDefinition
 
 # Interface: ExpandAppChainDefinition\<RuntimeModules, ProtocolModules, SequencerModules, AppChainModules\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/AppChain.ts#L78)
+Defined in: [sdk/src/appChain/AppChain.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L78)
 
 ## Type Parameters
 
@@ -28,4 +28,4 @@ Defined in: [sdk/src/appChain/AppChain.ts:78](https://github.com/proto-kit/frame
 
 > **modules**: [`ExpandAppChainModules`](../type-aliases/ExpandAppChainModules.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:85](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sdk/src/appChain/AppChain.ts#L85)
+Defined in: [sdk/src/appChain/AppChain.ts:85](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L85)

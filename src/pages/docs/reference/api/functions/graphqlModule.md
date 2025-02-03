@@ -12,7 +12,7 @@ title: graphqlModule
 
 > **graphqlModule**(): (`target`) => `void`
 
-Defined in: [api/src/graphql/GraphqlModule.ts:36](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/api/src/graphql/GraphqlModule.ts#L36)
+Defined in: [api/src/graphql/GraphqlModule.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlModule.ts#L36)
 
 ## Returns
 

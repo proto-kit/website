@@ -10,7 +10,7 @@ title: RedisMerkleTreeStore
 
 # Class: RedisMerkleTreeStore
 
-Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L10)
+Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L10)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:10]
 
 > **new RedisMerkleTreeStore**(`connection`, `mask`): [`RedisMerkleTreeStore`](RedisMerkleTreeStore.md)
 
-Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:13](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L13)
+Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L13)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:13]
 
 > **commit**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L26)
+Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L26)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:26]
 
 > **getNodesAsync**(`nodes`): `Promise`\<(`undefined` \| `bigint`)[]\>
 
-Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:48](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L48)
+Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L48)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:48]
 
 > **openTransaction**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:22](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L22)
+Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L22)
 
 #### Returns
 
@@ -98,7 +98,7 @@ Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:22]
 
 > **writeNodes**(`nodes`): `void`
 
-Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L62)
+Defined in: [packages/persistance/src/services/redis/RedisMerkleTreeStore.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/redis/RedisMerkleTreeStore.ts#L62)
 
 #### Parameters
 

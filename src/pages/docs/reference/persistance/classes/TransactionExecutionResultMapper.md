@@ -10,7 +10,7 @@ title: TransactionExecutionResultMapper
 
 # Class: TransactionExecutionResultMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L49)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L49)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.
 
 > **new TransactionExecutionResultMapper**(`transactionMapper`, `stArrayMapper`, `eventArrayMapper`): [`TransactionExecutionResultMapper`](TransactionExecutionResultMapper.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:56](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L56)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L56)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.
 
 > **mapIn**(`input`): [`TransactionExecutionResult`](../../sequencer/interfaces/TransactionExecutionResult.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:62](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L62)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L62)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.
 
 > **mapOut**(`input`): \[`Omit`\<\{ `blockHash`: `string`; `events`: `JsonValue`; `protocolTransitions`: `JsonValue`; `stateTransitions`: `JsonValue`; `status`: `boolean`; `statusMessage`: `null` \| `string`; `txHash`: `string`; \}, `"blockHash"`\>, \{ `argsFields`: `string`[]; `auxiliaryData`: `string`[]; `hash`: `string`; `isMessage`: `boolean`; `methodId`: `string`; `nonce`: `string`; `sender`: `string`; `signature_r`: `string`; `signature_s`: `string`; \}\]
 
-Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:80](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L80)
+Defined in: [packages/persistance/src/services/prisma/mappers/TransactionMapper.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/TransactionMapper.ts#L80)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: AbstractTaskQueue
 
 # Class: `abstract` AbstractTaskQueue\<Config\>
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:5](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L5)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L5)
 
 Lifecycle of a SequencerModule
 
@@ -64,7 +64,7 @@ checks when retrieving it via the getter
 
 > `protected` **queues**: `Record`\<`string`, [`InstantiatedQueue`](../interfaces/InstantiatedQueue.md)\> = `{}`
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:8](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L8)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L8)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:8](https:/
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -118,7 +118,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > `protected` **closeQueues**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:20](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L20)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L20)
 
 #### Returns
 
@@ -152,7 +152,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > `protected` **createOrGetQueue**(`name`, `creator`): [`InstantiatedQueue`](../interfaces/InstantiatedQueue.md)
 
-Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:10](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L10)
+Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/AbstractTaskQueue.ts#L10)
 
 #### Parameters
 
@@ -174,7 +174,7 @@ Defined in: [packages/sequencer/src/worker/queue/AbstractTaskQueue.ts:10](https:
 
 > `abstract` **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:26](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L26)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L26)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

@@ -10,7 +10,7 @@ title: PrismaRedisDatabase
 
 # Class: PrismaRedisDatabase
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:31](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L31)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L31)
 
 This is an abstract class for creating DependencyFactories, a pattern
 to bundle multiple smaller services into one and register them into the
@@ -39,7 +39,7 @@ deps that are necessary for the sequencer to work.
 
 > **new PrismaRedisDatabase**(): [`PrismaRedisDatabase`](PrismaRedisDatabase.md)
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:39](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L39)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L39)
 
 #### Returns
 
@@ -70,7 +70,7 @@ checks when retrieving it via the getter
 
 > **prisma**: [`PrismaDatabaseConnection`](PrismaDatabaseConnection.md)
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:35](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L35)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L35)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:35](https://github.
 
 > **redis**: [`RedisConnectionModule`](RedisConnectionModule.md)
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:37](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L37)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L37)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **get** **currentMulti**(): `RedisClientMultiCommandType`\<\{ `bf`: \{ `add`: `__module`; `ADD`: `__module`; `card`: `__module`; `CARD`: `__module`; `exists`: `__module`; `EXISTS`: `__module`; `info`: `__module`; `INFO`: `__module`; `insert`: `__module`; `INSERT`: `__module`; `loadChunk`: `__module`; `LOADCHUNK`: `__module`; `mAdd`: `__module`; `MADD`: `__module`; `mExists`: `__module`; `MEXISTS`: `__module`; `reserve`: `__module`; `RESERVE`: `__module`; `scanDump`: `__module`; `SCANDUMP`: `__module`; \}; `cf`: \{ `add`: `__module`; `ADD`: `__module`; `addNX`: `__module`; `ADDNX`: `__module`; `count`: `__module`; `COUNT`: `__module`; `del`: `__module`; `DEL`: `__module`; `exists`: `__module`; `EXISTS`: `__module`; `info`: `__module`; `INFO`: `__module`; `insert`: `__module`; `INSERT`: `__module`; `insertNX`: `__module`; `INSERTNX`: `__module`; `loadChunk`: `__module`; `LOADCHUNK`: `__module`; `reserve`: `__module`; `RESERVE`: `__module`; `scanDump`: `__module`; `SCANDUMP`: `__module`; \}; `cms`: \{ `incrBy`: `__module`; `INCRBY`: `__module`; `info`: `__module`; `INFO`: `__module`; `initByDim`: `__module`; `INITBYDIM`: `__module`; `initByProb`: `__module`; `INITBYPROB`: `__module`; `merge`: `__module`; `MERGE`: `__module`; `query`: `__module`; `QUERY`: `__module`; \}; `ft`: \{ `_list`: `__module`; `_LIST`: `__module`; `aggregate`: `__module`; `AGGREGATE`: `__module`; `AGGREGATE_WITHCURSOR`: `__module`; `aggregateWithCursor`: `__module`; `aliasAdd`: `__module`; `ALIASADD`: `__module`; `aliasDel`: `__module`; `ALIASDEL`: `__module`; `aliasUpdate`: `__module`; `ALIASUPDATE`: `__module`; `alter`: `__module`; `ALTER`: `__module`; `CONFIG_GET`: `__module`; `CONFIG_SET`: `__module`; `configGet`: `__module`; `configSet`: `__module`; `create`: `__module`; `CREATE`: `__module`; `CURSOR_DEL`: `__module`; `CURSOR_READ`: `__module`; `cursorDel`: `__module`; `cursorRead`: `__module`; `dictAdd`: `__module`; `DICTADD`: `__module`; `dictDel`: `__module`; `DICTDEL`: `__module`; `dictDump`: `__module`; `DICTDUMP`: `__module`; `dropIndex`: `__module`; `DROPINDEX`: `__module`; `explain`: `__module`; `EXPLAIN`: `__module`; `explainCli`: `__module`; `EXPLAINCLI`: `__module`; `info`: `__module`; `INFO`: `__module`; `profileAggregate`: `__module`; `PROFILEAGGREGATE`: `__module`; `profileSearch`: `__module`; `PROFILESEARCH`: `__module`; `search`: `__module`; `SEARCH`: `__module`; `SEARCH_NOCONTENT`: `__module`; `searchNoContent`: `__module`; `spellCheck`: `__module`; `SPELLCHECK`: `__module`; `sugAdd`: `__module`; `SUGADD`: `__module`; `sugDel`: `__module`; `SUGDEL`: `__module`; `sugGet`: `__module`; `SUGGET`: `__module`; `SUGGET_WITHPAYLOADS`: `__module`; `SUGGET_WITHSCORES`: `__module`; `SUGGET_WITHSCORES_WITHPAYLOADS`: `__module`; `sugGetWithPayloads`: `__module`; `sugGetWithScores`: `__module`; `sugGetWithScoresWithPayloads`: `__module`; `sugLen`: `__module`; `SUGLEN`: `__module`; `synDump`: `__module`; `SYNDUMP`: `__module`; `synUpdate`: `__module`; `SYNUPDATE`: `__module`; `tagVals`: `__module`; `TAGVALS`: `__module`; \}; `graph`: \{ `CONFIG_GET`: `__module`; `CONFIG_SET`: `__module`; `configGet`: `__module`; `configSet`: `__module`; `delete`: `__module`; `DELETE`: `__module`; `explain`: `__module`; `EXPLAIN`: `__module`; `list`: `__module`; `LIST`: `__module`; `profile`: `__module`; `PROFILE`: `__module`; `query`: `__module`; `QUERY`: `__module`; `RO_QUERY`: `__module`; `roQuery`: `__module`; `slowLog`: `__module`; `SLOWLOG`: `__module`; \}; `json`: \{ `arrAppend`: `__module`; `ARRAPPEND`: `__module`; `arrIndex`: `__module`; `ARRINDEX`: `__module`; `arrInsert`: `__module`; `ARRINSERT`: `__module`; `arrLen`: `__module`; `ARRLEN`: `__module`; `arrPop`: `__module`; `ARRPOP`: `__module`; `arrTrim`: `__module`; `ARRTRIM`: `__module`; `DEBUG_MEMORY`: `__module`; `debugMemory`: `__module`; `del`: `__module`; `DEL`: `__module`; `forget`: `__module`; `FORGET`: `__module`; `get`: `__module`; `GET`: `__module`; `merge`: `__module`; `MERGE`: `__module`; `mGet`: `__module`; `MGET`: `__module`; `mSet`: `__module`; `MSET`: `__module`; `numIncrBy`: `__module`; `NUMINCRBY`: `__module`; `numMultBy`: `__module`; `NUMMULTBY`: `__module`; `objKeys`: `__module`; `OBJKEYS`: `__module`; `objLen`: `__module`; `OBJLEN`: `__module`; `resp`: `__module`; `RESP`: `__module`; `set`: `__module`; `SET`: `__module`; `strAppend`: `__module`; `STRAPPEND`: `__module`; `strLen`: `__module`; `STRLEN`: `__module`; `type`: `__module`; `TYPE`: `__module`; \}; `tDigest`: \{ `add`: `__module`; `ADD`: `__module`; `byRank`: `__module`; `BYRANK`: `__module`; `byRevRank`: `__module`; `BYREVRANK`: `__module`; `cdf`: `__module`; `CDF`: `__module`; `create`: `__module`; `CREATE`: `__module`; `info`: `__module`; `INFO`: `__module`; `max`: `__module`; `MAX`: `__module`; `merge`: `__module`; `MERGE`: `__module`; `min`: `__module`; `MIN`: `__module`; `quantile`: `__module`; `QUANTILE`: `__module`; `rank`: `__module`; `RANK`: `__module`; `reset`: `__module`; `RESET`: `__module`; `revRank`: `__module`; `REVRANK`: `__module`; `TRIMMED_MEAN`: `__module`; `trimmedMean`: `__module`; \}; `topK`: \{ `add`: `__module`; `ADD`: `__module`; `count`: `__module`; `COUNT`: `__module`; `incrBy`: `__module`; `INCRBY`: `__module`; `info`: `__module`; `INFO`: `__module`; `list`: `__module`; `LIST`: `__module`; `LIST_WITHCOUNT`: `__module`; `listWithCount`: `__module`; `query`: `__module`; `QUERY`: `__module`; `reserve`: `__module`; `RESERVE`: `__module`; \}; `ts`: \{ `add`: `__module`; `ADD`: `__module`; `alter`: `__module`; `ALTER`: `__module`; `create`: `__module`; `CREATE`: `__module`; `createRule`: `__module`; `CREATERULE`: `__module`; `decrBy`: `__module`; `DECRBY`: `__module`; `del`: `__module`; `DEL`: `__module`; `deleteRule`: `__module`; `DELETERULE`: `__module`; `get`: `__module`; `GET`: `__module`; `incrBy`: `__module`; `INCRBY`: `__module`; `info`: `__module`; `INFO`: `__module`; `INFO_DEBUG`: `__module`; `infoDebug`: `__module`; `mAdd`: `__module`; `MADD`: `__module`; `mGet`: `__module`; `MGET`: `__module`; `MGET_WITHLABELS`: `__module`; `mGetWithLabels`: `__module`; `mRange`: `__module`; `MRANGE`: `__module`; `MRANGE_WITHLABELS`: `__module`; `mRangeWithLabels`: `__module`; `mRevRange`: `__module`; `MREVRANGE`: `__module`; `MREVRANGE_WITHLABELS`: `__module`; `mRevRangeWithLabels`: `__module`; `queryIndex`: `__module`; `QUERYINDEX`: `__module`; `range`: `__module`; `RANGE`: `__module`; `revRange`: `__module`; `REVRANGE`: `__module`; \}; \}, `Record`\<`string`, `never`\>, `Record`\<`string`, `never`\>\>
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:53](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L53)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L53)
 
 ##### Returns
 
@@ -152,7 +152,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:53](https://github.
 
 > **get** **prismaClient**(): `PrismaClient`\<`never`\>
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:45](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L45)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L45)
 
 ##### Returns
 
@@ -170,7 +170,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:45](https://github.
 
 > **get** **redisClient**(): `RedisClientType`
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:49](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L49)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L49)
 
 ##### Returns
 
@@ -186,7 +186,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:49](https://github.
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:78](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L78)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L78)
 
 #### Returns
 
@@ -202,7 +202,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:78](https://github.
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:57](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L57)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L57)
 
 #### Parameters
 
@@ -224,7 +224,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:57](https://github.
 
 > **dependencies**(): [`StorageDependencyMinimumDependencies`](../../sequencer/interfaces/StorageDependencyMinimumDependencies.md)
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:63](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L63)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L63)
 
 #### Returns
 
@@ -240,7 +240,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:63](https://github.
 
 > **executeInTransaction**(`f`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:88](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L88)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:88](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L88)
 
 #### Parameters
 
@@ -262,7 +262,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:88](https://github.
 
 > **pruneDatabase**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:83](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L83)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L83)
 
 Prunes all data from the database connection.
 Note: This function should only be called immediately at startup,
@@ -282,7 +282,7 @@ everything else will lead to unexpected behaviour and errors
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:70](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/persistance/src/PrismaRedisDatabase.ts#L70)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L70)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

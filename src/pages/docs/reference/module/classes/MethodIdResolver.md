@@ -10,7 +10,7 @@ title: MethodIdResolver
 
 # Class: MethodIdResolver
 
-Defined in: [module/src/runtime/MethodIdResolver.ts:18](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/MethodIdResolver.ts#L18)
+Defined in: [module/src/runtime/MethodIdResolver.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/MethodIdResolver.ts#L18)
 
 Please see `getMethodId` to learn more about
 methodId encoding
@@ -21,7 +21,7 @@ methodId encoding
 
 > **new MethodIdResolver**(`runtime`): [`MethodIdResolver`](MethodIdResolver.md)
 
-Defined in: [module/src/runtime/MethodIdResolver.ts:23](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/MethodIdResolver.ts#L23)
+Defined in: [module/src/runtime/MethodIdResolver.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/MethodIdResolver.ts#L23)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [module/src/runtime/MethodIdResolver.ts:23](https://github.com/proto
 
 > **getMethodId**(`moduleName`, `methodName`): `bigint`
 
-Defined in: [module/src/runtime/MethodIdResolver.ts:100](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/MethodIdResolver.ts#L100)
+Defined in: [module/src/runtime/MethodIdResolver.ts:100](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/MethodIdResolver.ts#L100)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ Defined in: [module/src/runtime/MethodIdResolver.ts:100](https://github.com/prot
 
 > **getMethodNameFromId**(`methodId`): `undefined` \| \[`string`, `string`\]
 
-Defined in: [module/src/runtime/MethodIdResolver.ts:86](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/MethodIdResolver.ts#L86)
+Defined in: [module/src/runtime/MethodIdResolver.ts:86](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/MethodIdResolver.ts#L86)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [module/src/runtime/MethodIdResolver.ts:86](https://github.com/proto
 
 > **methodIdMap**(): [`RuntimeMethodIdMapping`](../../protocol/type-aliases/RuntimeMethodIdMapping.md)
 
-Defined in: [module/src/runtime/MethodIdResolver.ts:47](https://github.com/proto-kit/framework/blob/28efa802e3737fc3b77339148b307ef7246f3ef1/packages/module/src/runtime/MethodIdResolver.ts#L47)
+Defined in: [module/src/runtime/MethodIdResolver.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/MethodIdResolver.ts#L47)
 
 The purpose of this method is to provide a dictionary where
 we can look up properties like methodId and invocationType
