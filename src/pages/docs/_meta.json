@@ -16,10 +16,10 @@
   "library": "Library",
   "advanced": "Advanced",
   "tutorials": "Tutorials",
+  "provable-events": "Provable Events",
   "-- Contributor Documentation": {
     "type": "separator",
     "title": "Contributor Documentation"
   },
-  "workers": "Worker Architecture",
-  "provable-events": "Provable Events"
+  "workers": "Worker Architecture"
 }
