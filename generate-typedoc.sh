@@ -1,6 +1,6 @@
 # needs to be cloned to a one-up directory, otherwise README.md auto-discovery
 # in framework's typedoc includes website's README.md, which is not desired
-git clone git@github.com:proto-kit/framework.git ./../framework-typedoc
+git clone https://github.com/proto-kit/framework.git ./../framework-typedoc
 cd ./../framework-typedoc
 # git checkout develop
 git checkout develop
