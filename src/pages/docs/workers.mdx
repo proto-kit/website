@@ -51,7 +51,7 @@ by having the old worker be configured to delete the task-handler for the regist
 ## Worker Start-up Flow
 
 A summary of the worker registration flow. The sequencer is started and then:
-1. The worker registers the callbacks for `Unprepared` tasks with the queue, one of which is the
+1. The worker registers the callbacks for `Unprepared` tasks (i.e. those tasks that do not require the worker to be registered first) with the queue, one of which is the
 `WorkerRegistration` task and the other is `CircuitCompilerTask`.
 2. The AppChain, specifically `SequencerStartupModule`, emits the `CircuitCompilerTask` to compile certain zk-circuits of the various zk-Programs.
 3. The worker listens to the queue, processes the `CircuitCompilerTask` task.
