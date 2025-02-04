@@ -39,6 +39,8 @@ references.forEach((reference) => {
   })}
 };`;
 
+  console.log(metaTsxPath, metaTsx);
+
   fs.writeFileSync(metaTsxPath, metaTsx);
 });
 
@@ -48,4 +50,6 @@ const metaTsx = `export default {
     return `"${reference}": "${referenceToSidebarTitle(reference)}"`;
   })}
 };`;
+
+console.log(metaTsxPath, metaTsx);
 fs.writeFileSync(metaTsxPath, metaTsx);
