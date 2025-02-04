@@ -19,9 +19,10 @@ this means no tasks will be processed. This module is itself defined with severa
  - CircuitCompilerTask
  - WorkerRegistrationTask.
 
-When the `LocalTaskWorkerModule` is started it has a subset of start-up tasks, like those above, passed to it. These tasks basically
-define what sort of computations the worker can handle, as you may want different workers to handle different tasks for resourcing reasons.
-There are two types of tasks: `Unprepared`, i.e. tasks that don’t have a prepare method and therefore don’t need to wait for registration to get initialized, and
+When the `LocalTaskWorkerModule` is started it has a subset of start-up tasks, like those above, passed to it.
+These tasks basically define what sort of computations the worker can handle, as you may want different workers to handle different tasks for resourcing reasons.
+For example, the majority of the work the AppChain will do is for State Transition related tasks, and so you may want to configure a large share of the workers to handle only the StateTransitionTask
+and StateTransitionReductionTask, which allows easier scalability as only one circuit will be kept in memory. There are two types of tasks: `Unprepared`, i.e. tasks that don’t have a prepare method and therefore don’t need to wait for registration to get initialized, and
  `Regular`, i.e. all other tasks that require registration.
 
 When the worker is started it first registers the required callback functions for the `Unprepared` tasks, i.e. `CircuitCompilerTask` and `WorkerRegistrationTask`,
