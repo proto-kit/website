@@ -3,7 +3,7 @@
 git clone git@github.com:proto-kit/framework.git ./../framework-typedoc
 cd ./../framework-typedoc
 # git checkout develop
-git checkout feature/typedoc
+git checkout develop
 npm ci --force
 npm run prisma:generate
 npm run build
