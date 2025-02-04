@@ -10,7 +10,7 @@ title: PrismaRedisCombinedConfig
 
 # Interface: PrismaRedisCombinedConfig
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L24)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/PrismaRedisDatabase.ts#L24)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:24](https://github.
 
 > **prisma**: [`PrismaDatabaseConfig`](PrismaDatabaseConfig.md)
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L25)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:25](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/PrismaRedisDatabase.ts#L25)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:25](https://github.
 
 > **redis**: [`RedisConnectionConfig`](RedisConnectionConfig.md)
 
-Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/PrismaRedisDatabase.ts#L26)
+Defined in: [packages/persistance/src/PrismaRedisDatabase.ts:26](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/PrismaRedisDatabase.ts#L26)

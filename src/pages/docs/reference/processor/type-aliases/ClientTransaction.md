@@ -12,7 +12,7 @@ title: ClientTransaction
 
 > **ClientTransaction**\<`PrismaClient`\>: `Parameters`\<`Parameters`\<`PrismaClient`\[`"$transaction"`\]\>\[`0`\]\>\[`0`\]
 
-Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/handlers/HandlersExecutor.ts#L10)
+Defined in: [packages/processor/src/handlers/HandlersExecutor.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/handlers/HandlersExecutor.ts#L10)
 
 ## Type Parameters
 

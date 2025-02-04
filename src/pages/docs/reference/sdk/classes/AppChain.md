@@ -10,7 +10,7 @@ title: AppChain
 
 # Class: AppChain\<RuntimeModules, ProtocolModules, SequencerModules, AppChainModules\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L112)
+Defined in: [sdk/src/appChain/AppChain.ts:112](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L112)
 
 AppChain acts as a wrapper connecting Runtime, Protocol and Sequencer
 
@@ -39,7 +39,7 @@ AppChain acts as a wrapper connecting Runtime, Protocol and Sequencer
 
 > **new AppChain**\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>(`definition`): [`AppChain`](AppChain.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:151](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L151)
+Defined in: [sdk/src/appChain/AppChain.ts:151](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L151)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ checks when retrieving it via the getter
 
 > **definition**: [`ExpandAppChainDefinition`](../interfaces/ExpandAppChainDefinition.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:144](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L144)
+Defined in: [sdk/src/appChain/AppChain.ts:144](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L144)
 
 #### Overrides
 
@@ -180,7 +180,7 @@ list of module names
 
 > **get** **protocol**(): [`Protocol`](../../protocol/classes/Protocol.md)\<`ProtocolModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:215](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L215)
+Defined in: [sdk/src/appChain/AppChain.ts:215](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L215)
 
 ##### Returns
 
@@ -194,7 +194,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:215](https://github.com/proto-kit/fram
 
 > **get** **query**(): `object`
 
-Defined in: [sdk/src/appChain/AppChain.ts:176](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L176)
+Defined in: [sdk/src/appChain/AppChain.ts:176](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L176)
 
 ##### Returns
 
@@ -220,7 +220,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:176](https://github.com/proto-kit/fram
 
 > **get** **runtime**(): [`Runtime`](../../module/classes/Runtime.md)\<`RuntimeModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:207](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L207)
+Defined in: [sdk/src/appChain/AppChain.ts:207](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L207)
 
 ##### Returns
 
@@ -234,7 +234,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:207](https://github.com/proto-kit/fram
 
 > **get** **sequencer**(): [`Sequencer`](../../sequencer/classes/Sequencer.md)\<`SequencerModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:211](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L211)
+Defined in: [sdk/src/appChain/AppChain.ts:211](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L211)
 
 ##### Returns
 
@@ -294,7 +294,7 @@ using e.g. a for loop.
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:352](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L352)
+Defined in: [sdk/src/appChain/AppChain.ts:352](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L352)
 
 #### Returns
 
@@ -650,7 +650,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(`proofsEnabled`, `dependencyContainer`): `Promise`\<`void`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:309](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L309)
+Defined in: [sdk/src/appChain/AppChain.ts:309](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L309)
 
 Starts the appchain and cross-registers runtime to sequencer
 
@@ -674,7 +674,7 @@ Starts the appchain and cross-registers runtime to sequencer
 
 > **transaction**(`sender`, `callback`, `options`?): `Promise`\<[`AppChainTransaction`](AppChainTransaction.md)\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:219](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L219)
+Defined in: [sdk/src/appChain/AppChain.ts:219](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L219)
 
 #### Parameters
 
@@ -731,7 +731,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>(`definition`): [`AppChain`](AppChain.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:127](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L127)
+Defined in: [sdk/src/appChain/AppChain.ts:127](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L127)
 
 #### Type Parameters
 

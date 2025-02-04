@@ -1,3 +1,3 @@
 export default {
-  "README": "Overview","classes": "Classes","functions": "Functions","globals": "Globals","interfaces": "Interfaces","type-aliases": "Type Aliases"
+  "README": "Overview","classes": "Classes","functions": "Functions","interfaces": "Interfaces","type-aliases": "Type Aliases"
 };

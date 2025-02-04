@@ -10,7 +10,7 @@ title: DatabasePruneModule
 
 # Class: DatabasePruneModule
 
-Defined in: [packages/sequencer/src/storage/DatabasePruneModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/DatabasePruneModule.ts#L16)
+Defined in: [packages/sequencer/src/storage/DatabasePruneModule.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/DatabasePruneModule.ts#L16)
 
 Lifecycle of a SequencerModule
 
@@ -26,7 +26,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new DatabasePruneModule**(`database`): [`DatabasePruneModule`](DatabasePruneModule.md)
 
-Defined in: [packages/sequencer/src/storage/DatabasePruneModule.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/DatabasePruneModule.ts#L17)
+Defined in: [packages/sequencer/src/storage/DatabasePruneModule.ts:17](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/DatabasePruneModule.ts#L17)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -131,7 +131,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/DatabasePruneModule.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/DatabasePruneModule.ts#L21)
+Defined in: [packages/sequencer/src/storage/DatabasePruneModule.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/DatabasePruneModule.ts#L21)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

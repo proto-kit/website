@@ -10,7 +10,7 @@ title: BlockResultMapper
 
 # Class: BlockResultMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L11)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L11)
 
 ## Implements
 
@@ -22,7 +22,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.
 
 > **new BlockResultMapper**(`stArrayMapper`): [`BlockResultMapper`](BlockResultMapper.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L14)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L14)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.
 
 > **mapIn**(`input`): [`BlockResult`](../../sequencer/interfaces/BlockResult.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L18)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L18)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.
 
 > **mapOut**(`input`): `object`
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L38)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts:38](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockResultMapper.ts#L38)
 
 #### Parameters
 

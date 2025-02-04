@@ -10,7 +10,7 @@ title: PairingDerivedInput
 
 # Interface: PairingDerivedInput\<Input1, Input2, AdditionalParameters\>
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L16)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L16)
 
 This type is used to consistently define the input type of a MapReduce flow
  that is depenend on the result a pairing.
@@ -29,7 +29,7 @@ This type is used to consistently define the input type of a MapReduce flow
 
 > **input1**: `Input1`
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L17)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:17](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L17)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.t
 
 > **input2**: `Input2`
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L18)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L18)
 
 ***
 
@@ -45,4 +45,4 @@ Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.t
 
 > **params**: `AdditionalParameters`
 
-Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L19)
+Defined in: [packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/flow/ReductionTaskFlow.ts#L19)

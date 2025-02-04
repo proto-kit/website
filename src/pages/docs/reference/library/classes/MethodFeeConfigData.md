@@ -10,7 +10,7 @@ title: MethodFeeConfigData
 
 # Class: MethodFeeConfigData
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L32)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L32)
 
 ## Extends
 
@@ -58,7 +58,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **baseFee**: [`UInt64`](UInt64.md) = `UInt64`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L34)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L34)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:34](https:/
 
 > **methodId**: `Field` = `Field`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L33)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L33)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:33](https:/
 
 > **perWeightUnitFee**: [`UInt64`](UInt64.md) = `UInt64`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L35)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:35](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L35)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:35](https:/
 
 > **weight**: [`UInt64`](UInt64.md) = `UInt64`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L36)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L36)
 
 #### Inherited from
 
@@ -570,7 +570,7 @@ Convert provable type to a normal JS type.
 
 > **hash**(): `Field`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L38)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:38](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L38)
 
 #### Returns
 

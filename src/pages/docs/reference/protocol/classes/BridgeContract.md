@@ -10,7 +10,7 @@ title: BridgeContract
 
 # Class: BridgeContract
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:211](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L211)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:211](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L211)
 
 ## Extends
 
@@ -82,7 +82,7 @@ A list of event types that can be emitted using this.emitEvent()`.
 
 > **outgoingMessageCursor**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:219](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L219)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:219](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L219)
 
 #### Implementation of
 
@@ -163,7 +163,7 @@ Consider using `this.sender.getAndRequireSignatureV2()` if you need to prove tha
 
 > **settlementContractAddress**: `State`\<`PublicKey`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:215](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L215)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:215](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L215)
 
 #### Overrides
 
@@ -175,7 +175,7 @@ Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:215](h
 
 > **stateRoot**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:217](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L217)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:217](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L217)
 
 #### Implementation of
 
@@ -271,7 +271,7 @@ Defined in: node\_modules/o1js/dist/node/lib/mina/zkapp.d.ts:61
 
 > `static` **args**: `object`
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L55)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:55](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L55)
 
 #### SettlementContract
 
@@ -600,7 +600,7 @@ Approve a list of account updates (with arbitrarily many children).
 
 > **approveBase**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:110](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L110)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:110](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L110)
 
 #### Returns
 
@@ -684,7 +684,7 @@ async deploy() {
 
 > **deployProvable**(`verificationKey`, `signedSettlement`, `permissions`, `settlementContractAddress`): `Promise`\<`AccountUpdate`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L74)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L74)
 
 Function to deploy the bridging contract in a provable way, so that it can be
 a provable process initiated by the settlement contract with a baked-in vk
@@ -946,7 +946,7 @@ Same as `SmartContract.self` but explicitly creates a new AccountUpdate.
 
 > **redeem**(`additionUpdate`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:234](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L234)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:234](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L234)
 
 #### Parameters
 
@@ -968,7 +968,7 @@ Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:234](h
 
 > `protected` **redeemBase**(`additionUpdate`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:183](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L183)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:183](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L183)
 
 #### Parameters
 
@@ -1016,7 +1016,7 @@ with the only difference being that quick mock proofs are filled in instead of r
 
 > **rollupOutgoingMessages**(`batch`): `Promise`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:227](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L227)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:227](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L227)
 
 #### Parameters
 
@@ -1038,7 +1038,7 @@ Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:227](h
 
 > **rollupOutgoingMessagesBase**(`batch`): `Promise`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:132](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L132)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:132](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L132)
 
 #### Parameters
 
@@ -1143,7 +1143,7 @@ Transfer `amount` of tokens from `from` to `to`.
 
 > **updateStateRoot**(`root`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:222](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L222)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:222](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L222)
 
 #### Parameters
 
@@ -1165,7 +1165,7 @@ Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:222](h
 
 > **updateStateRootBase**(`root`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:114](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/BridgeContract.ts#L114)
+Defined in: [packages/protocol/src/settlement/contracts/BridgeContract.ts:114](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/BridgeContract.ts#L114)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: ResolverFactoryGraphqlModule
 
 # Class: ResolverFactoryGraphqlModule\<PrismaClient\>
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L49)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L49)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new ResolverFactoryGraphqlModule**\<`PrismaClient`\>(`graphqlServer`): [`ResolverFactoryGraphqlModule`](ResolverFactoryGraphqlModule.md)\<`PrismaClient`\>
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L64)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:64](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L64)
 
 #### Parameters
 
@@ -65,7 +65,7 @@ checks when retrieving it via the getter
 
 > **database**: `undefined` \| `PrismaDatabaseConnection`\<`PrismaClient`\>
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L62)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:62](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L62)
 
 ***
 
@@ -73,7 +73,7 @@ Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:62](http
 
 > **graphqlServer**: [`GraphqlServer`](../../api/classes/GraphqlServer.md)
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L64)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:64](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L64)
 
 ## Accessors
 
@@ -115,7 +115,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L68)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:68](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L68)
 
 #### Parameters
 
@@ -137,7 +137,7 @@ Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:68](http
 
 > **resolvers**(): `Promise`\<`NonEmptyArray`\<`Function`\>\>
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L77)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L77)
 
 #### Returns
 
@@ -153,7 +153,7 @@ Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:77](http
 
 > `static` **from**\<`PrismaClient`\>(`resolvers`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`ResolverFactoryGraphqlModule`](ResolverFactoryGraphqlModule.md)\<`PrismaClient`\>\>
 
-Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:52](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L52)
+Defined in: [packages/processor/src/api/ResolverFactoryGraphqlModule.ts:52](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/api/ResolverFactoryGraphqlModule.ts#L52)
 
 #### Type Parameters
 

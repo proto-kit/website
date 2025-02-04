@@ -10,7 +10,7 @@ title: SettlementProvingTask
 
 # Class: SettlementProvingTask
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L72)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:72](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L72)
 
 Implementation of a task to prove any Mina transaction.
 The o1js-internal account state is configurable via the task args.
@@ -31,7 +31,7 @@ the provided AccountUpdate
 
 > **new SettlementProvingTask**(`protocol`, `compileRegistry`, `areProofsEnabled`): [`SettlementProvingTask`](SettlementProvingTask.md)
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L84)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L84)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ checks when retrieving it via the getter
 
 > **name**: `string` = `"settlementTransactions"`
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:76](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L76)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:76](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L76)
 
 #### Implementation of
 
@@ -88,7 +88,7 @@ Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:76
 
 > **settlementContractModule**: `undefined` \| [`SettlementContractModule`](../../protocol/classes/SettlementContractModule.md)\<[`MandatorySettlementModulesRecord`](../../protocol/type-aliases/MandatorySettlementModulesRecord.md)\> = `undefined`
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L78)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:78](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L78)
 
 ## Accessors
 
@@ -130,7 +130,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compute**(`input`): `Promise`\<[`TransactionTaskResult`](../type-aliases/TransactionTaskResult.md)\>
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:125](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L125)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:125](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L125)
 
 #### Parameters
 
@@ -174,7 +174,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **inputSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`TransactionTaskArgs`](../type-aliases/TransactionTaskArgs.md)\>
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:158](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L158)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:158](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L158)
 
 #### Returns
 
@@ -190,7 +190,7 @@ Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:15
 
 > **prepare**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:395](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L395)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:395](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L395)
 
 #### Returns
 
@@ -206,7 +206,7 @@ Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:39
 
 > **resultSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`TransactionTaskResult`](../type-aliases/TransactionTaskResult.md)\>
 
-Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:432](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L432)
+Defined in: [packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts:432](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/tasks/SettlementProvingTask.ts#L432)
 
 #### Returns
 

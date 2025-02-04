@@ -10,7 +10,7 @@ title: Mempool
 
 # Interface: Mempool\<Events\>
 
-Defined in: [packages/sequencer/src/mempool/Mempool.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/Mempool.ts#L9)
+Defined in: [packages/sequencer/src/mempool/Mempool.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/Mempool.ts#L9)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/mempool/Mempool.ts:9](https://github.com/pro
 
 > **add**: (`tx`) => `Promise`\<`boolean`\>
 
-Defined in: [packages/sequencer/src/mempool/Mempool.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/Mempool.ts#L15)
+Defined in: [packages/sequencer/src/mempool/Mempool.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/Mempool.ts#L15)
 
 Add a transaction to the mempool
 
@@ -60,7 +60,7 @@ Defined in: packages/common/dist/events/EventEmittingComponent.d.ts:4
 
 > **getTxs**: (`limit`?) => `Promise`\<[`PendingTransaction`](../classes/PendingTransaction.md)[]\>
 
-Defined in: [packages/sequencer/src/mempool/Mempool.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/Mempool.ts#L20)
+Defined in: [packages/sequencer/src/mempool/Mempool.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/Mempool.ts#L20)
 
 Retrieve all transactions that are currently in the mempool
 

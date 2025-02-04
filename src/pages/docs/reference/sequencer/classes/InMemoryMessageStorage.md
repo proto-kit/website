@@ -10,7 +10,7 @@ title: InMemoryMessageStorage
 
 # Class: InMemoryMessageStorage
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts#L7)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts#L7)
 
 Interface to store Messages previously fetched by a IncomingMessageadapter
 
@@ -34,7 +34,7 @@ Interface to store Messages previously fetched by a IncomingMessageadapter
 
 > **getMessages**(`fromMessagesHash`): `Promise`\<[`PendingTransaction`](PendingTransaction.md)[]\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts#L10)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts#L10)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:1
 
 > **pushMessages**(`fromMessagesHash`, `toMessagesHash`, `messages`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts#L16)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryMessageStorage.ts#L16)
 
 #### Parameters
 

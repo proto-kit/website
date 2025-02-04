@@ -10,7 +10,7 @@ title: CompressedSignature
 
 # Class: CompressedSignature
 
-Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/CompressedSignature.ts#L8)
+Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/CompressedSignature.ts#L8)
 
 CompressedSignature compresses the s scalar of a Signature
 (which is expanded to 256 Fields in snarkyjs) to a single string
@@ -21,7 +21,7 @@ CompressedSignature compresses the s scalar of a Signature
 
 > **new CompressedSignature**(`r`, `s`): [`CompressedSignature`](CompressedSignature.md)
 
-Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/CompressedSignature.ts#L15)
+Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/CompressedSignature.ts#L15)
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:15](https://g
 
 > `readonly` **r**: `Field`
 
-Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/CompressedSignature.ts#L16)
+Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/CompressedSignature.ts#L16)
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:16](https://g
 
 > `readonly` **s**: `string`
 
-Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/CompressedSignature.ts#L17)
+Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:17](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/CompressedSignature.ts#L17)
 
 ## Methods
 
@@ -59,7 +59,7 @@ Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:17](https://g
 
 > **toSignature**(): `Signature`
 
-Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/CompressedSignature.ts#L21)
+Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/CompressedSignature.ts#L21)
 
 #### Returns
 
@@ -71,7 +71,7 @@ Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:21](https://g
 
 > `static` **fromSignature**(`sig`): [`CompressedSignature`](CompressedSignature.md)
 
-Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/mempool/CompressedSignature.ts#L10)
+Defined in: [packages/sequencer/src/mempool/CompressedSignature.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/mempool/CompressedSignature.ts#L10)
 
 #### Parameters
 

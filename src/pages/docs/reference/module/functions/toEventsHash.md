@@ -12,7 +12,7 @@ title: toEventsHash
 
 > **toEventsHash**(`events`): `Field`
 
-Defined in: [module/src/method/runtimeMethod.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/runtimeMethod.ts#L56)
+Defined in: [module/src/method/runtimeMethod.ts:59](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/method/runtimeMethod.ts#L59)
 
 ## Parameters
 

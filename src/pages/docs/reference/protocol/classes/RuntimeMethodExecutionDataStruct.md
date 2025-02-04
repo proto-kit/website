@@ -10,7 +10,7 @@ title: RuntimeMethodExecutionDataStruct
 
 # Class: RuntimeMethodExecutionDataStruct
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L41)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:41](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L41)
 
 ## Extends
 
@@ -54,7 +54,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **networkState**: [`NetworkState`](NetworkState.md) = `NetworkState`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L44)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:44](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L44)
 
 #### Implementation of
 
@@ -70,7 +70,7 @@ Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.t
 
 > **transaction**: [`RuntimeTransaction`](RuntimeTransaction.md) = `RuntimeTransaction`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L43)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:43](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L43)
 
 #### Implementation of
 

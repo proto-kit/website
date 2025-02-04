@@ -12,7 +12,7 @@ title: CapitalizeAny
 
 > **CapitalizeAny**\<`Key`\>: `Key` *extends* `string` ? `Capitalize`\<`Key`\> : `Key`
 
-Defined in: [packages/common/src/dependencyFactory/DependencyFactory.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/dependencyFactory/DependencyFactory.ts#L45)
+Defined in: [packages/common/src/dependencyFactory/DependencyFactory.ts:45](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/dependencyFactory/DependencyFactory.ts#L45)
 
 ## Type Parameters
 

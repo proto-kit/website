@@ -10,7 +10,7 @@ title: Sequencer
 
 # Class: Sequencer\<Modules\>
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L30)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L30)
 
 Reusable module container facilitating registration, resolution
 configuration, decoration and validation of modules
@@ -136,7 +136,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:81
 
 > **get** **dependencyContainer**(): `DependencyContainer`
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L61)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:61](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L61)
 
 ##### Returns
 
@@ -188,7 +188,7 @@ list of module names
 
 > **get** **protocol**(): [`Protocol`](../../protocol/classes/Protocol.md)\<[`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & [`ProtocolModulesRecord`](../../protocol/type-aliases/ProtocolModulesRecord.md)\>
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L53)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L53)
 
 ##### Returns
 
@@ -202,7 +202,7 @@ Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:53](https://
 
 > **get** **runtime**(): [`Runtime`](../../module/classes/Runtime.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md)\>
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L49)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L49)
 
 ##### Returns
 
@@ -262,7 +262,7 @@ using e.g. a for loop.
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:125](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L125)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:128](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L128)
 
 #### Returns
 
@@ -618,7 +618,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:69](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L69)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:69](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L69)
 
 Starts the sequencer by iterating over all provided
 modules to start each
@@ -666,7 +666,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`Modules`\>(`definition`): [`TypedClass`](../type-aliases/TypedClass.md)\<[`Sequencer`](Sequencer.md)\<`Modules`\>\>
 
-Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/executor/Sequencer.ts#L39)
+Defined in: [packages/sequencer/src/sequencer/executor/Sequencer.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/executor/Sequencer.ts#L39)
 
 Alternative constructor for Sequencer
 

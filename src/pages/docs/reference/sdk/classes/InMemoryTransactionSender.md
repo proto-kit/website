@@ -10,7 +10,7 @@ title: InMemoryTransactionSender
 
 # Class: InMemoryTransactionSender
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L16)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L16)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new InMemoryTransactionSender**(`sequencer`): [`InMemoryTransactionSender`](InMemoryTransactionSender.md)
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L22)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:22](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L22)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:22](https://github
 
 > `optional` **appChain**: [`AppChain`](AppChain.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md), [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & [`ProtocolModulesRecord`](../../protocol/type-aliases/ProtocolModulesRecord.md), [`SequencerModulesRecord`](../../sequencer/type-aliases/SequencerModulesRecord.md), [`AppChainModulesRecord`](../type-aliases/AppChainModulesRecord.md)\>
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L18)
+Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChainModule.ts#L18)
 
 #### Implementation of
 
@@ -85,7 +85,7 @@ checks when retrieving it via the getter
 
 > **mempool**: [`PrivateMempool`](../../sequencer/classes/PrivateMempool.md)
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L20)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L20)
 
 ***
 
@@ -93,7 +93,7 @@ Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:20](https://github
 
 > **sequencer**: [`Sequencer`](../../sequencer/classes/Sequencer.md)\<[`SequencerModulesRecord`](../../sequencer/type-aliases/SequencerModulesRecord.md)\>
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L23)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L23)
 
 ***
 
@@ -101,7 +101,7 @@ Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:23](https://github
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L16)
+Defined in: [sdk/src/appChain/AppChainModule.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChainModule.ts#L16)
 
 #### Inherited from
 
@@ -177,7 +177,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **send**(`transaction`): `Promise`\<`void`\>
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L30)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L30)
 
 #### Parameters
 

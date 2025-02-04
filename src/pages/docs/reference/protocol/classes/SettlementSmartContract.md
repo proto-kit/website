@@ -10,7 +10,7 @@ title: SettlementSmartContract
 
 # Class: SettlementSmartContract
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:433](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L433)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:433](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L433)
 
 ## Extends
 
@@ -64,7 +64,7 @@ Defined in: node\_modules/o1js/dist/node/lib/mina/zkapp.d.ts:50
 
 > **authorizationField**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:446](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L446)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:446](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L446)
 
 #### Implementation of
 
@@ -80,7 +80,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **blockHashRoot**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:442](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L442)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:442](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L442)
 
 #### Overrides
 
@@ -92,7 +92,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **dispatchContractAddressX**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:444](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L444)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:444](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L444)
 
 #### Overrides
 
@@ -104,7 +104,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **events**: `object`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:124](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L124)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:124](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L124)
 
 A list of event types that can be emitted using this.emitEvent()`.
 
@@ -122,7 +122,7 @@ A list of event types that can be emitted using this.emitEvent()`.
 
 > **lastSettlementL1BlockHeight**: `State`\<`UInt32`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:438](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L438)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:438](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L438)
 
 #### Overrides
 
@@ -134,7 +134,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **networkStateHash**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:441](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L441)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:441](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L441)
 
 #### Overrides
 
@@ -211,7 +211,7 @@ Consider using `this.sender.getAndRequireSignatureV2()` if you need to prove tha
 
 > **sequencerKey**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:437](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L437)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:437](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L437)
 
 #### Overrides
 
@@ -223,7 +223,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **stateRoot**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:440](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L440)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:440](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L440)
 
 #### Overrides
 
@@ -315,7 +315,7 @@ Defined in: node\_modules/o1js/dist/node/lib/mina/zkapp.d.ts:61
 
 > `static` **args**: `object`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L112)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:112](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L112)
 
 #### BridgeContract
 
@@ -578,7 +578,7 @@ Returns the current AccountUpdate associated to this SmartContract.
 
 > **addTokenBridge**(`tokenId`, `address`, `dispatchContract`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:468](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L468)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:468](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L468)
 
 #### Parameters
 
@@ -698,7 +698,7 @@ Approve a list of account updates (with arbitrarily many children).
 
 > **approveBase**(`forest`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:448](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L448)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:448](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L448)
 
 #### Parameters
 
@@ -720,7 +720,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **assertStateRoot**(`root`): `AccountUpdate`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:140](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L140)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:140](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L140)
 
 #### Parameters
 
@@ -814,7 +814,7 @@ async deploy() {
 
 > `protected` **deployTokenBridge**(`tokenId`, `address`, `dispatchContractAddress`, `dispatchContractPreconditionEnforced`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:164](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L164)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:164](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L164)
 
 #### Parameters
 
@@ -1043,7 +1043,7 @@ class MyContract extends SmartContract {
 
 > **initialize**(`sequencer`, `dispatchContract`, `bridgeContract`, `contractKey`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:453](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L453)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:453](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L453)
 
 #### Parameters
 
@@ -1077,7 +1077,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > `protected` **initializeBase**(`sequencer`, `dispatchContract`, `bridgeContract`, `contractKey`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:246](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L246)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:246](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L246)
 
 #### Parameters
 
@@ -1189,7 +1189,7 @@ Defined in: node\_modules/o1js/dist/node/lib/mina/zkapp.d.ts:301
 
 > **settle**(`blockProof`, `signature`, `dispatchContractAddress`, `publicKey`, `inputNetworkState`, `outputNetworkState`, `newPromisedMessagesHash`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:477](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L477)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:477](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L477)
 
 #### Parameters
 
@@ -1235,7 +1235,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > `protected` **settleBase**(`blockProof`, `signature`, `dispatchContractAddress`, `publicKey`, `inputNetworkState`, `outputNetworkState`, `newPromisedMessagesHash`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:279](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L279)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:279](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L279)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: TaskPayload
 
 # Interface: TaskPayload
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L17)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:17](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L17)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:17](https://github.com/p
 
 > **flowId**: `string`
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L22)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:22](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L22)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:22](https://github.com/p
 
 > **name**: `string`
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L19)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L19)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:19](https://github.com/p
 
 > **payload**: `string`
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L20)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L20)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:20](https://github.com/p
 
 > `optional` **status**: `"error"` \| `"success"`
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L18)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L18)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:18](https://github.com/p
 
 > `optional` **taskId**: `string`
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L21)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L21)

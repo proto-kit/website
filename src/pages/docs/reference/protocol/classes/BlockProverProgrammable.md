@@ -10,7 +10,7 @@ title: BlockProverProgrammable
 
 # Class: BlockProverProgrammable
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:135](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L135)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:135](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L135)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:135](https://gith
 
 > **new BlockProverProgrammable**(`prover`, `stateTransitionProver`, `runtime`, `transactionHooks`, `blockHooks`, `verificationKeyService`): [`BlockProverProgrammable`](BlockProverProgrammable.md)
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:139](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L139)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:139](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L139)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:139](https://gith
 
 > **name**: `string` = `"BlockProver"`
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:153](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L153)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:153](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L153)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:153](https://gith
 
 > `readonly` **runtime**: [`ZkProgrammable`](../../common/classes/ZkProgrammable.md)\<[`MethodPublicOutput`](MethodPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:145](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L145)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:145](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L145)
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:145](https://gith
 
 > `readonly` **stateTransitionProver**: [`ZkProgrammable`](../../common/classes/ZkProgrammable.md)\<[`StateTransitionProverPublicInput`](StateTransitionProverPublicInput.md), [`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:141](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L141)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:141](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L141)
 
 ## Accessors
 
@@ -90,7 +90,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:141](https://gith
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:155](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L155)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:155](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L155)
 
 ##### Returns
 
@@ -124,7 +124,7 @@ Defined in: packages/common/dist/zkProgrammable/ZkProgrammable.d.ts:34
 
 > **applyTransaction**(`state`, `stateTransitionProof`, `runtimeProof`, `executionData`, `verificationKey`): `Promise`\<[`BlockProverState`](../interfaces/BlockProverState.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:170](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L170)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:170](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L170)
 
 Applies and checks the two proofs and applies the corresponding state
 changes to the given state
@@ -165,7 +165,7 @@ The new BlockProver-state to be used as public output
 
 > **assertProtocolTransitions**(`stateTransitionProof`, `executionData`, `runtimeProof`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:264](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L264)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:264](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L264)
 
 #### Parameters
 
@@ -213,7 +213,7 @@ Defined in: packages/common/dist/zkProgrammable/ZkProgrammable.d.ts:35
 
 > **merge**(`publicInput`, `proof1`, `proof2`): `Promise`\<[`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:656](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L656)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:656](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L656)
 
 #### Parameters
 
@@ -239,7 +239,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:656](https://gith
 
 > **proveBlock**(`publicInput`, `networkState`, `blockWitness`, `transactionProof`): `Promise`\<[`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:482](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L482)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:482](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L482)
 
 #### Parameters
 
@@ -269,7 +269,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:482](https://gith
 
 > **proveTransaction**(`publicInput`, `stateProof`, `runtimeProof`, `executionData`, `verificationKeyWitness`): `Promise`\<[`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:406](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L406)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:406](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L406)
 
 #### Parameters
 
@@ -303,7 +303,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:406](https://gith
 
 > **zkProgramFactory**(): [`PlainZkProgram`](../../common/interfaces/PlainZkProgram.md)\<[`BlockProverPublicInput`](BlockProverPublicInput.md), [`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>[]
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:798](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L798)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:798](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L798)
 
 Creates the BlockProver ZkProgram.
 Recursive linking of proofs is done via the previously

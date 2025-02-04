@@ -10,7 +10,7 @@ title: TransactionFeeHookConfig
 
 # Interface: TransactionFeeHookConfig
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L33)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L33)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:33](https://github
 
 > **baseFee**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L49)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L49)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:49](https:/
 
 > **feeRecipient**: `string`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L48)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:48](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L48)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:48](https:/
 
 > **methods**: `object`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L51)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:51](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L51)
 
 #### Index Signature
 
@@ -62,7 +62,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:51](https:/
 
 > **perWeightUnitFee**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L50)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:50](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L50)
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:50](https:/
 
 > **tokenId**: `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L47)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:47](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L47)
 
 #### Inherited from
 

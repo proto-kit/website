@@ -10,7 +10,7 @@ title: StateTransitionProverType
 
 # Interface: StateTransitionProverType
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L43)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/Protocol.ts#L49)
 
 Used by various module sub-types that may need to be configured
 
@@ -39,7 +39,7 @@ checks when retrieving it via the getter
 
 > **merge**: (`publicInput`, `proof1`, `proof2`) => `Promise`\<[`StateTransitionProverPublicOutput`](../classes/StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L36)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L36)
 
 #### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvabl
 
 > `optional` **protocol**: [`ProtocolEnvironment`](ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L14)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L14)
 
 #### Inherited from
 
@@ -81,7 +81,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github
 
 > **runBatch**: (`publicInput`, `batch`) => `Promise`\<[`StateTransitionProverPublicOutput`](../classes/StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L31)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L31)
 
 #### Parameters
 
@@ -121,7 +121,7 @@ Defined in: packages/common/dist/zkProgrammable/ZkProgrammable.d.ts:38
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L16)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L16)
 
 ##### Returns
 
@@ -193,7 +193,7 @@ Defined in: packages/common/dist/compiling/CompilableModule.d.ts:4
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L20)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L20)
 
 #### Parameters
 
@@ -215,7 +215,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L24)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L24)
 
 #### Returns
 

@@ -10,7 +10,7 @@ title: OptionBase
 
 # Class: `abstract` OptionBase
 
-Defined in: [packages/protocol/src/model/Option.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L21)
+Defined in: [packages/protocol/src/model/Option.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L21)
 
 ## Extended by
 
@@ -23,7 +23,7 @@ Defined in: [packages/protocol/src/model/Option.ts:21](https://github.com/proto-
 
 > `protected` **new OptionBase**(`isSome`, `isForcedSome`): [`OptionBase`](OptionBase.md)
 
-Defined in: [packages/protocol/src/model/Option.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L22)
+Defined in: [packages/protocol/src/model/Option.ts:22](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L22)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/protocol/src/model/Option.ts:22](https://github.com/proto-
 
 > **isForcedSome**: `Bool`
 
-Defined in: [packages/protocol/src/model/Option.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L24)
+Defined in: [packages/protocol/src/model/Option.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L24)
 
 ***
 
@@ -53,7 +53,7 @@ Defined in: [packages/protocol/src/model/Option.ts:24](https://github.com/proto-
 
 > **isSome**: `Bool`
 
-Defined in: [packages/protocol/src/model/Option.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L23)
+Defined in: [packages/protocol/src/model/Option.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L23)
 
 ## Accessors
 
@@ -63,7 +63,7 @@ Defined in: [packages/protocol/src/model/Option.ts:23](https://github.com/proto-
 
 > **get** **treeValue**(): `Field`
 
-Defined in: [packages/protocol/src/model/Option.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L34)
+Defined in: [packages/protocol/src/model/Option.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L34)
 
 ##### Returns
 
@@ -77,7 +77,7 @@ Tree representation of the current value
 
 > `abstract` `protected` **clone**(): [`OptionBase`](OptionBase.md)
 
-Defined in: [packages/protocol/src/model/Option.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L29)
+Defined in: [packages/protocol/src/model/Option.ts:29](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L29)
 
 #### Returns
 
@@ -89,7 +89,7 @@ Defined in: [packages/protocol/src/model/Option.ts:29](https://github.com/proto-
 
 > `abstract` `protected` **encodeValueToFields**(): `Field`[]
 
-Defined in: [packages/protocol/src/model/Option.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L27)
+Defined in: [packages/protocol/src/model/Option.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L27)
 
 #### Returns
 
@@ -101,7 +101,7 @@ Defined in: [packages/protocol/src/model/Option.ts:27](https://github.com/proto-
 
 > **forceSome**(): `void`
 
-Defined in: [packages/protocol/src/model/Option.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L44)
+Defined in: [packages/protocol/src/model/Option.ts:44](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L44)
 
 #### Returns
 
@@ -113,7 +113,7 @@ Defined in: [packages/protocol/src/model/Option.ts:44](https://github.com/proto-
 
 > **toFields**(): `Field`[]
 
-Defined in: [packages/protocol/src/model/Option.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L53)
+Defined in: [packages/protocol/src/model/Option.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L53)
 
 Returns the `to`-value as decoded as a list of fields
 Not in circuit
@@ -128,7 +128,7 @@ Not in circuit
 
 > **toJSON**(): `object`
 
-Defined in: [packages/protocol/src/model/Option.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L70)
+Defined in: [packages/protocol/src/model/Option.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L70)
 
 #### Returns
 
@@ -152,7 +152,7 @@ Defined in: [packages/protocol/src/model/Option.ts:70](https://github.com/proto-
 
 > **toProvable**(): [`ProvableOption`](ProvableOption.md)
 
-Defined in: [packages/protocol/src/model/Option.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L63)
+Defined in: [packages/protocol/src/model/Option.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L63)
 
 #### Returns
 

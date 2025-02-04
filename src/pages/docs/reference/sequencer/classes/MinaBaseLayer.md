@@ -10,7 +10,7 @@ title: MinaBaseLayer
 
 # Class: MinaBaseLayer
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L35)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:35](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L35)
 
 Lifecycle of a SequencerModule
 
@@ -31,7 +31,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new MinaBaseLayer**(`areProofsEnabled`): [`MinaBaseLayer`](MinaBaseLayer.md)
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L43)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:43](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L43)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ checks when retrieving it via the getter
 
 > `optional` **network**: `Mina`
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L39)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L39)
 
 ***
 
@@ -76,7 +76,7 @@ Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:39](http
 
 > `optional` **originalNetwork**: `Mina`
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L41)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:41](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L41)
 
 ***
 
@@ -84,7 +84,7 @@ Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:41](http
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -152,7 +152,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **dependencies**(): `object`
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L50)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:50](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L50)
 
 #### Returns
 
@@ -192,7 +192,7 @@ Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:50](http
 
 > **isLocalBlockChain**(): `boolean`
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L66)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:66](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L66)
 
 #### Returns
 
@@ -204,7 +204,7 @@ Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:66](http
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L70)
+Defined in: [packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/MinaBaseLayer.ts#L70)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

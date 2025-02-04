@@ -10,7 +10,7 @@ title: BlockProverType
 
 # Interface: BlockProverType
 
-Defined in: [packages/protocol/src/protocol/Protocol.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/Protocol.ts#L41)
+Defined in: [packages/protocol/src/protocol/Protocol.ts:47](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/Protocol.ts#L47)
 
 Used by various module sub-types that may need to be configured
 
@@ -39,7 +39,7 @@ checks when retrieving it via the getter
 
 > **merge**: (`publicInput`, `proof1`, `proof2`) => `Promise`\<[`BlockProverPublicOutput`](../classes/BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L94)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:94](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L94)
 
 #### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:94](https://git
 
 > `optional` **protocol**: [`ProtocolEnvironment`](ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L14)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L14)
 
 #### Inherited from
 
@@ -81,7 +81,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github
 
 > **proveBlock**: (`publicInput`, `networkState`, `blockWitness`, `transactionProof`) => `Promise`\<[`BlockProverPublicOutput`](../classes/BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:86](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L86)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:86](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L86)
 
 #### Parameters
 
@@ -115,7 +115,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:86](https://git
 
 > **proveTransaction**: (`publicInput`, `stateProof`, `appProof`, `executionData`, `verificationKeyAttestation`) => `Promise`\<[`BlockProverPublicOutput`](../classes/BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L78)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:78](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L78)
 
 #### Parameters
 
@@ -167,7 +167,7 @@ Defined in: packages/common/dist/zkProgrammable/ZkProgrammable.d.ts:38
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L16)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L16)
 
 ##### Returns
 
@@ -239,7 +239,7 @@ Defined in: packages/common/dist/compiling/CompilableModule.d.ts:4
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L20)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L20)
 
 #### Parameters
 
@@ -261,7 +261,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L24)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L24)
 
 #### Returns
 

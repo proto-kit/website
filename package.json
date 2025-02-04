@@ -2,6 +2,7 @@
   "name": "@protokit/website",
   "version": "0.0.1",
   "scripts": {
+    "postinstall": "pnpm run typedoc:generate",
     "typedoc:generate": "./generate-typedoc.sh",
     "dev": "next dev",
     "build": "next build",

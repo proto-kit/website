@@ -12,7 +12,7 @@ title: ExpandAppChainModules
 
 > **ExpandAppChainModules**\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>: `AppChainModules` & `object`
 
-Defined in: [sdk/src/appChain/AppChain.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L66)
+Defined in: [sdk/src/appChain/AppChain.ts:66](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L66)
 
 ## Type declaration
 

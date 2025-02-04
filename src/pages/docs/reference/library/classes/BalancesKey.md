@@ -10,7 +10,7 @@ title: BalancesKey
 
 # Class: BalancesKey
 
-Defined in: [packages/library/src/runtime/Balances.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L19)
+Defined in: [packages/library/src/runtime/Balances.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L19)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **address**: `PublicKey` = `PublicKey`
 
-Defined in: [packages/library/src/runtime/Balances.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L21)
+Defined in: [packages/library/src/runtime/Balances.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L21)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/library/src/runtime/Balances.ts:21](https://github.com/pro
 
 > **tokenId**: [`TokenId`](TokenId.md) = `TokenId`
 
-Defined in: [packages/library/src/runtime/Balances.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L20)
+Defined in: [packages/library/src/runtime/Balances.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L20)
 
 #### Inherited from
 
@@ -414,7 +414,7 @@ Convert provable type to a normal JS type.
 
 > `static` **from**(`tokenId`, `address`): [`BalancesKey`](BalancesKey.md)
 
-Defined in: [packages/library/src/runtime/Balances.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L23)
+Defined in: [packages/library/src/runtime/Balances.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L23)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: FieldMapper
 
 # Class: FieldMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/FieldMapper.ts#L7)
+Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/FieldMapper.ts#L7)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:7](
 
 > **mapIn**(`input`): `Field`[]
 
-Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/FieldMapper.ts#L8)
+Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/FieldMapper.ts#L8)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:8](
 
 > **mapOut**(`input`): `string`
 
-Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/FieldMapper.ts#L12)
+Defined in: [packages/persistance/src/services/prisma/mappers/FieldMapper.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/FieldMapper.ts#L12)
 
 #### Parameters
 

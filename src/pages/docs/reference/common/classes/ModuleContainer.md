@@ -10,7 +10,7 @@ title: ModuleContainer
 
 # Class: ModuleContainer\<Modules\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:145](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L145)
+Defined in: [packages/common/src/config/ModuleContainer.ts:145](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L145)
 
 Reusable module container facilitating registration, resolution
 configuration, decoration and validation of modules
@@ -41,7 +41,7 @@ configuration, decoration and validation of modules
 
 > **new ModuleContainer**\<`Modules`\>(`definition`): [`ModuleContainer`](ModuleContainer.md)\<`Modules`\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:159](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L159)
+Defined in: [packages/common/src/config/ModuleContainer.ts:159](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L159)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:159](https://github.c
 
 > `protected` **currentConfig**: `undefined` \| [`ModulesConfig`](../type-aliases/ModulesConfig.md)\<`Modules`\>
 
-Defined in: [packages/common/src/config/ConfigurableModule.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ConfigurableModule.ts#L34)
+Defined in: [packages/common/src/config/ConfigurableModule.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ConfigurableModule.ts#L34)
 
 Store the config separately, so that we can apply additional
 checks when retrieving it via the getter
@@ -78,7 +78,7 @@ checks when retrieving it via the getter
 
 > **definition**: [`ModuleContainerDefinition`](../interfaces/ModuleContainerDefinition.md)\<`Modules`\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:159](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L159)
+Defined in: [packages/common/src/config/ModuleContainer.ts:159](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L159)
 
 ## Accessors
 
@@ -88,7 +88,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:159](https://github.c
 
 > **get** **config**(): [`ModulesConfig`](../type-aliases/ModulesConfig.md)\<`Modules`\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:317](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L317)
+Defined in: [packages/common/src/config/ModuleContainer.ts:317](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L317)
 
 ##### Returns
 
@@ -98,7 +98,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:317](https://github.c
 
 > **set** **config**(`config`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:321](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L321)
+Defined in: [packages/common/src/config/ModuleContainer.ts:321](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L321)
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:321](https://github.c
 
 > **get** `protected` **container**(): `DependencyContainer`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:199](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L199)
+Defined in: [packages/common/src/config/ModuleContainer.ts:199](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L199)
 
 ##### Returns
 
@@ -136,7 +136,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:199](https://github.c
 
 > **get** **events**(): [`EventEmitterProxy`](EventEmitterProxy.md)\<`Modules`\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:270](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L270)
+Defined in: [packages/common/src/config/ModuleContainer.ts:270](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L270)
 
 ##### Returns
 
@@ -150,7 +150,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:270](https://github.c
 
 > **get** **moduleNames**(): `string`[]
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:166](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L166)
+Defined in: [packages/common/src/config/ModuleContainer.ts:166](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L166)
 
 ##### Returns
 
@@ -164,7 +164,7 @@ list of module names
 
 > **assertContainerInitialized**(`container`): `asserts container is DependencyContainer`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:224](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L224)
+Defined in: [packages/common/src/config/ModuleContainer.ts:224](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L224)
 
 #### Parameters
 
@@ -182,7 +182,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:224](https://github.c
 
 > **assertIsValidModuleName**(`moduleName`): `asserts moduleName is StringKeyOf<Modules>`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:209](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L209)
+Defined in: [packages/common/src/config/ModuleContainer.ts:209](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L209)
 
 Assert that the iterated `moduleName` is of ModuleName type,
 otherwise it may be just string e.g. when modules are iterated over
@@ -204,7 +204,7 @@ using e.g. a for loop.
 
 > **configure**(`config`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:306](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L306)
+Defined in: [packages/common/src/config/ModuleContainer.ts:306](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L306)
 
 Provide additional configuration after the ModuleContainer was created.
 
@@ -228,7 +228,7 @@ before the first resolution.
 
 > **configurePartial**(`config`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:310](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L310)
+Defined in: [packages/common/src/config/ModuleContainer.ts:310](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L310)
 
 #### Parameters
 
@@ -246,7 +246,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:310](https://github.c
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:479](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L479)
+Defined in: [packages/common/src/config/ModuleContainer.ts:477](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L477)
 
 This is a placeholder for individual modules to override.
 This method will be called whenever the underlying container fully
@@ -272,7 +272,7 @@ initialized
 
 > `protected` **decorateModule**(`moduleName`, `containedModule`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:364](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L364)
+Defined in: [packages/common/src/config/ModuleContainer.ts:364](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L364)
 
 Override this in the child class to provide custom
 features or module checks
@@ -297,7 +297,7 @@ features or module checks
 
 > `protected` **initializeDependencyFactories**(`factories`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:389](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L389)
+Defined in: [packages/common/src/config/ModuleContainer.ts:389](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L389)
 
 Inject a set of dependencies using the given list of DependencyFactories
 This method should be called during startup
@@ -318,7 +318,7 @@ This method should be called during startup
 
 > **isValidModuleName**(`modules`, `moduleName`): `moduleName is StringKeyOf<Modules>`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:217](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L217)
+Defined in: [packages/common/src/config/ModuleContainer.ts:217](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L217)
 
 #### Parameters
 
@@ -340,7 +340,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:217](https://github.c
 
 > `protected` **onAfterModuleResolution**(`moduleName`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:451](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L451)
+Defined in: [packages/common/src/config/ModuleContainer.ts:449](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L449)
 
 Handle module resolution, e.g. by decorating resolved modules
 
@@ -360,7 +360,7 @@ Handle module resolution, e.g. by decorating resolved modules
 
 > `protected` **registerAliases**(`originalToken`, `clas`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:232](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L232)
+Defined in: [packages/common/src/config/ModuleContainer.ts:232](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L232)
 
 #### Parameters
 
@@ -382,7 +382,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:232](https://github.c
 
 > `protected` **registerClasses**(`modules`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:288](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L288)
+Defined in: [packages/common/src/config/ModuleContainer.ts:288](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L288)
 
 #### Parameters
 
@@ -400,7 +400,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:288](https://github.c
 
 > `protected` **registerModules**(`modules`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:249](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L249)
+Defined in: [packages/common/src/config/ModuleContainer.ts:249](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L249)
 
 Register modules into the current container, and registers
 a respective resolution hook in order to decorate the module
@@ -422,7 +422,7 @@ upon/after resolution.
 
 > **registerValue**\<`Value`\>(`modules`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:282](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L282)
+Defined in: [packages/common/src/config/ModuleContainer.ts:282](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L282)
 
 Register a non-module value into the current container
 
@@ -446,7 +446,7 @@ Register a non-module value into the current container
 
 > **resolve**\<`KeyType`\>(`moduleName`): `InstanceType`\<[`ResolvableModules`](../type-aliases/ResolvableModules.md)\<`Modules`\>\[`KeyType`\]\>
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:338](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L338)
+Defined in: [packages/common/src/config/ModuleContainer.ts:338](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L338)
 
 Resolves a module from the current module container
 
@@ -474,7 +474,7 @@ be any module instance, not the one specifically requested as argument.
 
 > **resolveOrFail**\<`ModuleType`\>(`moduleName`, `moduleType`): `ModuleType`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:346](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L346)
+Defined in: [packages/common/src/config/ModuleContainer.ts:346](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L346)
 
 #### Type Parameters
 
@@ -500,7 +500,7 @@ Defined in: [packages/common/src/config/ModuleContainer.ts:346](https://github.c
 
 > `protected` **validateModule**(`moduleName`, `containedModule`): `void`
 
-Defined in: [packages/common/src/config/ModuleContainer.ts:177](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/ModuleContainer.ts#L177)
+Defined in: [packages/common/src/config/ModuleContainer.ts:177](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/ModuleContainer.ts#L177)
 
 Check if the provided module satisfies the container requirements,
 such as only injecting other known modules.

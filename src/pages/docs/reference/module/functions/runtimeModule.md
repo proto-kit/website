@@ -12,7 +12,7 @@ title: runtimeModule
 
 > **runtimeModule**(): (`target`) => `void`
 
-Defined in: [module/src/module/decorator.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/module/decorator.ts#L10)
+Defined in: [module/src/module/decorator.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/module/decorator.ts#L10)
 
 Marks the decorated class as a runtime module, while also
 making it injectable with our dependency injection solution.

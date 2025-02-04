@@ -10,7 +10,7 @@ title: ProvenSettlementPermissions
 
 # Class: ProvenSettlementPermissions
 
-Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L5)
+Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L5)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermi
 
 > **bridgeContractMina**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L35)
+Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:35](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L35)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermi
 
 > **bridgeContractToken**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L39)
+Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L39)
 
 #### Returns
 
@@ -64,7 +64,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermi
 
 > **dispatchContract**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L31)
+Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L31)
 
 #### Returns
 
@@ -80,7 +80,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermi
 
 > **settlementContract**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L27)
+Defined in: [packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/ProvenSettlementPermissions.ts#L27)
 
 #### Returns
 

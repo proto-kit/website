@@ -10,7 +10,7 @@ title: SignedTransaction
 
 # Class: SignedTransaction
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L5)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L5)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **signature**: `Signature` = `Signature`
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L7)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L7)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:7](htt
 
 > **transaction**: [`RuntimeTransaction`](RuntimeTransaction.md) = `RuntimeTransaction`
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L6)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L6)
 
 #### Inherited from
 
@@ -516,7 +516,7 @@ Convert provable type to a normal JS type.
 
 > **getSignatureData**(): `Field`[]
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L32)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L32)
 
 #### Returns
 
@@ -528,7 +528,7 @@ Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:32](ht
 
 > **hash**(): `Field`
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L28)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L28)
 
 #### Returns
 
@@ -540,7 +540,7 @@ Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:28](ht
 
 > **validateSignature**(): `Bool`
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L41)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:41](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L41)
 
 #### Returns
 
@@ -552,7 +552,7 @@ Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:41](ht
 
 > `static` **dummy**(): [`SignedTransaction`](SignedTransaction.md)
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L17)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:17](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L17)
 
 #### Returns
 
@@ -564,7 +564,7 @@ Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:17](ht
 
 > `static` **getSignatureData**(`args`): `Field`[]
 
-Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/SignedTransaction.ts#L9)
+Defined in: [packages/protocol/src/model/transaction/SignedTransaction.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/SignedTransaction.ts#L9)
 
 #### Parameters
 

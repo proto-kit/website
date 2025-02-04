@@ -10,7 +10,7 @@ title: SignedSettlementPermissions
 
 # Class: SignedSettlementPermissions
 
-Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L5)
+Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L5)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermi
 
 > **bridgeContractMina**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L28)
+Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L28)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermi
 
 > **bridgeContractToken**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L32)
+Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L32)
 
 #### Returns
 
@@ -64,7 +64,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermi
 
 > **dispatchContract**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L20)
+Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L20)
 
 #### Returns
 
@@ -80,7 +80,7 @@ Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermi
 
 > **settlementContract**(): `Permissions`
 
-Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L24)
+Defined in: [packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/permissions/SignedSettlementPermissions.ts#L24)
 
 #### Returns
 

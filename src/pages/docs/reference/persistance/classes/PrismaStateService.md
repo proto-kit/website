@@ -10,7 +10,7 @@ title: PrismaStateService
 
 # Class: PrismaStateService
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L16)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L16)
 
 This Interface should be implemented for services that store the state
 in an external storage (like a DB). This can be used in conjunction with
@@ -26,7 +26,7 @@ CachedStateService to preload keys for In-Circuit usage.
 
 > **new PrismaStateService**(`connection`, `mask`): [`PrismaStateService`](PrismaStateService.md)
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L23)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L23)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ A indicator to which masking level the values belong
 
 > **commit**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L28)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L28)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:28](
 
 > **get**(`key`): `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:79](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L79)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:79](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L79)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:79](
 
 > **getMany**(`keys`): `Promise`\<[`StateEntry`](../../sequencer/interfaces/StateEntry.md)[]\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L54)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L54)
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:54](
 
 > **openTransaction**(): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L75)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:75](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L75)
 
 #### Returns
 
@@ -126,7 +126,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:75](
 
 > **writeStates**(`entries`): `void`
 
-Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaStateService.ts#L84)
+Defined in: [packages/persistance/src/services/prisma/PrismaStateService.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaStateService.ts#L84)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: Option
 
 # Class: Option\<Value\>
 
-Defined in: [packages/protocol/src/model/Option.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L84)
+Defined in: [packages/protocol/src/model/Option.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L84)
 
 Option facilitating in-circuit values that may or may not exist.
 
@@ -28,7 +28,7 @@ Option facilitating in-circuit values that may or may not exist.
 
 > **new Option**\<`Value`\>(`isSome`, `value`, `valueType`, `isForcedSome`): [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:122](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L122)
+Defined in: [packages/protocol/src/model/Option.ts:122](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L122)
 
 #### Parameters
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/model/Option.ts:122](https://github.com/proto
 
 > **isForcedSome**: `Bool`
 
-Defined in: [packages/protocol/src/model/Option.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L24)
+Defined in: [packages/protocol/src/model/Option.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L24)
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ Defined in: [packages/protocol/src/model/Option.ts:24](https://github.com/proto-
 
 > **isSome**: `Bool`
 
-Defined in: [packages/protocol/src/model/Option.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L23)
+Defined in: [packages/protocol/src/model/Option.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L23)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ Defined in: [packages/protocol/src/model/Option.ts:23](https://github.com/proto-
 
 > **value**: `Value`
 
-Defined in: [packages/protocol/src/model/Option.ts:124](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L124)
+Defined in: [packages/protocol/src/model/Option.ts:124](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L124)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [packages/protocol/src/model/Option.ts:124](https://github.com/proto
 
 > **valueType**: `FlexibleProvablePure`\<`Value`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:125](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L125)
+Defined in: [packages/protocol/src/model/Option.ts:125](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L125)
 
 ## Accessors
 
@@ -104,7 +104,7 @@ Defined in: [packages/protocol/src/model/Option.ts:125](https://github.com/proto
 
 > **get** **treeValue**(): `Field`
 
-Defined in: [packages/protocol/src/model/Option.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L34)
+Defined in: [packages/protocol/src/model/Option.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L34)
 
 ##### Returns
 
@@ -122,7 +122,7 @@ Tree representation of the current value
 
 > **clone**(): [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:135](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L135)
+Defined in: [packages/protocol/src/model/Option.ts:135](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L135)
 
 #### Returns
 
@@ -138,7 +138,7 @@ Defined in: [packages/protocol/src/model/Option.ts:135](https://github.com/proto
 
 > **encodeValueToFields**(): `Field`[]
 
-Defined in: [packages/protocol/src/model/Option.ts:131](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L131)
+Defined in: [packages/protocol/src/model/Option.ts:131](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L131)
 
 #### Returns
 
@@ -154,7 +154,7 @@ Defined in: [packages/protocol/src/model/Option.ts:131](https://github.com/proto
 
 > **forceSome**(): `void`
 
-Defined in: [packages/protocol/src/model/Option.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L44)
+Defined in: [packages/protocol/src/model/Option.ts:44](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L44)
 
 #### Returns
 
@@ -170,7 +170,7 @@ Defined in: [packages/protocol/src/model/Option.ts:44](https://github.com/proto-
 
 > **orElse**(`defaultValue`): `Value`
 
-Defined in: [packages/protocol/src/model/Option.ts:148](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L148)
+Defined in: [packages/protocol/src/model/Option.ts:148](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L148)
 
 #### Parameters
 
@@ -191,7 +191,7 @@ otherwise returns the given defaultValue
 
 > **toConstant**(): [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:157](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L157)
+Defined in: [packages/protocol/src/model/Option.ts:157](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L157)
 
 #### Returns
 
@@ -203,7 +203,7 @@ Defined in: [packages/protocol/src/model/Option.ts:157](https://github.com/proto
 
 > **toFields**(): `Field`[]
 
-Defined in: [packages/protocol/src/model/Option.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L53)
+Defined in: [packages/protocol/src/model/Option.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L53)
 
 Returns the `to`-value as decoded as a list of fields
 Not in circuit
@@ -222,7 +222,7 @@ Not in circuit
 
 > **toJSON**(): `object`
 
-Defined in: [packages/protocol/src/model/Option.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L70)
+Defined in: [packages/protocol/src/model/Option.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L70)
 
 #### Returns
 
@@ -250,7 +250,7 @@ Defined in: [packages/protocol/src/model/Option.ts:70](https://github.com/proto-
 
 > **toProvable**(): [`ProvableOption`](ProvableOption.md)
 
-Defined in: [packages/protocol/src/model/Option.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L63)
+Defined in: [packages/protocol/src/model/Option.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L63)
 
 #### Returns
 
@@ -268,7 +268,7 @@ Provable representation of the current option.
 
 > `static` **from**\<`Value`\>(`isSome`, `value`, `valueType`): [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:93](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L93)
+Defined in: [packages/protocol/src/model/Option.ts:93](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L93)
 
 Creates a new Option from the provided parameters
 
@@ -302,7 +302,7 @@ New option from the provided parameters.
 
 > `static` **fromValue**\<`Value`\>(`value`, `valueType`): [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:108](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L108)
+Defined in: [packages/protocol/src/model/Option.ts:108](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L108)
 
 Creates a new Option from the provided parameters
 
@@ -332,7 +332,7 @@ New option from the provided parameters.
 
 > `static` **none**(): [`Option`](Option.md)\<`Field`\>
 
-Defined in: [packages/protocol/src/model/Option.ts:118](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/Option.ts#L118)
+Defined in: [packages/protocol/src/model/Option.ts:118](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/Option.ts#L118)
 
 #### Returns
 

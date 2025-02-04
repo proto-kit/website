@@ -10,7 +10,7 @@ title: Withdrawals
 
 # Class: Withdrawals
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L26)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:26](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L26)
 
 Base class for runtime modules providing the necessary utilities.
 
@@ -24,7 +24,7 @@ Base class for runtime modules providing the necessary utilities.
 
 > **new Withdrawals**(`balances`): [`Withdrawals`](Withdrawals.md)
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L38)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:38](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L38)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ checks when retrieving it via the getter
 
 > **events**: [`RuntimeEvents`](../../module/classes/RuntimeEvents.md)\<\{ `withdrawal`: *typeof* [`WithdrawalEvent`](WithdrawalEvent.md); \}\>
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L27)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L27)
 
 #### Overrides
 
@@ -127,7 +127,7 @@ Holds all method names that are callable throw transactions
 
 > **withdrawalCounters**: [`StateMap`](../../protocol/classes/StateMap.md)\<`Field`, `Field`\>
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L31)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L31)
 
 ***
 
@@ -135,7 +135,7 @@ Defined in: [packages/library/src/runtime/Withdrawals.ts:31](https://github.com/
 
 > **withdrawals**: [`StateMap`](../../protocol/classes/StateMap.md)\<[`WithdrawalKey`](WithdrawalKey.md), [`Withdrawal`](../../protocol/classes/Withdrawal.md)\>
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L33)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L33)
 
 ***
 
@@ -263,7 +263,7 @@ Defined in: packages/module/dist/runtime/RuntimeModule.d.ts:32
 
 > `protected` **queueWithdrawal**(`withdrawal`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L42)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:42](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L42)
 
 #### Parameters
 
@@ -281,7 +281,7 @@ Defined in: [packages/library/src/runtime/Withdrawals.ts:42](https://github.com/
 
 > **withdraw**(`address`, `amount`, `tokenId`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Withdrawals.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Withdrawals.ts#L59)
+Defined in: [packages/library/src/runtime/Withdrawals.ts:59](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Withdrawals.ts#L59)
 
 #### Parameters
 

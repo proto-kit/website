@@ -10,7 +10,7 @@ title: TokenMapping
 
 # Class: TokenMapping
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L60)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:60](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L60)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **publicKey**: `PublicKey` = `PublicKey`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L62)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:62](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L62)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **tokenId**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L61)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:61](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L61)
 
 #### Inherited from
 

@@ -10,7 +10,7 @@ title: TokenBridgeDeploymentAuth
 
 # Class: TokenBridgeDeploymentAuth
 
-Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L5)
+Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L5)
 
 Interface for cross-contract call authorization
 See https://github.com/proto-kit/framework/issues/202#issuecomment-2407263173
@@ -61,7 +61,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **address**: `PublicKey` = `PublicKey`
 
-Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L9)
+Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L9)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBrid
 
 > **target**: `PublicKey` = `PublicKey`
 
-Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L7)
+Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L7)
 
 #### Implementation of
 
@@ -89,7 +89,7 @@ Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBrid
 
 > **tokenId**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L8)
+Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L8)
 
 #### Inherited from
 
@@ -497,7 +497,7 @@ Convert provable type to a normal JS type.
 
 > **hash**(): `Field`
 
-Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L13)
+Defined in: [packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/authorizations/TokenBridgeDeploymentAuth.ts#L13)
 
 #### Returns
 

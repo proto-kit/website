@@ -10,7 +10,7 @@ title: TaskQueue
 
 # Interface: TaskQueue
 
-Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/TaskQueue.ts#L8)
+Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/TaskQueue.ts#L8)
 
 Definition of a connection-object that can generate queues and workers
 for a specific connection type (e.g. BullMQ, In-memory)
@@ -21,7 +21,7 @@ for a specific connection type (e.g. BullMQ, In-memory)
 
 > **createWorker**: (`name`, `executor`, `options`?) => [`Closeable`](Closeable.md)
 
-Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/TaskQueue.ts#L11)
+Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/TaskQueue.ts#L11)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:11](https://github
 
 > **getQueue**: (`name`) => `Promise`\<[`InstantiatedQueue`](InstantiatedQueue.md)\>
 
-Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/TaskQueue.ts#L9)
+Defined in: [packages/sequencer/src/worker/queue/TaskQueue.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/TaskQueue.ts#L9)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: DispatchSmartContractBase
 
 # Class: `abstract` DispatchSmartContractBase
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L59)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:59](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L59)
 
 ## Extends
 
@@ -64,7 +64,7 @@ Defined in: node\_modules/o1js/dist/node/lib/mina/zkapp.d.ts:50
 
 > **events**: `object`
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:67](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L67)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:67](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L67)
 
 A list of event types that can be emitted using this.emitEvent()`.
 
@@ -86,7 +86,7 @@ A list of event types that can be emitted using this.emitEvent()`.
 
 > `abstract` **honoredMessagesHash**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L77)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L77)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts
 
 > `abstract` **promisedMessagesHash**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L75)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:75](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L75)
 
 ***
 
@@ -167,7 +167,7 @@ Consider using `this.sender.getAndRequireSignatureV2()` if you need to prove tha
 
 > `abstract` **settlementContract**: `State`\<`PublicKey`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:79](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L79)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:79](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L79)
 
 ***
 
@@ -175,7 +175,7 @@ Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts
 
 > `abstract` **tokenBridgeCount**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L83)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:83](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L83)
 
 ***
 
@@ -183,7 +183,7 @@ Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts
 
 > `abstract` **tokenBridgeRoot**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:81](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L81)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:81](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L81)
 
 ***
 
@@ -271,7 +271,7 @@ Defined in: node\_modules/o1js/dist/node/lib/mina/zkapp.d.ts:61
 
 > `static` **args**: `object`
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L60)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:60](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L60)
 
 #### incomingMessagesPaths
 
@@ -501,7 +501,7 @@ tx.sign([senderKey, zkAppKey]);
 
 > `protected` **dispatchMessage**\<`Type`\>(`methodId`, `value`, `valueType`): `void`
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:130](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L130)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:130](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L130)
 
 #### Type Parameters
 
@@ -601,7 +601,7 @@ Events will be emitted as a part of the transaction and can be collected by arch
 
 > `protected` **enableTokenDepositsBase**(`tokenId`, `bridgeContractAddress`, `settlementContractAddress`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:168](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L168)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:168](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L168)
 
 #### Parameters
 
@@ -704,7 +704,7 @@ class MyContract extends SmartContract {
 
 > `protected` **initializeBase**(`settlementContract`): `void`
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:118](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L118)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:118](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L118)
 
 #### Parameters
 
@@ -823,7 +823,7 @@ authorization flow.
 
 > `protected` **updateMessagesHashBase**(`executedMessagesHash`, `newPromisedMessagesHash`): `void`
 
-Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:85](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L85)
+Defined in: [packages/protocol/src/settlement/contracts/DispatchSmartContract.ts:85](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/DispatchSmartContract.ts#L85)
 
 #### Parameters
 

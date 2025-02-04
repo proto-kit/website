@@ -10,7 +10,7 @@ title: RedisConnectionConfig
 
 # Interface: RedisConnectionConfig
 
-Defined in: [packages/persistance/src/RedisConnection.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/RedisConnection.ts#L10)
+Defined in: [packages/persistance/src/RedisConnection.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/RedisConnection.ts#L10)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/persistance/src/RedisConnection.ts:10](https://github.com/
 
 > **host**: `string`
 
-Defined in: [packages/persistance/src/RedisConnection.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/RedisConnection.ts#L11)
+Defined in: [packages/persistance/src/RedisConnection.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/RedisConnection.ts#L11)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/persistance/src/RedisConnection.ts:11](https://github.com/
 
 > `optional` **password**: `string`
 
-Defined in: [packages/persistance/src/RedisConnection.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/RedisConnection.ts#L12)
+Defined in: [packages/persistance/src/RedisConnection.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/RedisConnection.ts#L12)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/persistance/src/RedisConnection.ts:12](https://github.com/
 
 > `optional` **port**: `number`
 
-Defined in: [packages/persistance/src/RedisConnection.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/RedisConnection.ts#L13)
+Defined in: [packages/persistance/src/RedisConnection.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/RedisConnection.ts#L13)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [packages/persistance/src/RedisConnection.ts:13](https://github.com/
 
 > `optional` **username**: `string`
 
-Defined in: [packages/persistance/src/RedisConnection.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/RedisConnection.ts#L14)
+Defined in: [packages/persistance/src/RedisConnection.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/RedisConnection.ts#L14)

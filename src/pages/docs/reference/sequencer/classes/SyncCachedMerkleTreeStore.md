@@ -10,7 +10,7 @@ title: SyncCachedMerkleTreeStore
 
 # Class: SyncCachedMerkleTreeStore
 
-Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L7)
+Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L7)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:7]
 
 > **new SyncCachedMerkleTreeStore**(`parent`): [`SyncCachedMerkleTreeStore`](SyncCachedMerkleTreeStore.md)
 
-Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L8)
+Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L8)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: packages/common/dist/trees/InMemoryMerkleTreeStorage.d.ts:3
 
 > **getNode**(`key`, `level`): `undefined` \| `bigint`
 
-Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L12)
+Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L12)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:12
 
 > **mergeIntoParent**(): `void`
 
-Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L20)
+Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L20)
 
 #### Returns
 
@@ -98,7 +98,7 @@ Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:20
 
 > **setNode**(`key`, `level`, `value`): `void`
 
-Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L16)
+Defined in: [packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/merkle/SyncCachedMerkleTreeStore.ts#L16)
 
 #### Parameters
 

@@ -10,7 +10,7 @@ title: ProtocolEnvironment
 
 # Interface: ProtocolEnvironment
 
-Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolEnvironment.ts#L6)
+Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolEnvironment.ts#L6)
 
 ## Accessors
 
@@ -20,7 +20,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:6](https://gi
 
 > **get** **stateService**(): [`SimpleAsyncStateService`](SimpleAsyncStateService.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolEnvironment.ts#L7)
+Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolEnvironment.ts#L7)
 
 ##### Returns
 
@@ -34,7 +34,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:7](https://gi
 
 > **get** **stateServiceProvider**(): [`StateServiceProvider`](../classes/StateServiceProvider.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolEnvironment.ts#L8)
+Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolEnvironment.ts#L8)
 
 ##### Returns
 
@@ -46,7 +46,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:8](https://gi
 
 > **getAreProofsEnabled**(): [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolEnvironment.ts#L9)
+Defined in: [packages/protocol/src/protocol/ProtocolEnvironment.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolEnvironment.ts#L9)
 
 #### Returns
 

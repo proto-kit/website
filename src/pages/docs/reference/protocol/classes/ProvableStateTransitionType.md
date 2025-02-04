@@ -10,7 +10,7 @@ title: ProvableStateTransitionType
 
 # Class: ProvableStateTransitionType
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L27)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransitionProvableBatch.ts#L27)
 
 ## Extends
 
@@ -46,7 +46,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **type**: `Bool` = `Bool`
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L28)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransitionProvableBatch.ts#L28)
 
 #### Inherited from
 
@@ -344,7 +344,7 @@ Convert provable type to a normal JS type.
 
 > **get** `static` **normal**(): [`ProvableStateTransitionType`](ProvableStateTransitionType.md)
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L30)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransitionProvableBatch.ts#L30)
 
 ##### Returns
 
@@ -358,7 +358,7 @@ Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:30](htt
 
 > **get** `static` **protocol**(): [`ProvableStateTransitionType`](ProvableStateTransitionType.md)
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L36)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransitionProvableBatch.ts#L36)
 
 ##### Returns
 
@@ -370,7 +370,7 @@ Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:36](htt
 
 > **isNormal**(): `Bool`
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L42)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:42](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransitionProvableBatch.ts#L42)
 
 #### Returns
 
@@ -382,7 +382,7 @@ Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:42](htt
 
 > **isProtocol**(): `Bool`
 
-Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransitionProvableBatch.ts#L46)
+Defined in: [packages/protocol/src/model/StateTransitionProvableBatch.ts:46](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransitionProvableBatch.ts#L46)
 
 #### Returns
 

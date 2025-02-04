@@ -10,7 +10,7 @@ title: MerkleTreeNode
 
 # Interface: MerkleTreeNode
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L6)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L6)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:6](https
 
 > **key**: `bigint`
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:2](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L2)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:2](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L2)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:2](https
 
 > **level**: `number`
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:3](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L3)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:3](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L3)
 
 #### Inherited from
 
@@ -46,4 +46,4 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:3](https
 
 > **value**: `bigint`
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L7)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L7)

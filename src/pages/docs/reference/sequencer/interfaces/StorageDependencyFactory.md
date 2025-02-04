@@ -10,7 +10,7 @@ title: StorageDependencyFactory
 
 # Interface: StorageDependencyFactory
 
-Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/StorageDependencyFactory.ts#L30)
+Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/StorageDependencyFactory.ts#L30)
 
 This is an abstract class for creating DependencyFactories, a pattern
 to bundle multiple smaller services into one and register them into the
@@ -37,7 +37,7 @@ deps that are necessary for the sequencer to work.
 
 > **dependencies**: () => [`StorageDependencyMinimumDependencies`](StorageDependencyMinimumDependencies.md)
 
-Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/StorageDependencyFactory.ts#L31)
+Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/StorageDependencyFactory.ts#L31)
 
 #### Returns
 

@@ -12,4 +12,4 @@ title: GraphqlModulesRecord
 
 > **GraphqlModulesRecord**: [`ModulesRecord`](../../common/interfaces/ModulesRecord.md)\<[`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`GraphqlModule`](../classes/GraphqlModule.md)\<`unknown`\>\>\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L21)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlSequencerModule.ts#L21)

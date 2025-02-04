@@ -10,7 +10,7 @@ title: AsyncMerkleTreeStore
 
 # Interface: AsyncMerkleTreeStore
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L10)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L10)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:10](http
 
 > **commit**: () => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L13)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L13)
 
 #### Returns
 
@@ -30,7 +30,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:13](http
 
 > **getNodesAsync**: (`nodes`) => `Promise`\<(`undefined` \| `bigint`)[]\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:17](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L17)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:17](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L17)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:17](http
 
 > **openTransaction**: () => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L11)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L11)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:11](http
 
 > **writeNodes**: (`nodes`) => `void`
 
-Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L15)
+Defined in: [packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/async/AsyncMerkleTreeStore.ts#L15)
 
 #### Parameters
 

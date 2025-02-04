@@ -10,7 +10,7 @@ title: TransactionSender
 
 # Interface: TransactionSender
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L11)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L11)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > `optional` **appChain**: [`AppChain`](../classes/AppChain.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md), [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & [`ProtocolModulesRecord`](../../protocol/type-aliases/ProtocolModulesRecord.md), [`SequencerModulesRecord`](../../sequencer/type-aliases/SequencerModulesRecord.md), [`AppChainModulesRecord`](../type-aliases/AppChainModulesRecord.md)\>
 
-Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChainModule.ts#L18)
+Defined in: [sdk/src/appChain/AppChainModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChainModule.ts#L18)
 
 #### Inherited from
 
@@ -51,7 +51,7 @@ checks when retrieving it via the getter
 
 > **send**: (`transaction`) => `Promise`\<`void`\>
 
-Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L12)
+Defined in: [sdk/src/transaction/InMemoryTransactionSender.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/InMemoryTransactionSender.ts#L12)
 
 #### Parameters
 

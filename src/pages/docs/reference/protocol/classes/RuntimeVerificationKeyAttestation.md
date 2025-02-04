@@ -10,7 +10,7 @@ title: RuntimeVerificationKeyAttestation
 
 # Class: RuntimeVerificationKeyAttestation
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L8)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L8)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **verificationKey**: `VerificationKey` = `VerificationKey`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L9)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L9)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificatio
 
 > **witness**: [`VKTreeWitness`](VKTreeWitness.md) = `VKTreeWitness`
 
-Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L10)
+Defined in: [packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/accummulators/RuntimeVerificationKeyTree.ts#L10)
 
 #### Inherited from
 

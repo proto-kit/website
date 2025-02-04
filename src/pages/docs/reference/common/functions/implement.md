@@ -12,7 +12,7 @@ title: implement
 
 > **implement**\<`T`\>(`name`): (`target`) => `void`
 
-Defined in: [packages/common/src/config/injectAlias.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/config/injectAlias.ts#L51)
+Defined in: [packages/common/src/config/injectAlias.ts:51](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/config/injectAlias.ts#L51)
 
 Marks the class to implement a certain interface T, while also attaching
 a DI-injection alias as metadata, that will be picked up by the ModuleContainer

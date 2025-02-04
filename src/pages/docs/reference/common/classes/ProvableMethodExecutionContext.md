@@ -10,7 +10,7 @@ title: ProvableMethodExecutionContext
 
 # Class: ProvableMethodExecutionContext
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L48)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:48](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L48)
 
 Execution context used to wrap runtime module methods,
 allowing them to post relevant information (such as execution status)
@@ -36,7 +36,7 @@ into the context without any unnecessary 'prop drilling'.
 
 > **id**: `string`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L49)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L49)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.t
 
 > **methods**: `string`[] = `[]`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L51)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:51](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L51)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.t
 
 > **result**: [`ProvableMethodExecutionResult`](ProvableMethodExecutionResult.md)
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L53)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L53)
 
 ## Accessors
 
@@ -62,7 +62,7 @@ Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.t
 
 > **get** **isFinished**(): `boolean`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:102](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L102)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:102](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L102)
 
 ##### Returns
 
@@ -76,7 +76,7 @@ Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.t
 
 > **get** **isTopLevel**(): `boolean`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:98](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L98)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:98](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L98)
 
 ##### Returns
 
@@ -88,7 +88,7 @@ Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.t
 
 > **afterMethod**(): `void`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L94)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:94](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L94)
 
 Removes the latest method from the execution context stack,
 keeping track of the amount of 'unfinished' methods. Allowing
@@ -104,7 +104,7 @@ for the context to distinguish between top-level and nested method calls.
 
 > **beforeMethod**(`moduleName`, `methodName`, `args`): `void`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L74)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L74)
 
 Adds a method to the method execution stack, reseting the execution context
 in a case a new top-level (non nested) method call is made.
@@ -135,7 +135,7 @@ Name of the method being captured in the context
 
 > **clear**(): `void`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:119](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L119)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:119](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L119)
 
 Manually clears/resets the execution context
 
@@ -149,7 +149,7 @@ Manually clears/resets the execution context
 
 > **current**(): `object`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:109](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L109)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:109](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L109)
 
 #### Returns
 
@@ -171,7 +171,7 @@ Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.t
 
 > **setProver**(`prover`): `void`
 
-Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L64)
+Defined in: [packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts:64](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ProvableMethodExecutionContext.ts#L64)
 
 Adds a method prover to the current execution context,
 which can be collected and ran asynchronously at a later point in time.

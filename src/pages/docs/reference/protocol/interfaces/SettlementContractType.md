@@ -10,7 +10,7 @@ title: SettlementContractType
 
 # Interface: SettlementContractType
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:65](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L65)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:65](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L65)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **addTokenBridge**: (`tokenId`, `address`, `dispatchContract`) => `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L84)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L84)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **assertStateRoot**: (`root`) => `AccountUpdate`
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L74)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L74)
 
 #### Parameters
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **authorizationField**: `State`\<`Field`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L66)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:66](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L66)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **initialize**: (`sequencer`, `dispatchContract`, `bridgeContract`, `contractKey`) => `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L68)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:68](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L68)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.
 
 > **settle**: (`blockProof`, `signature`, `dispatchContractAddress`, `publicKey`, `inputNetworkState`, `outputNetworkState`, `newPromisedMessagesHash`) => `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L75)
+Defined in: [packages/protocol/src/settlement/contracts/SettlementSmartContract.ts:75](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/contracts/SettlementSmartContract.ts#L75)
 
 #### Parameters
 

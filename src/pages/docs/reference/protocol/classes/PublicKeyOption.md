@@ -10,7 +10,7 @@ title: PublicKeyOption
 
 # Class: PublicKeyOption
 
-Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/ValueOption.ts#L26)
+Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:26](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/ValueOption.ts#L26)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **isSome**: `Bool` = `Bool`
 
-Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/ValueOption.ts#L5)
+Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/ValueOption.ts#L5)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:5](https://g
 
 > **value**: `PublicKey` = `valueType`
 
-Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/ValueOption.ts#L6)
+Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/ValueOption.ts#L6)
 
 #### Inherited from
 
@@ -420,7 +420,7 @@ Convert provable type to a normal JS type.
 
 > `static` **fromSome**(`value`): `Generic`\<`PublicKey`\>
 
-Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/ValueOption.ts#L8)
+Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/ValueOption.ts#L8)
 
 #### Parameters
 
@@ -442,7 +442,7 @@ Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:8](https://g
 
 > `static` **none**(`value`): `Generic`\<`PublicKey`\>
 
-Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/transaction/ValueOption.ts#L15)
+Defined in: [packages/protocol/src/model/transaction/ValueOption.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/transaction/ValueOption.ts#L15)
 
 #### Parameters
 

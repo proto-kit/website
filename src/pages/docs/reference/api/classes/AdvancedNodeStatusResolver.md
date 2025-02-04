@@ -10,7 +10,7 @@ title: AdvancedNodeStatusResolver
 
 # Class: AdvancedNodeStatusResolver
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L74)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L74)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new AdvancedNodeStatusResolver**(`nodeStatusService`): [`AdvancedNodeStatusResolver`](AdvancedNodeStatusResolver.md)
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L75)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:75](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L75)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **node**(): `Promise`\<[`NodeStatusObject`](NodeStatusObject.md)\>
 
-Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L83)
+Defined in: [api/src/graphql/modules/AdvancedNodeStatusResolver.ts:83](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/AdvancedNodeStatusResolver.ts#L83)
 
 #### Returns
 

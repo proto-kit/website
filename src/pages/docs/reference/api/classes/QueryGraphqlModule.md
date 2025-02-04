@@ -10,7 +10,7 @@ title: QueryGraphqlModule
 
 # Class: QueryGraphqlModule\<RuntimeModules\>
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:69](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L69)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:69](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L69)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new QueryGraphqlModule**\<`RuntimeModules`\>(`queryTransportModule`, `networkStateTransportModule`, `runtime`, `protocol`, `blockStorage`): [`QueryGraphqlModule`](QueryGraphqlModule.md)\<`RuntimeModules`\>
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L72)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:72](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L72)
 
 #### Parameters
 
@@ -137,7 +137,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **generateSchema**(): `GraphQLSchema`
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:361](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L361)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:361](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L361)
 
 #### Returns
 
@@ -153,7 +153,7 @@ Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:361](https://github.c
 
 > **generateSchemaForQuery**\<`ModuleType`, `ContainerModulesRecord`\>(`container`, `containerQuery`, `namePrefix`): `ObjMap`\<`GraphQLFieldConfig`\<`unknown`, `unknown`\>\>
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:310](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L310)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:310](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L310)
 
 #### Type Parameters
 
@@ -185,7 +185,7 @@ Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:310](https://github.c
 
 > **generateStateMapResolver**\<`Key`, `Value`\>(`fieldKey`, `query`, `stateMap`): `GraphQLFieldConfig`\<`unknown`, `unknown`\>
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:222](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L222)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:222](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L222)
 
 #### Type Parameters
 
@@ -217,7 +217,7 @@ Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:222](https://github.c
 
 > **generateStateResolver**\<`Value`\>(`fieldKey`, `query`, `state`): `object`
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:276](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L276)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:276](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L276)
 
 #### Type Parameters
 
@@ -263,7 +263,7 @@ Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:276](https://github.c
 
 > **state**(`path`): `Promise`\<`undefined` \| `string`[]\>
 
-Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:93](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L93)
+Defined in: [api/src/graphql/modules/QueryGraphqlModule.ts:93](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/QueryGraphqlModule.ts#L93)
 
 #### Parameters
 

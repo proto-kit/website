@@ -10,7 +10,7 @@ title: MockAsyncMerkleTreeStore
 
 # Class: MockAsyncMerkleTreeStore
 
-Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MockAsyncMerkleStore.ts#L5)
+Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/MockAsyncMerkleStore.ts#L5)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:5](https://github
 
 > `readonly` **store**: [`InMemoryMerkleTreeStorage`](InMemoryMerkleTreeStorage.md)
 
-Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MockAsyncMerkleStore.ts#L6)
+Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/MockAsyncMerkleStore.ts#L6)
 
 ## Methods
 
@@ -36,7 +36,7 @@ Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:6](https://github
 
 > **commit**(): `void`
 
-Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MockAsyncMerkleStore.ts#L8)
+Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/MockAsyncMerkleStore.ts#L8)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:8](https://github
 
 > **getNodeAsync**(`key`, `level`): `Promise`\<`undefined` \| `bigint`\>
 
-Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MockAsyncMerkleStore.ts#L16)
+Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/MockAsyncMerkleStore.ts#L16)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:16](https://githu
 
 > **openTransaction**(): `void`
 
-Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MockAsyncMerkleStore.ts#L12)
+Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/MockAsyncMerkleStore.ts#L12)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:12](https://githu
 
 > **setNodeAsync**(`key`, `level`, `value`): `Promise`\<`void`\>
 
-Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/MockAsyncMerkleStore.ts#L23)
+Defined in: [packages/common/src/trees/MockAsyncMerkleStore.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/MockAsyncMerkleStore.ts#L23)
 
 #### Parameters
 

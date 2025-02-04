@@ -10,7 +10,7 @@ title: ContractModule
 
 # Class: `abstract` ContractModule\<ContractType, Config\>
 
-Defined in: [packages/protocol/src/settlement/ContractModule.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/ContractModule.ts#L22)
+Defined in: [packages/protocol/src/settlement/ContractModule.ts:22](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/ContractModule.ts#L22)
 
 This module type is used to define a contract module that can be used to
 construct and inject smart contract instances.
@@ -108,7 +108,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > `abstract` **compile**(`registry`): `Promise`\<`undefined` \| [`ArtifactRecord`](../../common/type-aliases/ArtifactRecord.md)\>
 
-Defined in: [packages/protocol/src/settlement/ContractModule.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/ContractModule.ts#L28)
+Defined in: [packages/protocol/src/settlement/ContractModule.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/ContractModule.ts#L28)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ Defined in: [packages/protocol/src/settlement/ContractModule.ts:28](https://gith
 
 > `abstract` **contractFactory**(): [`SmartContractClassFromInterface`](../type-aliases/SmartContractClassFromInterface.md)\<`ContractType`\>
 
-Defined in: [packages/protocol/src/settlement/ContractModule.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/ContractModule.ts#L26)
+Defined in: [packages/protocol/src/settlement/ContractModule.ts:26](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/ContractModule.ts#L26)
 
 #### Returns
 

@@ -10,7 +10,7 @@ title: GraphqlModule
 
 # Class: `abstract` GraphqlModule\<Config\>
 
-Defined in: [api/src/graphql/GraphqlModule.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlModule.ts#L8)
+Defined in: [api/src/graphql/GraphqlModule.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlModule.ts#L8)
 
 Used by various module sub-types that may need to be configured
 
@@ -39,7 +39,7 @@ Used by various module sub-types that may need to be configured
 
 > **new GraphqlModule**\<`Config`\>(): [`GraphqlModule`](GraphqlModule.md)\<`Config`\>
 
-Defined in: [api/src/graphql/GraphqlModule.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlModule.ts#L11)
+Defined in: [api/src/graphql/GraphqlModule.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlModule.ts#L11)
 
 #### Returns
 

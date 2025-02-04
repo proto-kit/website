@@ -10,7 +10,7 @@ title: BatchProducerModule
 
 # Class: BatchProducerModule
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L74)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L74)
 
 The BatchProducerModule has the resposiblity to oversee the block production
 and combine all necessary parts for that to happen. The flow roughly follows
@@ -29,7 +29,7 @@ the following steps:
 
 > **new BatchProducerModule**(`asyncStateService`, `merkleStore`, `batchStorage`, `blockTreeStore`, `database`, `traceService`, `blockFlowService`, `blockProofSerializer`, `verificationKeyService`): [`BatchProducerModule`](BatchProducerModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L77)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L77)
 
 #### Parameters
 
@@ -98,7 +98,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -166,7 +166,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **createBatch**(`blocks`): `Promise`\<`undefined` \| [`SettleableBatch`](../interfaces/SettleableBatch.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:108](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L108)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:108](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L108)
 
 Main function to call when wanting to create a new block based on the
 transactions that are present in the mempool. This function should also
@@ -188,7 +188,7 @@ be the one called by BlockTriggers
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:132](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L132)
+Defined in: [packages/sequencer/src/protocol/production/BatchProducerModule.ts:132](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/BatchProducerModule.ts#L132)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

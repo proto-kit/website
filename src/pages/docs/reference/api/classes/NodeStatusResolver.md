@@ -10,7 +10,7 @@ title: NodeStatusResolver
 
 # Class: NodeStatusResolver
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L28)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L28)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new NodeStatusResolver**(`nodeStatusService`): [`NodeStatusResolver`](NodeStatusResolver.md)
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L29)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:29](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L29)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **node**(): `Promise`\<[`NodeInformationObject`](NodeInformationObject.md)\>
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L36)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L36)
 
 #### Returns
 

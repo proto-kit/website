@@ -10,7 +10,7 @@ title: VanillaGraphqlModules
 
 # Class: VanillaGraphqlModules
 
-Defined in: [api/src/graphql/VanillaGraphqlModules.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/VanillaGraphqlModules.ts#L20)
+Defined in: [api/src/graphql/VanillaGraphqlModules.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/VanillaGraphqlModules.ts#L20)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [api/src/graphql/VanillaGraphqlModules.ts:20](https://github.com/pro
 
 > `static` **defaultConfig**(): `object`
 
-Defined in: [api/src/graphql/VanillaGraphqlModules.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/VanillaGraphqlModules.ts#L35)
+Defined in: [api/src/graphql/VanillaGraphqlModules.ts:35](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/VanillaGraphqlModules.ts#L35)
 
 #### Returns
 
@@ -64,7 +64,7 @@ Defined in: [api/src/graphql/VanillaGraphqlModules.ts:35](https://github.com/pro
 
 > `static` **with**\<`AdditionalModules`\>(`additionalModules`): `object` & `AdditionalModules`
 
-Defined in: [api/src/graphql/VanillaGraphqlModules.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/VanillaGraphqlModules.ts#L21)
+Defined in: [api/src/graphql/VanillaGraphqlModules.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/VanillaGraphqlModules.ts#L21)
 
 #### Type Parameters
 

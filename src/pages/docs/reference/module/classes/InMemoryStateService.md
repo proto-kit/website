@@ -10,7 +10,7 @@ title: InMemoryStateService
 
 # Class: InMemoryStateService
 
-Defined in: [module/src/state/InMemoryStateService.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/state/InMemoryStateService.ts#L7)
+Defined in: [module/src/state/InMemoryStateService.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/state/InMemoryStateService.ts#L7)
 
 Naive implementation of an in-memory variant of the StateService interface
 
@@ -39,7 +39,7 @@ Naive implementation of an in-memory variant of the StateService interface
 
 > **values**: `Record`\<`string`, `null` \| `Field`[]\> = `{}`
 
-Defined in: [module/src/state/InMemoryStateService.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/state/InMemoryStateService.ts#L12)
+Defined in: [module/src/state/InMemoryStateService.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/state/InMemoryStateService.ts#L12)
 
 This mapping container null values if the specific entry has been deleted.
 This is used by the CachedState service to keep track of deletions
@@ -50,7 +50,7 @@ This is used by the CachedState service to keep track of deletions
 
 > **get**(`key`): `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [module/src/state/InMemoryStateService.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/state/InMemoryStateService.ts#L14)
+Defined in: [module/src/state/InMemoryStateService.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/state/InMemoryStateService.ts#L14)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [module/src/state/InMemoryStateService.ts:14](https://github.com/pro
 
 > **set**(`key`, `value`): `Promise`\<`void`\>
 
-Defined in: [module/src/state/InMemoryStateService.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/state/InMemoryStateService.ts#L18)
+Defined in: [module/src/state/InMemoryStateService.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/state/InMemoryStateService.ts#L18)
 
 #### Parameters
 

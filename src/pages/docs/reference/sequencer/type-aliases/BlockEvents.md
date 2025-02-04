@@ -12,7 +12,7 @@ title: BlockEvents
 
 > **BlockEvents**: `object`
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L28)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L28)
 
 ## Type declaration
 

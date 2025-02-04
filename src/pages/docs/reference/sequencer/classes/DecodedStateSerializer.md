@@ -10,7 +10,7 @@ title: DecodedStateSerializer
 
 # Class: DecodedStateSerializer
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts#L6)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts#L6)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Decode
 
 > `static` **fromJSON**(`json`): [`TaskStateRecord`](../type-aliases/TaskStateRecord.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts#L7)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts#L7)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Decode
 
 > `static` **toJSON**(`input`): [`JSONEncodableState`](../type-aliases/JSONEncodableState.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts#L16)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/DecodedStateSerializer.ts#L16)
 
 #### Parameters
 

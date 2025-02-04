@@ -12,7 +12,7 @@ title: isSubtypeOfName
 
 > **isSubtypeOfName**(`clas`, `name`): `boolean`
 
-Defined in: [packages/common/src/utils.ts:181](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L181)
+Defined in: [packages/common/src/utils.ts:181](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/utils.ts#L181)
 
 Returns a boolean indicating whether a given class is a subclass of another class,
 indicated by the name parameter.

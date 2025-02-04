@@ -10,7 +10,7 @@ title: StateTransitionProverProgrammable
 
 # Class: StateTransitionProverProgrammable
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L74)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L74)
 
 StateTransitionProver is the prover that proves the application of some state
 transitions and checks and updates their merkle-tree entries
@@ -25,7 +25,7 @@ transitions and checks and updates their merkle-tree entries
 
 > **new StateTransitionProverProgrammable**(`stateTransitionProver`): [`StateTransitionProverProgrammable`](StateTransitionProverProgrammable.md)
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L78)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:78](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L78)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L84)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L84)
 
 ##### Returns
 
@@ -83,7 +83,7 @@ Defined in: packages/common/dist/zkProgrammable/ZkProgrammable.d.ts:34
 
 > **applyTransition**(`state`, `transition`, `type`, `merkleWitness`, `index`): `void`
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:197](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L197)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:197](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L197)
 
 Applies a single state transition to the given state
 and mutates it in place
@@ -120,7 +120,7 @@ and mutates it in place
 
 > **applyTransitions**(`stateRoot`, `protocolStateRoot`, `stateTransitionCommitmentFrom`, `protocolTransitionCommitmentFrom`, `transitionBatch`): `StateTransitionProverExecutionState`
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:151](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L151)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:151](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L151)
 
 Applies the state transitions to the current stateRoot
 and returns the new prover state
@@ -179,7 +179,7 @@ Defined in: packages/common/dist/zkProgrammable/ZkProgrammable.d.ts:35
 
 > **merge**(`publicInput`, `proof1`, `proof2`): `Promise`\<[`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:267](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L267)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:267](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L267)
 
 #### Parameters
 
@@ -205,7 +205,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.
 
 > **runBatch**(`publicInput`, `batch`): `Promise`\<[`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:246](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L246)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:246](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L246)
 
 Applies a whole batch of StateTransitions at once
 
@@ -229,7 +229,7 @@ Applies a whole batch of StateTransitions at once
 
 > **zkProgramFactory**(): [`PlainZkProgram`](../../common/interfaces/PlainZkProgram.md)\<[`StateTransitionProverPublicInput`](StateTransitionProverPublicInput.md), [`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\>[]
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:88](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L88)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProver.ts:88](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProver.ts#L88)
 
 #### Returns
 

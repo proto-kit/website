@@ -10,7 +10,7 @@ title: TransactionFeeHook
 
 # Class: TransactionFeeHook
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L51)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:51](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L51)
 
 Transaction hook for deducting transaction fees from the sender's balance.
 
@@ -22,15 +22,19 @@ Transaction hook for deducting transaction fees from the sender's balance.
 
 ### new TransactionFeeHook()
 
-> **new TransactionFeeHook**(`runtime`): [`TransactionFeeHook`](TransactionFeeHook.md)
+> **new TransactionFeeHook**(`runtime`, `balances`): [`TransactionFeeHook`](TransactionFeeHook.md)
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:52](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L52)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:52](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L52)
 
 #### Parameters
 
 ##### runtime
 
 [`Runtime`](../../module/classes/Runtime.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md)\>
+
+##### balances
+
+`Balances`
 
 #### Returns
 
@@ -41,6 +45,14 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:52](https://github
 [`ProvableTransactionHook`](../../protocol/classes/ProvableTransactionHook.md).[`constructor`](../../protocol/classes/ProvableTransactionHook.md#constructors)
 
 ## Properties
+
+### balances
+
+> **balances**: `Balances`
+
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:55](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L55)
+
+***
 
 ### currentConfig
 
@@ -73,7 +85,7 @@ Defined in: packages/protocol/dist/protocol/TransitioningProtocolModule.d.ts:8
 
 > `protected` **persistedFeeAnalyzer**: `undefined` \| [`RuntimeFeeAnalyzerService`](RuntimeFeeAnalyzerService.md) = `undefined`
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L59)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:60](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L60)
 
 ***
 
@@ -93,7 +105,7 @@ Defined in: packages/protocol/dist/protocol/ProtocolModule.d.ts:4
 
 > **runtime**: [`Runtime`](../../module/classes/Runtime.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md)\>
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L54)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L54)
 
 ## Accessors
 
@@ -115,27 +127,13 @@ Defined in: packages/protocol/dist/protocol/ProtocolModule.d.ts:5
 
 ***
 
-### balances
-
-#### Get Signature
-
-> **get** **balances**(): `Balances`
-
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L94)
-
-##### Returns
-
-`Balances`
-
-***
-
 ### config
 
 #### Get Signature
 
 > **get** **config**(): [`TransactionFeeHookConfig`](../interfaces/TransactionFeeHookConfig.md)
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:85](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L85)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:86](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L86)
 
 ##### Returns
 
@@ -145,7 +143,7 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:85](https://github
 
 > **set** **config**(`value`): `void`
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:90](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L90)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:91](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L91)
 
 ##### Parameters
 
@@ -169,7 +167,7 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:90](https://github
 
 > **get** **feeAnalyzer**(): [`RuntimeFeeAnalyzerService`](RuntimeFeeAnalyzerService.md)
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:98](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L98)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:95](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L95)
 
 ##### Returns
 
@@ -203,7 +201,7 @@ Defined in: packages/protocol/dist/protocol/ProtocolModule.d.ts:6
 
 > **getFee**(`feeConfig`): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:114](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L114)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:111](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L111)
 
 #### Parameters
 
@@ -221,7 +219,7 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:114](https://githu
 
 > **onTransaction**(`executionData`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:128](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L128)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:125](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L125)
 
 Determine the transaction fee for the given transaction, and transfer it
 from the transaction sender to the fee recipient.
@@ -246,7 +244,7 @@ from the transaction sender to the fee recipient.
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:79](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L79)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:80](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L80)
 
 #### Returns
 
@@ -262,7 +260,7 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:79](https://github
 
 > **transferFee**(`from`, `fee`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L105)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:102](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L102)
 
 #### Parameters
 
@@ -284,7 +282,7 @@ Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:105](https://githu
 
 > **verifyConfig**(): `void`
 
-Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/TransactionFeeHook.ts#L64)
+Defined in: [packages/library/src/hooks/TransactionFeeHook.ts:65](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/TransactionFeeHook.ts#L65)
 
 #### Returns
 

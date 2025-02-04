@@ -10,7 +10,7 @@ title: AccountState
 
 # Class: AccountState
 
-Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/hooks/AccountStateHook.ts#L10)
+Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/hooks/AccountStateHook.ts#L10)
 
 ## Extends
 
@@ -46,7 +46,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **nonce**: `UInt64` = `UInt64`
 
-Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/hooks/AccountStateHook.ts#L11)
+Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/hooks/AccountStateHook.ts#L11)
 
 #### Inherited from
 

@@ -10,7 +10,7 @@ title: SimpleSequencerModules
 
 # Class: SimpleSequencerModules
 
-Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/SimpleSequencerModules.ts#L46)
+Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:46](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/SimpleSequencerModules.ts#L46)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:46](https:
 
 > `static` **defaultConfig**(): `object`
 
-Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:97](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/SimpleSequencerModules.ts#L97)
+Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:97](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/SimpleSequencerModules.ts#L97)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:97](https:
 
 > `static` **defaultWorkerConfig**(): `object`
 
-Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:109](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/SimpleSequencerModules.ts#L109)
+Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:109](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/SimpleSequencerModules.ts#L109)
 
 #### Returns
 
@@ -73,10 +73,6 @@ Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:109](https
 ###### LocalTaskWorkerModule.BlockBuildingTask
 
 > **LocalTaskWorkerModule.BlockBuildingTask**: `object`
-
-###### LocalTaskWorkerModule.BlockProvingTask
-
-> **LocalTaskWorkerModule.BlockProvingTask**: `object`
 
 ###### LocalTaskWorkerModule.BlockReductionTask
 
@@ -116,7 +112,7 @@ Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:109](https
 
 > `static` **with**\<`SequencerModules`\>(`additionalModules`): `object` & `Omit`\<`SequencerModules`, `"Database"` \| `"BlockTrigger"` \| `"TaskQueue"` \| `"BaseLayer"` \| `"DatabasePruneModule"`\> & `object`
 
-Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/SimpleSequencerModules.ts#L60)
+Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:60](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/SimpleSequencerModules.ts#L60)
 
 #### Type Parameters
 
@@ -138,7 +134,7 @@ Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:60](https:
 
 > `static` **worker**\<`QueueModule`, `SequencerModules`\>(`queue`, `additionalModules`): `object` & `SequencerModules`
 
-Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/SimpleSequencerModules.ts#L47)
+Defined in: [packages/library/src/sequencer/SimpleSequencerModules.ts:47](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/SimpleSequencerModules.ts#L47)
 
 #### Type Parameters
 

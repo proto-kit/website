@@ -10,7 +10,7 @@ title: BlockProver
 
 # Class: BlockProver
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:907](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L907)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:907](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L907)
 
 BlockProver class, which aggregates a AppChainProof and
 a StateTransitionProof into a single BlockProof, that can
@@ -31,7 +31,7 @@ then be merged to be committed to the base-layer contract
 
 > **new BlockProver**(`stateTransitionProver`, `runtime`, `transactionHooks`, `blockHooks`, `verificationKeyService`): [`BlockProver`](BlockProver.md)
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:913](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L913)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:913](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L913)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ checks when retrieving it via the getter
 
 > `optional` **protocol**: [`ProtocolEnvironment`](../interfaces/ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L14)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L14)
 
 #### Inherited from
 
@@ -96,7 +96,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github
 
 > `readonly` **runtime**: [`WithZkProgrammable`](../../common/interfaces/WithZkProgrammable.md)\<[`MethodPublicOutput`](MethodPublicOutput.md)\> & [`CompilableModule`](../../common/interfaces/CompilableModule.md)
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:921](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L921)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:921](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L921)
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:921](https://gith
 
 > `readonly` **stateTransitionProver**: [`WithZkProgrammable`](../../common/interfaces/WithZkProgrammable.md)\<[`StateTransitionProverPublicInput`](StateTransitionProverPublicInput.md), [`StateTransitionProverPublicOutput`](StateTransitionProverPublicOutput.md)\> & [`StateTransitionProvable`](../interfaces/StateTransitionProvable.md)
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:915](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L915)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:915](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L915)
 
 ***
 
@@ -112,7 +112,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:915](https://gith
 
 > **zkProgrammable**: [`BlockProverProgrammable`](BlockProverProgrammable.md)
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:911](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L911)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:911](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L911)
 
 #### Implementation of
 
@@ -126,7 +126,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:911](https://gith
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L16)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L16)
 
 ##### Returns
 
@@ -176,7 +176,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compile**(`registry`): `Promise`\<`undefined` \| `Record`\<`string`, [`CompileArtifact`](../../common/interfaces/CompileArtifact.md)\>\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:940](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L940)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:940](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L940)
 
 #### Parameters
 
@@ -198,7 +198,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:940](https://gith
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L20)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L20)
 
 #### Parameters
 
@@ -220,7 +220,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github
 
 > **merge**(`publicInput`, `proof1`, `proof2`): `Promise`\<[`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:983](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L983)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:983](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L983)
 
 #### Parameters
 
@@ -250,7 +250,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:983](https://gith
 
 > **proveBlock**(`publicInput`, `networkState`, `blockWitness`, `transactionProof`): `Promise`\<[`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:967](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L967)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:967](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L967)
 
 #### Parameters
 
@@ -284,7 +284,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:967](https://gith
 
 > **proveTransaction**(`publicInput`, `stateProof`, `appProof`, `executionData`, `verificationKeyAttestation`): `Promise`\<[`BlockProverPublicOutput`](BlockProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/block/BlockProver.ts:951](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProver.ts#L951)
+Defined in: [packages/protocol/src/prover/block/BlockProver.ts:951](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProver.ts#L951)
 
 #### Parameters
 
@@ -322,7 +322,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProver.ts:951](https://gith
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L24)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L24)
 
 #### Returns
 

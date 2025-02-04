@@ -10,7 +10,7 @@ title: BlockQueue
 
 # Interface: BlockQueue
 
-Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/BlockStorage.ts#L9)
+Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/BlockStorage.ts#L9)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:9](http
 
 > **getLatestBlockAndResult**: () => `Promise`\<`undefined` \| [`BlockWithMaybeResult`](BlockWithMaybeResult.md)\>
 
-Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/BlockStorage.ts#L13)
+Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/BlockStorage.ts#L13)
 
 #### Returns
 
@@ -30,7 +30,7 @@ Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:13](htt
 
 > **getNewBlocks**: () => `Promise`\<[`BlockWithPreviousResult`](BlockWithPreviousResult.md)[]\>
 
-Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/BlockStorage.ts#L12)
+Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/BlockStorage.ts#L12)
 
 #### Returns
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:12](htt
 
 > **pushBlock**: (`block`) => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/BlockStorage.ts#L10)
+Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/BlockStorage.ts#L10)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:10](htt
 
 > **pushResult**: (`result`) => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/BlockStorage.ts#L11)
+Defined in: [packages/sequencer/src/storage/repositories/BlockStorage.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/BlockStorage.ts#L11)
 
 #### Parameters
 

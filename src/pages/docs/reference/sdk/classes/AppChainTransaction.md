@@ -10,7 +10,7 @@ title: AppChainTransaction
 
 # Class: AppChainTransaction
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L6)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L6)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:6](https://github.com/pr
 
 > **new AppChainTransaction**(`signer`, `transactionSender`): [`AppChainTransaction`](AppChainTransaction.md)
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L9)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L9)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:9](https://github.com/pr
 
 > **signer**: [`Signer`](../interfaces/Signer.md)
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L10)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L10)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:10](https://github.com/p
 
 > `optional` **transaction**: [`PendingTransaction`](../../sequencer/classes/PendingTransaction.md) \| [`UnsignedTransaction`](../../sequencer/classes/UnsignedTransaction.md)
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L7)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L7)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:7](https://github.com/pr
 
 > **transactionSender**: [`TransactionSender`](../interfaces/TransactionSender.md)
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L11)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L11)
 
 ## Methods
 
@@ -64,7 +64,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:11](https://github.com/p
 
 > **hasPendingTransaction**(`transaction`?): `asserts transaction is PendingTransaction`
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L27)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L27)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:27](https://github.com/p
 
 > **hasUnsignedTransaction**(`transaction`?): `asserts transaction is UnsignedTransaction`
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L18)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L18)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:18](https://github.com/p
 
 > **send**(): `Promise`\<`void`\>
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L48)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:48](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L48)
 
 #### Returns
 
@@ -112,7 +112,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:48](https://github.com/p
 
 > **sign**(): `Promise`\<`void`\>
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L36)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L36)
 
 #### Returns
 
@@ -124,7 +124,7 @@ Defined in: [sdk/src/transaction/AppChainTransaction.ts:36](https://github.com/p
 
 > **withUnsignedTransaction**(`unsignedTransaction`): `void`
 
-Defined in: [sdk/src/transaction/AppChainTransaction.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/transaction/AppChainTransaction.ts#L14)
+Defined in: [sdk/src/transaction/AppChainTransaction.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/transaction/AppChainTransaction.ts#L14)
 
 #### Parameters
 

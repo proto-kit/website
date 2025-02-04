@@ -12,7 +12,7 @@ title: closeable
 
 > **closeable**(): (`target`) => `void`
 
-Defined in: [packages/sequencer/src/sequencer/builder/Closeable.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/Closeable.ts#L7)
+Defined in: [packages/sequencer/src/sequencer/builder/Closeable.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/Closeable.ts#L7)
 
 ## Returns
 

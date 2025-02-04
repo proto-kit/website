@@ -10,7 +10,7 @@ title: PlainZkProgram
 
 # Interface: PlainZkProgram\<PublicInput, PublicOutput\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L36)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L36)
 
 ## Type Parameters
 
@@ -24,7 +24,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:36](https://gi
 
 > **analyzeMethods**: () => `Promise`\<`Record`\<`string`, \{ `digest`: `string`; `gates`: `Gate`[]; `publicInputSize`: `number`; `rows`: `number`; `print`: `void`; `summary`: `Partial`\<`Record`\<`GateType` \| `"Total rows"`, `number`\>\>; \}\>\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L54)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L54)
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:54](https://gi
 
 > **compile**: [`Compile`](Compile.md)
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L38)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:38](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L38)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:38](https://gi
 
 > **methods**: `Record`\<`string`, (...`args`) => `Promise`\<`Proof`\<`PublicInput`, `PublicOutput`\>\> \| (`publicInput`, ...`args`) => `Promise`\<`Proof`\<`PublicInput`, `PublicOutput`\>\>\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L46)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:46](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L46)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:46](https://gi
 
 > **name**: `string`
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L37)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L37)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:37](https://gi
 
 > **Proof**: (`__namedParameters`) => `object`
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L40)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:40](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L40)
 
 #### Parameters
 
@@ -234,4 +234,4 @@ must match your ZkProgram. `maxProofsVerified` is the maximum number of proofs t
 
 > **verify**: [`Verify`](Verify.md)\<`PublicInput`, `PublicOutput`\>
 
-Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/zkProgrammable/ZkProgrammable.ts#L39)
+Defined in: [packages/common/src/zkProgrammable/ZkProgrammable.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/zkProgrammable/ZkProgrammable.ts#L39)

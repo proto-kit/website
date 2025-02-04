@@ -10,7 +10,7 @@ title: SettlementModuleConfig
 
 # Interface: SettlementModuleConfig
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:52](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L52)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:52](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/SettlementModule.ts#L52)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:52](https://g
 
 > `optional` **address**: `PublicKey`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L54)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/SettlementModule.ts#L54)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:54](https://g
 
 > **feepayer**: `PrivateKey`
 
-Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/SettlementModule.ts#L53)
+Defined in: [packages/sequencer/src/settlement/SettlementModule.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/SettlementModule.ts#L53)

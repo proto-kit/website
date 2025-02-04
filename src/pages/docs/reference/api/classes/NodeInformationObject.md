@@ -10,7 +10,7 @@ title: NodeInformationObject
 
 # Class: NodeInformationObject
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L10)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L10)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:10](https://github.co
 
 > **new NodeInformationObject**(`blockHeight`, `batchHeight`): [`NodeInformationObject`](NodeInformationObject.md)
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L21)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L21)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:21](https://github.co
 
 > **batchHeight**: `number`
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L19)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L19)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:19](https://github.co
 
 > **blockHeight**: `number`
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L16)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L16)
 
 ## Methods
 
@@ -56,7 +56,7 @@ Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:16](https://github.co
 
 > `static` **fromServiceLayerModel**(`status`): [`NodeInformationObject`](NodeInformationObject.md)
 
-Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/NodeStatusResolver.ts#L11)
+Defined in: [api/src/graphql/modules/NodeStatusResolver.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/NodeStatusResolver.ts#L11)
 
 #### Parameters
 

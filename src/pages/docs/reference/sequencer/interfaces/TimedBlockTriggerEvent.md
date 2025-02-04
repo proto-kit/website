@@ -10,7 +10,7 @@ title: TimedBlockTriggerEvent
 
 # Interface: TimedBlockTriggerEvent
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L30)
+Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L30)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigge
 
 > **batch-produced**: \[[`Batch`](Batch.md)\]
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L31)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L31)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > **block-metadata-produced**: \[[`BlockWithResult`](BlockWithResult.md)\]
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L30)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L30)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > **block-produced**: \[[`Block`](Block.md)\]
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L29)
+Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:29](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts#L29)
 
 #### Inherited from
 
@@ -58,4 +58,4 @@ Defined in: [packages/sequencer/src/protocol/production/trigger/BlockTrigger.ts:
 
 > **tick**: \[`number`\]
 
-Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L31)
+Defined in: [packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/trigger/TimedBlockTrigger.ts#L31)

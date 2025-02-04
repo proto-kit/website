@@ -10,7 +10,7 @@ title: DynamicRuntimeProof
 
 # Class: DynamicRuntimeProof
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L63)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L63)
 
 ## Extends
 
@@ -155,7 +155,7 @@ Alternatively, you can use {@FeatureFlags.fromZkProgram} to compute the set of f
 
 > `static` **maxProofsVerified**: `0`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L72)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:72](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L72)
 
 #### Overrides
 
@@ -167,7 +167,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:72](https://git
 
 > `static` **publicInputType**: `ProvablePureExtended`\<`void`, `void`, `null`\> = `Void`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:67](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L67)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:67](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L67)
 
 #### Overrides
 
@@ -179,7 +179,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:67](https://git
 
 > `static` **publicOutputType**: *typeof* [`MethodPublicOutput`](MethodPublicOutput.md) = `MethodPublicOutput`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:69](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L69)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:69](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L69)
 
 #### Overrides
 

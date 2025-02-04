@@ -10,7 +10,7 @@ title: WithdrawalKey
 
 # Class: WithdrawalKey
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L19)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L19)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **index**: `Field` = `Field`
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L20)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L20)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:20](h
 
 > **tokenId**: `Field` = `Field`
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L21)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L21)
 
 #### Inherited from
 

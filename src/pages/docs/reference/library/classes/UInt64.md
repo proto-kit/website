@@ -10,7 +10,7 @@ title: UInt64
 
 # Class: UInt64
 
-Defined in: [packages/library/src/math/UInt64.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L5)
+Defined in: [packages/library/src/math/UInt64.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L5)
 
 UInt is a base class for all soft-failing UInt* implementations.
 It has to be overridden for every bitlength that should be available.
@@ -32,7 +32,7 @@ static methods from interface UIntConstructor
 
 > **new UInt64**(`value`): [`UInt64`](UInt64.md)
 
-Defined in: [packages/library/src/math/UInt.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L74)
+Defined in: [packages/library/src/math/UInt.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L74)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/library/src/math/UInt.ts:74](https://github.com/proto-kit/
 
 > **value**: `Field` = `Field`
 
-Defined in: [packages/library/src/math/UInt.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L46)
+Defined in: [packages/library/src/math/UInt.ts:46](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L46)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:104
 
 > `readonly` `static` **assertionFunction**: (`bool`, `msg`?) => `void`
 
-Defined in: [packages/library/src/math/UInt.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L48)
+Defined in: [packages/library/src/math/UInt.ts:48](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L48)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ Convert provable type from a normal JS type.
 
 > `static` **Safe**: `object`
 
-Defined in: [packages/library/src/math/UInt64.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L12)
+Defined in: [packages/library/src/math/UInt64.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L12)
 
 #### fromField()
 
@@ -367,7 +367,7 @@ Convert provable type to a normal JS type.
 
 > `static` **Unsafe**: `object`
 
-Defined in: [packages/library/src/math/UInt64.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L6)
+Defined in: [packages/library/src/math/UInt64.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L6)
 
 #### fromField()
 
@@ -389,7 +389,7 @@ Defined in: [packages/library/src/math/UInt64.ts:6](https://github.com/proto-kit
 
 > **get** `static` **max**(): [`UInt64`](UInt64.md)
 
-Defined in: [packages/library/src/math/UInt64.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L35)
+Defined in: [packages/library/src/math/UInt64.ts:35](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L35)
 
 ##### Returns
 
@@ -403,7 +403,7 @@ Defined in: [packages/library/src/math/UInt64.ts:35](https://github.com/proto-ki
 
 > **get** `static` **zero**(): [`UInt64`](UInt64.md)
 
-Defined in: [packages/library/src/math/UInt64.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L31)
+Defined in: [packages/library/src/math/UInt64.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L31)
 
 ##### Returns
 
@@ -415,7 +415,7 @@ Defined in: [packages/library/src/math/UInt64.ts:31](https://github.com/proto-ki
 
 > **add**(`y`): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt.ts:301](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L301)
+Defined in: [packages/library/src/math/UInt.ts:301](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L301)
 
 Addition with overflow checking.
 
@@ -439,7 +439,7 @@ Addition with overflow checking.
 
 > **assertEquals**(`y`, `message`?): `void`
 
-Defined in: [packages/library/src/math/UInt.ts:413](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L413)
+Defined in: [packages/library/src/math/UInt.ts:413](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L413)
 
 Asserts that a [UInt](UInt.md) is equal to another one.
 
@@ -467,7 +467,7 @@ Asserts that a [UInt](UInt.md) is equal to another one.
 
 > **assertGreaterThan**(`y`, `message`?): `void`
 
-Defined in: [packages/library/src/math/UInt.ts:385](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L385)
+Defined in: [packages/library/src/math/UInt.ts:385](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L385)
 
 Asserts that a [UInt](UInt.md) is greater than another one.
 
@@ -495,7 +495,7 @@ Asserts that a [UInt](UInt.md) is greater than another one.
 
 > **assertGreaterThanOrEqual**(`y`, `message`?): `void`
 
-Defined in: [packages/library/src/math/UInt.ts:399](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L399)
+Defined in: [packages/library/src/math/UInt.ts:399](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L399)
 
 Asserts that a [UInt](UInt.md) is greater than or equal to another one.
 
@@ -523,7 +523,7 @@ Asserts that a [UInt](UInt.md) is greater than or equal to another one.
 
 > **assertLessThan**(`y`, `message`?): `void`
 
-Defined in: [packages/library/src/math/UInt.ts:371](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L371)
+Defined in: [packages/library/src/math/UInt.ts:371](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L371)
 
 Asserts that a [UInt](UInt.md) is less than another one.
 
@@ -551,7 +551,7 @@ Asserts that a [UInt](UInt.md) is less than another one.
 
 > **assertLessThanOrEqual**(`y`, `message`?): `void`
 
-Defined in: [packages/library/src/math/UInt.ts:341](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L341)
+Defined in: [packages/library/src/math/UInt.ts:341](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L341)
 
 Asserts that a [UInt](UInt.md) is less than or equal to another one.
 
@@ -579,7 +579,7 @@ Asserts that a [UInt](UInt.md) is less than or equal to another one.
 
 > **constructorReference**(): [`UIntConstructor`](../type-aliases/UIntConstructor.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt64.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L39)
+Defined in: [packages/library/src/math/UInt64.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L39)
 
 #### Returns
 
@@ -595,7 +595,7 @@ Defined in: [packages/library/src/math/UInt64.ts:39](https://github.com/proto-ki
 
 > **div**(`y`): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt.ts:183](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L183)
+Defined in: [packages/library/src/math/UInt.ts:183](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L183)
 
 Integer division.
 
@@ -622,7 +622,7 @@ Integer division.
 
 > **divMod**(`divisor`): `object`
 
-Defined in: [packages/library/src/math/UInt.ts:122](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L122)
+Defined in: [packages/library/src/math/UInt.ts:122](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L122)
 
 Integer division with remainder.
 
@@ -656,7 +656,7 @@ Integer division with remainder.
 
 > **equals**(`y`): `Bool`
 
-Defined in: [packages/library/src/math/UInt.ts:406](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L406)
+Defined in: [packages/library/src/math/UInt.ts:406](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L406)
 
 Checks if a [UInt](UInt.md) is equal to another one.
 
@@ -680,7 +680,7 @@ Checks if a [UInt](UInt.md) is equal to another one.
 
 > **greaterThan**(`y`): `Bool`
 
-Defined in: [packages/library/src/math/UInt.ts:378](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L378)
+Defined in: [packages/library/src/math/UInt.ts:378](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L378)
 
 Checks if a [UInt](UInt.md) is greater than another one.
 
@@ -704,7 +704,7 @@ Checks if a [UInt](UInt.md) is greater than another one.
 
 > **greaterThanOrEqual**(`y`): `Bool`
 
-Defined in: [packages/library/src/math/UInt.ts:392](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L392)
+Defined in: [packages/library/src/math/UInt.ts:392](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L392)
 
 Checks if a [UInt](UInt.md) is greater than or equal to another one.
 
@@ -728,7 +728,7 @@ Checks if a [UInt](UInt.md) is greater than or equal to another one.
 
 > **lessThan**(`y`): `Bool`
 
-Defined in: [packages/library/src/math/UInt.ts:364](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L364)
+Defined in: [packages/library/src/math/UInt.ts:364](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L364)
 
 Checks if a [UInt](UInt.md) is less than another one.
 
@@ -752,7 +752,7 @@ Checks if a [UInt](UInt.md) is less than another one.
 
 > **lessThanOrEqual**(`y`): `Bool`
 
-Defined in: [packages/library/src/math/UInt.ts:325](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L325)
+Defined in: [packages/library/src/math/UInt.ts:325](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L325)
 
 Checks if a [UInt](UInt.md) is less than or equal to another one.
 
@@ -776,7 +776,7 @@ Checks if a [UInt](UInt.md) is less than or equal to another one.
 
 > **mod**(`y`): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt.ts:275](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L275)
+Defined in: [packages/library/src/math/UInt.ts:275](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L275)
 
 Integer remainder.
 
@@ -803,7 +803,7 @@ Integer remainder.
 
 > **mul**(`y`): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt.ts:282](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L282)
+Defined in: [packages/library/src/math/UInt.ts:282](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L282)
 
 Multiplication with overflow checking.
 
@@ -827,7 +827,7 @@ Multiplication with overflow checking.
 
 > **numBits**(): `64`
 
-Defined in: [packages/library/src/math/UInt64.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L43)
+Defined in: [packages/library/src/math/UInt64.ts:43](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L43)
 
 #### Returns
 
@@ -843,7 +843,7 @@ Defined in: [packages/library/src/math/UInt64.ts:43](https://github.com/proto-ki
 
 > **sqrtFloor**(): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt.ts:265](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L265)
+Defined in: [packages/library/src/math/UInt.ts:265](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L265)
 
 Wraps sqrtMod() by only returning the sqrt and omitting the rest field.
 
@@ -861,7 +861,7 @@ Wraps sqrtMod() by only returning the sqrt and omitting the rest field.
 
 > **sqrtMod**(): `object`
 
-Defined in: [packages/library/src/math/UInt.ts:202](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L202)
+Defined in: [packages/library/src/math/UInt.ts:202](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L202)
 
 Implements a non-overflowing square-root with rest.
 Normal Field.sqrt() provides the sqrt as it is defined by the finite
@@ -900,7 +900,7 @@ is from the "real" sqrt
 
 > **sub**(`y`): [`UInt`](UInt.md)\<`64`\>
 
-Defined in: [packages/library/src/math/UInt.ts:313](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L313)
+Defined in: [packages/library/src/math/UInt.ts:313](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L313)
 
 Subtraction with underflow checking.
 
@@ -924,7 +924,7 @@ Subtraction with underflow checking.
 
 > **toBigInt**(): `bigint`
 
-Defined in: [packages/library/src/math/UInt.ts:113](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L113)
+Defined in: [packages/library/src/math/UInt.ts:113](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L113)
 
 Turns the [UInt](UInt.md) into a BigInt.
 
@@ -942,7 +942,7 @@ Turns the [UInt](UInt.md) into a BigInt.
 
 > **toO1UInt64**(): `UInt64`
 
-Defined in: [packages/library/src/math/UInt.ts:420](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L420)
+Defined in: [packages/library/src/math/UInt.ts:420](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L420)
 
 Turns the [UInt](UInt.md) into a o1js [UInt64](UInt64.md), asserting that it fits in 32 bits.
 
@@ -960,7 +960,7 @@ Turns the [UInt](UInt.md) into a o1js [UInt64](UInt64.md), asserting that it fit
 
 > **toO1UInt64Clamped**(): `UInt64`
 
-Defined in: [packages/library/src/math/UInt.ts:430](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L430)
+Defined in: [packages/library/src/math/UInt.ts:430](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L430)
 
 Turns the [UInt](UInt.md) into a o1js [UInt64](UInt64.md),
 clamping to the 64 bits range if it's too large.
@@ -979,7 +979,7 @@ clamping to the 64 bits range if it's too large.
 
 > **toString**(): `string`
 
-Defined in: [packages/library/src/math/UInt.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L105)
+Defined in: [packages/library/src/math/UInt.ts:105](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L105)
 
 Turns the [UInt](UInt.md) into a string.
 
@@ -997,7 +997,7 @@ Turns the [UInt](UInt.md) into a string.
 
 > `static` **check**(`x`): `void`
 
-Defined in: [packages/library/src/math/UInt64.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L20)
+Defined in: [packages/library/src/math/UInt64.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L20)
 
 Add assertions to the proof to check if `value` is a valid member of type `T`.
 This function does not return anything, instead it creates any number of assertions to prove that `value` is a valid member of the type `T`.
@@ -1026,7 +1026,7 @@ For instance, calling check function on the type Bool asserts that the value of 
 
 > `static` **checkConstant**(`x`, `numBits`): `Field`
 
-Defined in: [packages/library/src/math/UInt.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L54)
+Defined in: [packages/library/src/math/UInt.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L54)
 
 #### Parameters
 
@@ -1052,7 +1052,7 @@ Defined in: [packages/library/src/math/UInt.ts:54](https://github.com/proto-kit/
 
 > `static` **from**(`x`): [`UInt64`](UInt64.md)
 
-Defined in: [packages/library/src/math/UInt64.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt64.ts#L24)
+Defined in: [packages/library/src/math/UInt64.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt64.ts#L24)
 
 #### Parameters
 
@@ -1070,7 +1070,7 @@ Defined in: [packages/library/src/math/UInt64.ts:24](https://github.com/proto-ki
 
 > `static` **maxIntField**(`numBits`): `Field`
 
-Defined in: [packages/library/src/math/UInt.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/math/UInt.ts#L70)
+Defined in: [packages/library/src/math/UInt.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/math/UInt.ts#L70)
 
 Creates a [UInt](UInt.md) with a value of 18,446,744,073,709,551,615.
 

@@ -10,7 +10,7 @@ title: PrismaBlockStorage
 
 # Class: PrismaBlockStorage
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L30)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L30)
 
 ## Implements
 
@@ -24,7 +24,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:30](
 
 > **new PrismaBlockStorage**(`connection`, `transactionResultMapper`, `transactionMapper`, `blockResultMapper`, `blockMapper`): [`PrismaBlockStorage`](PrismaBlockStorage.md)
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L33)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L33)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:33](
 
 > **getBlock**(`hash`): `Promise`\<`undefined` \| [`Block`](../../sequencer/interfaces/Block.md)\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L77)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L77)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:77](
 
 > **getBlockAt**(`height`): `Promise`\<`undefined` \| [`Block`](../../sequencer/interfaces/Block.md)\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:73](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L73)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:73](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L73)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:73](
 
 > **getCurrentBlockHeight**(): `Promise`\<`number`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:157](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L157)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:157](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L157)
 
 #### Returns
 
@@ -118,7 +118,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:157]
 
 > **getLatestBlock**(): `Promise`\<`undefined` \| [`BlockWithResult`](../../sequencer/interfaces/BlockWithResult.md)\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:185](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L185)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:185](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L185)
 
 #### Returns
 
@@ -134,7 +134,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:185]
 
 > **getLatestBlockAndResult**(): `Promise`\<`undefined` \| [`BlockWithMaybeResult`](../../sequencer/interfaces/BlockWithMaybeResult.md)\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:167](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L167)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:167](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L167)
 
 #### Returns
 
@@ -150,7 +150,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:167]
 
 > **getNewBlocks**(): `Promise`\<[`BlockWithPreviousResult`](../../sequencer/interfaces/BlockWithPreviousResult.md)[]\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:201](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L201)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:201](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L201)
 
 #### Returns
 
@@ -166,7 +166,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:201]
 
 > **pushBlock**(`block`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:81](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L81)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:81](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L81)
 
 #### Parameters
 
@@ -188,7 +188,7 @@ Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:81](
 
 > **pushResult**(`result`): `Promise`\<`void`\>
 
-Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:139](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L139)
+Defined in: [packages/persistance/src/services/prisma/PrismaBlockStorage.ts:139](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/PrismaBlockStorage.ts#L139)
 
 #### Parameters
 

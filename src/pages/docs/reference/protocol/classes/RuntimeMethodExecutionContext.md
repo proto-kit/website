@@ -10,7 +10,7 @@ title: RuntimeMethodExecutionContext
 
 # Class: RuntimeMethodExecutionContext
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L54)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L54)
 
 Execution context used to wrap runtime module methods,
 allowing them to post relevant information (such as execution status)
@@ -52,7 +52,7 @@ Defined in: packages/common/dist/zkProgrammable/ProvableMethodExecutionContext.d
 
 > **input**: `undefined` \| [`RuntimeMethodExecutionData`](../interfaces/RuntimeMethodExecutionData.md)
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L57)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:57](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L57)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.t
 
 > **methods**: `string`[] = `[]`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L55)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:55](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L55)
 
 #### Overrides
 
@@ -72,7 +72,7 @@ Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.t
 
 > **result**: [`RuntimeProvableMethodExecutionResult`](RuntimeProvableMethodExecutionResult.md)
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L62)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:62](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L62)
 
 #### Overrides
 
@@ -120,7 +120,7 @@ Defined in: packages/common/dist/zkProgrammable/ProvableMethodExecutionContext.d
 
 > **addEvent**(`eventType`, `event`, `eventName`, `condition`): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L83)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:83](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L83)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.t
 
 > **addStateTransition**\<`Value`\>(`stateTransition`): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L78)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:78](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L78)
 
 Adds an in-method generated state transition to the current context
 
@@ -176,7 +176,7 @@ State transition to add to the context
 
 > **afterMethod**(): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:152](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L152)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:152](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L152)
 
 Removes the latest method from the execution context stack,
 keeping track of the amount of 'unfinished' methods. Allowing
@@ -231,7 +231,7 @@ Name of the method being captured in the context
 
 > **clear**(): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:148](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L148)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:148](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L148)
 
 Manually clears/resets the execution context
 
@@ -249,7 +249,7 @@ Manually clears/resets the execution context
 
 > **current**(): `object`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:166](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L166)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:166](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L166)
 
 Had to override current() otherwise it would not infer
 the type of result correctly (parent type would be reused)
@@ -309,7 +309,7 @@ which can be collected and ran asynchronously at a later point in time.
 
 > **setSimulated**(`simulated`): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:141](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L141)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:141](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L141)
 
 #### Parameters
 
@@ -327,7 +327,7 @@ Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.t
 
 > **setStatus**(`status`): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:114](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L114)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:114](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L114)
 
 #### Parameters
 
@@ -347,7 +347,7 @@ Execution status of the current method
 
 > **setStatusMessage**(`message`?, `stackTrace`?): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:102](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L102)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:102](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L102)
 
 #### Parameters
 
@@ -371,7 +371,7 @@ Status message to acompany the current status
 
 > **setup**(`input`): `void`
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:125](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L125)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:125](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L125)
 
 #### Parameters
 
@@ -391,7 +391,7 @@ Input witness data required for a runtime execution
 
 > **witnessInput**(): [`RuntimeMethodExecutionDataStruct`](RuntimeMethodExecutionDataStruct.md)
 
-Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:129](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L129)
+Defined in: [packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts:129](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/context/RuntimeMethodExecutionContext.ts#L129)
 
 #### Returns
 

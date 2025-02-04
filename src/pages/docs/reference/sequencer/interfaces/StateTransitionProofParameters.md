@@ -10,7 +10,7 @@ title: StateTransitionProofParameters
 
 # Interface: StateTransitionProofParameters
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L27)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L27)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTas
 
 > **merkleWitnesses**: [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md)[]
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L33)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L33)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTas
 
 > **publicInput**: [`StateTransitionProverPublicInput`](../../protocol/classes/StateTransitionProverPublicInput.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L28)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L28)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTas
 
 > **stateTransitions**: `object`[]
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L29)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts:29](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionTask.ts#L29)
 
 #### transition
 

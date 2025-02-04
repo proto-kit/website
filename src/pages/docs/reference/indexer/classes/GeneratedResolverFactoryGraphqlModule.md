@@ -10,7 +10,7 @@ title: GeneratedResolverFactoryGraphqlModule
 
 # Class: GeneratedResolverFactoryGraphqlModule
 
-Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L83)
+Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:83](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L83)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new GeneratedResolverFactoryGraphqlModule**(`graphqlServer`): [`GeneratedResolverFactoryGraphqlModule`](GeneratedResolverFactoryGraphqlModule.md)
 
-Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L84)
+Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L84)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ checks when retrieving it via the getter
 
 > **graphqlServer**: [`GraphqlServer`](../../api/classes/GraphqlServer.md)
 
-Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:85](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L85)
+Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:85](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L85)
 
 ## Accessors
 
@@ -125,7 +125,7 @@ Defined in: common/dist/config/ConfigurableModule.d.ts:20
 
 > **initializePrismaClient**(): `Promise`\<`PrismaClient`\<`never`\>\>
 
-Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:90](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L90)
+Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:90](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L90)
 
 #### Returns
 
@@ -137,7 +137,7 @@ Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:90](https:
 
 > **resolvers**(): `Promise`\<`NonEmptyArray`\<`Function`\>\>
 
-Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:101](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L101)
+Defined in: [indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts:101](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/indexer/src/api/GeneratedResolverFactoryGraphqlModule.ts#L101)
 
 #### Returns
 

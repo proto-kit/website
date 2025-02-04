@@ -10,7 +10,7 @@ title: Withdrawal
 
 # Class: Withdrawal
 
-Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/Withdrawal.ts#L4)
+Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:4](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/Withdrawal.ts#L4)
 
 ## Extends
 
@@ -54,7 +54,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **address**: `PublicKey` = `PublicKey`
 
-Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/Withdrawal.ts#L6)
+Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/Withdrawal.ts#L6)
 
 #### Inherited from
 
@@ -66,7 +66,7 @@ Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:6](https://
 
 > **amount**: `UInt64` = `UInt64`
 
-Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/Withdrawal.ts#L7)
+Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/Withdrawal.ts#L7)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:7](https://
 
 > **tokenId**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/Withdrawal.ts#L5)
+Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/Withdrawal.ts#L5)
 
 #### Inherited from
 
@@ -478,7 +478,7 @@ Convert provable type to a normal JS type.
 
 > `static` **dummy**(): [`Withdrawal`](Withdrawal.md)
 
-Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/Withdrawal.ts#L9)
+Defined in: [packages/protocol/src/settlement/messages/Withdrawal.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/Withdrawal.ts#L9)
 
 #### Returns
 

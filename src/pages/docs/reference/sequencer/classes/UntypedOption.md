@@ -10,7 +10,7 @@ title: UntypedOption
 
 # Class: UntypedOption
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L7)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L7)
 
 Option facilitating in-circuit values that may or may not exist.
 
@@ -24,7 +24,7 @@ Option facilitating in-circuit values that may or may not exist.
 
 > **new UntypedOption**(`isSome`, `value`, `enforceEmpty`): [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L32)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L32)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: packages/protocol/dist/model/Option.d.ts:59
 
 > **value**: `Field`[]
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L34)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L34)
 
 ## Accessors
 
@@ -106,7 +106,7 @@ Tree representation of the current value
 
 > **clone**(): [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L40)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:40](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L40)
 
 #### Returns
 
@@ -122,7 +122,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts
 
 > `protected` **encodeValueToFields**(): `Field`[]
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L44)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:44](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L44)
 
 #### Returns
 
@@ -219,7 +219,7 @@ Provable representation of the current option.
 
 > `static` **fromJSON**(`__namedParameters`): [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L16)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L16)
 
 #### Parameters
 
@@ -247,7 +247,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts
 
 > `static` **fromOption**\<`Value`\>(`option`): [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L8)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedOption.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedOption.ts#L8)
 
 #### Type Parameters
 

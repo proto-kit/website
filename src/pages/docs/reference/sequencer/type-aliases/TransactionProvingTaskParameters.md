@@ -12,4 +12,4 @@ title: TransactionProvingTaskParameters
 
 > **TransactionProvingTaskParameters**: [`PairingDerivedInput`](../interfaces/PairingDerivedInput.md)\<[`StateTransitionProof`](../../protocol/type-aliases/StateTransitionProof.md), `RuntimeProof`, [`BlockProverParameters`](../interfaces/BlockProverParameters.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L42)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:42](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L42)

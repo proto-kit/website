@@ -10,7 +10,7 @@ title: RuntimeVerificationKeyAttestationSerializer
 
 # Class: RuntimeVerificationKeyAttestationSerializer
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts#L9)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts#L9)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Runtim
 
 > `static` **fromJSON**(`json`): [`RuntimeVerificationKeyAttestation`](../../protocol/classes/RuntimeVerificationKeyAttestation.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts#L10)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts#L10)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Runtim
 
 > `static` **toJSON**(`attestation`): `object`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts#L20)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/RuntimeVerificationKeyAttestationSerializer.ts#L20)
 
 #### Parameters
 

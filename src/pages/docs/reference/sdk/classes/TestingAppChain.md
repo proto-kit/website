@@ -10,7 +10,7 @@ title: TestingAppChain
 
 # Class: TestingAppChain\<RuntimeModules, ProtocolModules, SequencerModules, AppChainModules\>
 
-Defined in: [sdk/src/appChain/TestingAppChain.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/TestingAppChain.ts#L58)
+Defined in: [sdk/src/appChain/TestingAppChain.ts:58](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/TestingAppChain.ts#L58)
 
 AppChain acts as a wrapper connecting Runtime, Protocol and Sequencer
 
@@ -34,7 +34,7 @@ AppChain acts as a wrapper connecting Runtime, Protocol and Sequencer
 
 > **new TestingAppChain**\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>(`definition`): [`TestingAppChain`](TestingAppChain.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:151](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L151)
+Defined in: [sdk/src/appChain/AppChain.ts:151](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L151)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ checks when retrieving it via the getter
 
 > **definition**: [`ExpandAppChainDefinition`](../interfaces/ExpandAppChainDefinition.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:144](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L144)
+Defined in: [sdk/src/appChain/AppChain.ts:144](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L144)
 
 #### Inherited from
 
@@ -175,7 +175,7 @@ list of module names
 
 > **get** **protocol**(): [`Protocol`](../../protocol/classes/Protocol.md)\<`ProtocolModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:215](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L215)
+Defined in: [sdk/src/appChain/AppChain.ts:215](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L215)
 
 ##### Returns
 
@@ -193,7 +193,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:215](https://github.com/proto-kit/fram
 
 > **get** **query**(): `object`
 
-Defined in: [sdk/src/appChain/AppChain.ts:176](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L176)
+Defined in: [sdk/src/appChain/AppChain.ts:176](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L176)
 
 ##### Returns
 
@@ -223,7 +223,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:176](https://github.com/proto-kit/fram
 
 > **get** **runtime**(): [`Runtime`](../../module/classes/Runtime.md)\<`RuntimeModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:207](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L207)
+Defined in: [sdk/src/appChain/AppChain.ts:207](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L207)
 
 ##### Returns
 
@@ -241,7 +241,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:207](https://github.com/proto-kit/fram
 
 > **get** **sequencer**(): [`Sequencer`](../../sequencer/classes/Sequencer.md)\<`SequencerModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:211](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L211)
+Defined in: [sdk/src/appChain/AppChain.ts:211](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L211)
 
 ##### Returns
 
@@ -305,7 +305,7 @@ using e.g. a for loop.
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:352](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L352)
+Defined in: [sdk/src/appChain/AppChain.ts:352](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L352)
 
 #### Returns
 
@@ -501,7 +501,7 @@ Handle module resolution, e.g. by decorating resolved modules
 
 > **produceBlock**(): `Promise`\<`undefined` \| [`Block`](../../sequencer/interfaces/Block.md)\>
 
-Defined in: [sdk/src/appChain/TestingAppChain.ts:135](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/TestingAppChain.ts#L135)
+Defined in: [sdk/src/appChain/TestingAppChain.ts:137](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/TestingAppChain.ts#L137)
 
 #### Returns
 
@@ -513,7 +513,7 @@ Defined in: [sdk/src/appChain/TestingAppChain.ts:135](https://github.com/proto-k
 
 > **produceBlockWithResult**(): `Promise`\<`undefined` \| [`BlockWithResult`](../../sequencer/interfaces/BlockWithResult.md)\>
 
-Defined in: [sdk/src/appChain/TestingAppChain.ts:144](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/TestingAppChain.ts#L144)
+Defined in: [sdk/src/appChain/TestingAppChain.ts:146](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/TestingAppChain.ts#L146)
 
 #### Returns
 
@@ -689,7 +689,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:129
 
 > **setSigner**(`signer`): `void`
 
-Defined in: [sdk/src/appChain/TestingAppChain.ts:130](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/TestingAppChain.ts#L130)
+Defined in: [sdk/src/appChain/TestingAppChain.ts:132](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/TestingAppChain.ts#L132)
 
 #### Parameters
 
@@ -707,7 +707,7 @@ Defined in: [sdk/src/appChain/TestingAppChain.ts:130](https://github.com/proto-k
 
 > **start**(`proofsEnabled`, `dependencyContainer`): `Promise`\<`void`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:309](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L309)
+Defined in: [sdk/src/appChain/AppChain.ts:309](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L309)
 
 Starts the appchain and cross-registers runtime to sequencer
 
@@ -735,7 +735,7 @@ Starts the appchain and cross-registers runtime to sequencer
 
 > **transaction**(`sender`, `callback`, `options`?): `Promise`\<[`AppChainTransaction`](AppChainTransaction.md)\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:219](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L219)
+Defined in: [sdk/src/appChain/AppChain.ts:219](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L219)
 
 #### Parameters
 
@@ -796,7 +796,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>(`definition`): [`AppChain`](AppChain.md)\<`RuntimeModules`, `ProtocolModules`, `SequencerModules`, `AppChainModules`\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:127](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L127)
+Defined in: [sdk/src/appChain/AppChain.ts:127](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L127)
 
 #### Type Parameters
 
@@ -826,9 +826,9 @@ Defined in: [sdk/src/appChain/AppChain.ts:127](https://github.com/proto-kit/fram
 
 ### fromRuntime()
 
-> `static` **fromRuntime**\<`RuntimeModules`\>(`runtimeModules`): [`TestingAppChain`](TestingAppChain.md)\<`object` & `RuntimeModules`, [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & `object`, \{ `BaseLayer`: *typeof* [`NoopBaseLayer`](../../sequencer/classes/NoopBaseLayer.md); `BatchProducerModule`: *typeof* [`BatchProducerModule`](../../sequencer/classes/BatchProducerModule.md); `BlockProducerModule`: *typeof* [`BlockProducerModule`](../../sequencer/classes/BlockProducerModule.md); `BlockTrigger`: *typeof* [`ManualBlockTrigger`](../../sequencer/classes/ManualBlockTrigger.md); `Database`: *typeof* [`InMemoryDatabase`](../../sequencer/classes/InMemoryDatabase.md); `LocalTaskWorkerModule`: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`LocalTaskWorkerModule`](../../sequencer/classes/LocalTaskWorkerModule.md)\<\{ `BlockBuildingTask`: *typeof* [`NewBlockTask`](../../sequencer/classes/NewBlockTask.md); `BlockReductionTask`: *typeof* `BlockReductionTask`; `CircuitCompilerTask`: *typeof* `CircuitCompilerTask`; `RuntimeProvingTask`: *typeof* [`RuntimeProvingTask`](../../sequencer/classes/RuntimeProvingTask.md); `StateTransitionReductionTask`: *typeof* [`StateTransitionReductionTask`](../../sequencer/classes/StateTransitionReductionTask.md); `StateTransitionTask`: *typeof* [`StateTransitionTask`](../../sequencer/classes/StateTransitionTask.md); `TransactionProvingTask`: *typeof* [`TransactionProvingTask`](../../sequencer/classes/TransactionProvingTask.md); `WorkerRegistrationTask`: *typeof* `WorkerRegistrationTask`; \}\>\>; `Mempool`: *typeof* [`PrivateMempool`](../../sequencer/classes/PrivateMempool.md); `TaskQueue`: *typeof* [`LocalTaskQueue`](../../sequencer/classes/LocalTaskQueue.md); \}, \{ `NetworkStateTransportModule`: *typeof* [`BlockStorageNetworkStateModule`](BlockStorageNetworkStateModule.md); `QueryTransportModule`: *typeof* [`StateServiceQueryModule`](StateServiceQueryModule.md); `Signer`: *typeof* [`InMemorySigner`](InMemorySigner.md); `TransactionSender`: *typeof* [`InMemoryTransactionSender`](InMemoryTransactionSender.md); \}\>
+> `static` **fromRuntime**\<`RuntimeModules`\>(`runtimeModules`): [`TestingAppChain`](TestingAppChain.md)\<`object` & `RuntimeModules`, [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & `object`, \{ `BaseLayer`: *typeof* [`NoopBaseLayer`](../../sequencer/classes/NoopBaseLayer.md); `BatchProducerModule`: *typeof* [`BatchProducerModule`](../../sequencer/classes/BatchProducerModule.md); `BlockProducerModule`: *typeof* [`BlockProducerModule`](../../sequencer/classes/BlockProducerModule.md); `BlockTrigger`: *typeof* [`ManualBlockTrigger`](../../sequencer/classes/ManualBlockTrigger.md); `Database`: *typeof* [`InMemoryDatabase`](../../sequencer/classes/InMemoryDatabase.md); `FeeStrategy`: *typeof* `ConstantFeeStrategy`; `LocalTaskWorkerModule`: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`LocalTaskWorkerModule`](../../sequencer/classes/LocalTaskWorkerModule.md)\<\{ `BlockBuildingTask`: *typeof* [`NewBlockTask`](../../sequencer/classes/NewBlockTask.md); `BlockReductionTask`: *typeof* `BlockReductionTask`; `CircuitCompilerTask`: *typeof* `CircuitCompilerTask`; `RuntimeProvingTask`: *typeof* [`RuntimeProvingTask`](../../sequencer/classes/RuntimeProvingTask.md); `StateTransitionReductionTask`: *typeof* [`StateTransitionReductionTask`](../../sequencer/classes/StateTransitionReductionTask.md); `StateTransitionTask`: *typeof* [`StateTransitionTask`](../../sequencer/classes/StateTransitionTask.md); `TransactionProvingTask`: *typeof* [`TransactionProvingTask`](../../sequencer/classes/TransactionProvingTask.md); `WorkerRegistrationTask`: *typeof* `WorkerRegistrationTask`; \}\>\>; `Mempool`: *typeof* [`PrivateMempool`](../../sequencer/classes/PrivateMempool.md); `SequencerStartupModule`: *typeof* [`SequencerStartupModule`](../../sequencer/classes/SequencerStartupModule.md); `TaskQueue`: *typeof* [`LocalTaskQueue`](../../sequencer/classes/LocalTaskQueue.md); \}, \{ `NetworkStateTransportModule`: *typeof* [`BlockStorageNetworkStateModule`](BlockStorageNetworkStateModule.md); `QueryTransportModule`: *typeof* [`StateServiceQueryModule`](StateServiceQueryModule.md); `Signer`: *typeof* [`InMemorySigner`](InMemorySigner.md); `TransactionSender`: *typeof* [`InMemoryTransactionSender`](InMemoryTransactionSender.md); \}\>
 
-Defined in: [sdk/src/appChain/TestingAppChain.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/TestingAppChain.ts#L70)
+Defined in: [sdk/src/appChain/TestingAppChain.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/TestingAppChain.ts#L70)
 
 #### Type Parameters
 
@@ -842,4 +842,4 @@ Defined in: [sdk/src/appChain/TestingAppChain.ts:70](https://github.com/proto-ki
 
 #### Returns
 
-[`TestingAppChain`](TestingAppChain.md)\<`object` & `RuntimeModules`, [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & `object`, \{ `BaseLayer`: *typeof* [`NoopBaseLayer`](../../sequencer/classes/NoopBaseLayer.md); `BatchProducerModule`: *typeof* [`BatchProducerModule`](../../sequencer/classes/BatchProducerModule.md); `BlockProducerModule`: *typeof* [`BlockProducerModule`](../../sequencer/classes/BlockProducerModule.md); `BlockTrigger`: *typeof* [`ManualBlockTrigger`](../../sequencer/classes/ManualBlockTrigger.md); `Database`: *typeof* [`InMemoryDatabase`](../../sequencer/classes/InMemoryDatabase.md); `LocalTaskWorkerModule`: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`LocalTaskWorkerModule`](../../sequencer/classes/LocalTaskWorkerModule.md)\<\{ `BlockBuildingTask`: *typeof* [`NewBlockTask`](../../sequencer/classes/NewBlockTask.md); `BlockReductionTask`: *typeof* `BlockReductionTask`; `CircuitCompilerTask`: *typeof* `CircuitCompilerTask`; `RuntimeProvingTask`: *typeof* [`RuntimeProvingTask`](../../sequencer/classes/RuntimeProvingTask.md); `StateTransitionReductionTask`: *typeof* [`StateTransitionReductionTask`](../../sequencer/classes/StateTransitionReductionTask.md); `StateTransitionTask`: *typeof* [`StateTransitionTask`](../../sequencer/classes/StateTransitionTask.md); `TransactionProvingTask`: *typeof* [`TransactionProvingTask`](../../sequencer/classes/TransactionProvingTask.md); `WorkerRegistrationTask`: *typeof* `WorkerRegistrationTask`; \}\>\>; `Mempool`: *typeof* [`PrivateMempool`](../../sequencer/classes/PrivateMempool.md); `TaskQueue`: *typeof* [`LocalTaskQueue`](../../sequencer/classes/LocalTaskQueue.md); \}, \{ `NetworkStateTransportModule`: *typeof* [`BlockStorageNetworkStateModule`](BlockStorageNetworkStateModule.md); `QueryTransportModule`: *typeof* [`StateServiceQueryModule`](StateServiceQueryModule.md); `Signer`: *typeof* [`InMemorySigner`](InMemorySigner.md); `TransactionSender`: *typeof* [`InMemoryTransactionSender`](InMemoryTransactionSender.md); \}\>
+[`TestingAppChain`](TestingAppChain.md)\<`object` & `RuntimeModules`, [`MandatoryProtocolModulesRecord`](../../protocol/type-aliases/MandatoryProtocolModulesRecord.md) & `object`, \{ `BaseLayer`: *typeof* [`NoopBaseLayer`](../../sequencer/classes/NoopBaseLayer.md); `BatchProducerModule`: *typeof* [`BatchProducerModule`](../../sequencer/classes/BatchProducerModule.md); `BlockProducerModule`: *typeof* [`BlockProducerModule`](../../sequencer/classes/BlockProducerModule.md); `BlockTrigger`: *typeof* [`ManualBlockTrigger`](../../sequencer/classes/ManualBlockTrigger.md); `Database`: *typeof* [`InMemoryDatabase`](../../sequencer/classes/InMemoryDatabase.md); `FeeStrategy`: *typeof* `ConstantFeeStrategy`; `LocalTaskWorkerModule`: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`LocalTaskWorkerModule`](../../sequencer/classes/LocalTaskWorkerModule.md)\<\{ `BlockBuildingTask`: *typeof* [`NewBlockTask`](../../sequencer/classes/NewBlockTask.md); `BlockReductionTask`: *typeof* `BlockReductionTask`; `CircuitCompilerTask`: *typeof* `CircuitCompilerTask`; `RuntimeProvingTask`: *typeof* [`RuntimeProvingTask`](../../sequencer/classes/RuntimeProvingTask.md); `StateTransitionReductionTask`: *typeof* [`StateTransitionReductionTask`](../../sequencer/classes/StateTransitionReductionTask.md); `StateTransitionTask`: *typeof* [`StateTransitionTask`](../../sequencer/classes/StateTransitionTask.md); `TransactionProvingTask`: *typeof* [`TransactionProvingTask`](../../sequencer/classes/TransactionProvingTask.md); `WorkerRegistrationTask`: *typeof* `WorkerRegistrationTask`; \}\>\>; `Mempool`: *typeof* [`PrivateMempool`](../../sequencer/classes/PrivateMempool.md); `SequencerStartupModule`: *typeof* [`SequencerStartupModule`](../../sequencer/classes/SequencerStartupModule.md); `TaskQueue`: *typeof* [`LocalTaskQueue`](../../sequencer/classes/LocalTaskQueue.md); \}, \{ `NetworkStateTransportModule`: *typeof* [`BlockStorageNetworkStateModule`](BlockStorageNetworkStateModule.md); `QueryTransportModule`: *typeof* [`StateServiceQueryModule`](StateServiceQueryModule.md); `Signer`: *typeof* [`InMemorySigner`](InMemorySigner.md); `TransactionSender`: *typeof* [`InMemoryTransactionSender`](InMemoryTransactionSender.md); \}\>

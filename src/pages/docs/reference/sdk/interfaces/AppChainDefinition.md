@@ -10,7 +10,7 @@ title: AppChainDefinition
 
 # Interface: AppChainDefinition\<RuntimeModules, ProtocolModules, SequencerModules, AppChainModules\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L53)
+Defined in: [sdk/src/appChain/AppChain.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L53)
 
 ## Type Parameters
 
@@ -28,7 +28,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:53](https://github.com/proto-kit/frame
 
 > **modules**: `AppChainModules`
 
-Defined in: [sdk/src/appChain/AppChain.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L63)
+Defined in: [sdk/src/appChain/AppChain.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L63)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:63](https://github.com/proto-kit/frame
 
 > **Protocol**: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`Protocol`](../../protocol/classes/Protocol.md)\<`ProtocolModules`\>\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L61)
+Defined in: [sdk/src/appChain/AppChain.ts:61](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L61)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [sdk/src/appChain/AppChain.ts:61](https://github.com/proto-kit/frame
 
 > **Runtime**: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`Runtime`](../../module/classes/Runtime.md)\<`RuntimeModules`\>\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L60)
+Defined in: [sdk/src/appChain/AppChain.ts:60](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L60)
 
 ***
 
@@ -52,4 +52,4 @@ Defined in: [sdk/src/appChain/AppChain.ts:60](https://github.com/proto-kit/frame
 
 > **Sequencer**: [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`Sequencer`](../../sequencer/classes/Sequencer.md)\<`SequencerModules`\>\>
 
-Defined in: [sdk/src/appChain/AppChain.ts:62](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sdk/src/appChain/AppChain.ts#L62)
+Defined in: [sdk/src/appChain/AppChain.ts:62](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sdk/src/appChain/AppChain.ts#L62)

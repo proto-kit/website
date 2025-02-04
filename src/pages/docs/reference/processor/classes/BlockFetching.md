@@ -10,7 +10,7 @@ title: BlockFetching
 
 # Class: BlockFetching
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L36)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L36)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new BlockFetching**(`blockMapper`, `blockResultMapper`, `transactionResultMapper`): [`BlockFetching`](BlockFetching.md)
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L37)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L37)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/processor/src/indexer/BlockFetching.ts:37](https://github.
 
 > **blockMapper**: [`BlockMapper`](../../persistance/classes/BlockMapper.md)
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L38)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:38](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L38)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/processor/src/indexer/BlockFetching.ts:38](https://github.
 
 > **blockResultMapper**: [`BlockResultMapper`](../../persistance/classes/BlockResultMapper.md)
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L39)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L39)
 
 ***
 
@@ -85,7 +85,7 @@ checks when retrieving it via the getter
 
 > **transactionResultMapper**: [`TransactionExecutionResultMapper`](../../persistance/classes/TransactionExecutionResultMapper.md)
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L40)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:40](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L40)
 
 ## Accessors
 
@@ -149,7 +149,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **fetchBlock**(`height`): `Promise`\<`undefined` \| [`BlockWithResult`](../../sequencer/interfaces/BlockWithResult.md)\>
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L45)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:45](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L45)
 
 #### Parameters
 
@@ -167,7 +167,7 @@ Defined in: [packages/processor/src/indexer/BlockFetching.ts:45](https://github.
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/indexer/BlockFetching.ts:146](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/indexer/BlockFetching.ts#L146)
+Defined in: [packages/processor/src/indexer/BlockFetching.ts:146](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/indexer/BlockFetching.ts#L146)
 
 #### Returns
 

@@ -10,7 +10,7 @@ title: StateTransition
 
 # Class: StateTransition\<Value\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L32)
+Defined in: [packages/protocol/src/model/StateTransition.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L32)
 
 Generic state transition that constraints the current method circuit
 to external state, by providing a state anchor.
@@ -25,7 +25,7 @@ to external state, by providing a state anchor.
 
 > **new StateTransition**\<`Value`\>(`path`, `fromValue`, `toValue`): [`StateTransition`](StateTransition.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L45)
+Defined in: [packages/protocol/src/model/StateTransition.ts:45](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L45)
 
 #### Parameters
 
@@ -51,7 +51,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:45](https://github.c
 
 > **fromValue**: [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L47)
+Defined in: [packages/protocol/src/model/StateTransition.ts:47](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L47)
 
 ***
 
@@ -59,7 +59,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:47](https://github.c
 
 > **path**: `Field`
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L46)
+Defined in: [packages/protocol/src/model/StateTransition.ts:46](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L46)
 
 ***
 
@@ -67,7 +67,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:46](https://github.c
 
 > **toValue**: [`Option`](Option.md)\<`Field`\> \| [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L48)
+Defined in: [packages/protocol/src/model/StateTransition.ts:48](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L48)
 
 ## Accessors
 
@@ -77,7 +77,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:48](https://github.c
 
 > **get** **from**(): [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L51)
+Defined in: [packages/protocol/src/model/StateTransition.ts:51](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L51)
 
 ##### Returns
 
@@ -91,7 +91,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:51](https://github.c
 
 > **get** **to**(): [`Option`](Option.md)\<`Field`\> \| [`Option`](Option.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L57)
+Defined in: [packages/protocol/src/model/StateTransition.ts:57](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L57)
 
 ##### Returns
 
@@ -103,7 +103,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:57](https://github.c
 
 > **toConstant**(): [`StateTransition`](StateTransition.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:81](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L81)
+Defined in: [packages/protocol/src/model/StateTransition.ts:81](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L81)
 
 #### Returns
 
@@ -115,7 +115,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:81](https://github.c
 
 > **toJSON**(): `object`
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:73](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L73)
+Defined in: [packages/protocol/src/model/StateTransition.ts:73](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L73)
 
 #### Returns
 
@@ -163,7 +163,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:73](https://github.c
 
 > **toProvable**(): [`ProvableStateTransition`](ProvableStateTransition.md)
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:65](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L65)
+Defined in: [packages/protocol/src/model/StateTransition.ts:65](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L65)
 
 Converts a StateTransition to a ProvableStateTransition,
 while enforcing the 'from' property to be 'Some' in all cases.
@@ -178,7 +178,7 @@ while enforcing the 'from' property to be 'Some' in all cases.
 
 > `static` **from**\<`Value`\>(`path`, `fromValue`): [`StateTransition`](StateTransition.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L33)
+Defined in: [packages/protocol/src/model/StateTransition.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L33)
 
 #### Type Parameters
 
@@ -204,7 +204,7 @@ Defined in: [packages/protocol/src/model/StateTransition.ts:33](https://github.c
 
 > `static` **fromTo**\<`Value`\>(`path`, `fromValue`, `toValue`): [`StateTransition`](StateTransition.md)\<`Value`\>
 
-Defined in: [packages/protocol/src/model/StateTransition.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/StateTransition.ts#L37)
+Defined in: [packages/protocol/src/model/StateTransition.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/StateTransition.ts#L37)
 
 #### Type Parameters
 

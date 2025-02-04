@@ -10,7 +10,7 @@ title: BlockProducerModule
 
 # Class: BlockProducerModule
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L39)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L39)
 
 Lifecycle of a SequencerModule
 
@@ -26,7 +26,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new BlockProducerModule**(`mempool`, `messageStorage`, `unprovenStateService`, `unprovenMerkleStore`, `blockQueue`, `blockTreeStore`, `productionService`, `resultService`, `methodIdResolver`, `runtime`, `database`): [`BlockProducerModule`](BlockProducerModule.md)
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L42)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:42](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L42)
 
 #### Parameters
 
@@ -103,7 +103,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -149,7 +149,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **blockResultCompleteCheck**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:236](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L236)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:236](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L236)
 
 #### Returns
 
@@ -183,7 +183,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **generateMetadata**(`block`): `Promise`\<[`BlockResult`](../interfaces/BlockResult.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:110](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L110)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:110](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L110)
 
 #### Parameters
 
@@ -201,7 +201,7 @@ Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducer
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:251](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L251)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:251](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L251)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,
@@ -222,7 +222,7 @@ That means that you mustn't await server.start() for example.
 
 > **tryProduceBlock**(): `Promise`\<`undefined` \| [`Block`](../interfaces/Block.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:128](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L128)
+Defined in: [packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts:128](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/sequencing/BlockProducerModule.ts#L128)
 
 #### Returns
 

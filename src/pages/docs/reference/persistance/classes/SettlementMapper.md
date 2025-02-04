@@ -10,7 +10,7 @@ title: SettlementMapper
 
 # Class: SettlementMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/SettlementMapper.ts#L8)
+Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/SettlementMapper.ts#L8)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.t
 
 > **mapIn**(`input`): [`Settlement`](../../sequencer/interfaces/Settlement.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/SettlementMapper.ts#L11)
+Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/SettlementMapper.ts#L11)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.t
 
 > **mapOut**(`input`): \[\{ `promisedMessagesHash`: `string`; `transactionHash`: `string`; \}, `number`[]\]
 
-Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/SettlementMapper.ts#L21)
+Defined in: [packages/persistance/src/services/prisma/mappers/SettlementMapper.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/SettlementMapper.ts#L21)
 
 #### Parameters
 

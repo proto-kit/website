@@ -10,7 +10,7 @@ title: GraphqlSequencerModule
 
 # Class: GraphqlSequencerModule\<GraphQLModules\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L33)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlSequencerModule.ts#L33)
 
 Lifecycle of a SequencerModule
 
@@ -231,7 +231,7 @@ using e.g. a for loop.
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:98](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L98)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:98](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlSequencerModule.ts#L98)
 
 #### Returns
 
@@ -297,7 +297,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:115
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L49)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlSequencerModule.ts#L49)
 
 This is a placeholder for individual modules to override.
 This method will be called whenever the underlying container fully
@@ -595,7 +595,7 @@ Defined in: common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L55)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:55](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlSequencerModule.ts#L55)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,
@@ -645,7 +645,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`GraphQLModules`\>(`definition`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`GraphqlSequencerModule`](GraphqlSequencerModule.md)\<`GraphQLModules`\>\>
 
-Defined in: [api/src/graphql/GraphqlSequencerModule.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/GraphqlSequencerModule.ts#L37)
+Defined in: [api/src/graphql/GraphqlSequencerModule.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/GraphqlSequencerModule.ts#L37)
 
 #### Type Parameters
 

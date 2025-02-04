@@ -41,8 +41,10 @@ title: "@proto-kit/module"
 
 ## Functions
 
+- [checkArgsProvable](functions/checkArgsProvable.md)
 - [combineMethodName](functions/combineMethodName.md)
 - [getAllPropertyNames](functions/getAllPropertyNames.md)
+- [isFlexibleProvablePure](functions/isFlexibleProvablePure.md)
 - [isRuntimeMethod](functions/isRuntimeMethod.md)
 - [runtimeMessage](functions/runtimeMessage.md)
 - [runtimeMethod](functions/runtimeMethod.md)

@@ -10,7 +10,7 @@ title: BlockProverExecutionData
 
 # Class: BlockProverExecutionData
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L57)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:57](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L57)
 
 ## Extends
 
@@ -54,7 +54,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **networkState**: [`NetworkState`](NetworkState.md) = `NetworkState`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:60](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L60)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:60](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L60)
 
 #### Inherited from
 
@@ -66,7 +66,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:60](https://git
 
 > **signature**: `Signature` = `Signature`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L59)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:59](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L59)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:59](https://git
 
 > **transaction**: [`RuntimeTransaction`](RuntimeTransaction.md) = `RuntimeTransaction`
 
-Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/block/BlockProvable.ts#L58)
+Defined in: [packages/protocol/src/prover/block/BlockProvable.ts:58](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/block/BlockProvable.ts#L58)
 
 #### Inherited from
 

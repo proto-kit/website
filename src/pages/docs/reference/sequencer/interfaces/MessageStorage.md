@@ -10,7 +10,7 @@ title: MessageStorage
 
 # Interface: MessageStorage
 
-Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/MessageStorage.ts#L6)
+Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/MessageStorage.ts#L6)
 
 Interface to store Messages previously fetched by a IncomingMessageadapter
 
@@ -20,7 +20,7 @@ Interface to store Messages previously fetched by a IncomingMessageadapter
 
 > **getMessages**: (`fromMessagesHash`) => `Promise`\<[`PendingTransaction`](../classes/PendingTransaction.md)[]\>
 
-Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/MessageStorage.ts#L12)
+Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/MessageStorage.ts#L12)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:12](h
 
 > **pushMessages**: (`fromMessagesHash`, `toMessagesHash`, `messages`) => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/repositories/MessageStorage.ts#L7)
+Defined in: [packages/sequencer/src/storage/repositories/MessageStorage.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/repositories/MessageStorage.ts#L7)
 
 #### Parameters
 

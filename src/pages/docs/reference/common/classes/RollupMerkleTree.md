@@ -10,7 +10,7 @@ title: RollupMerkleTree
 
 # Class: RollupMerkleTree
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:344](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L344)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:344](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L344)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:344](https://github.c
 
 > **new RollupMerkleTree**(`store`): [`RollupMerkleTree`](RollupMerkleTree.md)
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:85](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L85)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:85](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L85)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:85](https://github.co
 
 > `readonly` **leafCount**: `bigint`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:43](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L43)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:43](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L43)
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:43](https://github.co
 
 > **store**: [`MerkleTreeStore`](../interfaces/MerkleTreeStore.md)
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:42](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L42)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:42](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L42)
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:42](https://github.co
 
 > `static` **EMPTY\_ROOT**: `bigint`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:92](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L92)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:92](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L92)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:92](https://github.co
 
 > `static` **HEIGHT**: `number`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:90](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L90)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:90](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L90)
 
 #### Inherited from
 
@@ -92,7 +92,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:90](https://github.co
 
 > `static` **WITNESS**: [`TypedClass`](../type-aliases/TypedClass.md)\<[`AbstractMerkleWitness`](../interfaces/AbstractMerkleWitness.md)\> & *typeof* `StructTemplate` & `object`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:87](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L87)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:87](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L87)
 
 #### Type declaration
 
@@ -116,7 +116,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:87](https://github.co
 
 > **get** `static` **leafCount**(): `bigint`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L94)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:94](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L94)
 
 ##### Returns
 
@@ -132,7 +132,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:94](https://github.co
 
 > **assertIndexRange**(`index`): `void`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L45)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:45](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L45)
 
 #### Parameters
 
@@ -154,7 +154,7 @@ Defined in: [packages/common/src/trees/RollupMerkleTree.ts:45](https://github.co
 
 > **fill**(`leaves`): `void`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:81](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L81)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:81](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L81)
 
 Fills all leaves of the tree.
 
@@ -180,7 +180,7 @@ Values to fill the leaves with.
 
 > **getNode**(`level`, `index`): `Field`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L53)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L53)
 
 Returns a node which lives at a given index and level.
 
@@ -214,7 +214,7 @@ The data of the node.
 
 > **getRoot**(): `Field`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:59](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L59)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:59](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L59)
 
 Returns the root of the [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree).
 
@@ -234,7 +234,7 @@ The root of the Merkle Tree.
 
 > **getWitness**(`index`): [`AbstractMerkleWitness`](../interfaces/AbstractMerkleWitness.md)
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:75](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L75)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:75](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L75)
 
 Returns the witness (also known as
 [Merkle Proof or Merkle Witness](https://computersciencewiki.org/index.php/Merkle_proof))
@@ -264,7 +264,7 @@ The witness that belongs to the leaf.
 
 > **setLeaf**(`index`, `leaf`): `void`
 
-Defined in: [packages/common/src/trees/RollupMerkleTree.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/trees/RollupMerkleTree.ts#L66)
+Defined in: [packages/common/src/trees/RollupMerkleTree.ts:66](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/trees/RollupMerkleTree.ts#L66)
 
 Sets the value of a leaf node at a given index to a given value.
 

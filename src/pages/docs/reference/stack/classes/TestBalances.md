@@ -10,7 +10,7 @@ title: TestBalances
 
 # Class: TestBalances
 
-Defined in: [stack/src/scripts/graphql/server.ts:51](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/stack/src/scripts/graphql/server.ts#L51)
+Defined in: [stack/src/scripts/graphql/server.ts:52](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/stack/src/scripts/graphql/server.ts#L52)
 
 Base class for runtime modules providing the necessary utilities.
 
@@ -133,7 +133,7 @@ Holds all method names that are callable throw transactions
 
 > **totalSupply**: [`State`](../../protocol/classes/State.md)\<[`UInt64`](../../library/classes/UInt64.md)\>
 
-Defined in: [stack/src/scripts/graphql/server.ts:58](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/stack/src/scripts/graphql/server.ts#L58)
+Defined in: [stack/src/scripts/graphql/server.ts:59](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/stack/src/scripts/graphql/server.ts#L59)
 
 We use `satisfies` here in order to be able to access
 presets by key in a type safe way.
@@ -226,7 +226,7 @@ Defined in: module/dist/runtime/RuntimeModule.d.ts:33
 
 > **addBalance**(`tokenId`, `address`, `balance`): `Promise`\<`void`\>
 
-Defined in: [stack/src/scripts/graphql/server.ts:69](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/stack/src/scripts/graphql/server.ts#L69)
+Defined in: [stack/src/scripts/graphql/server.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/stack/src/scripts/graphql/server.ts#L70)
 
 #### Parameters
 
@@ -330,7 +330,7 @@ Defined in: library/dist/runtime/Balances.d.ts:85
 
 > **getBalanceForUser**(`tokenId`, `address`): `Promise`\<[`Balance`](../../library/classes/Balance.md)\>
 
-Defined in: [stack/src/scripts/graphql/server.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/stack/src/scripts/graphql/server.ts#L61)
+Defined in: [stack/src/scripts/graphql/server.ts:62](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/stack/src/scripts/graphql/server.ts#L62)
 
 #### Parameters
 

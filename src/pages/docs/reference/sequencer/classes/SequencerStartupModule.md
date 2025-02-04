@@ -10,7 +10,7 @@ title: SequencerStartupModule
 
 # Class: SequencerStartupModule
 
-Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L28)
+Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L28)
 
 Lifecycle of a SequencerModule
 
@@ -30,7 +30,7 @@ start(): Executed to execute any logic required to start the module
 
 > **new SequencerStartupModule**(`flowCreator`, `protocol`, `compileTask`, `verificationKeyService`, `registrationFlow`, `compileRegistry`): [`SequencerStartupModule`](SequencerStartupModule.md)
 
-Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L32)
+Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L32)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ checks when retrieving it via the getter
 
 > `static` **presets**: [`Presets`](../../common/type-aliases/Presets.md)\<`unknown`\> = `{}`
 
-Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
+Defined in: [packages/sequencer/src/sequencer/builder/SequencerModule.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/SequencerModule.ts#L18)
 
 #### Inherited from
 
@@ -133,7 +133,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:153](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L153)
+Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:153](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L153)
 
 #### Returns
 
@@ -149,7 +149,7 @@ Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:153](htt
 
 > **compileRuntime**(`flow`): `Promise`\<`bigint`\>
 
-Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L55)
+Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:55](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L55)
 
 #### Parameters
 
@@ -189,7 +189,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:122](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L122)
+Defined in: [packages/sequencer/src/sequencer/SequencerStartupModule.ts:122](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/SequencerStartupModule.ts#L122)
 
 Start the module and all it's functionality.
 The returned Promise has to resolve after initialization,

@@ -10,7 +10,7 @@ title: MerkleWitnessDTO
 
 # Class: MerkleWitnessDTO
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L13)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L13)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:13](https://github
 
 > **new MerkleWitnessDTO**(`siblings`, `isLefts`): [`MerkleWitnessDTO`](MerkleWitnessDTO.md)
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L20)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L20)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:20](https://github
 
 > **isLefts**: `boolean`[]
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L31)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L31)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:31](https://github
 
 > **siblings**: `string`[]
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:27](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L27)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:27](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L27)
 
 ## Methods
 
@@ -56,7 +56,7 @@ Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:27](https://github
 
 > `static` **fromServiceLayerObject**(`witness`): [`MerkleWitnessDTO`](MerkleWitnessDTO.md)
 
-Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L14)
+Defined in: [api/src/graphql/modules/MerkleWitnessResolver.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MerkleWitnessResolver.ts#L14)
 
 #### Parameters
 

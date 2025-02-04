@@ -10,7 +10,7 @@ title: VerificationKeySerializer
 
 # Class: VerificationKeySerializer
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts#L5)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts#L5)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Verifi
 
 > `static` **fromJSON**(`json`): `VerificationKey`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts#L13)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts#L13)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/Verifi
 
 > `static` **toJSON**(`verificationKey`): [`VerificationKeyJSON`](../type-aliases/VerificationKeyJSON.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts#L6)
+Defined in: [packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/serializers/VerificationKeySerializer.ts#L6)
 
 #### Parameters
 

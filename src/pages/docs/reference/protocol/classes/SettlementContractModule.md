@@ -10,7 +10,7 @@ title: SettlementContractModule
 
 # Class: SettlementContractModule\<SettlementModules\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:46](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L46)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:46](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L46)
 
 Used by various module sub-types that may need to be configured
 
@@ -32,7 +32,7 @@ Used by various module sub-types that may need to be configured
 
 > **new SettlementContractModule**\<`SettlementModules`\>(`definition`): [`SettlementContractModule`](SettlementContractModule.md)\<`SettlementModules`\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:53](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L53)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:53](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L53)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:60
 
 > `optional` **protocol**: [`ProtocolEnvironment`](../interfaces/ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:94](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L94)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:94](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L94)
 
 #### Implementation of
 
@@ -101,7 +101,7 @@ Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:94](ht
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:96](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L96)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:96](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L96)
 
 ##### Returns
 
@@ -309,7 +309,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:115
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:101](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L101)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:101](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L101)
 
 This is a placeholder for individual modules to override.
 This method will be called whenever the underlying container fully
@@ -339,7 +339,7 @@ initialized
 
 > **createBridgeContract**(`address`, `tokenId`?): [`BridgeContractType`](../type-aliases/BridgeContractType.md) & `SmartContract`
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:137](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L137)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:137](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L137)
 
 #### Parameters
 
@@ -361,7 +361,7 @@ Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:137](h
 
 > **createContracts**(`addresses`): `object`
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:119](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L119)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:119](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L119)
 
 #### Parameters
 
@@ -422,7 +422,7 @@ features or module checks
 
 > **getContractClasses**(): `GetContracts`\<`SettlementModules`\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:109](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L109)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:109](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L109)
 
 #### Returns
 
@@ -673,7 +673,7 @@ Defined in: packages/common/dist/config/ModuleContainer.d.ts:129
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L105)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:105](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L105)
 
 #### Returns
 
@@ -718,7 +718,7 @@ such as only injecting other known modules.
 
 > `static` **from**\<`SettlementModules`\>(`modules`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`SettlementContractModule`](SettlementContractModule.md)\<`SettlementModules`\>\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L57)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:57](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L57)
 
 #### Type Parameters
 
@@ -740,7 +740,7 @@ Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:57](ht
 
 > `static` **fromDefaults**(): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`SettlementContractModule`](SettlementContractModule.md)\<\{ `BridgeContract`: *typeof* [`BridgeContractProtocolModule`](BridgeContractProtocolModule.md); `DispatchContract`: *typeof* [`DispatchContractProtocolModule`](DispatchContractProtocolModule.md); `SettlementContract`: *typeof* [`SettlementContractProtocolModule`](SettlementContractProtocolModule.md); \}\>\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:78](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L78)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:78](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L78)
 
 #### Returns
 
@@ -752,7 +752,7 @@ Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:78](ht
 
 > `static` **mandatoryModules**(): `object`
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L70)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L70)
 
 #### Returns
 
@@ -776,7 +776,7 @@ Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:70](ht
 
 > `static` **with**\<`AdditionalModules`\>(`additionalModules`): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`SettlementContractModule`](SettlementContractModule.md)\<`object` & `AdditionalModules`\>\>
 
-Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/SettlementContractModule.ts#L84)
+Defined in: [packages/protocol/src/settlement/SettlementContractModule.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/SettlementContractModule.ts#L84)
 
 #### Type Parameters
 

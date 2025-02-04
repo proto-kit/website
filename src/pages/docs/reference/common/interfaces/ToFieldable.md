@@ -10,7 +10,7 @@ title: ToFieldable
 
 # Interface: ToFieldable
 
-Defined in: [packages/common/src/utils.ts:105](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L105)
+Defined in: [packages/common/src/utils.ts:105](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/utils.ts#L105)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/common/src/utils.ts:105](https://github.com/proto-kit/fram
 
 > **toFields**: () => `Field`[]
 
-Defined in: [packages/common/src/utils.ts:106](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/common/src/utils.ts#L106)
+Defined in: [packages/common/src/utils.ts:106](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/common/src/utils.ts#L106)
 
 #### Returns
 

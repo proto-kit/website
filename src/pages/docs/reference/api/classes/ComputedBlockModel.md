@@ -10,7 +10,7 @@ title: ComputedBlockModel
 
 # Class: ComputedBlockModel
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L15)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/BatchStorageResolver.ts#L15)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:15](https://github.
 
 > **new ComputedBlockModel**(`blocks`, `proof`): [`ComputedBlockModel`](ComputedBlockModel.md)
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L34)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/BatchStorageResolver.ts#L34)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:34](https://github.
 
 > **blocks**: [`BlockModel`](BlockModel.md)[]
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L29)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:29](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/BatchStorageResolver.ts#L29)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:29](https://github.
 
 > **proof**: `string`
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L32)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/BatchStorageResolver.ts#L32)
 
 ## Methods
 
@@ -56,7 +56,7 @@ Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:32](https://github.
 
 > `static` **fromServiceLayerModel**(`__namedParameters`, `blocks`): [`ComputedBlockModel`](ComputedBlockModel.md)
 
-Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/BatchStorageResolver.ts#L16)
+Defined in: [api/src/graphql/modules/BatchStorageResolver.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/BatchStorageResolver.ts#L16)
 
 #### Parameters
 

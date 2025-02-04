@@ -10,7 +10,7 @@ title: UntypedStateTransition
 
 # Class: UntypedStateTransition
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L10)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L10)
 
 Generic state transition that constraints the current method circuit
 to external state, by providing a state anchor.
@@ -21,7 +21,7 @@ to external state, by providing a state anchor.
 
 > **new UntypedStateTransition**(`path`, `fromValue`, `toValue`): [`UntypedStateTransition`](UntypedStateTransition.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:35](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L35)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:35](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L35)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **fromValue**: [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L37)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L37)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **path**: `Field`
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L36)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L36)
 
 ***
 
@@ -63,7 +63,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **toValue**: [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:38](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L38)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:38](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L38)
 
 ## Accessors
 
@@ -73,7 +73,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **get** **from**(): [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:41](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L41)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:41](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L41)
 
 ##### Returns
 
@@ -87,7 +87,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **get** **to**(): [`UntypedOption`](UntypedOption.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:47](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L47)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:47](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L47)
 
 ##### Returns
 
@@ -99,7 +99,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **toJSON**(): `object`
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L63)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L63)
 
 #### Returns
 
@@ -147,7 +147,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > **toProvable**(): [`ProvableStateTransition`](../../protocol/classes/ProvableStateTransition.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:55](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L55)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:55](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L55)
 
 Converts a StateTransition to a ProvableStateTransition,
 while enforcing the 'from' property to be 'Some' in all cases.
@@ -162,7 +162,7 @@ while enforcing the 'from' property to be 'Some' in all cases.
 
 > `static` **fromJSON**(`__namedParameters`): [`UntypedStateTransition`](UntypedStateTransition.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L19)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L19)
 
 #### Parameters
 
@@ -214,7 +214,7 @@ Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTran
 
 > `static` **fromStateTransition**\<`Value`\>(`st`): [`UntypedStateTransition`](UntypedStateTransition.md)
 
-Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L11)
+Defined in: [packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/helpers/UntypedStateTransition.ts#L11)
 
 #### Type Parameters
 

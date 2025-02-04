@@ -10,7 +10,7 @@ title: StateMap
 
 # Class: StateMap\<KeyType, ValueType\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L12)
+Defined in: [packages/protocol/src/state/StateMap.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L12)
 
 Map-like wrapper for state
 
@@ -30,7 +30,7 @@ Map-like wrapper for state
 
 > **new StateMap**\<`KeyType`, `ValueType`\>(`keyType`, `valueType`): [`StateMap`](StateMap.md)\<`KeyType`, `ValueType`\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L30)
+Defined in: [packages/protocol/src/state/StateMap.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L30)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/protocol/src/state/StateMap.ts:30](https://github.com/prot
 
 > **keyType**: `FlexibleProvablePure`\<`KeyType`\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L31)
+Defined in: [packages/protocol/src/state/StateMap.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L31)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [packages/protocol/src/state/StateMap.ts:31](https://github.com/prot
 
 > `optional` **path**: `Field`
 
-Defined in: [packages/protocol/src/state/State.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L14)
+Defined in: [packages/protocol/src/state/State.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/State.ts#L14)
 
 #### Inherited from
 
@@ -76,7 +76,7 @@ Defined in: [packages/protocol/src/state/State.ts:14](https://github.com/proto-k
 
 > `optional` **stateServiceProvider**: [`StateServiceProvider`](StateServiceProvider.md)
 
-Defined in: [packages/protocol/src/state/State.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L26)
+Defined in: [packages/protocol/src/state/State.ts:26](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/State.ts#L26)
 
 #### Inherited from
 
@@ -88,7 +88,7 @@ Defined in: [packages/protocol/src/state/State.ts:26](https://github.com/proto-k
 
 > **valueType**: `FlexibleProvablePure`\<`ValueType`\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L32)
+Defined in: [packages/protocol/src/state/StateMap.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L32)
 
 ## Methods
 
@@ -96,7 +96,7 @@ Defined in: [packages/protocol/src/state/StateMap.ts:32](https://github.com/prot
 
 > **get**(`key`): `Promise`\<[`Option`](Option.md)\<`ValueType`\>\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:48](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L48)
+Defined in: [packages/protocol/src/state/StateMap.ts:48](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L48)
 
 Obtains a value for the provided key in the current state map.
 
@@ -120,7 +120,7 @@ Value for the provided key.
 
 > **getPath**(`key`): `Field`
 
-Defined in: [packages/protocol/src/state/StateMap.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L37)
+Defined in: [packages/protocol/src/state/StateMap.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L37)
 
 #### Parameters
 
@@ -138,7 +138,7 @@ Defined in: [packages/protocol/src/state/StateMap.ts:37](https://github.com/prot
 
 > **hasPathOrFail**(): `asserts this is { path: Path }`
 
-Defined in: [packages/protocol/src/state/State.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L16)
+Defined in: [packages/protocol/src/state/State.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/State.ts#L16)
 
 #### Returns
 
@@ -154,7 +154,7 @@ Defined in: [packages/protocol/src/state/State.ts:16](https://github.com/proto-k
 
 > **hasStateServiceOrFail**(): `asserts this is { stateServiceProvider: StateServiceProvider }`
 
-Defined in: [packages/protocol/src/state/State.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/State.ts#L28)
+Defined in: [packages/protocol/src/state/State.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/State.ts#L28)
 
 #### Returns
 
@@ -170,7 +170,7 @@ Defined in: [packages/protocol/src/state/State.ts:28](https://github.com/proto-k
 
 > **set**(`key`, `value`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:64](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L64)
+Defined in: [packages/protocol/src/state/StateMap.ts:64](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L64)
 
 Sets a value for the given key in the current state map.
 
@@ -198,7 +198,7 @@ Value to be stored under the given key
 
 > `static` **from**\<`KeyType`, `ValueType`\>(`keyType`, `valueType`): [`StateMap`](StateMap.md)\<`KeyType`, `ValueType`\>
 
-Defined in: [packages/protocol/src/state/StateMap.ts:23](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/state/StateMap.ts#L23)
+Defined in: [packages/protocol/src/state/StateMap.ts:23](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/state/StateMap.ts#L23)
 
 Create a new state map with the given key and value types
 

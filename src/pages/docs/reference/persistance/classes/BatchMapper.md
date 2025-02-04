@@ -10,7 +10,7 @@ title: BatchMapper
 
 # Class: BatchMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BatchMapper.ts#L9)
+Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BatchMapper.ts#L9)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:9](
 
 > **mapIn**(`input`): [`Batch`](../../sequencer/interfaces/Batch.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BatchMapper.ts#L12)
+Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BatchMapper.ts#L12)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:12]
 
 > **mapOut**(`input`): \[\{ `height`: `number`; `proof`: `JsonValue`; `settlementTransactionHash`: `null` \| `string`; \}, `string`[]\]
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BatchMapper.ts#L20)
+Defined in: [packages/persistance/src/services/prisma/mappers/BatchMapper.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BatchMapper.ts#L20)
 
 #### Parameters
 

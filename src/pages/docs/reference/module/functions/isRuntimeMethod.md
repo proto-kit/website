@@ -12,7 +12,7 @@ title: isRuntimeMethod
 
 > **isRuntimeMethod**(`target`, `propertyKey`): `boolean`
 
-Defined in: [module/src/method/runtimeMethod.ts:182](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/method/runtimeMethod.ts#L182)
+Defined in: [module/src/method/runtimeMethod.ts:185](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/method/runtimeMethod.ts#L185)
 
 Checks the metadata of the provided runtime module and its method,
 to see if it has been decorated with @runtimeMethod()

@@ -10,7 +10,7 @@ title: InMemorySequencerModules
 
 # Class: InMemorySequencerModules
 
-Defined in: [packages/library/src/sequencer/InMemorySequencerModules.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/InMemorySequencerModules.ts#L31)
+Defined in: [packages/library/src/sequencer/InMemorySequencerModules.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/InMemorySequencerModules.ts#L33)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ Defined in: [packages/library/src/sequencer/InMemorySequencerModules.ts:31](http
 
 > `static` **with**\<`SequencerModules`\>(`additionalModules`): `object` & `SequencerModules`
 
-Defined in: [packages/library/src/sequencer/InMemorySequencerModules.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/sequencer/InMemorySequencerModules.ts#L32)
+Defined in: [packages/library/src/sequencer/InMemorySequencerModules.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/sequencer/InMemorySequencerModules.ts#L34)
 
 #### Type Parameters
 

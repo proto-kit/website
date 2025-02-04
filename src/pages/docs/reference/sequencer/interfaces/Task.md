@@ -10,7 +10,7 @@ title: Task
 
 # Interface: Task\<Input, Result\>
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:1](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L1)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:1](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L1)
 
 ## Type Parameters
 
@@ -24,7 +24,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:1](https://github.com/pr
 
 > **compute**: (`input`) => `Promise`\<`Result`\>
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L6)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L6)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:6](https://github.com/pr
 
 > **inputSerializer**: () => [`TaskSerializer`](TaskSerializer.md)\<`Input`\>
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L8)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L8)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:8](https://github.com/pr
 
 > **name**: `string`
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:2](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L2)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:2](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L2)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:2](https://github.com/pr
 
 > **prepare**: () => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L4)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:4](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L4)
 
 #### Returns
 
@@ -74,7 +74,7 @@ Defined in: [packages/sequencer/src/worker/flow/Task.ts:4](https://github.com/pr
 
 > **resultSerializer**: () => [`TaskSerializer`](TaskSerializer.md)\<`Result`\>
 
-Defined in: [packages/sequencer/src/worker/flow/Task.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/flow/Task.ts#L9)
+Defined in: [packages/sequencer/src/worker/flow/Task.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/flow/Task.ts#L9)
 
 #### Returns
 

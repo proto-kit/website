@@ -12,4 +12,4 @@ title: TaskWorkerModulesWithoutSettlement
 
 > **TaskWorkerModulesWithoutSettlement**: [`ReturnType`](../../protocol/type-aliases/ReturnType.md)\<*typeof* [`withoutSettlement`](../classes/VanillaTaskWorkerModules.md#withoutsettlement)\>
 
-Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:168](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L168)
+Defined in: [packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts:169](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/worker/LocalTaskWorkerModule.ts#L169)

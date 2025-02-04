@@ -10,7 +10,7 @@ title: StateTransitionProvable
 
 # Interface: StateTransitionProvable
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L25)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:25](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L25)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvabl
 
 > **merge**: (`publicInput`, `proof1`, `proof2`) => `Promise`\<[`StateTransitionProverPublicOutput`](../classes/StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:36](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L36)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:36](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L36)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvabl
 
 > **runBatch**: (`publicInput`, `batch`) => `Promise`\<[`StateTransitionProverPublicOutput`](../classes/StateTransitionProverPublicOutput.md)\>
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L31)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L31)
 
 #### Parameters
 

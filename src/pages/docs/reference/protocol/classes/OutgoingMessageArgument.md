@@ -10,7 +10,7 @@ title: OutgoingMessageArgument
 
 # Class: OutgoingMessageArgument
 
-Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L8)
+Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L8)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **value**: [`Withdrawal`](Withdrawal.md) = `Withdrawal`
 
-Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L10)
+Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L10)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.t
 
 > **witness**: [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md) = `RollupMerkleTreeWitness`
 
-Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L9)
+Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L9)
 
 #### Inherited from
 
@@ -474,7 +474,7 @@ Convert provable type to a normal JS type.
 
 > `static` **dummy**(): [`OutgoingMessageArgument`](OutgoingMessageArgument.md)
 
-Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:12](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L12)
+Defined in: [packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts:12](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/settlement/messages/OutgoingMessageArgument.ts#L12)
 
 #### Returns
 

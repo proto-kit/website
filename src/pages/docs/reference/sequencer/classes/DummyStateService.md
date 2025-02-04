@@ -10,7 +10,7 @@ title: DummyStateService
 
 # Class: DummyStateService
 
-Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/DummyStateService.ts#L5)
+Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/state/DummyStateService.ts#L5)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:5](https://
 
 > **get**(`key`): `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/DummyStateService.ts#L6)
+Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/state/DummyStateService.ts#L6)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:6](https://
 
 > **set**(`key`, `value`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/state/state/DummyStateService.ts#L10)
+Defined in: [packages/sequencer/src/state/state/DummyStateService.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/state/state/DummyStateService.ts#L10)
 
 #### Parameters
 

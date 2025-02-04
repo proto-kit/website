@@ -10,7 +10,7 @@ title: RuntimeFeeAnalyzerService
 
 # Class: RuntimeFeeAnalyzerService
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L56)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:56](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L56)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new RuntimeFeeAnalyzerService**(`runtime`): [`RuntimeFeeAnalyzerService`](RuntimeFeeAnalyzerService.md)
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:67](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L67)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:67](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L67)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ checks when retrieving it via the getter
 
 > **runtime**: [`Runtime`](../../module/classes/Runtime.md)\<[`RuntimeModulesRecord`](../../module/type-aliases/RuntimeModulesRecord.md)\>
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L68)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:68](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L68)
 
 ## Accessors
 
@@ -125,7 +125,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **getFeeConfig**(`methodId`): [`MethodFeeConfigData`](MethodFeeConfigData.md)
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:169](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L169)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:169](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L169)
 
 #### Parameters
 
@@ -143,7 +143,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:169](https:
 
 > **getFeeTree**(): `object`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:161](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L161)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:161](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L161)
 
 #### Returns
 
@@ -167,7 +167,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:161](https:
 
 > **getRoot**(): `bigint`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:185](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L185)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:185](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L185)
 
 #### Returns
 
@@ -179,7 +179,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:185](https:
 
 > **getWitness**(`methodId`): [`AbstractMerkleWitness`](../../common/interfaces/AbstractMerkleWitness.md)
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:180](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L180)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:180](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L180)
 
 #### Parameters
 
@@ -197,7 +197,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:180](https:
 
 > **initializeFeeTree**(): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:73](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L73)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:73](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L73)
 
 #### Returns
 
@@ -209,7 +209,7 @@ Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:73](https:/
 
 > `static` **getWitnessType**(): [`TypedClass`](../../common/type-aliases/TypedClass.md)\<[`AbstractMerkleWitness`](../../common/interfaces/AbstractMerkleWitness.md)\> & *typeof* `StructTemplate` & `object`
 
-Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:57](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L57)
+Defined in: [packages/library/src/hooks/RuntimeFeeAnalyzerService.ts:57](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/hooks/RuntimeFeeAnalyzerService.ts#L57)
 
 #### Returns
 

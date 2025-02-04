@@ -10,7 +10,7 @@ title: ListenerList
 
 # Class: ListenerList\<T\>
 
-Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:3](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/ListenerList.ts#L3)
+Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:3](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/ListenerList.ts#L3)
 
 ## Type Parameters
 
@@ -32,7 +32,7 @@ Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:3](https://gith
 
 > **executeListeners**(`payload`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/ListenerList.ts#L15)
+Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/ListenerList.ts#L15)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:15](https://git
 
 > **getListeners**(): `object`[]
 
-Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/ListenerList.ts#L11)
+Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/ListenerList.ts#L11)
 
 #### Returns
 
@@ -62,7 +62,7 @@ Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:11](https://git
 
 > **pushListener**(`listener`): `number`
 
-Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/ListenerList.ts#L22)
+Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:22](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/ListenerList.ts#L22)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:22](https://git
 
 > **removeListener**(`listenerId`): `void`
 
-Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:34](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/worker/queue/ListenerList.ts#L34)
+Defined in: [packages/sequencer/src/worker/queue/ListenerList.ts:34](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/worker/queue/ListenerList.ts#L34)
 
 #### Parameters
 

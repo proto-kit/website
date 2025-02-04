@@ -10,7 +10,7 @@ title: Database
 
 # Interface: Database
 
-Defined in: [packages/sequencer/src/storage/Database.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/Database.ts#L5)
+Defined in: [packages/sequencer/src/storage/Database.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/Database.ts#L5)
 
 This is an abstract class for creating DependencyFactories, a pattern
 to bundle multiple smaller services into one and register them into the
@@ -33,7 +33,7 @@ deps that are necessary for the sequencer to work.
 
 > **close**: () => `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/sequencer/builder/Closeable.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/sequencer/builder/Closeable.ts#L4)
+Defined in: [packages/sequencer/src/sequencer/builder/Closeable.ts:4](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/sequencer/builder/Closeable.ts#L4)
 
 #### Returns
 
@@ -49,7 +49,7 @@ Defined in: [packages/sequencer/src/sequencer/builder/Closeable.ts:4](https://gi
 
 > **dependencies**: () => [`StorageDependencyMinimumDependencies`](StorageDependencyMinimumDependencies.md)
 
-Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:31](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/StorageDependencyFactory.ts#L31)
+Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:31](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/StorageDependencyFactory.ts#L31)
 
 #### Returns
 
@@ -65,7 +65,7 @@ Defined in: [packages/sequencer/src/storage/StorageDependencyFactory.ts:31](http
 
 > **executeInTransaction**(`f`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/Database.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/Database.ts#L13)
+Defined in: [packages/sequencer/src/storage/Database.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/Database.ts#L13)
 
 #### Parameters
 
@@ -83,7 +83,7 @@ Defined in: [packages/sequencer/src/storage/Database.ts:13](https://github.com/p
 
 > **pruneDatabase**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/Database.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/Database.ts#L11)
+Defined in: [packages/sequencer/src/storage/Database.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/Database.ts#L11)
 
 Prunes all data from the database connection.
 Note: This function should only be called immediately at startup,

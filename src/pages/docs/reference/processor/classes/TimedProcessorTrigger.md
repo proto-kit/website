@@ -10,7 +10,7 @@ title: TimedProcessorTrigger
 
 # Class: TimedProcessorTrigger
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L15)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L15)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new TimedProcessorTrigger**(`blockStorage`, `blockFetching`, `handlersExecutor`): [`TimedProcessorTrigger`](TimedProcessorTrigger.md)
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L18)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L18)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:18](https:
 
 > **blockFetching**: [`BlockFetching`](BlockFetching.md)
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L20)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L20)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:20](https:
 
 > **blockStorage**: `BlockStorage`
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:19](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L19)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:19](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L19)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:19](https:
 
 > **catchingUp**: `boolean` = `false`
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L16)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L16)
 
 ***
 
@@ -93,7 +93,7 @@ checks when retrieving it via the getter
 
 > **handlersExecutor**: [`HandlersExecutor`](HandlersExecutor.md)\<`BasePrismaClient`, [`HandlersRecord`](../interfaces/HandlersRecord.md)\<`BasePrismaClient`\>\>
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:22](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L22)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:22](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L22)
 
 ## Accessors
 
@@ -135,7 +135,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **catchUp**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L61)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:61](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L61)
 
 #### Returns
 
@@ -169,7 +169,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **processNextBlock**(): `Promise`\<`boolean`\>
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L30)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L30)
 
 #### Returns
 
@@ -181,7 +181,7 @@ Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:30](https:
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/triggers/TimedProcessorTrigger.ts#L77)
+Defined in: [packages/processor/src/triggers/TimedProcessorTrigger.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/triggers/TimedProcessorTrigger.ts#L77)
 
 #### Returns
 

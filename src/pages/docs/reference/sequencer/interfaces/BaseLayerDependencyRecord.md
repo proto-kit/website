@@ -10,7 +10,7 @@ title: BaseLayerDependencyRecord
 
 # Interface: BaseLayerDependencyRecord
 
-Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/BaseLayer.ts#L10)
+Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/BaseLayer.ts#L10)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:10](https://
 
 > **IncomingMessageAdapter**: [`DependencyDeclaration`](../../common/type-aliases/DependencyDeclaration.md)\<[`IncomingMessageAdapter`](IncomingMessageAdapter.md)\>
 
-Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/BaseLayer.ts#L11)
+Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/BaseLayer.ts#L11)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:11](https://
 
 > **OutgoingMessageQueue**: [`DependencyDeclaration`](../../common/type-aliases/DependencyDeclaration.md)\<[`OutgoingMessageQueue`](OutgoingMessageQueue.md)\>
 
-Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:13](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/baselayer/BaseLayer.ts#L13)
+Defined in: [packages/sequencer/src/protocol/baselayer/BaseLayer.ts:13](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/baselayer/BaseLayer.ts#L13)

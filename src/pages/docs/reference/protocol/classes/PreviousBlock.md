@@ -10,7 +10,7 @@ title: PreviousBlock
 
 # Class: PreviousBlock
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L8)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/network/NetworkState.ts#L8)
 
 ## Extends
 
@@ -46,7 +46,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **rootHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/model/network/NetworkState.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/model/network/NetworkState.ts#L9)
+Defined in: [packages/protocol/src/model/network/NetworkState.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/model/network/NetworkState.ts#L9)
 
 #### Inherited from
 

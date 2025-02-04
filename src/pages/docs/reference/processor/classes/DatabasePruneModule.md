@@ -10,7 +10,7 @@ title: DatabasePruneModule
 
 # Class: DatabasePruneModule
 
-Defined in: [packages/processor/src/storage/DatabasePruneModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/DatabasePruneModule.ts#L14)
+Defined in: [packages/processor/src/storage/DatabasePruneModule.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/storage/DatabasePruneModule.ts#L14)
 
 Used by various module sub-types that may need to be configured
 
@@ -24,7 +24,7 @@ Used by various module sub-types that may need to be configured
 
 > **new DatabasePruneModule**(`database`): [`DatabasePruneModule`](DatabasePruneModule.md)
 
-Defined in: [packages/processor/src/storage/DatabasePruneModule.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/DatabasePruneModule.ts#L15)
+Defined in: [packages/processor/src/storage/DatabasePruneModule.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/storage/DatabasePruneModule.ts#L15)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/processor/src/storage/DatabasePruneModule.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/processor/src/storage/DatabasePruneModule.ts#L21)
+Defined in: [packages/processor/src/storage/DatabasePruneModule.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/processor/src/storage/DatabasePruneModule.ts#L21)
 
 #### Returns
 

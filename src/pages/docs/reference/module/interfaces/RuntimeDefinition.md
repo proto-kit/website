@@ -10,7 +10,7 @@ title: RuntimeDefinition
 
 # Interface: RuntimeDefinition\<Modules\>
 
-Defined in: [module/src/runtime/Runtime.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L72)
+Defined in: [module/src/runtime/Runtime.ts:72](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L72)
 
 Definition / required arguments for the Runtime class
 
@@ -24,7 +24,7 @@ Definition / required arguments for the Runtime class
 
 > `optional` **config**: [`ModulesConfig`](../../common/type-aliases/ModulesConfig.md)\<`Modules`\>
 
-Defined in: [module/src/runtime/Runtime.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L74)
+Defined in: [module/src/runtime/Runtime.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L74)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [module/src/runtime/Runtime.ts:74](https://github.com/proto-kit/fram
 
 > **modules**: `Modules`
 
-Defined in: [module/src/runtime/Runtime.ts:73](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L73)
+Defined in: [module/src/runtime/Runtime.ts:73](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L73)

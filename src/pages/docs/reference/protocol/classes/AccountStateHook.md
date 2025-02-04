@@ -10,7 +10,7 @@ title: AccountStateHook
 
 # Class: AccountStateHook
 
-Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:15](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/hooks/AccountStateHook.ts#L15)
+Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:15](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/hooks/AccountStateHook.ts#L15)
 
 ## Extends
 
@@ -36,7 +36,7 @@ Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:15](https://github.
 
 > **accountState**: [`StateMap`](StateMap.md)\<`PublicKey`, [`AccountState`](AccountState.md)\>
 
-Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/hooks/AccountStateHook.ts#L16)
+Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/hooks/AccountStateHook.ts#L16)
 
 ***
 
@@ -59,7 +59,7 @@ checks when retrieving it via the getter
 
 > `optional` **name**: `string`
 
-Defined in: [packages/protocol/src/protocol/TransitioningProtocolModule.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/TransitioningProtocolModule.ts#L11)
+Defined in: [packages/protocol/src/protocol/TransitioningProtocolModule.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/TransitioningProtocolModule.ts#L11)
 
 #### Inherited from
 
@@ -71,7 +71,7 @@ Defined in: [packages/protocol/src/protocol/TransitioningProtocolModule.ts:11](h
 
 > `optional` **protocol**: [`ProtocolEnvironment`](../interfaces/ProtocolEnvironment.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L14)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L14)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:14](https://github
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L16)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:16](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L16)
 
 ##### Returns
 
@@ -135,7 +135,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **create**(`childContainerProvider`): `void`
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L20)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L20)
 
 #### Parameters
 
@@ -157,7 +157,7 @@ Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:20](https://github
 
 > **onTransaction**(`__namedParameters`): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/hooks/AccountStateHook.ts#L21)
+Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/hooks/AccountStateHook.ts#L21)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Defined in: [packages/protocol/src/hooks/AccountStateHook.ts:21](https://github.
 
 > **start**(): `Promise`\<`void`\>
 
-Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/protocol/ProtocolModule.ts#L24)
+Defined in: [packages/protocol/src/protocol/ProtocolModule.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/protocol/ProtocolModule.ts#L24)
 
 #### Returns
 

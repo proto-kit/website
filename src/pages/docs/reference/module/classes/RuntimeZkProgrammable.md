@@ -10,7 +10,7 @@ title: RuntimeZkProgrammable
 
 # Class: RuntimeZkProgrammable\<Modules\>
 
-Defined in: [module/src/runtime/Runtime.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L77)
+Defined in: [module/src/runtime/Runtime.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L77)
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: [module/src/runtime/Runtime.ts:77](https://github.com/proto-kit/fram
 
 > **new RuntimeZkProgrammable**\<`Modules`\>(`runtime`): [`RuntimeZkProgrammable`](RuntimeZkProgrammable.md)\<`Modules`\>
 
-Defined in: [module/src/runtime/Runtime.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L80)
+Defined in: [module/src/runtime/Runtime.ts:80](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L80)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [module/src/runtime/Runtime.ts:80](https://github.com/proto-kit/fram
 
 > **runtime**: [`Runtime`](Runtime.md)\<`Modules`\>
 
-Defined in: [module/src/runtime/Runtime.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L80)
+Defined in: [module/src/runtime/Runtime.ts:80](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L80)
 
 ## Accessors
 
@@ -58,7 +58,7 @@ Defined in: [module/src/runtime/Runtime.ts:80](https://github.com/proto-kit/fram
 
 > **get** **areProofsEnabled**(): `undefined` \| [`AreProofsEnabled`](../../common/interfaces/AreProofsEnabled.md)
 
-Defined in: [module/src/runtime/Runtime.ts:84](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L84)
+Defined in: [module/src/runtime/Runtime.ts:84](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L84)
 
 ##### Returns
 
@@ -114,7 +114,7 @@ Defined in: common/dist/zkProgrammable/ZkProgrammable.d.ts:35
 
 > **zkProgramFactory**(): [`PlainZkProgram`](../../common/interfaces/PlainZkProgram.md)\<[`MethodPublicOutput`](../../protocol/classes/MethodPublicOutput.md)\>[]
 
-Defined in: [module/src/runtime/Runtime.ts:88](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/module/src/runtime/Runtime.ts#L88)
+Defined in: [module/src/runtime/Runtime.ts:88](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/module/src/runtime/Runtime.ts#L88)
 
 #### Returns
 

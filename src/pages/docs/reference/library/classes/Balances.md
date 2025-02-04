@@ -10,7 +10,7 @@ title: Balances
 
 # Class: Balances\<Config\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:45](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L45)
+Defined in: [packages/library/src/runtime/Balances.ts:45](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L45)
 
 Base class for runtime modules providing the necessary utilities.
 
@@ -52,7 +52,7 @@ Defined in: packages/module/dist/runtime/RuntimeModule.d.ts:31
 
 > **balances**: [`StateMap`](../../protocol/classes/StateMap.md)\<[`BalancesKey`](BalancesKey.md), [`Balance`](Balance.md)\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:49](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L49)
+Defined in: [packages/library/src/runtime/Balances.ts:49](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L49)
 
 #### Implementation of
 
@@ -227,7 +227,7 @@ Defined in: packages/module/dist/runtime/RuntimeModule.d.ts:33
 
 > **burn**(`tokenId`, `address`, `amount`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:99](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L99)
+Defined in: [packages/library/src/runtime/Balances.ts:99](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L99)
 
 #### Parameters
 
@@ -275,7 +275,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **getBalance**(`tokenId`, `address`): `Promise`\<[`Balance`](Balance.md)\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:54](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L54)
+Defined in: [packages/library/src/runtime/Balances.ts:54](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L54)
 
 #### Parameters
 
@@ -313,7 +313,7 @@ Defined in: packages/module/dist/runtime/RuntimeModule.d.ts:32
 
 > **mint**(`tokenId`, `address`, `amount`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:93](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L93)
+Defined in: [packages/library/src/runtime/Balances.ts:93](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L93)
 
 #### Parameters
 
@@ -339,7 +339,7 @@ Defined in: [packages/library/src/runtime/Balances.ts:93](https://github.com/pro
 
 > **setBalance**(`tokenId`, `address`, `amount`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L63)
+Defined in: [packages/library/src/runtime/Balances.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L63)
 
 #### Parameters
 
@@ -365,7 +365,7 @@ Defined in: [packages/library/src/runtime/Balances.ts:63](https://github.com/pro
 
 > **transfer**(`tokenId`, `from`, `to`, `amount`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:72](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L72)
+Defined in: [packages/library/src/runtime/Balances.ts:72](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L72)
 
 #### Parameters
 
@@ -399,7 +399,7 @@ Defined in: [packages/library/src/runtime/Balances.ts:72](https://github.com/pro
 
 > **transferSigned**(`tokenId`, `from`, `to`, `amount`): `Promise`\<`void`\>
 
-Defined in: [packages/library/src/runtime/Balances.ts:107](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/library/src/runtime/Balances.ts#L107)
+Defined in: [packages/library/src/runtime/Balances.ts:107](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/library/src/runtime/Balances.ts#L107)
 
 #### Parameters
 

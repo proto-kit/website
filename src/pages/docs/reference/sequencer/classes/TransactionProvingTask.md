@@ -10,7 +10,7 @@ title: TransactionProvingTask
 
 # Class: TransactionProvingTask
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L50)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:50](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L50)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new TransactionProvingTask**(`protocol`, `runtime`, `stateServiceProvider`, `executionContext`, `compileRegistry`): [`TransactionProvingTask`](TransactionProvingTask.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L63)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L63)
 
 #### Parameters
 
@@ -81,7 +81,7 @@ checks when retrieving it via the getter
 
 > **name**: `string` = `"block"`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:61](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L61)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:61](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L61)
 
 #### Implementation of
 
@@ -127,7 +127,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compute**(`input`): `Promise`\<[`BlockProof`](../../protocol/type-aliases/BlockProof.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:114](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L114)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:114](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L114)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **inputSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`TransactionProvingTaskParameters`](../type-aliases/TransactionProvingTaskParameters.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:79](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L79)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:79](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L79)
 
 #### Returns
 
@@ -187,7 +187,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProving
 
 > **prepare**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:144](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L144)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:144](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L144)
 
 #### Returns
 
@@ -203,7 +203,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProving
 
 > **resultSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`BlockProof`](../../protocol/type-aliases/BlockProof.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:92](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L92)
+Defined in: [packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts:92](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/TransactionProvingTask.ts#L92)
 
 #### Returns
 

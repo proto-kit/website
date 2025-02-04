@@ -10,7 +10,7 @@ title: TransactionObject
 
 # Class: TransactionObject
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:39](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L39)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:39](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L39)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:39](https://github.com/p
 
 > **new TransactionObject**(`hash`, `methodId`, `sender`, `nonce`, `signature`, `argsFields`, `auxiliaryData`, `isMessage`): [`TransactionObject`](TransactionObject.md)
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:88](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L88)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:88](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L88)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:88](https://github.com/p
 
 > **argsFields**: `string`[]
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:80](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L80)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:80](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L80)
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:80](https://github.com/p
 
 > **auxiliaryData**: `string`[]
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:83](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L83)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:83](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L83)
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:83](https://github.com/p
 
 > **hash**: `string`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:63](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L63)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:63](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L63)
 
 ***
 
@@ -88,7 +88,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:63](https://github.com/p
 
 > **isMessage**: `boolean`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:86](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L86)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:86](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L86)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:86](https://github.com/p
 
 > **methodId**: `string`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:67](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L67)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:67](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L67)
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:67](https://github.com/p
 
 > **nonce**: `string`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:74](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L74)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:74](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L74)
 
 ***
 
@@ -112,7 +112,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:74](https://github.com/p
 
 > **sender**: `string`
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:70](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L70)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:70](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L70)
 
 ***
 
@@ -120,7 +120,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:70](https://github.com/p
 
 > **signature**: [`Signature`](Signature.md)
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:77](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L77)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:77](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L77)
 
 ## Methods
 
@@ -128,7 +128,7 @@ Defined in: [api/src/graphql/modules/MempoolResolver.ts:77](https://github.com/p
 
 > `static` **fromServiceLayerModel**(`pt`): [`TransactionObject`](TransactionObject.md)
 
-Defined in: [api/src/graphql/modules/MempoolResolver.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/api/src/graphql/modules/MempoolResolver.ts#L40)
+Defined in: [api/src/graphql/modules/MempoolResolver.ts:40](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/api/src/graphql/modules/MempoolResolver.ts#L40)
 
 #### Parameters
 

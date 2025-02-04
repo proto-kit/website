@@ -10,7 +10,7 @@ title: InMemoryBlockStorage
 
 # Class: InMemoryBlockStorage
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:18](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L18)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:18](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L18)
 
 ## Implements
 
@@ -24,7 +24,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:18]
 
 > **new InMemoryBlockStorage**(`batchStorage`): [`InMemoryBlockStorage`](InMemoryBlockStorage.md)
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:21](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L21)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:21](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L21)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:21]
 
 > **getBlock**(`hash`): `Promise`\<`undefined` \| [`Block`](../interfaces/Block.md)\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:112](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L112)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:112](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L112)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:112
 
 > **getBlockAt**(`height`): `Promise`\<`undefined` \| [`Block`](../interfaces/Block.md)\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:29](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L29)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:29](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L29)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:29]
 
 > **getCurrentBlockHeight**(): `Promise`\<`number`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:33](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L33)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:33](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L33)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:33]
 
 > **getLatestBlock**(): `Promise`\<`undefined` \| [`BlockWithResult`](../interfaces/BlockWithResult.md)\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:52](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L52)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:52](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L52)
 
 #### Returns
 
@@ -118,7 +118,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:52]
 
 > **getLatestBlockAndResult**(): `Promise`\<`undefined` \| [`BlockWithMaybeResult`](../interfaces/BlockWithMaybeResult.md)\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:37](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L37)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:37](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L37)
 
 #### Returns
 
@@ -134,7 +134,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:37]
 
 > **getNewBlocks**(): `Promise`\<[`BlockWithPreviousResult`](../interfaces/BlockWithPreviousResult.md)[]\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:68](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L68)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:68](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L68)
 
 #### Returns
 
@@ -150,7 +150,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:68]
 
 > **getNewestResult**(): `Promise`\<`undefined` \| [`BlockResult`](../interfaces/BlockResult.md)\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:104](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L104)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:104](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L104)
 
 #### Returns
 
@@ -162,7 +162,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:104
 
 > **pushBlock**(`block`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:100](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L100)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:100](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L100)
 
 #### Parameters
 
@@ -184,7 +184,7 @@ Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:100
 
 > **pushResult**(`result`): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:108](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L108)
+Defined in: [packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts:108](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/storage/inmemory/InMemoryBlockStorage.ts#L108)
 
 #### Parameters
 

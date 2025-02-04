@@ -10,7 +10,7 @@ title: StateTransitionReductionTask
 
 # Class: StateTransitionReductionTask
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L24)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L24)
 
 Used by various module sub-types that may need to be configured
 
@@ -28,7 +28,7 @@ Used by various module sub-types that may need to be configured
 
 > **new StateTransitionReductionTask**(`protocol`, `executionContext`, `compileRegistry`): [`StateTransitionReductionTask`](StateTransitionReductionTask.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:32](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L32)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:32](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L32)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ checks when retrieving it via the getter
 
 > **name**: `string` = `"stateTransitionReduction"`
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:30](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L30)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:30](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L30)
 
 #### Implementation of
 
@@ -85,7 +85,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionRed
 
 > `protected` `readonly` **stateTransitionProver**: [`StateTransitionProvable`](../../protocol/interfaces/StateTransitionProvable.md)
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:28](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L28)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:28](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L28)
 
 ## Accessors
 
@@ -127,7 +127,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:19
 
 > **compute**(`input`): `Promise`\<[`StateTransitionProof`](../../protocol/type-aliases/StateTransitionProof.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:56](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L56)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:56](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L56)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: packages/common/dist/config/ConfigurableModule.d.ts:20
 
 > **inputSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`PairTuple`](../type-aliases/PairTuple.md)\<[`StateTransitionProof`](../../protocol/type-aliases/StateTransitionProof.md)\>\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:44](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L44)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:44](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L44)
 
 #### Returns
 
@@ -187,7 +187,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionRed
 
 > **prepare**(): `Promise`\<`void`\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:66](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L66)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:66](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L66)
 
 #### Returns
 
@@ -203,7 +203,7 @@ Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionRed
 
 > **resultSerializer**(): [`TaskSerializer`](../interfaces/TaskSerializer.md)\<[`StateTransitionProof`](../../protocol/type-aliases/StateTransitionProof.md)\>
 
-Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:50](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L50)
+Defined in: [packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts:50](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/protocol/production/tasks/StateTransitionReductionTask.ts#L50)
 
 #### Returns
 

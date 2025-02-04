@@ -10,7 +10,7 @@ title: WithdrawalEvent
 
 # Class: WithdrawalEvent
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:24](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L24)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:24](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L24)
 
 ## Extends
 
@@ -50,7 +50,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **key**: [`WithdrawalKey`](WithdrawalKey.md) = `WithdrawalKey`
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:25](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L25)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:25](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L25)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:25](h
 
 > **value**: [`Withdrawal`](../../protocol/classes/Withdrawal.md) = `Withdrawal`
 
-Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:26](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L26)
+Defined in: [packages/sequencer/src/settlement/messages/WithdrawalQueue.ts:26](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/settlement/messages/WithdrawalQueue.ts#L26)
 
 #### Inherited from
 

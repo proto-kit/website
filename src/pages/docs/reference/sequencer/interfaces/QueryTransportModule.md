@@ -10,7 +10,7 @@ title: QueryTransportModule
 
 # Interface: QueryTransportModule
 
-Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:4](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryTransportModule.ts#L4)
+Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:4](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/helpers/query/QueryTransportModule.ts#L4)
 
 ## Properties
 
@@ -18,7 +18,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:4](htt
 
 > **get**: (`key`) => `Promise`\<`undefined` \| `Field`[]\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:5](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryTransportModule.ts#L5)
+Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:5](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/helpers/query/QueryTransportModule.ts#L5)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:5](htt
 
 > **merkleWitness**: (`key`) => `Promise`\<`undefined` \| [`RollupMerkleTreeWitness`](../../common/classes/RollupMerkleTreeWitness.md)\>
 
-Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/sequencer/src/helpers/query/QueryTransportModule.ts#L6)
+Defined in: [packages/sequencer/src/helpers/query/QueryTransportModule.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/sequencer/src/helpers/query/QueryTransportModule.ts#L6)
 
 #### Parameters
 

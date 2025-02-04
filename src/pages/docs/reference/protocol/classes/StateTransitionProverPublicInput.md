@@ -10,7 +10,7 @@ title: StateTransitionProverPublicInput
 
 # Class: StateTransitionProverPublicInput
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:6](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L6)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:6](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L6)
 
 ## Extends
 
@@ -58,7 +58,7 @@ Defined in: node\_modules/o1js/dist/node/lib/provable/types/struct.d.ts:103
 
 > **protocolStateRoot**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L10)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L10)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvabl
 
 > **protocolTransitionsHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:8](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L8)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:8](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L8)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvabl
 
 > **stateRoot**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:9](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L9)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:9](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L9)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvabl
 
 > **stateTransitionsHash**: `Field` = `Field`
 
-Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:7](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L7)
+Defined in: [packages/protocol/src/prover/statetransition/StateTransitionProvable.ts:7](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/protocol/src/prover/statetransition/StateTransitionProvable.ts#L7)
 
 #### Inherited from
 

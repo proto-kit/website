@@ -10,7 +10,7 @@ title: BlockMapper
 
 # Class: BlockMapper
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:10](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockMapper.ts#L10)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:10](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockMapper.ts#L10)
 
 ## Implements
 
@@ -32,7 +32,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:10]
 
 > **mapIn**(`input`): [`Block`](../../sequencer/interfaces/Block.md)
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:11](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockMapper.ts#L11)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:11](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockMapper.ts#L11)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:11]
 
 > **mapOut**(`input`): `object`
 
-Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:40](https://github.com/proto-kit/framework/blob/b953c754e500c62f01fbbd6d09adfb2f5577269d/packages/persistance/src/services/prisma/mappers/BlockMapper.ts#L40)
+Defined in: [packages/persistance/src/services/prisma/mappers/BlockMapper.ts:40](https://github.com/proto-kit/framework/blob/4d6b3b6da51b3edee0fbf25ce72c1f59ec61e891/packages/persistance/src/services/prisma/mappers/BlockMapper.ts#L40)
 
 #### Parameters
 
