@@ -10,6 +10,7 @@ npm run build
 npm run typedoc
 cd ./../website
 rm -rf *./src/pages/docs/reference
+mkdir -p ./src/pages/docs/reference
 cp -r ./../framework-typedoc/docs/@proto-kit/ ./src/pages/docs/reference
 node generate-reference-meta.mjs
 rm -rf ./../framework-typedoc
