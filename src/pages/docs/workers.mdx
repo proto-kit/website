@@ -1,10 +1,9 @@
 # Worker Architecture
 
-All sequencer modules are registered, resolved and then started when the AppChain is started. Several of these modules
-are what define the process to be a worker. This can be considered a lightweight instance of the AppChain that is responsible
-for executing expensive asynchronous `tasks`, such as Block Proving, so that the main AppChain isn't blocked by them. For testing purposes,
-it is fine to have the main AppChain be the worker, but in production set-ups you will likely want multiple workers defined,
-separately.
+If `worker` modules are defined in the AppChain it becomes a `worker`. This has the same architecture as a regular AppChain,
+but it can process expensive asynchronous `tasks`, such as Block Proving. An AppChain can be defined such that only `worker` modules are present.
+For testing purposes, it is fine to have the main AppChain be the worker, but in production set-ups you will likely want multiple stand-alone workers
+defined, separately.
 
 ## LocalTaskWorkerModule
 
