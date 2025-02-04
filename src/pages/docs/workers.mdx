@@ -1,9 +1,9 @@
 # Worker Architecture
 
 If `worker` modules are defined in the AppChain it becomes a `worker`. This has the same architecture as a regular AppChain,
-but it can process expensive asynchronous `tasks`, such as Block Proving. An AppChain can be defined such that only `worker` modules are present.
-For testing purposes, it is fine to have the main AppChain be the worker, but in production set-ups you will likely want multiple stand-alone workers
-defined, separately.
+but it can process expensive asynchronous `tasks`, such as Block Proving. An AppChain can be defined such that only `worker` modules are present, which means
+its only function is to execute tasks, rather than serve as a sequencer. For testing purposes, it is fine to have the main AppChain be the worker, but in
+production set-ups you will likely want multiple stand-alone workers defined, separately.
 
 ## LocalTaskWorkerModule
 
@@ -19,7 +19,7 @@ this means no tasks will be processed. This module is itself defined with severa
  - CircuitCompilerTask
  - WorkerRegistrationTask.
 
-When the `LocalTaskWorkerModule` is started it has a set of start-up tasks, like those above, passed to it. These tasks basically
+When the `LocalTaskWorkerModule` is started it has a subset of start-up tasks, like those above, passed to it. These tasks basically
 define what sort of computations the worker can handle, as you may want different workers to handle different tasks for resourcing reasons.
 There are two types of tasks: `Unprepared`, i.e. tasks that don’t have a prepare method and therefore don’t need to wait for registration to get initialized, and
  `Regular`, i.e. all other tasks that require registration.
@@ -37,9 +37,9 @@ If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then
 `waitForReady()` will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
 
 ## SequencerStartUpModule
-This is module is designed to ensure that all zk-circuits are compiled and their verification keys are accessible to the workers that
+This module is designed to ensure that all zk-circuits are compiled and their verification keys are accessible to the workers that
 will need them. This spares workers from having to waste resources compiling the circuits themselves. This is achieved by having the AppChain
-use the verification keys, and compilation artifacts, which are static parameters, as input to the `WorkerRegistrationFlow`. This in turns leaves
+use the verification keys, which are static parameters, as input to the `WorkerRegistrationFlow`. This in turns leaves
 it as a task on the queue. A worker when starting-up will process the task that has been pushed onto the queue and access these static parameters
 that way. In order for subsequent workers to have access to the same task, which will be removed from the queue after having been executed, the
 sequencer uses the `WorkerRegistrationFlow` to push the same task again in a boundless loop. This loop consumes no resources as it is just a `Promise` that
@@ -47,16 +47,17 @@ awaits until a worker has registered. We ensure it's the new worker that picks u
 by having the old worker be configured to delete the task-handler for the registration from its local queue so that it can't handle that particular kind of task, anymore.
 
 ## Worker Start-up Flow
-A summary of the worker registration flow:
-1. The `LocalTaskWorkerModule` creates a worker.
-2. The worker is started, which registers the callbacks for `Unprepared` tasks with the queue.
-3. The worker calls the `prepare()` method for the `Regular` tasks.
-4. The worker registers `Regular` tasks with the queue.
-5. The AppChain, specifically `SequencerStartupModule`, compiles the zk-circuits of the various zk-Programs.
-6. The `SequencerStartupModule` invokes  the `WorkerRegistrationFlow` and submits a `WorkerRegistration` task to the queue.
-7. The worker listens to the queue and processes the `WorkerRegistration` task.
-8. The AppChain continues and starts submitting tasks to the queue, which the worker processes.
-
+A summary of the worker registration flow. The sequencer is started and then:
+1. The worker registers the callbacks for `Unprepared` tasks with the queue, one of which is the
+`WorkerRegistration` task. This is what receives the worker payload.
+2. The AppChain, specifically `SequencerStartupModule`, emits the `CircuitCompilerTask` to compile certain zk-circuits of the various zk-Programs.
+3. The `SequencerStartupModule` invokes  the `WorkerRegistrationFlow`, which submits a `WorkerRegistration` task in a boundless
+loop to the queue.
+4. The worker listens to the queue, processes the `WorkerRegistration` task and is initialised.
+5. The AppChain continues and starts submitting tasks, like BlockProving and StateTransition, say, to the queue.
+6. The worker calls the `prepare()` method for the `Regular` tasks.
+7. The worker registers `Regular` tasks with the queue.
+8. The worker is started and able to process tasks emitted to the queue.
 
 ## TaskQueue
 The TaskQueue has two different implementations:
