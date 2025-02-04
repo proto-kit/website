@@ -37,6 +37,7 @@ If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then
 `waitForReady()` will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
 
 ## SequencerStartUpModule
+
 This module is designed to ensure that all zk-circuits are compiled and their verification keys are accessible to the workers that
 will need them. This spares workers from having to waste resources compiling the circuits themselves. This is achieved by having the AppChain
 use the verification keys, which are static parameters, as input to the `WorkerRegistrationFlow`. This in turns leaves
@@ -47,6 +48,7 @@ awaits until a worker has registered. We ensure it's the new worker that picks u
 by having the old worker be configured to delete the task-handler for the registration from its local queue so that it can't handle that particular kind of task, anymore.
 
 ## Worker Start-up Flow
+
 A summary of the worker registration flow. The sequencer is started and then:
 1. The worker registers the callbacks for `Unprepared` tasks with the queue, one of which is the
 `WorkerRegistration` task. This is what receives the worker payload.
@@ -57,17 +59,20 @@ loop to the queue.
 5. The AppChain continues and starts submitting tasks, like BlockProving and StateTransition, say, to the queue.
 6. The worker calls the `prepare()` method for the `Regular` tasks.
 7. The worker registers `Regular` tasks with the queue.
-8. The worker is started and able to process tasks emitted to the queue.
+8. The worker is now able to process all configured tasks emitted to the queue.
 
 ## TaskQueue
+
 The TaskQueue has two different implementations:
 
 ### BullQueue
+
 This is Redis underneath. Each worker registers to consume specific jobs. Redis takes care of a lot of the implementation details.
 This uses a separate Redis instance, whose configuration details are shared with the AppChain  on start-up.
 In the starter-kit, this is run from Docker.
 
 ### LocalTaskQueue
+
 This can only be used by one worker built into the AppChain, as it's not really a queue, executing tasks directly where possible.
 The `workNextTasks()` is called whenever a task is added to the queue and again after tasks have already been executed (in case any others have been added in the meanwhile).
 The `LocalTaskQueue` isn't suitable for production usage because it runs only one instance in-process. But for mock-proofs it's good enough.
