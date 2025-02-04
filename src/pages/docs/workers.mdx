@@ -52,15 +52,16 @@ by having the old worker be configured to delete the task-handler for the regist
 
 A summary of the worker registration flow. The sequencer is started and then:
 1. The worker registers the callbacks for `Unprepared` tasks with the queue, one of which is the
-`WorkerRegistration` task. This is what receives the worker payload.
+`WorkerRegistration` task and the other is `CircuitCompilerTask`.
 2. The AppChain, specifically `SequencerStartupModule`, emits the `CircuitCompilerTask` to compile certain zk-circuits of the various zk-Programs.
-3. The `SequencerStartupModule` invokes  the `WorkerRegistrationFlow`, which submits a `WorkerRegistration` task in a boundless
-loop to the queue.
-4. The worker listens to the queue, processes the `WorkerRegistration` task and is initialised.
-5. The AppChain continues and starts submitting tasks, like BlockProving and StateTransition, say, to the queue.
-6. The worker calls the `prepare()` method for the `Regular` tasks.
-7. The worker registers `Regular` tasks with the queue.
-8. The worker is now able to process all configured tasks emitted to the queue.
+3. The worker listens to the queue, processes the `CircuitCompilerTask` task.
+4. The `SequencerStartupModule` invokes  the `WorkerRegistrationFlow`, which submits a `WorkerRegistration` task in a boundless
+loop to the queue. Within this task, the verification keys for the circuits are included.
+5. The worker listens to the queue, processes the `WorkerRegistration` task and is initialised.
+6. The AppChain continues and starts submitting tasks, like BlockProving and StateTransition, say, to the queue.
+7. The worker calls the `prepare()` method for the `Regular` tasks.
+8. The worker registers `Regular` tasks with the queue.
+9. The worker is now able to process all configured tasks emitted to the queue.
 
 ## TaskQueue
 
