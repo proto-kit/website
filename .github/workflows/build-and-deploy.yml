@@ -11,12 +11,11 @@ jobs:
     environment: netlify
     steps:
       - uses: actions/checkout@v4
-
-      - name: build
-        - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 20.8.0
           cache: npm
+      - name: Build
         run: |
           pnpm i
           pnpm run build
