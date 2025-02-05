@@ -1,0 +1,34 @@
+name: Build and Deploy to Netlify
+on:
+  push:
+  pull_request:
+  repository_dispatch:
+    types: [trigger-workflow]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    environment: netlify
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: build
+        - uses: actions/setup-node@v3
+        with:
+          node-version: 20.8.0
+          cache: npm
+        run: |
+          pnpm i
+          pnpm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: '.next'
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
