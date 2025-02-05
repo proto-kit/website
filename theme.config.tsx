@@ -32,39 +32,42 @@ const config: DocsThemeConfig = {
   },
   sidebar: {
     toggleButton: true,
+    titleComponent({ title }) {},
   },
   head: null,
-  useNextSeoProps() {
-    return {
-      titleTemplate: "%s – Protokit",
-      canonical: "https://protokit.dev",
-      title:
-        "Protocol development framework for privacy enabled application chains",
-      description:
-        "Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.",
-      openGraph: {
-        type: "website",
-        title: "Protokit",
-        description:
-          "Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.",
-        images: [
-          {
-            url: "https://protokit.dev/og.png",
-            width: 1200,
-            height: 630,
-            alt: "Protokit OG Image",
-          },
-        ],
-      },
-      additionalLinkTags: [
-        {
-          rel: "shortcul icon",
-          href: "/logo-symbol.svg",
-        },
-      ],
-    };
+  // useNextSeoProps() {
+  //   return {
+  //     titleTemplate: "%s – Protokit",
+  //     canonical: "https://protokit.dev",
+  //     title:
+  //       "Protocol development framework for privacy enabled application chains",
+  //     description:
+  //       "Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.",
+  //     openGraph: {
+  //       type: "website",
+  //       title: "Protokit",
+  //       description:
+  //         "Protokit enables developers to build zero-knowledge, interoperable and privacy preserving application chains with a minimal learning curve.",
+  //       images: [
+  //         {
+  //           url: "https://protokit.dev/og.png",
+  //           width: 1200,
+  //           height: 630,
+  //           alt: "Protokit OG Image",
+  //         },
+  //       ],
+  //     },
+  //     additionalLinkTags: [
+  //       {
+  //         rel: "shortcul icon",
+  //         href: "/logo-symbol.svg",
+  //       },
+  //     ],
+  //   };
+  // },
+  color: {
+    hue: { light: 28, dark: 28 },
   },
-  primaryHue: { light: 28, dark: 28 },
 };
 
 export default {

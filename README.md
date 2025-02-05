@@ -18,6 +18,10 @@ First, run `pnpm i` to install the dependencies.
 
 Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
+## Typedoc generation
+
+Run `pnpm run typedoc:generate` to generate reference documentation from the framework's typedoc.
+
 ## License
 
 This project is licensed under the MIT License.
