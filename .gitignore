@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 .git
 .idea
+src/pages/docs/reference

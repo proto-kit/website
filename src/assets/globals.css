@@ -58,3 +58,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.nextra-sidebar-container ul > li ul > li ul > li a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 152px;
+  display: inline-block;
+  overflow: hidden;
+}
