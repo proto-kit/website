@@ -20,5 +20,6 @@ export default {
     type: "separator",
     title: "Contributor Documentation",
   },
+  sequencer: "Sequencer",
   reference: "Reference",
 };

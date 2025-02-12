@@ -1,5 +1,10 @@
 # Worker Architecture
 
+The way protokit is architected, in regards to computation-heavy tasks, we have the following three-party setup:
+- Sequencer - this is the master "node" that does the sequencing, tracing and pushes proving tasks. In reality, this can be a multi-process deployment, but we can simplify this to a single actor here.
+- Workers - One or more stateless actors that have a set of tasks that they can compute. Tasks in our case are mostly proving-related work.
+- Message Queue - Distributes tasks from the sequencer to the workers and reports back the results
+
 If `worker` modules are defined in the AppChain it becomes a `worker`. This has the same architecture as a regular AppChain,
 but it can process expensive asynchronous `tasks`, such as Block Proving. An AppChain can be defined such that only `worker` modules are present, which means
 its only function is to execute tasks, rather than serve as a sequencer. For testing purposes, it is fine to have the main AppChain be the worker, but in
