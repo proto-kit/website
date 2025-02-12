@@ -1,0 +1,88 @@
+# Worker Architecture
+
+The way protokit is architected, in regards to computation-heavy tasks, we have the following three-party setup:
+- Sequencer - this is the master "node" that does the sequencing, tracing and pushes proving tasks. In reality, this can be a multi-process deployment, but we can simplify this to a single actor here.
+- Workers - One or more stateless actors that have a set of tasks that they can compute. Tasks in our case are mostly proving-related work.
+- Message Queue - Distributes tasks from the sequencer to the workers and reports back the results
+
+If `worker` modules are defined in the AppChain it becomes a `worker`. This has the same architecture as a regular AppChain,
+but it can process expensive asynchronous `tasks`, such as Block Proving. An AppChain can be defined such that only `worker` modules are present, which means
+its only function is to execute tasks, rather than serve as a sequencer. For testing purposes, it is fine to have the main AppChain be the worker, but in
+production set-ups you will likely want multiple stand-alone workers defined, separately.
+
+## LocalTaskWorkerModule
+
+This module is used to create a worker locally. Without this being defined in some process no worker will be spawned and
+this means no tasks will be processed. This module is itself defined with several tasks that it will be capable of executing, such as
+ - StateTransitionTask,
+ - StateTransitionReductionTask,
+ - RuntimeProvingTask,
+ - BlockProvingTask,
+ - BlockReductionTask,
+ - BlockBuildingTask,
+ - NewBlockTask,
+ - CircuitCompilerTask
+ - WorkerRegistrationTask.
+
+When the `LocalTaskWorkerModule` is started it has a subset of start-up tasks, like those above, passed to it.
+These tasks basically define what sort of computations the worker can handle, as you may want different workers to handle different tasks for resourcing reasons.
+For example, the majority of the work the AppChain will do is for State Transition related tasks, and so you may want to configure a large share of the workers to handle only the StateTransitionTask
+and StateTransitionReductionTask, which allows easier scalability as only one circuit will be kept in memory. There are two types of tasks: `Unprepared`, i.e. tasks that don’t have a prepare method and therefore don’t need to wait for registration to get initialized, and
+ `Regular`, i.e. all other tasks that require registration.
+
+When the worker is started it first registers the required callback functions for the `Unprepared` tasks, i.e. `CircuitCompilerTask` and `WorkerRegistrationTask`,
+with its local instance of the queue. Then, the `LocalTaskWorkerModule` calls the `prepare` method for non-startup/normal tasks, before registering their callbacks with the queue.
+This registration ensures the worker is ready to handle any request when one later arrives via the queue. Once all the tasks are registered a promise is resolved, called `prepareResolve`.
+This tells the `LocalTaskWorkerModule` it is ready, and the `LocalTaskWorkerModule` emits a `ready` event of its own that other modules like the `WorkerReadyModule` are waiting for to proceed.
+
+## WorkerReadyModule
+
+This is another sequencer module that waits until key events have been emitted by the `LocalTaskWorkerModule` to signal that the worker
+is ready and that the AppChain can continue. The `WorkerReadyModule` is called by the `AppChain.ts` at the end of the `start()` method.
+If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then the AppChain will never finish its start-up. Note that the
+`waitForReady()` will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
+
+## SequencerStartUpModule
+
+This module is designed to ensure that all zk-circuits are compiled and their verification keys are accessible to the workers that
+will need them. This spares workers from having to waste resources compiling the circuits themselves. This is achieved by having the AppChain
+use the verification keys, which are static parameters, as input to the `WorkerRegistrationFlow`. This in turns leaves
+it as a task on the queue. A worker when starting-up will process the task that has been pushed onto the queue and access these static parameters
+that way. In order for subsequent workers to have access to the same task, which will be removed from the queue after having been executed, the
+sequencer uses the `WorkerRegistrationFlow` to push the same task again in a boundless loop. This loop consumes no resources as it is just a `Promise` that
+awaits until a worker has registered. We ensure it's the new worker that picks up this task from the queue and not an older worker that is already configured,
+by having the old worker be configured to delete the task-handler for the registration from its local queue so that it can't handle that particular kind of task, anymore.
+
+## Worker Start-up Flow
+
+A summary of the worker registration flow. The sequencer is started and then:
+1. The worker registers the callbacks for `Unprepared` tasks (i.e. those tasks that do not require the worker to be registered first) with the queue, one of which is the
+`WorkerRegistration` task and the other is `CircuitCompilerTask`.
+2. The AppChain, specifically `SequencerStartupModule`, emits the `CircuitCompilerTask` to compile certain zk-circuits of the various zk-Programs.
+3. The worker listens to the queue, processes the `CircuitCompilerTask` task.
+4. The `SequencerStartupModule` invokes  the `WorkerRegistrationFlow`, which submits a `WorkerRegistration` task in a boundless
+loop to the queue. Within this task, the verification keys for the circuits are included.
+5. The worker listens to the queue, processes the `WorkerRegistration` task and is initialised.
+6. The worker calls the `prepare()` method for the `Regular` tasks.
+7. The worker registers `Regular` tasks with the queue.
+8. The worker is now able to process all configured tasks emitted to the queue.
+9. The AppChain continues and starts submitting tasks, like BlockProving and StateTransition, say, to the queue.
+
+
+## TaskQueue
+
+The TaskQueue has two different implementations:
+
+### BullQueue
+
+This is Redis underneath. Each worker registers to consume specific jobs. Redis takes care of a lot of the implementation details.
+This uses a separate Redis instance, whose configuration details are shared with the AppChain  on start-up.
+In the starter-kit, this is run from Docker.
+
+### LocalTaskQueue
+
+This can only be used by one worker built into the AppChain, as it's not really a queue, executing tasks directly where possible.
+The `workNextTasks()` is called whenever a task is added to the queue and again after tasks have already been executed (in case any others have been added in the meanwhile).
+The `LocalTaskQueue` isn't suitable for production usage because it runs only one instance in-process. But for mock-proofs it's good enough.
+
+
