@@ -3,6 +3,7 @@ import { Card } from '@/components/ui/card'
 import NextImage from 'next/image'
 
 export const MerkleTree = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <section className="container flex flex-col gap-8">
       <Card className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-center lg:text-left bg-gradient-to-b from-indigo-300 dark:from-indigo-950 to-gray-100 dark:to-gray-900 p-8 lg:p-16 border-none">
@@ -11,7 +12,7 @@ export const MerkleTree = () => {
           <p className="leading-8">Protokit goes hand in hand with Mina Protocol's Succinct Design philosophy, using best-of-breed cryptography.</p>
         </div>
         <div className="flex items-center justify-center">
-          <NextImage src="/merkle.png" width={300} height={300} alt="Merkle Tree" className="p-8 lg:p-0" />
+          <NextImage src={`${basePath}/merkle.png`} width={300} height={300} alt="Merkle Tree" className="p-8 lg:p-0" />
         </div>
       </Card>
     </section>
