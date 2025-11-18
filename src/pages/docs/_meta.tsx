@@ -20,6 +20,7 @@ export default {
     type: "separator",
     title: "Contributor Documentation",
   },
+  sequencer: "Sequencer",
   graphql: {
     title: "Graphql API docs",
     href: "https://graphql.protokit.dev/"
