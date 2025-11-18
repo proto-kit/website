@@ -20,5 +20,9 @@ export default {
     type: "separator",
     title: "Contributor Documentation",
   },
+  graphql: {
+    title: "Graphql API docs",
+    href: "https://graphql.protokit.dev/"
+  },
   reference: "Reference",
 };

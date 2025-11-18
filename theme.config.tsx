@@ -15,7 +15,7 @@ const config: DocsThemeConfig = {
     link: "https://x.com/proto_kit",
     icon: <div className="text-2xl">𝕏</div>,
   },
-  docsRepositoryBase: "https://github.com/proto-kit/website/tree/main/",
+  docsRepositoryBase: "https://github.com/proto-kit/website/tree/main",
   footer: {
     component: <Footer />,
   },
