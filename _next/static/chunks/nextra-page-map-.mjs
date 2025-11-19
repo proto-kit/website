@@ -6,6 +6,7 @@ import docs_library_meta from "../../../src/pages/docs/library/_meta.tsx";
 import docs_quickstart_meta from "../../../src/pages/docs/quickstart/_meta.tsx";
 import docs_reference_meta from "../../../src/pages/docs/reference/_meta.tsx";
 import docs_reference_api_meta from "../../../src/pages/docs/reference/api/_meta.tsx";
+import docs_reference_cli_meta from "../../../src/pages/docs/reference/cli/_meta.tsx";
 import docs_reference_common_meta from "../../../src/pages/docs/reference/common/_meta.tsx";
 import docs_reference_deployment_meta from "../../../src/pages/docs/reference/deployment/_meta.tsx";
 import docs_reference_indexer_meta from "../../../src/pages/docs/reference/indexer/_meta.tsx";
@@ -155,6 +156,18 @@ export const pageMap = [{
         route: "/docs/reference/api/README",
         frontMatter: {
           "title": "@proto-kit/api"
+        }
+      }]
+    }, {
+      name: "cli",
+      route: "/docs/reference/cli",
+      children: [{
+        data: docs_reference_cli_meta
+      }, {
+        name: "README",
+        route: "/docs/reference/cli/README",
+        frontMatter: {
+          "title": "@proto-kit/cli"
         }
       }]
     }, {
