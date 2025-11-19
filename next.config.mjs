@@ -15,6 +15,6 @@ export default withNextra({
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
-  basePath: isProd ? basePath : "",
-  assetPrefix: isProd ? `${basePath}/` : "",
+  // basePath: isProd ? basePath : "",
+  // assetPrefix: isProd ? `${basePath}/` : "",
 });
