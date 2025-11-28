@@ -1,5 +1,6 @@
 import { Steps } from 'nextra/components'
 import { FileTree } from 'nextra/components'
+import { Callout } from 'nextra/components'
 
 # Quickstart
 
@@ -14,6 +15,10 @@ Before you can start building with Protokit, you need to install the following d
 - [Node.js v18](https://nodejs.org/en)
 - [pnpm](https://pnpm.io)
 - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+<Callout type="warning" emoji="⚠️">
+    Are you using Windows? Please use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) to run the commands below.
+</Callout>
 
 ### Clone the starter kit
 
@@ -31,16 +36,26 @@ pnpm install
 
 ```bash
 # run and watch tests for the `chain` package
-pnpm run test --filter=chain -- --watchAll
+pnpm run test --filter=chain
 ```
+
+> There's an optional `--watchAll` flag, which will re-run the test suite when files change.
+>
+> Depending on your shell, you may need to prefix any extra flags with an additional `--` 
+> like so: `pnpm run test --filter=chain -- --watchAll`. This is applicable across all the commands in this guide.
+
 
 ### Run the sequencer & the UI
 
 ```bash
-# starts UI only
-pnpm dev -- --filter web
+# build dependency chain package
+pnpm run build --filter chain
+
 # starts sequencer only
-pnpm dev -- --filter chain
+pnpm env:inmemory dev --filter chain
+
+# starts UI only
+pnpm env:inmemory dev --filter web
 ```
 
 ### Open the demo UI in the browser
@@ -55,6 +70,10 @@ Alternatively you can try [http://localhost:8080/graphql](http://localhost:8080/
 Setup the [Auro wallet](https://www.aurowallet.com/) if you haven't already. Then connect your wallet in the UI, and claim some tokens from the faucet.
 
 __Congratulations, you've just ran your first app-chain built using Protokit! 🎉__
+
+### Protokit environments, persistence and sequencer deployment
+
+To learn more about Protokit environments and how to host your app-chain, check out the [starter-kit readme](https://github.com/proto-kit/starter-kit?tab=readme-ov-file#running)**.**
 </Steps>
 
 ## Folder structure

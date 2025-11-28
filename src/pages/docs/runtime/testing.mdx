@@ -10,36 +10,34 @@ The example module we will be testing is a simple balances module, which allows
 tokens to be minted at the genesis block. Minting after the genesis block should
 result in an error.
 
-```typescript showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-  runtimeMethod,
-} from "@proto-kit/module";
-import { assert, StateMap } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+```typescript showLineNumbers filename="mintery.ts"
+import "reflect-metadata";
+import { Balances, TokenId, UInt64 } from "@proto-kit/library";
+import { RuntimeModule, runtimeModule, runtimeMethod } from "@proto-kit/module";
+import { assert } from "@proto-kit/protocol";
+import { PublicKey } from "o1js";
+import { inject } from "tsyringe";
 
 export const errors = {
   mintOnlyAtGenesis: "Minting is only allowed at the genesis block",
 };
 
 @runtimeModule()
-export class Balances extends RuntimeModule<Record<string, never>> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+export class Mintery extends RuntimeModule<Record<string, never>> {
+  public constructor(@inject("Balances") public balances: Balances) {
+    super();
+  }
 
   @runtimeMethod()
-  public mint(address: PublicKey, amount: UInt64) {
+  public mint(tokenId: TokenId, address: PublicKey, amount: UInt64) {
     assert(
-      this.network.block.height.equals(UInt64.from(1)),
+      UInt64.from(this.network.block.height).equals(UInt64.from(0)),
       errors.mintOnlyAtGenesis
     );
-    this.balances.set(address, amount);
+    this.balances.setBalance(tokenId, address, amount);
   }
 }
+
 ```
 
 ### Acceptance criteria
@@ -64,28 +62,32 @@ fetchable by the query API.
 You can setup a _TestingAppChain_ by passing your runtime module, setting up the
 transaction API signer and starting the app-chain like this:
 
-```typescript showLineNumbers filename="balances.test.ts"
+```typescript showLineNumbers filename="mintery.test.ts"
 import { TestingAppChain } from "@proto-kit/sdk";
-import { PrivateKey, UInt64 } from "o1js";
-import { Balances, errors } from "../src/balances";
+import { PrivateKey } from "o1js";
+import { Mintery, errors } from "../src/mintery";
+import { BalancesKey, TokenId, UInt64 } from "@proto-kit/library";
 
 describe("balances", () => {
-   let appChain: TestingAppChain<{
-    Balances: typeof Balances;
-  }>;
+  let appChain: ReturnType<
+    typeof TestingAppChain.fromRuntime<{ Mintery: typeof Mintery }>
+  >;
 
-  let balances: Balances;
+  let mintery: Mintery;
 
   const alicePrivateKey = PrivateKey.random();
   const alice = alicePrivateKey.toPublicKey();
+  const tokenId = TokenId.from(0);
 
   beforeAll(async () => {
     appChain = TestingAppChain.fromRuntime({
-      modules: {
-        Balances,
-      },
-      config: {
+      Mintery,
+    });
+
+    appChain.configurePartial({
+      Runtime: {
         Balances: {},
+        Mintery: {},
       },
     });
 
@@ -93,9 +95,10 @@ describe("balances", () => {
 
     appChain.setSigner(alicePrivateKey);
 
-    balances = appChain.runtime.resolve("Balances");
+    mintery = appChain.runtime.resolve("Mintery");
   });
 });
+
 ```
 
 Once your testing app-chain is started, you can start writing your actual tests.
@@ -108,24 +111,26 @@ First test case is to mint at the genesis block, expect the transaction to succe
 and modify the state of the balances module. 
 
 Here's what needs to happen for our test case to pass:
-1. Forge and send a transaction to the _balances.mint_ method
+1. Forge and send a transaction to the _mintery.mint_ method
 2. Produce a block on the testing app-chain
 3. Retrieve the balance of the transaction sender (alice).
 4. Assert the transaction status to be truthy, and the balance to be the minted amount.
 
-```typescript showLineNumbers filename="balances.test.ts"
+```typescript showLineNumbers filename="mintery.test.ts"
 it("should mint at the genesis block", async () => {
   const tx = await appChain.transaction(alice, () => {
-    balances.mint(alice, UInt64.from(1000));
+    mintery.mint(tokenId, alice, UInt64.from(1000));
   });
 
   await tx.sign();
   await tx.send();
 
   const block = await appChain.produceBlock();
-  const balance = await appChain.query.runtime.Balances.balances.get(alice);
+  const balance = await appChain.query.runtime.Balances.balances.get(
+    new BalancesKey({ tokenId, address: alice })
+  );
 
-  expect(block?.txs[0].status).toBe(true);
+  expect(block?.transactions[0].status.toBoolean()).toBe(true);
   expect(balance?.toBigInt()).toBe(1000n);
 }, 1_000_000);
 ```
@@ -136,25 +141,27 @@ Second test case is to mint at the second block, expect the transaction to fail
 and **not** modify the state of the balances module. 
 
 Here's what needs to happen for our test case to pass:
-1. Forge and send a transaction to the _balances.mint_ method
+1. Forge and send a transaction to the _mintery.mint_ method
 2. Produce the second block on the testing app-chain
 3. Retrieve the balance of the transaction sender (alice).
 4. Assert the transaction status to be false, and the balance to be the originally minted amount.
 
-```typescript showLineNumbers filename="balances.test.ts"
+```typescript showLineNumbers filename="mintery.test.ts"
 it("should not mint at the second block", async () => {
   const tx = await appChain.transaction(alice, () => {
-    balances.mint(alice, UInt64.from(1000));
+    mintery.mint(tokenId, alice, UInt64.from(1000));
   });
 
   await tx.sign();
   await tx.send();
 
   const block = await appChain.produceBlock();
-  const balance = await appChain.query.runtime.Balances.balances.get(alice);
+  const balance = await appChain.query.runtime.Balances.balances.get(
+    new BalancesKey({ tokenId, address: alice })
+  );
 
-  expect(block?.txs[0].status).toBe(false);
-  expect(block?.txs[0].statusMessage).toBe(errors.mintOnlyAtGenesis);
+  expect(block?.transactions[0].status.toBoolean()).toBe(false);
+  expect(block?.transactions[0].statusMessage).toBe(errors.mintOnlyAtGenesis);
   expect(balance?.toBigInt()).toBe(1000n);
 }, 1_000_000);
 ```

@@ -14,14 +14,15 @@ In order to maintain good testability of the runtime module, it is recommended t
 method implementation without side-effects as well. Methods may freely interact with the state API or other methods,
 and can include a return value too.
 
-```typescript {20-22} showLineNumbers filename="balances.ts"
+```typescript {18-21} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
   state,
 } from "@proto-kit/module";
 import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -29,13 +30,11 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
-  public getBalance(address: PublicKey, amount: UIn64): Option<UInt64> {
-    return this.balances.get(address);
+  public getBalance(address: PublicKey): UInt64 {
+    const balance = this.balances.get(address);
+    return UInt64.from(balance.value);
   }
 }
 ```
@@ -61,7 +60,7 @@ these methods will be callable via transactions regardless of visibility.
 
 > The example below allows *anyone* to set a balance for *anyone*. This is obviously not a good idea, do not do this.
 
-```typescript {21-24} showLineNumbers filename="balances.ts"
+```typescript {19-22} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -69,7 +68,8 @@ import {
   runtimeMethod,
 } from "@proto-kit/module";
 import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library"
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -77,10 +77,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public mint(address: PublicKey, amount: UInt64) {
@@ -130,9 +127,10 @@ import {
   runtimeMethod,
 } from "@proto-kit/module";
 import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey, UInt64, Bool, Experimental } from "o1js";
+import { PublicKey, Bool, Experimental } from "o1js";
 import { dummyBase64Proof } from "o1js/dist/node/lib/proof_system";
 import { Pickles } from "o1js/dist/node/snarky";
+import { UInt64 } from "@proto-kit/library";
 
 // your zk-circuit proving the user is eligible to mint
 const canMint = () => {
@@ -159,7 +157,7 @@ class CanMintProof extends Experimental.ZkProgram.Proof(canMintProgram) {}
 // generate a dummy proof, to be used when testing the runtime method
 const [, dummy] = Pickles.proofOfBase64(await dummyBase64Proof(), 2);
 const publicInput = Field(0);
-const proof = new ProgramProof({
+const proof = new CanMintProof({
   proof: dummy,
   publicOutput: canMint(publicInput),
   publicInput,
@@ -168,13 +166,10 @@ const proof = new ProgramProof({
 
 @runtimeModule()
 export class Balances extends RuntimeModule<Record<string, never>> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
-  public mint(canMintProof: CanMintProof) {
+  public mint(canMintProof: CanMintProof, amount: UInt64) {
     canMintProof.verify();
     this.balances.set(address, amount);
   }
@@ -200,7 +195,7 @@ a subject to all the assert calls within the method. If one assertion fails, the
   You can use our built in math primitives instead - they are shipped <br/> as `@proto-kit/library`.
 </Callout>
 
-```typescript {21-27} showLineNumbers filename="balances.ts"
+```typescript {19-25} showLineNumbers filename="balances.ts"
 import {
   RuntimeModule,
   runtimeModule,
@@ -208,7 +203,8 @@ import {
   runtimeMethod,
 } from "@proto-kit/module";
 import { State, StateMap, Option, assert } from "@proto-kit/protocol";
-import { PublicKey, UInt64 } from "o1js";
+import { PublicKey } from "o1js";
+import { UInt64 } from "@proto-kit/library";
  
 interface BalancesConfig {
   totalSupply: UInt64;
@@ -216,10 +212,7 @@ interface BalancesConfig {
  
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from<PublicKey, UInt64>(
-    PublicKey,
-    UInt64
-  );
+  @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
   public transfer(from: PublicKey, to: PublicKey, amount: UInt64) {

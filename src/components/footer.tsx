@@ -7,6 +7,7 @@ const DISCORD_URL = "https://discord.gg/AMGnGAxsKp";
 const FRAMEWORK_URL = "https://github.com/proto-kit/framework";
 const STACKBLITZ_URL =
   "https://stackblitz.com/github/proto-kit/starter-kit?file=src%2FBalances.ts&startScript=test";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -15,7 +16,7 @@ export const Footer = () => {
       <div className="container grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="flex flex-col gap-4 text-accent-foreground">
           <NextImage
-            src="/logo-symbol-white.svg"
+            src={`${basePath}/logo-symbol-white.svg`}
             width={40}
             height={40}
             alt="Logo symbol"
