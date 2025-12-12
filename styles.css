@@ -1,0 +1,46 @@
+.dark {
+    --background: 0 0% 4%;
+}
+
+div:has(> .tabs) {
+    /*border: hsl(var(--border)) solid medium;*/
+    /*border-radius: 10px;*/
+    border-color: hsl(var(--border));
+    border-style: solid;
+    border-radius: .375rem;
+    border-width: 1px;
+
+    margin-top: 1rem;
+}
+
+.tabs {
+    margin-top: .4rem;
+    padding-right: .6rem;
+    padding-left: .6rem;
+}
+
+.tab {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
+}
+
+
+/*div:has(> .tab) {*/
+/*    margin-top: 0;*/
+/*    padding-top: 0.5rem;*/
+/*    padding-bottom: 1.2rem;*/
+/*    padding-left: .8rem;*/
+/*    padding-right: .8rem;*/
+
+/*    border-left-color: rgb(38 38 38 / var(--tw-border-opacity, 1)) !important;*/
+/*    !*border-radius: .375rem;*!*/
+/*    border-left-width: 1px !important;*/
+/*    border: none;*/
+/*    border-left: solid;*/
+/*}*/
+
+/*.tab {*/
+/*    margin-top: 0;*/
+/*}*/
