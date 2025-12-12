@@ -29,9 +29,10 @@ You can use this for testing or for demo purposes.
 Keep in mind, that once your appchain stops or is restarted, all progress will be lost.
 
 ```typescript {4} showLineNumbers filename="inmemory.ts"
-import { DefaultSequencer, InMemoryDatabase } from "@proto-kit/sequencer";
+import { Sequencer, InMemoryDatabase } from "@proto-kit/sequencer";
 
-const sequencer = DefaultSequencer.from({
+const sequencer = Sequencer.from({
+  ...
   Database: InMemoryDatabase
 });
 ```
@@ -53,17 +54,16 @@ You'll have to inject the *PrismaRedisDatabase* under the module name "Database"
 
 ```typescript {10,17-34} showLineNumbers filename="postgres-redis-db.ts"
 import {
-  DefaultSequencer,
+  Sequencer,
 } from "@proto-kit/sequencer";
 import { PrismaRedisDatabase } from "@proto-kit/persistance";
 import { AppChain } from "@proto-kit/sdk";
 
 const app = AppChain.from({
-  sequencer:
-    DefaultSequencer.from({
+    Sequencer.from({
       Database: PrismaRedisDatabase
     }),
-  ...
+    ...
 })
 
 app.configure({
