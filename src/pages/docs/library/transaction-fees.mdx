@@ -1,0 +1,63 @@
+# Transaction Fees
+
+Transaction Fees in protokit are implementable using [protocol hooks](../advanced/protocol).
+
+Protokit's library offers a default implementation for adding transaction fees to your appchain.
+
+## Concept
+
+The implementation currently supports one tokenId in which fees will be deducted.
+If a user doesn't have enough of that token to pay for a given runtime execution, the transaction will either not be included or will fail upon execution, depending on the circumstances.
+
+How much fee a given runtime method costs is dependent on the complexity (circuit size) of that runtime method, but can be overridden by the user.
+
+### Fee calculation
+
+If not overridden, the transaction hook will automatically analyse all runtime methods to determine their row count (how big the logic is and therefore how log it takes to prove).
+This value is called the `weight` of the method.
+
+In addition to that, the user has to specify a `basefee` and `perWeightUnitFee`. With that, the formula to determine the fee amount is:
+
+```math
+feeamount = basefee + perWeightUnitFee * weight
+```
+
+## Setup
+
+Add to the mandatory protocol modules:
+```typescript
+Protocol.from(VanillaProtocolModules.mandatoryModules({
+  TransactionFee: TransactionFeeHook
+}))
+```
+
+or, it is already included in the default modules:
+
+```typescript
+Protocol.from(VanillaProtocolModules.with({}))
+```
+
+### Configuration
+
+The Transaction
+
+```typescript
+  // ...
+  Protocol: {
+    // ...
+    TransactionFee: {
+      tokenId: 0n,
+      feeRecipient: feeRecipientPublicKey.toBase58(),
+      baseFee: 10000n,
+      perWeightUnitFee: 1n,
+      methods: {
+        // Drip in this case is overridden to be free (0 + 0 * 0)
+        "Faucet.drip": {
+          baseFee: 0n,
+          weight: 0n,
+          perWeightUnitFee: 0n,
+        },
+      },
+    },
+  },
+```
