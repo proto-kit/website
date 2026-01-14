@@ -1,0 +1,62 @@
+import { Callout } from "nextra/components";
+
+# Remote Prover Caching
+> Make sure that your s3 service is reachable by all workers that you eventually spin up
+
+Protokit support remote caching of the prover artifacts (compiled circuits).
+Its purpose is to speed up startup of proving workers by allowing them to download finished prover keys and not have to recompile all circuits per new instance.
+
+It works by storing all compilation artifacts (prover Keys, verification Keys, and the SRS) in any S3-compatible object store.
+By default, protokit will use minio to act as the S3 storage service.
+
+## Configuration
+
+To enable remote caching, you need to register the `S3RemoteCache` module within your Sequencer definition and provide the necessary S3 credentials.
+
+### 1. Register the Module
+
+Import `S3RemoteCache` from `@proto-kit/deployment` and add it to your Sequencer modules list.
+
+```typescript {8} showLineNumbers
+import { S3RemoteCache } from "@proto-kit/deployment";
+
+const appChain = AppChain.from({
+  // ... other configuration
+  Sequencer: Sequencer.from({
+    modules: {
+      // ... other modules
+      RemoteCache: S3RemoteCache,
+    },
+  }),
+});
+```
+
+### 2. Configure Connection
+
+In your `appChain.configure()` step, provide the connection details for your S3 provider (AWS S3, MinIO, DigitalOcean Spaces, etc.).
+Additionally, you'll have to specify the desired bucket name (the module will automatically create a bucket with this name at startup).
+
+<Callout type="info">
+    Make sure that your S3 service is reachable by all workers that are eventually spun up
+</Callout>
+
+```typescript {5,8-14} showLineNumbers
+appChain.configure({
+  Sequencer: {
+    RemoteCache: {
+      // The name of the bucket to store artifacts in
+      bucketName: "protokit-circuit-cache",
+
+      // MinIO Client Options
+      client: {
+        endPoint: "localhost", // or your MinIO IP/domain
+        port: 9000, // minio default
+        useSSL: false, // true for cloud instances
+        accessKey: "YOUR_ACCESS_KEY", // 'minioadmin' by default
+        secretKey: "YOUR_SECRET_KEY", // 'minioadmin' by default
+      },
+    },
+    // ... other configuration
+  },
+});
+```
