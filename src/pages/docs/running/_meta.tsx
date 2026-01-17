@@ -2,5 +2,6 @@ export default {
   "databases": "Databases",
   "monitoring": "Monitoring",
   "explorer": "Explorer",
-  "caching": "Remote caching"
+  "caching": "Remote caching",
+  "mempool": "Mempool"
 }
