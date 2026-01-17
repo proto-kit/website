@@ -3,9 +3,11 @@ import { State, state, assert } from "@proto-kit/protocol";
 import { Balance, Balances as BaseBalances, TokenId } from "@proto-kit/library";
 import { PublicKey } from "o1js";
 
+// group balances
 interface BalancesConfig {
   totalSupply: Balance;
 }
+// group balances
 
 @runtimeModule()
 export class Balances extends BaseBalances<BalancesConfig> {
@@ -14,6 +16,7 @@ export class Balances extends BaseBalances<BalancesConfig> {
   // implicitly inherited from `BaseBalances`
   // @state() public balances = StateMap.from(..);
 
+// group method
   @runtimeMethod()
   public async addBalance(tokenId: TokenId, address: PublicKey, amount: Balance) {
     const circulatingSupply = await this.circulatingSupply.get();
@@ -27,4 +30,5 @@ export class Balances extends BaseBalances<BalancesConfig> {
     await this.circulatingSupply.set(newCirculatingSupply);
     await this.mint(tokenId, address, amount);
   }
+  // group method
 }

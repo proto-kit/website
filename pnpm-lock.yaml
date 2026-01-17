@@ -147,6 +147,9 @@ importers:
         specifier: ^3.22.2
         version: 3.24.2
     devDependencies:
+      '@proto-kit/remark-code-import':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@types/node':
         specifier: 18.11.10
         version: 18.11.10
@@ -159,9 +162,6 @@ importers:
       postcss:
         specifier: ^8.4.31
         version: 8.5.2
-      remark-code-import:
-        specifier: ^1.2.0
-        version: 1.2.0
       tailwindcss:
         specifier: ^3.3.3
         version: 3.4.17
@@ -442,6 +442,10 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@proto-kit/remark-code-import@1.2.0':
+    resolution: {integrity: sha512-kyI4V+hDCA60x5B2DBudyHtATE5UPguXfUgCRt7CGJm3dEHqqUBA3Eqv+5K9N/3+SacfnJaAdrJcz8VFmjltAA==}
+    engines: {node: '>= 12'}
 
   '@radix-ui/number@1.1.0':
     resolution: {integrity: sha512-V3gRzhVNU1ldS5XhAPTom1fOIo4ccrjjJgmE+LI2h/WaFpHmx0MQApT+KZHnx8abG6Avtfcz4WoEciMnpFT3HQ==}
@@ -2722,10 +2726,6 @@ packages:
   rehype-recma@1.0.0:
     resolution: {integrity: sha512-lqA4rGUf1JmacCNWWZx0Wv1dHqMwxzsDWYMTowuplHF3xH0N/MmrZ/G3BDZnzAkRmxDadujCjaKM2hqYdCBOGw==}
 
-  remark-code-import@1.2.0:
-    resolution: {integrity: sha512-fgwLruqlZbVOIhCJFjY+JDwPZhA4/eK3InJzN8Ox8UDdtudpG212JwtRj6la+lAzJU7JmSEyewZSukVZdknt3Q==}
-    engines: {node: '>= 12'}
-
   remark-frontmatter@5.0.0:
     resolution: {integrity: sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==}
 
@@ -3427,6 +3427,12 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@proto-kit/remark-code-import@1.2.0':
+    dependencies:
+      strip-indent: 4.1.1
+      to-gatsby-remark-plugin: 0.1.0
+      unist-util-visit: 4.1.2
 
   '@radix-ui/number@1.1.0': {}
 
@@ -6283,12 +6289,6 @@ snapshots:
       hast-util-to-estree: 3.1.1
     transitivePeerDependencies:
       - supports-color
-
-  remark-code-import@1.2.0:
-    dependencies:
-      strip-indent: 4.1.1
-      to-gatsby-remark-plugin: 0.1.0
-      unist-util-visit: 4.1.2
 
   remark-frontmatter@5.0.0:
     dependencies:

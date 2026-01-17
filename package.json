@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "postinstall": "pnpm run typedoc:generate",
-    "typedoc:generate": "./generate-typedoc.sh",
+    "typedoc:generate": "echo",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -71,7 +71,7 @@
     "@types/react": "19.0.8",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
-    "remark-code-import": "^1.2.0",
+    "@proto-kit/remark-code-import": "^1.2.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
   }

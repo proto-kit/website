@@ -1,5 +1,5 @@
 import nextra from "nextra";
-import codeImport from "remark-code-import";
+import codeImport from "@proto-kit/remark-code-import";
 
 const withNextra = nextra({
   theme: "nextra-theme-docs",
