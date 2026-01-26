@@ -1,0 +1,50 @@
+# Bridging
+
+Bridging in protokit is supported out of the box and we offer a intuitive UI to extend your appchain
+with bridging functionality very easily.
+
+Bridging builds up from [Settlement](settlement), so make sure you read that first.
+
+## Bridging basics
+
+Bridging in protokit is fully trustless, that means that the sequencer cannot interfere or use his position to do something malicious.
+
+Protokit supports both directions of travel, L1 -> L2 (often referred to as deposits) and L2 -> L1 (withdrawals).
+Most projects will use this mechanism for token bridging, meaning trustless deposits and withdrawals of tokens from the L1 to the appchain.
+Therefore, this docs page will focus on token bridging.
+
+The mechanism however is general enough to support arbitrary messages, which could be used for a bunch of things.
+Interop between appchains, self-upgrading appchains, force-inclusion in case of sequencer censorship and
+automatic staking delegation & rewards distribution being among the most exciting.
+
+## Token bridging
+
+Token bridging has two main parts, depositing and withdrawing.
+
+The default implementation allow bridging Mina as well as custom tokens following the [fungible token standard](https://github.com/MinaFoundation/mina-fungible-token).
+They follow different mechanisms and can be configured separately if needed.
+
+### Finality considerations
+
+L2s like protokit generally have to consider safety with regards to a concept called finality of their L1.
+Finality is the time it takes for a blockchain to consider some block "irreversable".
+For some chains that is instant, for others, this can take a while.
+
+For mina, most exchanges consider block final after 20 subsequent blocks have added to the chain.
+This translates to approximately 30-60 minutes in most cases (after the mesa hardfork).
+
+Now, deposits have to respect that finality time before they can safely be processed by the L2, so this is the reason why
+it may take a while until new deposits arrive on your appchain. This is of course only the case for remote networks like devnet and mainnet.
+
+For withdrawals, this is less the case since the sequencer can safely handle all eventualities that can occur.
+
+### Deploying L1 contracts
+
+Deploying currently works the exact same way as describe in [Settlement](settlement/#deploying-l1-contracts)
+
+
+
+### Testing bridging
+
+See a example of how to test bridging in [Settlement.test.ts](https://github.com/proto-kit/framework/blob/develop/packages/sequencer/test/settlement/Settlement.test.ts)
+
