@@ -1,4 +1,4 @@
 export default {
-  "state-proofs": "State proofs",
   protocol: "Customizing the protocol",
+  "state-proofs": "State proofs",
 };

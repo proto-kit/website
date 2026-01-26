@@ -1,3 +1,5 @@
+import { Callout } from "nextra/components";
+
 # Transaction Fees
 
 Transaction Fees in protokit are implementable using [protocol hooks](../advanced/protocol).
@@ -23,6 +25,10 @@ feeamount = basefee + perWeightUnitFee * weight
 ```
 
 ## Setup
+
+<Callout type="info">
+    The `TransactionFeeHook` depends on a `Balances` runtime module to be registered under the name `Balances`
+</Callout>
 
 Add to the mandatory protocol modules:
 ```typescript
