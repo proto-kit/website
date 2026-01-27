@@ -4,3 +4,5 @@ node_modules
 .git
 .idea
 src/pages/docs/reference
+
+out/

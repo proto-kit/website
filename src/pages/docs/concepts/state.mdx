@@ -27,8 +27,8 @@ As an example, assume you call:
 class Balances extends RuntimeModule {
   @state() ledger = StateMap.from(PublicKey, UInt64);
 
-  public mint(sender, amount) {
-    this.ledger.set(sender, amount)
+  public async mint(sender, amount) {
+    await this.ledger.set(sender, amount)
   }
 }
 

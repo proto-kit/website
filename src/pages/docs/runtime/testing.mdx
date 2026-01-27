@@ -29,12 +29,12 @@ export class Mintery extends RuntimeModule<Record<string, never>> {
   }
 
   @runtimeMethod()
-  public mint(tokenId: TokenId, address: PublicKey, amount: UInt64) {
+  public async mint(tokenId: TokenId, address: PublicKey, amount: UInt64) {
     assert(
       UInt64.from(this.network.block.height).equals(UInt64.from(0)),
       errors.mintOnlyAtGenesis
     );
-    this.balances.setBalance(tokenId, address, amount);
+    await this.balances.setBalance(tokenId, address, amount);
   }
 }
 

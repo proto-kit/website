@@ -25,7 +25,7 @@ export class Balances extends BaseBalances<BalancesConfig> {
   // @state() public balances = StateMap.from(..);
 
   @runtimeMethod()
-  public addBalance(tokenId: TokenId, address: PublicKey, amount: Balance) {
+  public async addBalance(tokenId: TokenId, address: PublicKey, amount: Balance) {
     const circulatingSupply = this.circulatingSupply.get();
     const newCirculatingSupply = Balance.from(circulatingSupply.value).add(
       amount
@@ -34,8 +34,8 @@ export class Balances extends BaseBalances<BalancesConfig> {
       newCirculatingSupply.lessThanOrEqual(this.config.totalSupply),
       "Circulating supply would be higher than total supply"
     );
-    this.circulatingSupply.set(newCirculatingSupply);
-    this.mint(tokenId, address, amount);
+    await this.circulatingSupply.set(newCirculatingSupply);
+    await this.mint(tokenId, address, amount);
   }
 }
 

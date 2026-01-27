@@ -80,8 +80,8 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
-  public mint(address: PublicKey, amount: UInt64) {
-    this.balances.set(address, amount);
+  public async mint(address: PublicKey, amount: UInt64) {
+    await this.balances.set(address, amount);
   }
 }
 ```
@@ -169,9 +169,9 @@ export class Balances extends RuntimeModule<Record<string, never>> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
-  public mint(canMintProof: CanMintProof, amount: UInt64) {
-    canMintProof.verify();
-    this.balances.set(address, amount);
+  public async mint(canMintProof: CanMintProof, amount: UInt64) {
+    await canMintProof.verify();
+    await this.balances.set(address, amount);
   }
 }
 ```
@@ -215,8 +215,8 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
-  public transfer(from: PublicKey, to: PublicKey, amount: UInt64) {
-    const fromBalance = this.balances.get(from);
+  public async transfer(from: PublicKey, to: PublicKey, amount: UInt64) {
+    const { value: fromBalance } = await this.balances.get(from);
     const isFromBalanceSufficient = fromBalance.moreThanOrEqual(amount);
     assert(isFromBalanceSufficient, "From balance insufficient");
     // ... additional transfer logic
