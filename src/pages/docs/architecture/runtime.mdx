@@ -1,6 +1,6 @@
 # Runtime
 
-Runtime is the first modular component of the app-chain, containing all the bussiness logic of the application itself. 
+Runtime is the first modular component of the app-chain, containing all the business logic of the application itself. 
 Business logic is implemented as _runtime modules_, defining the _runtime state_ and _runtime methods_ of each module. 
 Runtime modules can be composed together to create a runtime that suits the needs of the application. 
 
@@ -9,15 +9,14 @@ Each runtime module can define it's own state (storage), which can be of two typ
 
 ## Runtime module
 
-> At the time of writing Protokit does not provide any runtime modules out of the box. If your chain needs to work with balances, yo'll have to implement your own runtime module. Alternatively you can
-wait for our upcoming @proto-kit/library package, which will provide a set of runtime modules out of the box.
+> Protokit provides runtime modules out of the box via the `@proto-kit/library` package. For example, if your chain needs to work with balances, you can extend the `Balances` class provided by the library, or implement your own runtime module from scratch.
 
-Example runtime module "Balances" might define its own storage to be a _ledger_ of type _state map_, storing a key value pairing between public keys and balances.
-Accompanied by methods callable by users via transactions, such as _transfer_, _mint_ and _burn_. Transfer method would read the ledger,
-check if the sender has enough balance and if so, update the ledger accordingly. 
+The `Balances` runtime module from `@proto-kit/library` defines its storage as a _ledger_ of type _state map_, storing key-value pairings between public keys and balances.
+It provides methods callable by users via transactions, such as _transfer_, _mint_, and _burn_. The transfer method reads the ledger,
+checks if the sender has sufficient balance, and if so, updates the ledger accordingly. 
 
 Behind the scenes every interaction with the state produces a _state transition_. Runtime does not apply any state transitions to the merkle tree itself, this allows us to keep the runtime circuits as simple as possible.
-As a result we can achieve adequate proof paralelisation between business logic and state transition circuits.
+As a result we can achieve adequate proof parallelization between business logic and state transition circuits.
 
 ### Soft-failing runtime methods
 

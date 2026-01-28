@@ -161,7 +161,7 @@ The responsibilities of the services configured above is the following:
 | Service     | Responsibilities |
 |:----------|:-----|
 | **SettlementContractModule**     | Contains the provable L1 zkapp contracts that facilitate the settlement and trustless bridging  |
-| **BaseLayer**     | Service to communcation with the Mina node endpoints (send transactions, query account states, ...)  |
+| **BaseLayer**     | Service to communicate with the Mina node endpoints (send transactions, query account states, ...)  |
 | **OutgoingMessageQueue**  | Observes the protokit runtime and dispatches L1 transactions that process the withdrawals on Mina  |
 | **SettlementModule**  | Uses all of the above to coordinate the settlement process and ensure the correct proof orchestration  |
 
@@ -200,7 +200,7 @@ appChain.configurePartial({
 })
 ```
 
-This configuration tells the protokit sequencer that methods are used for deposit and withdrawal calls and what `StateMap` outgoing withdrawals are put into.
+This configuration tells the protokit sequencer what methods are used for deposit and withdrawal calls and what `StateMap` outgoing withdrawals are put into.
 
 Note:
 - `withdrawalMethodPath`: Has to be a user-invokable runtime method (i.e. `@runtimeMethod()`) that under the hood calls the `Withdrawal.withdraw()` function provided by the Withdrawal module.
