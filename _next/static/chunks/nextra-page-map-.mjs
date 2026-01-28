@@ -2,6 +2,7 @@ import meta from "../../../src/pages/_meta.tsx";
 import docs_meta from "../../../src/pages/docs/_meta.tsx";
 import docs_advanced_meta from "../../../src/pages/docs/advanced/_meta.tsx";
 import docs_architecture_meta from "../../../src/pages/docs/architecture/_meta.tsx";
+import docs_concepts_meta from "../../../src/pages/docs/concepts/_meta.tsx";
 import docs_library_meta from "../../../src/pages/docs/library/_meta.tsx";
 import docs_quickstart_meta from "../../../src/pages/docs/quickstart/_meta.tsx";
 import docs_reference_meta from "../../../src/pages/docs/reference/_meta.tsx";
@@ -9,6 +10,7 @@ import docs_reference_api_meta from "../../../src/pages/docs/reference/api/_meta
 import docs_reference_cli_meta from "../../../src/pages/docs/reference/cli/_meta.tsx";
 import docs_reference_common_meta from "../../../src/pages/docs/reference/common/_meta.tsx";
 import docs_reference_deployment_meta from "../../../src/pages/docs/reference/deployment/_meta.tsx";
+import docs_reference_explorer_meta from "../../../src/pages/docs/reference/explorer/_meta.tsx";
 import docs_reference_indexer_meta from "../../../src/pages/docs/reference/indexer/_meta.tsx";
 import docs_reference_library_meta from "../../../src/pages/docs/reference/library/_meta.tsx";
 import docs_reference_module_meta from "../../../src/pages/docs/reference/module/_meta.tsx";
@@ -18,8 +20,10 @@ import docs_reference_protocol_meta from "../../../src/pages/docs/reference/prot
 import docs_reference_sdk_meta from "../../../src/pages/docs/reference/sdk/_meta.tsx";
 import docs_reference_sequencer_meta from "../../../src/pages/docs/reference/sequencer/_meta.tsx";
 import docs_reference_stack_meta from "../../../src/pages/docs/reference/stack/_meta.tsx";
+import docs_running_meta from "../../../src/pages/docs/running/_meta.tsx";
 import docs_runtime_meta from "../../../src/pages/docs/runtime/_meta.tsx";
 import docs_sequencer_meta from "../../../src/pages/docs/sequencer/_meta.tsx";
+import docs_settlement_meta from "../../../src/pages/docs/settlement/_meta.tsx";
 export const pageMap = [{
   data: meta
 }, {
@@ -76,6 +80,24 @@ export const pageMap = [{
       "sidebarTitle": "Architecture"
     }
   }, {
+    name: "concepts",
+    route: "/docs/concepts",
+    children: [{
+      data: docs_concepts_meta
+    }, {
+      name: "sparse-trees",
+      route: "/docs/concepts/sparse-trees",
+      frontMatter: {
+        "sidebarTitle": "Sparse Trees"
+      }
+    }, {
+      name: "state",
+      route: "/docs/concepts/state",
+      frontMatter: {
+        "sidebarTitle": "State"
+      }
+    }]
+  }, {
     name: "faq",
     route: "/docs/faq",
     frontMatter: {
@@ -91,6 +113,12 @@ export const pageMap = [{
       route: "/docs/library/math",
       frontMatter: {
         "sidebarTitle": "Math"
+      }
+    }, {
+      name: "transaction-fees",
+      route: "/docs/library/transaction-fees",
+      frontMatter: {
+        "sidebarTitle": "Transaction Fees"
       }
     }]
   }, {
@@ -152,6 +180,12 @@ export const pageMap = [{
       children: [{
         data: docs_reference_api_meta
       }, {
+        name: "globals",
+        route: "/docs/reference/api/globals",
+        frontMatter: {
+          "title": "@proto-kit/api"
+        }
+      }, {
         name: "README",
         route: "/docs/reference/api/README",
         frontMatter: {
@@ -164,6 +198,12 @@ export const pageMap = [{
       children: [{
         data: docs_reference_cli_meta
       }, {
+        name: "globals",
+        route: "/docs/reference/cli/globals",
+        frontMatter: {
+          "title": "@proto-kit/cli"
+        }
+      }, {
         name: "README",
         route: "/docs/reference/cli/README",
         frontMatter: {
@@ -175,6 +215,12 @@ export const pageMap = [{
       route: "/docs/reference/common",
       children: [{
         data: docs_reference_common_meta
+      }, {
+        name: "globals",
+        route: "/docs/reference/common/globals",
+        frontMatter: {
+          "title": "@proto-kit/common"
+        }
       }, {
         name: "README",
         route: "/docs/reference/common/README",
@@ -201,10 +247,34 @@ export const pageMap = [{
         }
       }]
     }, {
+      name: "explorer",
+      route: "/docs/reference/explorer",
+      children: [{
+        data: docs_reference_explorer_meta
+      }, {
+        name: "globals",
+        route: "/docs/reference/explorer/globals",
+        frontMatter: {
+          "title": "@proto-kit/explorer"
+        }
+      }, {
+        name: "README",
+        route: "/docs/reference/explorer/README",
+        frontMatter: {
+          "title": "@proto-kit/explorer"
+        }
+      }]
+    }, {
       name: "indexer",
       route: "/docs/reference/indexer",
       children: [{
         data: docs_reference_indexer_meta
+      }, {
+        name: "globals",
+        route: "/docs/reference/indexer/globals",
+        frontMatter: {
+          "title": "@proto-kit/indexer"
+        }
       }, {
         name: "README",
         route: "/docs/reference/indexer/README",
@@ -217,6 +287,12 @@ export const pageMap = [{
       route: "/docs/reference/library",
       children: [{
         data: docs_reference_library_meta
+      }, {
+        name: "globals",
+        route: "/docs/reference/library/globals",
+        frontMatter: {
+          "title": "@proto-kit/library"
+        }
       }, {
         name: "README",
         route: "/docs/reference/library/README",
@@ -248,6 +324,12 @@ export const pageMap = [{
       children: [{
         data: docs_reference_persistance_meta
       }, {
+        name: "globals",
+        route: "/docs/reference/persistance/globals",
+        frontMatter: {
+          "title": "@proto-kit/persistance"
+        }
+      }, {
         name: "README",
         route: "/docs/reference/persistance/README",
         frontMatter: {
@@ -259,6 +341,12 @@ export const pageMap = [{
       route: "/docs/reference/processor",
       children: [{
         data: docs_reference_processor_meta
+      }, {
+        name: "globals",
+        route: "/docs/reference/processor/globals",
+        frontMatter: {
+          "title": "@proto-kit/processor"
+        }
       }, {
         name: "README",
         route: "/docs/reference/processor/README",
@@ -340,6 +428,42 @@ export const pageMap = [{
       }]
     }]
   }, {
+    name: "running",
+    route: "/docs/running",
+    children: [{
+      data: docs_running_meta
+    }, {
+      name: "caching",
+      route: "/docs/running/caching",
+      frontMatter: {
+        "sidebarTitle": "Caching"
+      }
+    }, {
+      name: "databases",
+      route: "/docs/running/databases",
+      frontMatter: {
+        "sidebarTitle": "Databases"
+      }
+    }, {
+      name: "explorer",
+      route: "/docs/running/explorer",
+      frontMatter: {
+        "sidebarTitle": "Explorer"
+      }
+    }, {
+      name: "mempool",
+      route: "/docs/running/mempool",
+      frontMatter: {
+        "sidebarTitle": "Mempool"
+      }
+    }, {
+      name: "monitoring",
+      route: "/docs/running/monitoring",
+      frontMatter: {
+        "sidebarTitle": "Monitoring"
+      }
+    }]
+  }, {
     name: "runtime",
     route: "/docs/runtime",
     children: [{
@@ -397,6 +521,36 @@ export const pageMap = [{
       route: "/docs/sequencer/workers",
       frontMatter: {
         "sidebarTitle": "Workers"
+      }
+    }]
+  }, {
+    name: "settlement",
+    route: "/docs/settlement",
+    children: [{
+      data: docs_settlement_meta
+    }, {
+      name: "bridging",
+      route: "/docs/settlement/bridging",
+      frontMatter: {
+        "sidebarTitle": "Bridging"
+      }
+    }, {
+      name: "deposits",
+      route: "/docs/settlement/deposits",
+      frontMatter: {
+        "sidebarTitle": "Deposits"
+      }
+    }, {
+      name: "settlement",
+      route: "/docs/settlement/settlement",
+      frontMatter: {
+        "sidebarTitle": "Settlement"
+      }
+    }, {
+      name: "withdrawals",
+      route: "/docs/settlement/withdrawals",
+      frontMatter: {
+        "sidebarTitle": "Withdrawals"
       }
     }]
   }, {
