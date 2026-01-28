@@ -31,17 +31,19 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
   @runtimeMethod()
-  public mint(address: PublicKey, amount: UInt64) {
+  public async mint(address: PublicKey, amount: UInt64) {
     assert(
       UInt64.from(this.network.block.height).lessThanOrEqual(UInt64.from(1000)),
       "Minting ended at block height #1000"
     );
-    this.balances.set(address, amount);
+    await this.balances.set(address, amount);
   }
 
   @runtimeMethod()
-  public mintPrivate(proof: MintProof, amount: UInt64) {
+  public async mintPrivate(proof: MintProof, amount: UInt64) {
+    ...
     assert(this.network.previous.rootHash.equals(proof.publicOutput.rootHash), "Proof is not valid");
+    ...
   }
 }
 ```
@@ -73,12 +75,12 @@ export class Balances extends RuntimeModule<Record<string, never>> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
 
   @runtimeMethod()
-  public mint(address: PublicKey, amount: UInt64) {
+  public async mint(address: PublicKey, amount: UInt64) {
     assert(
       this.transaction.sender.value.equals(address),
       "Minting can only be done by the owner of the address"
     );
-    this.balances.set(address, amount);
+    await this.balances.set(address, amount);
   }
 }
 

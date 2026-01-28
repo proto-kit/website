@@ -26,13 +26,14 @@ Unmet o1js assertions like `a.assertEquals(b)` will lead to your appchain not wo
 ### Usage
 
 In order to use a hook inside your protocol, you simply provide it as a module in your Protocol.
+Both transaction and block hooks work very similar so this section is true for both.
 
 ```ts {5-7} showLineNumbers copy
 new TestingAppChain({
   runtime,
   sequencer,
 
-  protocol: VanillaProtocol.from({
+  protocol: VanillaProtocolModules.with({
     TransactionFeeModule
   }),
 ```
@@ -41,19 +42,18 @@ new TestingAppChain({
 ### Working with custom state
 
 Protocol hooks can define their own state and use that to read and modify the appchain state.
-They work similar to the runtime `@state(){:ts}` state and emit StateTransitions under the hood.
+They work like the runtime `@state(){:ts}` state and emit StateTransitions under the hood.
 
-To define state in ProtocolModules, you will have to use the `@protocolState(){:ts}` decorator instead of `@state(){:ts}`.
-The rest, like the `State` and `StateMap` classes, stays the same.
+```ts {2,7,9} showLineNumbers filename="ProtocolStateModule" copy
+export class ProtocolStateModule extends ProvableTransactionHook<Config> {
+  @state() public accountState = StateMap.from(PublicKey, AccountState);
 
-```ts {2,5,7} showLineNumbers filename="ProtocolStateModule" copy
-export class ProtocolStateModule extends ProvableTransactionHook {
-  @protocolState() public accountState = StateMap.from(PublicKey, AccountState);
-
-  public onTransaction(): void {
+  public async beforeTransaction(
+    executionData: BeforeTransactionHookArguments
+  ): Promise<void> {
     const accountState = this.accountState.get(this.transaction.sender.value)
 
-    this.accountState.set(this.transaction.sender, someAccountState);
+    await this.accountState.set(this.transaction.sender.value, someAccountState);
     ...
   }
 }
@@ -78,7 +78,7 @@ export class SimpleTransactionFeeModule extends ProvableTransactionHook {
     this.balances = runtime.resolveOrFail("Balances", Balances);
   }
 
-  public onTransaction({ transaction }: BlockProverExecutionData): void {
+  public afterTransaction({ transaction }: BlockProverExecutionData): void {
     this.balances.transfer(
       transaction.sender,
       PublicKey.empty(),
@@ -97,7 +97,8 @@ That means that these runtime calls will be executed even if the underlying tran
 Transaction Hooks are classes that extend `ProvableTransactionHook`.
 This class forces you to implement
 
-`public onTransaction({ transaction }: BlockProverExecutionData): void{:ts}`
+- `public beforeTransaction({ transaction }: BlockProverExecutionData): Promise<void>{:ts}`
+- `public afterTransaction({ transaction }: BlockProverExecutionData): Promise<void>{:ts}`
 
 The provided argument `BlockProverExecutionData` contains:
 
@@ -109,6 +110,28 @@ The provided argument `BlockProverExecutionData` contains:
 
 > Given these possibilities, you can actually **consume** the result of the runtime execution in your transaction hook.
 
+### Block building implications
+
+When building blocks, protokit will execute transactions in the order that's given by the mempool (and it's [sorting module](http://localhost:3000/docs/running/mempool/#custom-sorting-strategies)).
+
+During execution, block hooks may fail assertions and therefore will not be included in the block.
+The block builder, however, needs to figure out whether to throw away the transaction or keep it in the mempool for future blocks.
+
+An example of a case where the transaction should stay in the mempool is if the nonce is too big for the current state.
+The transaction would fail if included at that point, but if transactions arrive, increasing the nonce gradually, eventually that transaction would become valid again.
+
+To model this behaviour, transaction hooks can implement
+
+`public removeTransactionWhen(execution: BeforeTransactionHookArguments): Promise<boolean>{:ts}`
+
+The contract of this method is as follows:
+If `removeTransactionWhen` returns `true`, the transaction will be dropped from the mempool after previous unsuccessful execution of the transaction hooks.
+If it returns `false`, then it will remain in the mempool inactive, until any of the input state to the hook's execution changes, at which point it will be added back into the mempool.
+
+<Callout type="info">
+Note that removeTransactionWhen does **not** have to be provable, therefore you can use arbitrary javascript logic inside this function
+</Callout>
+
 ## BlockHooks
 
 The purpose of block hooks is to mutate and transform the global NetworkState.
@@ -119,16 +142,16 @@ Examples of that could be incrementing the block height, providing the last bloc
 
 Block Hooks extend the `ProvableBlockHook` class and offer two methods:
 
-- `public beforeBlock(blockData: BeforeBlockParameters): NetworkState{:ts}`
-- `public afterBlock(blockData: AfterBlockParameters): NetworkState{:ts}`
+- `public beforeBlock(networkState: NetworkState, state: BeforeBlockHookArguments): Promise<NetworkState>{:ts}`
+- `public afterBlock(networkState: NetworkState, state: AfterBlockHookArguments): Promise<NetworkState>{:ts}`
 
-The provided arguments `BeforeBlockParameters` and `AfterBlockParameters` both hold:
+The provided arguments hold:
 
-- `state`: BlockProverState;
 - `networkState`: The current active networkState, that should be used for transforming
+- `state`: BlockProverState;
 
 ### Lifecycle
 
 Block hooks have two methods that are execute at different points in the block lifecycle.
 `afterBlock` will be executed **after** a block is finished.
-`beforeBlock` builds on top of the result provided by the `afterBlock` hook and is execute right **before** the next block is processed.
+`beforeBlock` builds on top of the result provided by the `afterBlock` hook and is executed right **before** the next block is processed.

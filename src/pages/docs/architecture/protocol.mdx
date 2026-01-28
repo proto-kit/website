@@ -16,13 +16,13 @@ One of the core responsibilities of the protocol, is to define how state transit
 state tree. State transition is defined by _path_, _from_ and _to_ properties, where from/to are optional values. 
 
 This enables state transitions not only to model how a state moves forward, but also to define how a state is meant to look like at a certain point in time. 
-The ability to reason about the current state is reffered to as **preconditions**. The state transition prover implementation shipped with Protokit, is capable of
+The ability to reason about the current state is referred to as **preconditions**. The state transition prover implementation shipped with Protokit, is capable of
 both enforcing state transition preconditions and state writes.
 
 Most importantly, state transition preconditions allow the sequencer to supply unchecked values during on-chain execution of runtime, and still be able to prove the correctness 
 of the values supplied within the protocol.
 
-Circuits for applying state transitions to the state tree are inifinitely recursive, in order to compensate for the current O1JS circuit size limits. This allows us to apply arbitrary
+Circuits for applying state transitions to the state tree are infinitely recursive, in order to compensate for the current O1JS circuit size limits. This allows us to apply arbitrary
 amount of state transitions per e.g. each runtime method execution.
 
 ## Block production

@@ -129,7 +129,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
   public hasBalance(address: PublicKey): Bool {
-    return this.balances.get(address).isSome;
+    return (await this.balances.get(address)).isSome;
   }
 }
 ```
@@ -158,7 +158,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
 
   public getBalance(address: PublicKey): UInt64 {
-    const balance = this.balances.get(address).orElse(UInt64.from(0));
+    const balance = (await this.balances.get(address)).orElse(UInt64.from(0));
     return UInt64.from(balance.value);
   }
 }
@@ -186,8 +186,8 @@ class MyModule extends RuntimeModule<Record<never, never>> {
   @state() public myStruct = State.from(MyStruct);
 
   @runtimeMethod()
-  public hashStruct() {
-    const myStruct = new MyStruct(this.myStruct.get().value);
+  public async hashStruct() {
+    const myStruct = new MyStruct((await this.myStruct.get()).value);
     Provable.log(myStruct.hash())
   }
 }
@@ -220,8 +220,9 @@ interface BalancesConfig {
 export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
-  public setBalance(address: PublicKey, amount: UInt64) {
-    this.balances.set(address, amount);
+  @runtimeMethod()
+  public async setBalance(address: PublicKey, amount: UInt64) {
+    await this.balances.set(address, amount);
   }
 }
 ```
