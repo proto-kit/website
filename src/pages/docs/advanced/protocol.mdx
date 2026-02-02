@@ -46,17 +46,8 @@ They work similar to the runtime `@state(){:ts}` state and emit StateTransitions
 To define state in ProtocolModules, you will have to use the `@protocolState(){:ts}` decorator instead of `@state(){:ts}`.
 The rest, like the `State` and `StateMap` classes, stays the same.
 
-```ts {2,5,7} showLineNumbers filename="ProtocolStateModule" copy
-export class ProtocolStateModule extends ProvableTransactionHook {
-  @protocolState() public accountState = StateMap.from(PublicKey, AccountState);
-
-  public onTransaction(): void {
-    const accountState = this.accountState.get(this.transaction.sender.value)
-
-    this.accountState.set(this.transaction.sender, someAccountState);
-    ...
-  }
-}
+```ts {12,17,19} showLineNumbers filename="ProtocolStateModule" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/hooks/transactionHook.ts
+// Example transaction hook with state
 ```
 
 ### Calling runtime modules
@@ -67,25 +58,8 @@ Let's assume we have a runtime module called `Balances` that keeps track of toke
 
 This can be implemented very easily:
 
-```ts {5,8,12-15} showLineNumbers filename="TransactionFeeModule" copy
-export class SimpleTransactionFeeModule extends ProvableTransactionHook {
-  private balances: Balances;
-
-  public constructor(
-    @inject("Runtime") runtime: Runtime<RuntimeModulesRecord>
-  ) {
-    super();
-    this.balances = runtime.resolveOrFail("Balances", Balances);
-  }
-
-  public onTransaction({ transaction }: BlockProverExecutionData): void {
-    this.balances.transfer(
-      transaction.sender,
-      PublicKey.empty(),
-      UInt64.from(100)
-    );
-  }
-}
+```ts {16,19,23-28} showLineNumbers filename="TransactionFeeModule" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/hooks/transactionFeeHook.ts
+// Example transaction fee hook
 ```
 
 > RuntimeModules that are called this was, will be treated as protocol-executed code by the framework.

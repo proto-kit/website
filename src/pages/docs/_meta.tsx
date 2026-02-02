@@ -25,5 +25,4 @@ export default {
     title: "Graphql API docs",
     href: "https://graphql.protokit.dev/"
   },
-  reference: "Reference",
 };

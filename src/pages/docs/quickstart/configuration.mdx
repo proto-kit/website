@@ -3,25 +3,7 @@
 Your app-chain can be configured at three different levels: _runtime_, _chain_ and _client_. Firstly we start with the
 overall runtime configuration, specifying the definition/configuration of your runtime module layout:
 
-```typescript {5-7} showLineNumbers filename="packages/chain/src/runtime.ts"
-import { Balance } from "@proto-kit/library";
-import { Balances } from "./balances";
-import { ModulesConfig } from "@proto-kit/common";
-
-export const modules = {
-  Balances,
-};
-
-export const config: ModulesConfig<typeof modules> = {
-  Balances: {
-    totalSupply: Balance.from(10_000),
-  },
-};
-
-export default {
-  modules,
-  config,
-};
+```typescript {6-9} showLineNumbers filename="packages/chain/src/runtime.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/index.ts
 
 ```
 
