@@ -1,3 +1,5 @@
+import { Callout, Cards } from 'nextra/components'
+
 # State
 
 Runtime modules are responsible for managing their own state. Runtime state is stored by the sequencer,
@@ -200,6 +202,9 @@ Writing to the state is equally as easy as reading the state. Instead of `.get(.
 
 > The set state API does not work with options, you can pass the actual values you want directly.
 
+<Callout type="error" emoji="️🚫">
+  Remember to await the `set(...)` method, since it returns a promise.
+</Callout>
 
 ```typescript {19-21} showLineNumbers filename="balances.ts"
 import {
@@ -221,7 +226,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
  
   public setBalance(address: PublicKey, amount: UInt64) {
-    this.balances.set(address, amount);
+    await this.balances.set(address, amount);
   }
 }
 ```
