@@ -10,40 +10,10 @@ a runtime method:
 - Current block height
 - Previous block's state root hash
 
-```typescript {22-25,31} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-  runtimeMethod,
-} from "@proto-kit/module";
-import { StateMap, assert } from "@proto-kit/protocol";
-import { MintProof } from './mint-proof'
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library"
- 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
-@runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
- 
-  @runtimeMethod()
-  public mint(address: PublicKey, amount: UInt64) {
-    assert(
-      UInt64.from(this.network.block.height).lessThanOrEqual(UInt64.from(1000)),
-      "Minting ended at block height #1000"
-    );
-    this.balances.set(address, amount);
-  }
+```typescript showLineNumbers filename="mintery.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/mintery.ts inline
+// group mintery-def
+  // group mintPrivate
 
-  @runtimeMethod()
-  public mintPrivate(proof: MintProof, amount: UInt64) {
-    assert(this.network.previous.rootHash.equals(proof.publicOutput.rootHash), "Proof is not valid");
-  }
-}
 ```
 
 ## Transaction API
@@ -57,29 +27,8 @@ You can access the following information about the transaction:
 
 > The _methodId_ and _argsHash_ are used by the _runtimeMethod_ decorator to prove that the runtime method execution was authorized by the transaction sender.
 
-```typescript {18} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-  runtimeMethod,
-} from "@proto-kit/module";
-import { assert, StateMap } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library"
-
-@runtimeModule()
-export class Balances extends RuntimeModule<Record<string, never>> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
-
-  @runtimeMethod()
-  public mint(address: PublicKey, amount: UInt64) {
-    assert(
-      this.transaction.sender.value.equals(address),
-      "Minting can only be done by the owner of the address"
-    );
-    this.balances.set(address, amount);
-  }
-}
-
+```typescript showLineNumbers filename="guest-book.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+// group imports
+// group runtime-module def
+// group checkIn
 ```

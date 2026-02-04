@@ -18,7 +18,6 @@ export class CheckIn extends Struct({
 @runtimeModule()
 export class GuestBook extends RuntimeModule<Record<string, never>> {
   @state() public checkIns = StateMap.from(PublicKey, CheckIn);
-
 // group runtime-module def
 
   // group checkIn
