@@ -1,0 +1,88 @@
+# Mempool
+
+Protokit's default mempool implementation `PrivateMempool` is very powerful on it's own.
+- Works with both L1 messages and L2 submitted Txs
+- Allows for custom sorting/prioritization
+- Block building is smart and resource-efficient
+
+## Setup
+
+```typescript {8} showLineNumbers
+import { PrivateMempool } from "@proto-kit/sequencer";
+
+const appChain = AppChain.from({
+  // ... other configuration
+  Sequencer: Sequencer.from({
+    modules: {
+      // ... other modules
+      Mempool: PrivateMempool
+    },
+  }),
+});
+```
+
+## Configuration
+
+The `PrivateMempool` automatically collects all information that it needs, so you don't need to
+configure anything normally.
+
+However, if you want to force the mempool to conform to a certain execution mode, you can configure that
+
+```typescript {4} showLineNumbers
+{
+  // ...
+  PrivateMempool: {
+    type: "hybrid" // "hybrid" (default) | "based" | "private"
+  }
+}
+```
+
+## Transaction sorting / prioritisation
+
+The Mempool Sorting interface allows developers to customize how transactions are ordered within the Sequencer's mempool.
+This determines the order in which transactions are picked up from the database and proposed in a block.
+
+### Configuration
+
+```typescript {6} showLineNumbers
+const appChain = AppChain.from({
+  // ... other configuration
+  Sequencer: Sequencer.from({
+    modules: {
+      // ... other modules
+      MempoolSorting: YourSortingStrategy
+    },
+  }),
+});
+```
+
+### Pre-built variants
+
+By default, the `PrivateMempool` module utilizes `DefaultMempoolSorting`, which processes transactions on a first-come-first-serve basis.
+If you do not explicitly register a sorting module, this module is applied.
+
+## Custom sorting strategies
+
+All sorting strategies have to:
+- `implements MempoolSorting{:ts}`
+- `extends SequencerModule{:ts}`
+- decorate with `@sequencerModule(){:ts}`
+
+Transaction sorting works with a dual-layer sorting mechanism:
+1. **Presorting (Database layer)**: Fast, scalar-based sorting performed during database retrieval.
+2. **Postsorting (In-Memory layer)**: flexible, logic-based sorting performed on the retrieved batch of transactions.
+
+### Presorting
+`presortingPriority(tx: PendingTransaction): number{:ts}`
+
+This method assigns a static numeric priority to a transaction at the moment it arrives in the mempool.
+*   Larger value = Higher priority (processed earlier).
+*   Limitation: The logic must be static per transaction (e.g., based on timestamp or fee). It cannot depend on the state of other transactions in the pool.
+
+### Postsorting
+`postSorting(transactions: PendingTransaction[]): PendingTransaction[]{:ts}`
+
+This method receives a batch of transactions (already retrieved from the DB based on presorting) and allows for arbitrary reordering.
+*   Be aware that this function will only receive a subset of the mempool's transaction.
+*   Enabled only if `enablePostSorting()` returns `true`.
+*   Performance: Since this runs in-memory on the sequencer node, heavy computation here can impact block production latency.

@@ -49,3 +49,10 @@ const rootHash = witness.computeRoot(
     Poseidon.hash(state.toFields())
 );
 ```
+
+### Connection to on-chain values
+
+After configuring the protocol with the `LastStateRootBlockHook`, the last block's rootHash can be accessed via
+`this.network.previous.blockHash`.
+Be aware, that this changes every block, therefore you might want to write a custom block hook to store all
+historical block hashes in a `StateMap`, so that the user has more time to create and submit their proof.

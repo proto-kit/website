@@ -1,0 +1,82 @@
+import {
+    Tabs
+} from "nextra/components";
+
+# Monitoring
+
+Protokit offers built-in integrations with a variety of monitoring techniques and services.
+
+The following are available out of the box.
+
+- **Logs** via Promtail and Loki
+- **Metrics** via OpenTelemetry and Prometheus
+- **Traces** via OpenTelemetry, OTel Collector and Tempo
+- **Dashboard** via Grafana
+
+## Configuration
+
+Protokit offers both modules to collect the data and docker-compose configurations to run all collector services.
+
+<Tabs items={['Framework', 'Starter kit']} storageKey="settlement" className="tabs">
+    <Tabs.Tab className="tab">
+        The module used for integration is the `OpenTelemetryModule`.
+        It is responsible for collecting **metrics** and **traces** and exporting them to the otel collector and prometheus.
+
+        Configure the module:
+
+```typescript copy
+...
+// modules config
+Sequencer: {
+    OpenTelemetryServer
+}
+...
+
+appchain.configure({
+    ...
+    Sequencer: {
+        OpenTelemetryServer: {
+            metrics: {
+                enabled: true
+                prometheus: {
+                    host: "prometheus",
+                    port: 4320,
+                    appendTimestamp: true
+                },
+                nodeScrapeInterval: 10, // interval in seconds
+            },
+            tracing: {
+                enabled: true
+                otlp: {
+                    url: "http://otel-collector:4317"
+                }
+            },
+        },
+    }
+});
+```
+
+Docker-compose files can be found in `packages/deployment/docker/deployment`.
+
+    </Tabs.Tab>
+    <Tabs.Tab className="tab">
+        For detailed configuration in regards to different protokit environment configurations, see [the starter-kit section](https://github.com/proto-kit/starter-kit?tab=readme-ov-file#monitoring).
+        For example, the sovereign environment has monitoring configured by default.
+
+        There are a bunch of environment variables prefixed with `OPEN_TELEMETRY*` that handle configuration of the monitoring features.
+        Default values are set for correct communication with the default docker services.
+
+        Additionally, configure the default grafana user password using the `GF_SECURITY_ADMIN*` environment variables.
+
+        Spin up the docker-services using `pnpm env:your-environment docker:up`.
+
+        Grafana should be available at `http://localhost:3001`
+    </Tabs.Tab>
+</Tabs>
+
+## Usage
+
+Visit `localhost:3001` to access the grafana UI.
+
+Default dashboard aren't yet available, but on our roadmap.
+
