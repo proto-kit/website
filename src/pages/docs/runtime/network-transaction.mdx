@@ -10,10 +10,12 @@ a runtime method:
 - Current block height
 - Previous block's state root hash
 
-```typescript showLineNumbers filename="mintery.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/mintery.ts inline
+```typescript showLineNumbers {15, 23} filename="mintery.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/mintery.ts inline
 // group mintery-def
-  // group mintPrivate
+  // group mint
 
+  // group mintPrivate
+}
 ```
 
 ## Transaction API
@@ -27,7 +29,7 @@ You can access the following information about the transaction:
 
 > The _methodId_ and _argsHash_ are used by the _runtimeMethod_ decorator to prove that the runtime method execution was authorized by the transaction sender.
 
-```typescript showLineNumbers filename="guest-book.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+```typescript showLineNumbers {12} filename="guest-book.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
 // group imports
 // group runtime-module def
 // group checkIn

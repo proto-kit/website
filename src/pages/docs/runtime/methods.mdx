@@ -14,9 +14,10 @@ In order to maintain good testability of the runtime module, it is recommended t
 method implementation without side-effects as well. Methods may freely interact with the state API or other methods,
 and can include a return value too.
 
-```typescript {9-11} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
+```typescript {9-12} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
 // group start
 // group getBalance
+}
 ```
 
 <Callout type="warning">
@@ -40,9 +41,10 @@ these methods will be callable via transactions regardless of visibility.
 
 > The example below allows *anyone* to set a balance for *anyone*. This is obviously not a good idea, do not do this.
 
-```typescript {9-12} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
+```typescript {9-13} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
 // group start
 // group mint
+}
 ```
 
 ### Valid argument types

@@ -19,6 +19,7 @@ export const errors = {
 
 @runtimeModule()
 export class Mintery extends RuntimeModule<Record<string, never>> {
+  
   public constructor(@inject("Balances") public balances: Balances) {
     super();
   }

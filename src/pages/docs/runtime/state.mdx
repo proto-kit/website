@@ -54,10 +54,11 @@ Accessing runtime state within a runtime module is done via the state API. State
 is represented as an _optional_ value, since it may or may not exists at the time when its read.
 This scenario can easily occur, if you're reading a state value before it has been set.
 
-```typescript {16-20, 22-25} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+```typescript {19-23, 25-28} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
 // group imports
 // group balances-def
   // group balances-getBalance
+
   // group balances-getCirculatingSupply
 }
 ```
@@ -75,7 +76,7 @@ will carry a value substitute, known as a _dummy value_.
 
 You can determine if the obtained state value exists, or if its a dummy by accessing the `.isSome` property on the option.
 
-```typescript {18-20} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+```typescript {19-22} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
 // group imports
 // group balances-def
   // group balances-hasBalance
@@ -87,7 +88,7 @@ You can determine if the obtained state value exists, or if its a dummy by acces
 Relying on the dummy value is not the best practice, therefore we offer a `.orElse(...)` method on the option, which
 allows you to provide a fallback value in case the option is _none_.
 
-```typescript {18-21} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+```typescript {19-22} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
 // group imports
 // group balances-def
   // group balances-getBalanceOrZero
@@ -123,7 +124,7 @@ Writing to the state is equally as easy as reading the state. Instead of `.get(.
   Remember to await the `set(...)` method, since it returns a promise.
 </Callout>
 
-```typescript {19-21} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+```typescript {22} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
 // group imports
 // group balances-def
   // group balances-mint

@@ -15,6 +15,7 @@ export class TestEvent extends Struct({
 
 @runtimeModule()
 export class EventMaker extends RuntimeModule<Record<string, never>> {
+  
   public events = new RuntimeEvents({
     primary: TestEvent,
   });
