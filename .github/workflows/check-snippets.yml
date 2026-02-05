@@ -29,7 +29,7 @@ jobs:
         run: npm install -g pnpm
 
       - name: Rebase snippets on latest starter-kit
-        working-directory: starter-kit-snippets
+        working-directory: ${{ github.workspace }}
         run: |
           cd ../
           git remote add starter-kit https://github.com/proto-kit/starter-kit.git
