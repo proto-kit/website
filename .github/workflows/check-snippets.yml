@@ -1,0 +1,45 @@
+name: Check Starter Kit Snippets
+
+on:
+  push:
+    paths:
+      - "starter-kit-snippets/**"
+      - ".github/workflows/check-snippets.yml"
+  pull_request:
+    paths:
+      - "starter-kit-snippets/**"
+      - ".github/workflows/check-snippets.yml"
+
+jobs:
+  build-chain-snippets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Rebase snippets on latest starter-kit
+        working-directory: starter-kit-snippets
+        run: |
+          cd ../
+          git remote add starter-kit https://github.com/proto-kit/starter-kit.git
+          git fetch starter-kit main
+          git subtree pull --prefix=starter-kit-snippets starter-kit main --squash
+
+      - name: Install dependencies
+        run: pnpm install
+        working-directory: starter-kit-snippets
+
+      - name: Build chain package
+        run: pnpm build --filter=chain
+        working-directory: starter-kit-snippets
