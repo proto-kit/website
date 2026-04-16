@@ -1,35 +1,25 @@
 // group imports
-import {
-  RuntimeModule,
-  runtimeModule,
-  runtimeMethod,
-} from "@proto-kit/module";
+import { RuntimeModule, runtimeModule, runtimeMethod } from "@proto-kit/module";
 import { StateMap, assert, state, State } from "@proto-kit/protocol";
 import { Bool, PublicKey, UInt64 } from "o1js";
 import { inject } from "tsyringe";
-
 // group imports
+
 // group balances-def
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
 @runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
+export class Balances extends RuntimeModule {
   @state() public balances = StateMap.from(PublicKey, UInt64);
+
   @state() public circulatingSupply = State.from<UInt64>(UInt64);
-  
-// group balances-def
-  // group balances-getTotalSupply
-  public getTotalSupply() {
-    return this.config.totalSupply
-  }
-  // group balances-getTotalSupply
+  // group balances-def
 
   // group balances-mint
   @runtimeMethod()
   public async mint(amount: UInt64) {
-    assert(this.transaction.nonce.value.equals(UInt64.from(0)), "Only new users can mint");
+    assert(
+      this.transaction.nonce.value.equals(UInt64.from(0)),
+      "Only new users can mint"
+    );
     await this.balances.set(this.transaction.sender.value, amount);
   }
   // group balances-mint
@@ -48,7 +38,7 @@ export class Balances extends RuntimeModule<BalancesConfig> {
     return balance.orElse(UInt64.from(0));
   }
   // group balances-getBalanceOrZero
-  
+
   // group balances-hasBalance
   public async hasBalance(address: PublicKey): Promise<Bool> {
     const balance = await this.balances.get(address);
@@ -91,7 +81,7 @@ export class Vesting extends RuntimeModule<Record<string, never>> {
 
   @runtimeMethod()
   public async claim() {
-    await this.balances.mint(UInt64.from(1000))
+    await this.balances.mint(UInt64.from(1000));
   }
 }
 // group injection

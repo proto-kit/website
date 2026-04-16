@@ -14,16 +14,17 @@ export class CheckIn extends Struct({
 }) {}
 // group storage
 
-// group runtime-module def
+// group runtime-module-def
 @runtimeModule()
 export class GuestBook extends RuntimeModule<Record<string, never>> {
   @state() public checkIns = StateMap.from(PublicKey, CheckIn);
-// group runtime-module def
+  // group runtime-module-def
 
   // group checkIn
   @runtimeMethod()
   public async checkIn(rating: UInt64) {
     assert(rating.lessThanOrEqual(UInt64.from(5)), "Maximum rating can be 5");
+
     const guest = this.transaction.sender.value;
     const createdAt = UInt64.Safe.fromField(this.network.block.height.value);
     const checkIn = new CheckIn({

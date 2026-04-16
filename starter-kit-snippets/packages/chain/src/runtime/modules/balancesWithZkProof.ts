@@ -12,8 +12,8 @@ interface BalancesConfig {
 @runtimeModule()
 export class Balances extends RuntimeModule<BalancesConfig> {
   @state() public balances = StateMap.from(PublicKey, UInt64);
- 
-// group start
+
+  // group start
   // group getBalance
   public async getBalance(address: PublicKey): Promise<UInt64> {
     const balance = await this.balances.get(address);
@@ -24,7 +24,10 @@ export class Balances extends RuntimeModule<BalancesConfig> {
   // group mint
   @runtimeMethod()
   public async mint(address: PublicKey, amount: UInt64) {
-    assert(this.transaction.nonce.value.equals(UInt64.from(0)), "Only new users can mint");
+    assert(
+      this.transaction.nonce.value.equals(UInt64.from(0)),
+      "Only new users can mint"
+    );
     await this.balances.set(address, amount);
   }
   // group mint

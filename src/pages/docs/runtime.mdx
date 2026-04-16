@@ -18,13 +18,13 @@ First step towards building a runtime is to define a runtime module. Typical run
 _configuration_, _storage_ and _methods_. Every runtime module must extend the `RuntimeModule` class, and be decorated
 with the `@runtimeModule()` decorator.
 
-```typescript showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
-// group runtime-module def
-  ...
-}
+```typescript showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/runtime-def.ts inline
+// group imports
+
+// group balances-empty
 ```
 
-> `Record<string, never>` signifies an empty configuration object.
+> `NoConfig` signifies an empty configuration object.
 
 ### Configuration
 
@@ -32,8 +32,8 @@ Configuration of the runtime module is immutable during execution. This means th
 will be made part of the underlying zero knowledge circuits as constants. Config is accessible as part of the
 runtime module instance under `this.config.totalSupply`.
 
-```typescript {1-3, 11} showLineNumbers  filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
-// group balances-def
-// group balances-getTotalSupply
-}
+```typescript {6-8, 12-14} showLineNumbers  filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/runtime-def.ts inline
+// group imports
+
+// group balances-config
 ```

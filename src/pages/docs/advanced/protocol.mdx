@@ -44,8 +44,9 @@ new TestingAppChain({
 Protocol hooks can define their own state and use that to read and modify the appchain state.
 They work like the runtime `@state(){:ts}` state and emit StateTransitions under the hood.
 
-```ts {12,17,19} showLineNumbers filename="ProtocolStateModule.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/hooks/transactionHook.ts
-// Example transaction hook with state
+```ts  showLineNumbers filename="ProtocolStateModule.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionHook.ts inline
+// group transaction-hook
+}
 ```
 
 ### Calling runtime modules
@@ -56,11 +57,14 @@ Let's assume we have a runtime module called `Balances` that keeps track of toke
 
 This can be implemented very easily:
 
-```ts {16,19,23-28} showLineNumbers filename="TransactionFeeModule" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/hooks/transactionFeeHook.ts
-// Example transaction fee hook
+```ts {2,9} showLineNumbers filename="TransactionFeeHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionFeeHook.ts inline
+// group transaction-fee-module
+
 ```
 
-> RuntimeModules that are called this was, will be treated as protocol-executed code by the framework.
+This direct injection works because protokit cross-injects all runtime modules as aliases into the protocol modules container.
+
+> RuntimeModules that are called this way will be treated as protocol-executed code by the framework.
 That means that these runtime calls will be executed even if the underlying transaction fails and they cannot use `assert`.
 
 
@@ -122,7 +126,10 @@ The provided arguments hold:
 - `networkState`: The current active networkState, that should be used for transforming
 - `state`: BlockProverState;
 
-```typescript filename="validNetworkStateHashBlockHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/hooks/validNetworkStateHashBlockHook.ts
+A example for block hooks would be this module, which saves all block's state root into a ever-growing state map.
+
+```typescript filename="StateRootHistoryHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/StateRootHistoryHook.ts
+// group state-root-history-hook
 ```
 
 ### Lifecycle

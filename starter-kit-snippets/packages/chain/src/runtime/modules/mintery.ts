@@ -13,24 +13,20 @@ class MintProof extends Struct({
 }) {}
 
 // group mintery-def
-export const errors = {
-  mintOnlyAtGenesis: "Minting is only allowed at the genesis block",
-};
-
 @runtimeModule()
 export class Mintery extends RuntimeModule<Record<string, never>> {
-  
   public constructor(@inject("Balances") public balances: Balances) {
     super();
   }
 
-// group mintery-def
+  // group mintery-def
   // group mint
   @runtimeMethod()
   public async mint(tokenId: TokenId, address: PublicKey, amount: UInt64) {
+    const currentBlockHeight = this.network.block.height.value;
     assert(
-      UInt64.Safe.fromField(this.network.block.height.value).equals(UInt64.from(0)),
-      errors.mintOnlyAtGenesis
+      UInt64.Safe.fromField(currentBlockHeight).equals(UInt64.from(0)),
+      "Minting is only allowed at the genesis block"
     );
     await this.balances.setBalance(tokenId, address, amount);
   }
@@ -39,7 +35,10 @@ export class Mintery extends RuntimeModule<Record<string, never>> {
   // group mintPrivate
   @runtimeMethod()
   public async mintPrivate(proof: MintProof, amount: UInt64) {
-    assert(this.network.previous.rootHash.equals(proof.hash), "Proof is not valid");
+    assert(
+      this.network.previous.rootHash.equals(proof.hash),
+      "Proof is not valid"
+    );
   }
   // group mintPrivate
 }

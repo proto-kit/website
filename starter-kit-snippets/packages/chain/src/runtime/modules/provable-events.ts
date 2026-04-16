@@ -15,7 +15,6 @@ export class TestEvent extends Struct({
 
 @runtimeModule()
 export class EventMaker extends RuntimeModule<Record<string, never>> {
-  
   public events = new RuntimeEvents({
     primary: TestEvent,
   });
@@ -28,7 +27,9 @@ export class EventMaker extends RuntimeModule<Record<string, never>> {
 // group events-example
 
 @runtimeModule()
-export class ConditionalEventMaker extends RuntimeModule<Record<string, never>> {
+export class ConditionalEventMaker extends RuntimeModule<
+  Record<string, never>
+> {
   public events = new RuntimeEvents({
     primary: TestEvent,
   });
@@ -38,7 +39,11 @@ export class ConditionalEventMaker extends RuntimeModule<Record<string, never>> 
 
     // group conditional-events
     const doEmit: Bool = someCondition;
-    this.events.emitIf(doEmit, "primary", new TestEvent({ message: Bool(false) }));
+    this.events.emitIf(
+      doEmit,
+      "primary",
+      new TestEvent({ message: Bool(false) })
+    );
     // group conditional-events
   }
 }
