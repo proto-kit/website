@@ -22,31 +22,37 @@ import { Startable } from "@proto-kit/common";
 import protocol from "../../../protocol";
 import runtime from "../../../runtime";
 
-//group appchain-configuration
+//group appchain-def-1
 const appChain = AppChain.from({
   Runtime: Runtime.from(runtime.modules),
   Protocol: Protocol.from(protocol.modules),
   Sequencer: Sequencer.from({
+    //group appchain-def-1
     WorkerModule: WorkerModule.from(
       VanillaTaskWorkerModules.withoutSettlement()
     ),
     TaskQueue: LocalTaskQueue,
-    Database: InMemoryDatabase,
-    Graphql: GraphqlSequencerModule.from(VanillaGraphqlModules.with({})),
-    Mempool: PrivateMempool,
-    BlockTrigger: TimedBlockTrigger,
     LocalSequencerCoreModule,
+    //group appchain-def-2
+    Database: InMemoryDatabase,
+    Mempool: PrivateMempool,
+    //group appchain-def-2
+    Graphql: GraphqlSequencerModule.from(VanillaGraphqlModules.with({})),
+    BlockTrigger: TimedBlockTrigger,
   }),
+  // appchain modules
   TransactionSender: InMemoryTransactionSender,
   QueryTransportModule: StateServiceQueryModule,
   NetworkStateTransportModule: BlockStorageNetworkStateModule,
 });
 
+//group appchain-conf-1
 export default async (): Promise<Startable> => {
   appChain.configure({
     Runtime: runtime.config,
     Protocol: protocol.config,
     Sequencer: {
+      //group appchain-conf-1
       Graphql: {
         ...VanillaGraphqlModules.defaultConfig(),
         containerConfig: {
@@ -55,7 +61,12 @@ export default async (): Promise<Startable> => {
           graphiql: true,
         },
       },
-      Mempool: {},
+      //group appchain-conf-2
+      Database: {},
+      Mempool: {
+        targetBlockSize: 20,
+      },
+      //group appchain-conf-2
       LocalSequencerCoreModule: {
         SequencerStartupModule: {},
         BlockProducerModule: {},
@@ -66,13 +77,15 @@ export default async (): Promise<Startable> => {
         settlementTokenConfig: {},
       },
       WorkerModule: VanillaTaskWorkerModules.defaultConfig(),
-      Database: {},
       TaskQueue: {},
     },
+    // appchain modules configuration
     QueryTransportModule: {},
     NetworkStateTransportModule: {},
     TransactionSender: {},
   });
+  //group appchain-conf-3
 
   return appChain;
 };
+//group appchain-conf-3

@@ -1,48 +1,110 @@
+import { Callout } from 'nextra/components'
+
 # Configuration
 
-// TODO Redo this section
+Protokit app-chains are assembled from small, composable pieces called **modules**. Before diving into individual
+areas like the runtime or the sequencer, it is worth understanding how configuration of those modules works in
+principle — because the same pattern is used everywhere, all the way down the stack.
 
-Your app-chain can be configured at three different levels: _runtime_, _chain_ and _client_. Firstly we start with the
-overall runtime configuration, specifying the definition/configuration of your runtime module layout:
+## How configuration works in principle
 
-```typescript {5-7} showLineNumbers filename="packages/chain/src/runtime.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/snippets/configuration.ts
+Every configurable piece in Protokit follows the same two-step shape:
+
+1. **A record of modules**: a plain object that maps a _module name_ to a _module class_. This record decides
+   _what_ is part of your app-chain (which runtime modules, which protocol hooks, which sequencer services, etc.).
+2. **A matching configuration object**: an object with the _same keys_ as the module record, providing the
+   per-module configuration values. Its type is derived from the module record,
+   so the compiler will complain if a module is missing a config or if a config shape does not match the module it
+   belongs to.
+
+A minimal example of this pattern - here for the runtime - looks like this:
+
+```typescript showLineNumbers filename="packages/chain/src/runtime/snippets/configuration.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/snippets/configuration.ts
 
 ```
 
-## Server & client configuration
+The important things to notice are:
 
-The runtime configuration above is then used to define app-chain configurations for both client and server side app-chains.
-Keep in mind that configuration for the rest of the app-chain, namely the protocol and the sequencer is provided implicitly behind the scenes.
+- `modules` lists the module classes under stable names (`Balances`, …).
+- `config` is typed as `ModulesConfig<typeof modules>{:ts}`, which forces it to have an entry for _each_ module
+  and rejects values that don't match the module's expected config type.
+
+<Callout type="info">
+This _module record + matching config_ pattern is the single mental model you need. The rest of Protokit is just
+applying it recursively at multiple levels.
+</Callout>
+
+### Modules all the way down
+
+An app-chain is itself a module container, and its entries are also module containers. The configuration therefore
+forms a small tree:
+
+```
+AppChain
+├─ Runtime    (container of runtime modules — your business logic)
+├─ Protocol   (container of protocol modules / hooks)
+└─ Sequencer  (container of sequencer modules — networking, storage, block production, …)
+```
+
+Each of these sub-containers is configured using the same `modules` + `config` shape described above. When you
+configure the `AppChain`, you simply pass the pre-built `modules` and `config` objects from each sub-container
+into the corresponding slot.
+
+## The AppChain
+
+The `AppChain` is the top-level container that wires everything together. Its own "modules" are at least composed of
+the three sub-containers - `Runtime`, `Protocol` and `Sequencer` - plus optional `AppchainModule` modules
+(used for the client appchain for example).
 
 
-> _chain.config.ts_ is used by Protokit's CLI to start a server-side app-chain, while _client.config.ts_ is used by the Protokit SDK to connect
-to the server-side app-chain via e.g. GraphQL.
+A server-side app-chain assembled from the individual pieces can look like this (this is how starter-kit scaffolds this)
 
-```typescript {4} showLineNumbers filename="packages/chain/src/chain.config.ts"
-import { LocalhostAppChain } from "@proto-kit/cli";
-import runtime from "./runtime";
-
-const appChain = LocalhostAppChain.fromRuntime(runtime.modules);
-
-appChain.configure({
-  ...appChain.config,
-  Runtime: runtime.config,
+```typescript showLineNumbers filename="packages/chain/src/core/environments/inmemory/chain.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/inmemory/chain.config.ts inline
+//group appchain-def-1
+//group appchain-def-2
+    // ...
+  }),
 });
 
-// TODO: remove temporary `as any` once `error TS2742` is resolved
-export default appChain as any;
+//group appchain-conf-1
+//group appchain-conf-2
+      // ...
+    },
+  });
+//group appchain-conf-3
 ```
 
-```typescript {4} showLineNumbers filename="packages/chain/src/client.config.ts"
-import { ClientAppChain } from "@proto-kit/sdk";
-import runtime from "./runtime";
+Notice how the recursive structure shows up concretely:
 
-const appChain = ClientAppChain.fromRuntime(runtime.modules);
+- `Runtime: Runtime.from(runtime.modules){:ts}` builds a runtime container from your runtime module record.
+- `Protocol: Protocol.from(protocol.modules){:ts}` does the same for the protocol.
+- `Sequencer: Sequencer.from({ … }){:ts}` builds a sequencer container from a record of sequencer modules.
 
-appChain.configurePartial({
-  Runtime: runtime.config,
-});
+And then, inside `appChain.configure({ … })`, the matching `config` object mirrors that structure exactly, and recursively.
 
-export const client = appChain;
+> You can even have multiple levels of `ModuleContainer`s, like for example the GraphqlServerModule
+
+### Client vs. server
+
+The same `AppChain` abstraction is used on both sides of the wire. The server side is started by Protokit's CLI
+using a `chain.config.ts`, while the client uses a `client.config.ts` to _connect_ to a running app-chain (typically
+over GraphQL):
+
+```typescript {20-25,32} showLineNumbers filename="packages/chain/src/core/environments/client.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/client.config.ts
 
 ```
+
+The client re-uses the same `runtime.modules` and `runtime.config`, which is what guarantees that the client and
+the server agree on the shape of the runtime.
+
+### Putting it together
+
+Once you internalize the "module record + matching config" pattern, every level of Protokit reads the same way:
+
+- You pick which modules are part of a container.
+- You provide a config object whose keys mirror those modules.
+- You optionally hand the resulting container and configuration pair to the next container up.
+
+The `AppChain`, the `Runtime`, the `Protocol` and the `Sequencer` are all just instances of that idea at different
+zoom levels — which is why the same `chain.config.ts` can describe anything from a tiny in-memory test chain to a
+fully deployed app-chain with settlement on Mina.
