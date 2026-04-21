@@ -2,58 +2,120 @@ import { Callout } from 'nextra/components'
 
 # What is Protokit?
 
-Protokit is a framework for building privacy enabled application chains (a.k.a. zk-roll-apps / zk-rollups). Enabling developers to build
-zero-knowledge privacy preserving applications with a minimal learning curve.
+**Protokit is a TypeScript framework for building zero-knowledge application chains (zk-appchains) on [Mina](https://minaprotocol.com/).**
+It lets you ship an entire application-specific rollup as a single TypeScript project, without having to hand-roll the cryptographic plumbing that normally comes with zk-rollups.
 
-The framework itself is powered by [O1JS](https://www.npmjs.com/package/o1js), an SDK for building zkApps. Thanks to O1JS all applications
-built with Protokit are compatible with the Mina blockchain by design - and can use the Mina L1 for settlement. Therefore tapping into the shared security of the Layer-1 consensus.
+If you just want to get your hands dirty, jump straight to the [Quickstart](/docs/quickstart). Otherwise, read on to
+learn which problems Protokit solves and when you should reach for it.
 
-Furthermore all the code written with Protokit is provable, meaning that transaction execution and block production results in zk-proofs verifiable by the L1 (or anyone).
+## The problems Protokit solves
 
-## What is a rollup?
+Mina's [zkApps](https://docs.minaprotocol.com/zkapps) are an elegant way to bring zero-knowledge to smart contracts:
+every user proves their own state transition in the browser, and the L1 only verifies the proof. That design unlocks
+client-side privacy and extremely cheap verification — but it also pushes several hard problems onto the application
+developer:
 
-Rollups are a form of an [L2 scaling solution](https://www.theblock.co/learn/251458/what-are-the-advantages-and-disadvantages-of-layer-2-scaling-solutions), originating from popular networks such as Ethereum. L2 solutions
-aim to address the scalability issues of L1 networks by moving transactions off-chain, while still maintaining the security guarantees of the L1 network.
+- **Concurrency and race conditions.** Because each user produces their proof locally against a snapshot of the
+  on-chain state, two users interacting with the same contract at the same time will produce proofs against the same
+  pre-state. Only one of them can land; the other has to retry. Anything that looks like a shared resource — an order
+  book, a token supply, a game board — runs straight into this wall.
+- **Sequential logic is awkward.** Patterns such as "process this queue in order", "charge a fee before running the
+  method" or "only let the first N users mint" are trivial on an EVM-style chain but require careful use of
+  [Actions & Reducers](https://docs.minaprotocol.com/zkapps/o1js/actions-and-reducer) on Mina, and the effort grows
+  quickly with the complexity of the application.
+- **Scaling beyond a single, simple contract.** Once you want complex logic, shared state or composable public/private execution,
+the infrastracture you end up building is taking huge amounts of work away from your product - the thing you want to focus on.
+- **No batteries-included infrastructure.** Wallet integration, a GraphQL API, an indexer, deterministic tests, a
+  local dev network, CI-friendly mock proofs, L1 deposits and withdrawals — all of that has to be built and wired
+  together before you can ship.
 
+## A concrete example
 
+Imagine you want to build a simple guest book: users "check in" with a rating between 1 and 5, and the app records
+who checked in and when.
 
-### Optimistic vs zk-rollups
+As a single Mina zkApp, this looks deceptively easy until two users try to check in at the same time. Both build a
+proof against the same state root, both submit, one of them gets rejected. To make it work reliably you end up
+dispatching actions, writing a reducer, and manually folding the queue of check-ins into the contract's state — all
+while keeping everything inside a zero-knowledge circuit.
 
-There are two main types of rollups, optimistic and zk rollups. Optimistic rollups are the most popular form of rollups, and are used by networks such as [Optimism](https://optimism.io/). 
-Optimistic rollups rely on fraud proofs to ensure the validity of transactions. Fraud proofs are a mechanism that allows users to challenge invalid transactions.
+With Protokit, the same feature is a short TypeScript module:
 
-Zk-rollups on the other hand, rely on zero-knowledge proofs to ensure the validity of transactions. Zero-knowledge proofs are a cryptographic mechanism that allows users to prove the validity of a transaction without revealing any information about the transaction itself.
+```typescript
+@runtimeModule()
+export class GuestBook extends RuntimeModule {
+  @state() public checkIns = StateMap.from(PublicKey, CheckIn);
 
-> Applications built with Protokit are zk-rollups, thanks to the underlying O1JS SDK.
+  @runtimeMethod()
+  public async checkIn(rating: UInt64) {
+    assert(rating.lessThanOrEqual(UInt64.from(5)), "Maximum rating can be 5");
 
-## What is an application chain?
+    const guest = this.transaction.sender.value;
+    const createdAt = UInt64.Safe.fromField(this.network.block.height.value);
 
-Application chain is an application specific form of a rollup, unlike a general-purpose rollup like [zkSync](https://zksync.io/) or [Scroll](https://scroll.io/). Application specific rollups allow developers to optimize their rollup implementation 
-to suit their application's needs, providing a better user experience (e.g. faster block times) and potentially lower fees than general purpose rollups.
+    await this.checkIns.set(guest, new CheckIn({ guest, createdAt, rating }));
+  }
+}
+```
 
-## Applications on MINA
+You write ordinary TypeScript; Protokit takes care of:
 
-#### Smart contracts
+- ordering transactions in a sequencer so users don't fight over the same state,
+- making that state available to users and all other infrastructure,
+- turning the method into a recursive zero-knowledge circuit,
+- producing a proof of all execution, and
+- (optionally) settling that proof on the Mina L1.
 
-[Mina blockchain's](https://docs.minaprotocol.com/) L1 is designed with scalability in mind by moving the smart contract transaction execution off-chain.
-[Smart contracts](https://docs.minaprotocol.com/zkapps) are built as zero-knowledge circuits using O1JS, and are executed on the client side (e.g. in the browser). When a block is produced on the Mina blockchain, the block producer
-does not have to execute the smart-contract code, but only has to verify the validity of the zero-knowledge proof of the smart contract execution. 
+The rest of the docs — runtime, protocol, sequencer, settlement — are simply knobs on top of this core idea.
 
-This approach allows for lower hardware requirements for node operators, and theoretically a higher transaction throughput / scalability. This approach does introduce some
-novel challenges for developers, where clients transacting in parallel are not aware of each other - thus running into potential race condition scenarios.
+## How Protokit fits in
 
-#### Rollups
+The easiest way to place Protokit on the map is to compare it with the existing Mina toolchain:
 
-Rollups alleviate the potential race condition scenarios by moving the execution from the client side to the server/sequencer side. Protokit offers a hybrid execution model,
-where code can run both on and off chain, thanks to recursive zero-knowledge proofs. This approach allows us to retain the capabilities of smart contracts, while extending them
-with the capabilities of sequential execution.
+| If you are building…                                              | Reach for…                      |
+|:------------------------------------------------------------------|:--------------------------------|
+| A single zk smart contract, client-side proofs, no shared state   | [o1js](https://www.npmjs.com/package/o1js) |
+| An large application with many users interacting, shared state and sequential logic | **Protokit** |
 
-Mina's smart contracts offer certain built-in primitives for implementing rollups and addressing the inherent race conditions, such as [Actions & Reducers](https://docs.minaprotocol.com/zkapps/o1js/actions-and-reducer). 
-However the effort to implement and operate a zk-rollup using plain O1JS reducers grows exponentially with the complexity of the application. Protokit aims to abstract away the complexity of building a zk-rollup,
-and allow developers to focus on building their application.
+Protokit is to zk-rollups what o1js is to zk smart contracts: an SDK. Under the hood it still uses o1js for all
+provable code, which means every Protokit appchain is a zk-rollup by construction, every transaction produces a
+proof, and the whole chain can settle trustlessly to Mina for shared L1 security.
 
-> Thanks to Protokit's modular architecture, you'll be soon™ able to use actions and the underlying sequence state as a mempool for applications built with Protokit.
+<Callout type="info">
+    Because proofs on the client side are optional, Protokit also supports **opt-in privacy**: a user can generate a
+    zk-proof in the browser and pass it into a runtime method as an argument, without revealing the underlying inputs
+    to the sequencer.
+</Callout>
 
-Question is, where do we draw the line between a smart contract and a rollup?
-Protokit is to rollups, the same as O1JS is to smart contracts - an SDK.
+## When should you use Protokit?
 
+Protokit is a good fit when you recognise at least one of the following:
+
+- **Many users touch the same state.** DEXes, games, auctions, social apps, leaderboards.
+- **You need sequential or ordered logic** that is painful to express with actions and reducers alone.
+- **You want a high degree of customization** — custom block times, custom fees, your own mempool, your own indexer —
+without giving up Mina's security or writing a ton of coordination infrastructure.
+- **You want trustless bridging** between Mina L1 and your app, out of the box (see [Settlement](/docs/settlement/settlement)
+and [Bridging](/docs/settlement/bridging)).
+- **You care about privacy** and want to accept client-generated zk-proofs as first-class inputs to your app logic.
+
+Protokit is probably **not** the right tool if your entire application fits into a single zkApp with no shared state
+and no sequencing requirements — in that case, plain o1js will be simpler and lighter.
+
+## What you get out of the box
+
+Protokit is a set of modules that orchestrate together into a highly customizable appchain. Out of the box you get:
+
+- A **runtime API** that lets you write idiomatic business logic in TypeScript, composed of reusable modules.
+- A customizable **protocol layer** that turns your runtime into recursive zero-knowledge proofs.
+- A **sequencer** with a mempool, block production, a GraphQL API, and an indexer.
+- **L1 settlement and trustless bridging** to Mina (deposits and withdrawals) that you enable by configuration.
+- **Fast local development** and testing via mock proofs; real proofs with a single configuration flag.
+
+## Where to go next
+
+- [Quickstart](/docs/quickstart) — clone the starter kit and run your first appchain in a few minutes.
+- [Architecture](/docs/architecture) — the mental model behind runtime, protocol, and sequencer.
+- [Runtime](/docs/runtime) — writing your application's business logic.
+- [Settlement & Bridging](/docs/settlement/settlement) — anchoring your appchain to Mina.
+- [FAQ](/docs/faq) — short answers to the questions we get most often.
