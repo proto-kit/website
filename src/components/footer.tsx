@@ -3,10 +3,9 @@ import NextImage from "next/image";
 
 const GITHUB_URL = "https://github.com/proto-kit";
 const X_URL = "https://x.com/proto_kit";
-const DISCORD_URL = "https://discord.gg/AMGnGAxsKp";
+const DISCORD_URL = "https://bit.ly/MinaDiscord";
 const FRAMEWORK_URL = "https://github.com/proto-kit/framework";
-const STACKBLITZ_URL =
-  "https://stackblitz.com/github/proto-kit/starter-kit?file=src%2FBalances.ts&startScript=test";
+const STARTER_KIT_URL = "https://github.com/proto-kit/starter-kit";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const Footer = () => {
@@ -60,12 +59,12 @@ export const Footer = () => {
             Repository
           </a>
           <a
-            href={STACKBLITZ_URL}
+            href={STARTER_KIT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground"
           >
-            StackBlitz
+            Starterkit Repository
           </a>
         </div>
         <div className="flex flex-col gap-2">

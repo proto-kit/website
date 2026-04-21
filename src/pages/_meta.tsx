@@ -18,7 +18,7 @@ export default {
   contact: {
     title: "Discord ↗",
     type: "page",
-    href: "https://discord.gg/AMGnGAxsKp",
+    href: "https://bit.ly/MinaDiscord",
     newWindow: true,
   },
 };
