@@ -19,8 +19,10 @@ import {
   TokenId,
   UInt64,
 } from "o1js";
-import { Balances } from "@proto-kit/library";
+import { Balances, UInt64 as ProtokitUInt64 } from "@proto-kit/library";
 import { FungibleToken } from "mina-fungible-token";
+import { ClientAppChain } from "@proto-kit/sdk";
+import { Withdrawals } from "../runtime/modules/withdrawals";
 
 const appChain = AppChain.from({
   Runtime: Runtime.from({
@@ -70,6 +72,8 @@ appChain.configure({
     // group bridging-conf
   },
 });
+
+// ------- Deposit ---------
 
 // group deposit-framework
 // Inputs
@@ -140,3 +144,97 @@ const { hash } = await appChain.sequencer
 
 console.log(`Deposit completed! L1 tx hash: ${hash}`);
 // group deposit-framework
+
+// ------- Withdrawals ---------
+
+const clientAppChain = ClientAppChain.from({
+  Runtime: Runtime.from({
+    Balances,
+    Withdrawals,
+  }),
+  Protocol: Protocol.from({
+    ...Protocol.defaultModules(),
+    SettlementContractModule: SettlementContractModule.from(
+      SettlementContractModule.settlementAndBridging()
+    ),
+  }),
+  Sequencer: Sequencer.from({
+    BridgingModule,
+  }),
+});
+
+// group withdraw-framework
+// Inputs for the withdrawal
+const withdrawTokenId = TokenId.default;
+const l2SenderPrivateKey = PrivateKey.fromBase58("");
+const l1RecipientPrivateKey = PrivateKey.fromBase58("");
+const withdrawAmount = 100 * 1e9; // 100 MINA
+const l1Fee = 0.1 * 1e9; // 0.1 MINA
+
+// Resolve modules
+const settlementModuleWd = clientAppChain.sequencer.resolveOrFail(
+  "SettlementModule",
+  SettlementModule
+);
+const bridgingModuleWd = clientAppChain.sequencer.resolveOrFail(
+  "BridgingModule",
+  BridgingModule
+);
+const bridgeContract =
+  await bridgingModuleWd.getBridgeContract(withdrawTokenId);
+
+// Step 1 — Withdraw on the L2
+// Sends an L2 transaction to the `Withdrawals` runtime module that burns
+// the balance on the appchain and enqueues a withdrawal message.
+const l2Tx = await clientAppChain.transaction(
+  l2SenderPrivateKey.toPublicKey(),
+  async () => {
+    const withdrawals = clientAppChain.runtime.resolve("Withdrawals");
+    await withdrawals.withdraw(
+      l1RecipientPrivateKey.toPublicKey(),
+      ProtokitUInt64.from(withdrawAmount),
+      withdrawTokenId
+    );
+  }
+);
+await l2Tx.sign();
+await l2Tx.send();
+
+// IMPORTANT!
+// Always wait here until the Sequencer has settled and unrolled the withdrawal action onto the L1!
+
+// Step 2 — Redeem on the L1
+// After the withdrawal has been unrolled onto the L1 (the recipient now holds
+// the bridge's custom token), redeem it for the real tokens.
+const redeemTx = await Mina.transaction(
+  {
+    sender: l1RecipientPrivateKey.toPublicKey(),
+    fee: l1Fee,
+  },
+  async () => {
+    const au = AccountUpdate.createSigned(
+      l1RecipientPrivateKey.toPublicKey(),
+      tokenId
+    );
+    au.balance.addInPlace(UInt64.from(amount));
+
+    await bridgeContract.redeem(au);
+
+    if (isCustomToken) {
+      await new FungibleToken(
+        tokenOwnerPrivateKey.toPublicKey()
+      )!.approveAccountUpdate(bridgeContract.self);
+    }
+  }
+);
+
+settlementModuleWd.utils.signTransaction(redeemTx, {
+  signingPublicKeys: [l1RecipientPrivateKey.toPublicKey()],
+});
+
+const { hash: redeemHash } = await appChain.sequencer
+  .resolveOrFail("TransactionSender", MinaTransactionSender)
+  .proveAndSendTransaction(redeemTx, "included");
+
+console.log(`Withdrawal redeemed! L1 tx hash: ${redeemHash}`);
+// group withdraw-framework
