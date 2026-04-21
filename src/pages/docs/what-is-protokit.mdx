@@ -1,4 +1,25 @@
 import { Callout } from 'nextra/components'
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardDescription,
+} from "@/components/ui/card";
+import {
+    ZapIcon,
+    ListOrderedIcon,
+    BatteryChargingIcon,
+    UsersIcon,
+    ArrowRightLeftIcon,
+    BlocksIcon,
+    LockIcon,
+    ServerIcon,
+    NetworkIcon,
+    ShieldCheckIcon,
+    WalletIcon,
+    FlaskConicalIcon,
+    LayoutPanelTop
+} from 'lucide-react'
 
 # What is Protokit?
 
@@ -106,11 +127,62 @@ and no sequencing requirements — in that case, plain o1js will be simpler and 
 
 Protokit is a set of modules that orchestrate together into a highly customizable appchain. Out of the box you get:
 
-- A **runtime API** that lets you write idiomatic business logic in TypeScript, composed of reusable modules.
-- A customizable **protocol layer** that turns your runtime into recursive zero-knowledge proofs.
-- A **sequencer** with a mempool, block production, a GraphQL API, and an indexer.
-- **L1 settlement and trustless bridging** to Mina (deposits and withdrawals) that you enable by configuration.
-- **Fast local development** and testing via mock proofs; real proofs with a single configuration flag.
+<div className="grid lg:grid-cols-3 grid-cols-1 gap-4 mt-6 not-prose">
+    <Card>
+        <CardHeader className="gap-2">
+            <CardTitle className="text-orange-500 dark:text-orange-400">
+                <BlocksIcon size={32} />
+            </CardTitle>
+            <CardTitle className="flex gap-2 items-center">Modular Runtime API</CardTitle>
+            <CardDescription>Write idiomatic business logic in TypeScript, composed of reusable modules.</CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader className="gap-2">
+            <CardTitle className="text-orange-500 dark:text-orange-400">
+                <ShieldCheckIcon size={32} />
+            </CardTitle>
+            <CardTitle className="flex gap-2 items-center">Provable protocol</CardTitle>
+            <CardDescription>The customizable protocol layer turns your runtime into recursive zero-knowledge proofs.</CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader className="gap-2">
+            <CardTitle className="text-orange-500 dark:text-orange-400">
+                <ServerIcon size={32} />
+            </CardTitle>
+            <CardTitle className="flex gap-2 items-center">Sequencer</CardTitle>
+            <CardDescription>A production-grade sequencer with a mempool, block production, a GraphQL API, and an indexer - ready to run locally or in production.</CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader className="gap-2">
+            <CardTitle className="text-orange-500 dark:text-orange-400">
+                <NetworkIcon size={32} />
+            </CardTitle>
+            <CardTitle className="flex gap-2 items-center">L1 settlement &amp; bridging</CardTitle>
+            <CardDescription>Trustless anchoring to Mina, with deposits and withdrawals between L1 and your appchain</CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader className="gap-2">
+            <CardTitle className="text-orange-500 dark:text-orange-400">
+                <FlaskConicalIcon size={32} />
+            </CardTitle>
+            <CardTitle className="flex gap-2 items-center">Fast dev loop</CardTitle>
+            <CardDescription>Mock proofs for quick iteration and CI-friendly tests; flip a single configuration flag to switch to real proofs when you're ready to go to production.</CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader className="gap-2">
+            <CardTitle className="text-orange-500 dark:text-orange-400">
+                <LayoutPanelTop size={32} />
+            </CardTitle>
+            <CardTitle className="flex gap-2 items-center">Easy scaffolding with starter-kit</CardTitle>
+            <CardDescription>Starter-kit lets you dive straight in by offering a pre-configured project that has everything from early development to production launch.</CardDescription>
+        </CardHeader>
+    </Card>
+</div>
 
 ## Where to go next
 
