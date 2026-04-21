@@ -1,6 +1,5 @@
 import {
   AppChain,
-  BridgingModule,
   ConstantFeeStrategy,
   InMemoryMinaSigner,
   MinaBaseLayer,

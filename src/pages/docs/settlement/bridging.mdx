@@ -38,10 +38,26 @@ it may take a while until new deposits arrive on your appchain. This is of cours
 
 For withdrawals, this is less the case since the sequencer can safely handle all eventualities that can occur.
 
+## Enabling bridging
+
+In addition to the configuration already created in [Settlement](settlement), we need to add bridging capabilities:
+
+To the protocol, we add the bridging L1 contracts
+```typescript /settlementAndBridging()/ showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/bridging.ts inline
+// group protocol-modules
+```
+
+To the sequencer, we add the bridging module
+```typescript {3} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/bridging.ts inline
+// group sequencer-modules
+```
+
+For configuration, we continue in [Deposits](deposits) and [Withdrawals](withdrawals).
+
+
 ### Deploying L1 contracts
 
 Deploying currently works the exact same way as described in [Settlement](settlement/#deploying-l1-contracts)
-
 
 
 ### Testing bridging
