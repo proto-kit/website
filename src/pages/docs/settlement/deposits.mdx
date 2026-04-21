@@ -14,18 +14,7 @@ After that validation, the dispatch contract dispatches a message to the appchai
 To enable deposits (or any type of L1 -> L2 call), add the `@runtimeMessage()` decorator to your runtime method
 (instead of using `@runtimeMethod()`).
 
-```typescript {4-7} showLineNumbers copy filename="Balances.ts"
-import { RuntimeModule, runtimeModule, runtimeMessage } from "@proto-kit/module";
-import { Deposit } from "@proto-kit/protocol";
-
-@runtimeModule()
-export class Balances extends RuntimeModule {
-  // ...
-  @runtimeMessage()
-  public async deposit(deposit: Deposit) {
-    await this.mint(deposit.tokenId, deposit.address, deposit.amount);
-  }
-}
+```typescript {8} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/deposit.ts
 ```
 
 Additionally, we need to tell the `DispatchContract` which runtime method it is allowed to call.
@@ -35,28 +24,18 @@ We do this by adding the path to the method to the contract's config using a `mo
     Be careful to use the module name, not the class name - they can be different!
 </Callout>
 
-```typescript {8-12} showLineNumbers copy
+```typescript {8-12} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/bridging.ts inline
 appchain.configure({
   // ...
-  Protocol: {
-    // ...
-    SettlementContractModule: {
-      SettlementContract: {},
-      BridgeContract: {},
-      DispatchContract: {
-        incomingMessagesMethods: {
-          deposit: "Balances.deposit",
-        },
-      },
-    }
-  }
-});
+  // group protocol-conf
+})
 ```
 
 ### Depositing tokens
 
 Now that our appchain is ready to accept deposits (after deploying the settlement contract with the right runtime + config of course),
 we can look at how to use the mechanism.
+
 
 // TODO
 
