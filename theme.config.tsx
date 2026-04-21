@@ -34,7 +34,11 @@ const config: DocsThemeConfig = {
     toggleButton: true,
     titleComponent({ title }) {},
   },
-  head: null,
+  head: (
+    <>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+    </>
+  ),
   // useNextSeoProps() {
   //   return {
   //     titleTemplate: "%s – Protokit",
