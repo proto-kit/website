@@ -14,8 +14,8 @@ export const baseSettlementSequencerModules = {
   BaseLayer: MinaBaseLayer,
   FeeStrategy: ConstantFeeStrategy,
   SettlementModule,
-  SettlementSigner: InMemoryMinaSigner,
   BridgingModule,
+  SettlementSigner: InMemoryMinaSigner,
 } satisfies SequencerModulesRecord;
 
 export const baseSettlementSequencerModulesConfig = {
