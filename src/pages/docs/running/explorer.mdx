@@ -1,0 +1,108 @@
+# Explorer
+
+The Protokit Explorer is a web-based interface for browsing and inspecting your app-chain in real time. It allows you to view blocks, batches, transactions, and settlement data through a simple UI.
+
+## Features
+
+The Explorer provides comprehensive views of your app-chain data:
+
+- **Dashboard**: Overview with real-time statistics and recent activity
+- **Blocks**: Browse and search blocks with detailed information
+- **Batches**: View batches informations and contained blocks
+- **Transactions**: Explore transactions details, status, and execution results
+- **Settlements**: Track settlements transactions and their status
+
+## Starting the Explorer
+
+The easiest way to run the Explorer is using the Protokit CLI, which handles Docker image pulling and container management automatically.
+
+### Using the CLI
+
+```bash
+pnpm protokit explorer start
+```
+
+This will:
+1. Pull the latest Explorer Docker image (`ghcr.io/proto-kit/explorer:latest`)
+2. Start the Explorer on port `5003`
+3. Connect to the indexer at `http://localhost:8081/graphql` (default)
+
+The Explorer will be available at `http://localhost:5003`.
+
+#### Configuration Options
+
+You can customize the Explorer using CLI flags:
+
+```bash
+pnpm protokit explorer start \
+  --port 3000 \
+  --indexer-url http://localhost:8081/graphql \
+  --dashboard-title "My App-Chain Explorer" \
+  --dashboard-slogan "Explore the blockchain" \
+  --explorer-image ghcr.io/proto-kit/explorer:latest
+```
+
+| Option               | Default                             | Description                               |
+| -------------------- | ----------------------------------- | ----------------------------------------- |
+| `--port`             | `5003`                              | Port to run the Explorer on               |
+| `--indexer-url`      | `http://localhost:8081/graphql`     | GraphQL endpoint URL for the indexer      |
+| `--dashboard-title`  | `Protokit Explorer`                 | Title displayed in the Explorer dashboard |
+| `--dashboard-slogan` | `Explore your Protokit AppChain`    | Slogan displayed in the Explorer          |
+| `--explorer-image`   | `ghcr.io/proto-kit/explorer:latest` | Docker image used for the Explorer UI     |
+
+#### Prerequisites
+
+When using `pnpm protokit explorer start`, you need:
+
+- **Docker**: The CLI runs the Explorer in a Docker container.
+- **Indexer**: A running indexer service that the Explorer can connect to.
+
+### Running from Source
+
+If you want to develop or customize the Explorer, you can run it from source:
+
+```bash
+# Clone the repository
+git clone https://github.com/proto-kit/explorer.git
+cd explorer
+
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+
+# Or build for production
+npm run build
+npm start
+```
+
+The Explorer will be available at `http://localhost:3000` by default.
+
+### Using Docker Compose
+
+You can include the Explorer in your Docker Compose setup:
+
+```yaml
+services:
+  explorer:
+    image: ghcr.io/proto-kit/explorer:latest
+    ports:
+      - "5003:3000"
+    environment:
+      - NEXT_PUBLIC_INDEXER_URL="http://indexer:8080/graphql"
+      - NEXT_PUBLIC_DASHBOARD_TITLE="My App-Chain Explorer"
+      - NEXT_PUBLIC_DASHBOARD_SLOGAN="Explore the blockchain"
+```
+
+The Explorer relies on the indexer service to fetch blockchain data. Make sure your indexer is running and available at the URL specified in `NEXT_PUBLIC_INDEXER_URL` before starting it.
+
+## Customization
+
+The Explorer is built with [Next.js](https://nextjs.org/) and can be customized:
+
+- **Branding**: Modify the title and slogan via environment variables
+- **Styling**: The Explorer uses [Tailwind CSS](https://tailwindcss.com/) and can be themed
+- **Components**: Built with [Radix UI](https://www.radix-ui.com/) primitives and [shadcn/ui](https://ui.shadcn.com/) components
+
+For advanced customization, clone the [Explorer repository](https://github.com/proto-kit/explorer) and modify the source code.
