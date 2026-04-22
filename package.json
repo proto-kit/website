@@ -4,7 +4,7 @@
   "scripts": {
     "postinstall": "pnpm run typedoc:generate",
     "spellcheck": "cspell \"**/*.md\" \"**/*.mdx\" --no-progress",
-    "typedoc:generate": "echo",
+    "typedoc:generate": "./generate-typedoc.sh",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
