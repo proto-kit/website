@@ -1,3 +1,5 @@
+import { Tabs } from 'nextra/components'
+
 # Explorer
 
 The Protokit Explorer is a web-based interface for browsing and inspecting your app-chain in real time. It allows you to view blocks, batches, transactions, and settlement data through a simple UI.
@@ -14,88 +16,107 @@ The Explorer provides comprehensive views of your app-chain data:
 
 ## Starting the Explorer
 
-The easiest way to run the Explorer is using the Protokit CLI, which handles Docker image pulling and container management automatically.
+<Tabs items={['CLI', 'Docker Compose', 'From Source']}>
+  <Tabs.Tab>
+    The easiest way to run the Explorer is using the Protokit CLI, which handles Docker image pulling and container management automatically.
 
-### Using the CLI
+    ```bash
+    pnpm protokit explorer start
+    ```
 
-```bash
-pnpm protokit explorer start
-```
+    This will:
+    1. Pull the latest Explorer Docker image (`ghcr.io/proto-kit/explorer:latest`)
+    2. Start the Explorer on port `5003`
+    3. Connect to the indexer at `http://localhost:8081/graphql` (default)
 
-This will:
-1. Pull the latest Explorer Docker image (`ghcr.io/proto-kit/explorer:latest`)
-2. Start the Explorer on port `5003`
-3. Connect to the indexer at `http://localhost:8081/graphql` (default)
+    The Explorer will be available at `http://localhost:5003`.
 
-The Explorer will be available at `http://localhost:5003`.
+    ### Configuration Options
 
-#### Configuration Options
+    You can customize the Explorer using CLI flags:
 
-You can customize the Explorer using CLI flags:
+    ```bash
+    pnpm protokit explorer start \
+      --port 3000 \
+      --indexer-url http://localhost:8081/graphql \
+      --dashboard-title "My App-Chain Explorer" \
+      --dashboard-slogan "Explore the blockchain" \
+      --explorer-image ghcr.io/proto-kit/explorer:latest
+    ```
 
-```bash
-pnpm protokit explorer start \
-  --port 3000 \
-  --indexer-url http://localhost:8081/graphql \
-  --dashboard-title "My App-Chain Explorer" \
-  --dashboard-slogan "Explore the blockchain" \
-  --explorer-image ghcr.io/proto-kit/explorer:latest
-```
+    | Option               | Default                             | Description                               |
+    | -------------------- | ----------------------------------- | ----------------------------------------- |
+    | `--port`             | `5003`                              | Port to run the Explorer on               |
+    | `--indexer-url`      | `http://localhost:8081/graphql`     | GraphQL endpoint URL for the indexer      |
+    | `--dashboard-title`  | `Protokit Explorer`                 | Title displayed in the Explorer dashboard |
+    | `--dashboard-slogan` | `Explore your Protokit AppChain`    | Slogan displayed in the Explorer          |
+    | `--explorer-image`   | `ghcr.io/proto-kit/explorer:latest` | Docker image used for the Explorer UI     |
 
-| Option               | Default                             | Description                               |
-| -------------------- | ----------------------------------- | ----------------------------------------- |
-| `--port`             | `5003`                              | Port to run the Explorer on               |
-| `--indexer-url`      | `http://localhost:8081/graphql`     | GraphQL endpoint URL for the indexer      |
-| `--dashboard-title`  | `Protokit Explorer`                 | Title displayed in the Explorer dashboard |
-| `--dashboard-slogan` | `Explore your Protokit AppChain`    | Slogan displayed in the Explorer          |
-| `--explorer-image`   | `ghcr.io/proto-kit/explorer:latest` | Docker image used for the Explorer UI     |
+    ### Prerequisites
 
-#### Prerequisites
+    - **Docker**: The CLI runs the Explorer in a Docker container.
+    - **Indexer**: A running indexer service reachable at the URL provided via `--indexer-url` (or the default `http://localhost:8081/graphql`).
+  </Tabs.Tab>
 
-When using `pnpm protokit explorer start`, you need:
+  <Tabs.Tab>
+    You can include the Explorer in your Docker Compose setup:
 
-- **Docker**: The CLI runs the Explorer in a Docker container.
-- **Indexer**: A running indexer service that the Explorer can connect to.
+    ```yaml
+    services:
+      explorer:
+        image: ghcr.io/proto-kit/explorer:latest
+        ports:
+          - "5003:3000"
+        environment:
+          - NEXT_PUBLIC_INDEXER_URL=http://indexer:8080/graphql
+          - NEXT_PUBLIC_DASHBOARD_TITLE=My App-Chain Explorer
+          - NEXT_PUBLIC_DASHBOARD_SLOGAN=Explore the blockchain
+    ```
 
-### Running from Source
+    The Explorer will be available at `http://localhost:5003`.
 
-If you want to develop or customize the Explorer, you can run it from source:
+    ### Prerequisites
 
-```bash
-# Clone the repository
-git clone https://github.com/proto-kit/explorer.git
-cd explorer
+    - **Docker**: Docker and Docker Compose installed
+    - **Indexer**: Set `NEXT_PUBLIC_INDEXER_URL` to a reachable indexer GraphQL endpoint.
+  </Tabs.Tab>
 
-# Install dependencies
-npm install
+  <Tabs.Tab>
+    If you want to develop or customize the Explorer, you can run it from source:
 
-# Run in development mode
-npm run dev
+    ```bash
+    # Clone the repository
+    git clone https://github.com/proto-kit/explorer.git
+    cd explorer
 
-# Or build for production
-npm run build
-npm start
-```
+    # Install dependencies
+    npm install
 
-The Explorer will be available at `http://localhost:3000` by default.
+    # Run in development mode
+    npm run dev
 
-### Using Docker Compose
+    # Or build for production
+    npm run build
+    npm start
+    ```
 
-You can include the Explorer in your Docker Compose setup:
+    The Explorer will be available at `http://localhost:3000` by default.
 
-```yaml
-services:
-  explorer:
-    image: ghcr.io/proto-kit/explorer:latest
-    ports:
-      - "5003:3000"
-    environment:
-      - NEXT_PUBLIC_INDEXER_URL="http://indexer:8080/graphql"
-      - NEXT_PUBLIC_DASHBOARD_TITLE="My App-Chain Explorer"
-      - NEXT_PUBLIC_DASHBOARD_SLOGAN="Explore the blockchain"
-```
+    ### Configuration Options
 
-The Explorer relies on the indexer service to fetch blockchain data. Make sure your indexer is running and available at the URL specified in `NEXT_PUBLIC_INDEXER_URL` before starting it.
+    You can customize the Explorer using environment variables:
+
+    | Variable | Default | Description |
+    | -------- | ------- | ----------- |
+    | `NEXT_PUBLIC_INDEXER_URL` | `http://localhost:8081/graphql` | GraphQL endpoint URL for the indexer |
+    | `NEXT_PUBLIC_DASHBOARD_TITLE` | `Explorer` | Title displayed in the Explorer dashboard |
+    | `NEXT_PUBLIC_DASHBOARD_SLOGAN` | `Explore the blockchain. Search in real-time.` | Slogan displayed in the Explorer |
+
+    ### Prerequisites
+
+    - **Indexer**: Set `NEXT_PUBLIC_INDEXER_URL` to a reachable indexer GraphQL endpoint.
+  </Tabs.Tab>
+</Tabs>
 
 ## Customization
 
