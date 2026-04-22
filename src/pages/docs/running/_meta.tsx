@@ -3,5 +3,6 @@ export default {
   "mempool": "Mempool",
   "monitoring": "Monitoring",
   "explorer": "Explorer",
-  "caching": "Remote caching"
+  "caching": "Remote caching",
+  "infrastructure": "About Infrastructure",
 }

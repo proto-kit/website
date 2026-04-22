@@ -1,0 +1,31 @@
+# Infrastructure
+
+## Resource Requirements (Production)
+
+We recommend production usage of protokit via docker and the images and services provided in the starter kit.
+
+During our devnet testing, we observed a resource usage of at least
+
+- **8 core CPU**
+- **18GB RAM**
+
+This was in a setup of 4 specialized workers and the full `sovereign` environment spun up.
+
+Worker variants RAM usage:
+
+| Worker variant                        | RAM usage (idle) | RAM (max) |
+|---------------------------------------|------------------|-----------|
+| Settlement Contracts (Bridging)       | 2.8 GB           | tbd       |
+| Statetransition Prover (Batch size n) | 1.8 GB           | tbd       |
+| Transaction Prover & Runtime          | 3.3 GB           | tbd       |
+| Block Prover                          | 3.7 GB           | 5.6 GB    |
+
+## Scaling workers
+
+For scaling workers, we currently recommend using Docker Swarm to manually scale worker variants based on usage.
+
+Generally, if appchain usage is somewhat low, having one worker per type is enough for stable proving & settlement.
+Protokit however, allows unlimited horizontal scaling of workers in it's architecture and therefore should be used
+if proving throughput becomes an issue.
+
+
