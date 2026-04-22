@@ -51,7 +51,7 @@ appChain.configure({
     BlockTrigger: {
       blockInterval: 20000,
       settlementInterval: 600000, // 10 minutes
-      settlementTokenConfig: {},
+      settlementTokenConfig: {}, // Necessary for custom token bridging
     },
     // group interval-conf
     // group network-conf
@@ -59,7 +59,7 @@ appChain.configure({
       network: {
         type: "lightnet", // Could be "local" | "lightnet" | "remote"
         graphql: "http://localhost:8083/graphql",
-        archive: "http://localhost:8085/graphql",
+        archive: "http://localhost:8085",
         accountManager: "http://localhost:8084",
       },
     },

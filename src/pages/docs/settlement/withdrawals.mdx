@@ -13,12 +13,12 @@ They generally commence in three stages:
 3. Withdrawals get unrolled onto the L1 iteratively.
 4. Withdrawals get claimed by the user
 
-Steps 3. and 4. might be a bit confusing, so lets walk through that mechanism in detail:
+Steps 3. and 4. might be a bit confusing, so let's walk through that mechanism in detail:
 
 Because of Mina's account update limit, the process to get all L2 withdrawal onto the L1's ledger is by iteratively
 unrolling them. This happens in batches of 6 and can be executed by anyone (doesn't have to be the sequencer, but will be in most cases).
 
-Now, because of the way that the L1's zkapps protocol is designed, we have to use a extra step before the tokens are actually in the user's wallet.
+Now, because of the way that the L1's zkapps protocol is designed, we have to use an extra step before the tokens are actually in the user's wallet.
 During this step, every users gets their withdrawal minted as a special custom token on the L1.
 This custom token is managed by the protokit bridging contract and does two things:
 It mints customs tokens during the unrolling, and it lets users redeem those custom tokens for the real tokens.
