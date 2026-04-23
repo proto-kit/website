@@ -1,0 +1,51 @@
+import { Callout } from "nextra/components";
+
+# Infrastructure
+
+## Resource Requirements (Production)
+
+We recommend production usage of protokit via docker and the images and services provided in the starter kit.
+
+During our devnet testing, we observed a resource usage of at least
+
+- **8 core CPU**
+- **24GB RAM**
+
+This was in a setup of 4 specialized workers and the full `sovereign` environment spun up.
+
+Worker variants RAM usage:
+
+| Worker variant                        | RAM usage (idle) | RAM (max) |
+|---------------------------------------|------------------|-----------|
+| Settlement Contracts (Bridging)       | 2.8 GB           | tbd       |
+| Statetransition Prover (Batch size n) | 1.8 GB           | tbd       |
+| Transaction Prover & Runtime          | 3.3 GB           | tbd       |
+| Block Prover                          | 3.7 GB           | 5.6 GB    |
+
+## Scaling workers
+
+For scaling workers, we currently recommend using Docker Swarm to manually scale worker variants based on usage.
+
+Generally, if appchain usage is somewhat low, having one worker per type is enough for stable proving & settlement.
+Protokit however, allows unlimited horizontal scaling of workers in it's architecture and therefore should be used
+if proving throughput becomes an issue.
+
+## Domain setup
+
+Naturally, for long-running testnet deployments, you will want to host protokit behind a public domain.
+
+Generally, there are three services that you might want to reach from the internet:
+- Your app UI
+- Explorer
+- Grafana
+
+In the starter-kit setup, under `docker/proxy/Caddyfile` you can configure the reverse-proxy's (Caddy) mappings.
+Change the directives to your domain and sub-domain respectively.
+
+<Callout type="info">
+    Since both your app UI and the explorer will (most likely) be built using next.js, you'll have to host them under separate
+    subdomains, sub-paths won't work.
+
+    I.e. `protokit.dev` -> UI and `explorer.protokit.dev` -> Explorer
+</Callout>
+
