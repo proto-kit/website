@@ -12,6 +12,10 @@ export default {
     type: "page",
     href: "/docs/what-is-protokit",
   },
+  reference: {
+    title: "Reference",
+    type: "page"
+  },
   // blog: {
   //   display: "hidden",
   // },
