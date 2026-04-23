@@ -5698,6 +5698,12 @@ export const pageMap = [{
         "sidebarTitle": "Explorer"
       }
     }, {
+      name: "infrastructure",
+      route: "/docs/running/infrastructure",
+      frontMatter: {
+        "sidebarTitle": "Infrastructure"
+      }
+    }, {
       name: "mempool",
       route: "/docs/running/mempool",
       frontMatter: {
