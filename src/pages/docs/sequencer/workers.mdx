@@ -10,7 +10,7 @@ but it can process expensive asynchronous `tasks`, such as Block Proving. An App
 its only function is to execute tasks, rather than serve as a sequencer. For testing purposes, it is fine to have the main AppChain be the worker, but in
 production set-ups you will likely want multiple stand-alone workers defined, separately.
 
-## LocalTaskWorkerModule
+## WorkerModule
 
 This module is used to create a worker locally. Without this being defined in some process no worker will be spawned and
 this means no tasks will be processed. This module is itself defined with several tasks that it will be capable of executing, such as
@@ -21,26 +21,26 @@ this means no tasks will be processed. This module is itself defined with severa
  - BlockReductionTask,
  - BlockBuildingTask,
  - NewBlockTask,
- - CircuitCompilerTask
+ - CircuitCompilerTasks (different variants based on configured protocol modules)
  - WorkerRegistrationTask.
 
-When the `LocalTaskWorkerModule` is started it has a subset of start-up tasks, like those above, passed to it.
+When the `WorkerModule` is started it has a subset of start-up tasks, like those above, passed to it.
 These tasks basically define what sort of computations the worker can handle, as you may want different workers to handle different tasks for resourcing reasons.
 For example, the majority of the work the AppChain will do is for State Transition related tasks, and so you may want to configure a large share of the workers to handle only the StateTransitionTask
 and StateTransitionReductionTask, which allows easier scalability as only one circuit will be kept in memory. There are two types of tasks: `Unprepared`, i.e. tasks that don’t have a prepare method and therefore don’t need to wait for registration to get initialized, and
  `Regular`, i.e. all other tasks that require registration.
 
 When the worker is started it first registers the required callback functions for the `Unprepared` tasks, i.e. `CircuitCompilerTask` and `WorkerRegistrationTask`,
-with its local instance of the queue. Then, the `LocalTaskWorkerModule` calls the `prepare` method for non-startup/normal tasks, before registering their callbacks with the queue.
+with its local instance of the queue. Then, the `WorkerModule` calls the `prepare` method for non-startup/normal tasks, before registering their callbacks with the queue.
 This registration ensures the worker is ready to handle any request when one later arrives via the queue. Once all the tasks are registered a promise is resolved, called `prepareResolve`.
-This tells the `LocalTaskWorkerModule` it is ready, and the `LocalTaskWorkerModule` emits a `ready` event of its own that other modules like the `WorkerReadyModule` are waiting for to proceed.
+This tells the `WorkerModule` it is ready, and the `WorkerModule` emits a `ready` event of its own that other modules like the `WorkerReadyModule` are waiting for to proceed.
 
 ## WorkerReadyModule
 
-This is another sequencer module that waits until key events have been emitted by the `LocalTaskWorkerModule` to signal that the worker
+This is another sequencer module that waits until key events have been emitted by the `WorkerModule` to signal that the worker
 is ready and that the AppChain can continue. The `WorkerReadyModule` is called by the `AppChain.ts` at the end of the `start()` method.
 If the `waitForReady()` method on the `WorkerReadyModule` is never resolved then the AppChain will never finish its start-up. Note that the
-`waitForReady()` will always complete if the AppChain is not a worker, in particular if `LocalTaskWorkerModule` is not defined.
+`waitForReady()` will always complete if the AppChain is not a worker, in particular if `WorkerModule` is not defined.
 
 ## SequencerStartUpModule
 

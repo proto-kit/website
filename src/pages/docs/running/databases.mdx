@@ -28,7 +28,7 @@ This implementation enables you to skip setting up any database and store all da
 You can use this for testing or for demo purposes.
 Keep in mind, that once your appchain stops or is restarted, all progress will be lost.
 
-```typescript {4} showLineNumbers filename="inmemory.ts"
+```typescript {5} showLineNumbers filename="inmemory.ts"
 import { Sequencer, InMemoryDatabase } from "@proto-kit/sequencer";
 
 const sequencer = Sequencer.from({
@@ -52,7 +52,7 @@ To use this connection, we use the *PrismaRedisDatabase* module, that contains a
 
 You'll have to inject the *PrismaRedisDatabase* under the module name "Database"
 
-```typescript {10,17-34} showLineNumbers filename="postgres-redis-db.ts"
+```typescript {9,16-33} showLineNumbers filename="postgres-redis-db.ts"
 import {
   Sequencer,
 } from "@proto-kit/sequencer";

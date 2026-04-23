@@ -45,7 +45,13 @@ Protocol.from(VanillaProtocolModules.with({}))
 
 ### Configuration
 
-The Transaction
+The `TransactionFee` module has a set of configuration values that can be used to configure fee accounting.
+
+- `tokenId`: The protokit `TokenId` that fees should be deducted in
+- `feeRecipient`: `PublicKey` to the account that fees are sent to
+- `baseFee`: The base fee amount, charged independently of the complexity of the invoked runtime method
+- `perWeightUnitFee`: Fee per weight unit - weight unit is defined as being directly proportional to the runtime method's number of rows ([Fee calculation](#fee-calculation))
+- `method`: Allows overriding of `baseFee`, `weight` and `perWeightUnitFee`
 
 ```typescript
   // ...
