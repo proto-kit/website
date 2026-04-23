@@ -27,10 +27,10 @@ const appChain = ClientAppChain.from({
 
 appChain.configure({
   Runtime: runtime.config,
+  Protocol: VanillaProtocolModules.defaultConfig(),
   GraphqlClient: {
     url: process.env.NEXT_PUBLIC_PROTOKIT_GRAPHQL_URL!,
   },
-  Protocol: VanillaProtocolModules.defaultConfig(),
   Signer: {},
   Sequencer: {},
   QueryTransportModule: {},
