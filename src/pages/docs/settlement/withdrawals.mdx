@@ -1,4 +1,5 @@
-import { Pre } from "nextra/components";
+import { Callout, Tabs, Cards } from "nextra/components";
+import { ExternalLink } from 'lucide-react'
 
 ## Withdrawals
 
@@ -12,12 +13,12 @@ They generally commence in three stages:
 3. Withdrawals get unrolled onto the L1 iteratively.
 4. Withdrawals get claimed by the user
 
-Steps 3. and 4. might be a bit confusing, so lets walk through that mechanism in detail:
+Steps 3. and 4. might be a bit confusing, so let's walk through that mechanism in detail:
 
 Because of Mina's account update limit, the process to get all L2 withdrawal onto the L1's ledger is by iteratively
 unrolling them. This happens in batches of 6 and can be executed by anyone (doesn't have to be the sequencer, but will be in most cases).
 
-Now, because of the way that the L1's zkapps protocol is designed, we have to use a extra step before the tokens are actually in the user's wallet.
+Now, because of the way that the L1's zkapps protocol is designed, we have to use an extra step before the tokens are actually in the user's wallet.
 During this step, every users gets their withdrawal minted as a special custom token on the L1.
 This custom token is managed by the protokit bridging contract and does two things:
 It mints customs tokens during the unrolling, and it lets users redeem those custom tokens for the real tokens.
@@ -31,6 +32,85 @@ token withdrawals.
 
 On the other side, the default `BridgingContract` offers processing of token withdrawals on the L1 side.
 
-### References
+### Withdrawing tokens
 
-// TODO Add links to spec issues
+Once the `Withdrawals` runtime module is wired up and the `BridgeContract` is deployed on the L1,
+users can start withdrawing their tokens back from the L2 to the L1.
+
+
+A withdrawal is always a two-step flow for the end user:
+
+1. **Withdraw on the L2** — the user sends an L2 transaction to the `Withdrawals` runtime module, which burns the balance
+   on the appchain and enqueues a withdrawal message. After the next settlement and the subsequent unrolling batches,
+   the withdrawal arrives on the L1 as a balance of the bridge's custom token held by the recipient.
+2. **Redeem on the L1** — once the withdrawal has been unrolled onto the L1, the user sends an L1 transaction to the
+   `BridgeContract` that burns the custom token and releases the real tokens (MINA or a fungible token) into their wallet.
+
+You can trigger both steps either from the protokit CLI or programmatically by calling the `BridgingModule` directly.
+
+<Tabs items={['CLI', 'Framework']}>
+    <Tabs.Tab>
+        The protokit CLI exposes two `bridge` commands for the two stages of a withdrawal.
+        They use the same environment variables your appchain already relies on (dispatcher/bridge address, Mina network, etc.),
+        so in most cases you only have to provide the amount, token and the signing key.
+
+        **Step 1 — Withdraw on the L2**
+
+        This submits the L2 transaction to the `Withdrawals` runtime module. The tokens are burned on the appchain and
+        will, after the next settlement and unrolling, be minted to the recipient as the bridge's custom token on the L1.
+
+        ```bash copy
+        # Initiate token withdrawal from the L2 back to the L1
+        pnpm protokit bridge withdraw <tokenId> <fromPrivateKey> <amount>
+        ```
+
+        - `tokenId` is `0` for MINA and the custom token's tokenId for everything else.
+        - `fromPrivateKey` is the L2 account holding the balance (or the name of an env variable containing it).
+        - `amount` is specified in the token's base unit
+
+        **Step 2 — Redeem on the L1**
+
+        Once the withdrawal has been unrolled onto the L1, the user redeems it to receive the real tokens:
+
+        ```bash copy
+        # Redeem the tokens on the L1
+        pnpm protokit bridge redeem <tokenId> <toKey> <amount>
+        ```
+
+        - `toKey` is the recipient's public key on the L1 (or the name of an env variable containing it).
+
+        <Callout type="info">
+            Step 2 can only succeed after the withdrawal has actually landed on the L1. That requires the next settlement
+            plus enough unrolling batches to cover your withdrawal - this normally takes a few L1 blocks to finish.
+        </Callout>
+    </Tabs.Tab>
+    <Tabs.Tab>
+        If you want to initiate a withdrawal from your own code (e.g. a web UI, a bot, or a test),
+        you can resolve the `BridgingModule` from the sequencer and call it directly. It takes care of both steps:
+        sending the L2 transaction and, later, building and submitting the L1 redeem transaction against the
+        configured `BridgeContract`.
+
+        ```typescript showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/bridging.ts inline
+        // group withdraw-framework
+        ```
+
+        A few things worth noting:
+
+        - The **L2 withdrawal** is a regular appchain transaction signed with an L2 key. It burns the balance on the L2
+          and enqueues the withdrawal message.
+        - The **L1 redeem** is a Mina transaction signed with an L1 key. It can only be sent **after** the withdrawal has
+          been unrolled onto the L1.
+        - `tokenId` must match the token your withdrawal was for. Use `TokenId.default` for Mina, or the id of a deployed
+          fungible token for custom assets.
+
+        <Callout type="info">
+            Under the hood this is exactly what the CLI does — the CLI is just a thin wrapper around
+            `BridgingModule` with argument parsing and environment resolution.
+        </Callout>
+    </Tabs.Tab>
+</Tabs>
+
+## References
+
+<Cards.Card icon={<ExternalLink/>} title="Settlement and Mina bridging mechanism" href="https://github.com/proto-kit/framework/issues/83" target="_blank"/>
+<Cards.Card icon={<ExternalLink/>} title="Custom token bridging mechanism" href="https://github.com/proto-kit/framework/issues/202" target="_blank"/>

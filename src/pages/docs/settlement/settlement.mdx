@@ -1,4 +1,4 @@
-import { Callout, Tabs } from 'nextra/components'
+import { Callout, Tabs, Steps } from 'nextra/components'
 
 # L1 Settlement
 
@@ -13,96 +13,110 @@ Trustless bridging between the L1 and L2 is also possible through settlement. Mo
 ## Settlement in protokit
 
 <Callout type="info">
-    The starter-kit already configures settlement out-of-the-box, you can enable it via the `SETTLEMENT_ENABLED` and other env-variables
+    The starter-kit already configures settlement out-of-the-box for development and sovereign environments
 </Callout>
 
 The settlement functionality is implemented via a set of modules shipped with the protokit sequencer.
 
 Configuring settlement to protokit is very easy, it consists of three components:
-- Settlement Contract (zkapp): Is the smart contract code that verifies settlement
-- Base Layer: Configured module that tells the sequencer what the settlement layer is and where to find it
-- Settlement Module: The central module coordinating the process from finished BlockProof to the same ending up finalized on the L1
+- **Settlement Contract (zkapp)**: Is the smart contract code that verifies settlement
+- **Base Layer**: Configured module that tells the sequencer what the settlement layer is and where to find it
+- **Settlement Module**: The central module coordinating the process from finished BlockProof to the same ending up finalized on the L1
 
 ### Supported Networks
 
 Protokit supports multiple types of networks: Local, Lightnet and Remote.
-  - Local runs in-memory and mainly used for unit-testing zkapps - its of little use for the protokit app development cycle.
-  - Lightnet is a locally run mina node that has faster block times, instant finality and pre-funded accounts and is therefore very useful for testing
+  - **Local** runs in-memory and mainly used for unit-testing zkapps - its of little use for the protokit app development cycle.
+  - **Lightnet** is a locally run mina node that has faster block times, instant finality and pre-funded accounts and is therefore very useful for testing
 protokit apps and their settlement and bridging capability. It features all features a normal node has, including graphql APIs
 and an archive node
-  - Remote networks are used for devnet and mainnet, which are used for deploying testnets and launching your app on mainnet.
+  - **Remote networks** are used for devnet and mainnet, which are used for deploying testnets and launching your app on mainnet.
 
-### Setup
 
-<Tabs items={['Framework', 'Starter kit']} storageKey="settlement" className="tabs">
-  <Tabs.Tab className="tab">
-      ### Modules configuration
 
-      You can configure them by appending the configuration of your AppChain like:
+## Setup
 
-```typescript showLineNumbers copy filename="packages/chain/src/chain.config.ts"
-      // TODO Update
-import { Balances } from "./guest-book/myBalance";
-import { SettlementContractModule } from "@proto-kit/protocol";
-import { SettlementModule, MinaBaseLayer, SettlementProvingTask, AppChain } from "@proto-kit/sequencer";
+<Steps>
+#### Modules
 
-const appChain = AppChain.with(
-  {
-    Balances,
-  },
-  {
-    SettlementContractModule: SettlementContractModule.with({}),
-  },
-  {
-    BaseLayer: MinaBaseLayer,
-    SettlementModule: SettlementModule,
-  },
-  {
-    SettlementProvingTask,
-  }
-);
+You can configure them by appending the configuration of your AppChain like:
+
+```typescript {7-9,14-17} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/settlement.ts inline
+// group modules
 ```
 
-  Its important to notice that settlement will automatically use the BaseLayer that's configured, so make sure you configure the right one.
+#### Protocol configuration
 
-  ### Network configuration
+First, we have to change the Protocol's configuration to account for the settlement contract we defined.
 
-  Configuring a network is done via the `BaseLayer` module (in this case `MinaBaseLayer`).
+```typescript {3-5} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/settlement.ts inline
+// group protocol-conf
+```
 
-  ```typescript filename="Local network"
-    appchain.configure({
-      ...
-      Sequencer: {
-        BaseLayer: {
-          network: {
-            type: "local"
-  }
-      }
-  }
-  }
-  ```
+#### Network configuration
 
-  TODO
+Configuring a network is done via the `BaseLayer` module (in this case `MinaBaseLayer`).
 
-  ### Key configuration
+```typescript showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/settlement.ts inline
+// group network-conf
+```
 
-  TODO
+#### Address & Key configuration
 
-  </Tabs.Tab>
-  <Tabs.Tab className="tab">
-      - In your environment(s), in `.env`, set `PROTOKIT_SETTLEMENT_ENABLED=true`
+We also have to specify the contract address protokit should use, and since we specified a `InMemoryMinaSigner`, we also have
+to provide that module with the private keys for that contract.
 
-      - Additionally, configure `PROTOKIT_SETTLEMENT_INTERVAL` to the interval (in ms) in which the sequencer should attempt settlement.
+```typescript showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/settlement.ts inline
+// group key-conf
+```
 
-      - For non-local deployments, generate new keypairs for your contracts:
-          - Run `pnpm generate-keys #num-keys` to generate random keypairs.
-          - Paste in key-**pairs** in `.env` wherever required.
-  </Tabs.Tab>
-</Tabs>
+#### Fee configuration
+
+We can specify the fee amount that protokit should use for L1 transactions.
+The used `ConstantFeeStrategy` sends every transaction with the same fee amount.
+
+```typescript showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/settlement.ts inline
+// group fee-conf
+```
+
+#### Settlement interval configuration
+
+Last, we need to specify how often protokit should attempt to settle to the L1.
+
+```typescript {3} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/settlement.ts inline
+// group interval-conf
+```
+
+</Steps>
 
 ## Deploying L1 contracts
 
-<Tabs items={['Framework', 'Starter kit']} storageKey="settlement" className="tabs">
+For deploying, we have two options: Using the CLI or programmatically.
+Most users will use the CLI for this, but for advanced use cases and testing, programmatic deployment can be useful.
+
+<Tabs items={['CLI', 'Framework']} storageKey="settlement" className="tabs">
+<Tabs.Tab className="tab">
+    ### Devnet
+
+    Inside starter-kit, run:
+
+    `pnpm protokit settlement deploy --env <environment>{:bash}`
+
+    ### Lightnet
+
+    - `pnpm env:environment lightnet:start -d{:bash}`
+    - `pnpm protokit lightnet initialize --env <environment>{:bash}`
+
+    The second command does a few things together:
+    1. Waits for lightnet to be started & ready
+    1. Uses the lightnet faucet to fund the sequencer account
+    2. Deploys all settlement & bridging contracts and initializes them
+
+    ### Local
+
+    Unfortunately, local-network testing is only useful for unit-testing settlement, not for developing your app.
+    In this case, lightnet should be your tool of choice.
+</Tabs.Tab>
 <Tabs.Tab className="tab">
     Use the `SettlementModule.deploy` function.
     This function takes in the private keys of the contracts and resolves successfully if all deployment
@@ -114,41 +128,18 @@ const appChain = AppChain.with(
         SettlementModule
     );
 
-    await settlementModule.deploy(
-        settlementContractPrivateKey,
-        dispatchContractPrivateKey,
-        bridgeContractPrivateKey,
-    );
+    await settlementModule.deploy({
+        settlementContract: settlementKey.toPublicKey(),
+    });
 
     console.log("Settlement successful")
     ```
-</Tabs.Tab>
-<Tabs.Tab className="tab">
-    ### Devnet
-
-    Not possible as of yet, stay tuned.
-
-    ### Lightnet
-
-    Make sure lightnet is started: `pnpm env:environment lightnet:start -d`
-
-    `pnpm env:your-environment lightnet:initialize`
-
-    This command does a few things together:
-    1. Waits for lightnet to be started & ready
-    1. Uses the lightnet faucet to fund the sequencer account
-    2. Deploys all settlement & bridging contracts and initializes them
-
-    ### Local
-
-    Unfortunately, local-network testing is only useful for unit-testing settlement, not for developing your app.
-    However, lightnet should be your tool of choice.
 </Tabs.Tab>
 </Tabs>
 
 That's it, now start your appchain and settlement should automatically commence in the interval you configured.
 
-
+## Conclusion
 
 One of the most important requirements is that a `Balances` runtime module has to exist in the configured runtime.
 L1 Deposits and Withdrawals go through that module (see configuration below).
@@ -162,46 +153,6 @@ The responsibilities of the services configured above is the following:
 |:----------|:-----|
 | **SettlementContractModule**     | Contains the provable L1 zkapp contracts that facilitate the settlement and trustless bridging  |
 | **BaseLayer**     | Service to communicate with the Mina node endpoints (send transactions, query account states, ...)  |
-| **OutgoingMessageQueue**  | Observes the protokit runtime and dispatches L1 transactions that process the withdrawals on Mina  |
 | **SettlementModule**  | Uses all of the above to coordinate the settlement process and ensure the correct proof orchestration  |
-
-### Configuring the settlement
-
-```typescript showLineNumbers {9-12,16-17,26-27,31} copy filename="packages/chain/src/chain.config.ts"
-appChain.configurePartial({
-  Runtime: {
-    Balances: {},
-    Withdrawals: {},
-  },
-  Protocol: {
-    SettlementContract: {},
-    BridgeContract: {},
-    DispatchContract: {
-        incomingMessagesMethods: {
-          // Used for bridging, see those docs
-        },
-    },
-  },
-  Sequencer: {
-    OutgoingMessageQueue: {},
-    BaseLayer: {
-      network: {
-        // In the case of lightnet
-        type: "lightnet", // types "local" and "remote" are also available
-        graphql: "http://127.0.0.1:8080/graphql",
-        archive: "http://127.0.0.1:8282",
-        accountManager: "http://127.0.0.1:8181",
-      },
-    },
-    SettlementModule: {
-      feepayer: sequencerKey,
-    },
-  }
-})
-```
-
-This configuration tells the protokit sequencer what methods are used for deposit and withdrawal calls and what `StateMap` outgoing withdrawals are put into.
-
-Note:
-- `withdrawalMethodPath`: Has to be a user-invokable runtime method (i.e. `@runtimeMethod()`) that under the hood calls the `Withdrawal.withdraw()` function provided by the Withdrawal module.
-- `incomingMessagesMethods.deposit`: Has to be a runtime method annotated with `@runtimeMessage()`. This allows it to be invoked through the L1 contract's dispatched deposit.
+| **FeeStrategy**  | Is queried by the SettlementModule to obtain a fee amount used for L1 transactions |
+| **SettlementSigner**  | Holds the keys (or connection to a key service) for signing deployment (or signed settlement) L1 transactions |

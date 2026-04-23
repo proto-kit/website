@@ -1,4 +1,4 @@
-import { Callout } from "nextra/components";
+import { Callout, Tabs } from "nextra/components";
 
 # Deposits
 
@@ -14,18 +14,7 @@ After that validation, the dispatch contract dispatches a message to the appchai
 To enable deposits (or any type of L1 -> L2 call), add the `@runtimeMessage()` decorator to your runtime method
 (instead of using `@runtimeMethod()`).
 
-```typescript {4-7} showLineNumbers copy filename="Balances.ts"
-import { RuntimeModule, runtimeModule, runtimeMessage } from "@proto-kit/module";
-import { Deposit } from "@proto-kit/protocol";
-
-@runtimeModule()
-export class Balances extends RuntimeModule {
-  // ...
-  @runtimeMessage()
-  public async deposit(deposit: Deposit) {
-    await this.mint(deposit.tokenId, deposit.address, deposit.amount);
-  }
-}
+```typescript {8} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/deposit.ts
 ```
 
 Additionally, we need to tell the `DispatchContract` which runtime method it is allowed to call.
@@ -35,22 +24,11 @@ We do this by adding the path to the method to the contract's config using a `mo
     Be careful to use the module name, not the class name - they can be different!
 </Callout>
 
-```typescript {8-12} showLineNumbers copy
+```typescript {8-12} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/bridging.ts inline
 appchain.configure({
   // ...
-  Protocol: {
-    // ...
-    SettlementContractModule: {
-      SettlementContract: {},
-      BridgeContract: {},
-      DispatchContract: {
-        incomingMessagesMethods: {
-          deposit: "Balances.deposit",
-        },
-      },
-    }
-  }
-});
+  // group protocol-conf
+})
 ```
 
 ### Depositing tokens
@@ -58,6 +36,51 @@ appchain.configure({
 Now that our appchain is ready to accept deposits (after deploying the settlement contract with the right runtime + config of course),
 we can look at how to use the mechanism.
 
-// TODO
+A deposit is always a two-step flow:
 
+1. A user submits an L1 transaction to the `DispatchContract` that locks the tokens in the settlement
+contract and emits a dispatch action containing the deposit message.
+2. After L1 finality (see [Finality considerations](bridging#finality-considerations)), the sequencer picks
+up the dispatched action and forwards it to your `@runtimeMessage()` — in our example `Balances.deposit` —
+which credits the user on the L2.
 
+You can trigger step 1 either from the protokit CLI or programmatically by calling the `BridgingModule` directly.
+
+<Tabs items={['CLI', 'Framework']}>
+    <Tabs.Tab>
+        The protokit CLI exposes a `bridge deposit` command that wraps the dispatch contract call for you.
+        It uses the same environment variables your appchain already relies on (dispatcher address, Mina network, etc.),
+        so in most cases you only have to provide the amount, token and the recipient on the L2.
+
+        ```bash copy
+        # Deposit native Mina from the signer's L1 account to the same address on the L2
+        pnpm protokit bridge deposit <tokenId> <fromPrivateKey> <toPublicKey> <amount>
+        ```
+        `tokenId` is 0 for MINA and the custom token's tokenId for everything else
+
+        Once the L1 transaction is included and finalized, the sequencer will automatically dispatch the message
+        and your `Balances.deposit` runtime message will be executed — no further action is required from the user.
+    </Tabs.Tab>
+    <Tabs.Tab>
+        If you want to initiate a deposit from your own code (e.g. a web UI, a bot, or a test),
+        you can resolve the `BridgingModule` from the sequencer and call it directly.
+        The `BridgingModule` takes care of building and submitting the L1 transaction against the configured
+        `DispatchContract`.
+
+        ```typescript showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/configurations/bridging.ts inline
+        // group deposit-framework
+        ```
+
+        A few things worth noting:
+
+        - `from` is an L1 signer — the tokens are pulled from this account on Mina.
+        - `to` is the **L2** address that will receive the minted balance once the `@runtimeMessage()` (e.g. `Balances.deposit`) is executed by the sequencer.
+        - `tokenId` must match a token your runtime knows about. Use `TokenId.from(0n)` for Mina, or the id of a deployed fungible token for custom assets.
+        - The script only waits for L1 inclusion. The L2 side will follow automatically after L1 finality — you can observe it via the query API on your `Balances` module.
+
+        <Callout type="info">
+            Under the hood this is exactly what the CLI does — the CLI is just a thin wrapper around
+            `BridgingModule` with argument parsing and environment resolution.
+        </Callout>
+    </Tabs.Tab>
+</Tabs>
