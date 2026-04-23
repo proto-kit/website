@@ -60,7 +60,7 @@ export const Socials = () => {
         </Card>
       </a>
       <a
-        href="https://discord.gg/AMGnGAxsKp"
+        href="https://bit.ly/MinaDiscord"
         target="_blank"
         rel="noopener noreferrer"
       >
