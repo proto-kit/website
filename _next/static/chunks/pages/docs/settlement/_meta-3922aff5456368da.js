@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[42434],{21787:function(n,t,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/docs/settlement/_meta",function(){return u(57390)}])},57390:function(n,t,u){"use strict";u.r(t),u.d(t,{__N_SSG:function(){return _}});var _=!0;t.default=()=>null}},function(n){n.O(0,[49774,92888,40179],function(){return n(n.s=21787)}),_N_E=n.O()}]);

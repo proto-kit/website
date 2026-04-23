@@ -179,17 +179,255 @@ export const pageMap = [{
       children: [{
         data: docs_reference_api_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/api/classes",
+        children: [{
+          name: "AdvancedNodeStatusResolver",
+          route: "/docs/reference/api/classes/AdvancedNodeStatusResolver",
+          frontMatter: {
+            "title": "AdvancedNodeStatusResolver"
+          }
+        }, {
+          name: "BatchModel",
+          route: "/docs/reference/api/classes/BatchModel",
+          frontMatter: {
+            "title": "BatchModel"
+          }
+        }, {
+          name: "BatchStorageResolver",
+          route: "/docs/reference/api/classes/BatchStorageResolver",
+          frontMatter: {
+            "title": "BatchStorageResolver"
+          }
+        }, {
+          name: "BlockModel",
+          route: "/docs/reference/api/classes/BlockModel",
+          frontMatter: {
+            "title": "BlockModel"
+          }
+        }, {
+          name: "BlockResolver",
+          route: "/docs/reference/api/classes/BlockResolver",
+          frontMatter: {
+            "title": "BlockResolver"
+          }
+        }, {
+          name: "GraphqlModule",
+          route: "/docs/reference/api/classes/GraphqlModule",
+          frontMatter: {
+            "title": "GraphqlModule"
+          }
+        }, {
+          name: "GraphqlSequencerModule",
+          route: "/docs/reference/api/classes/GraphqlSequencerModule",
+          frontMatter: {
+            "title": "GraphqlSequencerModule"
+          }
+        }, {
+          name: "GraphqlServer",
+          route: "/docs/reference/api/classes/GraphqlServer",
+          frontMatter: {
+            "title": "GraphqlServer"
+          }
+        }, {
+          name: "LinkedLeafDTO",
+          route: "/docs/reference/api/classes/LinkedLeafDTO",
+          frontMatter: {
+            "title": "LinkedLeafDTO"
+          }
+        }, {
+          name: "LinkedMerkleWitnessDTO",
+          route: "/docs/reference/api/classes/LinkedMerkleWitnessDTO",
+          frontMatter: {
+            "title": "LinkedMerkleWitnessDTO"
+          }
+        }, {
+          name: "LinkedMerkleWitnessResolver",
+          route: "/docs/reference/api/classes/LinkedMerkleWitnessResolver",
+          frontMatter: {
+            "title": "LinkedMerkleWitnessResolver"
+          }
+        }, {
+          name: "LinkedTreeWitnessDTO",
+          route: "/docs/reference/api/classes/LinkedTreeWitnessDTO",
+          frontMatter: {
+            "title": "LinkedTreeWitnessDTO"
+          }
+        }, {
+          name: "MempoolResolver",
+          route: "/docs/reference/api/classes/MempoolResolver",
+          frontMatter: {
+            "title": "MempoolResolver"
+          }
+        }, {
+          name: "MerkleWitnessDTO",
+          route: "/docs/reference/api/classes/MerkleWitnessDTO",
+          frontMatter: {
+            "title": "MerkleWitnessDTO"
+          }
+        }, {
+          name: "MerkleWitnessResolver",
+          route: "/docs/reference/api/classes/MerkleWitnessResolver",
+          frontMatter: {
+            "title": "MerkleWitnessResolver"
+          }
+        }, {
+          name: "ModularizedInstrumentation",
+          route: "/docs/reference/api/classes/ModularizedInstrumentation",
+          frontMatter: {
+            "title": "ModularizedInstrumentation"
+          }
+        }, {
+          name: "NodeInformationObject",
+          route: "/docs/reference/api/classes/NodeInformationObject",
+          frontMatter: {
+            "title": "NodeInformationObject"
+          }
+        }, {
+          name: "NodeStatusObject",
+          route: "/docs/reference/api/classes/NodeStatusObject",
+          frontMatter: {
+            "title": "NodeStatusObject"
+          }
+        }, {
+          name: "NodeStatusResolver",
+          route: "/docs/reference/api/classes/NodeStatusResolver",
+          frontMatter: {
+            "title": "NodeStatusResolver"
+          }
+        }, {
+          name: "NodeStatusService",
+          route: "/docs/reference/api/classes/NodeStatusService",
+          frontMatter: {
+            "title": "NodeStatusService"
+          }
+        }, {
+          name: "OpenTelemetryServer",
+          route: "/docs/reference/api/classes/OpenTelemetryServer",
+          frontMatter: {
+            "title": "OpenTelemetryServer"
+          }
+        }, {
+          name: "OpenTelemetryTracer",
+          route: "/docs/reference/api/classes/OpenTelemetryTracer",
+          frontMatter: {
+            "title": "OpenTelemetryTracer"
+          }
+        }, {
+          name: "ProcessInformationObject",
+          route: "/docs/reference/api/classes/ProcessInformationObject",
+          frontMatter: {
+            "title": "ProcessInformationObject"
+          }
+        }, {
+          name: "QueryGraphqlModule",
+          route: "/docs/reference/api/classes/QueryGraphqlModule",
+          frontMatter: {
+            "title": "QueryGraphqlModule"
+          }
+        }, {
+          name: "ResolverFactoryGraphqlModule",
+          route: "/docs/reference/api/classes/ResolverFactoryGraphqlModule",
+          frontMatter: {
+            "title": "ResolverFactoryGraphqlModule"
+          }
+        }, {
+          name: "SchemaGeneratingGraphqlModule",
+          route: "/docs/reference/api/classes/SchemaGeneratingGraphqlModule",
+          frontMatter: {
+            "title": "SchemaGeneratingGraphqlModule"
+          }
+        }, {
+          name: "Signature",
+          route: "/docs/reference/api/classes/Signature",
+          frontMatter: {
+            "title": "Signature"
+          }
+        }, {
+          name: "TransactionObject",
+          route: "/docs/reference/api/classes/TransactionObject",
+          frontMatter: {
+            "title": "TransactionObject"
+          }
+        }, {
+          name: "VanillaGraphqlModules",
+          route: "/docs/reference/api/classes/VanillaGraphqlModules",
+          frontMatter: {
+            "title": "VanillaGraphqlModules"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/api/functions",
+        children: [{
+          name: "graphqlModule",
+          route: "/docs/reference/api/functions/graphqlModule",
+          frontMatter: {
+            "title": "graphqlModule"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/api/globals",
         frontMatter: {
           "title": "@proto-kit/api"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/api/interfaces",
+        children: [{
+          name: "GraphqlServerOptions",
+          route: "/docs/reference/api/interfaces/GraphqlServerOptions",
+          frontMatter: {
+            "title": "GraphqlServerOptions"
+          }
+        }, {
+          name: "NodeInformation",
+          route: "/docs/reference/api/interfaces/NodeInformation",
+          frontMatter: {
+            "title": "NodeInformation"
+          }
+        }, {
+          name: "ProcessInformation",
+          route: "/docs/reference/api/interfaces/ProcessInformation",
+          frontMatter: {
+            "title": "ProcessInformation"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/api/README",
         frontMatter: {
           "title": "@proto-kit/api"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/api/type-aliases",
+        children: [{
+          name: "GraphqlModulesRecord",
+          route: "/docs/reference/api/type-aliases/GraphqlModulesRecord",
+          frontMatter: {
+            "title": "GraphqlModulesRecord"
+          }
+        }, {
+          name: "GraphqlSequencerModuleConfig",
+          route: "/docs/reference/api/type-aliases/GraphqlSequencerModuleConfig",
+          frontMatter: {
+            "title": "GraphqlSequencerModuleConfig"
+          }
+        }, {
+          name: "OpenTelemetryServerConfig",
+          route: "/docs/reference/api/type-aliases/OpenTelemetryServerConfig",
+          frontMatter: {
+            "title": "OpenTelemetryServerConfig"
+          }
+        }, {
+          name: "VanillaGraphqlModulesRecord",
+          route: "/docs/reference/api/type-aliases/VanillaGraphqlModulesRecord",
+          frontMatter: {
+            "title": "VanillaGraphqlModulesRecord"
+          }
+        }]
       }]
     }, {
       name: "cli",
@@ -215,17 +453,961 @@ export const pageMap = [{
       children: [{
         data: docs_reference_common_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/common/classes",
+        children: [{
+          name: "AtomicCompileHelper",
+          route: "/docs/reference/common/classes/AtomicCompileHelper",
+          frontMatter: {
+            "title": "AtomicCompileHelper"
+          }
+        }, {
+          name: "CacheManifest",
+          route: "/docs/reference/common/classes/CacheManifest",
+          frontMatter: {
+            "title": "CacheManifest"
+          }
+        }, {
+          name: "ChildVerificationKeyService",
+          route: "/docs/reference/common/classes/ChildVerificationKeyService",
+          frontMatter: {
+            "title": "ChildVerificationKeyService"
+          }
+        }, {
+          name: "CompileRegistry",
+          route: "/docs/reference/common/classes/CompileRegistry",
+          frontMatter: {
+            "title": "CompileRegistry"
+          }
+        }, {
+          name: "ConfigurableModule",
+          route: "/docs/reference/common/classes/ConfigurableModule",
+          frontMatter: {
+            "title": "ConfigurableModule"
+          }
+        }, {
+          name: "EventEmitter",
+          route: "/docs/reference/common/classes/EventEmitter",
+          frontMatter: {
+            "title": "EventEmitter"
+          }
+        }, {
+          name: "EventEmitterProxy",
+          route: "/docs/reference/common/classes/EventEmitterProxy",
+          frontMatter: {
+            "title": "EventEmitterProxy"
+          }
+        }, {
+          name: "InMemoryLinkedLeafStore",
+          route: "/docs/reference/common/classes/InMemoryLinkedLeafStore",
+          frontMatter: {
+            "title": "InMemoryLinkedLeafStore"
+          }
+        }, {
+          name: "InMemoryMerkleTreeStorage",
+          route: "/docs/reference/common/classes/InMemoryMerkleTreeStorage",
+          frontMatter: {
+            "title": "InMemoryMerkleTreeStorage"
+          }
+        }, {
+          name: "LinkedLeafStruct",
+          route: "/docs/reference/common/classes/LinkedLeafStruct",
+          frontMatter: {
+            "title": "LinkedLeafStruct"
+          }
+        }, {
+          name: "LinkedMerkleTree",
+          route: "/docs/reference/common/classes/LinkedMerkleTree",
+          frontMatter: {
+            "title": "LinkedMerkleTree"
+          }
+        }, {
+          name: "LinkedMerkleTreeReadWitness",
+          route: "/docs/reference/common/classes/LinkedMerkleTreeReadWitness",
+          frontMatter: {
+            "title": "LinkedMerkleTreeReadWitness"
+          }
+        }, {
+          name: "LinkedMerkleTreeWitness",
+          route: "/docs/reference/common/classes/LinkedMerkleTreeWitness",
+          frontMatter: {
+            "title": "LinkedMerkleTreeWitness"
+          }
+        }, {
+          name: "MockAsyncMerkleTreeStore",
+          route: "/docs/reference/common/classes/MockAsyncMerkleTreeStore",
+          frontMatter: {
+            "title": "MockAsyncMerkleTreeStore"
+          }
+        }, {
+          name: "ModuleContainer",
+          route: "/docs/reference/common/classes/ModuleContainer",
+          frontMatter: {
+            "title": "ModuleContainer"
+          }
+        }, {
+          name: "O1PublicKeyOption",
+          route: "/docs/reference/common/classes/O1PublicKeyOption",
+          frontMatter: {
+            "title": "O1PublicKeyOption"
+          }
+        }, {
+          name: "ProvableMethodExecutionContext",
+          route: "/docs/reference/common/classes/ProvableMethodExecutionContext",
+          frontMatter: {
+            "title": "ProvableMethodExecutionContext"
+          }
+        }, {
+          name: "ProvableMethodExecutionResult",
+          route: "/docs/reference/common/classes/ProvableMethodExecutionResult",
+          frontMatter: {
+            "title": "ProvableMethodExecutionResult"
+          }
+        }, {
+          name: "ProxyCache",
+          route: "/docs/reference/common/classes/ProxyCache",
+          frontMatter: {
+            "title": "ProxyCache"
+          }
+        }, {
+          name: "RemoteCacheCompiler",
+          route: "/docs/reference/common/classes/RemoteCacheCompiler",
+          frontMatter: {
+            "title": "RemoteCacheCompiler"
+          }
+        }, {
+          name: "ReplayingSingleUseEventEmitter",
+          route: "/docs/reference/common/classes/ReplayingSingleUseEventEmitter",
+          frontMatter: {
+            "title": "ReplayingSingleUseEventEmitter"
+          }
+        }, {
+          name: "RollupMerkleTree",
+          route: "/docs/reference/common/classes/RollupMerkleTree",
+          frontMatter: {
+            "title": "RollupMerkleTree"
+          }
+        }, {
+          name: "RollupMerkleTreeWitness",
+          route: "/docs/reference/common/classes/RollupMerkleTreeWitness",
+          frontMatter: {
+            "title": "RollupMerkleTreeWitness"
+          }
+        }, {
+          name: "StructTemplate",
+          route: "/docs/reference/common/classes/StructTemplate",
+          frontMatter: {
+            "title": "StructTemplate"
+          }
+        }, {
+          name: "ZkProgrammable",
+          route: "/docs/reference/common/classes/ZkProgrammable",
+          frontMatter: {
+            "title": "ZkProgrammable"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/common/functions",
+        children: [{
+          name: "assertDefined",
+          route: "/docs/reference/common/functions/assertDefined",
+          frontMatter: {
+            "title": "assertDefined"
+          }
+        }, {
+          name: "assertSizeOneOrTwo",
+          route: "/docs/reference/common/functions/assertSizeOneOrTwo",
+          frontMatter: {
+            "title": "assertSizeOneOrTwo"
+          }
+        }, {
+          name: "assertValidTextLogLevel",
+          route: "/docs/reference/common/functions/assertValidTextLogLevel",
+          frontMatter: {
+            "title": "assertValidTextLogLevel"
+          }
+        }, {
+          name: "batch",
+          route: "/docs/reference/common/functions/batch",
+          frontMatter: {
+            "title": "batch"
+          }
+        }, {
+          name: "compileToMockable",
+          route: "/docs/reference/common/functions/compileToMockable",
+          frontMatter: {
+            "title": "compileToMockable"
+          }
+        }, {
+          name: "createLinkedMerkleTree",
+          route: "/docs/reference/common/functions/createLinkedMerkleTree",
+          frontMatter: {
+            "title": "createLinkedMerkleTree"
+          }
+        }, {
+          name: "createMerkleTree",
+          route: "/docs/reference/common/functions/createMerkleTree",
+          frontMatter: {
+            "title": "createMerkleTree"
+          }
+        }, {
+          name: "createReference",
+          route: "/docs/reference/common/functions/createReference",
+          frontMatter: {
+            "title": "createReference"
+          }
+        }, {
+          name: "dependencyFactory",
+          route: "/docs/reference/common/functions/dependencyFactory",
+          frontMatter: {
+            "title": "dependencyFactory"
+          }
+        }, {
+          name: "dummyValue",
+          route: "/docs/reference/common/functions/dummyValue",
+          frontMatter: {
+            "title": "dummyValue"
+          }
+        }, {
+          name: "expectDefined",
+          route: "/docs/reference/common/functions/expectDefined",
+          frontMatter: {
+            "title": "expectDefined"
+          }
+        }, {
+          name: "filterNonNull",
+          route: "/docs/reference/common/functions/filterNonNull",
+          frontMatter: {
+            "title": "filterNonNull"
+          }
+        }, {
+          name: "filterNonUndefined",
+          route: "/docs/reference/common/functions/filterNonUndefined",
+          frontMatter: {
+            "title": "filterNonUndefined"
+          }
+        }, {
+          name: "getInjectAliases",
+          route: "/docs/reference/common/functions/getInjectAliases",
+          frontMatter: {
+            "title": "getInjectAliases"
+          }
+        }, {
+          name: "hashWithPrefix",
+          route: "/docs/reference/common/functions/hashWithPrefix",
+          frontMatter: {
+            "title": "hashWithPrefix"
+          }
+        }, {
+          name: "implement",
+          route: "/docs/reference/common/functions/implement",
+          frontMatter: {
+            "title": "implement"
+          }
+        }, {
+          name: "injectAlias",
+          route: "/docs/reference/common/functions/injectAlias",
+          frontMatter: {
+            "title": "injectAlias"
+          }
+        }, {
+          name: "isFull",
+          route: "/docs/reference/common/functions/isFull",
+          frontMatter: {
+            "title": "isFull"
+          }
+        }, {
+          name: "isGeneratedProvider",
+          route: "/docs/reference/common/functions/isGeneratedProvider",
+          frontMatter: {
+            "title": "isGeneratedProvider"
+          }
+        }, {
+          name: "isSubtypeOfName",
+          route: "/docs/reference/common/functions/isSubtypeOfName",
+          frontMatter: {
+            "title": "isSubtypeOfName"
+          }
+        }, {
+          name: "mapSequential",
+          route: "/docs/reference/common/functions/mapSequential",
+          frontMatter: {
+            "title": "mapSequential"
+          }
+        }, {
+          name: "maybeSwap",
+          route: "/docs/reference/common/functions/maybeSwap",
+          frontMatter: {
+            "title": "maybeSwap"
+          }
+        }, {
+          name: "noop",
+          route: "/docs/reference/common/functions/noop",
+          frontMatter: {
+            "title": "noop"
+          }
+        }, {
+          name: "padArray",
+          route: "/docs/reference/common/functions/padArray",
+          frontMatter: {
+            "title": "padArray"
+          }
+        }, {
+          name: "prefixToField",
+          route: "/docs/reference/common/functions/prefixToField",
+          frontMatter: {
+            "title": "prefixToField"
+          }
+        }, {
+          name: "provableMethod",
+          route: "/docs/reference/common/functions/provableMethod",
+          frontMatter: {
+            "title": "provableMethod"
+          }
+        }, {
+          name: "range",
+          route: "/docs/reference/common/functions/range",
+          frontMatter: {
+            "title": "range"
+          }
+        }, {
+          name: "reduceSequential",
+          route: "/docs/reference/common/functions/reduceSequential",
+          frontMatter: {
+            "title": "reduceSequential"
+          }
+        }, {
+          name: "requireTrue",
+          route: "/docs/reference/common/functions/requireTrue",
+          frontMatter: {
+            "title": "requireTrue"
+          }
+        }, {
+          name: "safeParseJson",
+          route: "/docs/reference/common/functions/safeParseJson",
+          frontMatter: {
+            "title": "safeParseJson"
+          }
+        }, {
+          name: "sleep",
+          route: "/docs/reference/common/functions/sleep",
+          frontMatter: {
+            "title": "sleep"
+          }
+        }, {
+          name: "splitArray",
+          route: "/docs/reference/common/functions/splitArray",
+          frontMatter: {
+            "title": "splitArray"
+          }
+        }, {
+          name: "takeFirst",
+          route: "/docs/reference/common/functions/takeFirst",
+          frontMatter: {
+            "title": "takeFirst"
+          }
+        }, {
+          name: "toProver",
+          route: "/docs/reference/common/functions/toProver",
+          frontMatter: {
+            "title": "toProver"
+          }
+        }, {
+          name: "tryNTimes",
+          route: "/docs/reference/common/functions/tryNTimes",
+          frontMatter: {
+            "title": "tryNTimes"
+          }
+        }, {
+          name: "unzip",
+          route: "/docs/reference/common/functions/unzip",
+          frontMatter: {
+            "title": "unzip"
+          }
+        }, {
+          name: "verifyToMockable",
+          route: "/docs/reference/common/functions/verifyToMockable",
+          frontMatter: {
+            "title": "verifyToMockable"
+          }
+        }, {
+          name: "yieldSequential",
+          route: "/docs/reference/common/functions/yieldSequential",
+          frontMatter: {
+            "title": "yieldSequential"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/common/globals",
         frontMatter: {
           "title": "@proto-kit/common"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/common/interfaces",
+        children: [{
+          name: "AbstractLinkedMerkleTree",
+          route: "/docs/reference/common/interfaces/AbstractLinkedMerkleTree",
+          frontMatter: {
+            "title": "AbstractLinkedMerkleTree"
+          }
+        }, {
+          name: "AbstractLinkedMerkleTreeClass",
+          route: "/docs/reference/common/interfaces/AbstractLinkedMerkleTreeClass",
+          frontMatter: {
+            "title": "AbstractLinkedMerkleTreeClass"
+          }
+        }, {
+          name: "AbstractMerkleTree",
+          route: "/docs/reference/common/interfaces/AbstractMerkleTree",
+          frontMatter: {
+            "title": "AbstractMerkleTree"
+          }
+        }, {
+          name: "AbstractMerkleTreeClass",
+          route: "/docs/reference/common/interfaces/AbstractMerkleTreeClass",
+          frontMatter: {
+            "title": "AbstractMerkleTreeClass"
+          }
+        }, {
+          name: "AbstractMerkleWitness",
+          route: "/docs/reference/common/interfaces/AbstractMerkleWitness",
+          frontMatter: {
+            "title": "AbstractMerkleWitness"
+          }
+        }, {
+          name: "AreProofsEnabled",
+          route: "/docs/reference/common/interfaces/AreProofsEnabled",
+          frontMatter: {
+            "title": "AreProofsEnabled"
+          }
+        }, {
+          name: "BaseModuleInstanceType",
+          route: "/docs/reference/common/interfaces/BaseModuleInstanceType",
+          frontMatter: {
+            "title": "BaseModuleInstanceType"
+          }
+        }, {
+          name: "ChildContainerCreatable",
+          route: "/docs/reference/common/interfaces/ChildContainerCreatable",
+          frontMatter: {
+            "title": "ChildContainerCreatable"
+          }
+        }, {
+          name: "ChildContainerProvider",
+          route: "/docs/reference/common/interfaces/ChildContainerProvider",
+          frontMatter: {
+            "title": "ChildContainerProvider"
+          }
+        }, {
+          name: "CompilableModule",
+          route: "/docs/reference/common/interfaces/CompilableModule",
+          frontMatter: {
+            "title": "CompilableModule"
+          }
+        }, {
+          name: "Compile",
+          route: "/docs/reference/common/interfaces/Compile",
+          frontMatter: {
+            "title": "Compile"
+          }
+        }, {
+          name: "CompileArtifact",
+          route: "/docs/reference/common/interfaces/CompileArtifact",
+          frontMatter: {
+            "title": "CompileArtifact"
+          }
+        }, {
+          name: "Configurable",
+          route: "/docs/reference/common/interfaces/Configurable",
+          frontMatter: {
+            "title": "Configurable"
+          }
+        }, {
+          name: "DependencyFactory",
+          route: "/docs/reference/common/interfaces/DependencyFactory",
+          frontMatter: {
+            "title": "DependencyFactory"
+          }
+        }, {
+          name: "EventEmittingComponent",
+          route: "/docs/reference/common/interfaces/EventEmittingComponent",
+          frontMatter: {
+            "title": "EventEmittingComponent"
+          }
+        }, {
+          name: "EventEmittingContainer",
+          route: "/docs/reference/common/interfaces/EventEmittingContainer",
+          frontMatter: {
+            "title": "EventEmittingContainer"
+          }
+        }, {
+          name: "LinkedLeafStore",
+          route: "/docs/reference/common/interfaces/LinkedLeafStore",
+          frontMatter: {
+            "title": "LinkedLeafStore"
+          }
+        }, {
+          name: "MerkleTreeStore",
+          route: "/docs/reference/common/interfaces/MerkleTreeStore",
+          frontMatter: {
+            "title": "MerkleTreeStore"
+          }
+        }, {
+          name: "ModuleContainerLike",
+          route: "/docs/reference/common/interfaces/ModuleContainerLike",
+          frontMatter: {
+            "title": "ModuleContainerLike"
+          }
+        }, {
+          name: "ModulesRecord",
+          route: "/docs/reference/common/interfaces/ModulesRecord",
+          frontMatter: {
+            "title": "ModulesRecord"
+          }
+        }, {
+          name: "PlainZkProgram",
+          route: "/docs/reference/common/interfaces/PlainZkProgram",
+          frontMatter: {
+            "title": "PlainZkProgram"
+          }
+        }, {
+          name: "RemoteCache",
+          route: "/docs/reference/common/interfaces/RemoteCache",
+          frontMatter: {
+            "title": "RemoteCache"
+          }
+        }, {
+          name: "Startable",
+          route: "/docs/reference/common/interfaces/Startable",
+          frontMatter: {
+            "title": "Startable"
+          }
+        }, {
+          name: "StaticConfigurableModule",
+          route: "/docs/reference/common/interfaces/StaticConfigurableModule",
+          frontMatter: {
+            "title": "StaticConfigurableModule"
+          }
+        }, {
+          name: "ToFieldable",
+          route: "/docs/reference/common/interfaces/ToFieldable",
+          frontMatter: {
+            "title": "ToFieldable"
+          }
+        }, {
+          name: "ToFieldableStatic",
+          route: "/docs/reference/common/interfaces/ToFieldableStatic",
+          frontMatter: {
+            "title": "ToFieldableStatic"
+          }
+        }, {
+          name: "ToJSONableStatic",
+          route: "/docs/reference/common/interfaces/ToJSONableStatic",
+          frontMatter: {
+            "title": "ToJSONableStatic"
+          }
+        }, {
+          name: "Verify",
+          route: "/docs/reference/common/interfaces/Verify",
+          frontMatter: {
+            "title": "Verify"
+          }
+        }, {
+          name: "WithZkProgrammable",
+          route: "/docs/reference/common/interfaces/WithZkProgrammable",
+          frontMatter: {
+            "title": "WithZkProgrammable"
+          }
+        }]
+      }, {
+        name: "namespaces",
+        route: "/docs/reference/common/namespaces",
+        children: [{
+          name: "BigIntMath",
+          route: "/docs/reference/common/namespaces/BigIntMath",
+          children: [{
+            name: "functions",
+            route: "/docs/reference/common/namespaces/BigIntMath/functions",
+            children: [{
+              name: "max",
+              route: "/docs/reference/common/namespaces/BigIntMath/functions/max",
+              frontMatter: {
+                "title": "max"
+              }
+            }]
+          }, {
+            name: "README",
+            route: "/docs/reference/common/namespaces/BigIntMath/README",
+            frontMatter: {
+              "title": "BigIntMath"
+            }
+          }]
+        }, {
+          name: "LinkedMerkleTreeCircuitOps",
+          route: "/docs/reference/common/namespaces/LinkedMerkleTreeCircuitOps",
+          children: [{
+            name: "classes",
+            route: "/docs/reference/common/namespaces/LinkedMerkleTreeCircuitOps/classes",
+            children: [{
+              name: "ComputeRootInstruction",
+              route: "/docs/reference/common/namespaces/LinkedMerkleTreeCircuitOps/classes/ComputeRootInstruction",
+              frontMatter: {
+                "title": "ComputeRootInstruction"
+              }
+            }]
+          }, {
+            name: "functions",
+            route: "/docs/reference/common/namespaces/LinkedMerkleTreeCircuitOps/functions",
+            children: [{
+              name: "applyTreeWrite",
+              route: "/docs/reference/common/namespaces/LinkedMerkleTreeCircuitOps/functions/applyTreeWrite",
+              frontMatter: {
+                "title": "applyTreeWrite"
+              }
+            }]
+          }, {
+            name: "README",
+            route: "/docs/reference/common/namespaces/LinkedMerkleTreeCircuitOps/README",
+            frontMatter: {
+              "title": "LinkedMerkleTreeCircuitOps"
+            }
+          }]
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/common/README",
         frontMatter: {
           "title": "@proto-kit/common"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/common/type-aliases",
+        children: [{
+          name: "ArgumentTypes",
+          route: "/docs/reference/common/type-aliases/ArgumentTypes",
+          frontMatter: {
+            "title": "ArgumentTypes"
+          }
+        }, {
+          name: "ArrayElement",
+          route: "/docs/reference/common/type-aliases/ArrayElement",
+          frontMatter: {
+            "title": "ArrayElement"
+          }
+        }, {
+          name: "ArtifactRecord",
+          route: "/docs/reference/common/type-aliases/ArtifactRecord",
+          frontMatter: {
+            "title": "ArtifactRecord"
+          }
+        }, {
+          name: "BaseModuleType",
+          route: "/docs/reference/common/type-aliases/BaseModuleType",
+          frontMatter: {
+            "title": "BaseModuleType"
+          }
+        }, {
+          name: "CapitalizeAny",
+          route: "/docs/reference/common/type-aliases/CapitalizeAny",
+          frontMatter: {
+            "title": "CapitalizeAny"
+          }
+        }, {
+          name: "CastToEventsRecord",
+          route: "/docs/reference/common/type-aliases/CastToEventsRecord",
+          frontMatter: {
+            "title": "CastToEventsRecord"
+          }
+        }, {
+          name: "CombinedModuleContainerConfig",
+          route: "/docs/reference/common/type-aliases/CombinedModuleContainerConfig",
+          frontMatter: {
+            "title": "CombinedModuleContainerConfig"
+          }
+        }, {
+          name: "CompileTarget",
+          route: "/docs/reference/common/type-aliases/CompileTarget",
+          frontMatter: {
+            "title": "CompileTarget"
+          }
+        }, {
+          name: "ContainerEvents",
+          route: "/docs/reference/common/type-aliases/ContainerEvents",
+          frontMatter: {
+            "title": "ContainerEvents"
+          }
+        }, {
+          name: "DecoratedMethod",
+          route: "/docs/reference/common/type-aliases/DecoratedMethod",
+          frontMatter: {
+            "title": "DecoratedMethod"
+          }
+        }, {
+          name: "DependenciesFromModules",
+          route: "/docs/reference/common/type-aliases/DependenciesFromModules",
+          frontMatter: {
+            "title": "DependenciesFromModules"
+          }
+        }, {
+          name: "DependencyDeclaration",
+          route: "/docs/reference/common/type-aliases/DependencyDeclaration",
+          frontMatter: {
+            "title": "DependencyDeclaration"
+          }
+        }, {
+          name: "DependencyRecord",
+          route: "/docs/reference/common/type-aliases/DependencyRecord",
+          frontMatter: {
+            "title": "DependencyRecord"
+          }
+        }, {
+          name: "EventListenable",
+          route: "/docs/reference/common/type-aliases/EventListenable",
+          frontMatter: {
+            "title": "EventListenable"
+          }
+        }, {
+          name: "EventsRecord",
+          route: "/docs/reference/common/type-aliases/EventsRecord",
+          frontMatter: {
+            "title": "EventsRecord"
+          }
+        }, {
+          name: "FilterNeverValues",
+          route: "/docs/reference/common/type-aliases/FilterNeverValues",
+          frontMatter: {
+            "title": "FilterNeverValues"
+          }
+        }, {
+          name: "FlattenedContainerEvents",
+          route: "/docs/reference/common/type-aliases/FlattenedContainerEvents",
+          frontMatter: {
+            "title": "FlattenedContainerEvents"
+          }
+        }, {
+          name: "FlattenObject",
+          route: "/docs/reference/common/type-aliases/FlattenObject",
+          frontMatter: {
+            "title": "FlattenObject"
+          }
+        }, {
+          name: "GeneratedProvider",
+          route: "/docs/reference/common/type-aliases/GeneratedProvider",
+          frontMatter: {
+            "title": "GeneratedProvider"
+          }
+        }, {
+          name: "InferDependencies",
+          route: "/docs/reference/common/type-aliases/InferDependencies",
+          frontMatter: {
+            "title": "InferDependencies"
+          }
+        }, {
+          name: "InferProofBase",
+          route: "/docs/reference/common/type-aliases/InferProofBase",
+          frontMatter: {
+            "title": "InferProofBase"
+          }
+        }, {
+          name: "LinkedLeaf",
+          route: "/docs/reference/common/type-aliases/LinkedLeaf",
+          frontMatter: {
+            "title": "LinkedLeaf"
+          }
+        }, {
+          name: "MapDependencyRecordToTypes",
+          route: "/docs/reference/common/type-aliases/MapDependencyRecordToTypes",
+          frontMatter: {
+            "title": "MapDependencyRecordToTypes"
+          }
+        }, {
+          name: "MergeObjects",
+          route: "/docs/reference/common/type-aliases/MergeObjects",
+          frontMatter: {
+            "title": "MergeObjects"
+          }
+        }, {
+          name: "ModuleEvents",
+          route: "/docs/reference/common/type-aliases/ModuleEvents",
+          frontMatter: {
+            "title": "ModuleEvents"
+          }
+        }, {
+          name: "ModulesConfig",
+          route: "/docs/reference/common/type-aliases/ModulesConfig",
+          frontMatter: {
+            "title": "ModulesConfig"
+          }
+        }, {
+          name: "NoConfig",
+          route: "/docs/reference/common/type-aliases/NoConfig",
+          frontMatter: {
+            "title": "NoConfig"
+          }
+        }, {
+          name: "NonMethods",
+          route: "/docs/reference/common/type-aliases/NonMethods",
+          frontMatter: {
+            "title": "NonMethods"
+          }
+        }, {
+          name: "Nullable",
+          route: "/docs/reference/common/type-aliases/Nullable",
+          frontMatter: {
+            "title": "Nullable"
+          }
+        }, {
+          name: "O1JSPrimitive",
+          route: "/docs/reference/common/type-aliases/O1JSPrimitive",
+          frontMatter: {
+            "title": "O1JSPrimitive"
+          }
+        }, {
+          name: "OmitKeys",
+          route: "/docs/reference/common/type-aliases/OmitKeys",
+          frontMatter: {
+            "title": "OmitKeys"
+          }
+        }, {
+          name: "OverwriteObjectType",
+          route: "/docs/reference/common/type-aliases/OverwriteObjectType",
+          frontMatter: {
+            "title": "OverwriteObjectType"
+          }
+        }, {
+          name: "Preset",
+          route: "/docs/reference/common/type-aliases/Preset",
+          frontMatter: {
+            "title": "Preset"
+          }
+        }, {
+          name: "Presets",
+          route: "/docs/reference/common/type-aliases/Presets",
+          frontMatter: {
+            "title": "Presets"
+          }
+        }, {
+          name: "ProofTypes",
+          route: "/docs/reference/common/type-aliases/ProofTypes",
+          frontMatter: {
+            "title": "ProofTypes"
+          }
+        }, {
+          name: "RecursivePartial",
+          route: "/docs/reference/common/type-aliases/RecursivePartial",
+          frontMatter: {
+            "title": "RecursivePartial"
+          }
+        }, {
+          name: "Reference",
+          route: "/docs/reference/common/type-aliases/Reference",
+          frontMatter: {
+            "title": "Reference"
+          }
+        }, {
+          name: "ResolvableModules",
+          route: "/docs/reference/common/type-aliases/ResolvableModules",
+          frontMatter: {
+            "title": "ResolvableModules"
+          }
+        }, {
+          name: "StoredLeaf",
+          route: "/docs/reference/common/type-aliases/StoredLeaf",
+          frontMatter: {
+            "title": "StoredLeaf"
+          }
+        }, {
+          name: "StringKeyOf",
+          route: "/docs/reference/common/type-aliases/StringKeyOf",
+          frontMatter: {
+            "title": "StringKeyOf"
+          }
+        }, {
+          name: "TreeWrite",
+          route: "/docs/reference/common/type-aliases/TreeWrite",
+          frontMatter: {
+            "title": "TreeWrite"
+          }
+        }, {
+          name: "TypedClass",
+          route: "/docs/reference/common/type-aliases/TypedClass",
+          frontMatter: {
+            "title": "TypedClass"
+          }
+        }, {
+          name: "TypeFromDependencyDeclaration",
+          route: "/docs/reference/common/type-aliases/TypeFromDependencyDeclaration",
+          frontMatter: {
+            "title": "TypeFromDependencyDeclaration"
+          }
+        }, {
+          name: "UnionToIntersection",
+          route: "/docs/reference/common/type-aliases/UnionToIntersection",
+          frontMatter: {
+            "title": "UnionToIntersection"
+          }
+        }, {
+          name: "UnTypedClass",
+          route: "/docs/reference/common/type-aliases/UnTypedClass",
+          frontMatter: {
+            "title": "UnTypedClass"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/common/variables",
+        children: [{
+          name: "EMPTY_PUBLICKEY_X",
+          route: "/docs/reference/common/variables/EMPTY_PUBLICKEY_X",
+          frontMatter: {
+            "title": "EMPTY_PUBLICKEY_X"
+          }
+        }, {
+          name: "EMPTY_PUBLICKEY",
+          route: "/docs/reference/common/variables/EMPTY_PUBLICKEY",
+          frontMatter: {
+            "title": "EMPTY_PUBLICKEY"
+          }
+        }, {
+          name: "injectAliasMetadataKey",
+          route: "/docs/reference/common/variables/injectAliasMetadataKey",
+          frontMatter: {
+            "title": "injectAliasMetadataKey"
+          }
+        }, {
+          name: "log",
+          route: "/docs/reference/common/variables/log",
+          frontMatter: {
+            "title": "log"
+          }
+        }, {
+          name: "MAX_FIELD",
+          route: "/docs/reference/common/variables/MAX_FIELD",
+          frontMatter: {
+            "title": "MAX_FIELD"
+          }
+        }, {
+          name: "MOCK_PROOF",
+          route: "/docs/reference/common/variables/MOCK_PROOF",
+          frontMatter: {
+            "title": "MOCK_PROOF"
+          }
+        }, {
+          name: "MOCK_VERIFICATION_KEY",
+          route: "/docs/reference/common/variables/MOCK_VERIFICATION_KEY",
+          frontMatter: {
+            "title": "MOCK_VERIFICATION_KEY"
+          }
+        }, {
+          name: "ModuleContainerErrors",
+          route: "/docs/reference/common/variables/ModuleContainerErrors",
+          frontMatter: {
+            "title": "ModuleContainerErrors"
+          }
+        }]
       }]
     }, {
       name: "deployment",
@@ -233,17 +1415,65 @@ export const pageMap = [{
       children: [{
         data: docs_reference_deployment_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/deployment/classes",
+        children: [{
+          name: "BullQueue",
+          route: "/docs/reference/deployment/classes/BullQueue",
+          frontMatter: {
+            "title": "BullQueue"
+          }
+        }, {
+          name: "Environment",
+          route: "/docs/reference/deployment/classes/Environment",
+          frontMatter: {
+            "title": "Environment"
+          }
+        }, {
+          name: "S3RemoteCache",
+          route: "/docs/reference/deployment/classes/S3RemoteCache",
+          frontMatter: {
+            "title": "S3RemoteCache"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/deployment/globals",
         frontMatter: {
           "title": "@proto-kit/deployment"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/deployment/interfaces",
+        children: [{
+          name: "BullQueueConfig",
+          route: "/docs/reference/deployment/interfaces/BullQueueConfig",
+          frontMatter: {
+            "title": "BullQueueConfig"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/deployment/README",
         frontMatter: {
           "title": "@proto-kit/deployment"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/deployment/type-aliases",
+        children: [{
+          name: "S3Config",
+          route: "/docs/reference/deployment/type-aliases/S3Config",
+          frontMatter: {
+            "title": "S3Config"
+          }
+        }, {
+          name: "StartableEnvironment",
+          route: "/docs/reference/deployment/type-aliases/StartableEnvironment",
+          frontMatter: {
+            "title": "StartableEnvironment"
+          }
+        }]
       }]
     }, {
       name: "indexer",
@@ -251,17 +1481,129 @@ export const pageMap = [{
       children: [{
         data: docs_reference_indexer_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/indexer/classes",
+        children: [{
+          name: "GeneratedResolverFactoryGraphqlModule",
+          route: "/docs/reference/indexer/classes/GeneratedResolverFactoryGraphqlModule",
+          frontMatter: {
+            "title": "GeneratedResolverFactoryGraphqlModule"
+          }
+        }, {
+          name: "IndexBatchTask",
+          route: "/docs/reference/indexer/classes/IndexBatchTask",
+          frontMatter: {
+            "title": "IndexBatchTask"
+          }
+        }, {
+          name: "IndexBlockTask",
+          route: "/docs/reference/indexer/classes/IndexBlockTask",
+          frontMatter: {
+            "title": "IndexBlockTask"
+          }
+        }, {
+          name: "IndexBlockTaskParametersSerializer",
+          route: "/docs/reference/indexer/classes/IndexBlockTaskParametersSerializer",
+          frontMatter: {
+            "title": "IndexBlockTaskParametersSerializer"
+          }
+        }, {
+          name: "Indexer",
+          route: "/docs/reference/indexer/classes/Indexer",
+          frontMatter: {
+            "title": "Indexer"
+          }
+        }, {
+          name: "IndexerHeightInstrumentation",
+          route: "/docs/reference/indexer/classes/IndexerHeightInstrumentation",
+          frontMatter: {
+            "title": "IndexerHeightInstrumentation"
+          }
+        }, {
+          name: "IndexerModule",
+          route: "/docs/reference/indexer/classes/IndexerModule",
+          frontMatter: {
+            "title": "IndexerModule"
+          }
+        }, {
+          name: "IndexerNotifier",
+          route: "/docs/reference/indexer/classes/IndexerNotifier",
+          frontMatter: {
+            "title": "IndexerNotifier"
+          }
+        }, {
+          name: "IndexPendingTxTask",
+          route: "/docs/reference/indexer/classes/IndexPendingTxTask",
+          frontMatter: {
+            "title": "IndexPendingTxTask"
+          }
+        }, {
+          name: "IndexSettlementTask",
+          route: "/docs/reference/indexer/classes/IndexSettlementTask",
+          frontMatter: {
+            "title": "IndexSettlementTask"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/indexer/functions",
+        children: [{
+          name: "cleanResolvers",
+          route: "/docs/reference/indexer/functions/cleanResolvers",
+          frontMatter: {
+            "title": "cleanResolvers"
+          }
+        }, {
+          name: "ValidateTakeArg",
+          route: "/docs/reference/indexer/functions/ValidateTakeArg",
+          frontMatter: {
+            "title": "ValidateTakeArg"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/indexer/globals",
         frontMatter: {
           "title": "@proto-kit/indexer"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/indexer/interfaces",
+        children: [{
+          name: "IndexBlockTaskParameters",
+          route: "/docs/reference/indexer/interfaces/IndexBlockTaskParameters",
+          frontMatter: {
+            "title": "IndexBlockTaskParameters"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/indexer/README",
         frontMatter: {
           "title": "@proto-kit/indexer"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/indexer/type-aliases",
+        children: [{
+          name: "IndexBlockResult",
+          route: "/docs/reference/indexer/type-aliases/IndexBlockResult",
+          frontMatter: {
+            "title": "IndexBlockResult"
+          }
+        }, {
+          name: "IndexerModulesRecord",
+          route: "/docs/reference/indexer/type-aliases/IndexerModulesRecord",
+          frontMatter: {
+            "title": "IndexerModulesRecord"
+          }
+        }, {
+          name: "NotifierMandatorySequencerModules",
+          route: "/docs/reference/indexer/type-aliases/NotifierMandatorySequencerModules",
+          frontMatter: {
+            "title": "NotifierMandatorySequencerModules"
+          }
+        }]
       }]
     }, {
       name: "library",
@@ -269,17 +1611,255 @@ export const pageMap = [{
       children: [{
         data: docs_reference_library_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/library/classes",
+        children: [{
+          name: "Balance",
+          route: "/docs/reference/library/classes/Balance",
+          frontMatter: {
+            "title": "Balance"
+          }
+        }, {
+          name: "Balances",
+          route: "/docs/reference/library/classes/Balances",
+          frontMatter: {
+            "title": "Balances"
+          }
+        }, {
+          name: "BalancesKey",
+          route: "/docs/reference/library/classes/BalancesKey",
+          frontMatter: {
+            "title": "BalancesKey"
+          }
+        }, {
+          name: "FeeTree",
+          route: "/docs/reference/library/classes/FeeTree",
+          frontMatter: {
+            "title": "FeeTree"
+          }
+        }, {
+          name: "InMemorySequencerModules",
+          route: "/docs/reference/library/classes/InMemorySequencerModules",
+          frontMatter: {
+            "title": "InMemorySequencerModules"
+          }
+        }, {
+          name: "MethodFeeConfigData",
+          route: "/docs/reference/library/classes/MethodFeeConfigData",
+          frontMatter: {
+            "title": "MethodFeeConfigData"
+          }
+        }, {
+          name: "RuntimeFeeAnalyzerService",
+          route: "/docs/reference/library/classes/RuntimeFeeAnalyzerService",
+          frontMatter: {
+            "title": "RuntimeFeeAnalyzerService"
+          }
+        }, {
+          name: "SimpleSequencerModules",
+          route: "/docs/reference/library/classes/SimpleSequencerModules",
+          frontMatter: {
+            "title": "SimpleSequencerModules"
+          }
+        }, {
+          name: "TokenId",
+          route: "/docs/reference/library/classes/TokenId",
+          frontMatter: {
+            "title": "TokenId"
+          }
+        }, {
+          name: "TransactionFeeHook",
+          route: "/docs/reference/library/classes/TransactionFeeHook",
+          frontMatter: {
+            "title": "TransactionFeeHook"
+          }
+        }, {
+          name: "UInt",
+          route: "/docs/reference/library/classes/UInt",
+          frontMatter: {
+            "title": "UInt"
+          }
+        }, {
+          name: "UInt112",
+          route: "/docs/reference/library/classes/UInt112",
+          frontMatter: {
+            "title": "UInt112"
+          }
+        }, {
+          name: "UInt224",
+          route: "/docs/reference/library/classes/UInt224",
+          frontMatter: {
+            "title": "UInt224"
+          }
+        }, {
+          name: "UInt32",
+          route: "/docs/reference/library/classes/UInt32",
+          frontMatter: {
+            "title": "UInt32"
+          }
+        }, {
+          name: "UInt64",
+          route: "/docs/reference/library/classes/UInt64",
+          frontMatter: {
+            "title": "UInt64"
+          }
+        }, {
+          name: "VanillaProtocolModules",
+          route: "/docs/reference/library/classes/VanillaProtocolModules",
+          frontMatter: {
+            "title": "VanillaProtocolModules"
+          }
+        }, {
+          name: "VanillaRuntimeModules",
+          route: "/docs/reference/library/classes/VanillaRuntimeModules",
+          frontMatter: {
+            "title": "VanillaRuntimeModules"
+          }
+        }, {
+          name: "Withdrawal",
+          route: "/docs/reference/library/classes/Withdrawal",
+          frontMatter: {
+            "title": "Withdrawal"
+          }
+        }, {
+          name: "WithdrawalMessageProcessor",
+          route: "/docs/reference/library/classes/WithdrawalMessageProcessor",
+          frontMatter: {
+            "title": "WithdrawalMessageProcessor"
+          }
+        }, {
+          name: "Withdrawals",
+          route: "/docs/reference/library/classes/Withdrawals",
+          frontMatter: {
+            "title": "Withdrawals"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/library/globals",
         frontMatter: {
           "title": "@proto-kit/library"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/library/interfaces",
+        children: [{
+          name: "BalancesEvents",
+          route: "/docs/reference/library/interfaces/BalancesEvents",
+          frontMatter: {
+            "title": "BalancesEvents"
+          }
+        }, {
+          name: "FeeIndexes",
+          route: "/docs/reference/library/interfaces/FeeIndexes",
+          frontMatter: {
+            "title": "FeeIndexes"
+          }
+        }, {
+          name: "FeeTreeValues",
+          route: "/docs/reference/library/interfaces/FeeTreeValues",
+          frontMatter: {
+            "title": "FeeTreeValues"
+          }
+        }, {
+          name: "MethodFeeConfig",
+          route: "/docs/reference/library/interfaces/MethodFeeConfig",
+          frontMatter: {
+            "title": "MethodFeeConfig"
+          }
+        }, {
+          name: "RuntimeFeeAnalyzerServiceConfig",
+          route: "/docs/reference/library/interfaces/RuntimeFeeAnalyzerServiceConfig",
+          frontMatter: {
+            "title": "RuntimeFeeAnalyzerServiceConfig"
+          }
+        }, {
+          name: "TransactionFeeHookConfig",
+          route: "/docs/reference/library/interfaces/TransactionFeeHookConfig",
+          frontMatter: {
+            "title": "TransactionFeeHookConfig"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/library/README",
         frontMatter: {
           "title": "@proto-kit/library"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/library/type-aliases",
+        children: [{
+          name: "AdditionalSequencerModules",
+          route: "/docs/reference/library/type-aliases/AdditionalSequencerModules",
+          frontMatter: {
+            "title": "AdditionalSequencerModules"
+          }
+        }, {
+          name: "InMemorySequencerModulesRecord",
+          route: "/docs/reference/library/type-aliases/InMemorySequencerModulesRecord",
+          frontMatter: {
+            "title": "InMemorySequencerModulesRecord"
+          }
+        }, {
+          name: "MinimalBalances",
+          route: "/docs/reference/library/type-aliases/MinimalBalances",
+          frontMatter: {
+            "title": "MinimalBalances"
+          }
+        }, {
+          name: "MinimumAdditionalSequencerModules",
+          route: "/docs/reference/library/type-aliases/MinimumAdditionalSequencerModules",
+          frontMatter: {
+            "title": "MinimumAdditionalSequencerModules"
+          }
+        }, {
+          name: "SimpleSequencerModulesRecord",
+          route: "/docs/reference/library/type-aliases/SimpleSequencerModulesRecord",
+          frontMatter: {
+            "title": "SimpleSequencerModulesRecord"
+          }
+        }, {
+          name: "SimpleSequencerWorkerModulesRecord",
+          route: "/docs/reference/library/type-aliases/SimpleSequencerWorkerModulesRecord",
+          frontMatter: {
+            "title": "SimpleSequencerWorkerModulesRecord"
+          }
+        }, {
+          name: "UIntConstructor",
+          route: "/docs/reference/library/type-aliases/UIntConstructor",
+          frontMatter: {
+            "title": "UIntConstructor"
+          }
+        }, {
+          name: "VanillaProtocolModulesRecord",
+          route: "/docs/reference/library/type-aliases/VanillaProtocolModulesRecord",
+          frontMatter: {
+            "title": "VanillaProtocolModulesRecord"
+          }
+        }, {
+          name: "VanillaRuntimeModulesRecord",
+          route: "/docs/reference/library/type-aliases/VanillaRuntimeModulesRecord",
+          frontMatter: {
+            "title": "VanillaRuntimeModulesRecord"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/library/variables",
+        children: [{
+          name: "errors",
+          route: "/docs/reference/library/variables/errors",
+          frontMatter: {
+            "title": "errors"
+          }
+        }, {
+          name: "treeFeeHeight",
+          route: "/docs/reference/library/variables/treeFeeHeight",
+          frontMatter: {
+            "title": "treeFeeHeight"
+          }
+        }]
       }]
     }, {
       name: "module",
@@ -287,17 +1867,217 @@ export const pageMap = [{
       children: [{
         data: docs_reference_module_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/module/classes",
+        children: [{
+          name: "InMemoryStateService",
+          route: "/docs/reference/module/classes/InMemoryStateService",
+          frontMatter: {
+            "title": "InMemoryStateService"
+          }
+        }, {
+          name: "MethodIdFactory",
+          route: "/docs/reference/module/classes/MethodIdFactory",
+          frontMatter: {
+            "title": "MethodIdFactory"
+          }
+        }, {
+          name: "MethodIdResolver",
+          route: "/docs/reference/module/classes/MethodIdResolver",
+          frontMatter: {
+            "title": "MethodIdResolver"
+          }
+        }, {
+          name: "MethodParameterEncoder",
+          route: "/docs/reference/module/classes/MethodParameterEncoder",
+          frontMatter: {
+            "title": "MethodParameterEncoder"
+          }
+        }, {
+          name: "OutgoingMessages",
+          route: "/docs/reference/module/classes/OutgoingMessages",
+          frontMatter: {
+            "title": "OutgoingMessages"
+          }
+        }, {
+          name: "Runtime",
+          route: "/docs/reference/module/classes/Runtime",
+          frontMatter: {
+            "title": "Runtime"
+          }
+        }, {
+          name: "RuntimeEvents",
+          route: "/docs/reference/module/classes/RuntimeEvents",
+          frontMatter: {
+            "title": "RuntimeEvents"
+          }
+        }, {
+          name: "RuntimeModule",
+          route: "/docs/reference/module/classes/RuntimeModule",
+          frontMatter: {
+            "title": "RuntimeModule"
+          }
+        }, {
+          name: "RuntimeZkProgrammable",
+          route: "/docs/reference/module/classes/RuntimeZkProgrammable",
+          frontMatter: {
+            "title": "RuntimeZkProgrammable"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/module/functions",
+        children: [{
+          name: "checkArgsProvable",
+          route: "/docs/reference/module/functions/checkArgsProvable",
+          frontMatter: {
+            "title": "checkArgsProvable"
+          }
+        }, {
+          name: "combineMethodName",
+          route: "/docs/reference/module/functions/combineMethodName",
+          frontMatter: {
+            "title": "combineMethodName"
+          }
+        }, {
+          name: "getAllPropertyNames",
+          route: "/docs/reference/module/functions/getAllPropertyNames",
+          frontMatter: {
+            "title": "getAllPropertyNames"
+          }
+        }, {
+          name: "isFlexibleProvablePure",
+          route: "/docs/reference/module/functions/isFlexibleProvablePure",
+          frontMatter: {
+            "title": "isFlexibleProvablePure"
+          }
+        }, {
+          name: "isRuntimeMethod",
+          route: "/docs/reference/module/functions/isRuntimeMethod",
+          frontMatter: {
+            "title": "isRuntimeMethod"
+          }
+        }, {
+          name: "outgoingMessage",
+          route: "/docs/reference/module/functions/outgoingMessage",
+          frontMatter: {
+            "title": "outgoingMessage"
+          }
+        }, {
+          name: "runtimeMessage",
+          route: "/docs/reference/module/functions/runtimeMessage",
+          frontMatter: {
+            "title": "runtimeMessage"
+          }
+        }, {
+          name: "runtimeMethod",
+          route: "/docs/reference/module/functions/runtimeMethod",
+          frontMatter: {
+            "title": "runtimeMethod"
+          }
+        }, {
+          name: "runtimeModule",
+          route: "/docs/reference/module/functions/runtimeModule",
+          frontMatter: {
+            "title": "runtimeModule"
+          }
+        }, {
+          name: "toEventsHash",
+          route: "/docs/reference/module/functions/toEventsHash",
+          frontMatter: {
+            "title": "toEventsHash"
+          }
+        }, {
+          name: "toStateTransitionsHash",
+          route: "/docs/reference/module/functions/toStateTransitionsHash",
+          frontMatter: {
+            "title": "toStateTransitionsHash"
+          }
+        }, {
+          name: "toWrappedMethod",
+          route: "/docs/reference/module/functions/toWrappedMethod",
+          frontMatter: {
+            "title": "toWrappedMethod"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/module/globals",
         frontMatter: {
           "title": "@proto-kit/module"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/module/interfaces",
+        children: [{
+          name: "RuntimeEnvironment",
+          route: "/docs/reference/module/interfaces/RuntimeEnvironment",
+          frontMatter: {
+            "title": "RuntimeEnvironment"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/module/README",
         frontMatter: {
           "title": "@proto-kit/module"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/module/type-aliases",
+        children: [{
+          name: "AsyncWrappedMethod",
+          route: "/docs/reference/module/type-aliases/AsyncWrappedMethod",
+          frontMatter: {
+            "title": "AsyncWrappedMethod"
+          }
+        }, {
+          name: "OutgoingMessagesRecord",
+          route: "/docs/reference/module/type-aliases/OutgoingMessagesRecord",
+          frontMatter: {
+            "title": "OutgoingMessagesRecord"
+          }
+        }, {
+          name: "RuntimeMethodInvocationType",
+          route: "/docs/reference/module/type-aliases/RuntimeMethodInvocationType",
+          frontMatter: {
+            "title": "RuntimeMethodInvocationType"
+          }
+        }, {
+          name: "RuntimeModulesRecord",
+          route: "/docs/reference/module/type-aliases/RuntimeModulesRecord",
+          frontMatter: {
+            "title": "RuntimeModulesRecord"
+          }
+        }, {
+          name: "WrappedMethod",
+          route: "/docs/reference/module/type-aliases/WrappedMethod",
+          frontMatter: {
+            "title": "WrappedMethod"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/module/variables",
+        children: [{
+          name: "runtimeMethodMetadataKey",
+          route: "/docs/reference/module/variables/runtimeMethodMetadataKey",
+          frontMatter: {
+            "title": "runtimeMethodMetadataKey"
+          }
+        }, {
+          name: "runtimeMethodNamesMetadataKey",
+          route: "/docs/reference/module/variables/runtimeMethodNamesMetadataKey",
+          frontMatter: {
+            "title": "runtimeMethodNamesMetadataKey"
+          }
+        }, {
+          name: "runtimeMethodTypeMetadataKey",
+          route: "/docs/reference/module/variables/runtimeMethodTypeMetadataKey",
+          frontMatter: {
+            "title": "runtimeMethodTypeMetadataKey"
+          }
+        }]
       }]
     }, {
       name: "persistance",
@@ -305,17 +2085,201 @@ export const pageMap = [{
       children: [{
         data: docs_reference_persistance_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/persistance/classes",
+        children: [{
+          name: "BatchMapper",
+          route: "/docs/reference/persistance/classes/BatchMapper",
+          frontMatter: {
+            "title": "BatchMapper"
+          }
+        }, {
+          name: "BlockMapper",
+          route: "/docs/reference/persistance/classes/BlockMapper",
+          frontMatter: {
+            "title": "BlockMapper"
+          }
+        }, {
+          name: "BlockResultMapper",
+          route: "/docs/reference/persistance/classes/BlockResultMapper",
+          frontMatter: {
+            "title": "BlockResultMapper"
+          }
+        }, {
+          name: "FieldMapper",
+          route: "/docs/reference/persistance/classes/FieldMapper",
+          frontMatter: {
+            "title": "FieldMapper"
+          }
+        }, {
+          name: "PrismaBatchStore",
+          route: "/docs/reference/persistance/classes/PrismaBatchStore",
+          frontMatter: {
+            "title": "PrismaBatchStore"
+          }
+        }, {
+          name: "PrismaBlockStorage",
+          route: "/docs/reference/persistance/classes/PrismaBlockStorage",
+          frontMatter: {
+            "title": "PrismaBlockStorage"
+          }
+        }, {
+          name: "PrismaDatabaseConnection",
+          route: "/docs/reference/persistance/classes/PrismaDatabaseConnection",
+          frontMatter: {
+            "title": "PrismaDatabaseConnection"
+          }
+        }, {
+          name: "PrismaLinkedLeafStore",
+          route: "/docs/reference/persistance/classes/PrismaLinkedLeafStore",
+          frontMatter: {
+            "title": "PrismaLinkedLeafStore"
+          }
+        }, {
+          name: "PrismaMessageStorage",
+          route: "/docs/reference/persistance/classes/PrismaMessageStorage",
+          frontMatter: {
+            "title": "PrismaMessageStorage"
+          }
+        }, {
+          name: "PrismaRedisDatabase",
+          route: "/docs/reference/persistance/classes/PrismaRedisDatabase",
+          frontMatter: {
+            "title": "PrismaRedisDatabase"
+          }
+        }, {
+          name: "PrismaSettlementStorage",
+          route: "/docs/reference/persistance/classes/PrismaSettlementStorage",
+          frontMatter: {
+            "title": "PrismaSettlementStorage"
+          }
+        }, {
+          name: "PrismaStateService",
+          route: "/docs/reference/persistance/classes/PrismaStateService",
+          frontMatter: {
+            "title": "PrismaStateService"
+          }
+        }, {
+          name: "PrismaTransactionStorage",
+          route: "/docs/reference/persistance/classes/PrismaTransactionStorage",
+          frontMatter: {
+            "title": "PrismaTransactionStorage"
+          }
+        }, {
+          name: "RedisConnectionModule",
+          route: "/docs/reference/persistance/classes/RedisConnectionModule",
+          frontMatter: {
+            "title": "RedisConnectionModule"
+          }
+        }, {
+          name: "RedisMerkleTreeStore",
+          route: "/docs/reference/persistance/classes/RedisMerkleTreeStore",
+          frontMatter: {
+            "title": "RedisMerkleTreeStore"
+          }
+        }, {
+          name: "SettlementMapper",
+          route: "/docs/reference/persistance/classes/SettlementMapper",
+          frontMatter: {
+            "title": "SettlementMapper"
+          }
+        }, {
+          name: "StateTransitionArrayMapper",
+          route: "/docs/reference/persistance/classes/StateTransitionArrayMapper",
+          frontMatter: {
+            "title": "StateTransitionArrayMapper"
+          }
+        }, {
+          name: "StateTransitionBatchArrayMapper",
+          route: "/docs/reference/persistance/classes/StateTransitionBatchArrayMapper",
+          frontMatter: {
+            "title": "StateTransitionBatchArrayMapper"
+          }
+        }, {
+          name: "StateTransitionMapper",
+          route: "/docs/reference/persistance/classes/StateTransitionMapper",
+          frontMatter: {
+            "title": "StateTransitionMapper"
+          }
+        }, {
+          name: "TransactionExecutionResultMapper",
+          route: "/docs/reference/persistance/classes/TransactionExecutionResultMapper",
+          frontMatter: {
+            "title": "TransactionExecutionResultMapper"
+          }
+        }, {
+          name: "TransactionMapper",
+          route: "/docs/reference/persistance/classes/TransactionMapper",
+          frontMatter: {
+            "title": "TransactionMapper"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/persistance/globals",
         frontMatter: {
           "title": "@proto-kit/persistance"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/persistance/interfaces",
+        children: [{
+          name: "PrismaConnection",
+          route: "/docs/reference/persistance/interfaces/PrismaConnection",
+          frontMatter: {
+            "title": "PrismaConnection"
+          }
+        }, {
+          name: "PrismaDatabaseConfig",
+          route: "/docs/reference/persistance/interfaces/PrismaDatabaseConfig",
+          frontMatter: {
+            "title": "PrismaDatabaseConfig"
+          }
+        }, {
+          name: "PrismaRedisCombinedConfig",
+          route: "/docs/reference/persistance/interfaces/PrismaRedisCombinedConfig",
+          frontMatter: {
+            "title": "PrismaRedisCombinedConfig"
+          }
+        }, {
+          name: "RedisConnection",
+          route: "/docs/reference/persistance/interfaces/RedisConnection",
+          frontMatter: {
+            "title": "RedisConnection"
+          }
+        }, {
+          name: "RedisConnectionConfig",
+          route: "/docs/reference/persistance/interfaces/RedisConnectionConfig",
+          frontMatter: {
+            "title": "RedisConnectionConfig"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/persistance/README",
         frontMatter: {
           "title": "@proto-kit/persistance"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/persistance/type-aliases",
+        children: [{
+          name: "RedisTransaction",
+          route: "/docs/reference/persistance/type-aliases/RedisTransaction",
+          frontMatter: {
+            "title": "RedisTransaction"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/persistance/variables",
+        children: [{
+          name: "Decimal",
+          route: "/docs/reference/persistance/variables/Decimal",
+          frontMatter: {
+            "title": "Decimal"
+          }
+        }]
       }]
     }, {
       name: "processor",
@@ -323,17 +2287,153 @@ export const pageMap = [{
       children: [{
         data: docs_reference_processor_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/processor/classes",
+        children: [{
+          name: "BlockFetching",
+          route: "/docs/reference/processor/classes/BlockFetching",
+          frontMatter: {
+            "title": "BlockFetching"
+          }
+        }, {
+          name: "Database",
+          route: "/docs/reference/processor/classes/Database",
+          frontMatter: {
+            "title": "Database"
+          }
+        }, {
+          name: "DatabasePruneModule",
+          route: "/docs/reference/processor/classes/DatabasePruneModule",
+          frontMatter: {
+            "title": "DatabasePruneModule"
+          }
+        }, {
+          name: "HandlersExecutor",
+          route: "/docs/reference/processor/classes/HandlersExecutor",
+          frontMatter: {
+            "title": "HandlersExecutor"
+          }
+        }, {
+          name: "Processor",
+          route: "/docs/reference/processor/classes/Processor",
+          frontMatter: {
+            "title": "Processor"
+          }
+        }, {
+          name: "ProcessorModule",
+          route: "/docs/reference/processor/classes/ProcessorModule",
+          frontMatter: {
+            "title": "ProcessorModule"
+          }
+        }, {
+          name: "ResolverFactoryGraphqlModule",
+          route: "/docs/reference/processor/classes/ResolverFactoryGraphqlModule",
+          frontMatter: {
+            "title": "ResolverFactoryGraphqlModule"
+          }
+        }, {
+          name: "TimedProcessorTrigger",
+          route: "/docs/reference/processor/classes/TimedProcessorTrigger",
+          frontMatter: {
+            "title": "TimedProcessorTrigger"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/processor/functions",
+        children: [{
+          name: "cleanResolvers",
+          route: "/docs/reference/processor/functions/cleanResolvers",
+          frontMatter: {
+            "title": "cleanResolvers"
+          }
+        }, {
+          name: "ValidateTakeArg",
+          route: "/docs/reference/processor/functions/ValidateTakeArg",
+          frontMatter: {
+            "title": "ValidateTakeArg"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/processor/globals",
         frontMatter: {
           "title": "@proto-kit/processor"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/processor/interfaces",
+        children: [{
+          name: "BlockFetchingConfig",
+          route: "/docs/reference/processor/interfaces/BlockFetchingConfig",
+          frontMatter: {
+            "title": "BlockFetchingConfig"
+          }
+        }, {
+          name: "BlockResponse",
+          route: "/docs/reference/processor/interfaces/BlockResponse",
+          frontMatter: {
+            "title": "BlockResponse"
+          }
+        }, {
+          name: "DatabasePruneModuleConfig",
+          route: "/docs/reference/processor/interfaces/DatabasePruneModuleConfig",
+          frontMatter: {
+            "title": "DatabasePruneModuleConfig"
+          }
+        }, {
+          name: "HandlersExecutorConfig",
+          route: "/docs/reference/processor/interfaces/HandlersExecutorConfig",
+          frontMatter: {
+            "title": "HandlersExecutorConfig"
+          }
+        }, {
+          name: "HandlersRecord",
+          route: "/docs/reference/processor/interfaces/HandlersRecord",
+          frontMatter: {
+            "title": "HandlersRecord"
+          }
+        }, {
+          name: "TimedProcessorTriggerConfig",
+          route: "/docs/reference/processor/interfaces/TimedProcessorTriggerConfig",
+          frontMatter: {
+            "title": "TimedProcessorTriggerConfig"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/processor/README",
         frontMatter: {
           "title": "@proto-kit/processor"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/processor/type-aliases",
+        children: [{
+          name: "BasePrismaClient",
+          route: "/docs/reference/processor/type-aliases/BasePrismaClient",
+          frontMatter: {
+            "title": "BasePrismaClient"
+          }
+        }, {
+          name: "BlockHandler",
+          route: "/docs/reference/processor/type-aliases/BlockHandler",
+          frontMatter: {
+            "title": "BlockHandler"
+          }
+        }, {
+          name: "ClientTransaction",
+          route: "/docs/reference/processor/type-aliases/ClientTransaction",
+          frontMatter: {
+            "title": "ClientTransaction"
+          }
+        }, {
+          name: "ProcessorModulesRecord",
+          route: "/docs/reference/processor/type-aliases/ProcessorModulesRecord",
+          frontMatter: {
+            "title": "ProcessorModulesRecord"
+          }
+        }]
       }]
     }, {
       name: "protocol",
@@ -341,17 +2441,1309 @@ export const pageMap = [{
       children: [{
         data: docs_reference_protocol_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/protocol/classes",
+        children: [{
+          name: "AccountState",
+          route: "/docs/reference/protocol/classes/AccountState",
+          frontMatter: {
+            "title": "AccountState"
+          }
+        }, {
+          name: "AccountStateHook",
+          route: "/docs/reference/protocol/classes/AccountStateHook",
+          frontMatter: {
+            "title": "AccountStateHook"
+          }
+        }, {
+          name: "AppliedBatchHashList",
+          route: "/docs/reference/protocol/classes/AppliedBatchHashList",
+          frontMatter: {
+            "title": "AppliedBatchHashList"
+          }
+        }, {
+          name: "AppliedStateTransitionBatch",
+          route: "/docs/reference/protocol/classes/AppliedStateTransitionBatch",
+          frontMatter: {
+            "title": "AppliedStateTransitionBatch"
+          }
+        }, {
+          name: "AppliedStateTransitionBatchState",
+          route: "/docs/reference/protocol/classes/AppliedStateTransitionBatchState",
+          frontMatter: {
+            "title": "AppliedStateTransitionBatchState"
+          }
+        }, {
+          name: "AuthorizedTransaction",
+          route: "/docs/reference/protocol/classes/AuthorizedTransaction",
+          frontMatter: {
+            "title": "AuthorizedTransaction"
+          }
+        }, {
+          name: "BlockArguments",
+          route: "/docs/reference/protocol/classes/BlockArguments",
+          frontMatter: {
+            "title": "BlockArguments"
+          }
+        }, {
+          name: "BlockArgumentsBatch",
+          route: "/docs/reference/protocol/classes/BlockArgumentsBatch",
+          frontMatter: {
+            "title": "BlockArgumentsBatch"
+          }
+        }, {
+          name: "BlockHashMerkleTree",
+          route: "/docs/reference/protocol/classes/BlockHashMerkleTree",
+          frontMatter: {
+            "title": "BlockHashMerkleTree"
+          }
+        }, {
+          name: "BlockHashMerkleTreeWitness",
+          route: "/docs/reference/protocol/classes/BlockHashMerkleTreeWitness",
+          frontMatter: {
+            "title": "BlockHashMerkleTreeWitness"
+          }
+        }, {
+          name: "BlockHashTreeEntry",
+          route: "/docs/reference/protocol/classes/BlockHashTreeEntry",
+          frontMatter: {
+            "title": "BlockHashTreeEntry"
+          }
+        }, {
+          name: "BlockHeightHook",
+          route: "/docs/reference/protocol/classes/BlockHeightHook",
+          frontMatter: {
+            "title": "BlockHeightHook"
+          }
+        }, {
+          name: "BlockProver",
+          route: "/docs/reference/protocol/classes/BlockProver",
+          frontMatter: {
+            "title": "BlockProver"
+          }
+        }, {
+          name: "BlockProverProgrammable",
+          route: "/docs/reference/protocol/classes/BlockProverProgrammable",
+          frontMatter: {
+            "title": "BlockProverProgrammable"
+          }
+        }, {
+          name: "BlockProverPublicInput",
+          route: "/docs/reference/protocol/classes/BlockProverPublicInput",
+          frontMatter: {
+            "title": "BlockProverPublicInput"
+          }
+        }, {
+          name: "BlockProverPublicOutput",
+          route: "/docs/reference/protocol/classes/BlockProverPublicOutput",
+          frontMatter: {
+            "title": "BlockProverPublicOutput"
+          }
+        }, {
+          name: "BlockProverState",
+          route: "/docs/reference/protocol/classes/BlockProverState",
+          frontMatter: {
+            "title": "BlockProverState"
+          }
+        }, {
+          name: "BlockProverStateInput",
+          route: "/docs/reference/protocol/classes/BlockProverStateInput",
+          frontMatter: {
+            "title": "BlockProverStateInput"
+          }
+        }, {
+          name: "BridgeContract",
+          route: "/docs/reference/protocol/classes/BridgeContract",
+          frontMatter: {
+            "title": "BridgeContract"
+          }
+        }, {
+          name: "BridgeContractBase",
+          route: "/docs/reference/protocol/classes/BridgeContractBase",
+          frontMatter: {
+            "title": "BridgeContractBase"
+          }
+        }, {
+          name: "BridgeContractProtocolModule",
+          route: "/docs/reference/protocol/classes/BridgeContractProtocolModule",
+          frontMatter: {
+            "title": "BridgeContractProtocolModule"
+          }
+        }, {
+          name: "BridgingSettlementContract",
+          route: "/docs/reference/protocol/classes/BridgingSettlementContract",
+          frontMatter: {
+            "title": "BridgingSettlementContract"
+          }
+        }, {
+          name: "BridgingSettlementContractBase",
+          route: "/docs/reference/protocol/classes/BridgingSettlementContractBase",
+          frontMatter: {
+            "title": "BridgingSettlementContractBase"
+          }
+        }, {
+          name: "BridgingSettlementContractModule",
+          route: "/docs/reference/protocol/classes/BridgingSettlementContractModule",
+          frontMatter: {
+            "title": "BridgingSettlementContractModule"
+          }
+        }, {
+          name: "Bundle",
+          route: "/docs/reference/protocol/classes/Bundle",
+          frontMatter: {
+            "title": "Bundle"
+          }
+        }, {
+          name: "BundleHashList",
+          route: "/docs/reference/protocol/classes/BundleHashList",
+          frontMatter: {
+            "title": "BundleHashList"
+          }
+        }, {
+          name: "BundlePreimage",
+          route: "/docs/reference/protocol/classes/BundlePreimage",
+          frontMatter: {
+            "title": "BundlePreimage"
+          }
+        }, {
+          name: "ContractArgsRegistry",
+          route: "/docs/reference/protocol/classes/ContractArgsRegistry",
+          frontMatter: {
+            "title": "ContractArgsRegistry"
+          }
+        }, {
+          name: "ContractModule",
+          route: "/docs/reference/protocol/classes/ContractModule",
+          frontMatter: {
+            "title": "ContractModule"
+          }
+        }, {
+          name: "CurrentBlock",
+          route: "/docs/reference/protocol/classes/CurrentBlock",
+          frontMatter: {
+            "title": "CurrentBlock"
+          }
+        }, {
+          name: "DefaultProvableHashList",
+          route: "/docs/reference/protocol/classes/DefaultProvableHashList",
+          frontMatter: {
+            "title": "DefaultProvableHashList"
+          }
+        }, {
+          name: "Deposit",
+          route: "/docs/reference/protocol/classes/Deposit",
+          frontMatter: {
+            "title": "Deposit"
+          }
+        }, {
+          name: "DispatchContractProtocolModule",
+          route: "/docs/reference/protocol/classes/DispatchContractProtocolModule",
+          frontMatter: {
+            "title": "DispatchContractProtocolModule"
+          }
+        }, {
+          name: "DispatchSmartContract",
+          route: "/docs/reference/protocol/classes/DispatchSmartContract",
+          frontMatter: {
+            "title": "DispatchSmartContract"
+          }
+        }, {
+          name: "DispatchSmartContractBase",
+          route: "/docs/reference/protocol/classes/DispatchSmartContractBase",
+          frontMatter: {
+            "title": "DispatchSmartContractBase"
+          }
+        }, {
+          name: "DynamicBlockProof",
+          route: "/docs/reference/protocol/classes/DynamicBlockProof",
+          frontMatter: {
+            "title": "DynamicBlockProof"
+          }
+        }, {
+          name: "FieldOption",
+          route: "/docs/reference/protocol/classes/FieldOption",
+          frontMatter: {
+            "title": "FieldOption"
+          }
+        }, {
+          name: "FieldTransition",
+          route: "/docs/reference/protocol/classes/FieldTransition",
+          frontMatter: {
+            "title": "FieldTransition"
+          }
+        }, {
+          name: "LastStateRootBlockHook",
+          route: "/docs/reference/protocol/classes/LastStateRootBlockHook",
+          frontMatter: {
+            "title": "LastStateRootBlockHook"
+          }
+        }, {
+          name: "MerkleWitnessBatch",
+          route: "/docs/reference/protocol/classes/MerkleWitnessBatch",
+          frontMatter: {
+            "title": "MerkleWitnessBatch"
+          }
+        }, {
+          name: "MethodPublicOutput",
+          route: "/docs/reference/protocol/classes/MethodPublicOutput",
+          frontMatter: {
+            "title": "MethodPublicOutput"
+          }
+        }, {
+          name: "MethodVKConfigData",
+          route: "/docs/reference/protocol/classes/MethodVKConfigData",
+          frontMatter: {
+            "title": "MethodVKConfigData"
+          }
+        }, {
+          name: "MinaActions",
+          route: "/docs/reference/protocol/classes/MinaActions",
+          frontMatter: {
+            "title": "MinaActions"
+          }
+        }, {
+          name: "MinaActionsHashList",
+          route: "/docs/reference/protocol/classes/MinaActionsHashList",
+          frontMatter: {
+            "title": "MinaActionsHashList"
+          }
+        }, {
+          name: "MinaEvents",
+          route: "/docs/reference/protocol/classes/MinaEvents",
+          frontMatter: {
+            "title": "MinaEvents"
+          }
+        }, {
+          name: "MinaPrefixedProvableHashList",
+          route: "/docs/reference/protocol/classes/MinaPrefixedProvableHashList",
+          frontMatter: {
+            "title": "MinaPrefixedProvableHashList"
+          }
+        }, {
+          name: "NetworkState",
+          route: "/docs/reference/protocol/classes/NetworkState",
+          frontMatter: {
+            "title": "NetworkState"
+          }
+        }, {
+          name: "NetworkStateSettlementModule",
+          route: "/docs/reference/protocol/classes/NetworkStateSettlementModule",
+          frontMatter: {
+            "title": "NetworkStateSettlementModule"
+          }
+        }, {
+          name: "Option",
+          route: "/docs/reference/protocol/classes/Option",
+          frontMatter: {
+            "title": "Option"
+          }
+        }, {
+          name: "OptionBase",
+          route: "/docs/reference/protocol/classes/OptionBase",
+          frontMatter: {
+            "title": "OptionBase"
+          }
+        }, {
+          name: "OutgoingMessageArgument",
+          route: "/docs/reference/protocol/classes/OutgoingMessageArgument",
+          frontMatter: {
+            "title": "OutgoingMessageArgument"
+          }
+        }, {
+          name: "OutgoingMessageArgumentBatch",
+          route: "/docs/reference/protocol/classes/OutgoingMessageArgumentBatch",
+          frontMatter: {
+            "title": "OutgoingMessageArgumentBatch"
+          }
+        }, {
+          name: "OutgoingMessageKey",
+          route: "/docs/reference/protocol/classes/OutgoingMessageKey",
+          frontMatter: {
+            "title": "OutgoingMessageKey"
+          }
+        }, {
+          name: "OutgoingMessageKeyStruct",
+          route: "/docs/reference/protocol/classes/OutgoingMessageKeyStruct",
+          frontMatter: {
+            "title": "OutgoingMessageKeyStruct"
+          }
+        }, {
+          name: "OutgoingMessageProcessor",
+          route: "/docs/reference/protocol/classes/OutgoingMessageProcessor",
+          frontMatter: {
+            "title": "OutgoingMessageProcessor"
+          }
+        }, {
+          name: "Path",
+          route: "/docs/reference/protocol/classes/Path",
+          frontMatter: {
+            "title": "Path"
+          }
+        }, {
+          name: "PrefixedProvableHashList",
+          route: "/docs/reference/protocol/classes/PrefixedProvableHashList",
+          frontMatter: {
+            "title": "PrefixedProvableHashList"
+          }
+        }, {
+          name: "PreviousBlock",
+          route: "/docs/reference/protocol/classes/PreviousBlock",
+          frontMatter: {
+            "title": "PreviousBlock"
+          }
+        }, {
+          name: "Protocol",
+          route: "/docs/reference/protocol/classes/Protocol",
+          frontMatter: {
+            "title": "Protocol"
+          }
+        }, {
+          name: "ProtocolModule",
+          route: "/docs/reference/protocol/classes/ProtocolModule",
+          frontMatter: {
+            "title": "ProtocolModule"
+          }
+        }, {
+          name: "ProvableBlockHook",
+          route: "/docs/reference/protocol/classes/ProvableBlockHook",
+          frontMatter: {
+            "title": "ProvableBlockHook"
+          }
+        }, {
+          name: "ProvableHashList",
+          route: "/docs/reference/protocol/classes/ProvableHashList",
+          frontMatter: {
+            "title": "ProvableHashList"
+          }
+        }, {
+          name: "ProvableOption",
+          route: "/docs/reference/protocol/classes/ProvableOption",
+          frontMatter: {
+            "title": "ProvableOption"
+          }
+        }, {
+          name: "ProvableReductionHashList",
+          route: "/docs/reference/protocol/classes/ProvableReductionHashList",
+          frontMatter: {
+            "title": "ProvableReductionHashList"
+          }
+        }, {
+          name: "ProvableSettlementHook",
+          route: "/docs/reference/protocol/classes/ProvableSettlementHook",
+          frontMatter: {
+            "title": "ProvableSettlementHook"
+          }
+        }, {
+          name: "ProvableStateTransition",
+          route: "/docs/reference/protocol/classes/ProvableStateTransition",
+          frontMatter: {
+            "title": "ProvableStateTransition"
+          }
+        }, {
+          name: "ProvableStateTransitionEntry",
+          route: "/docs/reference/protocol/classes/ProvableStateTransitionEntry",
+          frontMatter: {
+            "title": "ProvableStateTransitionEntry"
+          }
+        }, {
+          name: "ProvableStateTransitionType",
+          route: "/docs/reference/protocol/classes/ProvableStateTransitionType",
+          frontMatter: {
+            "title": "ProvableStateTransitionType"
+          }
+        }, {
+          name: "ProvableTransactionHook",
+          route: "/docs/reference/protocol/classes/ProvableTransactionHook",
+          frontMatter: {
+            "title": "ProvableTransactionHook"
+          }
+        }, {
+          name: "PublicKeyOption",
+          route: "/docs/reference/protocol/classes/PublicKeyOption",
+          frontMatter: {
+            "title": "PublicKeyOption"
+          }
+        }, {
+          name: "RuntimeMethodExecutionContext",
+          route: "/docs/reference/protocol/classes/RuntimeMethodExecutionContext",
+          frontMatter: {
+            "title": "RuntimeMethodExecutionContext"
+          }
+        }, {
+          name: "RuntimeMethodExecutionDataStruct",
+          route: "/docs/reference/protocol/classes/RuntimeMethodExecutionDataStruct",
+          frontMatter: {
+            "title": "RuntimeMethodExecutionDataStruct"
+          }
+        }, {
+          name: "RuntimeProvableMethodExecutionResult",
+          route: "/docs/reference/protocol/classes/RuntimeProvableMethodExecutionResult",
+          frontMatter: {
+            "title": "RuntimeProvableMethodExecutionResult"
+          }
+        }, {
+          name: "RuntimeTransaction",
+          route: "/docs/reference/protocol/classes/RuntimeTransaction",
+          frontMatter: {
+            "title": "RuntimeTransaction"
+          }
+        }, {
+          name: "RuntimeVerificationKeyAttestation",
+          route: "/docs/reference/protocol/classes/RuntimeVerificationKeyAttestation",
+          frontMatter: {
+            "title": "RuntimeVerificationKeyAttestation"
+          }
+        }, {
+          name: "RuntimeVerificationKeyRootService",
+          route: "/docs/reference/protocol/classes/RuntimeVerificationKeyRootService",
+          frontMatter: {
+            "title": "RuntimeVerificationKeyRootService"
+          }
+        }, {
+          name: "SettlementBase",
+          route: "/docs/reference/protocol/classes/SettlementBase",
+          frontMatter: {
+            "title": "SettlementBase"
+          }
+        }, {
+          name: "SettlementContract",
+          route: "/docs/reference/protocol/classes/SettlementContract",
+          frontMatter: {
+            "title": "SettlementContract"
+          }
+        }, {
+          name: "SettlementContractModule",
+          route: "/docs/reference/protocol/classes/SettlementContractModule",
+          frontMatter: {
+            "title": "SettlementContractModule"
+          }
+        }, {
+          name: "SettlementSmartContractModule",
+          route: "/docs/reference/protocol/classes/SettlementSmartContractModule",
+          frontMatter: {
+            "title": "SettlementSmartContractModule"
+          }
+        }, {
+          name: "State",
+          route: "/docs/reference/protocol/classes/State",
+          frontMatter: {
+            "title": "State"
+          }
+        }, {
+          name: "StateMap",
+          route: "/docs/reference/protocol/classes/StateMap",
+          frontMatter: {
+            "title": "StateMap"
+          }
+        }, {
+          name: "StateServiceProvider",
+          route: "/docs/reference/protocol/classes/StateServiceProvider",
+          frontMatter: {
+            "title": "StateServiceProvider"
+          }
+        }, {
+          name: "StateTransition",
+          route: "/docs/reference/protocol/classes/StateTransition",
+          frontMatter: {
+            "title": "StateTransition"
+          }
+        }, {
+          name: "StateTransitionProvableBatch",
+          route: "/docs/reference/protocol/classes/StateTransitionProvableBatch",
+          frontMatter: {
+            "title": "StateTransitionProvableBatch"
+          }
+        }, {
+          name: "StateTransitionProver",
+          route: "/docs/reference/protocol/classes/StateTransitionProver",
+          frontMatter: {
+            "title": "StateTransitionProver"
+          }
+        }, {
+          name: "StateTransitionProverProgrammable",
+          route: "/docs/reference/protocol/classes/StateTransitionProverProgrammable",
+          frontMatter: {
+            "title": "StateTransitionProverProgrammable"
+          }
+        }, {
+          name: "StateTransitionProverPublicInput",
+          route: "/docs/reference/protocol/classes/StateTransitionProverPublicInput",
+          frontMatter: {
+            "title": "StateTransitionProverPublicInput"
+          }
+        }, {
+          name: "StateTransitionProverPublicOutput",
+          route: "/docs/reference/protocol/classes/StateTransitionProverPublicOutput",
+          frontMatter: {
+            "title": "StateTransitionProverPublicOutput"
+          }
+        }, {
+          name: "StateTransitionReductionList",
+          route: "/docs/reference/protocol/classes/StateTransitionReductionList",
+          frontMatter: {
+            "title": "StateTransitionReductionList"
+          }
+        }, {
+          name: "StateTransitionType",
+          route: "/docs/reference/protocol/classes/StateTransitionType",
+          frontMatter: {
+            "title": "StateTransitionType"
+          }
+        }, {
+          name: "TokenBridgeAttestation",
+          route: "/docs/reference/protocol/classes/TokenBridgeAttestation",
+          frontMatter: {
+            "title": "TokenBridgeAttestation"
+          }
+        }, {
+          name: "TokenBridgeDeploymentAuth",
+          route: "/docs/reference/protocol/classes/TokenBridgeDeploymentAuth",
+          frontMatter: {
+            "title": "TokenBridgeDeploymentAuth"
+          }
+        }, {
+          name: "TokenBridgeEntry",
+          route: "/docs/reference/protocol/classes/TokenBridgeEntry",
+          frontMatter: {
+            "title": "TokenBridgeEntry"
+          }
+        }, {
+          name: "TokenBridgeTree",
+          route: "/docs/reference/protocol/classes/TokenBridgeTree",
+          frontMatter: {
+            "title": "TokenBridgeTree"
+          }
+        }, {
+          name: "TokenBridgeTreeAddition",
+          route: "/docs/reference/protocol/classes/TokenBridgeTreeAddition",
+          frontMatter: {
+            "title": "TokenBridgeTreeAddition"
+          }
+        }, {
+          name: "TokenBridgeTreeWitness",
+          route: "/docs/reference/protocol/classes/TokenBridgeTreeWitness",
+          frontMatter: {
+            "title": "TokenBridgeTreeWitness"
+          }
+        }, {
+          name: "TokenMapping",
+          route: "/docs/reference/protocol/classes/TokenMapping",
+          frontMatter: {
+            "title": "TokenMapping"
+          }
+        }, {
+          name: "TransactionHashList",
+          route: "/docs/reference/protocol/classes/TransactionHashList",
+          frontMatter: {
+            "title": "TransactionHashList"
+          }
+        }, {
+          name: "TransactionProver",
+          route: "/docs/reference/protocol/classes/TransactionProver",
+          frontMatter: {
+            "title": "TransactionProver"
+          }
+        }, {
+          name: "TransactionProverArguments",
+          route: "/docs/reference/protocol/classes/TransactionProverArguments",
+          frontMatter: {
+            "title": "TransactionProverArguments"
+          }
+        }, {
+          name: "TransactionProverExecutionData",
+          route: "/docs/reference/protocol/classes/TransactionProverExecutionData",
+          frontMatter: {
+            "title": "TransactionProverExecutionData"
+          }
+        }, {
+          name: "TransactionProverPublicInput",
+          route: "/docs/reference/protocol/classes/TransactionProverPublicInput",
+          frontMatter: {
+            "title": "TransactionProverPublicInput"
+          }
+        }, {
+          name: "TransactionProverPublicOutput",
+          route: "/docs/reference/protocol/classes/TransactionProverPublicOutput",
+          frontMatter: {
+            "title": "TransactionProverPublicOutput"
+          }
+        }, {
+          name: "TransactionProverState",
+          route: "/docs/reference/protocol/classes/TransactionProverState",
+          frontMatter: {
+            "title": "TransactionProverState"
+          }
+        }, {
+          name: "TransactionProverTransactionArguments",
+          route: "/docs/reference/protocol/classes/TransactionProverTransactionArguments",
+          frontMatter: {
+            "title": "TransactionProverTransactionArguments"
+          }
+        }, {
+          name: "TransactionProverZkProgrammable",
+          route: "/docs/reference/protocol/classes/TransactionProverZkProgrammable",
+          frontMatter: {
+            "title": "TransactionProverZkProgrammable"
+          }
+        }, {
+          name: "TransitionMethodExecutionResult",
+          route: "/docs/reference/protocol/classes/TransitionMethodExecutionResult",
+          frontMatter: {
+            "title": "TransitionMethodExecutionResult"
+          }
+        }, {
+          name: "UInt64Option",
+          route: "/docs/reference/protocol/classes/UInt64Option",
+          frontMatter: {
+            "title": "UInt64Option"
+          }
+        }, {
+          name: "UpdateMessagesHashAuth",
+          route: "/docs/reference/protocol/classes/UpdateMessagesHashAuth",
+          frontMatter: {
+            "title": "UpdateMessagesHashAuth"
+          }
+        }, {
+          name: "VKTree",
+          route: "/docs/reference/protocol/classes/VKTree",
+          frontMatter: {
+            "title": "VKTree"
+          }
+        }, {
+          name: "VKTreeWitness",
+          route: "/docs/reference/protocol/classes/VKTreeWitness",
+          frontMatter: {
+            "title": "VKTreeWitness"
+          }
+        }, {
+          name: "WithPath",
+          route: "/docs/reference/protocol/classes/WithPath",
+          frontMatter: {
+            "title": "WithPath"
+          }
+        }, {
+          name: "WithStateServiceProvider",
+          route: "/docs/reference/protocol/classes/WithStateServiceProvider",
+          frontMatter: {
+            "title": "WithStateServiceProvider"
+          }
+        }, {
+          name: "WitnessedRoot",
+          route: "/docs/reference/protocol/classes/WitnessedRoot",
+          frontMatter: {
+            "title": "WitnessedRoot"
+          }
+        }, {
+          name: "WitnessedRootHashList",
+          route: "/docs/reference/protocol/classes/WitnessedRootHashList",
+          frontMatter: {
+            "title": "WitnessedRootHashList"
+          }
+        }, {
+          name: "WitnessedRootWitness",
+          route: "/docs/reference/protocol/classes/WitnessedRootWitness",
+          frontMatter: {
+            "title": "WitnessedRootWitness"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/protocol/functions",
+        children: [{
+          name: "addTransactionToBundle",
+          route: "/docs/reference/protocol/functions/addTransactionToBundle",
+          frontMatter: {
+            "title": "addTransactionToBundle"
+          }
+        }, {
+          name: "assert",
+          route: "/docs/reference/protocol/functions/assert",
+          frontMatter: {
+            "title": "assert"
+          }
+        }, {
+          name: "assertEqualsIf",
+          route: "/docs/reference/protocol/functions/assertEqualsIf",
+          frontMatter: {
+            "title": "assertEqualsIf"
+          }
+        }, {
+          name: "constructBatch",
+          route: "/docs/reference/protocol/functions/constructBatch",
+          frontMatter: {
+            "title": "constructBatch"
+          }
+        }, {
+          name: "createMessageStruct",
+          route: "/docs/reference/protocol/functions/createMessageStruct",
+          frontMatter: {
+            "title": "createMessageStruct"
+          }
+        }, {
+          name: "emptyActions",
+          route: "/docs/reference/protocol/functions/emptyActions",
+          frontMatter: {
+            "title": "emptyActions"
+          }
+        }, {
+          name: "emptyEvents",
+          route: "/docs/reference/protocol/functions/emptyEvents",
+          frontMatter: {
+            "title": "emptyEvents"
+          }
+        }, {
+          name: "executeHooks",
+          route: "/docs/reference/protocol/functions/executeHooks",
+          frontMatter: {
+            "title": "executeHooks"
+          }
+        }, {
+          name: "notInCircuit",
+          route: "/docs/reference/protocol/functions/notInCircuit",
+          frontMatter: {
+            "title": "notInCircuit"
+          }
+        }, {
+          name: "outgoingMessageProcessor",
+          route: "/docs/reference/protocol/functions/outgoingMessageProcessor",
+          frontMatter: {
+            "title": "outgoingMessageProcessor"
+          }
+        }, {
+          name: "reduceStateTransitions",
+          route: "/docs/reference/protocol/functions/reduceStateTransitions",
+          frontMatter: {
+            "title": "reduceStateTransitions"
+          }
+        }, {
+          name: "singleFieldToString",
+          route: "/docs/reference/protocol/functions/singleFieldToString",
+          frontMatter: {
+            "title": "singleFieldToString"
+          }
+        }, {
+          name: "state",
+          route: "/docs/reference/protocol/functions/state",
+          frontMatter: {
+            "title": "state"
+          }
+        }, {
+          name: "stringToField",
+          route: "/docs/reference/protocol/functions/stringToField",
+          frontMatter: {
+            "title": "stringToField"
+          }
+        }, {
+          name: "toAfterBlockHookArgument",
+          route: "/docs/reference/protocol/functions/toAfterBlockHookArgument",
+          frontMatter: {
+            "title": "toAfterBlockHookArgument"
+          }
+        }, {
+          name: "toAfterTransactionHookArgument",
+          route: "/docs/reference/protocol/functions/toAfterTransactionHookArgument",
+          frontMatter: {
+            "title": "toAfterTransactionHookArgument"
+          }
+        }, {
+          name: "toBeforeBlockHookArgument",
+          route: "/docs/reference/protocol/functions/toBeforeBlockHookArgument",
+          frontMatter: {
+            "title": "toBeforeBlockHookArgument"
+          }
+        }, {
+          name: "toBeforeTransactionHookArgument",
+          route: "/docs/reference/protocol/functions/toBeforeTransactionHookArgument",
+          frontMatter: {
+            "title": "toBeforeTransactionHookArgument"
+          }
+        }, {
+          name: "toProvableHookTransactionState",
+          route: "/docs/reference/protocol/functions/toProvableHookTransactionState",
+          frontMatter: {
+            "title": "toProvableHookTransactionState"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/protocol/globals",
         frontMatter: {
           "title": "@proto-kit/protocol"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/protocol/interfaces",
+        children: [{
+          name: "AfterBlockHookArguments",
+          route: "/docs/reference/protocol/interfaces/AfterBlockHookArguments",
+          frontMatter: {
+            "title": "AfterBlockHookArguments"
+          }
+        }, {
+          name: "AfterTransactionHookArguments",
+          route: "/docs/reference/protocol/interfaces/AfterTransactionHookArguments",
+          frontMatter: {
+            "title": "AfterTransactionHookArguments"
+          }
+        }, {
+          name: "BeforeBlockHookArguments",
+          route: "/docs/reference/protocol/interfaces/BeforeBlockHookArguments",
+          frontMatter: {
+            "title": "BeforeBlockHookArguments"
+          }
+        }, {
+          name: "BeforeTransactionHookArguments",
+          route: "/docs/reference/protocol/interfaces/BeforeTransactionHookArguments",
+          frontMatter: {
+            "title": "BeforeTransactionHookArguments"
+          }
+        }, {
+          name: "BlockProvable",
+          route: "/docs/reference/protocol/interfaces/BlockProvable",
+          frontMatter: {
+            "title": "BlockProvable"
+          }
+        }, {
+          name: "BlockProverType",
+          route: "/docs/reference/protocol/interfaces/BlockProverType",
+          frontMatter: {
+            "title": "BlockProverType"
+          }
+        }, {
+          name: "BridgeContractArgs",
+          route: "/docs/reference/protocol/interfaces/BridgeContractArgs",
+          frontMatter: {
+            "title": "BridgeContractArgs"
+          }
+        }, {
+          name: "BridgingSettlementContractArgs",
+          route: "/docs/reference/protocol/interfaces/BridgingSettlementContractArgs",
+          frontMatter: {
+            "title": "BridgingSettlementContractArgs"
+          }
+        }, {
+          name: "BridgingSettlementContractType",
+          route: "/docs/reference/protocol/interfaces/BridgingSettlementContractType",
+          frontMatter: {
+            "title": "BridgingSettlementContractType"
+          }
+        }, {
+          name: "ContractAuthorization",
+          route: "/docs/reference/protocol/interfaces/ContractAuthorization",
+          frontMatter: {
+            "title": "ContractAuthorization"
+          }
+        }, {
+          name: "DispatchContractArgs",
+          route: "/docs/reference/protocol/interfaces/DispatchContractArgs",
+          frontMatter: {
+            "title": "DispatchContractArgs"
+          }
+        }, {
+          name: "DispatchContractType",
+          route: "/docs/reference/protocol/interfaces/DispatchContractType",
+          frontMatter: {
+            "title": "DispatchContractType"
+          }
+        }, {
+          name: "MinimalVKTreeService",
+          route: "/docs/reference/protocol/interfaces/MinimalVKTreeService",
+          frontMatter: {
+            "title": "MinimalVKTreeService"
+          }
+        }, {
+          name: "ProtocolEnvironment",
+          route: "/docs/reference/protocol/interfaces/ProtocolEnvironment",
+          frontMatter: {
+            "title": "ProtocolEnvironment"
+          }
+        }, {
+          name: "RuntimeLike",
+          route: "/docs/reference/protocol/interfaces/RuntimeLike",
+          frontMatter: {
+            "title": "RuntimeLike"
+          }
+        }, {
+          name: "RuntimeMethodExecutionData",
+          route: "/docs/reference/protocol/interfaces/RuntimeMethodExecutionData",
+          frontMatter: {
+            "title": "RuntimeMethodExecutionData"
+          }
+        }, {
+          name: "SettlementContractArgs",
+          route: "/docs/reference/protocol/interfaces/SettlementContractArgs",
+          frontMatter: {
+            "title": "SettlementContractArgs"
+          }
+        }, {
+          name: "SettlementContractType",
+          route: "/docs/reference/protocol/interfaces/SettlementContractType",
+          frontMatter: {
+            "title": "SettlementContractType"
+          }
+        }, {
+          name: "SimpleAsyncStateService",
+          route: "/docs/reference/protocol/interfaces/SimpleAsyncStateService",
+          frontMatter: {
+            "title": "SimpleAsyncStateService"
+          }
+        }, {
+          name: "StatefulModule",
+          route: "/docs/reference/protocol/interfaces/StatefulModule",
+          frontMatter: {
+            "title": "StatefulModule"
+          }
+        }, {
+          name: "StateTransitionProvable",
+          route: "/docs/reference/protocol/interfaces/StateTransitionProvable",
+          frontMatter: {
+            "title": "StateTransitionProvable"
+          }
+        }, {
+          name: "StateTransitionProverType",
+          route: "/docs/reference/protocol/interfaces/StateTransitionProverType",
+          frontMatter: {
+            "title": "StateTransitionProverType"
+          }
+        }, {
+          name: "StaticInitializationContract",
+          route: "/docs/reference/protocol/interfaces/StaticInitializationContract",
+          frontMatter: {
+            "title": "StaticInitializationContract"
+          }
+        }, {
+          name: "TransactionProvable",
+          route: "/docs/reference/protocol/interfaces/TransactionProvable",
+          frontMatter: {
+            "title": "TransactionProvable"
+          }
+        }, {
+          name: "TransactionProverType",
+          route: "/docs/reference/protocol/interfaces/TransactionProverType",
+          frontMatter: {
+            "title": "TransactionProverType"
+          }
+        }, {
+          name: "TransitionMethodExecutionContext",
+          route: "/docs/reference/protocol/interfaces/TransitionMethodExecutionContext",
+          frontMatter: {
+            "title": "TransitionMethodExecutionContext"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/protocol/README",
         frontMatter: {
           "title": "@proto-kit/protocol"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/protocol/type-aliases",
+        children: [{
+          name: "AccountStateHookConfig",
+          route: "/docs/reference/protocol/type-aliases/AccountStateHookConfig",
+          frontMatter: {
+            "title": "AccountStateHookConfig"
+          }
+        }, {
+          name: "BlockProof",
+          route: "/docs/reference/protocol/type-aliases/BlockProof",
+          frontMatter: {
+            "title": "BlockProof"
+          }
+        }, {
+          name: "BridgeContractConfig",
+          route: "/docs/reference/protocol/type-aliases/BridgeContractConfig",
+          frontMatter: {
+            "title": "BridgeContractConfig"
+          }
+        }, {
+          name: "BridgeContractType",
+          route: "/docs/reference/protocol/type-aliases/BridgeContractType",
+          frontMatter: {
+            "title": "BridgeContractType"
+          }
+        }, {
+          name: "BridgingSettlementModulesRecord",
+          route: "/docs/reference/protocol/type-aliases/BridgingSettlementModulesRecord",
+          frontMatter: {
+            "title": "BridgingSettlementModulesRecord"
+          }
+        }, {
+          name: "DispatchContractConfig",
+          route: "/docs/reference/protocol/type-aliases/DispatchContractConfig",
+          frontMatter: {
+            "title": "DispatchContractConfig"
+          }
+        }, {
+          name: "DynamicRuntimeProof",
+          route: "/docs/reference/protocol/type-aliases/DynamicRuntimeProof",
+          frontMatter: {
+            "title": "DynamicRuntimeProof"
+          }
+        }, {
+          name: "DynamicSTProof",
+          route: "/docs/reference/protocol/type-aliases/DynamicSTProof",
+          frontMatter: {
+            "title": "DynamicSTProof"
+          }
+        }, {
+          name: "DynamicTransactionProof",
+          route: "/docs/reference/protocol/type-aliases/DynamicTransactionProof",
+          frontMatter: {
+            "title": "DynamicTransactionProof"
+          }
+        }, {
+          name: "InputBlockProof",
+          route: "/docs/reference/protocol/type-aliases/InputBlockProof",
+          frontMatter: {
+            "title": "InputBlockProof"
+          }
+        }, {
+          name: "MandatoryProtocolModulesRecord",
+          route: "/docs/reference/protocol/type-aliases/MandatoryProtocolModulesRecord",
+          frontMatter: {
+            "title": "MandatoryProtocolModulesRecord"
+          }
+        }, {
+          name: "MandatorySettlementModulesRecord",
+          route: "/docs/reference/protocol/type-aliases/MandatorySettlementModulesRecord",
+          frontMatter: {
+            "title": "MandatorySettlementModulesRecord"
+          }
+        }, {
+          name: "MessageProcessorArgs",
+          route: "/docs/reference/protocol/type-aliases/MessageProcessorArgs",
+          frontMatter: {
+            "title": "MessageProcessorArgs"
+          }
+        }, {
+          name: "NaiveObjectSchema",
+          route: "/docs/reference/protocol/type-aliases/NaiveObjectSchema",
+          frontMatter: {
+            "title": "NaiveObjectSchema"
+          }
+        }, {
+          name: "NonMethods",
+          route: "/docs/reference/protocol/type-aliases/NonMethods",
+          frontMatter: {
+            "title": "NonMethods"
+          }
+        }, {
+          name: "OutgoingMessage",
+          route: "/docs/reference/protocol/type-aliases/OutgoingMessage",
+          frontMatter: {
+            "title": "OutgoingMessage"
+          }
+        }, {
+          name: "OutgoingMessageEvent",
+          route: "/docs/reference/protocol/type-aliases/OutgoingMessageEvent",
+          frontMatter: {
+            "title": "OutgoingMessageEvent"
+          }
+        }, {
+          name: "ProtocolModulesRecord",
+          route: "/docs/reference/protocol/type-aliases/ProtocolModulesRecord",
+          frontMatter: {
+            "title": "ProtocolModulesRecord"
+          }
+        }, {
+          name: "ProvableHashListData",
+          route: "/docs/reference/protocol/type-aliases/ProvableHashListData",
+          frontMatter: {
+            "title": "ProvableHashListData"
+          }
+        }, {
+          name: "ProvableHookBlockState",
+          route: "/docs/reference/protocol/type-aliases/ProvableHookBlockState",
+          frontMatter: {
+            "title": "ProvableHookBlockState"
+          }
+        }, {
+          name: "ProvableHookTransactionState",
+          route: "/docs/reference/protocol/type-aliases/ProvableHookTransactionState",
+          frontMatter: {
+            "title": "ProvableHookTransactionState"
+          }
+        }, {
+          name: "ReturnType",
+          route: "/docs/reference/protocol/type-aliases/ReturnType",
+          frontMatter: {
+            "title": "ReturnType"
+          }
+        }, {
+          name: "RuntimeMethodIdMapping",
+          route: "/docs/reference/protocol/type-aliases/RuntimeMethodIdMapping",
+          frontMatter: {
+            "title": "RuntimeMethodIdMapping"
+          }
+        }, {
+          name: "RuntimeMethodInvocationType",
+          route: "/docs/reference/protocol/type-aliases/RuntimeMethodInvocationType",
+          frontMatter: {
+            "title": "RuntimeMethodInvocationType"
+          }
+        }, {
+          name: "SettlementContractConfig",
+          route: "/docs/reference/protocol/type-aliases/SettlementContractConfig",
+          frontMatter: {
+            "title": "SettlementContractConfig"
+          }
+        }, {
+          name: "SettlementHookInputs",
+          route: "/docs/reference/protocol/type-aliases/SettlementHookInputs",
+          frontMatter: {
+            "title": "SettlementHookInputs"
+          }
+        }, {
+          name: "SettlementModulesRecord",
+          route: "/docs/reference/protocol/type-aliases/SettlementModulesRecord",
+          frontMatter: {
+            "title": "SettlementModulesRecord"
+          }
+        }, {
+          name: "SettlementStateRecord",
+          route: "/docs/reference/protocol/type-aliases/SettlementStateRecord",
+          frontMatter: {
+            "title": "SettlementStateRecord"
+          }
+        }, {
+          name: "SmartContractClassFromInterface",
+          route: "/docs/reference/protocol/type-aliases/SmartContractClassFromInterface",
+          frontMatter: {
+            "title": "SmartContractClassFromInterface"
+          }
+        }, {
+          name: "StateTransitionProof",
+          route: "/docs/reference/protocol/type-aliases/StateTransitionProof",
+          frontMatter: {
+            "title": "StateTransitionProof"
+          }
+        }, {
+          name: "Subclass",
+          route: "/docs/reference/protocol/type-aliases/Subclass",
+          frontMatter: {
+            "title": "Subclass"
+          }
+        }, {
+          name: "TransactionProof",
+          route: "/docs/reference/protocol/type-aliases/TransactionProof",
+          frontMatter: {
+            "title": "TransactionProof"
+          }
+        }, {
+          name: "TransactionResult",
+          route: "/docs/reference/protocol/type-aliases/TransactionResult",
+          frontMatter: {
+            "title": "TransactionResult"
+          }
+        }, {
+          name: "VerifiedTransition",
+          route: "/docs/reference/protocol/type-aliases/VerifiedTransition",
+          frontMatter: {
+            "title": "VerifiedTransition"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/protocol/variables",
+        children: [{
+          name: "ACTIONS_EMPTY_HASH",
+          route: "/docs/reference/protocol/variables/ACTIONS_EMPTY_HASH",
+          frontMatter: {
+            "title": "ACTIONS_EMPTY_HASH"
+          }
+        }, {
+          name: "BATCH_SIGNATURE_PREFIX",
+          route: "/docs/reference/protocol/variables/BATCH_SIGNATURE_PREFIX",
+          frontMatter: {
+            "title": "BATCH_SIGNATURE_PREFIX"
+          }
+        }, {
+          name: "BlockProverStateCommitments",
+          route: "/docs/reference/protocol/variables/BlockProverStateCommitments",
+          frontMatter: {
+            "title": "BlockProverStateCommitments"
+          }
+        }, {
+          name: "BridgeContractArgsSchema",
+          route: "/docs/reference/protocol/variables/BridgeContractArgsSchema",
+          frontMatter: {
+            "title": "BridgeContractArgsSchema"
+          }
+        }, {
+          name: "BridgingSettlementContractArgsSchema",
+          route: "/docs/reference/protocol/variables/BridgingSettlementContractArgsSchema",
+          frontMatter: {
+            "title": "BridgingSettlementContractArgsSchema"
+          }
+        }, {
+          name: "DEFAULT_ESCAPE_HATCH",
+          route: "/docs/reference/protocol/variables/DEFAULT_ESCAPE_HATCH",
+          frontMatter: {
+            "title": "DEFAULT_ESCAPE_HATCH"
+          }
+        }, {
+          name: "DispatchContractArgsSchema",
+          route: "/docs/reference/protocol/variables/DispatchContractArgsSchema",
+          frontMatter: {
+            "title": "DispatchContractArgsSchema"
+          }
+        }, {
+          name: "MINA_PREFIXES",
+          route: "/docs/reference/protocol/variables/MINA_PREFIXES",
+          frontMatter: {
+            "title": "MINA_PREFIXES"
+          }
+        }, {
+          name: "MINA_SALTS",
+          route: "/docs/reference/protocol/variables/MINA_SALTS",
+          frontMatter: {
+            "title": "MINA_SALTS"
+          }
+        }, {
+          name: "OUTGOING_MESSAGE_BATCH_SIZE",
+          route: "/docs/reference/protocol/variables/OUTGOING_MESSAGE_BATCH_SIZE",
+          frontMatter: {
+            "title": "OUTGOING_MESSAGE_BATCH_SIZE"
+          }
+        }, {
+          name: "ProtocolConstants",
+          route: "/docs/reference/protocol/variables/ProtocolConstants",
+          frontMatter: {
+            "title": "ProtocolConstants"
+          }
+        }, {
+          name: "PROTOKIT_FIELD_PREFIXES",
+          route: "/docs/reference/protocol/variables/PROTOKIT_FIELD_PREFIXES",
+          frontMatter: {
+            "title": "PROTOKIT_FIELD_PREFIXES"
+          }
+        }, {
+          name: "PROTOKIT_PREFIXES",
+          route: "/docs/reference/protocol/variables/PROTOKIT_PREFIXES",
+          frontMatter: {
+            "title": "PROTOKIT_PREFIXES"
+          }
+        }, {
+          name: "SettlementContractArgsSchema",
+          route: "/docs/reference/protocol/variables/SettlementContractArgsSchema",
+          frontMatter: {
+            "title": "SettlementContractArgsSchema"
+          }
+        }, {
+          name: "TransactionProverStateCommitments",
+          route: "/docs/reference/protocol/variables/TransactionProverStateCommitments",
+          frontMatter: {
+            "title": "TransactionProverStateCommitments"
+          }
+        }, {
+          name: "treeFeeHeight",
+          route: "/docs/reference/protocol/variables/treeFeeHeight",
+          frontMatter: {
+            "title": "treeFeeHeight"
+          }
+        }]
       }]
     }, {
       name: "sdk",
@@ -359,17 +3751,159 @@ export const pageMap = [{
       children: [{
         data: docs_reference_sdk_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/sdk/classes",
+        children: [{
+          name: "AppChainTransaction",
+          route: "/docs/reference/sdk/classes/AppChainTransaction",
+          frontMatter: {
+            "title": "AppChainTransaction"
+          }
+        }, {
+          name: "AuroSigner",
+          route: "/docs/reference/sdk/classes/AuroSigner",
+          frontMatter: {
+            "title": "AuroSigner"
+          }
+        }, {
+          name: "BlockStorageNetworkStateModule",
+          route: "/docs/reference/sdk/classes/BlockStorageNetworkStateModule",
+          frontMatter: {
+            "title": "BlockStorageNetworkStateModule"
+          }
+        }, {
+          name: "ClientAppChain",
+          route: "/docs/reference/sdk/classes/ClientAppChain",
+          frontMatter: {
+            "title": "ClientAppChain"
+          }
+        }, {
+          name: "GraphqlBlockExplorerTransportModule",
+          route: "/docs/reference/sdk/classes/GraphqlBlockExplorerTransportModule",
+          frontMatter: {
+            "title": "GraphqlBlockExplorerTransportModule"
+          }
+        }, {
+          name: "GraphqlClient",
+          route: "/docs/reference/sdk/classes/GraphqlClient",
+          frontMatter: {
+            "title": "GraphqlClient"
+          }
+        }, {
+          name: "GraphqlNetworkStateTransportModule",
+          route: "/docs/reference/sdk/classes/GraphqlNetworkStateTransportModule",
+          frontMatter: {
+            "title": "GraphqlNetworkStateTransportModule"
+          }
+        }, {
+          name: "GraphqlQueryTransportModule",
+          route: "/docs/reference/sdk/classes/GraphqlQueryTransportModule",
+          frontMatter: {
+            "title": "GraphqlQueryTransportModule"
+          }
+        }, {
+          name: "GraphqlTransactionSender",
+          route: "/docs/reference/sdk/classes/GraphqlTransactionSender",
+          frontMatter: {
+            "title": "GraphqlTransactionSender"
+          }
+        }, {
+          name: "InMemoryBlockExplorer",
+          route: "/docs/reference/sdk/classes/InMemoryBlockExplorer",
+          frontMatter: {
+            "title": "InMemoryBlockExplorer"
+          }
+        }, {
+          name: "InMemorySigner",
+          route: "/docs/reference/sdk/classes/InMemorySigner",
+          frontMatter: {
+            "title": "InMemorySigner"
+          }
+        }, {
+          name: "InMemoryTransactionSender",
+          route: "/docs/reference/sdk/classes/InMemoryTransactionSender",
+          frontMatter: {
+            "title": "InMemoryTransactionSender"
+          }
+        }, {
+          name: "StateServiceQueryModule",
+          route: "/docs/reference/sdk/classes/StateServiceQueryModule",
+          frontMatter: {
+            "title": "StateServiceQueryModule"
+          }
+        }, {
+          name: "TestingAppChain",
+          route: "/docs/reference/sdk/classes/TestingAppChain",
+          frontMatter: {
+            "title": "TestingAppChain"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/sdk/globals",
         frontMatter: {
           "title": "@proto-kit/sdk"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/sdk/interfaces",
+        children: [{
+          name: "GraphqlClientConfig",
+          route: "/docs/reference/sdk/interfaces/GraphqlClientConfig",
+          frontMatter: {
+            "title": "GraphqlClientConfig"
+          }
+        }, {
+          name: "InMemorySignerConfig",
+          route: "/docs/reference/sdk/interfaces/InMemorySignerConfig",
+          frontMatter: {
+            "title": "InMemorySignerConfig"
+          }
+        }, {
+          name: "Signer",
+          route: "/docs/reference/sdk/interfaces/Signer",
+          frontMatter: {
+            "title": "Signer"
+          }
+        }, {
+          name: "TransactionSender",
+          route: "/docs/reference/sdk/interfaces/TransactionSender",
+          frontMatter: {
+            "title": "TransactionSender"
+          }
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/sdk/README",
         frontMatter: {
           "title": "@proto-kit/sdk"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/sdk/type-aliases",
+        children: [{
+          name: "InferModules",
+          route: "/docs/reference/sdk/type-aliases/InferModules",
+          frontMatter: {
+            "title": "InferModules"
+          }
+        }, {
+          name: "PartialVanillaRuntimeModulesRecord",
+          route: "/docs/reference/sdk/type-aliases/PartialVanillaRuntimeModulesRecord",
+          frontMatter: {
+            "title": "PartialVanillaRuntimeModulesRecord"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/sdk/variables",
+        children: [{
+          name: "randomFeeRecipient",
+          route: "/docs/reference/sdk/variables/randomFeeRecipient",
+          frontMatter: {
+            "title": "randomFeeRecipient"
+          }
+        }]
       }]
     }, {
       name: "sequencer",
@@ -377,23 +3911,1669 @@ export const pageMap = [{
       children: [{
         data: docs_reference_sequencer_meta
       }, {
+        name: "classes",
+        route: "/docs/reference/sequencer/classes",
+        children: [{
+          name: "AbstractTaskQueue",
+          route: "/docs/reference/sequencer/classes/AbstractTaskQueue",
+          frontMatter: {
+            "title": "AbstractTaskQueue"
+          }
+        }, {
+          name: "AppChain",
+          route: "/docs/reference/sequencer/classes/AppChain",
+          frontMatter: {
+            "title": "AppChain"
+          }
+        }, {
+          name: "AppChainModule",
+          route: "/docs/reference/sequencer/classes/AppChainModule",
+          frontMatter: {
+            "title": "AppChainModule"
+          }
+        }, {
+          name: "AreProofsEnabledFactory",
+          route: "/docs/reference/sequencer/classes/AreProofsEnabledFactory",
+          frontMatter: {
+            "title": "AreProofsEnabledFactory"
+          }
+        }, {
+          name: "ArtifactRecordSerializer",
+          route: "/docs/reference/sequencer/classes/ArtifactRecordSerializer",
+          frontMatter: {
+            "title": "ArtifactRecordSerializer"
+          }
+        }, {
+          name: "BatchFlow",
+          route: "/docs/reference/sequencer/classes/BatchFlow",
+          frontMatter: {
+            "title": "BatchFlow"
+          }
+        }, {
+          name: "BatchProducerModule",
+          route: "/docs/reference/sequencer/classes/BatchProducerModule",
+          frontMatter: {
+            "title": "BatchProducerModule"
+          }
+        }, {
+          name: "BatchTracingService",
+          route: "/docs/reference/sequencer/classes/BatchTracingService",
+          frontMatter: {
+            "title": "BatchTracingService"
+          }
+        }, {
+          name: "BlockExplorerQuery",
+          route: "/docs/reference/sequencer/classes/BlockExplorerQuery",
+          frontMatter: {
+            "title": "BlockExplorerQuery"
+          }
+        }, {
+          name: "BlockFlow",
+          route: "/docs/reference/sequencer/classes/BlockFlow",
+          frontMatter: {
+            "title": "BlockFlow"
+          }
+        }, {
+          name: "BlockProducerModule",
+          route: "/docs/reference/sequencer/classes/BlockProducerModule",
+          frontMatter: {
+            "title": "BlockProducerModule"
+          }
+        }, {
+          name: "BlockProductionInstrumentation",
+          route: "/docs/reference/sequencer/classes/BlockProductionInstrumentation",
+          frontMatter: {
+            "title": "BlockProductionInstrumentation"
+          }
+        }, {
+          name: "BlockProductionService",
+          route: "/docs/reference/sequencer/classes/BlockProductionService",
+          frontMatter: {
+            "title": "BlockProductionService"
+          }
+        }, {
+          name: "BlockProofSerializer",
+          route: "/docs/reference/sequencer/classes/BlockProofSerializer",
+          frontMatter: {
+            "title": "BlockProofSerializer"
+          }
+        }, {
+          name: "BlockProverCompileTask",
+          route: "/docs/reference/sequencer/classes/BlockProverCompileTask",
+          frontMatter: {
+            "title": "BlockProverCompileTask"
+          }
+        }, {
+          name: "BlockReductionTask",
+          route: "/docs/reference/sequencer/classes/BlockReductionTask",
+          frontMatter: {
+            "title": "BlockReductionTask"
+          }
+        }, {
+          name: "BlockResultService",
+          route: "/docs/reference/sequencer/classes/BlockResultService",
+          frontMatter: {
+            "title": "BlockResultService"
+          }
+        }, {
+          name: "BlockTracingService",
+          route: "/docs/reference/sequencer/classes/BlockTracingService",
+          frontMatter: {
+            "title": "BlockTracingService"
+          }
+        }, {
+          name: "BlockTriggerBase",
+          route: "/docs/reference/sequencer/classes/BlockTriggerBase",
+          frontMatter: {
+            "title": "BlockTriggerBase"
+          }
+        }, {
+          name: "BridgingModule",
+          route: "/docs/reference/sequencer/classes/BridgingModule",
+          frontMatter: {
+            "title": "BridgingModule"
+          }
+        }, {
+          name: "CachedLinkedLeafStore",
+          route: "/docs/reference/sequencer/classes/CachedLinkedLeafStore",
+          frontMatter: {
+            "title": "CachedLinkedLeafStore"
+          }
+        }, {
+          name: "CachedMerkleTreeStore",
+          route: "/docs/reference/sequencer/classes/CachedMerkleTreeStore",
+          frontMatter: {
+            "title": "CachedMerkleTreeStore"
+          }
+        }, {
+          name: "CachedStateService",
+          route: "/docs/reference/sequencer/classes/CachedStateService",
+          frontMatter: {
+            "title": "CachedStateService"
+          }
+        }, {
+          name: "CircuitAnalysisModule",
+          route: "/docs/reference/sequencer/classes/CircuitAnalysisModule",
+          frontMatter: {
+            "title": "CircuitAnalysisModule"
+          }
+        }, {
+          name: "CircuitCompileTask",
+          route: "/docs/reference/sequencer/classes/CircuitCompileTask",
+          frontMatter: {
+            "title": "CircuitCompileTask"
+          }
+        }, {
+          name: "CloseWorkerError",
+          route: "/docs/reference/sequencer/classes/CloseWorkerError",
+          frontMatter: {
+            "title": "CloseWorkerError"
+          }
+        }, {
+          name: "CompressedSignature",
+          route: "/docs/reference/sequencer/classes/CompressedSignature",
+          frontMatter: {
+            "title": "CompressedSignature"
+          }
+        }, {
+          name: "ConsoleTracer",
+          route: "/docs/reference/sequencer/classes/ConsoleTracer",
+          frontMatter: {
+            "title": "ConsoleTracer"
+          }
+        }, {
+          name: "ConsoleTracingFactory",
+          route: "/docs/reference/sequencer/classes/ConsoleTracingFactory",
+          frontMatter: {
+            "title": "ConsoleTracingFactory"
+          }
+        }, {
+          name: "ConstantFeeStrategy",
+          route: "/docs/reference/sequencer/classes/ConstantFeeStrategy",
+          frontMatter: {
+            "title": "ConstantFeeStrategy"
+          }
+        }, {
+          name: "DecodedStateSerializer",
+          route: "/docs/reference/sequencer/classes/DecodedStateSerializer",
+          frontMatter: {
+            "title": "DecodedStateSerializer"
+          }
+        }, {
+          name: "DefaultMempoolSorting",
+          route: "/docs/reference/sequencer/classes/DefaultMempoolSorting",
+          frontMatter: {
+            "title": "DefaultMempoolSorting"
+          }
+        }, {
+          name: "DefaultOutgoingMessageAdapter",
+          route: "/docs/reference/sequencer/classes/DefaultOutgoingMessageAdapter",
+          frontMatter: {
+            "title": "DefaultOutgoingMessageAdapter"
+          }
+        }, {
+          name: "DummyStateService",
+          route: "/docs/reference/sequencer/classes/DummyStateService",
+          frontMatter: {
+            "title": "DummyStateService"
+          }
+        }, {
+          name: "DynamicProofTaskSerializer",
+          route: "/docs/reference/sequencer/classes/DynamicProofTaskSerializer",
+          frontMatter: {
+            "title": "DynamicProofTaskSerializer"
+          }
+        }, {
+          name: "Flow",
+          route: "/docs/reference/sequencer/classes/Flow",
+          frontMatter: {
+            "title": "Flow"
+          }
+        }, {
+          name: "FlowCreator",
+          route: "/docs/reference/sequencer/classes/FlowCreator",
+          frontMatter: {
+            "title": "FlowCreator"
+          }
+        }, {
+          name: "FlowTaskWorker",
+          route: "/docs/reference/sequencer/classes/FlowTaskWorker",
+          frontMatter: {
+            "title": "FlowTaskWorker"
+          }
+        }, {
+          name: "FungibleTokenAdminContractModule",
+          route: "/docs/reference/sequencer/classes/FungibleTokenAdminContractModule",
+          frontMatter: {
+            "title": "FungibleTokenAdminContractModule"
+          }
+        }, {
+          name: "FungibleTokenContractModule",
+          route: "/docs/reference/sequencer/classes/FungibleTokenContractModule",
+          frontMatter: {
+            "title": "FungibleTokenContractModule"
+          }
+        }, {
+          name: "InMemoryAreProofsEnabled",
+          route: "/docs/reference/sequencer/classes/InMemoryAreProofsEnabled",
+          frontMatter: {
+            "title": "InMemoryAreProofsEnabled"
+          }
+        }, {
+          name: "InMemoryAsyncMerkleTreeStore",
+          route: "/docs/reference/sequencer/classes/InMemoryAsyncMerkleTreeStore",
+          frontMatter: {
+            "title": "InMemoryAsyncMerkleTreeStore"
+          }
+        }, {
+          name: "InMemoryBatchStorage",
+          route: "/docs/reference/sequencer/classes/InMemoryBatchStorage",
+          frontMatter: {
+            "title": "InMemoryBatchStorage"
+          }
+        }, {
+          name: "InMemoryBlockStorage",
+          route: "/docs/reference/sequencer/classes/InMemoryBlockStorage",
+          frontMatter: {
+            "title": "InMemoryBlockStorage"
+          }
+        }, {
+          name: "InMemoryDatabase",
+          route: "/docs/reference/sequencer/classes/InMemoryDatabase",
+          frontMatter: {
+            "title": "InMemoryDatabase"
+          }
+        }, {
+          name: "InMemoryMessageStorage",
+          route: "/docs/reference/sequencer/classes/InMemoryMessageStorage",
+          frontMatter: {
+            "title": "InMemoryMessageStorage"
+          }
+        }, {
+          name: "InMemoryMinaSigner",
+          route: "/docs/reference/sequencer/classes/InMemoryMinaSigner",
+          frontMatter: {
+            "title": "InMemoryMinaSigner"
+          }
+        }, {
+          name: "InMemorySettlementStorage",
+          route: "/docs/reference/sequencer/classes/InMemorySettlementStorage",
+          frontMatter: {
+            "title": "InMemorySettlementStorage"
+          }
+        }, {
+          name: "InMemoryTransactionStorage",
+          route: "/docs/reference/sequencer/classes/InMemoryTransactionStorage",
+          frontMatter: {
+            "title": "InMemoryTransactionStorage"
+          }
+        }, {
+          name: "LightnetUtils",
+          route: "/docs/reference/sequencer/classes/LightnetUtils",
+          frontMatter: {
+            "title": "LightnetUtils"
+          }
+        }, {
+          name: "ListenerList",
+          route: "/docs/reference/sequencer/classes/ListenerList",
+          frontMatter: {
+            "title": "ListenerList"
+          }
+        }, {
+          name: "LocalBlockchainUtils",
+          route: "/docs/reference/sequencer/classes/LocalBlockchainUtils",
+          frontMatter: {
+            "title": "LocalBlockchainUtils"
+          }
+        }, {
+          name: "LocalSequencerCoreModule",
+          route: "/docs/reference/sequencer/classes/LocalSequencerCoreModule",
+          frontMatter: {
+            "title": "LocalSequencerCoreModule"
+          }
+        }, {
+          name: "LocalTaskQueue",
+          route: "/docs/reference/sequencer/classes/LocalTaskQueue",
+          frontMatter: {
+            "title": "LocalTaskQueue"
+          }
+        }, {
+          name: "ManualBlockTrigger",
+          route: "/docs/reference/sequencer/classes/ManualBlockTrigger",
+          frontMatter: {
+            "title": "ManualBlockTrigger"
+          }
+        }, {
+          name: "MempoolInstrumentation",
+          route: "/docs/reference/sequencer/classes/MempoolInstrumentation",
+          frontMatter: {
+            "title": "MempoolInstrumentation"
+          }
+        }, {
+          name: "MinaBaseLayer",
+          route: "/docs/reference/sequencer/classes/MinaBaseLayer",
+          frontMatter: {
+            "title": "MinaBaseLayer"
+          }
+        }, {
+          name: "MinaIncomingMessageAdapter",
+          route: "/docs/reference/sequencer/classes/MinaIncomingMessageAdapter",
+          frontMatter: {
+            "title": "MinaIncomingMessageAdapter"
+          }
+        }, {
+          name: "MinaSimulationService",
+          route: "/docs/reference/sequencer/classes/MinaSimulationService",
+          frontMatter: {
+            "title": "MinaSimulationService"
+          }
+        }, {
+          name: "MinaTransactionSender",
+          route: "/docs/reference/sequencer/classes/MinaTransactionSender",
+          frontMatter: {
+            "title": "MinaTransactionSender"
+          }
+        }, {
+          name: "MinaTransactionSimulator",
+          route: "/docs/reference/sequencer/classes/MinaTransactionSimulator",
+          frontMatter: {
+            "title": "MinaTransactionSimulator"
+          }
+        }, {
+          name: "NetworkStateQuery",
+          route: "/docs/reference/sequencer/classes/NetworkStateQuery",
+          frontMatter: {
+            "title": "NetworkStateQuery"
+          }
+        }, {
+          name: "NewBlockProvingParametersSerializer",
+          route: "/docs/reference/sequencer/classes/NewBlockProvingParametersSerializer",
+          frontMatter: {
+            "title": "NewBlockProvingParametersSerializer"
+          }
+        }, {
+          name: "NewBlockTask",
+          route: "/docs/reference/sequencer/classes/NewBlockTask",
+          frontMatter: {
+            "title": "NewBlockTask"
+          }
+        }, {
+          name: "NoopBaseLayer",
+          route: "/docs/reference/sequencer/classes/NoopBaseLayer",
+          frontMatter: {
+            "title": "NoopBaseLayer"
+          }
+        }, {
+          name: "PairProofTaskSerializer",
+          route: "/docs/reference/sequencer/classes/PairProofTaskSerializer",
+          frontMatter: {
+            "title": "PairProofTaskSerializer"
+          }
+        }, {
+          name: "PendingTransaction",
+          route: "/docs/reference/sequencer/classes/PendingTransaction",
+          frontMatter: {
+            "title": "PendingTransaction"
+          }
+        }, {
+          name: "PreFilledStateService",
+          route: "/docs/reference/sequencer/classes/PreFilledStateService",
+          frontMatter: {
+            "title": "PreFilledStateService"
+          }
+        }, {
+          name: "PrivateMempool",
+          route: "/docs/reference/sequencer/classes/PrivateMempool",
+          frontMatter: {
+            "title": "PrivateMempool"
+          }
+        }, {
+          name: "ProofTaskSerializer",
+          route: "/docs/reference/sequencer/classes/ProofTaskSerializer",
+          frontMatter: {
+            "title": "ProofTaskSerializer"
+          }
+        }, {
+          name: "ProtocolCompileTask",
+          route: "/docs/reference/sequencer/classes/ProtocolCompileTask",
+          frontMatter: {
+            "title": "ProtocolCompileTask"
+          }
+        }, {
+          name: "ProvenSettlementPermissions",
+          route: "/docs/reference/sequencer/classes/ProvenSettlementPermissions",
+          frontMatter: {
+            "title": "ProvenSettlementPermissions"
+          }
+        }, {
+          name: "PushInstrumentation",
+          route: "/docs/reference/sequencer/classes/PushInstrumentation",
+          frontMatter: {
+            "title": "PushInstrumentation"
+          }
+        }, {
+          name: "ReductionTaskFlow",
+          route: "/docs/reference/sequencer/classes/ReductionTaskFlow",
+          frontMatter: {
+            "title": "ReductionTaskFlow"
+          }
+        }, {
+          name: "RemoteNetworkUtils",
+          route: "/docs/reference/sequencer/classes/RemoteNetworkUtils",
+          frontMatter: {
+            "title": "RemoteNetworkUtils"
+          }
+        }, {
+          name: "RuntimeCompileTask",
+          route: "/docs/reference/sequencer/classes/RuntimeCompileTask",
+          frontMatter: {
+            "title": "RuntimeCompileTask"
+          }
+        }, {
+          name: "RuntimeProofParametersSerializer",
+          route: "/docs/reference/sequencer/classes/RuntimeProofParametersSerializer",
+          frontMatter: {
+            "title": "RuntimeProofParametersSerializer"
+          }
+        }, {
+          name: "RuntimeProvingTask",
+          route: "/docs/reference/sequencer/classes/RuntimeProvingTask",
+          frontMatter: {
+            "title": "RuntimeProvingTask"
+          }
+        }, {
+          name: "RuntimeVerificationKeyAttestationSerializer",
+          route: "/docs/reference/sequencer/classes/RuntimeVerificationKeyAttestationSerializer",
+          frontMatter: {
+            "title": "RuntimeVerificationKeyAttestationSerializer"
+          }
+        }, {
+          name: "Sequencer",
+          route: "/docs/reference/sequencer/classes/Sequencer",
+          frontMatter: {
+            "title": "Sequencer"
+          }
+        }, {
+          name: "SequencerCoreModule",
+          route: "/docs/reference/sequencer/classes/SequencerCoreModule",
+          frontMatter: {
+            "title": "SequencerCoreModule"
+          }
+        }, {
+          name: "SequencerIdProvider",
+          route: "/docs/reference/sequencer/classes/SequencerIdProvider",
+          frontMatter: {
+            "title": "SequencerIdProvider"
+          }
+        }, {
+          name: "SequencerModule",
+          route: "/docs/reference/sequencer/classes/SequencerModule",
+          frontMatter: {
+            "title": "SequencerModule"
+          }
+        }, {
+          name: "SequencerStartupModule",
+          route: "/docs/reference/sequencer/classes/SequencerStartupModule",
+          frontMatter: {
+            "title": "SequencerStartupModule"
+          }
+        }, {
+          name: "SettlementCompileTask",
+          route: "/docs/reference/sequencer/classes/SettlementCompileTask",
+          frontMatter: {
+            "title": "SettlementCompileTask"
+          }
+        }, {
+          name: "SettlementModule",
+          route: "/docs/reference/sequencer/classes/SettlementModule",
+          frontMatter: {
+            "title": "SettlementModule"
+          }
+        }, {
+          name: "SettlementProvingTask",
+          route: "/docs/reference/sequencer/classes/SettlementProvingTask",
+          frontMatter: {
+            "title": "SettlementProvingTask"
+          }
+        }, {
+          name: "SettlementStartupModule",
+          route: "/docs/reference/sequencer/classes/SettlementStartupModule",
+          frontMatter: {
+            "title": "SettlementStartupModule"
+          }
+        }, {
+          name: "SettlementUtils",
+          route: "/docs/reference/sequencer/classes/SettlementUtils",
+          frontMatter: {
+            "title": "SettlementUtils"
+          }
+        }, {
+          name: "SharedDependencyFactory",
+          route: "/docs/reference/sequencer/classes/SharedDependencyFactory",
+          frontMatter: {
+            "title": "SharedDependencyFactory"
+          }
+        }, {
+          name: "SignedSettlementPermissions",
+          route: "/docs/reference/sequencer/classes/SignedSettlementPermissions",
+          frontMatter: {
+            "title": "SignedSettlementPermissions"
+          }
+        }, {
+          name: "SomeProofSubclass",
+          route: "/docs/reference/sequencer/classes/SomeProofSubclass",
+          frontMatter: {
+            "title": "SomeProofSubclass"
+          }
+        }, {
+          name: "StateTransitionFlow",
+          route: "/docs/reference/sequencer/classes/StateTransitionFlow",
+          frontMatter: {
+            "title": "StateTransitionFlow"
+          }
+        }, {
+          name: "StateTransitionParametersSerializer",
+          route: "/docs/reference/sequencer/classes/StateTransitionParametersSerializer",
+          frontMatter: {
+            "title": "StateTransitionParametersSerializer"
+          }
+        }, {
+          name: "StateTransitionReductionTask",
+          route: "/docs/reference/sequencer/classes/StateTransitionReductionTask",
+          frontMatter: {
+            "title": "StateTransitionReductionTask"
+          }
+        }, {
+          name: "StateTransitionTask",
+          route: "/docs/reference/sequencer/classes/StateTransitionTask",
+          frontMatter: {
+            "title": "StateTransitionTask"
+          }
+        }, {
+          name: "StateTransitionTracingService",
+          route: "/docs/reference/sequencer/classes/StateTransitionTracingService",
+          frontMatter: {
+            "title": "StateTransitionTracingService"
+          }
+        }, {
+          name: "STProverCompileTask",
+          route: "/docs/reference/sequencer/classes/STProverCompileTask",
+          frontMatter: {
+            "title": "STProverCompileTask"
+          }
+        }, {
+          name: "SyncCachedMerkleTreeStore",
+          route: "/docs/reference/sequencer/classes/SyncCachedMerkleTreeStore",
+          frontMatter: {
+            "title": "SyncCachedMerkleTreeStore"
+          }
+        }, {
+          name: "TaskWorkerModule",
+          route: "/docs/reference/sequencer/classes/TaskWorkerModule",
+          frontMatter: {
+            "title": "TaskWorkerModule"
+          }
+        }, {
+          name: "TimedBlockTrigger",
+          route: "/docs/reference/sequencer/classes/TimedBlockTrigger",
+          frontMatter: {
+            "title": "TimedBlockTrigger"
+          }
+        }, {
+          name: "TransactionExecutionService",
+          route: "/docs/reference/sequencer/classes/TransactionExecutionService",
+          frontMatter: {
+            "title": "TransactionExecutionService"
+          }
+        }, {
+          name: "TransactionFlow",
+          route: "/docs/reference/sequencer/classes/TransactionFlow",
+          frontMatter: {
+            "title": "TransactionFlow"
+          }
+        }, {
+          name: "TransactionProverCompileTask",
+          route: "/docs/reference/sequencer/classes/TransactionProverCompileTask",
+          frontMatter: {
+            "title": "TransactionProverCompileTask"
+          }
+        }, {
+          name: "TransactionProvingTask",
+          route: "/docs/reference/sequencer/classes/TransactionProvingTask",
+          frontMatter: {
+            "title": "TransactionProvingTask"
+          }
+        }, {
+          name: "TransactionProvingTaskParameterSerializer",
+          route: "/docs/reference/sequencer/classes/TransactionProvingTaskParameterSerializer",
+          frontMatter: {
+            "title": "TransactionProvingTaskParameterSerializer"
+          }
+        }, {
+          name: "TransactionReductionTask",
+          route: "/docs/reference/sequencer/classes/TransactionReductionTask",
+          frontMatter: {
+            "title": "TransactionReductionTask"
+          }
+        }, {
+          name: "TransactionTracingService",
+          route: "/docs/reference/sequencer/classes/TransactionTracingService",
+          frontMatter: {
+            "title": "TransactionTracingService"
+          }
+        }, {
+          name: "UnsignedTransaction",
+          route: "/docs/reference/sequencer/classes/UnsignedTransaction",
+          frontMatter: {
+            "title": "UnsignedTransaction"
+          }
+        }, {
+          name: "UntypedOption",
+          route: "/docs/reference/sequencer/classes/UntypedOption",
+          frontMatter: {
+            "title": "UntypedOption"
+          }
+        }, {
+          name: "UntypedStateTransition",
+          route: "/docs/reference/sequencer/classes/UntypedStateTransition",
+          frontMatter: {
+            "title": "UntypedStateTransition"
+          }
+        }, {
+          name: "VanillaTaskWorkerModules",
+          route: "/docs/reference/sequencer/classes/VanillaTaskWorkerModules",
+          frontMatter: {
+            "title": "VanillaTaskWorkerModules"
+          }
+        }, {
+          name: "VerificationKeySerializer",
+          route: "/docs/reference/sequencer/classes/VerificationKeySerializer",
+          frontMatter: {
+            "title": "VerificationKeySerializer"
+          }
+        }, {
+          name: "WorkerModule",
+          route: "/docs/reference/sequencer/classes/WorkerModule",
+          frontMatter: {
+            "title": "WorkerModule"
+          }
+        }, {
+          name: "WorkerReadyModule",
+          route: "/docs/reference/sequencer/classes/WorkerReadyModule",
+          frontMatter: {
+            "title": "WorkerReadyModule"
+          }
+        }, {
+          name: "WorkerRegistrationTask",
+          route: "/docs/reference/sequencer/classes/WorkerRegistrationTask",
+          frontMatter: {
+            "title": "WorkerRegistrationTask"
+          }
+        }]
+      }, {
+        name: "enumerations",
+        route: "/docs/reference/sequencer/enumerations",
+        children: [{
+          name: "InclusionStatus",
+          route: "/docs/reference/sequencer/enumerations/InclusionStatus",
+          frontMatter: {
+            "title": "InclusionStatus"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/sequencer/functions",
+        children: [{
+          name: "closeable",
+          route: "/docs/reference/sequencer/functions/closeable",
+          frontMatter: {
+            "title": "closeable"
+          }
+        }, {
+          name: "collectStartingState",
+          route: "/docs/reference/sequencer/functions/collectStartingState",
+          frontMatter: {
+            "title": "collectStartingState"
+          }
+        }, {
+          name: "distinct",
+          route: "/docs/reference/sequencer/functions/distinct",
+          frontMatter: {
+            "title": "distinct"
+          }
+        }, {
+          name: "distinctByPredicate",
+          route: "/docs/reference/sequencer/functions/distinctByPredicate",
+          frontMatter: {
+            "title": "distinctByPredicate"
+          }
+        }, {
+          name: "distinctByString",
+          route: "/docs/reference/sequencer/functions/distinctByString",
+          frontMatter: {
+            "title": "distinctByString"
+          }
+        }, {
+          name: "ensureNotBusy",
+          route: "/docs/reference/sequencer/functions/ensureNotBusy",
+          frontMatter: {
+            "title": "ensureNotBusy"
+          }
+        }, {
+          name: "executeWithExecutionContext",
+          route: "/docs/reference/sequencer/functions/executeWithExecutionContext",
+          frontMatter: {
+            "title": "executeWithExecutionContext"
+          }
+        }, {
+          name: "executeWithPrefilledStateService",
+          route: "/docs/reference/sequencer/functions/executeWithPrefilledStateService",
+          frontMatter: {
+            "title": "executeWithPrefilledStateService"
+          }
+        }, {
+          name: "instrumentation",
+          route: "/docs/reference/sequencer/functions/instrumentation",
+          frontMatter: {
+            "title": "instrumentation"
+          }
+        }, {
+          name: "sequencerModule",
+          route: "/docs/reference/sequencer/functions/sequencerModule",
+          frontMatter: {
+            "title": "sequencerModule"
+          }
+        }, {
+          name: "startable",
+          route: "/docs/reference/sequencer/functions/startable",
+          frontMatter: {
+            "title": "startable"
+          }
+        }, {
+          name: "task",
+          route: "/docs/reference/sequencer/functions/task",
+          frontMatter: {
+            "title": "task"
+          }
+        }, {
+          name: "toStateTransitionHashNonProvable",
+          route: "/docs/reference/sequencer/functions/toStateTransitionHashNonProvable",
+          frontMatter: {
+            "title": "toStateTransitionHashNonProvable"
+          }
+        }, {
+          name: "trace",
+          route: "/docs/reference/sequencer/functions/trace",
+          frontMatter: {
+            "title": "trace"
+          }
+        }]
+      }, {
         name: "globals",
         route: "/docs/reference/sequencer/globals",
         frontMatter: {
           "title": "@proto-kit/sequencer"
         }
       }, {
+        name: "interfaces",
+        route: "/docs/reference/sequencer/interfaces",
+        children: [{
+          name: "AsyncLinkedLeafStore",
+          route: "/docs/reference/sequencer/interfaces/AsyncLinkedLeafStore",
+          frontMatter: {
+            "title": "AsyncLinkedLeafStore"
+          }
+        }, {
+          name: "AsyncLinkedMerkleTreeDatabase",
+          route: "/docs/reference/sequencer/interfaces/AsyncLinkedMerkleTreeDatabase",
+          frontMatter: {
+            "title": "AsyncLinkedMerkleTreeDatabase"
+          }
+        }, {
+          name: "AsyncMerkleTreeStore",
+          route: "/docs/reference/sequencer/interfaces/AsyncMerkleTreeStore",
+          frontMatter: {
+            "title": "AsyncMerkleTreeStore"
+          }
+        }, {
+          name: "AsyncStateService",
+          route: "/docs/reference/sequencer/interfaces/AsyncStateService",
+          frontMatter: {
+            "title": "AsyncStateService"
+          }
+        }, {
+          name: "BaseLayer",
+          route: "/docs/reference/sequencer/interfaces/BaseLayer",
+          frontMatter: {
+            "title": "BaseLayer"
+          }
+        }, {
+          name: "BaseLayerContractPermissions",
+          route: "/docs/reference/sequencer/interfaces/BaseLayerContractPermissions",
+          frontMatter: {
+            "title": "BaseLayerContractPermissions"
+          }
+        }, {
+          name: "BaseLayerDependencyRecord",
+          route: "/docs/reference/sequencer/interfaces/BaseLayerDependencyRecord",
+          frontMatter: {
+            "title": "BaseLayerDependencyRecord"
+          }
+        }, {
+          name: "Batch",
+          route: "/docs/reference/sequencer/interfaces/Batch",
+          frontMatter: {
+            "title": "Batch"
+          }
+        }, {
+          name: "BatchStorage",
+          route: "/docs/reference/sequencer/interfaces/BatchStorage",
+          frontMatter: {
+            "title": "BatchStorage"
+          }
+        }, {
+          name: "Block",
+          route: "/docs/reference/sequencer/interfaces/Block",
+          frontMatter: {
+            "title": "Block"
+          }
+        }, {
+          name: "BlockConfig",
+          route: "/docs/reference/sequencer/interfaces/BlockConfig",
+          frontMatter: {
+            "title": "BlockConfig"
+          }
+        }, {
+          name: "BlockExplorerTransportModule",
+          route: "/docs/reference/sequencer/interfaces/BlockExplorerTransportModule",
+          frontMatter: {
+            "title": "BlockExplorerTransportModule"
+          }
+        }, {
+          name: "BlockQueue",
+          route: "/docs/reference/sequencer/interfaces/BlockQueue",
+          frontMatter: {
+            "title": "BlockQueue"
+          }
+        }, {
+          name: "BlockResult",
+          route: "/docs/reference/sequencer/interfaces/BlockResult",
+          frontMatter: {
+            "title": "BlockResult"
+          }
+        }, {
+          name: "BlockStorage",
+          route: "/docs/reference/sequencer/interfaces/BlockStorage",
+          frontMatter: {
+            "title": "BlockStorage"
+          }
+        }, {
+          name: "BlockTrigger",
+          route: "/docs/reference/sequencer/interfaces/BlockTrigger",
+          frontMatter: {
+            "title": "BlockTrigger"
+          }
+        }, {
+          name: "BlockWithMaybeResult",
+          route: "/docs/reference/sequencer/interfaces/BlockWithMaybeResult",
+          frontMatter: {
+            "title": "BlockWithMaybeResult"
+          }
+        }, {
+          name: "BlockWithResult",
+          route: "/docs/reference/sequencer/interfaces/BlockWithResult",
+          frontMatter: {
+            "title": "BlockWithResult"
+          }
+        }, {
+          name: "ClientBlock",
+          route: "/docs/reference/sequencer/interfaces/ClientBlock",
+          frontMatter: {
+            "title": "ClientBlock"
+          }
+        }, {
+          name: "ClientTransaction",
+          route: "/docs/reference/sequencer/interfaces/ClientTransaction",
+          frontMatter: {
+            "title": "ClientTransaction"
+          }
+        }, {
+          name: "Closeable",
+          route: "/docs/reference/sequencer/interfaces/Closeable",
+          frontMatter: {
+            "title": "Closeable"
+          }
+        }, {
+          name: "Database",
+          route: "/docs/reference/sequencer/interfaces/Database",
+          frontMatter: {
+            "title": "Database"
+          }
+        }, {
+          name: "DatabaseDependencyFactory",
+          route: "/docs/reference/sequencer/interfaces/DatabaseDependencyFactory",
+          frontMatter: {
+            "title": "DatabaseDependencyFactory"
+          }
+        }, {
+          name: "IncomingMessageAdapter",
+          route: "/docs/reference/sequencer/interfaces/IncomingMessageAdapter",
+          frontMatter: {
+            "title": "IncomingMessageAdapter"
+          }
+        }, {
+          name: "InMemorySignerConfig",
+          route: "/docs/reference/sequencer/interfaces/InMemorySignerConfig",
+          frontMatter: {
+            "title": "InMemorySignerConfig"
+          }
+        }, {
+          name: "InstantiatedQueue",
+          route: "/docs/reference/sequencer/interfaces/InstantiatedQueue",
+          frontMatter: {
+            "title": "InstantiatedQueue"
+          }
+        }, {
+          name: "InstrumentationModule",
+          route: "/docs/reference/sequencer/interfaces/InstrumentationModule",
+          frontMatter: {
+            "title": "InstrumentationModule"
+          }
+        }, {
+          name: "LocalSequencerCoreConfig",
+          route: "/docs/reference/sequencer/interfaces/LocalSequencerCoreConfig",
+          frontMatter: {
+            "title": "LocalSequencerCoreConfig"
+          }
+        }, {
+          name: "LocalSequencerCoreDependencies",
+          route: "/docs/reference/sequencer/interfaces/LocalSequencerCoreDependencies",
+          frontMatter: {
+            "title": "LocalSequencerCoreDependencies"
+          }
+        }, {
+          name: "LocalTaskQueueConfig",
+          route: "/docs/reference/sequencer/interfaces/LocalTaskQueueConfig",
+          frontMatter: {
+            "title": "LocalTaskQueueConfig"
+          }
+        }, {
+          name: "Mempool",
+          route: "/docs/reference/sequencer/interfaces/Mempool",
+          frontMatter: {
+            "title": "Mempool"
+          }
+        }, {
+          name: "MempoolSorting",
+          route: "/docs/reference/sequencer/interfaces/MempoolSorting",
+          frontMatter: {
+            "title": "MempoolSorting"
+          }
+        }, {
+          name: "MerkleTreeNode",
+          route: "/docs/reference/sequencer/interfaces/MerkleTreeNode",
+          frontMatter: {
+            "title": "MerkleTreeNode"
+          }
+        }, {
+          name: "MerkleTreeNodeQuery",
+          route: "/docs/reference/sequencer/interfaces/MerkleTreeNodeQuery",
+          frontMatter: {
+            "title": "MerkleTreeNodeQuery"
+          }
+        }, {
+          name: "MessageStorage",
+          route: "/docs/reference/sequencer/interfaces/MessageStorage",
+          frontMatter: {
+            "title": "MessageStorage"
+          }
+        }, {
+          name: "MinaBaseLayerConfig",
+          route: "/docs/reference/sequencer/interfaces/MinaBaseLayerConfig",
+          frontMatter: {
+            "title": "MinaBaseLayerConfig"
+          }
+        }, {
+          name: "MinaNetworkUtils",
+          route: "/docs/reference/sequencer/interfaces/MinaNetworkUtils",
+          frontMatter: {
+            "title": "MinaNetworkUtils"
+          }
+        }, {
+          name: "MinaSigner",
+          route: "/docs/reference/sequencer/interfaces/MinaSigner",
+          frontMatter: {
+            "title": "MinaSigner"
+          }
+        }, {
+          name: "NetworkStateTransportModule",
+          route: "/docs/reference/sequencer/interfaces/NetworkStateTransportModule",
+          frontMatter: {
+            "title": "NetworkStateTransportModule"
+          }
+        }, {
+          name: "NewBlockProverParameters",
+          route: "/docs/reference/sequencer/interfaces/NewBlockProverParameters",
+          frontMatter: {
+            "title": "NewBlockProverParameters"
+          }
+        }, {
+          name: "PairingDerivedInput",
+          route: "/docs/reference/sequencer/interfaces/PairingDerivedInput",
+          frontMatter: {
+            "title": "PairingDerivedInput"
+          }
+        }, {
+          name: "PollInstrumentation",
+          route: "/docs/reference/sequencer/interfaces/PollInstrumentation",
+          frontMatter: {
+            "title": "PollInstrumentation"
+          }
+        }, {
+          name: "Prunable",
+          route: "/docs/reference/sequencer/interfaces/Prunable",
+          frontMatter: {
+            "title": "Prunable"
+          }
+        }, {
+          name: "QueryGetterState",
+          route: "/docs/reference/sequencer/interfaces/QueryGetterState",
+          frontMatter: {
+            "title": "QueryGetterState"
+          }
+        }, {
+          name: "QueryGetterStateMap",
+          route: "/docs/reference/sequencer/interfaces/QueryGetterStateMap",
+          frontMatter: {
+            "title": "QueryGetterStateMap"
+          }
+        }, {
+          name: "QueryTransportModule",
+          route: "/docs/reference/sequencer/interfaces/QueryTransportModule",
+          frontMatter: {
+            "title": "QueryTransportModule"
+          }
+        }, {
+          name: "RuntimeProofParameters",
+          route: "/docs/reference/sequencer/interfaces/RuntimeProofParameters",
+          frontMatter: {
+            "title": "RuntimeProofParameters"
+          }
+        }, {
+          name: "Sequenceable",
+          route: "/docs/reference/sequencer/interfaces/Sequenceable",
+          frontMatter: {
+            "title": "Sequenceable"
+          }
+        }, {
+          name: "SequencerCoreConfig",
+          route: "/docs/reference/sequencer/interfaces/SequencerCoreConfig",
+          frontMatter: {
+            "title": "SequencerCoreConfig"
+          }
+        }, {
+          name: "SequencerCoreDependencies",
+          route: "/docs/reference/sequencer/interfaces/SequencerCoreDependencies",
+          frontMatter: {
+            "title": "SequencerCoreDependencies"
+          }
+        }, {
+          name: "SettleableBatch",
+          route: "/docs/reference/sequencer/interfaces/SettleableBatch",
+          frontMatter: {
+            "title": "SettleableBatch"
+          }
+        }, {
+          name: "Settlement",
+          route: "/docs/reference/sequencer/interfaces/Settlement",
+          frontMatter: {
+            "title": "Settlement"
+          }
+        }, {
+          name: "SettlementStorage",
+          route: "/docs/reference/sequencer/interfaces/SettlementStorage",
+          frontMatter: {
+            "title": "SettlementStorage"
+          }
+        }, {
+          name: "SharedDependencyRecord",
+          route: "/docs/reference/sequencer/interfaces/SharedDependencyRecord",
+          frontMatter: {
+            "title": "SharedDependencyRecord"
+          }
+        }, {
+          name: "SignTxOptions",
+          route: "/docs/reference/sequencer/interfaces/SignTxOptions",
+          frontMatter: {
+            "title": "SignTxOptions"
+          }
+        }, {
+          name: "StartableModule",
+          route: "/docs/reference/sequencer/interfaces/StartableModule",
+          frontMatter: {
+            "title": "StartableModule"
+          }
+        }, {
+          name: "StateEntry",
+          route: "/docs/reference/sequencer/interfaces/StateEntry",
+          frontMatter: {
+            "title": "StateEntry"
+          }
+        }, {
+          name: "StateTransitionBatch",
+          route: "/docs/reference/sequencer/interfaces/StateTransitionBatch",
+          frontMatter: {
+            "title": "StateTransitionBatch"
+          }
+        }, {
+          name: "StateTransitionProofParameters",
+          route: "/docs/reference/sequencer/interfaces/StateTransitionProofParameters",
+          frontMatter: {
+            "title": "StateTransitionProofParameters"
+          }
+        }, {
+          name: "StorageDependencyMinimumDependencies",
+          route: "/docs/reference/sequencer/interfaces/StorageDependencyMinimumDependencies",
+          frontMatter: {
+            "title": "StorageDependencyMinimumDependencies"
+          }
+        }, {
+          name: "Task",
+          route: "/docs/reference/sequencer/interfaces/Task",
+          frontMatter: {
+            "title": "Task"
+          }
+        }, {
+          name: "TaskPayload",
+          route: "/docs/reference/sequencer/interfaces/TaskPayload",
+          frontMatter: {
+            "title": "TaskPayload"
+          }
+        }, {
+          name: "TaskQueue",
+          route: "/docs/reference/sequencer/interfaces/TaskQueue",
+          frontMatter: {
+            "title": "TaskQueue"
+          }
+        }, {
+          name: "TaskSerializer",
+          route: "/docs/reference/sequencer/interfaces/TaskSerializer",
+          frontMatter: {
+            "title": "TaskSerializer"
+          }
+        }, {
+          name: "TimedBlockTriggerConfig",
+          route: "/docs/reference/sequencer/interfaces/TimedBlockTriggerConfig",
+          frontMatter: {
+            "title": "TimedBlockTriggerConfig"
+          }
+        }, {
+          name: "Tracer",
+          route: "/docs/reference/sequencer/interfaces/Tracer",
+          frontMatter: {
+            "title": "Tracer"
+          }
+        }, {
+          name: "TracingStateTransitionBatch",
+          route: "/docs/reference/sequencer/interfaces/TracingStateTransitionBatch",
+          frontMatter: {
+            "title": "TracingStateTransitionBatch"
+          }
+        }, {
+          name: "TransactionExecutionResult",
+          route: "/docs/reference/sequencer/interfaces/TransactionExecutionResult",
+          frontMatter: {
+            "title": "TransactionExecutionResult"
+          }
+        }, {
+          name: "TransactionStorage",
+          route: "/docs/reference/sequencer/interfaces/TransactionStorage",
+          frontMatter: {
+            "title": "TransactionStorage"
+          }
+        }, {
+          name: "TxEvents",
+          route: "/docs/reference/sequencer/interfaces/TxEvents",
+          frontMatter: {
+            "title": "TxEvents"
+          }
+        }]
+      }, {
+        name: "namespaces",
+        route: "/docs/reference/sequencer/namespaces",
+        children: [{
+          name: "ArchiveNode",
+          route: "/docs/reference/sequencer/namespaces/ArchiveNode",
+          children: [{
+            name: "functions",
+            route: "/docs/reference/sequencer/namespaces/ArchiveNode/functions",
+            children: [{
+              name: "waitOnSync",
+              route: "/docs/reference/sequencer/namespaces/ArchiveNode/functions/waitOnSync",
+              frontMatter: {
+                "title": "waitOnSync"
+              }
+            }]
+          }, {
+            name: "README",
+            route: "/docs/reference/sequencer/namespaces/ArchiveNode/README",
+            frontMatter: {
+              "title": "ArchiveNode"
+            }
+          }]
+        }]
+      }, {
         name: "README",
         route: "/docs/reference/sequencer/README",
         frontMatter: {
           "title": "@proto-kit/sequencer"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/sequencer/type-aliases",
+        children: [{
+          name: "AllTaskWorkerModules",
+          route: "/docs/reference/sequencer/type-aliases/AllTaskWorkerModules",
+          frontMatter: {
+            "title": "AllTaskWorkerModules"
+          }
+        }, {
+          name: "AppChainModulesRecord",
+          route: "/docs/reference/sequencer/type-aliases/AppChainModulesRecord",
+          frontMatter: {
+            "title": "AppChainModulesRecord"
+          }
+        }, {
+          name: "BatchTrace",
+          route: "/docs/reference/sequencer/type-aliases/BatchTrace",
+          frontMatter: {
+            "title": "BatchTrace"
+          }
+        }, {
+          name: "BlockEvents",
+          route: "/docs/reference/sequencer/type-aliases/BlockEvents",
+          frontMatter: {
+            "title": "BlockEvents"
+          }
+        }, {
+          name: "BlockTrace",
+          route: "/docs/reference/sequencer/type-aliases/BlockTrace",
+          frontMatter: {
+            "title": "BlockTrace"
+          }
+        }, {
+          name: "BlockTracingState",
+          route: "/docs/reference/sequencer/type-aliases/BlockTracingState",
+          frontMatter: {
+            "title": "BlockTracingState"
+          }
+        }, {
+          name: "BlockTrackers",
+          route: "/docs/reference/sequencer/type-aliases/BlockTrackers",
+          frontMatter: {
+            "title": "BlockTrackers"
+          }
+        }, {
+          name: "BridgingModuleConfig",
+          route: "/docs/reference/sequencer/type-aliases/BridgingModuleConfig",
+          frontMatter: {
+            "title": "BridgingModuleConfig"
+          }
+        }, {
+          name: "ChainStateTaskArgs",
+          route: "/docs/reference/sequencer/type-aliases/ChainStateTaskArgs",
+          frontMatter: {
+            "title": "ChainStateTaskArgs"
+          }
+        }, {
+          name: "CompilerTaskParams",
+          route: "/docs/reference/sequencer/type-aliases/CompilerTaskParams",
+          frontMatter: {
+            "title": "CompilerTaskParams"
+          }
+        }, {
+          name: "ConstantFeeStrategyConfig",
+          route: "/docs/reference/sequencer/type-aliases/ConstantFeeStrategyConfig",
+          frontMatter: {
+            "title": "ConstantFeeStrategyConfig"
+          }
+        }, {
+          name: "JSONEncodableState",
+          route: "/docs/reference/sequencer/type-aliases/JSONEncodableState",
+          frontMatter: {
+            "title": "JSONEncodableState"
+          }
+        }, {
+          name: "LightnetMinaBaseLayerConfig",
+          route: "/docs/reference/sequencer/type-aliases/LightnetMinaBaseLayerConfig",
+          frontMatter: {
+            "title": "LightnetMinaBaseLayerConfig"
+          }
+        }, {
+          name: "LocalMinaBaseLayerConfig",
+          route: "/docs/reference/sequencer/type-aliases/LocalMinaBaseLayerConfig",
+          frontMatter: {
+            "title": "LocalMinaBaseLayerConfig"
+          }
+        }, {
+          name: "MapStateMapToQuery",
+          route: "/docs/reference/sequencer/type-aliases/MapStateMapToQuery",
+          frontMatter: {
+            "title": "MapStateMapToQuery"
+          }
+        }, {
+          name: "MapStateToQuery",
+          route: "/docs/reference/sequencer/type-aliases/MapStateToQuery",
+          frontMatter: {
+            "title": "MapStateToQuery"
+          }
+        }, {
+          name: "MempoolEvents",
+          route: "/docs/reference/sequencer/type-aliases/MempoolEvents",
+          frontMatter: {
+            "title": "MempoolEvents"
+          }
+        }, {
+          name: "MinimalAppChainDefinition",
+          route: "/docs/reference/sequencer/type-aliases/MinimalAppChainDefinition",
+          frontMatter: {
+            "title": "MinimalAppChainDefinition"
+          }
+        }, {
+          name: "ModuleQuery",
+          route: "/docs/reference/sequencer/type-aliases/ModuleQuery",
+          frontMatter: {
+            "title": "ModuleQuery"
+          }
+        }, {
+          name: "NewBlockArguments",
+          route: "/docs/reference/sequencer/type-aliases/NewBlockArguments",
+          frontMatter: {
+            "title": "NewBlockArguments"
+          }
+        }, {
+          name: "NewBlockProvingParameters",
+          route: "/docs/reference/sequencer/type-aliases/NewBlockProvingParameters",
+          frontMatter: {
+            "title": "NewBlockProvingParameters"
+          }
+        }, {
+          name: "PairTuple",
+          route: "/docs/reference/sequencer/type-aliases/PairTuple",
+          frontMatter: {
+            "title": "PairTuple"
+          }
+        }, {
+          name: "PickByType",
+          route: "/docs/reference/sequencer/type-aliases/PickByType",
+          frontMatter: {
+            "title": "PickByType"
+          }
+        }, {
+          name: "PickStateMapProperties",
+          route: "/docs/reference/sequencer/type-aliases/PickStateMapProperties",
+          frontMatter: {
+            "title": "PickStateMapProperties"
+          }
+        }, {
+          name: "PickStateProperties",
+          route: "/docs/reference/sequencer/type-aliases/PickStateProperties",
+          frontMatter: {
+            "title": "PickStateProperties"
+          }
+        }, {
+          name: "Query",
+          route: "/docs/reference/sequencer/type-aliases/Query",
+          frontMatter: {
+            "title": "Query"
+          }
+        }, {
+          name: "RemoteMinaBaseLayerConfig",
+          route: "/docs/reference/sequencer/type-aliases/RemoteMinaBaseLayerConfig",
+          frontMatter: {
+            "title": "RemoteMinaBaseLayerConfig"
+          }
+        }, {
+          name: "RuntimeContextReducedExecutionResult",
+          route: "/docs/reference/sequencer/type-aliases/RuntimeContextReducedExecutionResult",
+          frontMatter: {
+            "title": "RuntimeContextReducedExecutionResult"
+          }
+        }, {
+          name: "SequencerModulesRecord",
+          route: "/docs/reference/sequencer/type-aliases/SequencerModulesRecord",
+          frontMatter: {
+            "title": "SequencerModulesRecord"
+          }
+        }, {
+          name: "SerializedArtifactRecord",
+          route: "/docs/reference/sequencer/type-aliases/SerializedArtifactRecord",
+          frontMatter: {
+            "title": "SerializedArtifactRecord"
+          }
+        }, {
+          name: "SettlementModuleConfig",
+          route: "/docs/reference/sequencer/type-aliases/SettlementModuleConfig",
+          frontMatter: {
+            "title": "SettlementModuleConfig"
+          }
+        }, {
+          name: "SettlementModuleEvents",
+          route: "/docs/reference/sequencer/type-aliases/SettlementModuleEvents",
+          frontMatter: {
+            "title": "SettlementModuleEvents"
+          }
+        }, {
+          name: "SettlementTokenConfig",
+          route: "/docs/reference/sequencer/type-aliases/SettlementTokenConfig",
+          frontMatter: {
+            "title": "SettlementTokenConfig"
+          }
+        }, {
+          name: "SomeRuntimeMethod",
+          route: "/docs/reference/sequencer/type-aliases/SomeRuntimeMethod",
+          frontMatter: {
+            "title": "SomeRuntimeMethod"
+          }
+        }, {
+          name: "StateRecord",
+          route: "/docs/reference/sequencer/type-aliases/StateRecord",
+          frontMatter: {
+            "title": "StateRecord"
+          }
+        }, {
+          name: "TaskStateRecord",
+          route: "/docs/reference/sequencer/type-aliases/TaskStateRecord",
+          frontMatter: {
+            "title": "TaskStateRecord"
+          }
+        }, {
+          name: "TaskWorkerModulesRecord",
+          route: "/docs/reference/sequencer/type-aliases/TaskWorkerModulesRecord",
+          frontMatter: {
+            "title": "TaskWorkerModulesRecord"
+          }
+        }, {
+          name: "TaskWorkerModulesWithoutSettlement",
+          route: "/docs/reference/sequencer/type-aliases/TaskWorkerModulesWithoutSettlement",
+          frontMatter: {
+            "title": "TaskWorkerModulesWithoutSettlement"
+          }
+        }, {
+          name: "TransactionExecutionResultStatus",
+          route: "/docs/reference/sequencer/type-aliases/TransactionExecutionResultStatus",
+          frontMatter: {
+            "title": "TransactionExecutionResultStatus"
+          }
+        }, {
+          name: "TransactionProverTaskParametersJSON",
+          route: "/docs/reference/sequencer/type-aliases/TransactionProverTaskParametersJSON",
+          frontMatter: {
+            "title": "TransactionProverTaskParametersJSON"
+          }
+        }, {
+          name: "TransactionProverTransactionArgumentsJSON",
+          route: "/docs/reference/sequencer/type-aliases/TransactionProverTransactionArgumentsJSON",
+          frontMatter: {
+            "title": "TransactionProverTransactionArgumentsJSON"
+          }
+        }, {
+          name: "TransactionProvingTaskParametersJSON",
+          route: "/docs/reference/sequencer/type-aliases/TransactionProvingTaskParametersJSON",
+          frontMatter: {
+            "title": "TransactionProvingTaskParametersJSON"
+          }
+        }, {
+          name: "TransactionTaskArgs",
+          route: "/docs/reference/sequencer/type-aliases/TransactionTaskArgs",
+          frontMatter: {
+            "title": "TransactionTaskArgs"
+          }
+        }, {
+          name: "TransactionTaskResult",
+          route: "/docs/reference/sequencer/type-aliases/TransactionTaskResult",
+          frontMatter: {
+            "title": "TransactionTaskResult"
+          }
+        }, {
+          name: "TransactionTrace",
+          route: "/docs/reference/sequencer/type-aliases/TransactionTrace",
+          frontMatter: {
+            "title": "TransactionTrace"
+          }
+        }, {
+          name: "TransactionTracingState",
+          route: "/docs/reference/sequencer/type-aliases/TransactionTracingState",
+          frontMatter: {
+            "title": "TransactionTracingState"
+          }
+        }, {
+          name: "TxSendResult",
+          route: "/docs/reference/sequencer/type-aliases/TxSendResult",
+          frontMatter: {
+            "title": "TxSendResult"
+          }
+        }, {
+          name: "TypedClass",
+          route: "/docs/reference/sequencer/type-aliases/TypedClass",
+          frontMatter: {
+            "title": "TypedClass"
+          }
+        }, {
+          name: "UnsignedTransactionBody",
+          route: "/docs/reference/sequencer/type-aliases/UnsignedTransactionBody",
+          frontMatter: {
+            "title": "UnsignedTransactionBody"
+          }
+        }, {
+          name: "VerificationKeyJSON",
+          route: "/docs/reference/sequencer/type-aliases/VerificationKeyJSON",
+          frontMatter: {
+            "title": "VerificationKeyJSON"
+          }
+        }, {
+          name: "WorkerStartupPayload",
+          route: "/docs/reference/sequencer/type-aliases/WorkerStartupPayload",
+          frontMatter: {
+            "title": "WorkerStartupPayload"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/sequencer/variables",
+        children: [{
+          name: "Block",
+          route: "/docs/reference/sequencer/variables/Block",
+          frontMatter: {
+            "title": "Block"
+          }
+        }, {
+          name: "BlockTrackers",
+          route: "/docs/reference/sequencer/variables/BlockTrackers",
+          frontMatter: {
+            "title": "BlockTrackers"
+          }
+        }, {
+          name: "BlockWithResult",
+          route: "/docs/reference/sequencer/variables/BlockWithResult",
+          frontMatter: {
+            "title": "BlockWithResult"
+          }
+        }, {
+          name: "JSONTaskSerializer",
+          route: "/docs/reference/sequencer/variables/JSONTaskSerializer",
+          frontMatter: {
+            "title": "JSONTaskSerializer"
+          }
+        }, {
+          name: "QueryBuilderFactory",
+          route: "/docs/reference/sequencer/variables/QueryBuilderFactory",
+          frontMatter: {
+            "title": "QueryBuilderFactory"
+          }
+        }]
       }]
     }, {
       name: "stack",
       route: "/docs/reference/stack",
       children: [{
         data: docs_reference_stack_meta
+      }, {
+        name: "classes",
+        route: "/docs/reference/stack/classes",
+        children: [{
+          name: "DefaultConfigs",
+          route: "/docs/reference/stack/classes/DefaultConfigs",
+          frontMatter: {
+            "title": "DefaultConfigs"
+          }
+        }, {
+          name: "DefaultModules",
+          route: "/docs/reference/stack/classes/DefaultModules",
+          frontMatter: {
+            "title": "DefaultModules"
+          }
+        }, {
+          name: "TestBalances",
+          route: "/docs/reference/stack/classes/TestBalances",
+          frontMatter: {
+            "title": "TestBalances"
+          }
+        }]
+      }, {
+        name: "functions",
+        route: "/docs/reference/stack/functions",
+        children: [{
+          name: "buildCustomTokenConfig",
+          route: "/docs/reference/stack/functions/buildCustomTokenConfig",
+          frontMatter: {
+            "title": "buildCustomTokenConfig"
+          }
+        }, {
+          name: "buildSettlementTokenConfig",
+          route: "/docs/reference/stack/functions/buildSettlementTokenConfig",
+          frontMatter: {
+            "title": "buildSettlementTokenConfig"
+          }
+        }, {
+          name: "getConfigs",
+          route: "/docs/reference/stack/functions/getConfigs",
+          frontMatter: {
+            "title": "getConfigs"
+          }
+        }, {
+          name: "resolveEnv",
+          route: "/docs/reference/stack/functions/resolveEnv",
+          frontMatter: {
+            "title": "resolveEnv"
+          }
+        }, {
+          name: "startServer",
+          route: "/docs/reference/stack/functions/startServer",
+          frontMatter: {
+            "title": "startServer"
+          }
+        }]
       }, {
         name: "globals",
         route: "/docs/reference/stack/globals",
@@ -406,6 +5586,92 @@ export const pageMap = [{
         frontMatter: {
           "title": "@proto-kit/stack"
         }
+      }, {
+        name: "type-aliases",
+        route: "/docs/reference/stack/type-aliases",
+        children: [{
+          name: "CoreEnv",
+          route: "/docs/reference/stack/type-aliases/CoreEnv",
+          frontMatter: {
+            "title": "CoreEnv"
+          }
+        }, {
+          name: "DatabaseEnv",
+          route: "/docs/reference/stack/type-aliases/DatabaseEnv",
+          frontMatter: {
+            "title": "DatabaseEnv"
+          }
+        }, {
+          name: "Environment",
+          route: "/docs/reference/stack/type-aliases/Environment",
+          frontMatter: {
+            "title": "Environment"
+          }
+        }, {
+          name: "GraphqlServerEnv",
+          route: "/docs/reference/stack/type-aliases/GraphqlServerEnv",
+          frontMatter: {
+            "title": "GraphqlServerEnv"
+          }
+        }, {
+          name: "IndexerEnv",
+          route: "/docs/reference/stack/type-aliases/IndexerEnv",
+          frontMatter: {
+            "title": "IndexerEnv"
+          }
+        }, {
+          name: "MetricsEnv",
+          route: "/docs/reference/stack/type-aliases/MetricsEnv",
+          frontMatter: {
+            "title": "MetricsEnv"
+          }
+        }, {
+          name: "ProcessorEnv",
+          route: "/docs/reference/stack/type-aliases/ProcessorEnv",
+          frontMatter: {
+            "title": "ProcessorEnv"
+          }
+        }, {
+          name: "RedisEnv",
+          route: "/docs/reference/stack/type-aliases/RedisEnv",
+          frontMatter: {
+            "title": "RedisEnv"
+          }
+        }, {
+          name: "RedisTaskQueueEnv",
+          route: "/docs/reference/stack/type-aliases/RedisTaskQueueEnv",
+          frontMatter: {
+            "title": "RedisTaskQueueEnv"
+          }
+        }, {
+          name: "SettlementEnv",
+          route: "/docs/reference/stack/type-aliases/SettlementEnv",
+          frontMatter: {
+            "title": "SettlementEnv"
+          }
+        }]
+      }, {
+        name: "variables",
+        route: "/docs/reference/stack/variables",
+        children: [{
+          name: "developmentConfig",
+          route: "/docs/reference/stack/variables/developmentConfig",
+          frontMatter: {
+            "title": "developmentConfig"
+          }
+        }, {
+          name: "inmemoryConfig",
+          route: "/docs/reference/stack/variables/inmemoryConfig",
+          frontMatter: {
+            "title": "inmemoryConfig"
+          }
+        }, {
+          name: "sovereignConfig",
+          route: "/docs/reference/stack/variables/sovereignConfig",
+          frontMatter: {
+            "title": "sovereignConfig"
+          }
+        }]
       }]
     }]
   }, {
