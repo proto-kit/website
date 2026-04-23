@@ -16,36 +16,16 @@ To design a runtime module, you'll need to consider the following:
 For our _GuestBook_ module, we'll want to allow users to check-in in the guest book.
 We'll start by defining the data model, namely the _CheckIn_ struct, which will determine what constitutes a check-in.
 
-```typescript showLineNumbers filename="packages/chain/src/guest-book/check-in.ts"
-import { Field, PublicKey, Struct } from "o1js";
-import { UInt64 } from "@proto-kit/library";
-
-export class CheckInId extends Field {}
-export class CheckIn extends Struct({
-  guest: PublicKey,
-  createdAt: UInt64,
-  rating: UInt64,
-}) {}
+```typescript showLineNumbers filename="packages/chain/src/guest-book/check-in.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+// group storage
 ```
 
 #### Define the runtime module
 
 Second step is to create our runtime module and define the checkIns storage property, which will map a guest to the check-in they made.
 
-```typescript showLineNumbers {11-14} filename="packages/chain/src/guest-book/index.ts"
-import {
-  RuntimeModule,
-  runtimeMethod,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { StateMap, assert } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { CheckIn } from "./check-in";
-
-@runtimeModule()
-export class GuestBook extends RuntimeModule<Record<string, never>> {
-  @state() public checkIns = StateMap.from(PublicKey, CheckIn);
+```typescript showLineNumbers filename="packages/chain/src/guest-book/index.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+// group runtime-module-def
 }
 ```
 
@@ -56,35 +36,11 @@ We'll define the _checkIn_ method, which will allow users to check-in in the gue
 
 > We're using the _transaction sender_ to identify and authorize check-ins.
 
-```typescript showLineNumbers {16-27} filename="packages/chain/src/guest-book/index.ts"
-import {
-  RuntimeModule,
-  runtimeMethod,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { StateMap, assert } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { CheckIn } from "./check-in";
-import { UInt64 } from "@proto-kit/library";
+```typescript showLineNumbers {10-22} filename="packages/chain/src/guest-book/index.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+// group imports
+// group runtime-module-def
 
-@runtimeModule()
-export class GuestBook extends RuntimeModule<Record<string, never>> {
-  @state() public checkIns = StateMap.from(PublicKey, CheckIn);
-
-  @runtimeMethod()
-  public async checkIn(rating: UInt64): Promise<void> {
-    assert(rating.lessThanOrEqual(UInt64.from(5)), "Maximum rating can be 5");
-    const guest = this.transaction.sender.value;
-    const createdAt = UInt64.from(this.network.block.height);
-    const checkIn = new CheckIn({
-      guest,
-      createdAt,
-      rating,
-    });
-
-    await this.checkIns.set(checkIn.guest, checkIn);
-  }
+// group checkIn
 }
 ```
 
@@ -92,28 +48,7 @@ export class GuestBook extends RuntimeModule<Record<string, never>> {
 
 In order to make use of the _GuestBook_ runtime module, we have to add it to the app-chain's runtime configuration.
 
-```typescript showLineNumbers {8, 15} filename="packages/chain/src/runtime.ts"
-import { Balance } from "@proto-kit/library";
-import { Balances } from "./balances";
-import { ModulesConfig } from "@proto-kit/common";
-import { GuestBook } from "./guest-book";
-
-export const modules = {
-  Balances,
-  GuestBook,
-};
-
-export const config: ModulesConfig<typeof modules> = {
-  Balances: {
-    totalSupply: Balance.from(10_000),
-  },
-  GuestBook: {},
-};
-
-export default {
-  modules,
-  config,
-};
+```typescript showLineNumbers {10, 18} filename="packages/chain/src/runtime.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/index.ts
 
 ```
 

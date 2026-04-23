@@ -1,0 +1,5 @@
+packages:
+  - .
+  - starter-kit-snippets
+  - starter-kit-snippets/apps/*
+  - starter-kit-snippets/packages/*

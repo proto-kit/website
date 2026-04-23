@@ -34,5 +34,4 @@ export default {
     href: "https://github.com/proto-kit/framework/issues?q=is%3Aissue%20label%3ASpec",
     newWindow: true
   },
-  reference: "Reference",
 };

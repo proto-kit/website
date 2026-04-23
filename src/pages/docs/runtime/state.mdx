@@ -1,3 +1,5 @@
+import { Callout, Cards } from 'nextra/components'
+
 # State
 
 Runtime modules are responsible for managing their own state. Runtime state is stored by the sequencer,
@@ -24,25 +26,10 @@ and the state map can have a near indefinite number of key-value pairs.
 > Amount of available entries in the state map is a subject to size of the underlying state tree. By default 
 > the state tree height is 256, allowing for 2^256 entries combined for the entire app-chain.
 
-```typescript {16, 18} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { State, StateMap } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library";
- 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
-@runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
- 
-  @state() public circulatingSupply = State.from(UInt64);
+```typescript {8, 10} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+// group imports
+
+// group balances-def
 }
 ```
 
@@ -68,32 +55,14 @@ Accessing runtime state within a runtime module is done via the state API. State
 is represented as an _optional_ value, since it may or may not exists at the time when its read.
 This scenario can easily occur, if you're reading a state value before it has been set.
 
-```typescript {16-20, 22-25} showLineNumbers filename="balances.ts"
-import { RuntimeModule, runtimeModule, state } from "@proto-kit/module";
-import { Option, State, StateMap } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library";
+```typescript {12-16, 18-21} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+// group imports
 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
+// group balances-def
 
-@runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
+// group balances-getBalance
 
-  @state() public circulatingSupply = State.from(UInt64);
-
-  public getBalance(address: PublicKey): UInt64 {
-    const balance = this.balances.get(address); // Option<UInt64>
-    // Instantiate the UInt64 struct, only required if you're storing structs in the state
-    return UInt64.from(balance.value);
-  }
-
-  public getCirculatingSupply(): UInt64 {
-    const circulatingSupply = this.circulatingSupply.get();
-    return UInt64.from(circulatingSupply.value);
-  }
+// group balances-getCirculatingSupply
 }
 ```
 
@@ -110,27 +79,12 @@ will carry a value substitute, known as a _dummy value_.
 
 You can determine if the obtained state value exists, or if its a dummy by accessing the `.isSome` property on the option.
 
-```typescript {18-20} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library";
- 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
-@runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
- 
-  public hasBalance(address: PublicKey): Bool {
-    return (await this.balances.get(address)).isSome;
-  }
+```typescript {12-15} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+// group imports
+
+// group balances-def
+
+// group balances-hasBalance
 }
 ```
 
@@ -139,28 +93,12 @@ export class Balances extends RuntimeModule<BalancesConfig> {
 Relying on the dummy value is not the best practice, therefore we offer a `.orElse(...)` method on the option, which
 allows you to provide a fallback value in case the option is _none_.
 
-```typescript {18-21} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library";
- 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
-@runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
+```typescript {12-15} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+// group imports
 
-  public getBalance(address: PublicKey): UInt64 {
-    const balance = (await this.balances.get(address)).orElse(UInt64.from(0));
-    return UInt64.from(balance.value);
-  }
+// group balances-def
+
+// group balances-getBalanceOrZero
 }
 ```
 
@@ -175,21 +113,12 @@ but does not contain any of its instance methods.
 
 Here's an example of how to use structs with the state API:
 
-```typescript
-class MyStruct extends Struct({}) {
-  public hash() {
-    return Poseidon.hash(MyStruct.toFields(this));
-  }
-}
+```typescript showLineNumbers filename="guest-book.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+// group storage
 
-class MyModule extends RuntimeModule<Record<never, never>> {
-  @state() public myStruct = State.from(MyStruct);
+// group runtime-module-def
 
-  @runtimeMethod()
-  public async hashStruct() {
-    const myStruct = new MyStruct((await this.myStruct.get()).value);
-    Provable.log(myStruct.hash())
-  }
+// group checkIn
 }
 ```
 
@@ -200,30 +129,16 @@ Writing to the state is equally as easy as reading the state. Instead of `.get(.
 
 > The set state API does not work with options, you can pass the actual values you want directly.
 
+<Callout type="warning" emoji="⚠️">
+  Remember to await the `set(...)` method, since it returns a promise.
+</Callout>
 
-```typescript {19-21} showLineNumbers filename="balances.ts"
-import {
-  RuntimeModule,
-  runtimeModule,
-  state,
-} from "@proto-kit/module";
-import { State, StateMap, Option } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { UInt64 } from "@proto-kit/library";
+```typescript {18} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/composabilitySnippets.ts inline
+// group imports
 
- 
-interface BalancesConfig {
-  totalSupply: UInt64;
-}
- 
-@runtimeModule()
-export class Balances extends RuntimeModule<BalancesConfig> {
-  @state() public balances = StateMap.from(PublicKey, UInt64);
- 
-  @runtimeMethod()
-  public async setBalance(address: PublicKey, amount: UInt64) {
-    await this.balances.set(address, amount);
-  }
+// group balances-def
+
+// group balances-mint
 }
 ```
 import { fr } from "date-fns/locale"

@@ -1,10 +1,16 @@
 import nextra from "nextra";
+import codeImport from "@proto-kit/remark-code-import";
 
 const withNextra = nextra({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.tsx",
   latex: true,
   search: { codeblocks: true },
+  mdxOptions: {
+    remarkPlugins: [
+        codeImport
+    ]
+  }
 });
 
 const isProd = process.env.NODE_ENV === "production";

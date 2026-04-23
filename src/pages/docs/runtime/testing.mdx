@@ -10,34 +10,11 @@ The example module we will be testing is a simple balances module, which allows
 tokens to be minted at the genesis block. Minting after the genesis block should
 result in an error.
 
-```typescript showLineNumbers filename="mintery.ts"
-import "reflect-metadata";
-import { Balances, TokenId, UInt64 } from "@proto-kit/library";
-import { RuntimeModule, runtimeModule, runtimeMethod } from "@proto-kit/module";
-import { assert } from "@proto-kit/protocol";
-import { PublicKey } from "o1js";
-import { inject } from "tsyringe";
-
-export const errors = {
-  mintOnlyAtGenesis: "Minting is only allowed at the genesis block",
-};
-
-@runtimeModule()
-export class Mintery extends RuntimeModule<Record<string, never>> {
-  public constructor(@inject("Balances") public balances: Balances) {
-    super();
-  }
-
-  @runtimeMethod()
-  public async mint(tokenId: TokenId, address: PublicKey, amount: UInt64) {
-    assert(
-      UInt64.from(this.network.block.height).equals(UInt64.from(0)),
-      errors.mintOnlyAtGenesis
-    );
-    await this.balances.setBalance(tokenId, address, amount);
-  }
+```typescript showLineNumbers filename="mintery.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/mintery.ts inline
+// group imports
+// group mintery-def
+  // group mint
 }
-
 ```
 
 ### Acceptance criteria
@@ -62,43 +39,10 @@ fetchable by the query API.
 You can setup a _TestingAppChain_ by passing your runtime module, setting up the
 transaction API signer and starting the app-chain like this:
 
-```typescript showLineNumbers filename="mintery.test.ts"
-import { TestingAppChain } from "@proto-kit/sdk";
-import { PrivateKey } from "o1js";
-import { Mintery, errors } from "../src/mintery";
-import { BalancesKey, TokenId, UInt64 } from "@proto-kit/library";
-
-describe("balances", () => {
-  let appChain: ReturnType<
-    typeof TestingAppChain.fromRuntime<{ Mintery: typeof Mintery }>
-  >;
-
-  let mintery: Mintery;
-
-  const alicePrivateKey = PrivateKey.random();
-  const alice = alicePrivateKey.toPublicKey();
-  const tokenId = TokenId.from(0);
-
-  beforeAll(async () => {
-    appChain = TestingAppChain.fromRuntime({
-      Mintery,
-    });
-
-    appChain.configurePartial({
-      Runtime: {
-        Balances: {},
-        Mintery: {},
-      },
-    });
-
-    await appChain.start();
-
-    appChain.setSigner(alicePrivateKey);
-
-    mintery = appChain.runtime.resolve("Mintery");
-  });
+```typescript showLineNumbers filename="mintery.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
+// group imports
+// group test-setup
 });
-
 ```
 
 Once your testing app-chain is started, you can start writing your actual tests.
@@ -116,23 +60,8 @@ Here's what needs to happen for our test case to pass:
 3. Retrieve the balance of the transaction sender (alice).
 4. Assert the transaction status to be truthy, and the balance to be the minted amount.
 
-```typescript showLineNumbers filename="mintery.test.ts"
-it("should mint at the genesis block", async () => {
-  const tx = await appChain.transaction(alice, () => {
-    mintery.mint(tokenId, alice, UInt64.from(1000));
-  });
-
-  await tx.sign();
-  await tx.send();
-
-  const block = await appChain.produceBlock();
-  const balance = await appChain.query.runtime.Balances.balances.get(
-    new BalancesKey({ tokenId, address: alice })
-  );
-
-  expect(block?.transactions[0].status.toBoolean()).toBe(true);
-  expect(balance?.toBigInt()).toBe(1000n);
-}, 1_000_000);
+```typescript showLineNumbers filename="mintery.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
+// group test-mint-at-genesis
 ```
 
 ### ❌ Mint again in the second block and expect it to fail
@@ -146,22 +75,6 @@ Here's what needs to happen for our test case to pass:
 3. Retrieve the balance of the transaction sender (alice).
 4. Assert the transaction status to be false, and the balance to be the originally minted amount.
 
-```typescript showLineNumbers filename="mintery.test.ts"
-it("should not mint at the second block", async () => {
-  const tx = await appChain.transaction(alice, () => {
-    mintery.mint(tokenId, alice, UInt64.from(1000));
-  });
-
-  await tx.sign();
-  await tx.send();
-
-  const block = await appChain.produceBlock();
-  const balance = await appChain.query.runtime.Balances.balances.get(
-    new BalancesKey({ tokenId, address: alice })
-  );
-
-  expect(block?.transactions[0].status.toBoolean()).toBe(false);
-  expect(block?.transactions[0].statusMessage).toBe(errors.mintOnlyAtGenesis);
-  expect(balance?.toBigInt()).toBe(1000n);
-}, 1_000_000);
+```typescript showLineNumbers filename="mintery.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
+// group test-mint-at-second-block
 ```

@@ -44,18 +44,8 @@ new TestingAppChain({
 Protocol hooks can define their own state and use that to read and modify the appchain state.
 They work like the runtime `@state(){:ts}` state and emit StateTransitions under the hood.
 
-```ts {2,7,9} showLineNumbers filename="ProtocolStateModule" copy
-export class ProtocolStateModule extends ProvableTransactionHook<Config> {
-  @state() public accountState = StateMap.from(PublicKey, AccountState);
-
-  public async beforeTransaction(
-    executionData: BeforeTransactionHookArguments
-  ): Promise<void> {
-    const accountState = this.accountState.get(this.transaction.sender.value)
-
-    await this.accountState.set(this.transaction.sender.value, someAccountState);
-    ...
-  }
+```ts  showLineNumbers filename="ProtocolStateModule.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionHook.ts inline
+// group transaction-hook
 }
 ```
 
@@ -67,28 +57,14 @@ Let's assume we have a runtime module called `Balances` that keeps track of toke
 
 This can be implemented very easily:
 
-```ts {5,8,12-15} showLineNumbers filename="TransactionFeeModule" copy
-export class SimpleTransactionFeeModule extends ProvableTransactionHook {
-  private balances: Balances;
+```ts {2,9} showLineNumbers filename="TransactionFeeHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionFeeHook.ts inline
+// group transaction-fee-module
 
-  public constructor(
-    @inject("Runtime") runtime: Runtime<RuntimeModulesRecord>
-  ) {
-    super();
-    this.balances = runtime.resolveOrFail("Balances", Balances);
-  }
-
-  public afterTransaction({ transaction }: BlockProverExecutionData): void {
-    this.balances.transfer(
-      transaction.sender,
-      PublicKey.empty(),
-      UInt64.from(100)
-    );
-  }
-}
 ```
 
-> RuntimeModules that are called this was, will be treated as protocol-executed code by the framework.
+This direct injection works because protokit cross-injects all runtime modules as aliases into the protocol modules container.
+
+> RuntimeModules that are called this way will be treated as protocol-executed code by the framework.
 That means that these runtime calls will be executed even if the underlying transaction fails and they cannot use `assert`.
 
 
@@ -149,6 +125,12 @@ The provided arguments hold:
 
 - `networkState`: The current active networkState, that should be used for transforming
 - `state`: BlockProverState;
+
+An example for block hooks would be this module, which saves all block's state root into a ever-growing state map.
+
+```typescript filename="StateRootHistoryHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/StateRootHistoryHook.ts
+// group state-root-history-hook
+```
 
 ### Lifecycle
 
