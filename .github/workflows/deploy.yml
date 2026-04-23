@@ -41,3 +41,4 @@ jobs:
           publish_dir: ./build
           user_name: "GitHub Actions"
           user_email: "actions@github.com"
+          cname: protokit.dev
