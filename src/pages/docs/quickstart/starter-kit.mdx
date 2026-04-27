@@ -1,0 +1,498 @@
+import { Tabs } from 'nextra/components'
+
+# Starter Kit
+
+The Protokit starter-kit is a monorepo that provides a complete foundation for building application chains using the Protokit framework. It includes a working sequencer, indexer, processor, and example UI to help you get started quickly.
+
+## Getting Started
+
+### Prerequisites
+
+Before getting started, ensure you have the following installed:
+
+- **Node.js** `v18.18` or higher (we recommend using [NVM](https://github.com/nvm-sh/nvm))
+- **pnpm** `v9.8.0` or higher
+- **nvm** (Node Version Manager)
+- **[Auro Wallet](https://www.aurowallet.com)** (for wallet integration)
+- **Docker** `>= 24.0` (optional, required for persistence and server deployments)
+- **docker-compose** `>= 2.22.0` (optional, required for persistence and server deployments)
+
+### Installation
+
+For cloning and initial project setup, see [Clone the Starter Kit](/docs/quickstart#clone-the-starter-kit).
+
+Once you have the repository cloned and ready, run the following commands to set up your starter-kit:
+
+```bash
+# Use the correct Node.js version
+nvm use
+
+# Install dependencies
+pnpm install
+
+# Generate Prisma clients (for indexer, processor, etc.)
+pnpm env:development prisma:generate
+
+# Start both UI and sequencer with live reload
+pnpm env:inmemory dev
+```
+
+Once running, visit:
+- **UI**: http://localhost:3000
+- **Sequencer GraphQL**: http://localhost:8080/graphql
+
+## Project Structure
+
+The starter-kit follows a monorepo structure with the following organization:
+
+```
+├── apps
+│   └── web                          # Example UI application
+│       ├── components/              # Display components
+│       ├── containers/              # Smart components ("containers")
+│       └── lib/stores/              # Data stores for sequencer interaction
+│
+├── docker/
+│   └── data/                        # Mounted volume for Docker containers
+│
+└── packages
+    └── chain                        # App-chain implementation
+        ├── src
+        │   ├── core/                # Core configuration
+        │   │   ├── environments/    # Environment configs (inmemory, development, sovereign)
+        │   │   └── processor/       # Processor setup (handlers, GraphQL, server)
+        │   ├── protocol/            # Protocol modules (fees, etc.)
+        │   └── runtime/             # Business logic modules
+        │       └── modules/
+        │           ├── balances.ts  # Built-in balances module with faucet
+        │           └── withdrawals.ts
+        └── test/                    # Test suite
+            └── runtime/modules/
+```
+
+## Environments
+
+The starter-kit provides multiple environments for different development stages:
+
+<Tabs items={['inmemory', 'development', 'sovereign']}>
+  <Tabs.Tab>
+    ### inmemory
+
+    Runs everything in memory without persisting data. Ideal for early-stage runtime development and quick testing.
+
+    **Usage:**
+    ```bash
+    pnpm env:inmemory <command>
+    ```
+
+    **Characteristics:**
+    - No database requirements
+    - Fast startup and teardown
+    - Data is lost on restart
+    - Perfect for testing and development iteration
+
+    **Example:**
+    ```bash
+    pnpm env:inmemory dev --filter=chain
+    ```
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    ### development
+
+    Runs the sequencer locally with persistent state in Docker containers. Suitable for most development workflows.
+
+    **Usage:**
+    ```bash
+    pnpm env:development <command>
+    ```
+
+    **Characteristics:**
+    - Runs databases in Docker
+    - Persists all state
+    - Enables indexer and processor
+    - Supports settlement and bridging
+
+    **Setup:**
+    ```bash
+    # Start Docker containers
+    pnpm env:development docker:up -d
+
+    # Generate Prisma clients
+    pnpm env:development prisma:generate
+
+    # Run migrations
+    pnpm env:development prisma:migrate
+    ```
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    ### sovereign
+
+    Runs your entire app-chain in Docker for testnet deployments. Includes UI, sequencer, indexer, explorer and processor.
+
+    **Usage:**
+    ```bash
+    pnpm env:sovereign <command>
+    ```
+
+    **Characteristics:**
+    - Fully containerized deployment
+    - Suitable for production-like testnet environments
+    - Includes reverse proxy (Caddy) for HTTPS
+    - Accessible at your configured domain
+
+    **Setup:**
+    ```bash
+    # Build Docker images
+    pnpm env:sovereign docker:build
+
+    # Start all services
+    pnpm env:sovereign docker:up -d
+    ```
+
+    **Access:**
+    - UI: `https://yourdomain.com`
+    - Sequencer GraphQL: `https://yourdomain.com/graphql`
+    - Indexer GraphQL: `https://yourdomain.com/indexer/graphql`
+    - Processor GraphQL: `https://yourdomain.com/processor/graphql`
+    - Explorer: `https://explorer.yourdomain.com`
+  </Tabs.Tab>
+</Tabs>
+
+> You can create custom environments using the [`wizard`](/docs/running/cli#wizard) command from the CLI. This allows you to configure additional environment setups tailored to your specific needs.
+
+## Development Workflow
+
+### Running Tests
+
+```bash
+# Run tests with watch mode for the chain package
+pnpm env:inmemory run test --filter=chain -- --watchAll
+```
+
+### Starting Docker Dependencies
+
+```bash
+# Start background services
+pnpm env:development docker:up -d
+
+# Generate Prisma clients
+pnpm env:development prisma:generate
+
+# Run database migrations
+pnpm env:development prisma:migrate
+```
+
+#### Pruning Data
+
+To reset your environment and clear persisted data:
+
+```bash
+# Delete all persisted data
+rm -rf docker/data
+
+# Or use the CLI flag during startup
+pnpm env:inmemory dev --filter chain -- --pruneOnStartup
+```
+
+### Running Components
+
+<Tabs items={['sequencer', 'ui', 'indexer', 'processor']}>
+  <Tabs.Tab>
+    #### Sequencer
+
+    The sequencer is your app-chain's core.
+
+    **With live reload:**
+    ```bash
+    pnpm env:development sequencer:dev --filter=chain
+    ```
+
+    **Without live reload:**
+    ```bash
+    pnpm env:development build --filter=chain
+    pnpm env:development sequencer:start --filter=chain
+    ```
+
+    **GraphQL API:** `http://localhost:8080/graphql`
+
+    > ⚠️ Live reload is useful during development but can cause issues if watches cross-trigger. Use the `start` command if you experience problems.
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### UI
+
+    The example web application.
+
+    **With live reload:**
+    ```bash
+    pnpm env:development dev --filter=web
+    ```
+
+    **Without live reload:**
+    ```bash
+    pnpm env:development build --filter=web
+    pnpm env:development start --filter=web
+    ```
+
+    **Access:** `http://localhost:3000`
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### Indexer
+
+    Historical data indexing (requires Docker).
+
+    ```bash
+    pnpm env:development indexer:dev --filter=chain
+    ```
+
+    **GraphQL API:** `http://localhost:8081/graphql`
+
+    > Only available with docker-enabled environments (not inmemory)
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### Processor
+
+    Historical data processing and custom business logic (requires Docker).
+
+    ```bash
+    pnpm env:development processor:dev --filter=chain
+    ```
+
+    **GraphQL API:** `http://localhost:8082/graphql`
+
+    > Only available with docker-enabled environments (not inmemory)
+  </Tabs.Tab>
+</Tabs>
+
+### CLI Options
+
+Pass these options at the end of your commands:
+
+- `--logLevel <level>` - Override log level (also `PROTOKIT_LOG_LEVEL` env var). Example: `DEBUG`, `INFO`
+- `--pruneOnStartup` - Clear database before startup for a clean genesis state (alias: `PROTOKIT_PRUNE_ON_STARTUP`)
+
+**Example:**
+```bash
+pnpm env:inmemory dev --filter chain -- --logLevel DEBUG --pruneOnStartup
+```
+
+## Processor: Historical Data Processing
+
+The starter-kit includes a preconfigured processor using `@proto-kit/processor` for handling historical block and transaction data.
+
+### Setting Up Handlers
+
+1. **Define your database schema:**
+   ```
+   chain/src/processor/prisma/schema.prisma
+   ```
+
+2. **Generate Prisma client:**
+   ```bash
+   pnpm env:development run processor:prisma:generate
+   ```
+
+3. **Create migrations:**
+   ```bash
+   pnpm env:development run processor:prisma:migrate:dev
+   ```
+
+4. **Write handlers** in `chain/src/processor/handlers/`
+
+5. **Run the processor:**
+   ```bash
+   pnpm env:development run processor:dev
+   ```
+
+> The processor requires the sequencer to produce blocks and the indexer to store them.
+
+### GraphQL API
+
+Configure available resolvers in `chain/src/processor/api/resolvers.ts`. By default, all resolvers from your schema are auto-generated. Add custom middleware and validations as needed.
+
+**Query processed data:**
+```bash
+# Access at GraphQL endpoint (usually http://localhost:8082/graphql)
+```
+
+## Settlement & Bridging with Lightnet
+
+Integrate with Lightnet for settlement and bridging functionality.
+
+### Initialize Lightnet
+
+```bash
+# Start Lightnet
+pnpm env:development lightnet:start -d
+
+# Initialize settlement and bridging contracts
+pnpm protokit lightnet initialize
+```
+
+### Run Services
+
+In separate terminal instances:
+
+```bash
+# Terminal 1: Worker
+pnpm env:development worker:dev
+
+# Terminal 2: Sequencer
+pnpm env:development sequencer:dev
+```
+
+### Fund Accounts
+
+```bash
+# Fund a test account
+pnpm protokit lightnet faucet B62qkVfEwyfkm5yucHEqrRjxbyx98pgdWz82pHv7LYq9Qigs812iWZ8
+```
+
+### Bridge Tokens
+
+```bash
+# Deposit MINA (token ID 1) from L1 to app-chain
+pnpm protokit bridge deposit 1 TEST_ACCOUNT_1_PRIVATE_KEY TEST_ACCOUNT_1_PUBLIC_KEY 100
+
+# Withdraw MINA from app-chain back to L1
+pnpm protokit bridge withdraw 1 TEST_ACCOUNT_1_PRIVATE_KEY 100
+```
+
+> Settlement is processed in settlement cycles by the sequencer.
+
+## Observability & Monitoring
+
+### OpenTelemetry Configuration
+
+Configure observability via environment variables:
+
+```bash
+OPEN_TELEMETRY_TRACING_URL=<your-url>
+OPEN_TELEMETRY_TRACING_ENABLED=true
+
+OPEN_TELEMETRY_METRICS_URL=<your-url>
+OPEN_TELEMETRY_METRICS_ENABLED=true
+OPEN_TELEMETRY_METRICS_SCRAPING_FREQUENCY=<frequency>
+```
+
+> Not available in inmemory mode.
+
+### Development Monitoring
+
+1. Edit `packages/chain/src/core/environments/development/.env`
+2. Add `monitoring` to `COMPOSE_PROFILES`
+3. Add `...metricsSequencerModules` to the sequencer module (must be first in modules)
+4. Add `...metricsSequencerModulesConfig` to sequencer configuration
+5. Start services: `pnpm env:development docker:up`
+
+**Access Grafana:** `http://localhost:3000`
+
+### Sovereign Monitoring
+
+Monitoring is configured by default. **Access Grafana:** `http://localhost/grafana`
+
+To disable, remove `monitoring` profile from `.env` and remove `OpenTelemetryServer` configuration.
+
+## Deployment (Sovereign Environment)
+
+### Server Deployment
+
+1. Push your starter-kit fork to a repository
+2. Clone on your remote server
+3. Build and run:
+
+```bash
+# Build Docker images
+pnpm env:sovereign docker:build
+
+# Start all services
+pnpm env:sovereign docker:up -d
+```
+
+### Configuration
+
+Edit `docker/proxy/Caddyfile` and replace the `*` matcher with your domain:
+
+```
+yourdomain.com {
+    # Configuration
+}
+```
+
+HTTPS is handled automatically by Caddy. Update `NEXT_PUBLIC_PROTOKIT_GRAPHQL_URL` in `.env` if needed:
+
+```bash
+NEXT_PUBLIC_PROTOKIT_GRAPHQL_URL=https://yourdomain.com/graphql
+```
+
+### Local HTTPS Testing
+
+For testing sovereign chain locally with HTTPS:
+
+Follow [Caddy's local HTTPS guide](https://caddyserver.com/docs/running#local-https-with-docker)
+
+## Building From Source
+
+To build the Protokit framework from source:
+
+1. **Place framework** in `../framework` relative to starter-kit:
+   ```
+   ../framework
+   ../starter-kit
+   ```
+
+2. **Update package.json** in `packages/chain` and `apps/web`:
+   ```json
+   {
+     "dependencies": {
+       "@proto-kit/module": "file:../framework/packages/...",
+       "o1js": "file:../framework/node_modules/o1js",
+       "tsyringe": "file:../framework/node_modules/tsyringe"
+     }
+   }
+   ```
+
+3. **For sovereign environment**, build Docker image:
+   ```bash
+   cd ../framework
+   docker build -f ./packages/deployment/docker/development-base/Dockerfile -t protokit-base .
+   ```
+
+4. **Update Dockerfiles**:
+   ```dockerfile
+   FROM protokit-base:latest
+   ```
+
+## Environment Files
+
+Each environment has configuration options in `.env` files:
+
+```
+packages/chain/src/core/environments/<environment>/.env
+```
+
+Customize these files to configure your app-chain for different deployment stages.
+
+## Environment Variables Reference
+
+Common environment variables for different environments:
+
+```bash
+# General
+PROTOKIT_LOG_LEVEL=INFO
+PROTOKIT_PRUNE_ON_STARTUP=false
+
+# Settlement (development)
+PROTOKIT_SETTLEMENT_ENABLED=true
+
+# GraphQL
+NEXT_PUBLIC_PROTOKIT_GRAPHQL_URL=http://localhost:8080/graphql
+
+# OpenTelemetry
+OPEN_TELEMETRY_TRACING_ENABLED=false
+OPEN_TELEMETRY_METRICS_ENABLED=false
+```

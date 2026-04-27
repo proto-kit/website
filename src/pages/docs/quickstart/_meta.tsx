@@ -1,4 +1,5 @@
 export default {
+  "starter-kit": "Starter Kit",
   "app-chain": "App-chain's runtime",
   configuration: "Configuration",
   "first-runtime-module": "Implementing runtime modules",
