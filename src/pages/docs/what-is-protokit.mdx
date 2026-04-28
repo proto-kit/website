@@ -81,11 +81,11 @@ export class GuestBook extends RuntimeModule {
 
 You write ordinary TypeScript; Protokit takes care of:
 
-- ordering transactions in a sequencer so users don't fight over the same state,
-- making that state available to users and all other infrastructure,
-- turning the method into a recursive zero-knowledge circuit,
-- producing a proof of all execution, and
-- (optionally) settling that proof on the Mina L1.
+- ordering transactions in a sequencer so users don't compete over the same state
+- making that state available to users and all other infrastructure
+- turning the method into a recursive zero-knowledge circuit
+- producing a proof of all execution
+- (optionally) settling that proof on the Mina L1
 
 The rest of the docs — runtime, protocol, sequencer, settlement — are simply knobs on top of this core idea.
 
@@ -96,7 +96,7 @@ The easiest way to place Protokit on the map is to compare it with the existing 
 | If you are building…                                              | Reach for…                      |
 |:------------------------------------------------------------------|:--------------------------------|
 | A single zk smart contract, client-side proofs, no shared state   | [o1js](https://www.npmjs.com/package/o1js) |
-| An large application with many users interacting, shared state and sequential logic | **Protokit** |
+| A large application with many users interacting, shared state and sequential logic | **Protokit** |
 
 Protokit is to zk-rollups what o1js is to zk smart contracts: an SDK. Under the hood it still uses o1js for all
 provable code, which means every Protokit appchain is a zk-rollup by construction, every transaction produces a
