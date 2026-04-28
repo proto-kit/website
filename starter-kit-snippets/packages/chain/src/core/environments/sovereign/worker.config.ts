@@ -23,6 +23,7 @@ import { Arguments } from "../../../start";
 
 import { ModulesConfig, Startable } from "@proto-kit/common";
 
+// group worker-variants
 const variants = {
   default: VanillaTaskWorkerModules.allTasks(),
   l2: VanillaTaskWorkerModules.withoutSettlement(),
@@ -48,6 +49,7 @@ const variants = {
     WorkerRegistrationTask,
   },
 };
+// group worker-variants
 
 const variantConfigs = {
   default: VanillaTaskWorkerModules.defaultConfig(),

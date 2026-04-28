@@ -1,6 +1,4 @@
-import { Steps } from 'nextra/components'
-import { FileTree } from 'nextra/components'
-import { Callout } from 'nextra/components'
+import { Steps, Tabs, FileTree, Callout } from 'nextra/components'
 
 # Quickstart
 
@@ -22,15 +20,31 @@ Before you can start building with Protokit, you need to install the following d
 
 ### Clone the starter kit
 
-```bash
-# Clone the starter kit
-git clone https://github.com/proto-kit/starter-kit my-chain
-cd my-chain
+<Tabs items={['CLI', 'Git clone']} className="tabs">
+    <Tabs.Tab className="tab">
+        ```bash
+        # Clone the starter kit
+        pnpm i -g @proto-kit/cli
+        protokit init my-chain
+        cd my-chain
 
-# Ensure you're on the right nodejs version and install dependencies
-nvm use
-pnpm install
-```
+        # Ensure you're on the right nodejs version and install dependencies
+        nvm use
+        pnpm install
+        ```
+    </Tabs.Tab>
+    <Tabs.Tab className="tab">
+        ```bash
+        # Clone the starter kit
+        git clone https://github.com/proto-kit/starter-kit my-chain
+        cd my-chain
+
+        # Ensure you're on the right nodejs version and install dependencies
+        nvm use
+        pnpm install
+        ```
+    </Tabs.Tab>
+</Tabs>
 
 ### Run the tests
 
@@ -85,13 +99,13 @@ The folder structure looks something like this:
 
 <FileTree>
 
-  <FileTree.Folder name="apps/web" open={true}>
-    <FileTree.Folder name="containers" open={true}>
+  <FileTree.Folder name="apps/web" defaultOpen>
+    <FileTree.Folder name="containers">
       <FileTree.File name="async-layout.tsx"/>
       <FileTree.File name="async-page.tsx"/>
     </FileTree.Folder>
 
-     <FileTree.Folder name="lib/stores" open={true}>
+     <FileTree.Folder name="lib/stores" defaultOpen>
       <FileTree.File name="balances.tsx"/>
       <FileTree.File name="chain.tsx"/>
       <FileTree.File name="client.tsx"/>
@@ -99,15 +113,33 @@ The folder structure looks something like this:
     </FileTree.Folder>
   </FileTree.Folder>
 
-  <FileTree.Folder name="packages/chain" open={true}>
-    <FileTree.Folder name="src" open={true}>
-      <FileTree.File name="balances.ts"/>
-      <FileTree.File name="runtime.ts"/>
-      <FileTree.File name="chain.config.ts"/>
-      <FileTree.File name="client.config.ts"/>
+  <FileTree.Folder name="packages/chain" defaultOpen>
+    <FileTree.Folder name="src" defaultOpen>
+        <FileTree.Folder name="core">
+            <FileTree.Folder name="environment">
+                <FileTree.Folder name="development">
+                </FileTree.Folder>
+                <FileTree.Folder name="inmemory">
+                </FileTree.Folder>
+                <FileTree.Folder name="sovereign">
+                </FileTree.Folder>
+            </FileTree.Folder>
+        </FileTree.Folder>
+        <FileTree.Folder name="protocol">
+            <FileTree.File name="index.ts"/>
+        </FileTree.Folder>
+        <FileTree.Folder name="runtime" defaultOpen>
+            <FileTree.Folder name="modules" defaultOpen>
+                <FileTree.File name="balances.ts"/>
+                <FileTree.File name="withdrawals.ts"/>
+            </FileTree.Folder>
+            <FileTree.File name="index.ts"/>
+        </FileTree.Folder>
     </FileTree.Folder>
-        <FileTree.Folder name="test" open={true}>
-      <FileTree.File name="balances.test.ts"/>
+    <FileTree.Folder name="test" defaultOpen>
+        <FileTree.Folder name="runtime/modules" defaultOpen>
+            <FileTree.File name="balances.test.ts"/>
+        </FileTree.Folder>
     </FileTree.Folder>
   </FileTree.Folder>
 
