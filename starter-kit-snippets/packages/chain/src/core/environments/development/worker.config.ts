@@ -13,6 +13,7 @@ import { Arguments } from "../../../start";
 
 import { log, Startable } from "@proto-kit/common";
 
+// group worker-def
 const appChain = AppChain.from({
   Runtime: Runtime.from(runtime.modules),
   Protocol: Protocol.from({
@@ -24,6 +25,7 @@ const appChain = AppChain.from({
     WorkerModule: WorkerModule.from(VanillaTaskWorkerModules.allTasks()),
   }),
 });
+// group worker-def
 
 export default async (args: Arguments): Promise<Startable> => {
   appChain.configure({
