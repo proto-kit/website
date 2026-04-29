@@ -39,7 +39,7 @@ export const HeroGraphic = () => {
           </Button>
           <h1 className="text-4xl font-bold leading-[3rem]">
             Protocol development framework for{" "}
-            <span className="text-orange-500 dark:text-orange-400">
+            <span className="bg-gradient-to-r from-yellow to-red bg-clip-text text-transparent">
               privacy enabled
             </span>{" "}
             application chains.
