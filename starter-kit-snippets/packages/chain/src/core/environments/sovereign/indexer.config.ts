@@ -13,6 +13,7 @@ import { BullQueue } from "@proto-kit/deployment";
 import { Arguments } from "../../../start";
 import { Startable } from "@proto-kit/common";
 
+// group indexer-def
 const indexer = Indexer.from({
   Database: PrismaRedisDatabase,
   TaskQueue: BullQueue,
@@ -27,6 +28,7 @@ const indexer = Indexer.from({
   }),
   OpenTelemetryServer,
 });
+// group indexer-def
 
 export default async (args: Arguments): Promise<Startable> => {
   indexer.configurePartial({

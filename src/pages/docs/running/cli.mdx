@@ -1,0 +1,390 @@
+import { Tabs } from "nextra/components";
+
+# CLI
+
+The Protokit CLI is a comprehensive command-line interface for managing Protokit applications, environments, and blockchain interactions. It provides tools for development, deployment, and network operations.
+
+## Installation
+
+<Tabs items={['pnpm', 'npm']}>
+  <Tabs.Tab>
+    ```bash
+    # Install the CLI globally
+    pnpm add -g @proto-kit/cli
+
+    # Install the CLI locally in your project
+    pnpm add @proto-kit/cli
+    ```
+
+    **Usage:**
+    - Global: `protokit <command>`
+    - Local: `pnpm protokit <command>`
+    - Without installation: `pnpm dlx @proto-kit/cli <command>`
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    ```bash
+    # Install the CLI globally
+    npm install -g @proto-kit/cli
+
+    # Install the CLI locally in your project
+    npm install @proto-kit/cli
+    ```
+
+    **Usage:**
+    - Global: `protokit <command>`
+    - Local: `npx protokit <command>`
+    - Without installation: `npx @proto-kit/cli <command>`
+
+  </Tabs.Tab>
+</Tabs>
+
+> **Note:** When you create a new project using the [`init`](#init-name) command or clone the starter-kit, the CLI comes pre-installed in the root directory. In this case, use `pnpm protokit <command>` to run CLI commands.
+
+## Environment Configuration
+
+The CLI supports three methods for passing environment variables and configuration. If none is specified, it defaults to the **development** environment.
+
+<Tabs items={['File-based', 'Inline', 'Named Environment']}>
+  <Tabs.Tab>
+    #### `--env-path` (File-based)
+
+    Load environment variables from environment file. If this is not specified, the CLI will first try to load `scripts.env`, and if not found, will fall back to `.env`:
+
+    ```bash
+    protokit settlement deploy --env-path ./my-config/.env
+    ```
+
+    **Example `.env` file:**
+    ```
+    PROTOKIT_SETTLEMENT_CONTRACT_PRIVATE_KEY=EK...
+    MINA_NETWORK=lightnet
+    PROTOKIT_FAUCET_KEY=EK...
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `--set KEY=value` (Inline)
+
+    Pass environment variables directly as command-line arguments. Can be used multiple times:
+
+    ```bash
+    protokit settlement deploy \
+      --set PROTOKIT_SETTLEMENT_CONTRACT_PRIVATE_KEY=EK... \
+      --set MINA_NETWORK_URL=https://lightnet.lokinet.dev/graphql
+    ```
+
+    Useful for CI/CD pipelines and one-off commands.
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `--env {envName}` (Named Environment)
+
+    Use a pre-configured environment by name:
+
+    ```bash
+    protokit settlement deploy --env sovereign
+    ```
+
+    This requires named environments to be configured in your setup (typically via the [`wizard`](#wizard) command).
+
+  </Tabs.Tab>
+</Tabs>
+
+---
+
+## Help & Support
+
+View help for any command:
+
+```bash
+# General help
+protokit --help
+
+# Command-specific help
+protokit <command> --help
+```
+
+## Commands
+
+### Environment & Setup
+
+#### `init [name]`
+
+Creates a new Protokit project from the starter-kit template.
+
+**Parameters:**
+
+- `[name]` - Directory name for the new project (default: `starter-kit`)
+
+**Examples:**
+
+```bash
+# Create project in ./starter-kit directory
+protokit init
+
+# Create project in ./my-app directory
+protokit init my-app
+```
+
+---
+
+#### `wizard`
+
+Creates a new environment configuration with an interactive guided setup wizard.
+
+```bash
+protokit wizard
+```
+
+> **Note:** This command must be run inside a starter-kit instance.
+
+---
+
+### Network & Development Tools
+
+#### `run generate-keys [count]`
+
+Generates private/public key pairs for development and testing.
+
+**Parameters:**
+
+- `[count]` - Number of key pairs to generate (default: 1)
+
+**Examples:**
+
+```bash
+# Generate 1 key pair
+protokit run generate-keys
+
+# Generate 2 key pairs
+protokit run generate-keys 2
+```
+
+**Output format:**
+
+```
+Generated 2 keys for development purposes:
+----------------------------------------------------------------------
+Private key: EKEQVH5EfLP8rnN2kD3qR2YpkBKyTjWrSjUwMBBJjRVzKZgKCXw2
+Public key: B62qjS4gJFf38pRxSogswg5A6e7gLLaFr7cpXr62KnXb8Ykwsnpu9uB
+----------------------------------------------------------------------
+Private key: EKDnWXkKTN4sAgejDX97Ryynj9RfrRpPjTYjwqhYtY45ZRcVa2UD
+Public key: B62qqaPbdLYnzdw4pYCLrQ6ZM4cUeoPGd9MudGXUrAysSjGspGncDm1
+----------------------------------------------------------------------
+```
+
+---
+
+#### `lightnet`
+
+Utilities for working with Lightnet (Mina's local network environment).
+
+<Tabs items={['wait', 'faucet', 'initialize']}>
+  <Tabs.Tab>
+    ##### `lightnet wait`
+
+    Waits for the Lightnet network to be ready before proceeding with other operations.
+
+    ```bash
+    protokit lightnet wait
+    ```
+
+    Useful when starting Lightnet in a separate process and need to ensure it's fully initialized before running tests or deployments.
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    ##### `lightnet faucet <publicKey>`
+
+    Sends MINA from the Lightnet faucet to the specified account.
+
+    **Parameters:**
+    - `<publicKey>` - Destination public key (or environment variable name)
+
+    **Examples:**
+    ```bash
+    # Send MINA to account
+    protokit lightnet faucet B62qnzbXQcUoQFnjvF4Kog6KfNsuuSoo7LSLvomPeak2CLvEYiUqT
+
+    # Use environment variable
+    protokit lightnet faucet MY_PUBLIC_KEY
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    ##### `lightnet initialize`
+
+    Complete Lightnet setup that performs:
+    1. Waits for network readiness
+    2. Funds test accounts from faucet
+    3. Deploys settlement contracts
+
+    ```bash
+    protokit lightnet initialize
+    ```
+
+    This is a convenience command to set up your entire Lightnet environment in one go.
+
+  </Tabs.Tab>
+</Tabs>
+
+---
+
+### Bridge Operations
+
+Bridge commands handle token transfers between chains.
+
+<Tabs items={['deposit', 'withdraw', 'redeem']}>
+  <Tabs.Tab>
+    #### `bridge deposit <tokenId> <fromKey> <toKey> <amount>`
+
+    Deposits tokens to the bridge contract.
+
+    **Parameters:**
+    - `<tokenId>` - Token identifier
+    - `<fromKey>` - Sender's private key (or environment variable name)
+    - `<toKey>` - Recipient's public key (or environment variable name)
+    - `<amount>` - Amount to deposit
+
+    **Example:**
+    ```bash
+    protokit bridge deposit 1 SENDER_KEY RECIPIENT_KEY 100
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `bridge withdraw <tokenId> <senderKey> <amount>`
+
+    Withdraws tokens from the bridge.
+
+    **Parameters:**
+    - `<tokenId>` - Token identifier
+    - `<senderKey>` - Sender's private key (or environment variable name)
+    - `<amount>` - Amount to withdraw
+
+    **Example:**
+    ```bash
+    protokit bridge withdraw 1 SENDER_KEY 100
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `bridge redeem <tokenId> <toKey> <amount>`
+
+    Redeems tokens from the bridge contract.
+
+    **Parameters:**
+    - `<tokenId>` - Token identifier
+    - `<toKey>` - Recipient's public key (or environment variable name)
+    - `<amount>` - Amount to redeem
+
+    **Example:**
+    ```bash
+    protokit bridge redeem 1 RECIPIENT_KEY 100
+    ```
+
+  </Tabs.Tab>
+</Tabs>
+
+---
+
+### Settlement
+
+Settlement commands handle contract deployment and token management for settlement operations.
+
+<Tabs items={['deploy', 'token-deploy']}>
+  <Tabs.Tab>
+    #### `settlement deploy`
+
+    Deploys the necessary settlement contracts required for your app-chain to interact with settlement layers.
+
+    ```bash
+    protokit settlement deploy
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `settlement token-deploy <tokenSymbol> <feepayerKey> <receiverPublicKey> [mintAmount]`
+
+    Deploys custom fungible tokens for settlement operations.
+
+    **Parameters:**
+    - `<tokenSymbol>` - Symbol for the token
+    - `<feepayerKey>` - Private key for paying deployment fees (or environment variable name)
+    - `<receiverPublicKey>` - Public key to receive initially minted tokens (or environment variable name)
+    - `[mintAmount]` - Initial amount to mint (default: 0)
+
+    **Example:**
+    ```bash
+    protokit settlement token-deploy 1 FEEPAYER_KEY RECEIVER_KEY 1000
+    ```
+
+  </Tabs.Tab>
+</Tabs>
+
+---
+
+### Explorer
+
+See the dedicated [Explorer](/docs/running/explorer) documentation for detailed setup and configuration instructions.
+
+#### `explorer start`
+
+Starts the Protokit Explorer web interface.
+
+**Options:**
+
+- `-p, --port` - Port to run on (default: 5003)
+- `--indexer-url` - GraphQL endpoint URL for the indexer
+- `--dashboard-title` - Title for the explorer dashboard
+- `--dashboard-slogan` - Slogan for the explorer
+- `--explorer-image` - Docker image to use for explorer UI
+
+**Examples:**
+
+```bash
+# Start on default port with default indexer
+protokit explorer start
+
+# Custom port and indexer URL
+protokit explorer start -p 3000 --indexer-url http://localhost:8081/graphql
+
+# Full customization
+protokit explorer start \
+  -p 3000 \
+  --indexer-url http://localhost:8081/graphql \
+  --dashboard-title "My Explorer" \
+  --dashboard-slogan "Explore my app-chain"
+```
+
+---
+
+### Developer Utilities
+
+#### `summary`
+
+Displays a summary of circuits in your app-chain.
+
+> **Note:** This command must be run inside a starter-kit instance.
+
+```bash
+protokit summary
+```
+
+Useful for understanding the structure and configuration of your compiled circuits.
+
+#### `generate-gql-docs`
+
+Generates GraphQL documentation for the GraphQL queries and mutations exposed by your sequencer.
+
+```bash
+protokit generate-gql-docs
+```

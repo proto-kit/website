@@ -22,29 +22,26 @@ import { Startable } from "@proto-kit/common";
 import protocol from "../../../protocol";
 import runtime from "../../../runtime";
 
-//group appchain-def-1
+// group appchain-def
 const appChain = AppChain.from({
   Runtime: Runtime.from(runtime.modules),
   Protocol: Protocol.from(protocol.modules),
   Sequencer: Sequencer.from({
-    //group appchain-def-1
     WorkerModule: WorkerModule.from(
       VanillaTaskWorkerModules.withoutSettlement()
     ),
     TaskQueue: LocalTaskQueue,
     LocalSequencerCoreModule,
-    //group appchain-def-2
     Database: InMemoryDatabase,
     Mempool: PrivateMempool,
-    //group appchain-def-2
     Graphql: GraphqlSequencerModule.from(VanillaGraphqlModules.with({})),
     BlockTrigger: TimedBlockTrigger,
   }),
-  // appchain modules
   TransactionSender: InMemoryTransactionSender,
   QueryTransportModule: StateServiceQueryModule,
   NetworkStateTransportModule: BlockStorageNetworkStateModule,
 });
+// group appchain-def
 
 //group appchain-conf-1
 export default async (): Promise<Startable> => {
