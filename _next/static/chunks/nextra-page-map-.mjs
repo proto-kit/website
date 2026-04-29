@@ -5686,6 +5686,12 @@ export const pageMap = [{
         "sidebarTitle": "Caching"
       }
     }, {
+      name: "cli",
+      route: "/docs/running/cli",
+      frontMatter: {
+        "sidebarTitle": "CLI"
+      }
+    }, {
       name: "databases",
       route: "/docs/running/databases",
       frontMatter: {
