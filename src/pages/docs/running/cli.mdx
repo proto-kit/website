@@ -1,4 +1,4 @@
-import { Tabs } from 'nextra/components'
+import { Tabs } from "nextra/components";
 
 # CLI
 
@@ -6,16 +6,106 @@ The Protokit CLI is a comprehensive command-line interface for managing Protokit
 
 ## Installation
 
-Install the CLI locally in your project:
+<Tabs items={['pnpm', 'npm']}>
+  <Tabs.Tab>
+    ```bash
+    # Install the CLI globally
+    pnpm add -g @proto-kit/cli
+
+    # Install the CLI locally in your project
+    pnpm add @proto-kit/cli
+    ```
+
+    **Usage:**
+    - Global: `protokit <command>`
+    - Local: `pnpm protokit <command>`
+    - Without installation: `pnpm dlx @proto-kit/cli <command>`
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    ```bash
+    # Install the CLI globally
+    npm install -g @proto-kit/cli
+
+    # Install the CLI locally in your project
+    npm install @proto-kit/cli
+    ```
+
+    **Usage:**
+    - Global: `protokit <command>`
+    - Local: `npx protokit <command>`
+    - Without installation: `npx @proto-kit/cli <command>`
+
+  </Tabs.Tab>
+</Tabs>
+
+> **Note:** When you create a new project using the [`init`](#init-name) command or clone the starter-kit, the CLI comes pre-installed in the root directory. In this case, use `pnpm protokit <command>` to run CLI commands.
+
+## Environment Configuration
+
+The CLI supports three methods for passing environment variables and configuration. If none is specified, it defaults to the **development** environment.
+
+<Tabs items={['File-based', 'Inline', 'Named Environment']}>
+  <Tabs.Tab>
+    #### `--env-path` (File-based)
+
+    Load environment variables from environment file. If this is not specified, the CLI will first try to load `scripts.env`, and if not found, will fall back to `.env`:
+
+    ```bash
+    protokit settlement deploy --env-path ./my-config/.env
+    ```
+
+    **Example `.env` file:**
+    ```
+    PROTOKIT_SETTLEMENT_CONTRACT_PRIVATE_KEY=EK...
+    MINA_NETWORK=lightnet
+    PROTOKIT_FAUCET_KEY=EK...
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `--set KEY=value` (Inline)
+
+    Pass environment variables directly as command-line arguments. Can be used multiple times:
+
+    ```bash
+    protokit settlement deploy \
+      --set PROTOKIT_SETTLEMENT_CONTRACT_PRIVATE_KEY=EK... \
+      --set MINA_NETWORK_URL=https://lightnet.lokinet.dev/graphql
+    ```
+
+    Useful for CI/CD pipelines and one-off commands.
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### `--env {envName}` (Named Environment)
+
+    Use a pre-configured environment by name:
+
+    ```bash
+    protokit settlement deploy --env sovereign
+    ```
+
+    This requires named environments to be configured in your setup (typically via the [`wizard`](#wizard) command).
+
+  </Tabs.Tab>
+</Tabs>
+
+---
+
+## Help & Support
+
+View help for any command:
 
 ```bash
-npm install @proto-kit/cli
-```
+# General help
+protokit --help
 
-Or run it without installation using `npx`:
-
-```bash
-npx @proto-kit/cli <command>
+# Command-specific help
+protokit <command> --help
 ```
 
 ## Commands
@@ -27,9 +117,11 @@ npx @proto-kit/cli <command>
 Creates a new Protokit project from the starter-kit template.
 
 **Parameters:**
+
 - `[name]` - Directory name for the new project (default: `starter-kit`)
 
 **Examples:**
+
 ```bash
 # Create project in ./starter-kit directory
 protokit init
@@ -37,6 +129,7 @@ protokit init
 # Create project in ./my-app directory
 protokit init my-app
 ```
+
 ---
 
 #### `wizard`
@@ -46,6 +139,9 @@ Creates a new environment configuration with an interactive guided setup wizard.
 ```bash
 protokit wizard
 ```
+
+> **Note:** This command must be run inside a starter-kit instance.
+
 ---
 
 ### Network & Development Tools
@@ -55,18 +151,21 @@ protokit wizard
 Generates private/public key pairs for development and testing.
 
 **Parameters:**
+
 - `[count]` - Number of key pairs to generate (default: 1)
 
 **Examples:**
+
 ```bash
 # Generate 1 key pair
-pnpm protokit run generate-keys
+protokit run generate-keys
 
 # Generate 2 key pairs
-pnpm protokit run generate-keys 2
+protokit run generate-keys 2
 ```
 
 **Output format:**
+
 ```
 Generated 2 keys for development purposes:
 ----------------------------------------------------------------------
@@ -95,6 +194,7 @@ Utilities for working with Lightnet (Mina's local network environment).
     ```
 
     Useful when starting Lightnet in a separate process and need to ensure it's fully initialized before running tests or deployments.
+
   </Tabs.Tab>
 
   <Tabs.Tab>
@@ -113,6 +213,7 @@ Utilities for working with Lightnet (Mina's local network environment).
     # Use environment variable
     protokit lightnet faucet MY_PUBLIC_KEY
     ```
+
   </Tabs.Tab>
 
   <Tabs.Tab>
@@ -128,6 +229,7 @@ Utilities for working with Lightnet (Mina's local network environment).
     ```
 
     This is a convenience command to set up your entire Lightnet environment in one go.
+
   </Tabs.Tab>
 </Tabs>
 
@@ -153,6 +255,7 @@ Bridge commands handle token transfers between chains.
     ```bash
     protokit bridge deposit 1 SENDER_KEY RECIPIENT_KEY 100
     ```
+
   </Tabs.Tab>
 
   <Tabs.Tab>
@@ -169,6 +272,7 @@ Bridge commands handle token transfers between chains.
     ```bash
     protokit bridge withdraw 1 SENDER_KEY 100
     ```
+
   </Tabs.Tab>
 
   <Tabs.Tab>
@@ -185,6 +289,7 @@ Bridge commands handle token transfers between chains.
     ```bash
     protokit bridge redeem 1 RECIPIENT_KEY 100
     ```
+
   </Tabs.Tab>
 </Tabs>
 
@@ -198,13 +303,12 @@ Settlement commands handle contract deployment and token management for settleme
   <Tabs.Tab>
     #### `settlement deploy`
 
-    Deploys settlement contracts to the network.
+    Deploys the necessary settlement contracts required for your app-chain to interact with settlement layers.
 
     ```bash
     protokit settlement deploy
     ```
 
-    Deploys the necessary settlement contracts required for your app-chain to interact with settlement layers.
   </Tabs.Tab>
 
   <Tabs.Tab>
@@ -222,6 +326,7 @@ Settlement commands handle contract deployment and token management for settleme
     ```bash
     protokit settlement token-deploy 1 FEEPAYER_KEY RECEIVER_KEY 1000
     ```
+
   </Tabs.Tab>
 </Tabs>
 
@@ -236,6 +341,7 @@ See the dedicated [Explorer](/docs/running/explorer) documentation for detailed 
 Starts the Protokit Explorer web interface.
 
 **Options:**
+
 - `-p, --port` - Port to run on (default: 5003)
 - `--indexer-url` - GraphQL endpoint URL for the indexer
 - `--dashboard-title` - Title for the explorer dashboard
@@ -243,6 +349,7 @@ Starts the Protokit Explorer web interface.
 - `--explorer-image` - Docker image to use for explorer UI
 
 **Examples:**
+
 ```bash
 # Start on default port with default indexer
 protokit explorer start
@@ -266,6 +373,8 @@ protokit explorer start \
 
 Displays a summary of circuits in your app-chain.
 
+> **Note:** This command must be run inside a starter-kit instance.
+
 ```bash
 protokit summary
 ```
@@ -274,75 +383,8 @@ Useful for understanding the structure and configuration of your compiled circui
 
 #### `generate-gql-docs`
 
-Generates GraphQL documentation from your app-chain schema.
+Generates GraphQL documentation for the GraphQL queries and mutations exposed by your sequencer.
 
 ```bash
 protokit generate-gql-docs
-```
-
-Creates documentation for the GraphQL queries and mutations exposed by your indexer.
-
----
-
-## Environment Configuration
-
-The CLI supports three methods for passing environment variables and configuration. If none is specified, it defaults to the **development** environment.
-
-<Tabs items={['File-based', 'Inline', 'Named Environment']}>
-  <Tabs.Tab>
-    #### `--env-path` (File-based)
-
-    Load environment variables from environment file. If this is not specified, the CLI will first try to load `scripts.env`, and if not found, will fall back to `.env`:
-
-    ```bash
-    protokit settlement deploy --env-path ./my-config/.env
-    ```
-
-    **Example `.env` file:**
-    ```
-    PROTOKIT_SETTLEMENT_CONTRACT_PRIVATE_KEY=EK...
-    MINA_NETWORK_URL=https://lightnet.lokinet.dev/graphql
-    PROTOKIT_FAUCET_KEY=EK...
-    ```
-  </Tabs.Tab>
-
-  <Tabs.Tab>
-    #### `--set KEY=value` (Inline)
-
-    Pass environment variables directly as command-line arguments. Can be used multiple times:
-
-    ```bash
-    protokit settlement deploy \
-      --set PROTOKIT_SETTLEMENT_CONTRACT_PRIVATE_KEY=EK... \
-      --set MINA_NETWORK_URL=https://lightnet.lokinet.dev/graphql
-    ```
-
-    Useful for CI/CD pipelines and one-off commands.
-  </Tabs.Tab>
-
-  <Tabs.Tab>
-    #### `--env {envName}` (Named Environment)
-
-    Use a pre-configured environment by name:
-
-    ```bash
-    protokit settlement deploy --env sovereign
-    ```
-
-    This requires named environments to be configured in your setup (typically via the `wizard` command).
-  </Tabs.Tab>
-</Tabs>
-
----
-
-## Help & Support
-
-View help for any command:
-
-```bash
-# General help
-protokit --help
-
-# Command-specific help
-protokit <command> --help
 ```
