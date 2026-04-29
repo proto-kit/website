@@ -31,6 +31,7 @@ import {
 } from "../../sequencer";
 
 const appChain = AppChain.from({
+  // group sequencer-def
   Runtime: Runtime.from(runtime.modules),
   Protocol: Protocol.from({
     ...protocol.modules,
@@ -47,6 +48,7 @@ const appChain = AppChain.from({
     TaskQueue: BullQueue,
     IndexerNotifier,
   }),
+  // group sequencer-def
   TransactionSender: InMemoryTransactionSender,
   QueryTransportModule: StateServiceQueryModule,
   NetworkStateTransportModule: BlockStorageNetworkStateModule,

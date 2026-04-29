@@ -1,0 +1,309 @@
+import { Tabs } from "nextra/components";
+
+# Starter Kit
+
+The Protokit starter-kit is a monorepo that provides a complete foundation for building application chains using the Protokit framework. It demonstrates how to structure your app-chain, configure runtime modules, and deploy across different environments.
+
+For installation and initial setup, see the [QuickStart guide](/docs/quickstart).
+
+## Default Environments
+
+The starter-kit comes with three default environments, each tailored for different stages of development and deployment. Choose the one that fits your current workflow:
+
+<Tabs items={['inmemory', 'development', 'sovereign']}>
+  <Tabs.Tab>
+    #### Inmemory Environment
+
+    Perfect for rapid testing and experimentation, this environment keeps all state in memory without any persistence.
+    Use it to quickly iterate on runtime logic and test new features before moving to persistent environments.
+
+    **Characteristics:**
+    - All state stored in memory
+    - No external services or databases
+    - Blocks are produced but not persisted
+    - Perfect for unit and integration testing
+
+    **Chain Configuration (`chain.config.ts`):**
+
+    ```typescript showLineNumbers filename="chain.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/inmemory/chain.config.ts inline
+    // group appchain-def
+    ```
+
+    - **`WorkerModule.withoutSettlement()`** : Configures the worker without settlement capabilities so that your sequencer will focus purely on producing blocks without attempting to settle to L1.
+    - **`LocalTaskQueue`** : Handles tasks locally without external queue infrastructure.
+    - **`LocalSequencerCoreModule`** : Allows registration of `BlockProducerModule` and `SequencerStartupModule` for local block production and initialization.
+    - **`InMemoryDatabase`** : All state is stored in memory, no persistence across restarts.
+
+    **How to Run:**
+
+    Start the inmemory environment with both the UI and sequencer running with live reload:
+
+    ```bash
+    pnpm env:inmemory dev
+    ```
+
+    Then visit:
+    - **UI:** http://localhost:3000
+    - **Sequencer GraphQL:** http://localhost:8080/graphql
+
+    For running tests:
+    ```bash
+    pnpm env:inmemory run test --filter=chain -- --watchAll
+    ```
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### Development Environment
+
+    A complete development environment, where you can run sequencer, worker, indexer, and processor locally.
+    Enables testing settlement logic and historical data indexing with all components running in separate processes.
+
+    **Characteristics:**
+    - PostgreSQL databases for persistent state
+    - Redis for caching and task queuing
+    - Settlement and bridging to L1 enabled
+    - Indexer for historical data
+    - Processor for custom business logic
+    - All components run in separate processes
+
+    **Chain Configuration (`chain.config.ts`):**
+
+    ```typescript showLineNumbers filename="chain.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/development/chain.config.ts inline
+    // group sequencer-def
+    ```
+
+
+    **Persistence & Settlement:**
+    - **`Database: PrismaRedisDatabase`** : Uses Redis and PostgreSQL database to persists the sequencer states.
+    - **`...protocol.settlementModules`** & **`...baseSettlementSequencerModules`** : Enables settlement and bridging to L1 (Mina). Your sequencer can now bridge tokens and settle state to the L1.
+
+    **Task Processing:**
+    - **`TaskQueue: BullQueue`** : Uses BullMQ (backed by Redis) to handle asynchronous tasks. Tasks are processed in a separate worker processes.
+    - **`SequencerCoreModule`** : In addition to `BlockProducerModule` and `SequencerStartupModule`, also registers `BatchProducerModule` for batch processing of blocks.
+
+    **Indexing:**
+    - **`IndexerNotifier`** : Notifies the indexer about produced blocks, transactions, batches, and settlements, enabling historical data synchronization.
+
+    **Indexer Configuration (`indexer.config.ts`):**
+
+    ```typescript showLineNumbers filename="indexer.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/development/indexer.config.ts inline
+    // group indexer-def
+    ```
+
+    **Indexer Details:**
+    - **Separate Database** : Uses its own PostgreSQL database (configured via `PrismaRedisDatabase`) to store indexed data independently from the sequencer
+    - **BullQueue Subscription** : Listens to the Redis-backed task queue for events emitted by the sequencer
+    - **Task Processing** : Handles indexing of blocks, transactions, batches, and settlements
+    - **GraphQL Endpoint** : Serves a separate GraphQL API for querying historical data
+
+    **Worker Configuration (`worker.config.ts`):**
+
+    ```typescript showLineNumbers filename="worker.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/development/worker.config.ts inline
+    // group worker-def
+    ```
+
+    **Worker Details:**
+    - **Separate Process** : Unlike inmemory environment, the worker runs in a different process and connects via BullQueue
+    - **`VanillaTaskWorkerModules.allTasks()`** : Handles all tasks emitted by the sequencer
+
+    **Processor Configuration (`processor.config.ts`):**
+
+    ```typescript
+    const processor = Processor.from({
+      Database: databaseModule,
+      DatabasePruneModule: DatabasePruneModule,
+      GraphqlSequencerModule: GraphqlSequencerModule.from({
+        ResolverFactory: ResolverFactoryGraphqlModule.from(resolvers),
+      }),
+      HandlersExecutor: HandlersExecutor.from(handlers),
+      BlockFetching,
+      Trigger: TimedProcessorTrigger,
+    });
+    ```
+    **Processor Details:**
+    - **Custom Database** : Uses a dedicated database to store processed data according to your schema
+    - **Block Processing** : Fetches blocks from the indexer and processes them through your custom handlers
+    - **Handler Execution** : Runs your defined business logic handlers
+    - **GraphQL API** : Exposes processed data via GraphQL resolvers
+    - **Timed Trigger** : Periodically checks for new blocks to process
+
+    **Services:**
+    - Sequencer (port 8080) - Main GraphQL API
+    - Indexer (port 8081) - Historical data GraphQL API
+    - Processor (port 8082) - Processed data GraphQL API
+    - PostgreSQL (ports 5432, 5433, 5434) - Three databases
+    - Redis (port 6379) - Task queue and caching
+    - Lightnet (ports 8083, 8085) - Local Mina network for settlement
+
+    **How to Run:**
+
+    First, start the containerized dependencies and set up databases:
+
+    ```bash
+    # Start PostgreSQL and Redis containers
+    pnpm env:development docker:up -d
+
+    # Generate Prisma clients
+    pnpm env:development prisma:generate
+
+    # Run migrations
+    pnpm env:development prisma:migrate
+    ```
+
+    Then run each component in separate terminals:
+
+    ```bash
+    pnpm env:development worker:dev
+
+    pnpm env:development indexer:dev
+
+    pnpm env:development processor:dev
+
+    pnpm env:development dev
+    ```
+
+    Access your app-chain:
+    - **UI:** http://localhost:3000
+    - **Sequencer GraphQL:** http://localhost:8080/graphql
+    - **Indexer GraphQL:** http://localhost:8081/graphql
+    - **Processor GraphQL:** http://localhost:8082/graphql
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    #### Sovereign Environment
+
+    A production-ready deployment with all services containerized, monitoring stack included, and reverse proxy for routing.
+    Designed for deployments with full settlement capabilities, bridging support, and observability through metrics and tracing.
+
+    **Characteristics:**
+    - All services run in Docker containers
+    - PostgreSQL databases for persistent state
+    - Redis for task queuing
+    - Full monitoring stack (Grafana, Prometheus, Loki)
+    - Settlement and bridging to L1 enabled
+    - Caddy reverse proxy
+
+    **Chain Configuration (`chain.config.ts`):**
+
+    ```typescript showLineNumbers filename="chain.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/sovereign/chain.config.ts inline
+    // group sequencer-def
+    ```
+
+
+    **Observability & Monitoring:**
+    - **`...metricsSequencerModules`** : Enables comprehensive observability with OpenTelemetry tracing and metrics collection for production monitoring
+
+    **Indexer Configuration (`indexer.config.ts`):**
+
+    ```typescript showLineNumbers filename="indexer.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/sovereign/indexer.config.ts inline
+    // group indexer-def
+    ```
+
+    **Indexer Details:**
+    - **Separate Container** : Runs in its own Docker container with dedicated PostgreSQL database
+    - **OpenTelemetry Integration** : Built-in tracing and metrics for production monitoring
+    - **Redis Task Queue** : Subscribes to BullQueue tasks
+    - **GraphQL API** : Exposes on port 8081 through Caddy reverse proxy
+    - **Prometheus Metrics** : Exports metrics for Grafana dashboards
+
+    **Worker Configuration (`worker.config.ts`):**
+
+    The sovereign environment supports **multiple worker variants** for specialized task processing:
+
+    ```typescript showLineNumbers filename="worker.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/sovereign/worker.config.ts inline
+    // group worker-variants
+    ```
+
+    **Docker Services (`.env` COMPOSE_PROFILES):**
+
+    ```bash
+    COMPOSE_PROFILES=db,monolithic-sequencer,proxy,web,worker-monolithic,indexer,monitoring,explorer,lightnet
+    ```
+
+    **Services:**
+    - **`db`** : PostgreSQL databases (sequencer, indexer, processor)
+    - **`monolithic-sequencer`** : Sequencer container
+    - **`proxy`** : Caddy reverse proxy for HTTPS and routing
+    - **`web`** : Next.js UI container
+    - **`worker-monolithic`** : Worker container
+    - **`indexer`** : Indexer container
+    - **`monitoring`** : Grafana, Prometheus, Loki stack
+    - **`explorer`** : Protokit explorer UI
+    - **`lightnet`** : Local Mina network for settlement
+
+
+
+    **Services Access (Behind Caddy Proxy):**
+    - **UI:** `https://yourdomain.com`
+    - **Sequencer GraphQL:** `https://yourdomain.com/graphql`
+    - **Indexer GraphQL:** `https://yourdomain.com/indexer/graphql`
+    - **Processor GraphQL:** `https://yourdomain.com/processor/graphql`
+    - **Explorer:** `https://explorer.yourdomain.com`
+    - **Grafana:** `https://grafana.yourdomain.com`
+
+    **For Production Deployment:**
+
+    Replace the wildcard configuration with your actual domain:
+
+    ```
+    yourdomain.com {
+        reverse_proxy /graphql sequencer:8080
+        reverse_proxy /indexer/graphql indexer:8081
+        reverse_proxy /processor/graphql processor:8082
+        reverse_proxy web:3000
+        encode gzip
+    }
+
+    explorer.yourdomain.com {
+        reverse_proxy explorer:3000
+    }
+
+    grafana.yourdomain.com {
+        reverse_proxy grafana:3000
+    }
+    ```
+
+    **How to Run:**
+
+    First, build the Docker images:
+
+    ```bash
+    pnpm env:sovereign docker:build
+    ```
+
+    Then start all services:
+
+    ```bash
+    # Start all containerized services
+    pnpm env:sovereign docker:up -d
+    ```
+
+    Access your app-chain:
+    - **UI:** https://localhost
+    - **Sequencer GraphQL:** https://localhost/graphql
+    - **Indexer GraphQL:** https://localhost/indexer/graphql
+    - **Processor GraphQL:** https://localhost/processor/graphql
+    - **Grafana:** https://grafana.localhost
+    - **Explorer:** https://explorer.localhost.com
+
+  </Tabs.Tab>
+</Tabs>
+
+> You can create custom environments using the [`wizard`](/docs/running/cli#wizard) command from the CLI. This allows you to configure additional environment setups tailored to your specific needs.
+
+## The Complete Picture
+
+Here's the flow of data and configuration in the starter-kit:
+
+1. **Runtime Modules** (`runtime/modules/`) define what your app-chain can do
+2. **Protocol** (`protocol/index.ts`) defines the rules governing your app-chain
+3. **Sequencer Config** (`core/environments/{env}/chain.config.ts`) assembles the sequencer from:
+   - Your runtime modules
+   - Protocol rules
+   - Sequencer infrastructure (database, GraphQL, mempool)
+4. **Environment Config** (`core/environments/{env}/.env`) provides runtime parameters
+5. **Client Config** (`core/environments/client.config.ts`) configure the client appchain
+6. **Docker Services** (`docker/`) runs databases, indexer, processor, lightnet etc.
+7. **Frontend** (`apps/web/`) connects via the client config and communicates with the sequencer GraphQL API

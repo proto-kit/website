@@ -32,6 +32,7 @@ import {
   metricsSequencerModulesConfig,
 } from "../../sequencer";
 
+// group sequencer-def
 const appChain = AppChain.from({
   Runtime: Runtime.from(runtime.modules),
   Protocol: Protocol.from({
@@ -54,6 +55,7 @@ const appChain = AppChain.from({
   QueryTransportModule: StateServiceQueryModule,
   NetworkStateTransportModule: BlockStorageNetworkStateModule,
 });
+// group sequencer-def
 
 export default async (args: Arguments): Promise<Startable> => {
   appChain.configure({
