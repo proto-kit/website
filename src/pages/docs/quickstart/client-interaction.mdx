@@ -32,7 +32,7 @@ The code below does the following:
 5. Sign and send the transaction to the locally hosted sequencer.
 
 
-```typescript showLineNumbers {31-36} filename="packages/chain/test/interaction.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/guestBook.test.ts inline
+```typescript showLineNumbers {31-36} file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/guestBook.test.ts inline
   // group start
   // group onlyTransaction
 ```
@@ -56,7 +56,7 @@ Here's a breakdown of what happens in the test suite below:
 3. Wait for a couple seconds for a block to be produced
 4. Query the latest check-in for the sender address, from the GraphQL API of the locally hosted sequencer.
 
-```typescript showLineNumbers {38, 40} filename="packages/chain/test/interaction.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/guestBook.test.ts inline
+```typescript showLineNumbers {38, 40} file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/guestBook.test.ts inline
   // group start
   // group withQuery
 ```

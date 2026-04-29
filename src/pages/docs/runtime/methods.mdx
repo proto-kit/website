@@ -14,7 +14,7 @@ In order to maintain good testability of the runtime module, it is recommended t
 method implementation without side-effects as well. Methods may freely interact with the state API or other methods,
 and can include a return value too.
 
-```typescript {9-12} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
+```typescript {9-12} showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
 // group start
 // group getBalance
 }
@@ -41,7 +41,7 @@ these methods will be callable via transactions regardless of visibility.
 
 > The example below allows *anyone* to set a balance for *anyone*. This is obviously not a good idea, do not do this.
 
-```typescript {9-10} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
+```typescript {9-10} showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
 // group start
 // group mint
 }
@@ -80,7 +80,7 @@ For a real use case, make sure to implement a secure and sound zk program that c
 
 Here's how an example proof as argument would look like:
 
-```typescript showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
 // group zk-program-setup
 
 // group start
@@ -107,7 +107,7 @@ a subject to all the assert calls within the method. If one assertion fails, the
   You can use our built in math primitives instead - they are shipped <br/> as `@proto-kit/library`.
 </Callout>
 
-```typescript {9-15} showLineNumbers filename="balances.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
+```typescript {9-15} showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/balancesWithZkProof.ts inline
 // group start
 // group transfer
 ```

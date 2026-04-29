@@ -20,7 +20,7 @@ The data is very simple, you either already have it in your UI or you can fetch 
 
 <Tabs items={['TS']}>
   <Tabs.Tab>
-    ```ts filename="Client SDK" copy
+    ```ts copy
     const state = await appchain.query.runtime.testModule.userState.get(address);
     ```
   </Tabs.Tab>
@@ -33,7 +33,7 @@ We do this by fetch the merkle witness and recalculating the state root inside a
 
 <Tabs items={['TS']}>
     <Tabs.Tab>
-        ```ts filename="Client SDK" copy
+        ```ts copy
         const witness = await appchain.query.runtime.testModule.userState.witness(address);
         ```
     </Tabs.Tab>
