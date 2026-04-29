@@ -10,7 +10,7 @@ The example module we will be testing is a simple balances module, which allows
 tokens to be minted at the genesis block. Minting after the genesis block should
 result in an error.
 
-```typescript showLineNumbers filename="mintery.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/mintery.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/mintery.ts inline
 // group imports
 // group mintery-def
   // group mint
@@ -39,7 +39,7 @@ fetchable by the query API.
 You can setup a _TestingAppChain_ by passing your runtime module, setting up the
 transaction API signer and starting the app-chain like this:
 
-```typescript showLineNumbers filename="mintery.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
 // group imports
 // group test-setup
 });
@@ -60,7 +60,7 @@ Here's what needs to happen for our test case to pass:
 3. Retrieve the balance of the transaction sender (alice).
 4. Assert the transaction status to be truthy, and the balance to be the minted amount.
 
-```typescript showLineNumbers filename="mintery.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
 // group test-mint-at-genesis
 ```
 
@@ -75,6 +75,6 @@ Here's what needs to happen for our test case to pass:
 3. Retrieve the balance of the transaction sender (alice).
 4. Assert the transaction status to be false, and the balance to be the originally minted amount.
 
-```typescript showLineNumbers filename="mintery.test.ts" file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/test/runtime/modules/mintery.test.ts inline
 // group test-mint-at-second-block
 ```

@@ -16,7 +16,7 @@ To design a runtime module, you'll need to consider the following:
 For our _GuestBook_ module, we'll want to allow users to check-in in the guest book.
 We'll start by defining the data model, namely the _CheckIn_ struct, which will determine what constitutes a check-in.
 
-```typescript showLineNumbers filename="packages/chain/src/guest-book/check-in.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
 // group storage
 ```
 
@@ -24,7 +24,7 @@ We'll start by defining the data model, namely the _CheckIn_ struct, which will 
 
 Second step is to create our runtime module and define the checkIns storage property, which will map a guest to the check-in they made.
 
-```typescript showLineNumbers filename="packages/chain/src/guest-book/index.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
 // group runtime-module-def
 }
 ```
@@ -36,7 +36,7 @@ We'll define the _checkIn_ method, which will allow users to check-in in the gue
 
 > We're using the _transaction sender_ to identify and authorize check-ins.
 
-```typescript showLineNumbers {10-22} filename="packages/chain/src/guest-book/index.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
+```typescript showLineNumbers {10-22} file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/modules/guest-book.ts inline
 // group imports
 // group runtime-module-def
 
@@ -48,7 +48,7 @@ We'll define the _checkIn_ method, which will allow users to check-in in the gue
 
 In order to make use of the _GuestBook_ runtime module, we have to add it to the app-chain's runtime configuration.
 
-```typescript showLineNumbers {10, 18} filename="packages/chain/src/runtime.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/index.ts
+```typescript showLineNumbers {10, 18} file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/index.ts
 
 ```
 

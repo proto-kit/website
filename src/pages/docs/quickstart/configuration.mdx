@@ -19,7 +19,7 @@ Every configurable piece in Protokit follows the same two-step shape:
 
 A minimal example of this pattern - here for the runtime - looks like this:
 
-```typescript showLineNumbers filename="packages/chain/src/runtime/snippets/configuration.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/snippets/configuration.ts
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/runtime/snippets/configuration.ts
 
 ```
 
@@ -59,7 +59,7 @@ the three sub-containers - `Runtime`, `Protocol` and `Sequencer` - plus optional
 
 A server-side app-chain assembled from the individual pieces can look like this (this is how starter-kit scaffolds this)
 
-```typescript showLineNumbers filename="packages/chain/src/core/environments/inmemory/chain.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/inmemory/chain.config.ts inline
+```typescript showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/inmemory/chain.config.ts inline
 //group appchain-def-1
 //group appchain-def-2
     // ...
@@ -90,7 +90,7 @@ The same `AppChain` abstraction is used on both sides of the wire. The server si
 using a `chain.config.ts`, while the client uses a `client.config.ts` to _connect_ to a running app-chain (typically
 over GraphQL):
 
-```typescript {20-25,32} showLineNumbers filename="packages/chain/src/core/environments/client.config.ts" file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/client.config.ts
+```typescript {20-25,32} showLineNumbers file=<rootDir>/starter-kit-snippets/packages/chain/src/core/environments/client.config.ts
 
 ```
 

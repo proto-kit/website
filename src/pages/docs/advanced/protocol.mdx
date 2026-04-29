@@ -44,7 +44,7 @@ new TestingAppChain({
 Protocol hooks can define their own state and use that to read and modify the appchain state.
 They work like the runtime `@state(){:ts}` state and emit StateTransitions under the hood.
 
-```ts  showLineNumbers filename="ProtocolStateModule.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionHook.ts inline
+```ts  showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionHook.ts inline
 // group transaction-hook
 }
 ```
@@ -57,7 +57,7 @@ Let's assume we have a runtime module called `Balances` that keeps track of toke
 
 This can be implemented very easily:
 
-```ts {2,9} showLineNumbers filename="TransactionFeeHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionFeeHook.ts inline
+```ts {2,9} showLineNumbers copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/TransactionFeeHook.ts inline
 // group transaction-fee-module
 
 ```
@@ -128,7 +128,7 @@ The provided arguments hold:
 
 An example for block hooks would be this module, which saves all block's state root into a ever-growing state map.
 
-```typescript filename="StateRootHistoryHook.ts" copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/StateRootHistoryHook.ts
+```typescript copy file=<rootDir>/starter-kit-snippets/packages/chain/src/protocol/hooks/StateRootHistoryHook.ts
 // group state-root-history-hook
 ```
 
