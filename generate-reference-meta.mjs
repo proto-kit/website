@@ -1,8 +1,11 @@
 import fs from "fs";
+
+const BASE_PATH = "./src/pages/reference";
+
 const references = fs
-  .readdirSync("./src/pages/docs/reference")
+  .readdirSync(BASE_PATH)
   .filter((reference) =>
-    fs.lstatSync(`./src/pages/docs/reference/${reference}`).isDirectory()
+    fs.lstatSync(`${BASE_PATH}/${reference}`).isDirectory()
   );
 
 const sidebarTitles = {
@@ -26,11 +29,11 @@ function referenceToSidebarTitle(reference) {
 console.log("generating typedoc meta files...");
 
 references.forEach((reference) => {
-  const metaTsxPath = `./src/pages/docs/reference/${reference}/_meta.tsx`;
+  const metaTsxPath = `${BASE_PATH}/${reference}/_meta.tsx`;
   fs.rmSync(metaTsxPath, { force: true });
 
   const categories = fs.readdirSync(
-    `./src/pages/docs/reference/${reference}`,
+    `${BASE_PATH}/${reference}`,
     "utf8"
   );
 
@@ -44,7 +47,7 @@ references.forEach((reference) => {
   fs.writeFileSync(metaTsxPath, metaTsx);
 });
 
-const metaTsxPath = `./src/pages/docs/reference/_meta.tsx`;
+const metaTsxPath = `${BASE_PATH}/_meta.tsx`;
 const metaTsx = `export default {
   ${references.map((reference) => {
     return `"${reference}": "${referenceToSidebarTitle(reference)}"`;

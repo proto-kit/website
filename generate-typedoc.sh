@@ -3,7 +3,7 @@
 REPO=$(pwd)
 : "${FRAMEWORK_TYPEDOC_FOLDER:=./../framework-typedoc}"
 : "${FRAMEWORK_BRANCH:=develop}"
-: "${WEBSITE_REFERENCE_DOCS:=./src/pages/docs/reference/}"
+: "${WEBSITE_REFERENCE_DOCS:=./src/pages/reference/}"
 echo "Generating typedoc for framework branch \"$FRAMEWORK_BRANCH\" in \"$FRAMEWORK_TYPEDOC_FOLDER\"";
 rm -rf $FRAMEWORK_TYPEDOC_FOLDER
 git clone https://github.com/proto-kit/framework.git $FRAMEWORK_TYPEDOC_FOLDER
