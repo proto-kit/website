@@ -1,4 +1,5 @@
 export default {
+  overview: "Overview",
   state: "State",
   methods: "Methods",
   "network-transaction": "Network & Transaction APIs",
