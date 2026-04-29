@@ -5,4 +5,5 @@ export default {
   "explorer": "Explorer",
   "caching": "Remote caching",
   "infrastructure": "About Infrastructure",
+  "cli": "CLI",
 }
