@@ -148,8 +148,8 @@ importers:
         version: 3.24.2
     devDependencies:
       '@proto-kit/remark-code-import':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       '@types/node':
         specifier: 18.11.10
         version: 18.11.10
@@ -2350,8 +2350,8 @@ packages:
       ts-pattern: ^4.3.0
       tsyringe: ^4.10.0
 
-  '@proto-kit/remark-code-import@1.2.0':
-    resolution: {integrity: sha512-kyI4V+hDCA60x5B2DBudyHtATE5UPguXfUgCRt7CGJm3dEHqqUBA3Eqv+5K9N/3+SacfnJaAdrJcz8VFmjltAA==}
+  '@proto-kit/remark-code-import@1.2.1':
+    resolution: {integrity: sha512-UJIpAu7zhNx5uNCygtGMzwe93XyQe1ywPL/y9SCtPyrOLSOn+9XAufkrJp1Qm27jS6VGyk3ypGmoLCGNXA8LGg==}
     engines: {node: '>= 12'}
 
   '@proto-kit/sdk@0.1.1-develop.2357':
@@ -12018,7 +12018,7 @@ snapshots:
       ts-pattern: 4.3.0
       tsyringe: 4.10.0
 
-  '@proto-kit/remark-code-import@1.2.0':
+  '@proto-kit/remark-code-import@1.2.1':
     dependencies:
       strip-indent: 4.1.1
       to-gatsby-remark-plugin: 0.1.0
@@ -14511,7 +14511,7 @@ snapshots:
       cron-parser: 4.9.0
       glob: 8.1.0
       ioredis: 5.10.1(supports-color@10.2.2)
-      lodash: 4.17.23
+      lodash: 4.18.1
       msgpackr: 1.11.10
       node-abort-controller: 3.1.1
       semver: 7.7.3
@@ -15687,7 +15687,7 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.4.5))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1(supports-color@10.2.2))(supports-color@10.2.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1(supports-color@10.2.2))(supports-color@10.2.2)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1(supports-color@10.2.2))(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 

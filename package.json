@@ -68,7 +68,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "@proto-kit/remark-code-import": "^1.2.0",
+    "@proto-kit/remark-code-import": "^1.2.1",
     "@types/node": "18.11.10",
     "@types/react": "19.0.8",
     "autoprefixer": "^10.4.16",
