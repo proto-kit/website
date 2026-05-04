@@ -90,6 +90,14 @@ export const Footer = () => {
             </a>
           </p>
           <a
+            href="https://o1labs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-xs"
+          >
+            Maintained by o1labs
+          </a>
+          <a
             href="https://palladians.xyz"
             target="_blank"
             rel="noopener noreferrer"
