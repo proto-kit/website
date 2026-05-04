@@ -2,7 +2,7 @@ import React from "react";
 import NextImage from "next/image";
 
 const GITHUB_URL = "https://github.com/proto-kit";
-const X_URL = "https://x.com/proto_kit";
+const X_URL = "https://x.com/o1_labs";
 const DISCORD_URL = "https://bit.ly/MinaDiscord";
 const FRAMEWORK_URL = "https://github.com/proto-kit/framework";
 const STARTER_KIT_URL = "https://github.com/proto-kit/starter-kit";

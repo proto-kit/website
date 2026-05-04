@@ -30,7 +30,7 @@ export const HeroGraphic = () => {
             asChild
           >
             <a
-              href="https://x.com/proto_kit"
+              href="https://x.com/o1_labs"
               target="_blank"
               rel="noopener noreferrer"
             >
