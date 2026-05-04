@@ -2,7 +2,7 @@ import React from "react";
 import NextImage from "next/image";
 
 const GITHUB_URL = "https://github.com/proto-kit";
-const X_URL = "https://x.com/proto_kit";
+const X_URL = "https://x.com/o1_labs";
 const DISCORD_URL = "https://bit.ly/MinaDiscord";
 const FRAMEWORK_URL = "https://github.com/proto-kit/framework";
 const STARTER_KIT_URL = "https://github.com/proto-kit/starter-kit";
@@ -89,6 +89,14 @@ export const Footer = () => {
               @maht0rz
             </a>
           </p>
+          <a
+            href="https://o1labs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-xs"
+          >
+            Maintained by o1labs
+          </a>
           <a
             href="https://palladians.xyz"
             target="_blank"

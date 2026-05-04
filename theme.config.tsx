@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
     link: "https://github.com/proto-kit",
   },
   chat: {
-    link: "https://x.com/proto_kit",
+    link: "https://x.com/o1_labs",
     icon: <div className="text-2xl">𝕏</div>,
   },
   docsRepositoryBase: "https://github.com/proto-kit/website/tree/main",

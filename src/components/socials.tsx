@@ -42,7 +42,7 @@ export const Socials = () => {
   return (
     <section className="container grid grid-cols-1 lg:grid-cols-2 gap-16 pb-24">
       <a
-        href="https://x.com/proto_kit"
+        href="https://x.com/o1_labs"
         target="_blank"
         rel="noopener noreferrer"
       >
