@@ -16,13 +16,13 @@ import {
 
 const FEATURES = [
   {
-    title: "Privacy Enabled",
+    title: "Privacy by design",
     content:
-      "Protokit runtime modules enable opt-in privacy where required by providing seamless composability of off-chain computation with on-chain sequential transaction processing.",
+      "Built on o1js and Mina's proof system Pickles, opt-in privacy comes naturally - combining private off-chain computation with verifiable on-chain execution",
     icon: LockIcon,
   },
   {
-    title: "Succint zkVM",
+    title: "Succinct zkVM",
     content:
       "Chains built with Protokit run on top of our modular zkVM, which is driven by a set of recursive zk circuits that lead to a unique block proof for each block. This means that block production results in a concise proof that can be verified inexpensively.",
     icon: LayoutPanelTop,
@@ -40,9 +40,9 @@ const FEATURES = [
     icon: BoxesIcon,
   },
   {
-    title: "Interoperable",
+    title: "Blazingly-fast",
     content:
-      "Integrate your app-chain with other existing app-chains, L2s, and rollups to avoid fragmentation of liquidity within the ecosystem.",
+      "Users get transaction confirmations in seconds. Execution and proving gives you plenty of room to scale. Finality settles on Mina in the background.",
     icon: SquareStackIcon,
   },
   {

@@ -45,7 +45,7 @@ export const HeroGraphic = () => {
             application chains.
           </h1>
           <p className="text-lg leading-8 text-accent-foreground">
-            Protokit enables developers to build zero-knowledge, interoperable
+            Protokit enables developers to build scalable
             and privacy preserving application chains with a minimal learning
             curve.
           </p>
@@ -80,17 +80,6 @@ export const HeroGraphic = () => {
               >
                 <GithubIcon size={16} />
                 <span>Starter Kit</span>
-              </a>
-            </Button>
-            <Button variant="secondary" size="lg" asChild>
-              <a
-                href={STACKBLITZ_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gap-2"
-              >
-                <ZapIcon size={16} />
-                <span>Try Online</span>
               </a>
             </Button>
           </div>
