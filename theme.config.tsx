@@ -35,6 +35,15 @@ const config: DocsThemeConfig = {
     titleComponent({ title }) {},
   },
   head: null,
+  banner: {
+    content: (
+      <a href="https://www.o1labs.org/blog/introducing-protokit" target="_blank">
+        🎉 Protokit is live on devnet. Read more →
+      </a>
+    ),
+    dismissible: true,
+    key: "banner-key-protokit"
+  },
   // useNextSeoProps() {
   //   return {
   //     titleTemplate: "%s – Protokit",
